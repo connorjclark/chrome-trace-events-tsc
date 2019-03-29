@@ -12,8 +12,9 @@ function getId(event) {
 
   return (event.name[0].toUpperCase() + event.name.slice(1))
     .replace(/\s/g, '')
+    .replace(/%/g, '')
     // TODO use as a namepsace delim
-    .replace(/:/g, '')
+    .replace(/[.:]/g, '')
     + '_' + event.ph;
 }
 
@@ -292,6 +293,17 @@ function print(namespace) {
   }
 
   /**
+   * @param {string} key 
+   */
+  function printSafeKey(key) {
+    if (key.match(/[^a-zA-Z0-9_]/)) {
+      return `'${key}'`;
+    } else {
+      return key;
+    }
+  }
+
+  /**
    * @param {string} key
    * @param {Type} type
    */
@@ -309,7 +321,7 @@ function print(namespace) {
       rhs = type.type;
     }
 
-    return indent(`${key}${type.optional ? '?' : ''}: ${rhs}${type.array ? '[]' : ''};`);
+    return indent(`${printSafeKey(key)}${type.optional ? '?' : ''}: ${rhs}${type.array ? '[]' : ''};`);
   }
 
   /**
