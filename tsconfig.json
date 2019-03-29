@@ -1,10 +1,12 @@
 {
-    "files": [
-        "main.js"
-    ],
-    "compilerOptions": {
-        "allowJs": true,
-        "checkJs": true,
-        "target": "ES2017"
-    }
+  "include": [
+    "src/**/*.j",
+    "./types.d.ts"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "target": "ES2017"
+  }
 }

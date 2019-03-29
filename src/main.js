@@ -30,12 +30,6 @@ for (const event of traceLog.traceEvents) {
   events.push(event);
 }
 
-/** @typedef {{type: 'string' | 'number' | 'boolean' | Type | ObjectType | LiteralType, array?: boolean, optional?: boolean}} Type */
-/** @typedef {{literal: *}} LiteralType */
-/** @typedef {Record<string, Type>} ObjectType */
-/** @typedef {{id: string, parent?: Interface, objectType: ObjectType}} Interface */
-/** @typedef {{name: string, interfaces: Interface[]}} Namespace */
-
 /**
  * @param {*} object
  */
