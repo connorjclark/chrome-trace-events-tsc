@@ -1,7 +1,7 @@
 {
   "include": [
     "src/**/*.j",
-    "./types.d.ts"
+    "types/**/*.d.ts",
   ],
   "compilerOptions": {
     "noEmit": true,

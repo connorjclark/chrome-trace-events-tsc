@@ -1,3 +1,5 @@
+/// <reference path="../types/index.d.ts" />
+
 const fs = require('fs');
 const graph = require('./graph');
 const print = require('./print');
