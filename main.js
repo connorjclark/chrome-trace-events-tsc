@@ -132,7 +132,7 @@ function print(interfaces) {
     if (debugPrint) console.log('printProperty', indentation, key, type);
     if (type.type && typeof type.type === 'object') {
       // @ts-ignore - it's an ObjectType
-      return indent(`${key}: ${printObject(type.type)};`);
+      return indent(`${key}: ${printObject(type.type)}${type.array ? '[]' : ''};`);
     } else {
       return indent(`${key}: ${type.type};`);
     }
@@ -167,8 +167,8 @@ function print(interfaces) {
     return result;
   }
 
-  for (const interfac of interfaces) {
-    output += printInterface(interfac) + "\n";
+  for (const interface of interfaces) {
+    output += printInterface(interface) + "\n";
   }
 
   return output;
