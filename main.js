@@ -21,7 +21,8 @@ for (const event of traceLog.traceEvents) {
   // console.log(id, event);
 }
 
-/** @typedef {{type: 'string' | 'number' | 'boolean' | Type | ObjectType, array?: boolean}} Type */
+/** @typedef {{type: 'string' | 'number' | 'boolean' | Type | ObjectType | LiteralType, array?: boolean}} Type */
+/** @typedef {{literal: *}} LiteralType */
 /** @typedef {Record<string, Type>} ObjectType */
 /** @typedef {{id: string, parent?: Interface, objectType: ObjectType}} Interface */
 
@@ -88,6 +89,10 @@ function findCommonInterface(objectTypes) {
 const interfaces = [];
 for (const [id, sampleEvent] of traceEventTypes.entries()) {
   const objectType = getObjectType(sampleEvent);
+
+  objectType.name.type = { literal: `'${sampleEvent.name}'` };
+  objectType.ph.type = { literal: `'${sampleEvent.ph}'` };
+
   interfaces.push({
     id,
     objectType,
@@ -130,12 +135,19 @@ function print(interfaces) {
    */
   function printProperty(key, type) {
     if (debugPrint) console.log('printProperty', indentation, key, type);
+    let rhs = '';
     if (type.type && typeof type.type === 'object') {
-      // @ts-ignore - it's an ObjectType
-      return indent(`${key}: ${printObject(type.type)}${type.array ? '[]' : ''};`);
-    } else {
-      return indent(`${key}: ${type.type};`);
+      if ('literal' in type.type) {
+        rhs = type.type.literal;
+      } else {
+        // @ts-ignore - it's an ObjectType
+        rhs = printObject(type.type);
+      }
+    } else if (type.type && typeof type.type === 'string') {
+      rhs = type.type;
     }
+
+    return indent(`${key}: ${rhs}${type.array ? '[]' : ''};`);
   }
 
   /**
