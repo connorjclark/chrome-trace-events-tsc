@@ -10,7 +10,7 @@ const eventsByTypeId = new Map();
 function getId(event) {
   // TODO add "data.type"?
 
-  return event.name
+  return (event.name[0].toUpperCase() + event.name.slice(1))
     .replace(/\s/g, '')
     // TODO use as a namepsace delim
     .replace(/:/g, '')
