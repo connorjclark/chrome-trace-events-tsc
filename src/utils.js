@@ -21,6 +21,7 @@ function combineObjects(objects) {
 
   /**
    * @param {*} object
+   * @param {Function} fn
    */
   function traverse(object, fn, path = '') {
     if (typeof object !== 'object') return;
@@ -38,6 +39,10 @@ function combineObjects(objects) {
     }
   }
 
+  /**
+   * @param {*} object
+   * @param {string[]} pathComponents
+   */
   function hasPath(object, pathComponents) {
     let cur = object;
     for (let i = 0; i < pathComponents.length; i++) {
@@ -49,6 +54,10 @@ function combineObjects(objects) {
     return true;
   }
 
+  /**
+   * @param {string[]} pathComponents
+   * @param {*} value
+   */
   function set(pathComponents, value) {
     let cur = combined;
     for (let i = 0; i < pathComponents.length - 1; i++) {
@@ -57,7 +66,7 @@ function combineObjects(objects) {
     }
     if (Array.isArray(value)) {
       cur[pathComponents[pathComponents.length - 1]] = value;
-    } else if (value && typeof value === 'object') {
+    } else if (isObject(value)) {
       cur[pathComponents[pathComponents.length - 1]] = mergeDeep({}, cur[pathComponents[pathComponents.length - 1]], value);
     } else {
       cur[pathComponents[pathComponents.length - 1]] = value;
@@ -100,11 +109,11 @@ function combineObjects(objects) {
   };
 }
 
-
 /**
  * Deep merge two objects.
  * @param {*} target
  * @param {Array<*>} sources
+ * @return {*}
  */
 function mergeDeep(target, ...sources) {
   if (!sources.length) return target;

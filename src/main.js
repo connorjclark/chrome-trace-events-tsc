@@ -107,6 +107,7 @@ function setOptional(objectType, pathComponents) {
   let cur = objectType;
   for (let i = 0; i < pathComponents.length - 1; i++) {
     const key = pathComponents[i];
+    // @ts-ignore
     cur = cur[key].type;
   }
   cur[pathComponents[pathComponents.length - 1]].optional = true;

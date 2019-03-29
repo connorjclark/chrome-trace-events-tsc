@@ -2,8 +2,8 @@ declare global {
   module Gen {
     export interface Type {
       type: 'string' | 'number' | 'boolean' | Type | ObjectType | LiteralType;
-      array: boolean;
-      optional: boolean;
+      array?: boolean;
+      optional?: boolean;
     }
 
     export interface TypeUnion {
