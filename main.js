@@ -7,53 +7,53 @@ const traceEventTypes = new Map();
 /**
  * @param {*} event 
  */
-function getTypeId(event) {
+function getId(event) {
   return event.name.replace(/\s/g, '') + '_' + event.ph;
 }
 
 for (const event of traceLog.traceEvents) {
   if (event.name !== 'EvaluateScript') continue;
   if (!event.args.data || !event.args.data.stackTrace) continue;
-  const typeId = getTypeId(event);
-  if (traceEventTypes.has(typeId)) continue;
+  const id = getId(event);
+  if (traceEventTypes.has(id)) continue;
 
-  traceEventTypes.set(typeId, event);
-  // console.log(typeId, event);
+  traceEventTypes.set(id, event);
+  // console.log(id, event);
 }
 
-/** @typedef {{type: 'string' | 'number' | 'boolean' | TypeDef | TypeInfo, array?: boolean}} TypeDef */
-/** @typedef {Record<string, TypeDef>} TypeInfo */
-/** @typedef {{typeId: string, parent?: Type, info: TypeInfo}} Type */
+/** @typedef {{type: 'string' | 'number' | 'boolean' | Type | ObjectType, array?: boolean}} Type */
+/** @typedef {Record<string, Type>} ObjectType */
+/** @typedef {{id: string, parent?: Interface, objectType: ObjectType}} Interface */
 
 /**
  * @param {*} object
  */
-function getTypeInfo(object) {
-  /** @type {TypeInfo} */
-  const info = {};
+function getObjectType(object) {
+  /** @type {ObjectType} */
+  const objectType = {};
   for (const [key, value] of Object.entries(object)) {
     if (Array.isArray(value)) {
-      info[key] = {
-        type: getTypeInfo(value[0]), // maybe good enough.
+      objectType[key] = {
+        type: getObjectType(value[0]), // maybe good enough.
         array: true,
       };
     } else if (typeof value === 'object') {
-      info[key] = { type: getTypeInfo(value) };
+      objectType[key] = { type: getObjectType(value) };
     } else if (typeof value === 'string') {
-      info[key] = { type: 'string' };
+      objectType[key] = { type: 'string' };
     } else if (typeof value === 'number') {
-      info[key] = { type: 'number' };
+      objectType[key] = { type: 'number' };
     } else if (typeof value === 'boolean') {
-      info[key] = { type: 'boolean' };
+      objectType[key] = { type: 'boolean' };
     } else {
       throw new Error('what was that? ' + value);
     }
   }
 
-  /** @type {TypeInfo} */
+  /** @type {ObjectType} */
   const ordered = {};
-  Object.keys(info).sort().forEach(function (key) {
-    ordered[key] = info[key];
+  Object.keys(objectType).sort().forEach(function (key) {
+    ordered[key] = objectType[key];
   });
 
   return ordered;
@@ -61,56 +61,56 @@ function getTypeInfo(object) {
 
 /**
  * Assume no object properties
- * @param {TypeInfo[]} typeInfos
- * @return {Type}
+ * @param {ObjectType[]} objectTypes
+ * @return {Interface}
  */
-function findCommonType(typeInfos) {
-  /** @type {TypeInfo} */
-  const commonInfo = {};
+function findCommonInterface(objectTypes) {
+  /** @type {ObjectType} */
+  const common = {};
   const processed = new Set();
 
-  for (const info of typeInfos) {
-    for (const [key, typeDef] of Object.entries(info)) {
+  for (const objectType of objectTypes) {
+    for (const [key, typeDef] of Object.entries(objectType)) {
       if (processed.has(key) || typeof typeDef.type === 'object') continue;
       processed.add(key);
 
-      if (typeInfos.every(info => key in info)) commonInfo[key] = typeDef;
+      if (objectTypes.every(type => key in type)) common[key] = typeDef;
     }
   }
 
   return {
-    typeId: 'Base',
-    info: commonInfo,
+    id: 'Base',
+    objectType: common,
   };
 }
 
-/** @type {Type[]} */
-const types = [];
-for (const [typeId, sampleEvent] of traceEventTypes.entries()) {
-  const info = getTypeInfo(sampleEvent);
-  types.push({
-    typeId,
-    info,
+/** @type {Interface[]} */
+const interfaces = [];
+for (const [id, sampleEvent] of traceEventTypes.entries()) {
+  const objectType = getObjectType(sampleEvent);
+  interfaces.push({
+    id,
+    objectType,
   });
-  console.log(typeId, JSON.stringify(info, null, 2));
+  console.log(id, JSON.stringify(objectType, null, 2));
 
   // console.log(JSON.stringify(sampleEvent));
 }
-types.sort((a, b) => a.typeId.localeCompare(b.typeId));
+interfaces.sort((a, b) => a.id.localeCompare(b.id));
 
-const baseType = findCommonType(types.map(t => t.info));
+const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
 
-for (const type of types) {
+for (const interface of interfaces) {
   // TODO remove base props
-  type.parent = baseType;
+  interface.parent = baseInterface;
 }
 
-console.log('baseType', baseType);
+console.log('baseInterface', baseInterface);
 
 /**
- * @param {Type[]} types 
+ * @param {Interface[]} interfaces
  */
-function print(types) {
+function print(interfaces) {
   const debugPrint = process.env.DEBUG_PRINT === '1';
   let output = '';
   let indentation = 0;
@@ -126,35 +126,35 @@ function print(types) {
 
   /**
    * @param {string} key
-   * @param {TypeDef} typeDef
+   * @param {Type} type
    */
-  function printProperty(key, typeDef) {
-    if (debugPrint) console.log('printProperty', indentation, key, typeDef);
-    if (typeDef.type && typeof typeDef.type === 'object') {
-      // @ts-ignore - it's a TypeInfo
-      return indent(`${key}: ${printObject(typeDef.type)};`);
+  function printProperty(key, type) {
+    if (debugPrint) console.log('printProperty', indentation, key, type);
+    if (type.type && typeof type.type === 'object') {
+      // @ts-ignore - it's an ObjectType
+      return indent(`${key}: ${printObject(type.type)};`);
     } else {
-      return indent(`${key}: ${typeDef.type};`);
+      return indent(`${key}: ${type.type};`);
     }
   }
 
   /**
-   * @param {TypeInfo} info 
+   * @param {ObjectType} objectType 
    */
-  function printObject(info) {
-    if (debugPrint) console.log('printObject', indentation, info);
+  function printObject(objectType) {
+    if (debugPrint) console.log('printObject', indentation, objectType);
     return I(() => {
-      return `{\n${Object.entries(info).map(([key, type]) => {
+      return `{\n${Object.entries(objectType).map(([key, type]) => {
         return printProperty(key, type);
       }).join('\n')}\n}`;
     });
   }
 
   /**
-   * @param {Type} type 
+   * @param {Interface} interface 
    */
-  function printInterface(type) {
-    return `interface ${type.typeId}${type.parent ? ' extends ' + type.parent.typeId : ''} ${printObject(type.info)}`;
+  function printInterface(interface) {
+    return `interface ${interface.id}${interface.parent ? ' extends ' + interface.parent.id : ''} ${printObject(interface.objectType)}`;
   }
 
   /**
@@ -167,12 +167,12 @@ function print(types) {
     return result;
   }
 
-  for (const type of types) {
-    output += printInterface(type) + "\n";
+  for (const interfac of interfaces) {
+    output += printInterface(interfac) + "\n";
   }
 
   return output;
 }
 
-const result = print([baseType, ...types]);
+const result = print([baseInterface, ...interfaces]);
 console.log(result);
