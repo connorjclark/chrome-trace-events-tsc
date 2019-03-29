@@ -143,6 +143,7 @@ namespace _TraceEvent {
     XHRReadyStateChange_X;
 
   interface Base {
+    cat: string;
     pid: number;
     tid: number;
     ts: number;
@@ -158,7 +159,6 @@ namespace _TraceEvent {
         state: string;
       };
     };
-    cat: 'blink.animations,devtools.timeline,benchmark,rail';
     id: string;
     name: 'Animation';
     ph: 'b';
@@ -171,7 +171,6 @@ namespace _TraceEvent {
         state: string;
       };
     };
-    cat: 'blink.animations,devtools.timeline,benchmark,rail';
     id: string;
     name: 'Animation';
     ph: 'e';
@@ -184,7 +183,6 @@ namespace _TraceEvent {
         state: string;
       };
     };
-    cat: 'blink.animations,devtools.timeline,benchmark,rail';
     id: string;
     name: 'Animation';
     ph: 'n';
@@ -203,7 +201,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'CommitLoad';
     ph: 'X';
@@ -215,7 +212,6 @@ namespace _TraceEvent {
     args: {
       layerTreeId: number;
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'CompositeLayers';
     ph: 'B';
     tts: number;
@@ -225,7 +221,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'CompositeLayers';
     ph: 'E';
     tts: number;
@@ -235,7 +230,6 @@ namespace _TraceEvent {
     args: {
       IsMainFrame: boolean;
     };
-    cat: 'v8';
     dur: number;
     name: 'ContextCreatedNotification';
     ph: 'X';
@@ -247,7 +241,6 @@ namespace _TraceEvent {
     args: {
       imageType: string;
     };
-    cat: 'disabled-by-default-devtools.timeline';
     dur: number;
     name: 'Decode Image';
     ph: 'X';
@@ -259,7 +252,6 @@ namespace _TraceEvent {
     args: {
       LazyPixelRef: number;
     };
-    cat: 'disabled-by-default-devtools.timeline';
     dur: number;
     name: 'Decode LazyPixelRef';
     ph: 'X';
@@ -271,7 +263,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing,rail';
     name: 'domComplete';
     ph: 'R';
     tts: number;
@@ -281,7 +272,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'DOM Content Loaded';
     ph: 'b';
@@ -291,7 +281,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'DOM Content Loaded';
     ph: 'e';
@@ -301,7 +290,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing,rail';
     name: 'domContentLoadedEventEnd';
     ph: 'R';
     tts: number;
@@ -311,7 +299,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing,rail';
     name: 'domContentLoadedEventStart';
     ph: 'R';
     tts: number;
@@ -321,7 +308,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing,rail';
     name: 'domInteractive';
     ph: 'R';
     tts: number;
@@ -331,7 +317,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing,rail';
     name: 'domLoading';
     ph: 'R';
     tts: number;
@@ -341,7 +326,6 @@ namespace _TraceEvent {
     args: {
       LazyPixelRef: number;
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'Draw LazyPixelRef';
     ph: 'I';
     s: string;
@@ -352,7 +336,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'End of Trace';
     ph: 'b';
@@ -362,7 +345,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'End of Trace';
     ph: 'e';
@@ -384,7 +366,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'EvaluateScript';
     ph: 'X';
@@ -405,7 +386,6 @@ namespace _TraceEvent {
         type: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'EventDispatch';
     ph: 'X';
@@ -417,7 +397,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'fetchStart';
     ph: 'R';
     tts: number;
@@ -430,7 +409,6 @@ namespace _TraceEvent {
         id: number;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'FireAnimationFrame';
     ph: 'X';
@@ -442,7 +420,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'First Contentful Paint';
     ph: 'b';
@@ -452,7 +429,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'First Contentful Paint';
     ph: 'e';
@@ -465,7 +441,6 @@ namespace _TraceEvent {
       };
       frame: string;
     };
-    cat: 'loading,rail,devtools.timeline';
     name: 'firstContentfulPaint';
     ph: 'R';
     tts: number;
@@ -478,7 +453,6 @@ namespace _TraceEvent {
       };
       frame: string;
     };
-    cat: 'loading,rail,devtools.timeline';
     name: 'firstImagePaint';
     ph: 'R';
     tts: number;
@@ -488,7 +462,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing,rail';
     name: 'firstLayout';
     ph: 'R';
     tts: number;
@@ -498,7 +471,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'First Meaningful Paint';
     ph: 'b';
@@ -508,7 +480,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'First Meaningful Paint';
     ph: 'e';
@@ -522,7 +493,6 @@ namespace _TraceEvent {
       };
       frame: string;
     };
-    cat: 'loading,rail,devtools.timeline';
     name: 'firstMeaningfulPaint';
     ph: 'R';
     tts: number;
@@ -535,7 +505,6 @@ namespace _TraceEvent {
       };
       frame: string;
     };
-    cat: 'loading,rail,devtools.timeline';
     name: 'firstMeaningfulPaintCandidate';
     ph: 'R';
     tts: number;
@@ -548,7 +517,6 @@ namespace _TraceEvent {
       };
       frame: string;
     };
-    cat: 'loading,rail,devtools.timeline';
     name: 'firstPaint';
     ph: 'R';
     tts: number;
@@ -558,7 +526,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'First Visual Change';
     ph: 'b';
@@ -568,7 +535,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'First Visual Change';
     ph: 'e';
@@ -584,7 +550,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'FrameCommittedInBrowser';
     ph: 'I';
     s: string;
@@ -597,7 +562,6 @@ namespace _TraceEvent {
         frame: string;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'FrameDeletedInBrowser';
     ph: 'I';
     s: string;
@@ -608,7 +572,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'devtools.timeline';
     name: 'FrameStartedLoading';
     ph: 'I';
     s: string;
@@ -626,7 +589,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'FunctionCall';
     ph: 'B';
     tts: number;
@@ -636,7 +598,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'devtools.timeline';
     name: 'FunctionCall';
     ph: 'E';
     tts: number;
@@ -649,7 +610,6 @@ namespace _TraceEvent {
         used_bytes: number;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     dur: number;
     name: 'GPUTask';
     ph: 'X';
@@ -661,7 +621,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink,devtools.timeline';
     name: 'HitTest';
     ph: 'B';
     tts: number;
@@ -677,7 +636,6 @@ namespace _TraceEvent {
         y: number;
       };
     };
-    cat: 'blink,devtools.timeline';
     name: 'HitTest';
     ph: 'E';
     tts: number;
@@ -687,7 +645,6 @@ namespace _TraceEvent {
     args: {
       pixelRefId: number;
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'ImageDecodeTask';
     ph: 'B';
     tts: number;
@@ -697,7 +654,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'ImageDecodeTask';
     ph: 'E';
     tts: number;
@@ -707,7 +663,6 @@ namespace _TraceEvent {
     args: {
       IsMainFrame: boolean;
     };
-    cat: 'v8';
     dur: number;
     name: 'InstallConditionalFeatures';
     ph: 'X';
@@ -728,7 +683,6 @@ namespace _TraceEvent {
         }[];
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'InvalidateLayout';
     ph: 'I';
     s: string;
@@ -739,7 +693,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'disabled-by-default-devtools.timeline';
     id: string;
     name: 'layerId';
     ph: 'D';
@@ -750,7 +703,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'disabled-by-default-devtools.timeline';
     id: string;
     name: 'layerId';
     ph: 'N';
@@ -773,7 +725,6 @@ namespace _TraceEvent {
         totalObjects: number;
       };
     };
-    cat: 'devtools.timeline';
     name: 'Layout';
     ph: 'B';
     tts: number;
@@ -788,7 +739,6 @@ namespace _TraceEvent {
         rootNode: number;
       };
     };
-    cat: 'devtools.timeline';
     name: 'Layout';
     ph: 'E';
     tts: number;
@@ -798,7 +748,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'loadEventEnd';
     ph: 'R';
     tts: number;
@@ -808,7 +757,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'loadEventStart';
     ph: 'R';
     tts: number;
@@ -818,7 +766,6 @@ namespace _TraceEvent {
     args: {
       IsMainFrame: boolean;
     };
-    cat: 'v8';
     dur: number;
     name: 'LocalWindowProxy::CreateContext';
     ph: 'X';
@@ -830,7 +777,6 @@ namespace _TraceEvent {
     args: {
       IsMainFrame: boolean;
     };
-    cat: 'v8';
     dur: number;
     name: 'LocalWindowProxy::Initialize';
     ph: 'X';
@@ -842,7 +788,6 @@ namespace _TraceEvent {
     args: {
       IsMainFrame: boolean;
     };
-    cat: 'v8';
     dur: number;
     name: 'LocalWindowProxy::SetupWindowPrototypeChain';
     ph: 'X';
@@ -854,7 +799,6 @@ namespace _TraceEvent {
     args: {
       IsMainFrame: boolean;
     };
-    cat: 'v8';
     dur: number;
     name: 'LocalWindowProxy::UpdateDocumentProperty';
     ph: 'X';
@@ -867,7 +811,6 @@ namespace _TraceEvent {
       type: string;
       usedHeapSizeBefore: number;
     };
-    cat: 'devtools.timeline,v8';
     name: 'MajorGC';
     ph: 'B';
     tts: number;
@@ -877,7 +820,6 @@ namespace _TraceEvent {
     args: {
       usedHeapSizeAfter: number;
     };
-    cat: 'devtools.timeline,v8';
     name: 'MajorGC';
     ph: 'E';
     tts: number;
@@ -891,7 +833,6 @@ namespace _TraceEvent {
         page: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'MarkDOMContent';
     ph: 'I';
     s: string;
@@ -906,7 +847,6 @@ namespace _TraceEvent {
         page: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'MarkLoad';
     ph: 'I';
     s: string;
@@ -917,7 +857,6 @@ namespace _TraceEvent {
     args: {
       usedHeapSizeBefore: number;
     };
-    cat: 'devtools.timeline,v8';
     name: 'MinorGC';
     ph: 'B';
     tts: number;
@@ -927,7 +866,6 @@ namespace _TraceEvent {
     args: {
       usedHeapSizeAfter: number;
     };
-    cat: 'devtools.timeline,v8';
     name: 'MinorGC';
     ph: 'E';
     tts: number;
@@ -942,7 +880,6 @@ namespace _TraceEvent {
       };
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'navigationStart';
     ph: 'R';
     tts: number;
@@ -952,7 +889,6 @@ namespace _TraceEvent {
     args: {
       number: number;
     };
-    cat: '__metadata';
     name: 'num_cpus';
     ph: 'M';
   }
@@ -961,7 +897,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'On Load';
     ph: 'b';
@@ -971,7 +906,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'On Load';
     ph: 'e';
@@ -988,7 +922,6 @@ namespace _TraceEvent {
         nodeId: number;
       };
     };
-    cat: 'devtools.timeline,rail';
     dur: number;
     name: 'Paint';
     ph: 'X';
@@ -1009,7 +942,6 @@ namespace _TraceEvent {
         y: number;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     dur: number;
     name: 'PaintImage';
     ph: 'X';
@@ -1023,7 +955,6 @@ namespace _TraceEvent {
         styleSheetUrl: string;
       };
     };
-    cat: 'blink,devtools.timeline';
     dur: number;
     name: 'ParseAuthorStyleSheet';
     ph: 'X';
@@ -1046,7 +977,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'ParseHTML';
     ph: 'B';
     tts: number;
@@ -1058,7 +988,6 @@ namespace _TraceEvent {
         endLine: number;
       };
     };
-    cat: 'devtools.timeline';
     name: 'ParseHTML';
     ph: 'E';
     tts: number;
@@ -1070,7 +999,6 @@ namespace _TraceEvent {
         id: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'PlatformResourceSendRequest';
     ph: 'B';
     tts: number;
@@ -1080,7 +1008,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'devtools.timeline';
     name: 'PlatformResourceSendRequest';
     ph: 'E';
     tts: number;
@@ -1090,7 +1017,6 @@ namespace _TraceEvent {
     args: {
       labels: string;
     };
-    cat: '__metadata';
     name: 'process_labels';
     ph: 'M';
   }
@@ -1099,7 +1025,6 @@ namespace _TraceEvent {
     args: {
       name: string;
     };
-    cat: '__metadata';
     name: 'process_name';
     ph: 'M';
   }
@@ -1108,7 +1033,6 @@ namespace _TraceEvent {
     args: {
       sort_index: number;
     };
-    cat: '__metadata';
     name: 'process_sort_index';
     ph: 'M';
   }
@@ -1117,7 +1041,6 @@ namespace _TraceEvent {
     args: {
       uptime: number;
     };
-    cat: '__metadata';
     name: 'process_uptime_seconds';
     ph: 'M';
   }
@@ -1133,7 +1056,6 @@ namespace _TraceEvent {
         tileResolution: string;
       };
     };
-    cat: 'cc,disabled-by-default-devtools.timeline';
     name: 'RasterTask';
     ph: 'B';
     tts: number;
@@ -1143,7 +1065,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'cc,disabled-by-default-devtools.timeline';
     name: 'RasterTask';
     ph: 'E';
     tts: number;
@@ -1163,7 +1084,6 @@ namespace _TraceEvent {
         }[];
       };
     };
-    cat: 'devtools.timeline';
     name: 'RequestAnimationFrame';
     ph: 'I';
     s: string;
@@ -1174,7 +1094,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     name: 'requestStart';
     ph: 'R';
     tts: number;
@@ -1187,7 +1106,6 @@ namespace _TraceEvent {
         requestId: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'ResourceChangePriority';
     ph: 'X';
@@ -1205,7 +1123,6 @@ namespace _TraceEvent {
         requestId: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'ResourceFinish';
     ph: 'I';
     s: string;
@@ -1220,7 +1137,6 @@ namespace _TraceEvent {
         requestId: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'ResourceReceivedData';
     ph: 'I';
     s: string;
@@ -1257,7 +1173,6 @@ namespace _TraceEvent {
         };
       };
     };
-    cat: 'devtools.timeline';
     name: 'ResourceReceiveResponse';
     ph: 'I';
     s: string;
@@ -1281,7 +1196,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     name: 'ResourceSendRequest';
     ph: 'I';
     s: string;
@@ -1292,7 +1206,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'responseEnd';
     ph: 'R';
     tts: number;
@@ -1302,7 +1215,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8.execute';
     name: 'RunMicrotasks';
     ph: 'B';
     tts: number;
@@ -1312,7 +1224,6 @@ namespace _TraceEvent {
     args: {
       microtask_count: number;
     };
-    cat: 'v8.execute';
     name: 'RunMicrotasks';
     ph: 'E';
     tts: number;
@@ -1322,7 +1233,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'disabled-by-default-devtools.timeline';
     dur: number;
     name: 'RunTask';
     ph: 'X';
@@ -1334,7 +1244,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'ScheduledAction::execute';
     ph: 'X';
@@ -1355,7 +1264,6 @@ namespace _TraceEvent {
         }[];
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'ScheduleStyleRecalculation';
     ph: 'I';
     s: string;
@@ -1366,7 +1274,6 @@ namespace _TraceEvent {
     args: {
       snapshot: string;
     };
-    cat: 'disabled-by-default-devtools.screenshot';
     id: string;
     name: 'Screenshot';
     ph: 'O';
@@ -1380,7 +1287,6 @@ namespace _TraceEvent {
         layerTreeId: number;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'SetLayerTreeId';
     ph: 'I';
     s: string;
@@ -1391,7 +1297,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'Speed Index';
     ph: 'b';
@@ -1401,7 +1306,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'Speed Index';
     ph: 'e';
@@ -1411,7 +1315,6 @@ namespace _TraceEvent {
     args: {
       name: string;
     };
-    cat: '__metadata';
     name: 'thread_name';
     ph: 'M';
   }
@@ -1420,7 +1323,6 @@ namespace _TraceEvent {
     args: {
       sort_index: number;
     };
-    cat: '__metadata';
     name: 'thread_sort_index';
     ph: 'M';
   }
@@ -1432,7 +1334,6 @@ namespace _TraceEvent {
         timerId: number;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'TimerFire';
     ph: 'X';
@@ -1456,7 +1357,6 @@ namespace _TraceEvent {
         timerId: number;
       };
     };
-    cat: 'devtools.timeline';
     name: 'TimerInstall';
     ph: 'I';
     s: string;
@@ -1477,7 +1377,6 @@ namespace _TraceEvent {
         timerId: number;
       };
     };
-    cat: 'devtools.timeline';
     name: 'TimerRemove';
     ph: 'I';
     s: string;
@@ -1493,7 +1392,6 @@ namespace _TraceEvent {
         workerThreadId: number;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'TracingSessionIdForWorker';
     ph: 'I';
     s: string;
@@ -1513,7 +1411,6 @@ namespace _TraceEvent {
         persistentIds: boolean;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'TracingStartedInBrowser';
     ph: 'I';
     s: string;
@@ -1524,7 +1421,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'unloadEventEnd';
     ph: 'R';
     tts: number;
@@ -1534,7 +1430,6 @@ namespace _TraceEvent {
     args: {
       frame: string;
     };
-    cat: 'blink.user_timing';
     name: 'unloadEventStart';
     ph: 'R';
     tts: number;
@@ -1549,7 +1444,6 @@ namespace _TraceEvent {
         nodes: number;
       };
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'UpdateCounters';
     ph: 'I';
     s: string;
@@ -1561,7 +1455,6 @@ namespace _TraceEvent {
       layerId: number;
       layerTreeId: number;
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'UpdateLayer';
     ph: 'B';
     tts: number;
@@ -1571,7 +1464,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'disabled-by-default-devtools.timeline';
     name: 'UpdateLayer';
     ph: 'E';
     tts: number;
@@ -1583,7 +1475,6 @@ namespace _TraceEvent {
         frame: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'UpdateLayerTree';
     ph: 'X';
@@ -1604,7 +1495,6 @@ namespace _TraceEvent {
         }[];
       };
     };
-    cat: 'blink,devtools.timeline';
     name: 'UpdateLayoutTree';
     ph: 'B';
     tts: number;
@@ -1614,7 +1504,6 @@ namespace _TraceEvent {
     args: {
       elementCount: number;
     };
-    cat: 'blink,devtools.timeline';
     name: 'UpdateLayoutTree';
     ph: 'E';
     tts: number;
@@ -1624,7 +1513,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'v8.callFunction';
     ph: 'X';
@@ -1636,7 +1524,6 @@ namespace _TraceEvent {
     args: {
       fileName: string;
     };
-    cat: 'v8,devtools.timeline';
     name: 'v8.compile';
     ph: 'B';
     tts: number;
@@ -1656,7 +1543,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'v8,devtools.timeline';
     name: 'v8.compile';
     ph: 'E';
     tts: number;
@@ -1666,7 +1552,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'v8.compile';
     ph: 'X';
@@ -1678,7 +1563,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'V8.DeoptimizeCode';
     ph: 'X';
@@ -1690,7 +1574,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     name: 'V8.Execute';
     ph: 'B';
     tts: number;
@@ -1702,7 +1585,6 @@ namespace _TraceEvent {
       
       };
     };
-    cat: 'v8';
     name: 'V8.Execute';
     ph: 'E';
     tts: number;
@@ -1712,7 +1594,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'V8.GCCompactor';
     ph: 'X';
@@ -1724,7 +1605,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'V8.GCIdleNotification';
     ph: 'X';
@@ -1736,7 +1616,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'V8.GCPhantomHandleProcessingCallback';
     ph: 'X';
@@ -1748,7 +1627,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'V8.GCScavenger';
     ph: 'X';
@@ -1760,7 +1638,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8.execute';
     dur: number;
     name: 'V8.HandleInterrupts';
     ph: 'X';
@@ -1772,7 +1649,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8.execute';
     dur: number;
     name: 'V8.InvokeApiInterruptCallbacks';
     ph: 'X';
@@ -1784,7 +1660,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     name: 'V8.NewContext';
     ph: 'B';
     tts: number;
@@ -1796,7 +1671,6 @@ namespace _TraceEvent {
       
       };
     };
-    cat: 'v8';
     name: 'V8.NewContext';
     ph: 'E';
     tts: number;
@@ -1806,7 +1680,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     dur: number;
     name: 'v8.newInstance';
     ph: 'X';
@@ -1822,7 +1695,6 @@ namespace _TraceEvent {
       };
     };
     bind_id: string;
-    cat: 'v8,devtools.timeline,disabled-by-default-v8.compile';
     dur: number;
     flow_in: boolean;
     flow_out: boolean;
@@ -1837,7 +1709,6 @@ namespace _TraceEvent {
     args: {
       fileName?: string;
     };
-    cat: 'v8';
     dur: number;
     name: 'v8.run';
     ph: 'X';
@@ -1849,7 +1720,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     name: 'V8.RunMicrotasks';
     ph: 'B';
     tts: number;
@@ -1861,7 +1731,6 @@ namespace _TraceEvent {
       
       };
     };
-    cat: 'v8';
     name: 'V8.RunMicrotasks';
     ph: 'E';
     tts: number;
@@ -1871,7 +1740,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     name: 'V8.ScriptCompiler';
     ph: 'B';
     tts: number;
@@ -1883,7 +1751,6 @@ namespace _TraceEvent {
       
       };
     };
-    cat: 'v8';
     name: 'V8.ScriptCompiler';
     ph: 'E';
     tts: number;
@@ -1893,7 +1760,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8.execute';
     dur: number;
     name: 'V8.StackGuard';
     ph: 'X';
@@ -1905,7 +1771,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'v8';
     name: 'V8.Task';
     ph: 'B';
     tts: number;
@@ -1917,7 +1782,6 @@ namespace _TraceEvent {
       
       };
     };
-    cat: 'v8';
     name: 'V8.Task';
     ph: 'E';
     tts: number;
@@ -1927,7 +1791,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'Visually Complete 100%';
     ph: 'b';
@@ -1937,7 +1800,6 @@ namespace _TraceEvent {
     args: {
     
     };
-    cat: 'blink.user_timing';
     id: string;
     name: 'Visually Complete 100%';
     ph: 'e';
@@ -1950,7 +1812,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'XHRLoad';
     ph: 'X';
@@ -1973,7 +1834,6 @@ namespace _TraceEvent {
         url: string;
       };
     };
-    cat: 'devtools.timeline';
     dur: number;
     name: 'XHRReadyStateChange';
     ph: 'X';

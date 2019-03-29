@@ -121,7 +121,7 @@ for (const [id, events] of eventsByTypeId.entries()) {
 
   objectType.name.type = { literal: `'${events[0].name}'` };
   objectType.ph.type = { literal: `'${events[0].ph}'` };
-  objectType.cat.type = { literal: `'${events[0].cat}'` };
+  // objectType.cat.type = { literal: `'${events[0].cat}'` };
 
   interfaces.push({
     id,
