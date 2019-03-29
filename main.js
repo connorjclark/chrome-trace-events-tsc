@@ -1,4 +1,5 @@
 const fs = require('fs');
+const assert = require('assert');
 
 const traceLog = JSON.parse(fs.readFileSync('trace.json', 'utf-8'));
 
@@ -95,7 +96,7 @@ function findCommonInterface(objectTypes) {
 /**
  * Simple object check.
  * @param {*} item
- * @returns {boolean}
+ * @returns {r is Object}
  */
 function isObject(item) {
   return (item && typeof item === 'object' && !Array.isArray(item));
@@ -265,21 +266,22 @@ for (const interface of interfaces) {
   }
 }
 
-const traceEventTypeUnion = {
-  name: 'TraceEvent',
-  typeUnion: true,
-  interfaces,
-};
-
-const namespace = {
-  name: '_TraceEvent',
-  interfaces: [traceEventTypeUnion, baseInterface, ...interfaces],
-};
+/** @typedef {'Namespace' | 'Interface' | 'Object' | 'Property' | 'Type' | 'TypeUnion'} NodeType */
+/** @typedef {{type: NodeType, data: *, children: Node[]}} Node */
 
 /**
- * @param {Namespace} namespace
+ * @param {NodeType} type
+ * @param {*} data
+ * @return {Node}
  */
-function print(namespace) {
+function makeNode(type, data) {
+  return { type, data, children: [] };
+}
+
+/**
+ * @param {Node} rootNode
+ */
+function print(rootNode) {
   const debugPrint = process.env.DEBUG_PRINT === '1';
   let indentation = 0;
 
@@ -304,62 +306,77 @@ function print(namespace) {
   }
 
   /**
-   * @param {string} key
-   * @param {Type} type
+   * @param {Node} node
    */
-  function printProperty(key, type) {
-    if (debugPrint) console.log('printProperty', indentation, key, type);
-    let rhs = '';
-    if (type.type && typeof type.type === 'object') {
-      if ('literal' in type.type) {
-        rhs = type.type.literal;
-      } else {
-        // @ts-ignore - it's an ObjectType
-        rhs = printObject(type.type);
-      }
-    } else if (type.type && typeof type.type === 'string') {
-      rhs = type.type;
-    }
+  function printType(node) {
+    assert(node.type === 'Type');
+    if (debugPrint) console.log('printType', indentation, node);
 
-    return indent(`${printSafeKey(key)}${type.optional ? '?' : ''}: ${rhs}${type.array ? '[]' : ''};`);
+    if (node.children.length === 1) {
+      return printObject(node.children[0]);
+    } else {
+      return node.data.type;
+    }
   }
 
   /**
-   * @param {ObjectType} objectType 
+   * @param {Node} node
    */
-  function printObject(objectType) {
-    if (debugPrint) console.log('printObject', indentation, objectType);
+  function printProperty(node) {
+    assert(node.type === 'Property');
+    if (debugPrint) console.log('printProperty', indentation, node.data);
+
+    const rhs = printType(node.children[0]);
+    const { optional, array } = node.children[0].data;
+    return indent(`${printSafeKey(node.data.key)}${optional ? '?' : ''}: ${rhs}${array ? '[]' : ''};`);
+  }
+
+  /**
+   * @param {Node} node 
+   */
+  function printObject(node) {
+    assert(node.type === 'Object');
+    if (debugPrint) console.log('printObject', indentation, node);
+
     return I(() => {
-      return `{\n${Object.entries(objectType).map(([key, type]) => {
-        return printProperty(key, type);
-      }).join('\n')}\n}`;
+      return `{\n${node.children.map(printProperty).join('\n')}\n}`;
     });
   }
 
   /**
-   * @param {Interface} interface 
+   * @param {Node} node
    */
-  function printInterface(interface) {
-    if (interface.typeUnion) {
-      return printTypeUnion(interface.name, interface.interfaces);
-    } else {
-      return indent(`interface ${interface.id}${interface.parent ? ' extends ' + interface.parent.id : ''} ${printObject(interface.objectType)}`);
+  function printInterface(node) {
+    assert(node.type === 'Interface');
+    return indent(`interface ${node.data.id}${node.data.parentId ? ' extends ' + node.data.parentId : ''} ${printObject(node.children[0])}`);
+  }
+
+  /**
+   * @param {Node} node 
+   */
+  function printTypeUnion(node) {
+    assert(node.type === 'TypeUnion');
+    return indent(`type ${node.data.name} = \n${node.data.typeIds.map(id => '  ' + id).join(' |\n')};`);
+  }
+
+  /**
+   * @param {Node} node
+   */
+  function printNamespace(node) {
+    assert(node.type === 'Namespace');
+    return I(() => `namespace ${node.data.name} {\n${node.children.map(printNode).join('\n\n')}\n}`);
+  }
+
+  /**
+   * @param {Node} node
+   */
+  function printNode(node) {
+    switch (node.type) {
+      case 'Interface': return printInterface(node);
+      case 'Namespace': return printNamespace(node);
+      case 'Type': return printType(node);
+      case 'TypeUnion': return printTypeUnion(node);
     }
-  }
-
-  /**
-   * @param {string} name 
-   * @param {Interface[]} interfaces 
-   */
-  function printTypeUnion(name, interfaces) {
-    return indent(`type ${name} = \n${interfaces.map(i => '  ' + i.id).join(' |\n')};`);
-  }
-
-  /**
-   * @param {Namespace} namespace 
-   */
-  function printNamespace(namespace) {
-    return I(() => `namespace ${namespace.name} {\n${namespace.interfaces.map(printInterface).join('\n\n')}\n}`);
   }
 
   /**
@@ -372,8 +389,77 @@ function print(namespace) {
     return result;
   }
 
-  return printNamespace(namespace);
+  return printNode(rootNode);
 }
 
-const result = print(namespace);
+/**
+ * @param {Type} type
+ * @return {Node}
+ */
+function makeTypeNode(type) {
+  const literal = isObject(type.type) && 'literal' in type.type && type.type.literal;
+  const data = { array: type.array, optional: type.optional };
+
+  if (isObject(type.type) && !literal) {
+    return { type: 'Type', data, children: [makeObjectNode(type.type)] };
+  } else {
+    data.type = literal || type.type;
+    return { type: 'Type', data, children: [] };
+  }
+}
+
+/**
+ * @param {string} key
+ * @param {Type} type
+ * @return {Node}
+ */
+function makePropertyNode(key, type) {
+  return { type: 'Property', data: { key }, children: [makeTypeNode(type)] };
+}
+
+/**
+ * @param {ObjectType} objectType
+ * @return {Node}
+ */
+function makeObjectNode(objectType) {
+  const propertyNodes = [];
+
+  Object.entries(objectType).map(([key, type]) => {
+    propertyNodes.push(makePropertyNode(key, type));
+  });
+
+  return { type: 'Object', data: {}, children: propertyNodes };
+}
+
+/**
+ * @param {*} typeUnion
+ * @return {Node}
+ */
+function makeTypeUnionNode(typeUnion) {
+  const typeIds = typeUnion.types.map(t => t.id);
+  return { type: 'TypeUnion', data: { name: typeUnion.name, typeIds }, children: [] };
+}
+
+const namespace = {
+  name: '_TraceEvent',
+  interfaces: [baseInterface, ...interfaces],
+};
+const rootNode = makeNode('Namespace', { name: namespace.name });
+
+const traceEventTypeUnion = {
+  name: 'TraceEvent',
+  types: interfaces,
+};
+rootNode.children.push(makeTypeUnionNode(traceEventTypeUnion));
+
+for (const interface of namespace.interfaces) {
+  const interfaceNode = makeNode('Interface', {
+    id: interface.id,
+    parentId: interface.parent && interface.parent.id,
+  });
+  interfaceNode.children = [makeObjectNode(interface.objectType)];
+  rootNode.children.push(interfaceNode);
+}
+
+const result = print(rootNode);
 console.log(result);
