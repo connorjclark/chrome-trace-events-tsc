@@ -149,12 +149,13 @@ function combineObjects(objects) {
     }
   }
 
-  function hasPath(objectType, pathComponents) {
-    let cur = objectType;
+  function hasPath(object, pathComponents) {
+    let cur = object;
     for (let i = 0; i < pathComponents.length; i++) {
       const key = pathComponents[i];
       if (!cur || !(key in cur)) return false;
-      cur = cur[key].type;
+      cur = cur[key];
+      if (Array.isArray(cur)) cur = cur[0]; // skip into array
     }
     return true;
   }
@@ -174,17 +175,34 @@ function combineObjects(objects) {
     }
   }
 
+  /** @type {Map<string, number>} */
+  const pathCounts = new Map();
+
   for (const object of objects) {
     traverse(object, (path, value) => {
       const pathComponents = path.substring(1).split('.');
+
+      // Merge into the combined object.
       set(pathComponents, value);
 
+      // Just once for each path, count occurrences across all objects.
       if (!pathsProcessed.has(path)) {
         pathsProcessed.add(path);
-        const isOptional = !objects.every(o => hasPath(o, pathComponents));
-        if (isOptional) optionalPathComponents.push(pathComponents);
+        pathCounts.set(path, objects.filter(o => hasPath(o, pathComponents)).length);
       }
     });
+  }
+
+  // If a path has fewer occurrences than its parent, it's optional.
+  for (const path of pathCounts.keys()) {
+    const pathComponents = path.substring(1).split('.');
+
+    // Assume top level properties are required.
+    if (pathComponents.length === 1) continue;
+
+    const parentPath = '.' + pathComponents.slice(0, pathComponents.length - 1).join('.');
+    const isOptional = pathCounts.get(parentPath) > pathCounts.get(path);
+    if (isOptional) optionalPathComponents.push(pathComponents);
   }
 
   return {
