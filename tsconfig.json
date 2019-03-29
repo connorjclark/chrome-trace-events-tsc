@@ -1,0 +1,10 @@
+{
+    "files": [
+        "main.js"
+    ],
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "target": "ES2017"
+    }
+}
