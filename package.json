@@ -11,6 +11,6 @@
     "@types/node": "^11.12.0"
   },
   "scripts": {
-    "make": "node main.js > trace-events.d.ts"
+    "make": "node src/main.js > trace-events.d.ts"
   }
 }
