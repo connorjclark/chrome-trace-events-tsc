@@ -40,6 +40,7 @@ for (const event of traceLog.traceEvents) {
 
 /**
  * @param {*} object
+ * @return {Gen.ObjectType}
  */
 function getObjectType(object) {
   /** @type {Gen.ObjectType} */
@@ -138,6 +139,51 @@ for (const [id, events] of eventsByTypeId.entries()) {
 
   // console.log(JSON.stringify(sampleEvent));
 }
+
+// WIP
+// Dedupe common object types.
+// {
+//   /**
+//    * @callback TraverseCallback
+//    * @param {string} key
+//    * @param {Gen.ObjectType} objectType
+//    */
+//   /**
+//    * @param {Gen.ObjectType} objectType
+//    * @param {TraverseCallback} fn
+//    */
+//   function traverse(objectType, fn) {
+//     for (const [key, value] of Object.entries(objectType)) {
+//       if (utils.isObject(value.type) && !('literal' in value.type)) {
+//         fn(key, objectType);
+//         traverse(value.type, fn);
+//       }
+//     }
+//   }
+
+//   const objectTypeCounts = new Map();
+//   const objectTypeKey = new Map();
+//   for (const _interface of interfaces) {
+//     traverse(_interface.objectType, (key, objectType) => {
+//       // Can't make a useful name out of that.
+//       if (key === 'data') return;
+
+//       const data = JSON.stringify(objectType);
+//       const cur = objectTypeCounts.get(data) || 0;
+//       objectTypeCounts.set(data, cur + 1);
+
+//       if (!objectTypeKey.has(data)) objectTypeKey.set(data, key);
+//     });
+//   }
+//   for (const [objectTypeData, count] of objectTypeCounts) {
+//     if (count === 1) continue;
+
+//     const key = objectTypeKey.get(objectTypeData);
+//     // console.log(count, key, objectTypeData);
+//   }
+//   process.exit();
+// }
+
 interfaces.sort((a, b) => a.id.localeCompare(b.id));
 
 const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
