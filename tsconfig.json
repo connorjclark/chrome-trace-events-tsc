@@ -1,12 +1,13 @@
 {
   "include": [
-    "src/**/*.j",
+    "src/**/*.js",
     "types/**/*.d.ts",
   ],
   "compilerOptions": {
     "noEmit": true,
     "allowJs": true,
     "checkJs": true,
-    "target": "ES2017"
+    "target": "ES2017",
+    "strict": true,
   }
 }

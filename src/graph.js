@@ -30,6 +30,7 @@ function makePropertyNode(key, type) {
  * @return {Gen.Node}
  */
 function makeObjectNode(objectType) {
+  /** @type {Gen.Node[]} */
   const propertyNodes = [];
 
   Object.entries(objectType).map(([key, type]) => {
@@ -40,12 +41,37 @@ function makeObjectNode(objectType) {
 }
 
 /**
- * @param {*} typeUnion
+ * @param {Gen.TypeUnion} typeUnion
  * @return {Gen.Node}
  */
 function makeTypeUnionNode(typeUnion) {
-  const typeIds = typeUnion.types.map(t => t.id);
+  const typeIds = typeUnion.interfaces.map(i => i.id);
   return { type: 'TypeUnion', data: { name: typeUnion.name, typeIds }, children: [] };
+}
+
+/**
+ * @param {Gen.Interface} _interface
+ * @return {Gen.Node}
+ */
+function makeInterfaceNode(_interface) {
+  const data = {
+    id: _interface.id,
+    parentId: _interface.parent && _interface.parent.id,
+  };
+  const children = [makeObjectNode(_interface.objectType)];
+  return { type: 'Interface', data, children };
+}
+
+/**
+ * @param {Gen.Namespace} namespace
+ * @return {Gen.Node}
+ */
+function makeNamespaceNode(namespace) {
+  const children = [
+    ...namespace.namespaces.map(makeNamespaceNode),
+    ...namespace.interfaces.map(makeInterfaceNode),
+  ];
+  return { type: 'Namespace', data: { name: namespace.name }, children };
 }
 
 /**
@@ -58,6 +84,8 @@ function makeNode(type, data) {
 }
 
 module.exports = {
+  makeInterfaceNode,
+  makeNamespaceNode,
   makeNode,
   makeObjectNode,
   makePropertyNode,

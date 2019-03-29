@@ -130,35 +130,48 @@ interfaces.sort((a, b) => a.id.localeCompare(b.id));
 
 const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
 
-for (const interface of interfaces) {
-  interface.parent = baseInterface;
+for (const _interface of interfaces) {
+  _interface.parent = baseInterface;
 
   // Remove base props.
   for (const key of Object.keys(baseInterface.objectType)) {
-    delete interface.objectType[key];
+    delete _interface.objectType[key];
   }
 }
 
-const namespace = {
+/** @type {Gen.Namespace} */
+const topLevelNamespace = {
   name: '_TraceEvent',
-  interfaces: [baseInterface, ...interfaces],
+  interfaces: [],
+  namespaces: [],
 };
-const rootNode = graph.makeNode('Namespace', { name: namespace.name });
 
-const traceEventTypeUnion = {
-  name: 'TraceEvent',
-  types: interfaces,
+// Group some interfaces into their own namespace.
+/** @type {Gen.Namespace} */
+const v8Namespace = {
+  name: 'V8',
+  interfaces: [],
+  namespaces: [],
 };
-rootNode.children.push(graph.makeTypeUnionNode(traceEventTypeUnion));
-
-for (const interface of namespace.interfaces) {
-  const interfaceNode = graph.makeNode('Interface', {
-    id: interface.id,
-    parentId: interface.parent && interface.parent.id,
-  });
-  interfaceNode.children = [graph.makeObjectNode(interface.objectType)];
-  rootNode.children.push(interfaceNode);
+topLevelNamespace.namespaces.push(v8Namespace);
+for (const _interface of interfaces) {
+  // if (_interface.id.startsWith('V8')) {
+  //   v8Namespace.interfaces.push(_interface);
+  // } else {
+  //   topLevelNamespace.interfaces.push(_interface);
+  // }
+  topLevelNamespace.interfaces.push(_interface);
 }
 
+const rootNode = graph.makeNamespaceNode(topLevelNamespace);
+
+/** @type {Gen.TypeUnion} */
+const traceEventTypeUnion = {
+  name: 'TraceEvent',
+  interfaces,
+};
+rootNode.children.unshift(graph.makeTypeUnionNode(traceEventTypeUnion));
+rootNode.children.unshift(graph.makeInterfaceNode(baseInterface));
+
 const result = print(rootNode);
-console.log(result);
+console.log('export ' + result);

@@ -11,6 +11,7 @@ function print(rootNode) {
    * @param {string} code
    */
   function indent(code) {
+    if (indentation === 0) return code;
     return code.split('\n')
       .map(line => '  ' + line)
       .join('\n');
@@ -32,7 +33,7 @@ function print(rootNode) {
    */
   function printType(node) {
     assert(node.type === 'Type');
-    if (debugPrint) console.log('printType', indentation, node);
+    if (debugPrint) console.log('printType', node);
 
     if (node.children.length === 1) {
       return printObject(node.children[0]);
@@ -46,7 +47,7 @@ function print(rootNode) {
    */
   function printProperty(node) {
     assert(node.type === 'Property');
-    if (debugPrint) console.log('printProperty', indentation, node.data);
+    if (debugPrint) console.log('printProperty', node.data);
 
     const rhs = printType(node.children[0]);
     const { optional, array } = node.children[0].data;
@@ -58,7 +59,7 @@ function print(rootNode) {
    */
   function printObject(node) {
     assert(node.type === 'Object');
-    if (debugPrint) console.log('printObject', indentation, node);
+    if (debugPrint) console.log('printObject', node);
 
     return I(() => {
       return `{\n${node.children.map(printProperty).join('\n')}\n}`;
@@ -86,7 +87,7 @@ function print(rootNode) {
    */
   function printNamespace(node) {
     assert(node.type === 'Namespace');
-    return I(() => `namespace ${node.data.name} {\n${node.children.map(printNode).join('\n\n')}\n}`);
+    return indent(I(() => `namespace ${node.data.name} {\n${node.children.map(printNode).join('\n\n')}\n}`));
   }
 
   /**

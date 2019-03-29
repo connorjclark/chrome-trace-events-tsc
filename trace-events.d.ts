@@ -1,4 +1,11 @@
-namespace _TraceEvent {
+export namespace _TraceEvent {
+  interface Base {
+    cat: string;
+    pid: number;
+    tid: number;
+    ts: number;
+  }
+
   type TraceEvent = 
     Animation_b |
     Animation_e |
@@ -142,11 +149,8 @@ namespace _TraceEvent {
     XHRLoad_X |
     XHRReadyStateChange_X;
 
-  interface Base {
-    cat: string;
-    pid: number;
-    tid: number;
-    ts: number;
+  namespace V8 {
+  
   }
 
   interface Animation_b extends Base {

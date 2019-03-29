@@ -6,6 +6,11 @@ declare global {
       optional: boolean;
     }
 
+    export interface TypeUnion {
+      name: string;
+      interfaces: Interface[];
+    }
+
     export interface LiteralType {
       literal: string;
     }
@@ -21,6 +26,7 @@ declare global {
     export interface Namespace {
       name: string;
       interfaces: Interface[];
+      namespaces: Namespace[];
     }
 
     // Graph.
