@@ -1,7 +1,7 @@
 const assert = require('assert');
 
 /**
- * @param {Node} rootNode
+ * @param {Gen.Node} rootNode
  */
 function print(rootNode) {
   const debugPrint = process.env.DEBUG_PRINT === '1';
@@ -28,7 +28,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node
+   * @param {Gen.Node} node
    */
   function printType(node) {
     assert(node.type === 'Type');
@@ -42,7 +42,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node
+   * @param {Gen.Node} node
    */
   function printProperty(node) {
     assert(node.type === 'Property');
@@ -54,7 +54,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node 
+   * @param {Gen.Node} node 
    */
   function printObject(node) {
     assert(node.type === 'Object');
@@ -66,7 +66,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node
+   * @param {Gen.Node} node
    */
   function printInterface(node) {
     assert(node.type === 'Interface');
@@ -74,7 +74,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node 
+   * @param {Gen.Node} node 
    */
   function printTypeUnion(node) {
     assert(node.type === 'TypeUnion');
@@ -82,7 +82,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node
+   * @param {Gen.Node} node
    */
   function printNamespace(node) {
     assert(node.type === 'Namespace');
@@ -90,7 +90,7 @@ function print(rootNode) {
   }
 
   /**
-   * @param {Node} node
+   * @param {Gen.Node} node
    */
   function printNode(node) {
     switch (node.type) {

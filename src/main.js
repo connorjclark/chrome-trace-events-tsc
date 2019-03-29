@@ -36,7 +36,7 @@ for (const event of traceLog.traceEvents) {
  * @param {*} object
  */
 function getObjectType(object) {
-  /** @type {ObjectType} */
+  /** @type {Gen.ObjectType} */
   const objectType = {};
   for (const [key, value] of Object.entries(object)) {
     if (Array.isArray(value)) {
@@ -57,7 +57,7 @@ function getObjectType(object) {
     }
   }
 
-  /** @type {ObjectType} */
+  /** @type {Gen.ObjectType} */
   const ordered = {};
   Object.keys(objectType).sort().forEach(function (key) {
     ordered[key] = objectType[key];
@@ -68,11 +68,11 @@ function getObjectType(object) {
 
 /**
  * Assume no object properties
- * @param {ObjectType[]} objectTypes
- * @return {Interface}
+ * @param {Gen.ObjectType[]} objectTypes
+ * @return {Gen.Interface}
  */
 function findCommonInterface(objectTypes) {
-  /** @type {ObjectType} */
+  /** @type {Gen.ObjectType} */
   const common = {};
   const processed = new Set();
 
@@ -92,7 +92,7 @@ function findCommonInterface(objectTypes) {
 }
 
 /**
- * @param {ObjectType} objectType 
+ * @param {Gen.ObjectType} objectType 
  * @param {string[]} pathComponents 
  */
 function setOptional(objectType, pathComponents) {
@@ -104,7 +104,7 @@ function setOptional(objectType, pathComponents) {
   cur[pathComponents[pathComponents.length - 1]].optional = true;
 }
 
-/** @type {Interface[]} */
+/** @type {Gen.Interface[]} */
 const interfaces = [];
 for (const [id, events] of eventsByTypeId.entries()) {
   const { combined, optionalPathComponents } = utils.combineObjects(events);
