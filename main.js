@@ -2,26 +2,27 @@ const fs = require('fs');
 
 const traceLog = JSON.parse(fs.readFileSync('trace.json', 'utf-8'));
 
-const traceEventTypes = new Map();
+const eventsByTypeId = new Map();
 
 /**
  * @param {*} event 
  */
 function getId(event) {
+  // TODO add "data.type"?
   return event.name.replace(/\s/g, '') + '_' + event.ph;
 }
 
 for (const event of traceLog.traceEvents) {
   if (event.name !== 'EvaluateScript') continue;
-  if (!event.args.data || !event.args.data.stackTrace) continue;
-  const id = getId(event);
-  if (traceEventTypes.has(id)) continue;
+  // if (!event.args || !event.args.data || !event.args.data.stackTrace) continue;
 
-  traceEventTypes.set(id, event);
-  // console.log(id, event);
+  const id = getId(event);
+  if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
+  const events = eventsByTypeId.get(id);
+  events.push(event);
 }
 
-/** @typedef {{type: 'string' | 'number' | 'boolean' | Type | ObjectType | LiteralType, array?: boolean}} Type */
+/** @typedef {{type: 'string' | 'number' | 'boolean' | Type | ObjectType | LiteralType, array?: boolean, optional?: boolean}} Type */
 /** @typedef {{literal: *}} LiteralType */
 /** @typedef {Record<string, Type>} ObjectType */
 /** @typedef {{id: string, parent?: Interface, objectType: ObjectType}} Interface */
@@ -85,19 +86,145 @@ function findCommonInterface(objectTypes) {
   };
 }
 
+/**
+ * Simple object check.
+ * @param {*} item
+ * @returns {boolean}
+ */
+function isObject(item) {
+  return (item && typeof item === 'object' && !Array.isArray(item));
+}
+
+/**
+ * Deep merge two objects.
+ * @param {*} target
+ * @param {Array<*>} sources
+ */
+function mergeDeep(target, ...sources) {
+  if (!sources.length) return target;
+  const source = sources.shift();
+
+  if (isObject(target) && isObject(source)) {
+    for (const key in source) {
+      if (isObject(source[key])) {
+        if (!target[key]) Object.assign(target, { [key]: {} });
+        mergeDeep(target[key], source[key]);
+      } else {
+        Object.assign(target, { [key]: source[key] });
+      }
+    }
+  }
+
+  return mergeDeep(target, ...sources);
+}
+
+/**
+ * Combines properties found in all objects. Also return paths
+ * to properties only found in a subset of objects.
+ * @param {Array<*>} objects
+ * @return {{combined: *, optionalPathComponents: string[][]}}
+ */
+function combineObjects(objects) {
+  const combined = {};
+  const optionalPathComponents = [];
+
+  const pathsProcessed = new Set();
+
+  /**
+   * @param {*} object
+   */
+  function traverse(object, fn, path = '') {
+    if (typeof object !== 'object') return;
+
+    for (const [key, value] of Object.entries(object)) {
+      if (Array.isArray(value)) {
+        fn(path + '.' + key, value);
+        traverse(value[0], fn, path + '.' + key);
+      } else if (value && typeof value === 'object') {
+        fn(path + '.' + key, value);
+        traverse(value, fn, path + '.' + key);
+      } else {
+        fn(path + '.' + key, value);
+      }
+    }
+  }
+
+  function hasPath(objectType, pathComponents) {
+    let cur = objectType;
+    for (let i = 0; i < pathComponents.length; i++) {
+      const key = pathComponents[i];
+      if (!cur || !(key in cur)) return false;
+      cur = cur[key].type;
+    }
+    return true;
+  }
+
+  function set(pathComponents, value) {
+    let cur = combined;
+    for (let i = 0; i < pathComponents.length - 1; i++) {
+      const key = pathComponents[i];
+      cur = cur[key];
+    }
+    if (Array.isArray(value)) {
+      cur[pathComponents[pathComponents.length - 1]] = value;
+    } else if (value && typeof value === 'object') {
+      cur[pathComponents[pathComponents.length - 1]] = mergeDeep({}, cur[pathComponents[pathComponents.length - 1]], value);
+    } else {
+      cur[pathComponents[pathComponents.length - 1]] = value;
+    }
+  }
+
+  for (const object of objects) {
+    traverse(object, (path, value) => {
+      const pathComponents = path.substring(1).split('.');
+      set(pathComponents, value);
+
+      if (!pathsProcessed.has(path)) {
+        pathsProcessed.add(path);
+        const isOptional = !objects.every(o => hasPath(o, pathComponents));
+        if (isOptional) optionalPathComponents.push(pathComponents);
+      }
+    });
+  }
+
+  return {
+    combined,
+    optionalPathComponents,
+  };
+}
+
+/**
+ * @param {ObjectType} objectType 
+ * @param {string[]} pathComponents 
+ */
+function setOptional(objectType, pathComponents) {
+  let cur = objectType;
+  for (let i = 0; i < pathComponents.length - 1; i++) {
+    const key = pathComponents[i];
+    cur = cur[key].type;
+  }
+  cur[pathComponents[pathComponents.length - 1]].optional = true;
+}
+
 /** @type {Interface[]} */
 const interfaces = [];
-for (const [id, sampleEvent] of traceEventTypes.entries()) {
-  const objectType = getObjectType(sampleEvent);
+for (const [id, events] of eventsByTypeId.entries()) {
+  const { combined, optionalPathComponents } = combineObjects(events);
+  const objectType = getObjectType(combined);
+  // console.log(JSON.stringify(combined, null, 2))
 
-  objectType.name.type = { literal: `'${sampleEvent.name}'` };
-  objectType.ph.type = { literal: `'${sampleEvent.ph}'` };
+  for (const pathComponents of optionalPathComponents) {
+    setOptional(objectType, pathComponents);
+  }
+
+  objectType.name.type = { literal: `'${events[0].name}'` };
+  objectType.ph.type = { literal: `'${events[0].ph}'` };
+  objectType.cat.type = { literal: `'${events[0].cat}'` };
 
   interfaces.push({
     id,
     objectType,
   });
-  console.log(id, JSON.stringify(objectType, null, 2));
 
   // console.log(JSON.stringify(sampleEvent));
 }
@@ -147,7 +274,7 @@ function print(interfaces) {
       rhs = type.type;
     }
 
-    return indent(`${key}: ${rhs}${type.array ? '[]' : ''};`);
+    return indent(`${key}${type.optional ? '?' : ''}: ${rhs}${type.array ? '[]' : ''};`);
   }
 
   /**
