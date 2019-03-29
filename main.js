@@ -18,7 +18,7 @@ function getId(event) {
 }
 
 for (const event of traceLog.traceEvents) {
-  if (process.env.DEBUG_EVENT && event.name !== process.env.DEBUG_EVENT) continue;
+  if (process.env.DEBUG_EVENT && !event.name.match(process.env.DEBUG_EVENT)) continue;
 
   const id = getId(event);
   if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
@@ -264,9 +264,15 @@ for (const interface of interfaces) {
   }
 }
 
+const traceEventTypeUnion = {
+  name: 'TraceEvent',
+  typeUnion: true,
+  interfaces,
+};
+
 const namespace = {
   name: '_TraceEvent',
-  interfaces: [baseInterface, ...interfaces],
+  interfaces: [traceEventTypeUnion, baseInterface, ...interfaces],
 };
 
 /**
@@ -274,7 +280,6 @@ const namespace = {
  */
 function print(namespace) {
   const debugPrint = process.env.DEBUG_PRINT === '1';
-  let output = '';
   let indentation = 0;
 
   /**
@@ -323,7 +328,19 @@ function print(namespace) {
    * @param {Interface} interface 
    */
   function printInterface(interface) {
-    return indent(`interface ${interface.id}${interface.parent ? ' extends ' + interface.parent.id : ''} ${printObject(interface.objectType)}`);
+    if (interface.typeUnion) {
+      return printTypeUnion(interface.name, interface.interfaces);
+    } else {
+      return indent(`interface ${interface.id}${interface.parent ? ' extends ' + interface.parent.id : ''} ${printObject(interface.objectType)}`);
+    }
+  }
+
+  /**
+   * @param {string} name 
+   * @param {Interface[]} interfaces 
+   */
+  function printTypeUnion(name, interfaces) {
+    return indent(`type ${name} = \n${interfaces.map(i => '  ' + i.id).join(' |\n')};`);
   }
 
   /**
