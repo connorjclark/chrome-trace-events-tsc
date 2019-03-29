@@ -29,6 +29,7 @@ declare global {
     }
 
     export interface Namespace {
+      idPath: string[];
       name: string;
       interfaces: Interface[];
       namespaces: Namespace[];

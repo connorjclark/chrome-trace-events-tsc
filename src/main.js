@@ -152,6 +152,7 @@ for (const _interface of interfaces) {
 
 /** @type {Gen.Namespace} */
 const topLevelNamespace = {
+  idPath: ['_TraceEvent'],
   name: '_TraceEvent',
   interfaces: [],
   namespaces: [],
@@ -176,6 +177,7 @@ for (const _interface of interfaces) {
 
     const name = namespaceIdPath[namespaceIdPath.length - 1];
     const namespace = {
+      idPath: namespaceIdPath,
       name,
       interfaces: [],
       namespaces: [],
