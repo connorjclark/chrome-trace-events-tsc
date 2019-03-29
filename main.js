@@ -9,12 +9,16 @@ const eventsByTypeId = new Map();
  */
 function getId(event) {
   // TODO add "data.type"?
-  return event.name.replace(/\s/g, '') + '_' + event.ph;
+
+  return event.name
+    .replace(/\s/g, '')
+    // TODO use as a namepsace delim
+    .replace(/:/g, '')
+    + '_' + event.ph;
 }
 
 for (const event of traceLog.traceEvents) {
-  if (event.name !== 'EvaluateScript') continue;
-  // if (!event.args || !event.args.data || !event.args.data.stackTrace) continue;
+  if (process.env.DEBUG_EVENT && event.name !== process.env.DEBUG_EVENT) continue;
 
   const id = getId(event);
   if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
@@ -26,6 +30,7 @@ for (const event of traceLog.traceEvents) {
 /** @typedef {{literal: *}} LiteralType */
 /** @typedef {Record<string, Type>} ObjectType */
 /** @typedef {{id: string, parent?: Interface, objectType: ObjectType}} Interface */
+/** @typedef {{name: string, interfaces: Interface[]}} Namespace */
 
 /**
  * @param {*} object
@@ -251,16 +256,23 @@ interfaces.sort((a, b) => a.id.localeCompare(b.id));
 const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
 
 for (const interface of interfaces) {
-  // TODO remove base props
   interface.parent = baseInterface;
+
+  // Remove base props.
+  for (const key of Object.keys(baseInterface.objectType)) {
+    delete interface.objectType[key];
+  }
 }
 
-console.log('baseInterface', baseInterface);
+const namespace = {
+  name: '_TraceEvent',
+  interfaces: [baseInterface, ...interfaces],
+};
 
 /**
- * @param {Interface[]} interfaces
+ * @param {Namespace} namespace
  */
-function print(interfaces) {
+function print(namespace) {
   const debugPrint = process.env.DEBUG_PRINT === '1';
   let output = '';
   let indentation = 0;
@@ -311,7 +323,14 @@ function print(interfaces) {
    * @param {Interface} interface 
    */
   function printInterface(interface) {
-    return `interface ${interface.id}${interface.parent ? ' extends ' + interface.parent.id : ''} ${printObject(interface.objectType)}`;
+    return indent(`interface ${interface.id}${interface.parent ? ' extends ' + interface.parent.id : ''} ${printObject(interface.objectType)}`);
+  }
+
+  /**
+   * @param {Namespace} namespace 
+   */
+  function printNamespace(namespace) {
+    return I(() => `namespace ${namespace.name} {\n${namespace.interfaces.map(printInterface).join('\n\n')}\n}`);
   }
 
   /**
@@ -324,12 +343,8 @@ function print(interfaces) {
     return result;
   }
 
-  for (const interface of interfaces) {
-    output += printInterface(interface) + "\n";
-  }
-
-  return output;
+  return printNamespace(namespace);
 }
 
-const result = print([baseInterface, ...interfaces]);
+const result = print(namespace);
 console.log(result);
