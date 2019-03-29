@@ -56,6 +56,7 @@ function makeTypeUnionNode(typeUnion) {
 function makeInterfaceNode(_interface) {
   const data = {
     id: _interface.id,
+    name: _interface.name,
     parentId: _interface.parent && _interface.parent.id,
   };
   const children = [makeObjectNode(_interface.objectType)];

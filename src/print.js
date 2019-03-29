@@ -71,7 +71,7 @@ function print(rootNode) {
    */
   function printInterface(node) {
     assert(node.type === 'Interface');
-    return indent(`interface ${node.data.id}${node.data.parentId ? ' extends ' + node.data.parentId : ''} ${printObject(node.children[0])}`);
+    return indent(`interface ${node.data.name}${node.data.parentId ? ' extends ' + node.data.parentId : ''} ${printObject(node.children[0])}`);
   }
 
   /**

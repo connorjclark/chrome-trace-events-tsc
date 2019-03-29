@@ -1,5 +1,6 @@
 /// <reference path="../types/index.d.ts" />
 
+const assert = require('assert');
 const fs = require('fs');
 const graph = require('./graph');
 const print = require('./print');
@@ -10,23 +11,28 @@ const traceLog = JSON.parse(fs.readFileSync('trace.json', 'utf-8'));
 const eventsByTypeId = new Map();
 
 /**
- * @param {*} event 
+ * @param {string} str 
  */
-function getId(event) {
-  // TODO add "data.type"?
+function upper(str) {
+  return str[0].toUpperCase() + str.slice(1);
+}
 
-  return (event.name[0].toUpperCase() + event.name.slice(1))
-    .replace(/\s/g, '')
-    .replace(/%/g, '')
-    // TODO use as a namepsace delim
-    .replace(/[.:]/g, '')
-    + '_' + event.ph;
+/**
+ * @param {{name: string, ph: string}} event 
+ */
+function getIdPath(event) {
+  // TODO add "data.type"?
+  return (event.name + ':' + event.ph).split(/[.:]/g)
+    .filter(Boolean)
+    .map(upper)
+    .map(str => str.replace(/[\s%]/g, ''));
 }
 
 for (const event of traceLog.traceEvents) {
   if (process.env.DEBUG_EVENT && !event.name.match(process.env.DEBUG_EVENT)) continue;
 
-  const id = getId(event);
+  const idPath = getIdPath(event);
+  const id = idPath.join('.');
   if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
   const events = eventsByTypeId.get(id);
   events.push(event);
@@ -87,6 +93,8 @@ function findCommonInterface(objectTypes) {
 
   return {
     id: 'Base',
+    idPath: ['Base'],
+    name: 'Base',
     objectType: common,
   };
 }
@@ -119,8 +127,11 @@ for (const [id, events] of eventsByTypeId.entries()) {
   objectType.ph.type = { literal: `'${events[0].ph}'` };
   // objectType.cat.type = { literal: `'${events[0].cat}'` };
 
+  const idPath = id.split('.');
   interfaces.push({
     id,
+    idPath,
+    name: idPath[idPath.length - 1],
     objectType,
   });
 
@@ -146,21 +157,45 @@ const topLevelNamespace = {
   namespaces: [],
 };
 
-// Group some interfaces into their own namespace.
-/** @type {Gen.Namespace} */
-const v8Namespace = {
-  name: 'V8',
-  interfaces: [],
-  namespaces: [],
-};
-topLevelNamespace.namespaces.push(v8Namespace);
+// Group interfaces into namespaces based off idPath.
+/** @type {Map<string, Gen.Namespace>} */
+const namespaceById = new Map();
 for (const _interface of interfaces) {
-  // if (_interface.id.startsWith('V8')) {
-  //   v8Namespace.interfaces.push(_interface);
-  // } else {
-  //   topLevelNamespace.interfaces.push(_interface);
-  // }
-  topLevelNamespace.interfaces.push(_interface);
+  if (_interface.idPath.length === 1) {
+    topLevelNamespace.interfaces.push(_interface);
+    continue;
+  }
+
+  const namespaceId = _interface.idPath.slice(0, _interface.idPath.length - 1).join('.');
+
+  // create namespaces as necessary
+  for (let i = 0; i < _interface.idPath.length - 1; i++) {
+    const namespaceIdPath = _interface.idPath.slice(0, i + 1);
+    const namespaceId = namespaceIdPath.join('.');
+    if (namespaceById.has(namespaceId)) continue;
+
+    const name = namespaceIdPath[namespaceIdPath.length - 1];
+    const namespace = {
+      name,
+      interfaces: [],
+      namespaces: [],
+    };
+    namespaceById.set(namespaceId, namespace);
+
+    let grandNamespace;
+    if (namespaceIdPath.length === 1) {
+      grandNamespace = topLevelNamespace;
+    } else {
+      const grandNamespaceId = namespaceIdPath.slice(0, namespaceIdPath.length - 1).join('.');
+      grandNamespace = namespaceById.get(grandNamespaceId);
+    }
+    assert(grandNamespace);
+    grandNamespace && grandNamespace.namespaces.push(namespace);
+  }
+
+  const namespace = namespaceById.get(namespaceId);
+  assert(namespace);
+  namespace && namespace.interfaces.push(_interface);
 }
 
 const rootNode = graph.makeNamespaceNode(topLevelNamespace);

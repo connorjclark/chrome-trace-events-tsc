@@ -18,7 +18,12 @@ declare global {
     export type ObjectType = Record<string, Type>
 
     export interface Interface {
+      // idPath joined with '.' aka the fully resolved type name.
       id: string;
+      // namespace path to interface. Last element is the name.
+      idPath: string[];
+      // Last element in idPath.
+      name: string;
       parent?: Interface;
       objectType: ObjectType;
     }
