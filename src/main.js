@@ -171,7 +171,7 @@ async function run() {
   const events = [
     ...JSON.parse(fs.readFileSync('./trace.json', 'utf-8')).traceEvents,
     // very large trace, not checked in.
-    // ...await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json'),
+    ...await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json'),
   ]
 
   const eventsByTypeId = new Map();
