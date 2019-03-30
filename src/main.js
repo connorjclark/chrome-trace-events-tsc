@@ -6,9 +6,22 @@ const graph = require('./graph');
 const print = require('./print');
 const utils = require('./utils');
 
-const traceLog = JSON.parse(fs.readFileSync('trace.json', 'utf-8'));
+function loadTraceLog(path) {
+  const lineReader = require('readline').createInterface({
+    input: fs.createReadStream(path)
+  });
+  return new Promise(resolve => {
+    const events = [];
 
-const eventsByTypeId = new Map();
+    lineReader.on('line', function (line) {
+      events.push(
+        ...JSON.parse('[' + line.replace(/,$/, '') + ']')
+      );
+    });
+
+    lineReader.on('close', () => resolve(events));
+  });
+}
 
 /**
  * @param {string} str 
@@ -25,17 +38,7 @@ function getIdPath(event) {
   return (event.name + ':' + event.ph).split(/[.:]/g)
     .filter(Boolean)
     .map(upper)
-    .map(str => str.replace(/[\s%]/g, ''));
-}
-
-for (const event of traceLog.traceEvents) {
-  if (process.env.DEBUG_EVENT && !event.name.match(process.env.DEBUG_EVENT)) continue;
-
-  const idPath = getIdPath(event);
-  const id = idPath.join('.');
-  if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
-  const events = eventsByTypeId.get(id);
-  events.push(event);
+    .map(str => str.replace(/[\s%()]/g, ''));
 }
 
 /**
@@ -48,7 +51,7 @@ function getObjectType(object) {
   for (const [key, value] of Object.entries(object)) {
     if (Array.isArray(value)) {
       objectType[key] = {
-        type: getObjectType(value[0]), // maybe good enough.
+        type: getObjectType(value[0] || {}), // maybe good enough.
         array: true,
       };
     } else if (typeof value === 'object') {
@@ -108,154 +111,191 @@ function setOptional(objectType, pathComponents) {
   let cur = objectType;
   for (let i = 0; i < pathComponents.length - 1; i++) {
     const key = pathComponents[i];
+    if (!(key in cur)) {
+      cur[key] = {
+        type: {},
+        optional: true,
+      };
+    }
     // @ts-ignore
     cur = cur[key].type;
   }
-  cur[pathComponents[pathComponents.length - 1]].optional = true;
-}
-
-/** @type {Gen.Interface[]} */
-const interfaces = [];
-for (const [id, events] of eventsByTypeId.entries()) {
-  const { combined, optionalPathComponents } = utils.combineObjects(events);
-  const objectType = getObjectType(combined);
-  // console.log(JSON.stringify(combined, null, 2))
-
-  for (const pathComponents of optionalPathComponents) {
-    setOptional(objectType, pathComponents);
-  }
-
-  objectType.name.type = { literal: `'${events[0].name}'` };
-  objectType.ph.type = { literal: `'${events[0].ph}'` };
-  // objectType.cat.type = { literal: `'${events[0].cat}'` };
-
-  const idPath = id.split('.');
-  interfaces.push({
-    id,
-    idPath,
-    name: idPath[idPath.length - 1],
-    objectType,
-  });
-
-  // console.log(JSON.stringify(sampleEvent));
-}
-
-// WIP
-// Dedupe common object types.
-// {
-//   /**
-//    * @callback TraverseCallback
-//    * @param {string} key
-//    * @param {Gen.ObjectType} objectType
-//    */
-//   /**
-//    * @param {Gen.ObjectType} objectType
-//    * @param {TraverseCallback} fn
-//    */
-//   function traverse(objectType, fn) {
-//     for (const [key, value] of Object.entries(objectType)) {
-//       if (utils.isObject(value.type) && !('literal' in value.type)) {
-//         fn(key, objectType);
-//         traverse(value.type, fn);
-//       }
-//     }
-//   }
-
-//   const objectTypeCounts = new Map();
-//   const objectTypeKey = new Map();
-//   for (const _interface of interfaces) {
-//     traverse(_interface.objectType, (key, objectType) => {
-//       // Can't make a useful name out of that.
-//       if (key === 'data') return;
-
-//       const data = JSON.stringify(objectType);
-//       const cur = objectTypeCounts.get(data) || 0;
-//       objectTypeCounts.set(data, cur + 1);
-
-//       if (!objectTypeKey.has(data)) objectTypeKey.set(data, key);
-//     });
-//   }
-//   for (const [objectTypeData, count] of objectTypeCounts) {
-//     if (count === 1) continue;
-
-//     const key = objectTypeKey.get(objectTypeData);
-//     // console.log(count, key, objectTypeData);
-//   }
-//   process.exit();
-// }
-
-interfaces.sort((a, b) => a.id.localeCompare(b.id));
-
-const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
-
-for (const _interface of interfaces) {
-  _interface.parent = baseInterface;
-
-  // Remove base props.
-  for (const key of Object.keys(baseInterface.objectType)) {
-    delete _interface.objectType[key];
-  }
-}
-
-/** @type {Gen.Namespace} */
-const topLevelNamespace = {
-  idPath: ['_TraceEvent'],
-  name: '_TraceEvent',
-  interfaces: [],
-  namespaces: [],
-};
-
-// Group interfaces into namespaces based off idPath.
-/** @type {Map<string, Gen.Namespace>} */
-const namespaceById = new Map();
-for (const _interface of interfaces) {
-  if (_interface.idPath.length === 1) {
-    topLevelNamespace.interfaces.push(_interface);
-    continue;
-  }
-
-  const namespaceId = _interface.idPath.slice(0, _interface.idPath.length - 1).join('.');
-
-  // create namespaces as necessary
-  for (let i = 0; i < _interface.idPath.length - 1; i++) {
-    const namespaceIdPath = _interface.idPath.slice(0, i + 1);
-    const namespaceId = namespaceIdPath.join('.');
-    if (namespaceById.has(namespaceId)) continue;
-
-    const name = namespaceIdPath[namespaceIdPath.length - 1];
-    const namespace = {
-      idPath: namespaceIdPath,
-      name,
-      interfaces: [],
-      namespaces: [],
+  if (cur[pathComponents[pathComponents.length - 1]] === undefined) {
+    cur[pathComponents[pathComponents.length - 1]] = {
+      type: {},
+      optional: true,
     };
-    namespaceById.set(namespaceId, namespace);
-
-    let grandNamespace;
-    if (namespaceIdPath.length === 1) {
-      grandNamespace = topLevelNamespace;
-    } else {
-      const grandNamespaceId = namespaceIdPath.slice(0, namespaceIdPath.length - 1).join('.');
-      grandNamespace = namespaceById.get(grandNamespaceId);
-    }
-    assert(grandNamespace);
-    grandNamespace && grandNamespace.namespaces.push(namespace);
+  } else {
+    cur[pathComponents[pathComponents.length - 1]].optional = true;
   }
-
-  const namespace = namespaceById.get(namespaceId);
-  assert(namespace);
-  namespace && namespace.interfaces.push(_interface);
 }
 
-const rootNode = graph.makeNamespaceNode(topLevelNamespace);
+async function run() {
+  const events = JSON.parse(fs.readFileSync('./trace.json', 'utf-8')).traceEvents;
+  // very large trace, not checked in.
+  // const events = await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json');
 
-/** @type {Gen.TypeUnion} */
-const traceEventTypeUnion = {
-  name: 'TraceEvent',
-  interfaces,
-};
-rootNode.children.unshift(graph.makeTypeUnionNode(traceEventTypeUnion));
-rootNode.children.unshift(graph.makeInterfaceNode(baseInterface));
+  const eventsByTypeId = new Map();
 
-const result = print(rootNode);
-console.log('export ' + result);
+  for (const event of events) {
+    if (process.env.DEBUG_EVENT && !event.name.match(process.env.DEBUG_EVENT)) continue;
+
+    const idPath = getIdPath(event);
+    const id = idPath.join('.');
+    if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
+    const events = eventsByTypeId.get(id);
+    events.push(event);
+  }
+
+  /** @type {Gen.Interface[]} */
+  const interfaces = [];
+  for (const [id, events] of eventsByTypeId.entries()) {
+    // console.log(id);
+    const { combined, optionalPathComponents } = utils.combineObjects(events);
+    // console.log('combined', JSON.stringify(combined, null, 2));
+    // console.log('optionalPathComponents', JSON.stringify(optionalPathComponents, null, 2));
+    const objectType = getObjectType(combined);
+    // console.log(JSON.stringify(combined, null, 2))
+
+    for (const pathComponents of optionalPathComponents) {
+      setOptional(objectType, pathComponents);
+    }
+
+    // console.log('objectType', objectType);
+    objectType.name.type = { literal: `'${events[0].name}'` };
+    objectType.ph.type = { literal: `'${events[0].ph}'` };
+    // objectType.cat.type = { literal: `'${events[0].cat}'` };
+
+    const idPath = id.split('.');
+    interfaces.push({
+      id,
+      idPath,
+      name: idPath[idPath.length - 1],
+      objectType,
+    });
+
+    // console.log(JSON.stringify(sampleEvent));
+  }
+
+  // WIP
+  // Dedupe common object types.
+  // {
+  //   /**
+  //    * @callback TraverseCallback
+  //    * @param {string} key
+  //    * @param {Gen.ObjectType} objectType
+  //    */
+  //   /**
+  //    * @param {Gen.ObjectType} objectType
+  //    * @param {TraverseCallback} fn
+  //    */
+  //   function traverse(objectType, fn) {
+  //     for (const [key, value] of Object.entries(objectType)) {
+  //       if (utils.isObject(value.type) && !('literal' in value.type)) {
+  //         fn(key, objectType);
+  //         traverse(value.type, fn);
+  //       }
+  //     }
+  //   }
+
+  //   const objectTypeCounts = new Map();
+  //   const objectTypeKey = new Map();
+  //   for (const _interface of interfaces) {
+  //     traverse(_interface.objectType, (key, objectType) => {
+  //       // Can't make a useful name out of that.
+  //       if (key === 'data') return;
+
+  //       const data = JSON.stringify(objectType);
+  //       const cur = objectTypeCounts.get(data) || 0;
+  //       objectTypeCounts.set(data, cur + 1);
+
+  //       if (!objectTypeKey.has(data)) objectTypeKey.set(data, key);
+  //     });
+  //   }
+  //   for (const [objectTypeData, count] of objectTypeCounts) {
+  //     if (count === 1) continue;
+
+  //     const key = objectTypeKey.get(objectTypeData);
+  //     // console.log(count, key, objectTypeData);
+  //   }
+  //   process.exit();
+  // }
+
+  interfaces.sort((a, b) => a.id.localeCompare(b.id));
+
+  const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
+
+  for (const _interface of interfaces) {
+    _interface.parent = baseInterface;
+
+    // Remove base props.
+    for (const key of Object.keys(baseInterface.objectType)) {
+      delete _interface.objectType[key];
+    }
+  }
+
+  /** @type {Gen.Namespace} */
+  const topLevelNamespace = {
+    idPath: ['_TraceEvent'],
+    name: '_TraceEvent',
+    interfaces: [],
+    namespaces: [],
+  };
+
+  // Group interfaces into namespaces based off idPath.
+  /** @type {Map<string, Gen.Namespace>} */
+  const namespaceById = new Map();
+  for (const _interface of interfaces) {
+    if (_interface.idPath.length === 1) {
+      topLevelNamespace.interfaces.push(_interface);
+      continue;
+    }
+
+    const namespaceId = _interface.idPath.slice(0, _interface.idPath.length - 1).join('.');
+
+    // create namespaces as necessary
+    for (let i = 0; i < _interface.idPath.length - 1; i++) {
+      const namespaceIdPath = _interface.idPath.slice(0, i + 1);
+      const namespaceId = namespaceIdPath.join('.');
+      if (namespaceById.has(namespaceId)) continue;
+
+      const name = namespaceIdPath[namespaceIdPath.length - 1];
+      const namespace = {
+        idPath: namespaceIdPath,
+        name,
+        interfaces: [],
+        namespaces: [],
+      };
+      namespaceById.set(namespaceId, namespace);
+
+      let grandNamespace;
+      if (namespaceIdPath.length === 1) {
+        grandNamespace = topLevelNamespace;
+      } else {
+        const grandNamespaceId = namespaceIdPath.slice(0, namespaceIdPath.length - 1).join('.');
+        grandNamespace = namespaceById.get(grandNamespaceId);
+      }
+      assert(grandNamespace);
+      grandNamespace && grandNamespace.namespaces.push(namespace);
+    }
+
+    const namespace = namespaceById.get(namespaceId);
+    assert(namespace);
+    namespace && namespace.interfaces.push(_interface);
+  }
+
+  const rootNode = graph.makeNamespaceNode(topLevelNamespace);
+
+  /** @type {Gen.TypeUnion} */
+  const traceEventTypeUnion = {
+    name: 'TraceEvent',
+    interfaces,
+  };
+  rootNode.children.unshift(graph.makeTypeUnionNode(traceEventTypeUnion));
+  rootNode.children.unshift(graph.makeInterfaceNode(baseInterface));
+
+  const result = print(rootNode);
+  console.log('export ' + result);
+}
+
+run();

@@ -20,6 +20,8 @@ function combineObjects(objects) {
   const pathsProcessed = new Set();
 
   /**
+   * TODO: use array for path instead of string. "..." instead of "." because
+   * some properties in the the trace data have a "."
    * @param {*} object
    * @param {Function} fn
    */
@@ -28,13 +30,13 @@ function combineObjects(objects) {
 
     for (const [key, value] of Object.entries(object)) {
       if (Array.isArray(value)) {
-        fn(path + '.' + key, value);
-        traverse(value[0], fn, path + '.' + key);
+        fn(path + '...' + key, value);
+        traverse(value[0], fn, path + '...' + key);
       } else if (value && typeof value === 'object') {
-        fn(path + '.' + key, value);
-        traverse(value, fn, path + '.' + key);
+        fn(path + '...' + key, value);
+        traverse(value, fn, path + '...' + key);
       } else {
-        fn(path + '.' + key, value);
+        fn(path + '...' + key, value);
       }
     }
   }
@@ -47,7 +49,7 @@ function combineObjects(objects) {
     let cur = object;
     for (let i = 0; i < pathComponents.length; i++) {
       const key = pathComponents[i];
-      if (!cur || !(key in cur)) return false;
+      if (!isObject(cur) || !(key in cur)) return false;
       cur = cur[key];
       if (Array.isArray(cur)) cur = cur[0]; // skip into array
     }
@@ -62,6 +64,9 @@ function combineObjects(objects) {
     let cur = combined;
     for (let i = 0; i < pathComponents.length - 1; i++) {
       const key = pathComponents[i];
+      // if (cur[key] === undefined) {
+      //   cur[key] = {};
+      // }
       cur = cur[key];
     }
     if (Array.isArray(value)) {
@@ -78,7 +83,7 @@ function combineObjects(objects) {
 
   for (const object of objects) {
     traverse(object, (path, value) => {
-      const pathComponents = path.substring(1).split('.');
+      const pathComponents = path.substring(3).split('...');
 
       // Merge into the combined object.
       set(pathComponents, value);
@@ -93,12 +98,12 @@ function combineObjects(objects) {
 
   // If a path has fewer occurrences than its parent, it's optional.
   for (const path of pathCounts.keys()) {
-    const pathComponents = path.substring(1).split('.');
+    const pathComponents = path.substring(3).split('...');
 
     // Assume top level properties are required.
     if (pathComponents.length === 1) continue;
 
-    const parentPath = '.' + pathComponents.slice(0, pathComponents.length - 1).join('.');
+    const parentPath = '...' + pathComponents.slice(0, pathComponents.length - 1).join('...');
     const isOptional = pathCounts.get(parentPath) > pathCounts.get(path);
     if (isOptional) optionalPathComponents.push(pathComponents);
   }
