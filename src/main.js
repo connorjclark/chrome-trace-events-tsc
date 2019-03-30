@@ -67,8 +67,13 @@ function getIdPath(event) {
     .split(/[.:]+/g)
     .map(str => str.replace(/\./g, '_'))
     .map(str => str.replace(/[^a-zA-Z0-9_]/g, ''))
-    .filter(Boolean)
-    .map(upper));
+    .filter(Boolean));
+
+  // Uppercase each component but the last - the phase character
+  // has semantics pertaining to case.
+  for (let i = 0; i < idPath.length - 1; i++) {
+    idPath[i] = upper(idPath[i]);
+  }
 
   return idPath;
 }
@@ -209,18 +214,13 @@ async function run() {
   /** @type {Gen.Interface[]} */
   const interfaces = [];
   for (const [id, events] of eventsByTypeId.entries()) {
-    // console.log(id);
     const { combined, optionalPathComponents } = utils.combineObjects(events);
-    // console.log('combined', JSON.stringify(combined, null, 2));
-    // console.log('optionalPathComponents', JSON.stringify(optionalPathComponents, null, 2));
     const objectType = getObjectType(combined);
-    // console.log(JSON.stringify(combined, null, 2))
 
     for (const pathComponents of optionalPathComponents) {
       setOptional(objectType, pathComponents);
     }
 
-    // console.log('objectType', objectType);
     objectType.name.type = { literal: `'${events[0].name}'` };
     objectType.ph.type = { literal: `'${events[0].ph}'` };
     // objectType.cat.type = { literal: `'${events[0].cat}'` };
@@ -232,8 +232,6 @@ async function run() {
       name: idPath[idPath.length - 1],
       objectType,
     });
-
-    // console.log(JSON.stringify(sampleEvent));
   }
 
   // WIP

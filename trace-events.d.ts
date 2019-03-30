@@ -7,9 +7,9 @@ export namespace _TraceEvent {
   }
 
   type TraceEvent = 
-    Animation.B |
-    Animation.E |
-    Animation.N |
+    Animation.b |
+    Animation.e |
+    Animation.n |
     CommitLoad.X |
     CompositeLayers.B |
     CompositeLayers.E |
@@ -17,31 +17,31 @@ export namespace _TraceEvent {
     DecodeImage.X |
     DecodeLazyPixelRef.X |
     DomComplete.R |
-    DOMContentLoaded.B |
-    DOMContentLoaded.E |
+    DOMContentLoaded.b |
+    DOMContentLoaded.e |
     DomContentLoadedEventEnd.R |
     DomContentLoadedEventStart.R |
     DomInteractive.R |
     DomLoading.R |
     DrawLazyPixelRef.I |
-    EndofTrace.B |
-    EndofTrace.E |
+    EndofTrace.b |
+    EndofTrace.e |
     EvaluateScript.X |
     EventDispatch.X |
     FetchStart.R |
     FireAnimationFrame.X |
-    FirstContentfulPaint.B |
-    FirstContentfulPaint.E |
+    FirstContentfulPaint.b |
+    FirstContentfulPaint.e |
     FirstContentfulPaint.R |
     FirstImagePaint.R |
     FirstLayout.R |
-    FirstMeaningfulPaint.B |
-    FirstMeaningfulPaint.E |
+    FirstMeaningfulPaint.b |
+    FirstMeaningfulPaint.e |
     FirstMeaningfulPaint.R |
     FirstMeaningfulPaintCandidate.R |
     FirstPaint.R |
-    FirstVisualChange.B |
-    FirstVisualChange.E |
+    FirstVisualChange.b |
+    FirstVisualChange.e |
     FrameCommittedInBrowser.I |
     FrameDeletedInBrowser.I |
     FrameStartedLoading.I |
@@ -72,8 +72,8 @@ export namespace _TraceEvent {
     MinorGC.E |
     NavigationStart.R |
     Num_cpus.M |
-    OnLoad.B |
-    OnLoad.E |
+    OnLoad.b |
+    OnLoad.e |
     Paint.X |
     PaintImage.X |
     ParseAuthorStyleSheet.X |
@@ -102,8 +102,8 @@ export namespace _TraceEvent {
     ScheduleStyleRecalculation.I |
     Screenshot.O |
     SetLayerTreeId.I |
-    SpeedIndex.B |
-    SpeedIndex.E |
+    SpeedIndex.b |
+    SpeedIndex.e |
     Thread_name.M |
     Thread_sort_index.M |
     TimerFire.X |
@@ -140,13 +140,13 @@ export namespace _TraceEvent {
     V8.StackGuard.X |
     V8.Task.B |
     V8.Task.E |
-    VisuallyComplete100.B |
-    VisuallyComplete100.E |
+    VisuallyComplete100.b |
+    VisuallyComplete100.e |
     XHRLoad.X |
     XHRReadyStateChange.X;
 
   namespace Animation {
-    interface B extends Base {
+    interface b extends Base {
       args: {
         data: {
           id: string;
@@ -162,7 +162,7 @@ export namespace _TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
         endData: {
           state: string;
@@ -174,7 +174,7 @@ export namespace _TraceEvent {
       tts: number;
     }
   
-    interface N extends Base {
+    interface n extends Base {
       args: {
         data: {
           state: string;
@@ -279,7 +279,7 @@ export namespace _TraceEvent {
   }
 
   namespace DOMContentLoaded {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -288,7 +288,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -355,7 +355,7 @@ export namespace _TraceEvent {
   }
 
   namespace EndofTrace {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -364,7 +364,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -449,7 +449,7 @@ export namespace _TraceEvent {
   }
 
   namespace FirstContentfulPaint {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -458,7 +458,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -506,7 +506,7 @@ export namespace _TraceEvent {
   }
 
   namespace FirstMeaningfulPaint {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -515,7 +515,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -567,7 +567,7 @@ export namespace _TraceEvent {
   }
 
   namespace FirstVisualChange {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -576,7 +576,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -988,7 +988,7 @@ export namespace _TraceEvent {
   }
 
   namespace OnLoad {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -997,7 +997,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -1440,7 +1440,7 @@ export namespace _TraceEvent {
   }
 
   namespace SpeedIndex {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -1449,7 +1449,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
@@ -1956,7 +1956,7 @@ export namespace _TraceEvent {
   }
 
   namespace VisuallyComplete100 {
-    interface B extends Base {
+    interface b extends Base {
       args: {
       
       };
@@ -1965,7 +1965,7 @@ export namespace _TraceEvent {
       ph: 'b';
     }
   
-    interface E extends Base {
+    interface e extends Base {
       args: {
       
       };
