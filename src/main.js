@@ -14,6 +14,8 @@ function loadTraceLog(path) {
     const events = [];
 
     lineReader.on('line', function (line) {
+      if (process.env.DEBUG_GREP && !line.match(process.env.DEBUG_GREP)) return;
+
       events.push(
         ...JSON.parse('[' + line.replace(/,$/, '') + ']')
       );
@@ -34,11 +36,41 @@ function upper(str) {
  * @param {{name: string, ph: string}} event 
  */
 function getIdPath(event) {
+  const idPath = [];
+
   // TODO add "data.type"?
-  return (event.name + ':' + event.ph).split(/[.:]/g)
+  let safePhase = event.ph;
+  if (safePhase === ')') safePhase = 'RP';
+  if (safePhase === '(') safePhase = 'LP';
+
+  let safeName = event.name
+    // transform @../../cc/scheduler/scheduler.cc:38 to @../../cc/scheduler/scheduler:L38
+    .replace('.cc:', ':L')
+    // transform v3.1.2 to v3_1_2. ignore "V8."
+    .replace(/(.?\d)\./g, (substring, group1) => {
+      return substring.match(/v8/i) ? substring : group1 + '_';
+    })
+    // Remove various cpp keywords.
+    .replace(/\*/g, '')
+    .replace(/(\(|^| |,)(const|int|void|anonymous|namespace)(\)| |$|,)|/g, '');
+
+  // Consume the tag part of an event name and use as a namespace
+  // "[ADFUEL] some event name"
+  const tagMatch = safeName.match(/^\[.*?\]/);
+  if (tagMatch) {
+    const tag = tagMatch[0].slice(1, tagMatch[0].length - 1);
+    idPath.push(tag);
+    safeName = safeName.substr(tagMatch[0].length);
+  }
+
+  idPath.push(...(safeName + ':' + safePhase)
+    .split(/[.:]+/g)
+    .map(str => str.replace(/\./g, '_'))
+    .map(str => str.replace(/[^a-zA-Z0-9_]/g, ''))
     .filter(Boolean)
-    .map(upper)
-    .map(str => str.replace(/[\s%()]/g, ''));
+    .map(upper));
+
+  return idPath;
 }
 
 /**
@@ -131,14 +163,41 @@ function setOptional(objectType, pathComponents) {
 }
 
 async function run() {
-  const events = JSON.parse(fs.readFileSync('./trace.json', 'utf-8')).traceEvents;
-  // very large trace, not checked in.
-  // const events = await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json');
+  const events = [
+    ...JSON.parse(fs.readFileSync('./trace.json', 'utf-8')).traceEvents,
+    // very large trace, not checked in.
+    // ...await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json'),
+  ]
 
   const eventsByTypeId = new Map();
 
   for (const event of events) {
-    if (process.env.DEBUG_EVENT && !event.name.match(process.env.DEBUG_EVENT)) continue;
+    if (!event.name) {
+      // get outta here you rascal.
+      continue;
+    }
+
+    // These types are bugged.
+    if ([
+      'CERT_CT_COMPLIANCE_CHECKED',
+      'CERT_VERIFIER_JOB',
+      'FrameLayoutJank',
+      'LayoutTree',
+      'MainThreadScheduler',
+      'periodic_interval',
+      'RendererMainThreadLoad',
+      'SSL_CERTIFICATES_RECEIVED',
+      'StyleInvalidatorInvalidationTracking',
+      'V8.Execute',
+      'V8.RunMicrotasks',
+    ].includes(event.name)) continue;
+
+    // // These are dynamically named.
+    if ([
+      'RenderCompositor',
+    ].some(substring => event.name.includes(substring))) continue;
+
+    if (process.env.DEBUG_GREP && !event.name.match(process.env.DEBUG_GREP)) continue;
 
     const idPath = getIdPath(event);
     const id = idPath.join('.');

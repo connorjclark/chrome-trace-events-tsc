@@ -124,8 +124,6 @@ export namespace _TraceEvent {
     V8.Compile.E |
     V8.Compile.X |
     V8.DeoptimizeCode.X |
-    V8.Execute.B |
-    V8.Execute.E |
     V8.GCCompactor.X |
     V8.GCIdleNotification.X |
     V8.GCPhantomHandleProcessingCallback.X |
@@ -137,8 +135,6 @@ export namespace _TraceEvent {
     V8.NewInstance.X |
     V8.ParseOnBackground.X |
     V8.Run.X |
-    V8.RunMicrotasks.B |
-    V8.RunMicrotasks.E |
     V8.ScriptCompiler.B |
     V8.ScriptCompiler.E |
     V8.StackGuard.X |
@@ -1755,28 +1751,6 @@ export namespace _TraceEvent {
       }
     }
   
-    namespace Execute {
-      interface B extends Base {
-        args: {
-        
-        };
-        name: 'V8.Execute';
-        ph: 'B';
-        tts: number;
-      }
-    
-      interface E extends Base {
-        args: {
-          'runtime-call-stats': {
-          
-          };
-        };
-        name: 'V8.Execute';
-        ph: 'E';
-        tts: number;
-      }
-    }
-  
     namespace GCCompactor {
       interface X extends Base {
         args: {
@@ -1919,28 +1893,6 @@ export namespace _TraceEvent {
         name: 'v8.run';
         ph: 'X';
         tdur: number;
-        tts: number;
-      }
-    }
-  
-    namespace RunMicrotasks {
-      interface B extends Base {
-        args: {
-        
-        };
-        name: 'V8.RunMicrotasks';
-        ph: 'B';
-        tts: number;
-      }
-    
-      interface E extends Base {
-        args: {
-          'runtime-call-stats': {
-          
-          };
-        };
-        name: 'V8.RunMicrotasks';
-        ph: 'E';
         tts: number;
       }
     }

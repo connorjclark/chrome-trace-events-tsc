@@ -21,10 +21,10 @@ function print(rootNode) {
    * @param {string} key 
    */
   function printSafeKey(key) {
-    if (key.match(/[^a-zA-Z0-9_]/)) {
-      return `'${key}'`;
-    } else {
+    if (key.match(/^[a-zA-Z_][a-zA-Z0-9_]*$/)) {
       return key;
+    } else {
+      return `'${key}'`;
     }
   }
 
