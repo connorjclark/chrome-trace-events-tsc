@@ -6,6 +6,8 @@ const graph = require('./graph');
 const print = require('./print');
 const utils = require('./utils');
 
+const eventFilter = process.env.EVENT_FILTER ? process.env.EVENT_FILTER.split(',') : null; 
+
 function loadTraceLog(path) {
   const lineReader = require('readline').createInterface({
     input: fs.createReadStream(path)
@@ -172,7 +174,7 @@ async function run() {
     ...JSON.parse(fs.readFileSync('./trace.json', 'utf-8')).traceEvents,
     // very large trace, not checked in.
     ...await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json'),
-  ]
+  ];
 
   const eventsByTypeId = new Map();
 
@@ -203,6 +205,7 @@ async function run() {
     ].some(substring => event.name.includes(substring))) continue;
 
     if (process.env.DEBUG_GREP && !event.name.match(process.env.DEBUG_GREP)) continue;
+    if (eventFilter && !eventFilter.includes(event.name)) continue;
 
     const idPath = getIdPath(event);
     const id = idPath.join('.');

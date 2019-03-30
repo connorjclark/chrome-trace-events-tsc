@@ -5,15 +5,33 @@ mkdir -p dist
 node src/main.js > dist/trace-events.d.ts
 
 # Make a subset for Lighthouse.
-DEBUG_GREP=(
+EVENT_FILTER=(
+  domContentLoadedEventEnd
   EvaluateScript
+  firstContentfulPaint
+  firstMeaningfulPaint
+  firstMeaningfulPaintCandidate
+  firstPaint
   FunctionCall
   InvalidateLayout
+  Layout
+  loadEventEnd
   navigationStart
+  paintNonDefaultBackgroundColor
   ParseAuthorStyleSheet
+  process_labels
+  requestStart
+  ResourceFinish
+  ResourceReceiveResponse
   ResourceSendRequest
+  RunTask
   ScheduleStyleRecalculation
   Screenshot
+  Task
+  TaskQueueManager::ProcessTaskFromWorkQueue
+  thread_name
+  ThreadControllerImpl::DoWork
+  ThreadControllerImpl::RunTask
   TimerFire
   TimerInstall
   TracingStartedInBrowser
@@ -22,5 +40,5 @@ DEBUG_GREP=(
   v8.compileModule
   XHRReadyStateChange
 )
-IFS='|' eval 'DEBUG_GREP="${DEBUG_GREP[*]}"'
-DEBUG_GREP=$DEBUG_GREP node src/main.js > dist/lh-trace-events.d.ts
+IFS=',' eval 'EVENT_FILTER="${EVENT_FILTER[*]}"'
+EVENT_FILTER=$EVENT_FILTER node src/main.js > dist/lh-trace-events.d.ts
