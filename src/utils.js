@@ -48,7 +48,7 @@ function combineObjectsImpl(objects, state) {
         combineObjectsImpl(subObjects, {
           combined: combined[key][0],
           optionalPathComponents,
-          pathPrefix: [...pathPrefix, key],
+          pathPrefix: [...pathPrefix, key, '[]'],
           processedSubObject,
         });
       } else if (isObject(value)) {

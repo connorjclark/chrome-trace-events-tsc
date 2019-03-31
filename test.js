@@ -62,7 +62,7 @@ describe('utils', () => {
         { nested: { nested2: { array: [{ a: 1 }] } } },
         { nested: { nested2: { array: [{ a: 1, b: 1 }] } } },
         { nested: { nested2: { array: [{ a: 1, b: 1 }] } } },
-        ['nested.nested2.array.b'].map(p => p.split('.')),
+        ['nested.nested2.array.[].b'].map(p => p.split('.')),
       ],
       [
         { array: [1] },

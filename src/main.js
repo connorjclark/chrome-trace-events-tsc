@@ -6,7 +6,7 @@ const graph = require('./graph');
 const print = require('./print');
 const utils = require('./utils');
 
-const eventFilter = process.env.EVENT_FILTER ? process.env.EVENT_FILTER.split(',') : null; 
+const eventFilter = process.env.EVENT_FILTER ? process.env.EVENT_FILTER.split(',') : null;
 
 function loadTraceLog(path) {
   const lineReader = require('readline').createInterface({
@@ -150,6 +150,14 @@ function setOptional(objectType, pathComponents) {
   let cur = objectType;
   for (let i = 0; i < pathComponents.length - 1; i++) {
     const key = pathComponents[i];
+
+    if (key === '[]') {
+      continue;
+    }
+    if (cur[key].array) {
+      assert(pathComponents[i + 1] === '[]');
+    }
+
     if (!(key in cur)) {
       cur[key] = {
         type: {},
