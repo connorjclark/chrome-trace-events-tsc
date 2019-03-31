@@ -88,6 +88,13 @@ describe('utils', () => {
         { nested: { 'prop.with.dot': 1, 'prop.with.dot.2': 1 } },
         [['nested', 'prop.with.dot'], ['nested', 'prop.with.dot.2']],
       ],
+      // TODO: support arrays with arrays.
+      // [
+      //   { array: [[{a: 1}]] },
+      //   { array: [[{b: 1}]] },
+      //   { array: [[{a:1, b: 1}]] },
+      //   ['array.[].[].a', 'array.[].[].b'].map(p => p.split('.')),
+      // ],
     ];
 
     for (let i = 0; i < testCases.length; i++) {

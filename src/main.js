@@ -199,7 +199,7 @@ async function run() {
       'V8.RunMicrotasks',
     ].includes(event.name)) continue;
 
-    // // These are dynamically named.
+    // These are dynamically named.
     if ([
       'RenderCompositor',
     ].some(substring => event.name.includes(substring))) continue;
