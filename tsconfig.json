@@ -1,6 +1,7 @@
 {
   "include": [
     "src/**/*.js",
+    "test.js",
     "types/**/*.d.ts",
   ],
   "compilerOptions": {
