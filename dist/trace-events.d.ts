@@ -2578,7 +2578,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'BackgroundCompileTask::Run';
         ph: 'X';
         tdur: number;
@@ -2695,24 +2695,9 @@ export namespace _TraceEvent {
         args: {
           data: {
             approximated_visible_content_area: number;
-            begin_main_frame_to_commit_duration_ms: {
-            
-            }[];
             checkerboarded_needs_raster_content_area: number;
             checkerboarded_no_recording_content_area: number;
             checkerboarded_visible_content_area: number;
-            commit_to_activate_duration_estimate_ms: {
-            
-            }[];
-            commit_to_activate_duration_ms: {
-            
-            }[];
-            draw_duration_estimate_ms: {
-            
-            }[];
-            draw_duration_ms: {
-            
-            }[];
             frame_count: number;
             visible_content_area: number;
           };
@@ -3749,35 +3734,35 @@ export namespace _TraceEvent {
         args: {
           snapshot: {
             active_tiles: {
-              cat?: string;
-              combined_priority?: {
+              cat: string;
+              combined_priority: {
                 distance_to_visible: number;
                 is_occluded: boolean;
                 priority_bin: string;
                 resolution: string;
               };
-              content_rect?: {
+              content_rect: {
               
               }[];
-              contents_scale?: number;
-              draw_info?: {
+              contents_scale: number;
+              draw_info: {
                 is_solid_color: boolean;
                 is_transparent: boolean;
               };
-              gpu_memory_usage?: number;
-              has_resource?: boolean;
-              id?: string;
-              is_using_gpu_memory?: boolean;
-              layer_id?: number;
-              picture_pile?: {
+              gpu_memory_usage: number;
+              has_resource: boolean;
+              id: string;
+              is_using_gpu_memory: boolean;
+              layer_id: number;
+              picture_pile: {
                 id_ref: string;
               };
-              raster_transform?: {
+              raster_transform: {
               
               }[];
-              resolution?: string;
-              scheduled_priority?: number;
-              use_picture_analysis?: boolean;
+              resolution: string;
+              scheduled_priority: number;
+              use_picture_analysis: boolean;
             }[];
             active_tree: {
               id: string;
@@ -3800,10 +3785,10 @@ export namespace _TraceEvent {
                 clip_tree_index: number;
                 contents_opaque: boolean;
                 coverage_tiles?: {
-                  geometry_rect?: {
+                  geometry_rect: {
                   
                   }[];
-                  tile?: {
+                  tile: {
                     id_ref: string;
                   };
                 }[];
@@ -3836,9 +3821,6 @@ export namespace _TraceEvent {
                   }[];
                   layer_name: string;
                   owner_node?: number;
-                  squashing_disallowed_reasons: {
-                  
-                  }[];
                 };
                 draws_content: number;
                 effect_tree_index: number;
@@ -3865,7 +3847,7 @@ export namespace _TraceEvent {
                 }[];
                 opacity: number;
                 pictures?: {
-                  id_ref?: string;
+                  id_ref: string;
                 }[];
                 position: {
                 
@@ -3888,25 +3870,25 @@ export namespace _TraceEvent {
                 
                 }[];
                 tilings?: {
-                  content_scale?: number;
-                  eventually_rect?: {
+                  content_scale: number;
+                  eventually_rect: {
                   
                   }[];
-                  num_tiles?: number;
-                  raster_transform?: {
+                  num_tiles: number;
+                  raster_transform: {
                   
                   }[];
-                  skewport_rect?: {
+                  skewport_rect: {
                   
                   }[];
-                  soon_rect?: {
+                  soon_rect: {
                   
                   }[];
-                  tiling_size?: {
+                  tiling_size: {
                     height: number;
                     width: number;
                   };
-                  visible_rect?: {
+                  visible_rect: {
                   
                   }[];
                 }[];
@@ -3915,11 +3897,8 @@ export namespace _TraceEvent {
                 
                 }[];
               }[];
-              pinned_swap_promise_trace_ids: {
-              
-              }[];
               render_surface_layer_list: {
-                id_ref?: string;
+                id_ref: string;
               }[];
               source_frame_number: number;
               swap_promise_trace_ids: {
@@ -3936,16 +3915,10 @@ export namespace _TraceEvent {
                 backdrop_filter_bounds: {
                 
                 }[];
-                backdrop_filters: {
-                
-                }[];
                 cache_render_pass: boolean;
                 cat: string;
                 copy_requests: number;
                 damage_rect: {
-                
-                }[];
-                filters: {
                 
                 }[];
                 generate_mipmap: boolean;
@@ -3956,25 +3929,27 @@ export namespace _TraceEvent {
                 
                 }[];
                 quad_list: {
-                  content_space_rect?: {
+                  color?: number;
+                  content_space_rect: {
                   
                   }[];
-                  content_space_visible_rect?: {
+                  content_space_visible_rect: {
                   
                   }[];
                   force_anti_aliasing_off?: boolean;
-                  material?: number;
+                  material: number;
                   nearest_neighbor?: boolean;
-                  needs_blending?: boolean;
-                  rect_as_target_space_quad?: {
+                  needs_blending: boolean;
+                  rect_as_target_space_quad: {
                   
                   }[];
-                  rect_is_clipped?: boolean;
+                  rect_is_clipped: boolean;
                   resource_id?: number;
-                  shared_state?: {
+                  shared_state: {
                     id_ref: string;
                   };
-                  should_draw_with_blending?: boolean;
+                  should_draw_with_blending: boolean;
+                  surface_range?: string;
                   swizzle_contents?: boolean;
                   tex_coord_rect?: {
                   
@@ -3983,34 +3958,28 @@ export namespace _TraceEvent {
                     height: number;
                     width: number;
                   };
-                  visible_rect_as_target_space_quad?: {
+                  visible_rect_as_target_space_quad: {
                   
                   }[];
-                  visible_rect_is_clipped?: boolean;
-                  surface_range?: {
-                  
-                  };
-                  color?: {
-                  
-                  };
+                  visible_rect_is_clipped: boolean;
                 }[];
                 shared_quad_state_list: {
-                  are_contents_opaque?: boolean;
-                  blend_mode?: string;
-                  cat?: string;
-                  clip_rect?: {
+                  are_contents_opaque: boolean;
+                  blend_mode: string;
+                  cat: string;
+                  clip_rect: {
                   
                   }[];
-                  id?: string;
-                  is_clipped?: boolean;
-                  layer_content_rect?: {
+                  id: string;
+                  is_clipped: boolean;
+                  layer_content_rect: {
                   
                   }[];
-                  layer_visible_content_rect?: {
+                  layer_visible_content_rect: {
                   
                   }[];
-                  opacity?: number;
-                  transform?: {
+                  opacity: number;
+                  transform: {
                   
                   }[];
                 }[];
@@ -5742,7 +5711,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -5789,7 +5760,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -6411,11 +6384,11 @@ export namespace _TraceEvent {
         args: {
           step: string;
         };
-        bind_id: string;
+        bind_id?: string;
         dur: number;
-        flow_in: boolean;
-        flow_out: boolean;
-        id2: {
+        flow_in?: boolean;
+        flow_out?: boolean;
+        id2?: {
           global: string;
         };
         name: 'Event.Pipeline';
@@ -6440,10 +6413,10 @@ export namespace _TraceEvent {
           type: string;
         };
       };
-      dur: number;
+      dur?: number;
       name: 'EventDispatch';
       ph: 'X';
-      tdur: number;
+      tdur?: number;
       tts: number;
     }
   }
@@ -6769,7 +6742,7 @@ export namespace _TraceEvent {
       args: {
       
       };
-      dur: number;
+      dur?: number;
       name: 'ExtensionMsg_DispatchOnDisconnect';
       ph: 'X';
       tdur: number;
@@ -9905,8 +9878,8 @@ export namespace _TraceEvent {
           step: string;
         };
         bind_id: string;
-        dur: number;
-        flow_in: boolean;
+        dur?: number;
+        flow_in?: boolean;
         flow_out: boolean;
         id2: {
           global: string;
@@ -10480,7 +10453,12 @@ export namespace _TraceEvent {
             '9': string;
             '10': string;
             '11': string;
-            '12': string;
+            '12'?: {
+            
+            };
+            '13'?: {
+            
+            };
           }[];
           expiration: string;
         };
@@ -10533,9 +10511,12 @@ export namespace _TraceEvent {
             '8': string;
             '9': string;
             '10': string;
-            '11': string;
-            '12': string;
-            '13': string;
+            '11'?: string;
+            '12'?: string;
+            '13'?: string;
+            '14'?: {
+            
+            };
           }[];
           error?: number;
           expiration: string;
@@ -10635,7 +10616,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -10692,7 +10675,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -11048,7 +11033,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -11527,7 +11514,9 @@ export namespace _TraceEvent {
             '9': string;
             '10': string;
             '11': string;
-            '12': string;
+            '12'?: {
+            
+            };
           }[];
           quic_priority: number;
           quic_stream_id: number;
@@ -11606,6 +11595,15 @@ export namespace _TraceEvent {
             '9': string;
             '10': string;
             '11': string;
+            '12'?: {
+            
+            };
+            '13'?: {
+            
+            };
+            '14'?: {
+            
+            };
           }[];
         };
         source_type: string;
@@ -11642,8 +11640,34 @@ export namespace _TraceEvent {
             '17': string;
             '18': string;
             '19': string;
-            '20': string;
-            '21': string;
+            '20'?: string;
+            '21'?: {
+            
+            };
+            '22'?: {
+            
+            };
+            '23'?: {
+            
+            };
+            '24'?: {
+            
+            };
+            '25'?: {
+            
+            };
+            '26'?: {
+            
+            };
+            '27'?: {
+            
+            };
+            '28'?: {
+            
+            };
+            '29'?: {
+            
+            };
           }[];
           line: string;
         };
@@ -13156,8 +13180,8 @@ export namespace _TraceEvent {
         };
         bind_id: string;
         dur: number;
-        flow_in: boolean;
-        flow_out: boolean;
+        flow_in?: boolean;
+        flow_out?: boolean;
         id: string;
         name: 'LatencyInfo.Flow';
         ph: 'X';
@@ -14229,8 +14253,8 @@ export namespace _TraceEvent {
           };
           bind_id: string;
           dur: number;
-          flow_in: boolean;
-          flow_out: boolean;
+          flow_in?: boolean;
+          flow_out?: boolean;
           id2: {
             global: string;
           };
@@ -14253,8 +14277,8 @@ export namespace _TraceEvent {
           };
           bind_id: string;
           dur: number;
-          flow_in: boolean;
-          flow_out: boolean;
+          flow_in?: boolean;
+          flow_out?: boolean;
           id2: {
             global: string;
           };
@@ -14897,9 +14921,9 @@ export namespace _TraceEvent {
         
         };
         bind_id: string;
-        dur: number;
-        flow_in: boolean;
-        flow_out: boolean;
+        dur?: number;
+        flow_in?: boolean;
+        flow_out?: boolean;
         id: string;
         name: 'MessageLoop::PostTask';
         ph: 'X';
@@ -14914,7 +14938,7 @@ export namespace _TraceEvent {
           src_file: string;
           src_func: string;
         };
-        dur: number;
+        dur?: number;
         name: 'MessageLoop::RunTask';
         ph: 'X';
         tdur: number;
@@ -15927,7 +15951,7 @@ export namespace _TraceEvent {
       args: {
       
       };
-      dur: number;
+      dur?: number;
       name: 'OnLibevent';
       ph: 'X';
       tdur: number;
@@ -16888,7 +16912,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'ProxyImpl::NotifyReadyToCommitOnImpl';
         ph: 'X';
         tdur: number;
@@ -16979,7 +17003,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'ProxyImpl::ScheduledActionCommit';
         ph: 'X';
         tdur: number;
@@ -17251,7 +17275,9 @@ export namespace _TraceEvent {
             '9': string;
             '10': string;
             '11': string;
-            '12': string;
+            '12'?: {
+            
+            };
           }[];
           quic_priority: number;
           quic_stream_id: number;
@@ -17287,9 +17313,6 @@ export namespace _TraceEvent {
           delta_time_largest_observed_us: number;
           largest_observed: number;
           missing_packets: {
-          
-          }[];
-          received_packet_times: {
           
           }[];
         };
@@ -19068,7 +19091,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -19562,10 +19587,10 @@ export namespace _TraceEvent {
       args: {
       
       };
-      dur: number;
+      dur?: number;
       name: 'RunTask';
       ph: 'X';
-      tdur: number;
+      tdur?: number;
       tts: number;
     }
   }
@@ -19731,7 +19756,7 @@ export namespace _TraceEvent {
             type: string;
           };
         };
-        dur: number;
+        dur?: number;
         name: 'Scheduler::BeginFrame';
         ph: 'X';
         tdur: number;
@@ -19799,7 +19824,7 @@ export namespace _TraceEvent {
           };
           main_thread_missed_last_deadline: boolean;
         };
-        dur: number;
+        dur?: number;
         name: 'Scheduler::BeginImplFrame';
         ph: 'X';
         tdur: number;
@@ -20330,7 +20355,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'Scheduler::NotifyReadyToCommit';
         ph: 'X';
         tdur: number;
@@ -20862,7 +20887,7 @@ export namespace _TraceEvent {
           };
         };
       };
-      dur: number;
+      dur?: number;
       name: 'SchedulerStateMachine';
       ph: 'X';
       tdur: number;
@@ -21304,96 +21329,53 @@ export namespace _TraceEvent {
       args: {
         snapshot: {
           active_queues: {
+            current_fence?: number;
+            delay_to_next_task_ms?: number;
+            delayed_fence_seconds_from_now?: number;
             delayed_incoming_queue: {
-              posted_from?: {
-              
-              };
-              sequence_num?: {
-              
-              };
-              nestable?: {
-              
-              };
-              is_high_res?: {
-              
-              };
-              is_cancelled?: {
-              
-              };
-              delayed_run_time?: {
-              
-              };
-              delayed_run_time_milliseconds_from_now?: {
-              
-              };
+              delayed_run_time: number;
+              delayed_run_time_milliseconds_from_now: number;
+              is_cancelled: boolean;
+              is_high_res: boolean;
+              nestable: boolean;
+              posted_from: string;
+              sequence_num: number;
             }[];
             delayed_incoming_queue_size: number;
             delayed_work_queue: {
-              posted_from?: {
-              
-              };
-              enqueue_order?: {
-              
-              };
-              sequence_num?: {
-              
-              };
-              nestable?: {
-              
-              };
-              is_high_res?: {
-              
-              };
-              is_cancelled?: {
-              
-              };
-              delayed_run_time?: {
-              
-              };
-              delayed_run_time_milliseconds_from_now?: {
-              
-              };
+              delayed_run_time: number;
+              delayed_run_time_milliseconds_from_now: number;
+              enqueue_order: number;
+              is_cancelled: boolean;
+              is_high_res: boolean;
+              nestable: boolean;
+              posted_from: string;
+              sequence_num: number;
             }[];
             delayed_work_queue_capacity: number;
             delayed_work_queue_size: number;
             enabled: boolean;
             immediate_incoming_queue: {
-              posted_from?: {
-              
-              };
-              enqueue_order?: {
-              
-              };
-              sequence_num?: {
-              
-              };
-              nestable?: {
-              
-              };
-              is_high_res?: {
-              
-              };
-              is_cancelled?: {
-              
-              };
-              delayed_run_time?: {
-              
-              };
-              delayed_run_time_milliseconds_from_now?: {
-              
-              };
+              delayed_run_time: number;
+              delayed_run_time_milliseconds_from_now: number;
+              enqueue_order: number;
+              is_cancelled: boolean;
+              is_high_res: boolean;
+              nestable: boolean;
+              posted_from: string;
+              sequence_num: number;
             }[];
             immediate_incoming_queue_capacity: number;
             immediate_incoming_queue_size: number;
             immediate_work_queue: {
-              delayed_run_time?: number;
-              delayed_run_time_milliseconds_from_now?: number;
-              enqueue_order?: number;
-              is_cancelled?: boolean;
-              is_high_res?: boolean;
-              nestable?: boolean;
-              posted_from?: string;
-              sequence_num?: number;
+              delayed_run_time: number;
+              delayed_run_time_milliseconds_from_now: number;
+              enqueue_order: number;
+              is_cancelled: boolean;
+              is_high_res: boolean;
+              nestable: boolean;
+              posted_from: string;
+              sequence_num: number;
             }[];
             immediate_work_queue_capacity: number;
             immediate_work_queue_size: number;
@@ -21401,117 +21383,90 @@ export namespace _TraceEvent {
             priority: string;
             task_queue_id: string;
             time_domain_name: string;
-            delay_to_next_task_ms?: {
-            
-            };
-            current_fence?: {
-            
-            };
-            delayed_fence_seconds_from_now?: {
-            
-            };
           }[];
           has_incoming_immediate_work: {
-          
-          }[];
-          queues_to_delete: {
-          
+            '0': string;
+            '1': string;
+            '2': string;
+            '3': string;
+            '4': string;
+            '5'?: string;
+            '6'?: {
+            
+            };
+            '7'?: {
+            
+            };
+            '8'?: {
+            
+            };
+            '9'?: {
+            
+            };
+            '10'?: {
+            
+            };
+            '11'?: {
+            
+            };
+            '12'?: {
+            
+            };
+            '13'?: {
+            
+            };
+            '14'?: {
+            
+            };
+            '15'?: {
+            
+            };
+            '16'?: {
+            
+            };
+            '17'?: {
+            
+            };
+            '18'?: {
+            
+            };
+            '19'?: {
+            
+            };
           }[];
           queues_to_gracefully_shutdown: {
-            name?: {
-            
-            };
-            task_queue_id?: {
-            
-            };
-            enabled?: {
-            
-            };
-            time_domain_name?: {
-            
-            };
-            immediate_incoming_queue_size?: {
-            
-            };
-            delayed_incoming_queue_size?: {
-            
-            };
-            immediate_work_queue_size?: {
-            
-            };
-            delayed_work_queue_size?: {
-            
-            };
-            immediate_incoming_queue_capacity?: {
-            
-            };
-            immediate_work_queue_capacity?: {
-            
-            };
-            delayed_work_queue_capacity?: {
-            
-            };
-            delay_to_next_task_ms?: {
-            
-            };
-            immediate_incoming_queue?: {
-            
-            };
-            delayed_work_queue?: {
-              posted_from?: {
-              
-              };
-              enqueue_order?: {
-              
-              };
-              sequence_num?: {
-              
-              };
-              nestable?: {
-              
-              };
-              is_high_res?: {
-              
-              };
-              is_cancelled?: {
-              
-              };
-              delayed_run_time?: {
-              
-              };
-              delayed_run_time_milliseconds_from_now?: {
-              
-              };
-            };
-            immediate_work_queue?: {
-            
-            };
-            delayed_incoming_queue?: {
-              posted_from?: {
-              
-              };
-              sequence_num?: {
-              
-              };
-              nestable?: {
-              
-              };
-              is_high_res?: {
-              
-              };
-              is_cancelled?: {
-              
-              };
-              delayed_run_time?: {
-              
-              };
-              delayed_run_time_milliseconds_from_now?: {
-              
-              };
-            };
-            priority?: {
-            
-            };
+            delay_to_next_task_ms?: number;
+            delayed_incoming_queue: {
+              delayed_run_time: number;
+              delayed_run_time_milliseconds_from_now: number;
+              is_cancelled: boolean;
+              is_high_res: boolean;
+              nestable: boolean;
+              posted_from: string;
+              sequence_num: number;
+            }[];
+            delayed_incoming_queue_size: number;
+            delayed_work_queue: {
+              delayed_run_time: number;
+              delayed_run_time_milliseconds_from_now: number;
+              enqueue_order: number;
+              is_cancelled: boolean;
+              is_high_res: boolean;
+              nestable: boolean;
+              posted_from: string;
+              sequence_num: number;
+            }[];
+            delayed_work_queue_capacity: number;
+            delayed_work_queue_size: number;
+            enabled: boolean;
+            immediate_incoming_queue_capacity: number;
+            immediate_incoming_queue_size: number;
+            immediate_work_queue_capacity: number;
+            immediate_work_queue_size: number;
+            name: string;
+            priority: string;
+            task_queue_id: string;
+            time_domain_name: string;
           }[];
           selected_queue?: string;
           selector: {
@@ -21519,10 +21474,8 @@ export namespace _TraceEvent {
           };
           time_domains: {
             name: string;
+            next_delay_ms?: number;
             registered_delay_count: number;
-            next_delay_ms?: {
-            
-            };
           }[];
           work_queue_name?: string;
         };
@@ -21800,8 +21753,8 @@ export namespace _TraceEvent {
         };
         bind_id: string;
         dur: number;
-        flow_in: boolean;
-        flow_out: boolean;
+        flow_in?: boolean;
+        flow_out?: boolean;
         id: string;
         name: 'ServiceWorkerNavigationLoader::ServiceWorkerNavigationloader';
         ph: 'X';
@@ -21961,15 +21914,15 @@ export namespace _TraceEvent {
       args: {
         params: {
           scts: {
-            extensions?: string;
-            hash_algorithm?: string;
-            log_id?: string;
-            origin?: string;
-            signature_algorithm?: string;
-            signature_data?: string;
-            timestamp?: string;
-            verification_status?: string;
-            version?: number;
+            extensions: string;
+            hash_algorithm: string;
+            log_id: string;
+            origin: string;
+            signature_algorithm: string;
+            signature_data: string;
+            timestamp: string;
+            verification_status: string;
+            version: number;
           }[];
         };
         source_type: string;
@@ -22157,7 +22110,9 @@ export namespace _TraceEvent {
   namespace SIMPLE_CACHE_ENTRY_OPEN_END {
     interface n extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -23023,7 +22978,7 @@ export namespace _TraceEvent {
     interface b extends Base {
       args: {
         params: {
-          source_dependency?: {
+          source_dependency: {
             id: number;
             type: number;
           };
@@ -23157,7 +23112,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -23222,7 +23179,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -23888,9 +23847,6 @@ export namespace _TraceEvent {
           finished: boolean;
           request_id: number;
           threat_metadata: {
-            api_permissions: {
-            
-            }[];
             popuplation_id: string;
             subresource_filter_match: {
             
@@ -24243,8 +24199,8 @@ export namespace _TraceEvent {
       };
       bind_id: string;
       dur: number;
-      flow_in: boolean;
-      flow_out: boolean;
+      flow_in?: boolean;
+      flow_out?: boolean;
       id: string;
       name: 'TaskScheduler PostTask';
       ph: 'X';
@@ -24259,7 +24215,7 @@ export namespace _TraceEvent {
         src_file: string;
         src_func: string;
       };
-      dur: number;
+      dur?: number;
       name: 'TaskScheduler RunTask';
       ph: 'X';
       tdur: number;
@@ -24292,7 +24248,7 @@ export namespace _TraceEvent {
             task_priority: string;
           };
         };
-        dur: number;
+        dur?: number;
         name: 'TaskTracker::RunTask';
         ph: 'X';
         tdur: number;
@@ -24363,7 +24319,8 @@ export namespace _TraceEvent {
             '13': string;
             '14': string;
             '15': string;
-            '16': string;
+            '16'?: string;
+            '17'?: string;
           }[];
           canonical_name: string;
         };
@@ -24471,7 +24428,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'ThreadControllerImpl::DoWork';
         ph: 'X';
         tdur: number;
@@ -24485,10 +24442,10 @@ export namespace _TraceEvent {
           src_file?: string;
           src_func?: string;
         };
-        bind_id: string;
-        dur: number;
-        flow_in: boolean;
-        id: string;
+        bind_id?: string;
+        dur?: number;
+        flow_in?: boolean;
+        id?: string;
         name: 'ThreadControllerImpl::RunTask';
         ph: 'X';
         tdur: number;
@@ -25069,7 +25026,7 @@ export namespace _TraceEvent {
           args: {
           
           };
-          dur: number;
+          dur?: number;
           name: 'tracing.mojom.Agent';
           ph: 'X';
           tdur: number;
@@ -25810,7 +25767,9 @@ export namespace _TraceEvent {
   
     interface e extends Base {
       args: {
-        params: string;
+        params: {
+          net_error: number;
+        };
         source_type: string;
       };
       id: string;
@@ -26464,7 +26423,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'v8.callFunction';
         ph: 'X';
         tdur: number;
@@ -26505,10 +26464,10 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'v8.compile';
         ph: 'X';
-        tdur: number;
+        tdur?: number;
         tts: number;
       }
     }
@@ -27961,11 +27920,11 @@ export namespace _TraceEvent {
             url: string;
           };
         };
-        bind_id: string;
-        dur: number;
-        flow_in: boolean;
-        flow_out: boolean;
-        id: string;
+        bind_id?: string;
+        dur?: number;
+        flow_in?: boolean;
+        flow_out?: boolean;
+        id?: string;
         name: 'v8.parseOnBackground';
         ph: 'X';
         tdur: number;
@@ -27991,7 +27950,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'V8.PreParse';
         ph: 'X';
         tdur: number;
@@ -28550,7 +28509,7 @@ export namespace _TraceEvent {
         args: {
         
         };
-        dur: number;
+        dur?: number;
         name: 'V8.Runtime_Runtime_LoadIC_Miss';
         ph: 'X';
         tdur: number;
@@ -30130,7 +30089,7 @@ export namespace _TraceEvent {
           args: {
           
           };
-          dur: number;
+          dur?: number;
           name: 'viz.mojom.CompositorFrameSinkClient';
           ph: 'X';
           tdur: number;

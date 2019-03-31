@@ -6,19 +6,19 @@ describe('utils', () => {
       [
         {}, // 1+ objects
         {}, // expected combined object
-        [] // expected optional paths
+        [], // expected optional paths
       ],
       [
         { a: 1 },
         { a: 1 },
-        []
+        [],
       ],
-      // [
-      //   { a: 1 },
-      //   { b: 1 },
-      //   { a: 1, b: 1 },
-      //   ['a', 'b']
-      // ],
+      [
+        { a: 1 },
+        { b: 1 },
+        { a: 1, b: 1 },
+        ['a', 'b'],
+      ],
       [
         { nested: { a: 1 } },
         { nested: { b: 1 } },
@@ -29,40 +29,58 @@ describe('utils', () => {
         { nested: { a: 1, c: 1 } },
         { nested: { b: 1, c: 1 } },
         { nested: { a: 1, b: 1, c: 1 } },
-        ['nested.a', 'nested.b']
+        ['nested.a', 'nested.b'],
       ],
-      // [
-      //   { nested: { a: 1, c: 1 } },
-      //   { nested: { b: 1, c: 1 } },
-      //   {},
-      //   { nested: { a: 1, b: 1, c: 1 } },
-      //   ['nested', 'nested.a', 'nested.b', 'nested.c']
-      // ],
+      [
+        { nested: { a: 1, c: 1 } },
+        { nested: { b: 1, c: 1 } },
+        {},
+        { nested: { a: 1, b: 1, c: 1 } },
+        ['nested', 'nested.a', 'nested.b'],
+      ],
       [
         { nested: { nested2: { a: 1 } } },
         { nested: { nested2: { b: 1 } } },
         { nested: { nested2: { a: 1, b: 1 } } },
-        ['nested.nested2.a', 'nested.nested2.b']
+        ['nested.nested2.a', 'nested.nested2.b'],
       ],
-      // [
-      //   { nested: { nested2: { a: 1 } } },
-      //   { nested: { nested2: { b: 1 } } },
-      //   { },
-      //   { nested: { nested2: { a: 1, b: 1 } } },
-      //   ['nested', 'nested.nested2', 'nested.nested2.a', 'nested.nested2.b']
-      // ],
-      // [
-      //   { nested: { nested2: { a: 1 } } },
-      //   { nested: { nested2: { b: 1 } } },
-      //   { nested: { } },
-      //   { nested: { nested2: { a: 1, b: 1 } } },
-      //   ['nested.nested2.a', 'nested.nested2.b']
-      // ],
       [
-        { nested: { nested2: { array: [{a: 1}] } } },
-        { nested: { nested2: { array: [{a: 1, b:1}] } } },
-        { nested: { nested2: { array: [{a: 1, b:1}] } } },
-        ['nested.nested2.array.b']
+        { nested: { nested2: { a: 1 } } },
+        { nested: { nested2: { b: 1 } } },
+        {},
+        { nested: { nested2: { a: 1, b: 1 } } },
+        ['nested', 'nested.nested2.a', 'nested.nested2.b'],
+      ],
+      [
+        { nested: { nested2: { a: 1 } } },
+        { nested: { nested2: { b: 1 } } },
+        { nested: {} },
+        { nested: { nested2: { a: 1, b: 1 } } },
+        ['nested.nested2', 'nested.nested2.a', 'nested.nested2.b'],
+      ],
+      [
+        { nested: { nested2: { array: [{ a: 1 }] } } },
+        { nested: { nested2: { array: [{ a: 1, b: 1 }] } } },
+        { nested: { nested2: { array: [{ a: 1, b: 1 }] } } },
+        ['nested.nested2.array.b'],
+      ],
+      [
+        { array: [1] },
+        { array: [1, 2] },
+        { array: [1] },
+        [],
+      ],
+      [
+        { array: [] },
+        { array: [1] },
+        { array: [1] },
+        [],
+      ],
+      [
+        { array: [1] },
+        {},
+        { array: [1] },
+        ['array'],
       ],
     ];
 
@@ -76,9 +94,15 @@ describe('utils', () => {
         const expectedOptionalPaths = testCase[testCase.length - 1];
 
         const actual = utils.combineObjects(objects);
+
+        // don't care about order
+        const expectedOptionalPathComponents = expectedOptionalPaths.map(p => p.split('.'));
+        expectedOptionalPathComponents.sort((a, b) => a.join('.').localeCompare(b.join('.')));
+        actual.optionalPathComponents.sort((a, b) => a.join('.').localeCompare(b.join('.')));
+
         expect(actual).toEqual({
           combined: expectedCombined,
-          optionalPathComponents: expectedOptionalPaths.map(p => p.split('.')),
+          optionalPathComponents: expectedOptionalPathComponents,
         });
       });
     }
