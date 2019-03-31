@@ -2,6 +2,22 @@
  * Combines properties found in all objects. Also return paths
  * to properties only found in a subset of objects.
  * @param {Array<*>} objects
+ * @return {{combined: *, optionalPathComponents: string[][]}}
+ */
+function combineObjects(objects) {
+  const state = {
+    combined: {},
+    optionalPathComponents: [],
+    pathPrefix: [],
+    processedSubObject: new Set(),
+  }
+  combineObjectsImpl(objects, state);
+  const { combined, optionalPathComponents } = state;
+  return { combined, optionalPathComponents };
+}
+
+/**
+ * @param {Array<*>} objects
  * @param {{combined: *, optionalPathComponents: string[][], pathPrefix: string[], processedSubObject: Set<string>}} state
  */
 function combineObjectsImpl(objects, state) {
@@ -58,24 +74,6 @@ function combineObjectsImpl(objects, state) {
       optionalPathComponents.push([...pathPrefix, key]);
     }
   }
-}
-
-/**
- * Combines properties found in all objects. Also return paths
- * to properties only found in a subset of objects.
- * @param {Array<*>} objects
- * @return {{combined: *, optionalPathComponents: string[][]}}
- */
-function combineObjects(objects) {
-  const state = {
-    combined: {},
-    optionalPathComponents: [],
-    pathPrefix: [],
-    processedSubObject: new Set(),
-  }
-  combineObjectsImpl(objects, state);
-  const { combined, optionalPathComponents } = state;
-  return { combined, optionalPathComponents };
 }
 
 /**
