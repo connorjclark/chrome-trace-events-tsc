@@ -58,6 +58,12 @@ describe('utils', () => {
       //   { nested: { nested2: { a: 1, b: 1 } } },
       //   ['nested.nested2.a', 'nested.nested2.b']
       // ],
+      [
+        { nested: { nested2: { array: [{a: 1}] } } },
+        { nested: { nested2: { array: [{a: 1, b:1}] } } },
+        { nested: { nested2: { array: [{a: 1, b:1}] } } },
+        ['nested.nested2.array.b']
+      ],
     ];
 
     for (let i = 0; i < testCases.length; i++) {
@@ -78,4 +84,3 @@ describe('utils', () => {
     }
   });
 });
-

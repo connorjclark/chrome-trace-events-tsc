@@ -64,10 +64,14 @@ function combineObjects(objects) {
     let cur = combined;
     for (let i = 0; i < pathComponents.length - 1; i++) {
       const key = pathComponents[i];
-      // if (cur[key] === undefined) {
-      //   cur[key] = {};
-      // }
+      if (cur[key] === undefined) {
+        cur[key] = {};
+      }
       cur = cur[key];
+    }
+    if (Array.isArray(cur)) {
+      if (cur.length === 0) cur[0] = {};
+      cur = cur[0];
     }
     if (Array.isArray(value)) {
       cur[pathComponents[pathComponents.length - 1]] = value;
