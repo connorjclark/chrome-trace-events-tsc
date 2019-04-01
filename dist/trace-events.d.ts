@@ -1,4 +1,4 @@
-export namespace _TraceEvent {
+export namespace TraceEvent {
   interface Base {
     cat: string;
     pid: number;

@@ -307,8 +307,8 @@ async function run() {
 
   /** @type {Gen.Namespace} */
   const topLevelNamespace = {
-    idPath: ['_TraceEvent'],
-    name: '_TraceEvent',
+    idPath: ['TraceEvent'],
+    name: 'TraceEvent',
     interfaces: [],
     namespaces: [],
   };
