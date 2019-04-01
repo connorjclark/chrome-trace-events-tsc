@@ -7,6 +7,8 @@ export namespace _TraceEvent {
   }
 
   type TraceEvent = 
+    A.F |
+    A.S |
     AAConvexPathOp.X |
     AAStrokeRect.X |
     AcquireLock.X |
@@ -14,13 +16,60 @@ export namespace _TraceEvent {
     AddFrameDisplayed.X |
     ADFUEL.AdFuelDOMContentLoaded.R |
     ADFUEL.AdFuelInitialized.R |
+    ADFUEL.AdFuelRequestComplete.R |
+    ADFUEL.AdFuelwindow.Load.R |
+    ADFUEL.AdRenderedad_bnr_atf_01.R |
+    ADFUEL.AdRenderedad_bnr_btf_01.R |
+    ADFUEL.AdRenderedad_mod_35731bb1e.R |
+    ADFUEL.AdRenderedad_oop_float_01.R |
+    ADFUEL.AdRenderedad_rect_btf_02.R |
+    ADFUEL.ApplyingPageLevelTargeting.R |
+    ADFUEL.ApplyingWindowSiteLevelOptions.R |
+    ADFUEL.BuildingSlotad_bnr_atf_01.b |
+    ADFUEL.BuildingSlotad_bnr_atf_01.e |
+    ADFUEL.BuildingSlotad_bnr_atf_01End.R |
+    ADFUEL.BuildingSlotad_bnr_atf_01Start.R |
+    ADFUEL.BuildingSlotad_bnr_btf_01.b |
+    ADFUEL.BuildingSlotad_bnr_btf_01.e |
+    ADFUEL.BuildingSlotad_bnr_btf_01End.R |
+    ADFUEL.BuildingSlotad_bnr_btf_01Start.R |
+    ADFUEL.BuildingSlotad_bnr_btf_02.b |
+    ADFUEL.BuildingSlotad_bnr_btf_02.e |
+    ADFUEL.BuildingSlotad_bnr_btf_02End.R |
+    ADFUEL.BuildingSlotad_bnr_btf_02Start.R |
     ADFUEL.BuildingSlotad_mod_35731bb1e.b |
     ADFUEL.BuildingSlotad_mod_35731bb1e.e |
     ADFUEL.BuildingSlotad_mod_35731bb1eEnd.R |
     ADFUEL.BuildingSlotad_mod_35731bb1eStart.R |
+    ADFUEL.BuildingSlotad_oop_float_01.b |
+    ADFUEL.BuildingSlotad_oop_float_01.e |
+    ADFUEL.BuildingSlotad_oop_float_01End.R |
+    ADFUEL.BuildingSlotad_oop_float_01Start.R |
+    ADFUEL.BuildingSlotad_oop_skin_01.b |
+    ADFUEL.BuildingSlotad_oop_skin_01.e |
+    ADFUEL.BuildingSlotad_oop_skin_01End.R |
+    ADFUEL.BuildingSlotad_oop_skin_01Start.R |
+    ADFUEL.BuildingSlotad_rect_btf_02.b |
+    ADFUEL.BuildingSlotad_rect_btf_02.e |
+    ADFUEL.BuildingSlotad_rect_btf_02End.R |
+    ADFUEL.BuildingSlotad_rect_btf_02Start.R |
+    ADFUEL.DispatchQueue.b |
+    ADFUEL.DispatchQueue.e |
+    ADFUEL.DispatchQueueEnd.R |
     ADFUEL.DispatchQueueStart.R |
     ADFUEL.GPTIncluded.R |
+    ADFUEL.PageLevelGPTBuild.b |
+    ADFUEL.PageLevelGPTBuild.e |
+    ADFUEL.PageLevelGPTBuildEnd.R |
+    ADFUEL.PageLevelGPTBuildStart.R |
+    ADFUEL.QueueRegistrycnn_homepage_rb.b |
+    ADFUEL.QueueRegistrycnn_homepage_rb.e |
+    ADFUEL.QueueRegistrycnn_homepage_rbEnd.R |
     ADFUEL.QueueRegistrycnn_homepage_rbStart.R |
+    ADFUEL.QueueRegistrycnn_homepage.b |
+    ADFUEL.QueueRegistrycnn_homepage.e |
+    ADFUEL.QueueRegistrycnn_homepageEnd.R |
+    ADFUEL.QueueRegistrycnn_homepageStart.R |
     ADFUEL.RegisteringModule.AmazonA9Modulev3_2_5.R |
     ADFUEL.RegisteringModule.CEPModulev3_0_2.R |
     ADFUEL.RegisteringModule.CreativeReviewModulev3_0_5.R |
@@ -31,6 +80,19 @@ export namespace _TraceEvent {
     ADFUEL.RegisteringModule.PrebidModulev3_3_0.R |
     ADFUEL.RegisteringModule.ProximicModulev3_1_2.R |
     ADFUEL.RegisteringModule.TransactionIDModulev3_1_1.R |
+    ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1.R |
+    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json.b |
+    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json.e |
+    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonEnd.R |
+    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonStart.R |
+    ADFUEL.SendingRequest.b |
+    ADFUEL.SendingRequest.e |
+    ADFUEL.SendingRequestEnd.R |
+    ADFUEL.SendingRequestStart.R |
+    ADFUEL.SlotLoadedad_bnr_atf_01.R |
+    ADFUEL.SlotLoadedad_mod_35731bb1e.R |
+    ADFUEL.SlotLoadedad_oop_float_01.R |
+    ADFUEL.SlotLoadedad_rect_btf_02.R |
     Allactivesurfacesready.I |
     Animation.b |
     Animation.e |
@@ -354,6 +416,9 @@ export namespace _TraceEvent {
     ExtensionMsg_ValidateMessagePort.X |
     ExtensionMsg_WatchPages.X |
     Extensions.FeatureProvider.FeatureProviderStatic.X |
+    FaveReady_mark.R |
+    FaveReady.b |
+    FaveReady.e |
     FaviconServiceImpl.GetFaviconForPageURL.X |
     FaviconServiceImpl.GetFaviconImageForPageURL.X |
     FaviconServiceImpl.RunFaviconImageCallbackWithBitmapResults.X |
@@ -854,9 +919,13 @@ export namespace _TraceEvent {
     LiveObjectVisitor.VisitBlackObjects.X |
     LiveObjectVisitor.VisitBlackObjectsNoFail.X |
     LoadAnyStartablePendingRequests.X |
+    LoadEndeventUtils.R |
+    LoadEndpixelQueue.R |
     LoadEventEnd.R |
     LoadEventStart.R |
     LoadFinished.I |
+    LoadStarteventUtils.R |
+    LoadStartpixelQueue.R |
     LocalFrameView.FrameRectsChanged.X |
     LocalFrameView.Layout.X |
     LocalFrameView.PerformLayout.B |
@@ -877,6 +946,10 @@ export namespace _TraceEvent {
     LocalWindowProxy.SetupWindowPrototypeChain.X |
     LocalWindowProxy.UpdateDocumentProperty.X |
     LongTask.I |
+    Lteu.b |
+    Lteu.e |
+    Ltpq.b |
+    Ltpq.e |
     MainThreadLatency.C |
     MainThreadScheduler.RendererMainThreadLoad.Background.C |
     MainThreadScheduler.RendererMainThreadLoad.C |
@@ -996,17 +1069,50 @@ export namespace _TraceEvent {
     Node.UpdateDistribution.X |
     NotStartingIdlePeriodBecauseDeadlineIsTooClose.X |
     Num_cpus.M |
+    Obmark0c_search.R |
+    Obmark0odbMB_120.R |
+    Obmark0odbTR_11.R |
+    Obmark0renderMB_120.R |
+    Obmark0renderTR_11.R |
+    Obmark0start.R |
+    Obmark1c_foundMB_120.R |
+    Obmark1c_foundTR_11.R |
+    Obmark1odb_rMB_120.R |
+    Obmark1odb_rTR_11.R |
+    Obmark1renderedMB_120.R |
+    Obmark1renderedTR_11.R |
+    Obmeasurec_foundMB_120.b |
+    Obmeasurec_foundMB_120.e |
+    Obmeasurec_foundTR_11.b |
+    Obmeasurec_foundTR_11.e |
+    Obmeasureodb_rMB_120.b |
+    Obmeasureodb_rMB_120.e |
+    Obmeasureodb_rTR_11.b |
+    Obmeasureodb_rTR_11.e |
+    ObmeasureodbMB_120.b |
+    ObmeasureodbMB_120.e |
+    ObmeasureodbTR_11.b |
+    ObmeasureodbTR_11.e |
+    ObmeasurerenderedMB_120.b |
+    ObmeasurerenderedMB_120.e |
+    ObmeasurerenderedTR_11.b |
+    ObmeasurerenderedTR_11.e |
+    Onetapvideo.EmbedRequest.R |
+    Onetapvideo.PlayerReady.R |
     OnIdleTaskPosted.X |
     OnIdleTaskPostedOnMainThread.X |
     OnLibevent.X |
     OnLoad.b |
     OnLoad.e |
+    Optimizely.BlockBegin.R |
     OptimizelyEnd.R |
     OptimizelyStart.R |
     OptimizelyTime.b |
     OptimizelyTime.e |
     OverlayProcessor.ProcessForOverlays.X |
     PageAnimator.ServiceScriptedAnimations.X |
+    PageLoad.b |
+    PageLoad.e |
     PageLoadMetricsObserver.OnCommit.X |
     PageLoadMetricsObserver.OnHidden.X |
     PageLoadMetricsObserver.OnShown.X |
@@ -1640,6 +1746,15 @@ export namespace _TraceEvent {
     TimerFire.X |
     TimerInstall.I |
     TimerRemove.I |
+    TimeStamp.I |
+    TimeToDomReady.b |
+    TimeToDomReady.e |
+    TimeToInteractive.b |
+    TimeToInteractive.e |
+    TimeToZonesAndDomReady.b |
+    TimeToZonesAndDomReady.e |
+    TimeToZonesComplete.b |
+    TimeToZonesComplete.e |
     TopLevel.O |
     ToSpaceUpdatingItem.ProcessVisitAll.X |
     Trace_buffer_overflowed.M |
@@ -1828,6 +1943,7 @@ export namespace _TraceEvent {
     V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS.X |
     V8.GC_SCAVENGER_SCAVENGE.X |
     V8.GCCompactor.X |
+    V8.GCFinalizeMC.X |
     V8.GCFinalizeMCReduceMemory.X |
     V8.GCIdleNotification.X |
     V8.GCIncrementalMarking.X |
@@ -2051,7 +2167,31 @@ export namespace _TraceEvent {
     XHRReadyStateChange.X |
     YieldParserForScriptBlockingResources.X |
     YieldParserForScriptLoad.X |
-    ZeroSuggestProvider.Start.X;
+    ZeroSuggestProvider.Start.X |
+    ZonesAndDomReady.R |
+    ZonesReady.R;
+
+  namespace A {
+    interface F extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'a';
+      ph: 'F';
+      tts: number;
+    }
+  
+    interface S extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'a';
+      ph: 'S';
+      tts: number;
+    }
+  }
 
   namespace AAConvexPathOp {
     interface X extends Base {
@@ -2146,6 +2286,269 @@ export namespace _TraceEvent {
       }
     }
   
+    namespace AdFuelRequestComplete {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] AdFuel Request Complete';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace AdFuelwindow {
+      namespace Load {
+        interface R extends Base {
+          args: {
+            data: {
+              navigationId: string;
+            };
+          };
+          name: '[ADFUEL] AdFuel window.load';
+          ph: 'R';
+          tts: number;
+        }
+      }
+    }
+  
+    namespace AdRenderedad_bnr_atf_01 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Ad Rendered [ad_bnr_atf_01]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace AdRenderedad_bnr_btf_01 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Ad Rendered [ad_bnr_btf_01]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace AdRenderedad_mod_35731bb1e {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Ad Rendered [ad_mod_35731bb1e]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace AdRenderedad_oop_float_01 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Ad Rendered [ad_oop_float_01]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace AdRenderedad_rect_btf_02 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Ad Rendered [ad_rect_btf_02]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace ApplyingPageLevelTargeting {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Applying Page-Level Targeting';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace ApplyingWindowSiteLevelOptions {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Applying Window Site-Level Options.';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_atf_01 {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_bnr_atf_01]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_bnr_atf_01]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_atf_01End {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_bnr_atf_01] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_atf_01Start {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_bnr_atf_01] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_btf_01 {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_01]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_01]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_btf_01End {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_01] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_btf_01Start {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_01] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_btf_02 {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_02]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_02]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_btf_02End {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_02] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_bnr_btf_02Start {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_bnr_btf_02] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
     namespace BuildingSlotad_mod_35731bb1e {
       interface b extends Base {
         args: {
@@ -2194,6 +2597,185 @@ export namespace _TraceEvent {
       }
     }
   
+    namespace BuildingSlotad_oop_float_01 {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_oop_float_01]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_oop_float_01]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_oop_float_01End {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_oop_float_01] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_oop_float_01Start {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_oop_float_01] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_oop_skin_01 {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_oop_skin_01]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_oop_skin_01]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_oop_skin_01End {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_oop_skin_01] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_oop_skin_01Start {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_oop_skin_01] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_rect_btf_02 {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_rect_btf_02]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Building Slot [ad_rect_btf_02]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_rect_btf_02End {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_rect_btf_02] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace BuildingSlotad_rect_btf_02Start {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Building Slot [ad_rect_btf_02] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace DispatchQueue {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Dispatch Queue';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Dispatch Queue';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace DispatchQueueEnd {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Dispatch Queue End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
     namespace DispatchQueueStart {
       interface R extends Base {
         args: {
@@ -2220,6 +2802,89 @@ export namespace _TraceEvent {
       }
     }
   
+    namespace PageLevelGPTBuild {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Page-Level GPT Build';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Page-Level GPT Build';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace PageLevelGPTBuildEnd {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Page-Level GPT Build End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace PageLevelGPTBuildStart {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Page-Level GPT Build Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage_rb {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage_rbEnd {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
     namespace QueueRegistrycnn_homepage_rbStart {
       interface R extends Base {
         args: {
@@ -2228,6 +2893,54 @@ export namespace _TraceEvent {
           };
         };
         name: '[ADFUEL] Queue Registry [cnn_homepage_rb] Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage]';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage]';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepageEnd {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage] End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepageStart {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage] Start';
         ph: 'R';
         tts: number;
       }
@@ -2362,6 +3075,173 @@ export namespace _TraceEvent {
           ph: 'R';
           tts: number;
         }
+      }
+    
+      namespace TurnerGUIDModulev3_1_1 {
+        interface R extends Base {
+          args: {
+            data: {
+              navigationId: string;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Turner GUID Module v3.1.1';
+          ph: 'R';
+          tts: number;
+        }
+      }
+    }
+  
+    namespace RegistryLoadcdn {
+      namespace Cnn {
+        namespace Comadscnncnn_homepage {
+          namespace Json {
+            interface b extends Base {
+              args: {
+              
+              };
+              id: string;
+              name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json]';
+              ph: 'b';
+              tts: number;
+            }
+          
+            interface e extends Base {
+              args: {
+              
+              };
+              id: string;
+              name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json]';
+              ph: 'e';
+              tts: number;
+            }
+          }
+        
+          namespace JsonEnd {
+            interface R extends Base {
+              args: {
+                data: {
+                  navigationId: string;
+                };
+              };
+              name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json] End';
+              ph: 'R';
+              tts: number;
+            }
+          }
+        
+          namespace JsonStart {
+            interface R extends Base {
+              args: {
+                data: {
+                  navigationId: string;
+                };
+              };
+              name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json] Start';
+              ph: 'R';
+              tts: number;
+            }
+          }
+        }
+      }
+    }
+  
+    namespace SendingRequest {
+      interface b extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Sending Request';
+        ph: 'b';
+        tts: number;
+      }
+    
+      interface e extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Sending Request';
+        ph: 'e';
+        tts: number;
+      }
+    }
+  
+    namespace SendingRequestEnd {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Sending Request End';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace SendingRequestStart {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Sending Request Start';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace SlotLoadedad_bnr_atf_01 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Slot Loaded [ad_bnr_atf_01]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace SlotLoadedad_mod_35731bb1e {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Slot Loaded [ad_mod_35731bb1e]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace SlotLoadedad_oop_float_01 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Slot Loaded [ad_oop_float_01]';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace SlotLoadedad_rect_btf_02 {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: '[ADFUEL] Slot Loaded [ad_rect_btf_02]';
+        ph: 'R';
+        tts: number;
       }
     }
   }
@@ -3478,6 +4358,13 @@ export namespace _TraceEvent {
         data: {
           frame: string;
           id: number;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
         };
       };
       name: 'CancelAnimationFrame';
@@ -6933,6 +7820,41 @@ export namespace _TraceEvent {
           tts: number;
         }
       }
+    }
+  }
+
+  namespace FaveReady_mark {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'faveReady_mark';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace FaveReady {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'faveReady';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'faveReady';
+      ph: 'e';
+      tts: number;
     }
   }
 
@@ -14023,6 +14945,32 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace LoadEndeventUtils {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'loadEndeventUtils';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace LoadEndpixelQueue {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'loadEndpixelQueue';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
   namespace LoadEventEnd {
     interface R extends Base {
       args: {
@@ -14053,6 +15001,32 @@ export namespace _TraceEvent {
       name: 'LoadFinished';
       ph: 'I';
       s: string;
+      tts: number;
+    }
+  }
+
+  namespace LoadStarteventUtils {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'loadStarteventUtils';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace LoadStartpixelQueue {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'loadStartpixelQueue';
+      ph: 'R';
       tts: number;
     }
   }
@@ -14353,6 +15327,50 @@ export namespace _TraceEvent {
       name: 'LongTask';
       ph: 'I';
       s: string;
+      tts: number;
+    }
+  }
+
+  namespace Lteu {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'lteu';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'lteu';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace Ltpq {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ltpq';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ltpq';
+      ph: 'e';
       tts: number;
     }
   }
@@ -15920,6 +16938,366 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace Obmark0c_search {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-0-c_search';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark0odbMB_120 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-0-odb-MB_12-0';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark0odbTR_11 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-0-odb-TR_1-1';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark0renderMB_120 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-0-render-MB_12-0';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark0renderTR_11 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-0-render-TR_1-1';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark0start {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-0-start';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark1c_foundMB_120 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-1-c_found-MB_12-0';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark1c_foundTR_11 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-1-c_found-TR_1-1';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark1odb_rMB_120 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-1-odb_r-MB_12-0';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark1odb_rTR_11 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-1-odb_r-TR_1-1';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark1renderedMB_120 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-1-rendered-MB_12-0';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmark1renderedTR_11 {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'ob-mark-1-rendered-TR_1-1';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Obmeasurec_foundMB_120 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-c_found-MB_12-0';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-c_found-MB_12-0';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace Obmeasurec_foundTR_11 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-c_found-TR_1-1';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-c_found-TR_1-1';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace Obmeasureodb_rMB_120 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb_r-MB_12-0';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb_r-MB_12-0';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace Obmeasureodb_rTR_11 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb_r-TR_1-1';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb_r-TR_1-1';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace ObmeasureodbMB_120 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb-MB_12-0';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb-MB_12-0';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace ObmeasureodbTR_11 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb-TR_1-1';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-odb-TR_1-1';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace ObmeasurerenderedMB_120 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-rendered-MB_12-0';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-rendered-MB_12-0';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace ObmeasurerenderedTR_11 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-rendered-TR_1-1';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'ob-measure-rendered-TR_1-1';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace Onetapvideo {
+    namespace EmbedRequest {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: 'one-tap-video::embedRequest';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  
+    namespace PlayerReady {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: 'one-tap-video::playerReady';
+        ph: 'R';
+        tts: number;
+      }
+    }
+  }
+
   namespace OnIdleTaskPosted {
     interface X extends Base {
       args: {
@@ -15976,6 +17354,21 @@ export namespace _TraceEvent {
       id: string;
       name: 'On Load';
       ph: 'e';
+    }
+  }
+
+  namespace Optimizely {
+    namespace BlockBegin {
+      interface R extends Base {
+        args: {
+          data: {
+            navigationId: string;
+          };
+        };
+        name: 'optimizely:blockBegin';
+        ph: 'R';
+        tts: number;
+      }
     }
   }
 
@@ -16054,6 +17447,28 @@ export namespace _TraceEvent {
         tdur: number;
         tts: number;
       }
+    }
+  }
+
+  namespace PageLoad {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'pageLoad';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'pageLoad';
+      ph: 'e';
+      tts: number;
     }
   }
 
@@ -19131,6 +20546,13 @@ export namespace _TraceEvent {
         data: {
           frame: string;
           id: number;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
           timeout: number;
         };
       };
@@ -24979,6 +26401,109 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace TimeStamp {
+    interface I extends Base {
+      args: {
+        data: {
+          frame: string;
+          message: string;
+        };
+      };
+      name: 'TimeStamp';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  }
+
+  namespace TimeToDomReady {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToDomReady';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToDomReady';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace TimeToInteractive {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToInteractive';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToInteractive';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace TimeToZonesAndDomReady {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToZonesAndDomReady';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToZonesAndDomReady';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
+  namespace TimeToZonesComplete {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToZonesComplete';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'timeToZonesComplete';
+      ph: 'e';
+      tts: number;
+    }
+  }
+
   namespace TopLevel {
     interface O extends Base {
       args: {
@@ -26445,6 +27970,7 @@ export namespace _TraceEvent {
         args: {
           data: {
             cacheConsumeOptions?: string;
+            cacheProduceOptions?: string;
             cacheRejected?: boolean;
             columnNumber: number;
             consumedCacheSize?: number;
@@ -27500,6 +29026,19 @@ export namespace _TraceEvent {
         };
         dur: number;
         name: 'V8.GCCompactor';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  
+    namespace GCFinalizeMC {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'V8.GCFinalizeMC';
         ph: 'X';
         tdur: number;
         tts: number;
@@ -30884,6 +32423,13 @@ export namespace _TraceEvent {
       args: {
         data: {
           frame: string;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
           url: string;
         };
       };
@@ -30970,6 +32516,32 @@ export namespace _TraceEvent {
         tdur: number;
         tts: number;
       }
+    }
+  }
+
+  namespace ZonesAndDomReady {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'zonesAndDomReady';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace ZonesReady {
+    interface R extends Base {
+      args: {
+        data: {
+          navigationId: string;
+        };
+      };
+      name: 'zonesReady';
+      ph: 'R';
+      tts: number;
     }
   }
 }

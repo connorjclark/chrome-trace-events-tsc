@@ -526,6 +526,7 @@ export namespace _TraceEvent {
         args: {
           data: {
             cacheConsumeOptions?: string;
+            cacheProduceOptions?: string;
             cacheRejected?: boolean;
             columnNumber: number;
             consumedCacheSize?: number;
