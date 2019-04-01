@@ -187,6 +187,7 @@ async function run() {
     ...await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json'),
   ];
 
+  /** @type {Map<string, Array<*>>} */
   const eventsByTypeId = new Map();
 
   for (const event of events) {
@@ -222,11 +223,15 @@ async function run() {
     const id = idPath.join('.');
     if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
     const events = eventsByTypeId.get(id);
-    events.push(event);
+    assert(events);
+    events && events.push(event);
   }
 
   /** @type {Gen.Interface[]} */
   const interfaces = [];
+  /** @type {Map<string, Gen.Interface>} */
+  const interfaceById = new Map();
+
   for (const [id, events] of eventsByTypeId.entries()) {
     const { combined, optionalPathComponents } = utils.combineObjects(events);
     const objectType = getObjectType(combined);
@@ -240,12 +245,14 @@ async function run() {
     // objectType.cat.type = { literal: `'${events[0].cat}'` };
 
     const idPath = id.split('.');
-    interfaces.push({
+    const _interface = {
       id,
       idPath,
       name: idPath[idPath.length - 1],
       objectType,
-    });
+    };
+    interfaces.push(_interface);
+    interfaceById.set(id, _interface);
   }
 
   // WIP
@@ -295,6 +302,7 @@ async function run() {
   interfaces.sort((a, b) => a.id.localeCompare(b.id));
 
   const baseInterface = findCommonInterface(interfaces.map(t => t.objectType));
+  interfaceById.set(baseInterface.id, baseInterface);
 
   for (const _interface of interfaces) {
     _interface.parent = baseInterface;
@@ -389,6 +397,22 @@ async function run() {
     types: traceEventUnions,
   };
   topLevelNamespace.unions.unshift(traceEventTypeUnion);
+
+  // Add comments.
+  const comments = {
+    'Base': {
+      cat: 'Comma-separated list of category names.',
+    },
+  };
+  for (const [id, propertyComments] of Object.entries(comments)) {
+    const _interface = interfaceById.get(id);
+    assert(_interface);
+    for (const [key, comment] of Object.entries(propertyComments)) {
+      const prop = _interface && _interface.objectType[key];
+      assert(prop);
+      prop && (prop.comment = comment);
+    }
+  }
 
   const rootNode = graph.makeNamespaceNode(topLevelNamespace);
   rootNode.children.unshift(graph.makeInterfaceNode(baseInterface));

@@ -4,6 +4,7 @@ declare global {
       type: 'string' | 'number' | 'boolean' | Type | ObjectType | LiteralType;
       array?: boolean;
       optional?: boolean;
+      comment?: string;
     }
 
     export interface TypeUnion {

@@ -6,7 +6,7 @@ const utils = require('./utils');
  */
 function makeTypeNode(type) {
   const literal = utils.isObject(type.type) && 'literal' in type.type && type.type.literal;
-  const data = { array: type.array, optional: type.optional };
+  const data = { array: type.array, optional: type.optional, comment: type.comment };
 
   if (utils.isObject(type.type) && !literal) {
     return { type: 'Type', data, children: [makeObjectNode(type.type)] };

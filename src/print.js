@@ -50,8 +50,14 @@ function print(rootNode) {
     if (debugPrint) console.log('printProperty', node.data);
 
     const rhs = printType(node.children[0]);
-    const { optional, array } = node.children[0].data;
-    return indent(`${printSafeKey(node.data.key)}${optional ? '?' : ''}: ${rhs}${array ? '[]' : ''};`);
+    const { optional, array, comment } = node.children[0].data;
+
+    let commentString = '';
+    if (comment) {
+      commentString = `// ${comment}\n`;
+    }
+
+    return indent(`${commentString}${printSafeKey(node.data.key)}${optional ? '?' : ''}: ${rhs}${array ? '[]' : ''};`);
   }
 
   /**

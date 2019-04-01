@@ -1,5 +1,6 @@
 export namespace TraceEvent {
   interface Base {
+    // Comma-separated list of category names.
     cat: string;
     pid: number;
     tid: number;
