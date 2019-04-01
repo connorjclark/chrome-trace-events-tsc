@@ -223,8 +223,8 @@ async function run() {
     const id = idPath.join('.');
     if (!eventsByTypeId.has(id)) eventsByTypeId.set(id, []);
     const events = eventsByTypeId.get(id);
-    assert(events);
-    events && events.push(event);
+    if (!events) throw new Error();
+    events.push(event);
   }
 
   /** @type {Gen.Interface[]} */
@@ -360,13 +360,13 @@ async function run() {
         const grandNamespaceId = namespaceIdPath.slice(0, namespaceIdPath.length - 1).join('.');
         grandNamespace = namespaceById.get(grandNamespaceId);
       }
-      assert(grandNamespace);
-      grandNamespace && grandNamespace.namespaces.push(namespace);
+      if (!grandNamespace) throw new Error();
+      grandNamespace.namespaces.push(namespace);
     }
 
     const namespace = namespaceById.get(namespaceId);
-    assert(namespace);
-    namespace && namespace.interfaces.push(_interface);
+    if (!namespace) throw new Error();
+    namespace.interfaces.push(_interface);
   }
 
   // Make a union (over all phases) for each TraceEvent.
@@ -406,11 +406,11 @@ async function run() {
   };
   for (const [id, propertyComments] of Object.entries(comments)) {
     const _interface = interfaceById.get(id);
-    assert(_interface);
+    if (!_interface) throw new Error();
     for (const [key, comment] of Object.entries(propertyComments)) {
-      const prop = _interface && _interface.objectType[key];
-      assert(prop);
-      prop && (prop.comment = comment);
+      const prop = _interface.objectType[key];
+      if (!prop) throw new Error();
+      prop.comment = comment;
     }
   }
 
