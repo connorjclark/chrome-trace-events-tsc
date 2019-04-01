@@ -7,8 +7,9 @@ declare global {
     }
 
     export interface TypeUnion {
+      id: string;
       name: string;
-      interfaces: Interface[];
+      types: (Interface | TypeUnion)[];
     }
 
     export interface LiteralType {

@@ -45,8 +45,8 @@ function makeObjectNode(objectType) {
  * @return {Gen.Node}
  */
 function makeTypeUnionNode(typeUnion) {
-  const typeIds = typeUnion.interfaces.map(i => i.id);
-  return { type: 'TypeUnion', data: { name: typeUnion.name, typeIds }, children: [] };
+  const ids = typeUnion.types.map(t => t.id);
+  return { type: 'TypeUnion', data: { name: typeUnion.name, typeIds: ids }, children: [] };
 }
 
 /**

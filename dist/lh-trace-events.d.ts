@@ -7,43 +7,37 @@ export namespace TraceEvent {
   }
 
   type TraceEvent = 
-    DomContentLoadedEventEnd.R |
-    EvaluateScript.X |
-    FirstContentfulPaint.I |
-    FirstContentfulPaint.R |
-    FirstMeaningfulPaint.R |
-    FirstMeaningfulPaintCandidate.R |
-    FirstPaint.I |
-    FirstPaint.R |
-    FunctionCall.B |
-    FunctionCall.E |
-    InvalidateLayout.I |
-    Layout.B |
-    Layout.E |
-    LoadEventEnd.R |
-    NavigationStart.R |
-    PaintNonDefaultBackgroundColor.R |
-    ParseAuthorStyleSheet.X |
-    Process_labels.M |
-    RequestStart.R |
-    ResourceFinish.I |
-    ResourceReceiveResponse.I |
-    ResourceSendRequest.I |
-    RunTask.X |
-    ScheduleStyleRecalculation.I |
-    Screenshot.O |
-    TaskQueueManager.ProcessTaskFromWorkQueue.X |
-    Thread_name.M |
-    ThreadControllerImpl.DoWork.X |
-    ThreadControllerImpl.RunTask.X |
-    TimerFire.X |
-    TimerInstall.I |
-    TracingStartedInBrowser.I |
-    TracingStartedInPage.I |
-    V8.Compile.B |
-    V8.Compile.E |
-    V8.Compile.X |
-    XHRReadyStateChange.X;
+    TraceEvent.DomContentLoadedEventEnd |
+    TraceEvent.EvaluateScript |
+    TraceEvent.FirstContentfulPaint |
+    TraceEvent.FirstMeaningfulPaint |
+    TraceEvent.FirstMeaningfulPaintCandidate |
+    TraceEvent.FirstPaint |
+    TraceEvent.FunctionCall |
+    TraceEvent.InvalidateLayout |
+    TraceEvent.Layout |
+    TraceEvent.LoadEventEnd |
+    TraceEvent.NavigationStart |
+    TraceEvent.PaintNonDefaultBackgroundColor |
+    TraceEvent.ParseAuthorStyleSheet |
+    TraceEvent.Process_labels |
+    TraceEvent.RequestStart |
+    TraceEvent.ResourceFinish |
+    TraceEvent.ResourceReceiveResponse |
+    TraceEvent.ResourceSendRequest |
+    TraceEvent.RunTask |
+    TraceEvent.ScheduleStyleRecalculation |
+    TraceEvent.Screenshot |
+    TaskQueueManager.ProcessTaskFromWorkQueue |
+    TraceEvent.Thread_name |
+    ThreadControllerImpl.DoWork |
+    ThreadControllerImpl.RunTask |
+    TraceEvent.TimerFire |
+    TraceEvent.TimerInstall |
+    TraceEvent.TracingStartedInBrowser |
+    TraceEvent.TracingStartedInPage |
+    V8.Compile |
+    TraceEvent.XHRReadyStateChange;
 
   type DomContentLoadedEventEnd = 
     DomContentLoadedEventEnd.R;
