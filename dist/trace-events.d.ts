@@ -600,6 +600,10 @@ export namespace _TraceEvent {
     GLRenderer.InitializeSharedObjects.X |
     GLRenderer.SwapBuffers.X |
     GlResizeChromium.X |
+    Goog_123_3_1_end.R |
+    Goog_123_3_1_start.R |
+    Goog_123_3_1.b |
+    Goog_123_3_1.e |
     Gpu.EstablishGpuChannelSync.X |
     Gpu.State.D |
     Gpu.State.N |
@@ -976,9 +980,12 @@ export namespace _TraceEvent {
     MainThreadSchedulerImpl.WillBeginFrame.X |
     MajorGC.B |
     MajorGC.E |
+    Mark_test.R |
     MarkAsMainFrame.I |
     MarkDOMContent.I |
     MarkLoad.I |
+    Measure_test.b |
+    Measure_test.e |
     Media.Mojom.InterfaceFactory.X |
     Media.Mojom.MediaMetricsProvider.X |
     Media.Mojom.MediaService.X |
@@ -1130,6 +1137,7 @@ export namespace _TraceEvent {
     PaintInvalidator.InvalidatePaint.X |
     PaintLayer.UpdateLayerPositionsAfterLayout.X |
     PaintLayerCompositor.UpdateIfNeededRecursive.X |
+    PaintNonDefaultBackgroundColor.R |
     ParkableStringImpl.CompressInBackground.X |
     ParkableStringImpl.Unpark.X |
     ParseAuthorStyleSheet.X |
@@ -1767,6 +1775,7 @@ export namespace _TraceEvent {
     TracingMsg_SetTracingProcessId.X |
     TracingSessionIdForWorker.I |
     TracingStartedInBrowser.I |
+    TracingStartedInPage.I |
     TransferBuffer.Free.X |
     TransfersBytesPendingOnDisk.C |
     TransfersPendingOnDisk.C |
@@ -8294,7 +8303,7 @@ export namespace _TraceEvent {
   
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           navigationId: string;
         };
         frame: string;
@@ -8380,7 +8389,7 @@ export namespace _TraceEvent {
   namespace FirstPaint {
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           navigationId: string;
         };
         frame: string;
@@ -10120,6 +10129,50 @@ export namespace _TraceEvent {
       name: 'glResizeChromium';
       ph: 'X';
       tdur: number;
+      tts: number;
+    }
+  }
+
+  namespace Goog_123_3_1_end {
+    interface R extends Base {
+      args: {
+      
+      };
+      name: 'goog_123_3_1_end';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Goog_123_3_1_start {
+    interface R extends Base {
+      args: {
+      
+      };
+      name: 'goog_123_3_1_start';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace Goog_123_3_1 {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'goog_123_3_1';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'goog_123_3_1';
+      ph: 'e';
       tts: number;
     }
   }
@@ -15708,6 +15761,17 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace Mark_test {
+    interface R extends Base {
+      args: {
+      
+      };
+      name: 'mark_test';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
   namespace MarkAsMainFrame {
     interface I extends Base {
       args: {
@@ -15748,6 +15812,28 @@ export namespace _TraceEvent {
       name: 'MarkLoad';
       ph: 'I';
       s: string;
+      tts: number;
+    }
+  }
+
+  namespace Measure_test {
+    interface b extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'measure_test';
+      ph: 'b';
+      tts: number;
+    }
+  
+    interface e extends Base {
+      args: {
+      
+      };
+      id: string;
+      name: 'measure_test';
+      ph: 'e';
       tts: number;
     }
   }
@@ -16324,7 +16410,7 @@ export namespace _TraceEvent {
   namespace NavigationStart {
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           documentLoaderURL: string;
           isLoadingMainFrame: boolean;
           navigationId: string;
@@ -17721,6 +17807,17 @@ export namespace _TraceEvent {
         tdur: number;
         tts: number;
       }
+    }
+  }
+
+  namespace PaintNonDefaultBackgroundColor {
+    interface R extends Base {
+      args: {
+      
+      };
+      name: 'paintNonDefaultBackgroundColor';
+      ph: 'R';
+      tts: number;
     }
   }
 
@@ -26671,6 +26768,21 @@ export namespace _TraceEvent {
         };
       };
       name: 'TracingStartedInBrowser';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  }
+
+  namespace TracingStartedInPage {
+    interface I extends Base {
+      args: {
+        data: {
+          page: string;
+          sessionId: string;
+        };
+      };
+      name: 'TracingStartedInPage';
       ph: 'I';
       s: string;
       tts: number;

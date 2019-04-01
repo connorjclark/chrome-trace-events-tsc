@@ -20,6 +20,7 @@ export namespace _TraceEvent {
     Layout.E |
     LoadEventEnd.R |
     NavigationStart.R |
+    PaintNonDefaultBackgroundColor.R |
     ParseAuthorStyleSheet.X |
     Process_labels.M |
     RequestStart.R |
@@ -35,6 +36,7 @@ export namespace _TraceEvent {
     TimerFire.X |
     TimerInstall.I |
     TracingStartedInBrowser.I |
+    TracingStartedInPage.I |
     V8.Compile.B |
     V8.Compile.E |
     V8.Compile.X |
@@ -79,7 +81,7 @@ export namespace _TraceEvent {
   namespace FirstContentfulPaint {
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           navigationId: string;
         };
         frame: string;
@@ -122,7 +124,7 @@ export namespace _TraceEvent {
   namespace FirstPaint {
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           navigationId: string;
         };
         frame: string;
@@ -232,7 +234,7 @@ export namespace _TraceEvent {
   namespace NavigationStart {
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           documentLoaderURL: string;
           isLoadingMainFrame: boolean;
           navigationId: string;
@@ -240,6 +242,17 @@ export namespace _TraceEvent {
         frame: string;
       };
       name: 'navigationStart';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace PaintNonDefaultBackgroundColor {
+    interface R extends Base {
+      args: {
+      
+      };
+      name: 'paintNonDefaultBackgroundColor';
       ph: 'R';
       tts: number;
     }
@@ -505,6 +518,21 @@ export namespace _TraceEvent {
         };
       };
       name: 'TracingStartedInBrowser';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  }
+
+  namespace TracingStartedInPage {
+    interface I extends Base {
+      args: {
+        data: {
+          page: string;
+          sessionId: string;
+        };
+      };
+      name: 'TracingStartedInPage';
       ph: 'I';
       s: string;
       tts: number;
