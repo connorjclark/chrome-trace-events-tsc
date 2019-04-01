@@ -69,6 +69,7 @@ function makeInterfaceNode(_interface) {
  */
 function makeNamespaceNode(namespace) {
   const children = [
+    ...namespace.unions.map(makeTypeUnionNode),
     ...namespace.namespaces.map(makeNamespaceNode),
     ...namespace.interfaces.map(makeInterfaceNode),
   ];

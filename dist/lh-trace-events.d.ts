@@ -45,6 +45,91 @@ export namespace TraceEvent {
     V8.Compile.X |
     XHRReadyStateChange.X;
 
+  type DomContentLoadedEventEnd = 
+    DomContentLoadedEventEnd.R;
+
+  type EvaluateScript = 
+    EvaluateScript.X;
+
+  type FirstContentfulPaint = 
+    FirstContentfulPaint.I |
+    FirstContentfulPaint.R;
+
+  type FirstMeaningfulPaint = 
+    FirstMeaningfulPaint.R;
+
+  type FirstMeaningfulPaintCandidate = 
+    FirstMeaningfulPaintCandidate.R;
+
+  type FirstPaint = 
+    FirstPaint.I |
+    FirstPaint.R;
+
+  type FunctionCall = 
+    FunctionCall.B |
+    FunctionCall.E;
+
+  type InvalidateLayout = 
+    InvalidateLayout.I;
+
+  type Layout = 
+    Layout.B |
+    Layout.E;
+
+  type LoadEventEnd = 
+    LoadEventEnd.R;
+
+  type NavigationStart = 
+    NavigationStart.R;
+
+  type PaintNonDefaultBackgroundColor = 
+    PaintNonDefaultBackgroundColor.R;
+
+  type ParseAuthorStyleSheet = 
+    ParseAuthorStyleSheet.X;
+
+  type Process_labels = 
+    Process_labels.M;
+
+  type RequestStart = 
+    RequestStart.R;
+
+  type ResourceFinish = 
+    ResourceFinish.I;
+
+  type ResourceReceiveResponse = 
+    ResourceReceiveResponse.I;
+
+  type ResourceSendRequest = 
+    ResourceSendRequest.I;
+
+  type RunTask = 
+    RunTask.X;
+
+  type ScheduleStyleRecalculation = 
+    ScheduleStyleRecalculation.I;
+
+  type Screenshot = 
+    Screenshot.O;
+
+  type Thread_name = 
+    Thread_name.M;
+
+  type TimerFire = 
+    TimerFire.X;
+
+  type TimerInstall = 
+    TimerInstall.I;
+
+  type TracingStartedInBrowser = 
+    TracingStartedInBrowser.I;
+
+  type TracingStartedInPage = 
+    TracingStartedInPage.I;
+
+  type XHRReadyStateChange = 
+    XHRReadyStateChange.X;
+
   namespace DomContentLoadedEventEnd {
     interface R extends Base {
       args: {
@@ -446,6 +531,9 @@ export namespace TraceEvent {
   }
 
   namespace TaskQueueManager {
+    type ProcessTaskFromWorkQueue = 
+      TaskQueueManager.ProcessTaskFromWorkQueue.X;
+  
     namespace ProcessTaskFromWorkQueue {
       interface X extends Base {
         args: {
@@ -472,6 +560,12 @@ export namespace TraceEvent {
   }
 
   namespace ThreadControllerImpl {
+    type DoWork = 
+      ThreadControllerImpl.DoWork.X;
+  
+    type RunTask = 
+      ThreadControllerImpl.RunTask.X;
+  
     namespace DoWork {
       interface X extends Base {
         args: {
@@ -580,6 +674,11 @@ export namespace TraceEvent {
   }
 
   namespace V8 {
+    type Compile = 
+      V8.Compile.B |
+      V8.Compile.E |
+      V8.Compile.X;
+  
     namespace Compile {
       interface B extends Base {
         args: {

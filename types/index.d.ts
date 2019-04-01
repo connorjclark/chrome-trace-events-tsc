@@ -32,6 +32,7 @@ declare global {
       idPath: string[];
       name: string;
       interfaces: Interface[];
+      unions: TypeUnion[];
       namespaces: Namespace[];
     }
 

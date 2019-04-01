@@ -310,6 +310,7 @@ async function run() {
     idPath: ['TraceEvent'],
     name: 'TraceEvent',
     interfaces: [],
+    unions: [],
     namespaces: [],
   };
 
@@ -335,6 +336,7 @@ async function run() {
         idPath: namespaceIdPath,
         name,
         interfaces: [],
+        unions: [],
         namespaces: [],
       };
       namespaceById.set(namespaceId, namespace);
@@ -355,14 +357,30 @@ async function run() {
     namespace && namespace.interfaces.push(_interface);
   }
 
-  const rootNode = graph.makeNamespaceNode(topLevelNamespace);
-
   /** @type {Gen.TypeUnion} */
   const traceEventTypeUnion = {
     name: 'TraceEvent',
     interfaces,
   };
-  rootNode.children.unshift(graph.makeTypeUnionNode(traceEventTypeUnion));
+  topLevelNamespace.unions.push(traceEventTypeUnion);
+
+  // Make a union (over all phases) for each TraceEvent.
+  for (const namespace of namespaceById.values()) {
+    if (namespace.namespaces.length > 0) {
+      continue;
+    }
+
+    /** @type {Gen.TypeUnion} */
+    const union = {
+      name: namespace.name,
+      interfaces: namespace.interfaces,
+    };
+    const grandNamespaceId = namespace.idPath.slice(0, namespace.idPath.length - 1).join('.');
+    const grandNamespace = namespaceById.get(grandNamespaceId) || topLevelNamespace;
+    grandNamespace.unions.push(union);
+  }
+
+  const rootNode = graph.makeNamespaceNode(topLevelNamespace);
   rootNode.children.unshift(graph.makeInterfaceNode(baseInterface));
 
   const result = print(rootNode);

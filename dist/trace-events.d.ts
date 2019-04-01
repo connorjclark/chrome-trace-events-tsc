@@ -2196,6 +2196,1957 @@ export namespace TraceEvent {
     ZonesAndDomReady.R |
     ZonesReady.R;
 
+  type A = 
+    A.F |
+    A.S;
+
+  type AAConvexPathOp = 
+    AAConvexPathOp.X;
+
+  type AAStrokeRect = 
+    AAStrokeRect.X;
+
+  type AcquireLock = 
+    AcquireLock.X;
+
+  type ActivateLayerTree = 
+    ActivateLayerTree.I;
+
+  type AddFrameDisplayed = 
+    AddFrameDisplayed.X;
+
+  type Allactivesurfacesready = 
+    Allactivesurfacesready.I;
+
+  type Animation = 
+    Animation.b |
+    Animation.e |
+    Animation.n;
+
+  type AsyncTask = 
+    AsyncTask.f |
+    AsyncTask.s |
+    AsyncTask.t;
+
+  type AtlasTextOp = 
+    AtlasTextOp.X;
+
+  type BeginFrame = 
+    BeginFrame.I;
+
+  type BeginFrameArgs = 
+    BeginFrameArgs.t;
+
+  type BeginMainThreadFrame = 
+    BeginMainThreadFrame.I;
+
+  type BlinkGCMarking = 
+    BlinkGCMarking.X;
+
+  type BrowserWorker0x7fd3431d1a00 = 
+    BrowserWorker0x7fd3431d1a00.b |
+    BrowserWorker0x7fd3431d1a00.e |
+    BrowserWorker0x7fd3431d1a00.F |
+    BrowserWorker0x7fd3431d1a00.S;
+
+  type BudgetPool_DisableThrottling = 
+    BudgetPool_DisableThrottling.X;
+
+  type CalculateRenderSurfaceLayerList = 
+    CalculateRenderSurfaceLayerList.X;
+
+  type CancelAnimationFrame = 
+    CancelAnimationFrame.I;
+
+  type CANCELLED = 
+    CANCELLED.n;
+
+  type CanExceedIdleDeadlineIfRequired = 
+    CanExceedIdleDeadlineIfRequired.X;
+
+  type Canvas2DLayerBridgeCreation = 
+    Canvas2DLayerBridgeCreation.I;
+
+  type CERT_VERIFIER_REQUEST_BOUND_TO_JOB = 
+    CERT_VERIFIER_REQUEST_BOUND_TO_JOB.n;
+
+  type CERT_VERIFIER_REQUEST = 
+    CERT_VERIFIER_REQUEST.b |
+    CERT_VERIFIER_REQUEST.e;
+
+  type ChromeViewHostMsg_AllowDOMStorage = 
+    ChromeViewHostMsg_AllowDOMStorage.X;
+
+  type CircleOp = 
+    CircleOp.X;
+
+  type CircularRRectOp = 
+    CircularRRectOp.X;
+
+  type Cleanup_tq = 
+    Cleanup_tq.C;
+
+  type ClearusingTexSubImage2D = 
+    ClearusingTexSubImage2D.X;
+
+  type CommitLoad = 
+    CommitLoad.X;
+
+  type CommitPendingTreesToCA = 
+    CommitPendingTreesToCA.X;
+
+  type CompositeLayers = 
+    CompositeLayers.B |
+    CompositeLayers.E;
+
+  type Compositor_tq = 
+    Compositor_tq.C;
+
+  type CONNECT_JOB_SET_SOCKET = 
+    CONNECT_JOB_SET_SOCKET.n;
+
+  type ContextCreatedNotification = 
+    ContextCreatedNotification.X;
+
+  type Control_tq = 
+    Control_tq.C;
+
+  type COOKIE_STORE_COOKIE_ADDED = 
+    COOKIE_STORE_COOKIE_ADDED.n;
+
+  type COOKIE_STORE_COOKIE_DELETED = 
+    COOKIE_STORE_COOKIE_DELETED.n;
+
+  type CreateIOSurface = 
+    CreateIOSurface.X;
+
+  type CSSFirstUsed = 
+    CSSFirstUsed.X;
+
+  type Damagenotvisible = 
+    Damagenotvisible.I;
+
+  type DecodeFont = 
+    DecodeFont.B |
+    DecodeFont.E;
+
+  type DecodeImage = 
+    DecodeImage.X;
+
+  type DecodeLazyPixelRef = 
+    DecodeLazyPixelRef.X;
+
+  type Default_tq = 
+    Default_tq.C;
+
+  type DefaultPathOp = 
+    DefaultPathOp.X;
+
+  type DidPrepareTiles = 
+    DidPrepareTiles.I;
+
+  type DidProcessTask = 
+    DidProcessTask.X;
+
+  type DiskUsage = 
+    DiskUsage.C;
+
+  type DisplayCompositor = 
+    DisplayCompositor.b |
+    DisplayCompositor.e |
+    DisplayCompositor.F |
+    DisplayCompositor.S;
+
+  type DNS_TRANSACTION_ATTEMPT = 
+    DNS_TRANSACTION_ATTEMPT.n;
+
+  type DNS_TRANSACTION_QUERY = 
+    DNS_TRANSACTION_QUERY.b |
+    DNS_TRANSACTION_QUERY.e;
+
+  type DNS_TRANSACTION_RESPONSE = 
+    DNS_TRANSACTION_RESPONSE.n;
+
+  type DNS_TRANSACTION = 
+    DNS_TRANSACTION.b |
+    DNS_TRANSACTION.e;
+
+  type DomComplete = 
+    DomComplete.R;
+
+  type DOMContentLoaded = 
+    DOMContentLoaded.b |
+    DOMContentLoaded.e;
+
+  type DomContentLoadedEventEnd = 
+    DomContentLoadedEventEnd.R;
+
+  type DomContentLoadedEventStart = 
+    DomContentLoadedEventStart.R;
+
+  type DomInteractive = 
+    DomInteractive.R;
+
+  type DomLoading = 
+    DomLoading.R;
+
+  type DomReady = 
+    DomReady.R;
+
+  type DOMStorageHostMsg_LoadStorageArea = 
+    DOMStorageHostMsg_LoadStorageArea.X;
+
+  type DOMStorageHostMsg_OpenStorageArea = 
+    DOMStorageHostMsg_OpenStorageArea.X;
+
+  type DOMStorageHostMsg_RemoveItem = 
+    DOMStorageHostMsg_RemoveItem.X;
+
+  type DOMStorageHostMsg_SetItem = 
+    DOMStorageHostMsg_SetItem.X;
+
+  type DOMStorageMsg_AsyncOperationComplete = 
+    DOMStorageMsg_AsyncOperationComplete.X;
+
+  type DOMStorageMsg_Event = 
+    DOMStorageMsg_Event.X;
+
+  type DomTime = 
+    DomTime.b |
+    DomTime.e;
+
+  type DoVerifyOnWorkerThread = 
+    DoVerifyOnWorkerThread.X;
+
+  type DrawFrame = 
+    DrawFrame.I;
+
+  type DrawLazyPixelRef = 
+    DrawLazyPixelRef.I;
+
+  type Drawskipped = 
+    Drawskipped.I;
+
+  type DrawVerticesOp = 
+    DrawVerticesOp.X;
+
+  type EarlyOut_DeferCommit_InsideBeginMainFrame = 
+    EarlyOut_DeferCommit_InsideBeginMainFrame.I;
+
+  type EarlyOut_NoUpdates = 
+    EarlyOut_NoUpdates.I;
+
+  type EnableLongIdlePeriod = 
+    EnableLongIdlePeriod.X;
+
+  type EndIdlePeriod = 
+    EndIdlePeriod.X;
+
+  type EndofTrace = 
+    EndofTrace.b |
+    EndofTrace.e;
+
+  type Estimated_queueing_time_for_window = 
+    Estimated_queueing_time_for_window.C;
+
+  type EvaluateScript = 
+    EvaluateScript.X;
+
+  type EventDispatch = 
+    EventDispatch.X;
+
+  type ExtensionHostMsg_AddLazyListener = 
+    ExtensionHostMsg_AddLazyListener.X;
+
+  type ExtensionHostMsg_AddListener = 
+    ExtensionHostMsg_AddListener.X;
+
+  type ExtensionHostMsg_CloseMessagePort = 
+    ExtensionHostMsg_CloseMessagePort.X;
+
+  type ExtensionHostMsg_EventAck = 
+    ExtensionHostMsg_EventAck.X;
+
+  type ExtensionHostMsg_ExecuteCodeFinished = 
+    ExtensionHostMsg_ExecuteCodeFinished.X;
+
+  type ExtensionHostMsg_GenerateUniqueID = 
+    ExtensionHostMsg_GenerateUniqueID.X;
+
+  type ExtensionHostMsg_GetMessageBundle = 
+    ExtensionHostMsg_GetMessageBundle.X;
+
+  type ExtensionHostMsg_OpenChannelToExtension = 
+    ExtensionHostMsg_OpenChannelToExtension.X;
+
+  type ExtensionHostMsg_OpenChannelToTab = 
+    ExtensionHostMsg_OpenChannelToTab.X;
+
+  type ExtensionHostMsg_OpenMessagePort = 
+    ExtensionHostMsg_OpenMessagePort.X;
+
+  type ExtensionHostMsg_PostMessage = 
+    ExtensionHostMsg_PostMessage.X;
+
+  type ExtensionHostMsg_Request = 
+    ExtensionHostMsg_Request.X;
+
+  type ExtensionHostMsg_RequestForIOThread = 
+    ExtensionHostMsg_RequestForIOThread.X;
+
+  type ExtensionMsg_ActivateExtension = 
+    ExtensionMsg_ActivateExtension.X;
+
+  type ExtensionMsg_DeliverMessage = 
+    ExtensionMsg_DeliverMessage.X;
+
+  type ExtensionMsg_DispatchEvent = 
+    ExtensionMsg_DispatchEvent.X;
+
+  type ExtensionMsg_DispatchOnConnect = 
+    ExtensionMsg_DispatchOnConnect.X;
+
+  type ExtensionMsg_DispatchOnDisconnect = 
+    ExtensionMsg_DispatchOnDisconnect.X;
+
+  type ExtensionMsg_ExecuteCode = 
+    ExtensionMsg_ExecuteCode.X;
+
+  type ExtensionMsg_Loaded = 
+    ExtensionMsg_Loaded.X;
+
+  type ExtensionMsg_NotifyRenderViewType = 
+    ExtensionMsg_NotifyRenderViewType.X;
+
+  type ExtensionMsg_Response = 
+    ExtensionMsg_Response.X;
+
+  type ExtensionMsg_SetScriptingWhitelist = 
+    ExtensionMsg_SetScriptingWhitelist.X;
+
+  type ExtensionMsg_SetSessionInfo = 
+    ExtensionMsg_SetSessionInfo.X;
+
+  type ExtensionMsg_SetSystemFont = 
+    ExtensionMsg_SetSystemFont.X;
+
+  type ExtensionMsg_SetTabId = 
+    ExtensionMsg_SetTabId.X;
+
+  type ExtensionMsg_UpdateBrowserWindowId = 
+    ExtensionMsg_UpdateBrowserWindowId.X;
+
+  type ExtensionMsg_UpdateDefaultPolicyHostRestrictions = 
+    ExtensionMsg_UpdateDefaultPolicyHostRestrictions.X;
+
+  type ExtensionMsg_UpdateUserScripts = 
+    ExtensionMsg_UpdateUserScripts.X;
+
+  type ExtensionMsg_ValidateMessagePort = 
+    ExtensionMsg_ValidateMessagePort.X;
+
+  type ExtensionMsg_WatchPages = 
+    ExtensionMsg_WatchPages.X;
+
+  type FaveReady_mark = 
+    FaveReady_mark.R;
+
+  type FaveReady = 
+    FaveReady.b |
+    FaveReady.e;
+
+  type FeatureFirstUsed = 
+    FeatureFirstUsed.X;
+
+  type FetchStart = 
+    FetchStart.R;
+
+  type FillRectOp = 
+    FillRectOp.X;
+
+  type FireAnimationFrame = 
+    FireAnimationFrame.X;
+
+  type FireIdleCallback = 
+    FireIdleCallback.X;
+
+  type FirstContentfulPaint = 
+    FirstContentfulPaint.b |
+    FirstContentfulPaint.e |
+    FirstContentfulPaint.I |
+    FirstContentfulPaint.R;
+
+  type FirstImagePaint = 
+    FirstImagePaint.R;
+
+  type FirstLayout = 
+    FirstLayout.R;
+
+  type FirstMeaningfulPaint = 
+    FirstMeaningfulPaint.b |
+    FirstMeaningfulPaint.e |
+    FirstMeaningfulPaint.R;
+
+  type FirstMeaningfulPaintCandidate = 
+    FirstMeaningfulPaintCandidate.R;
+
+  type FirstPaint = 
+    FirstPaint.I |
+    FirstPaint.R;
+
+  type FirstTextPaint = 
+    FirstTextPaint.R;
+
+  type FirstVisualChange = 
+    FirstVisualChange.b |
+    FirstVisualChange.e;
+
+  type FooterEnd = 
+    FooterEnd.R;
+
+  type FooterStart = 
+    FooterStart.R;
+
+  type FooterTime = 
+    FooterTime.b |
+    FooterTime.e;
+
+  type Frame_deferrable_tq = 
+    Frame_deferrable_tq.C;
+
+  type Frame_loading_control_tq = 
+    Frame_loading_control_tq.C;
+
+  type Frame_loading_tq = 
+    Frame_loading_tq.C;
+
+  type Frame_pausable_tq = 
+    Frame_pausable_tq.C;
+
+  type Frame_throttleable_tq = 
+    Frame_throttleable_tq.C;
+
+  type Frame_unpausable_tq = 
+    Frame_unpausable_tq.C;
+
+  type FrameBlameContext = 
+    FrameBlameContext.LP |
+    FrameBlameContext.RP;
+
+  type FrameCommittedInBrowser = 
+    FrameCommittedInBrowser.I;
+
+  type FrameDeletedInBrowser = 
+    FrameDeletedInBrowser.I;
+
+  type FrameHostMsg_BeforeUnload_ACK = 
+    FrameHostMsg_BeforeUnload_ACK.X;
+
+  type FrameHostMsg_CheckCompleted = 
+    FrameHostMsg_CheckCompleted.X;
+
+  type FrameHostMsg_CookiesEnabled = 
+    FrameHostMsg_CookiesEnabled.X;
+
+  type FrameHostMsg_CreateChildFrame = 
+    FrameHostMsg_CreateChildFrame.X;
+
+  type FrameHostMsg_DidAddContentSecurityPolicies = 
+    FrameHostMsg_DidAddContentSecurityPolicies.X;
+
+  type FrameHostMsg_DidAddMessageToConsole = 
+    FrameHostMsg_DidAddMessageToConsole.X;
+
+  type FrameHostMsg_DidChangeFrameOwnerProperties = 
+    FrameHostMsg_DidChangeFrameOwnerProperties.X;
+
+  type FrameHostMsg_DidChangeLoadProgress = 
+    FrameHostMsg_DidChangeLoadProgress.X;
+
+  type FrameHostMsg_DidFailLoadWithError = 
+    FrameHostMsg_DidFailLoadWithError.X;
+
+  type FrameHostMsg_DidFinishDocumentLoad = 
+    FrameHostMsg_DidFinishDocumentLoad.X;
+
+  type FrameHostMsg_DidFinishLoad = 
+    FrameHostMsg_DidFinishLoad.X;
+
+  type FrameHostMsg_DidStopLoading = 
+    FrameHostMsg_DidStopLoading.X;
+
+  type FrameHostMsg_DispatchLoad = 
+    FrameHostMsg_DispatchLoad.X;
+
+  type FrameHostMsg_DocumentOnLoadCompleted = 
+    FrameHostMsg_DocumentOnLoadCompleted.X;
+
+  type FrameHostMsg_FocusedNodeChanged = 
+    FrameHostMsg_FocusedNodeChanged.X;
+
+  type FrameHostMsg_ForwardResourceTimingToParent = 
+    FrameHostMsg_ForwardResourceTimingToParent.X;
+
+  type FrameHostMsg_FrameFocused = 
+    FrameHostMsg_FrameFocused.X;
+
+  type FrameHostMsg_HittestData = 
+    FrameHostMsg_HittestData.X;
+
+  type FrameHostMsg_RouteMessageEvent = 
+    FrameHostMsg_RouteMessageEvent.X;
+
+  type FrameHostMsg_SuddenTerminationDisablerChanged = 
+    FrameHostMsg_SuddenTerminationDisablerChanged.X;
+
+  type FrameHostMsg_SwapOut_ACK = 
+    FrameHostMsg_SwapOut_ACK.X;
+
+  type FrameHostMsg_SynchronizeVisualProperties = 
+    FrameHostMsg_SynchronizeVisualProperties.X;
+
+  type FrameHostMsg_UpdatePageImportanceSignals = 
+    FrameHostMsg_UpdatePageImportanceSignals.X;
+
+  type FrameHostMsg_UpdateRenderThrottlingStatus = 
+    FrameHostMsg_UpdateRenderThrottlingStatus.X;
+
+  type FrameHostMsg_UpdateState = 
+    FrameHostMsg_UpdateState.X;
+
+  type FrameHostMsg_UpdateTitle = 
+    FrameHostMsg_UpdateTitle.X;
+
+  type FrameHostMsg_UpdateUserActivationState = 
+    FrameHostMsg_UpdateUserActivationState.X;
+
+  type FrameHostMsg_UpdateViewportIntersection = 
+    FrameHostMsg_UpdateViewportIntersection.X;
+
+  type FrameHostMsg_VisibilityChanged = 
+    FrameHostMsg_VisibilityChanged.X;
+
+  type FrameLoader = 
+    FrameLoader.D |
+    FrameLoader.N |
+    FrameLoader.O;
+
+  type FrameMsg_AddContentSecurityPolicies = 
+    FrameMsg_AddContentSecurityPolicies.X;
+
+  type FrameMsg_Delete = 
+    FrameMsg_Delete.X;
+
+  type FrameMsg_DeleteProxy = 
+    FrameMsg_DeleteProxy.X;
+
+  type FrameMsg_DidStartLoading = 
+    FrameMsg_DidStartLoading.X;
+
+  type FrameMsg_DidStopLoading = 
+    FrameMsg_DidStopLoading.X;
+
+  type FrameMsg_DidUpdateFramePolicy = 
+    FrameMsg_DidUpdateFramePolicy.X;
+
+  type FrameMsg_DidUpdateOrigin = 
+    FrameMsg_DidUpdateOrigin.X;
+
+  type FrameMsg_PostMessageEvent = 
+    FrameMsg_PostMessageEvent.X;
+
+  type FrameMsg_ResetContentSecurityPolicy = 
+    FrameMsg_ResetContentSecurityPolicy.X;
+
+  type FrameMsg_SetAccessibilityMode = 
+    FrameMsg_SetAccessibilityMode.X;
+
+  type FrameMsg_SetFrameOwnerProperties = 
+    FrameMsg_SetFrameOwnerProperties.X;
+
+  type FrameMsg_UpdateUserActivationState = 
+    FrameMsg_UpdateUserActivationState.X;
+
+  type FramePresented = 
+    FramePresented.R;
+
+  type FrameStartedLoading = 
+    FrameStartedLoading.I;
+
+  type FullImage = 
+    FullImage.X;
+
+  type FunctionCall = 
+    FunctionCall.B |
+    FunctionCall.E;
+
+  type GlResizeChromium = 
+    GlResizeChromium.X;
+
+  type Goog_123_3_1_end = 
+    Goog_123_3_1_end.R;
+
+  type Goog_123_3_1_start = 
+    Goog_123_3_1_start.R;
+
+  type Goog_123_3_1 = 
+    Goog_123_3_1.b |
+    Goog_123_3_1.e;
+
+  type GpuChannelMsg_CreateCommandBuffer = 
+    GpuChannelMsg_CreateCommandBuffer.X;
+
+  type GpuChannelMsg_CreateSharedImage = 
+    GpuChannelMsg_CreateSharedImage.X;
+
+  type GpuChannelMsg_CreateSharedImageWithData = 
+    GpuChannelMsg_CreateSharedImageWithData.X;
+
+  type GpuChannelMsg_DestroyCommandBuffer = 
+    GpuChannelMsg_DestroyCommandBuffer.X;
+
+  type GpuChannelMsg_DestroySharedImage = 
+    GpuChannelMsg_DestroySharedImage.X;
+
+  type GpuChannelMsg_RegisterSharedImageUploadBuffer = 
+    GpuChannelMsg_RegisterSharedImageUploadBuffer.X;
+
+  type GpuCommandBufferMsg_AsyncFlush = 
+    GpuCommandBufferMsg_AsyncFlush.X;
+
+  type GpuCommandBufferMsg_DestroyTransferBuffer = 
+    GpuCommandBufferMsg_DestroyTransferBuffer.X;
+
+  type GpuCommandBufferMsg_GetChannelToken = 
+    GpuCommandBufferMsg_GetChannelToken.X;
+
+  type GpuCommandBufferMsg_RegisterTransferBuffer = 
+    GpuCommandBufferMsg_RegisterTransferBuffer.X;
+
+  type GpuCommandBufferMsg_SetGetBuffer = 
+    GpuCommandBufferMsg_SetGetBuffer.X;
+
+  type GpuCommandBufferMsg_WaitForGetOffsetInRange = 
+    GpuCommandBufferMsg_WaitForGetOffsetInRange.X;
+
+  type GpuRasterization = 
+    GpuRasterization.b |
+    GpuRasterization.e |
+    GpuRasterization.F |
+    GpuRasterization.S;
+
+  type GPUTask = 
+    GPUTask.X;
+
+  type HandleMouseMove = 
+    HandleMouseMove.X;
+
+  type HeadEnd = 
+    HeadEnd.R;
+
+  type HeadTime = 
+    HeadTime.b |
+    HeadTime.e;
+
+  type HitTest = 
+    HitTest.B |
+    HitTest.E;
+
+  type HOST_RESOLVER_IMPL_ATTEMPT_FINISHED = 
+    HOST_RESOLVER_IMPL_ATTEMPT_FINISHED.n;
+
+  type HOST_RESOLVER_IMPL_ATTEMPT_STARTED = 
+    HOST_RESOLVER_IMPL_ATTEMPT_STARTED.n;
+
+  type HOST_RESOLVER_IMPL_CACHE_HIT = 
+    HOST_RESOLVER_IMPL_CACHE_HIT.n;
+
+  type HOST_RESOLVER_IMPL_CREATE_JOB = 
+    HOST_RESOLVER_IMPL_CREATE_JOB.n;
+
+  type HOST_RESOLVER_IMPL_DNS_TASK = 
+    HOST_RESOLVER_IMPL_DNS_TASK.b |
+    HOST_RESOLVER_IMPL_DNS_TASK.e;
+
+  type HOST_RESOLVER_IMPL_IPV6_REACHABILITY_CHECK = 
+    HOST_RESOLVER_IMPL_IPV6_REACHABILITY_CHECK.n;
+
+  type HOST_RESOLVER_IMPL_JOB_ATTACH = 
+    HOST_RESOLVER_IMPL_JOB_ATTACH.n;
+
+  type HOST_RESOLVER_IMPL_JOB_REQUEST_ATTACH = 
+    HOST_RESOLVER_IMPL_JOB_REQUEST_ATTACH.n;
+
+  type HOST_RESOLVER_IMPL_JOB_STARTED = 
+    HOST_RESOLVER_IMPL_JOB_STARTED.n;
+
+  type HOST_RESOLVER_IMPL_JOB = 
+    HOST_RESOLVER_IMPL_JOB.b |
+    HOST_RESOLVER_IMPL_JOB.e;
+
+  type HOST_RESOLVER_IMPL_PROC_TASK = 
+    HOST_RESOLVER_IMPL_PROC_TASK.b |
+    HOST_RESOLVER_IMPL_PROC_TASK.e;
+
+  type HOST_RESOLVER_IMPL_REQUEST = 
+    HOST_RESOLVER_IMPL_REQUEST.b |
+    HOST_RESOLVER_IMPL_REQUEST.e;
+
+  type HTMLParserScriptRunnerExecuteScript = 
+    HTMLParserScriptRunnerExecuteScript.X;
+
+  type HTTP_CACHE_ADD_TO_ENTRY = 
+    HTTP_CACHE_ADD_TO_ENTRY.b |
+    HTTP_CACHE_ADD_TO_ENTRY.e;
+
+  type HTTP_CACHE_CALLER_REQUEST_HEADERS = 
+    HTTP_CACHE_CALLER_REQUEST_HEADERS.n;
+
+  type HTTP_CACHE_CREATE_ENTRY = 
+    HTTP_CACHE_CREATE_ENTRY.b |
+    HTTP_CACHE_CREATE_ENTRY.e;
+
+  type HTTP_CACHE_GET_BACKEND = 
+    HTTP_CACHE_GET_BACKEND.b |
+    HTTP_CACHE_GET_BACKEND.e;
+
+  type HTTP_CACHE_OPEN_ENTRY = 
+    HTTP_CACHE_OPEN_ENTRY.b |
+    HTTP_CACHE_OPEN_ENTRY.e;
+
+  type HTTP_CACHE_READ_DATA = 
+    HTTP_CACHE_READ_DATA.b |
+    HTTP_CACHE_READ_DATA.e;
+
+  type HTTP_CACHE_READ_INFO = 
+    HTTP_CACHE_READ_INFO.b |
+    HTTP_CACHE_READ_INFO.e;
+
+  type HTTP_CACHE_WRITE_DATA = 
+    HTTP_CACHE_WRITE_DATA.b |
+    HTTP_CACHE_WRITE_DATA.e;
+
+  type HTTP_CACHE_WRITE_INFO = 
+    HTTP_CACHE_WRITE_INFO.b |
+    HTTP_CACHE_WRITE_INFO.e;
+
+  type HTTP_STREAM_JOB_BOUND_TO_QUIC_STREAM_FACTORY_JOB = 
+    HTTP_STREAM_JOB_BOUND_TO_QUIC_STREAM_FACTORY_JOB.n;
+
+  type HTTP_STREAM_JOB_BOUND_TO_REQUEST = 
+    HTTP_STREAM_JOB_BOUND_TO_REQUEST.n;
+
+  type HTTP_STREAM_JOB_CONTROLLER_ALT_SVC_FOUND = 
+    HTTP_STREAM_JOB_CONTROLLER_ALT_SVC_FOUND.n;
+
+  type HTTP_STREAM_JOB_CONTROLLER_BOUND = 
+    HTTP_STREAM_JOB_CONTROLLER_BOUND.n;
+
+  type HTTP_STREAM_JOB_CONTROLLER_PROXY_SERVER_RESOLVED = 
+    HTTP_STREAM_JOB_CONTROLLER_PROXY_SERVER_RESOLVED.n;
+
+  type HTTP_STREAM_JOB_CONTROLLER = 
+    HTTP_STREAM_JOB_CONTROLLER.b |
+    HTTP_STREAM_JOB_CONTROLLER.e;
+
+  type HTTP_STREAM_JOB_DELAYED = 
+    HTTP_STREAM_JOB_DELAYED.n;
+
+  type HTTP_STREAM_JOB_INIT_CONNECTION = 
+    HTTP_STREAM_JOB_INIT_CONNECTION.b |
+    HTTP_STREAM_JOB_INIT_CONNECTION.e;
+
+  type HTTP_STREAM_JOB_WAITING = 
+    HTTP_STREAM_JOB_WAITING.b |
+    HTTP_STREAM_JOB_WAITING.e;
+
+  type HTTP_STREAM_JOB = 
+    HTTP_STREAM_JOB.b |
+    HTTP_STREAM_JOB.e;
+
+  type HTTP_STREAM_PARSER_READ_HEADERS = 
+    HTTP_STREAM_PARSER_READ_HEADERS.b |
+    HTTP_STREAM_PARSER_READ_HEADERS.e;
+
+  type HTTP_STREAM_REQUEST_BOUND_TO_JOB = 
+    HTTP_STREAM_REQUEST_BOUND_TO_JOB.n;
+
+  type HTTP_STREAM_REQUEST_BOUND_TO_QUIC_SESSION = 
+    HTTP_STREAM_REQUEST_BOUND_TO_QUIC_SESSION.n;
+
+  type HTTP_STREAM_REQUEST_PROTO = 
+    HTTP_STREAM_REQUEST_PROTO.n;
+
+  type HTTP_STREAM_REQUEST_STARTED_JOB = 
+    HTTP_STREAM_REQUEST_STARTED_JOB.n;
+
+  type HTTP_STREAM_REQUEST = 
+    HTTP_STREAM_REQUEST.b |
+    HTTP_STREAM_REQUEST.e;
+
+  type HTTP_TRANSACTION_HTTP2_SEND_REQUEST_HEADERS = 
+    HTTP_TRANSACTION_HTTP2_SEND_REQUEST_HEADERS.n;
+
+  type HTTP_TRANSACTION_QUIC_SEND_REQUEST_HEADERS = 
+    HTTP_TRANSACTION_QUIC_SEND_REQUEST_HEADERS.n;
+
+  type HTTP_TRANSACTION_READ_BODY = 
+    HTTP_TRANSACTION_READ_BODY.b |
+    HTTP_TRANSACTION_READ_BODY.e;
+
+  type HTTP_TRANSACTION_READ_HEADERS = 
+    HTTP_TRANSACTION_READ_HEADERS.b |
+    HTTP_TRANSACTION_READ_HEADERS.e;
+
+  type HTTP_TRANSACTION_READ_RESPONSE_HEADERS = 
+    HTTP_TRANSACTION_READ_RESPONSE_HEADERS.n;
+
+  type HTTP_TRANSACTION_SEND_REQUEST_HEADERS = 
+    HTTP_TRANSACTION_SEND_REQUEST_HEADERS.n;
+
+  type HTTP_TRANSACTION_SEND_REQUEST = 
+    HTTP_TRANSACTION_SEND_REQUEST.b |
+    HTTP_TRANSACTION_SEND_REQUEST.e;
+
+  type HTTP2_SESSION_INITIALIZED = 
+    HTTP2_SESSION_INITIALIZED.n;
+
+  type HTTP2_SESSION_PING = 
+    HTTP2_SESSION_PING.n;
+
+  type HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION_FROM_IP_POOL = 
+    HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION_FROM_IP_POOL.n;
+
+  type HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION = 
+    HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION.n;
+
+  type HTTP2_SESSION_POOL_IMPORTED_SESSION_FROM_SOCKET = 
+    HTTP2_SESSION_POOL_IMPORTED_SESSION_FROM_SOCKET.n;
+
+  type HTTP2_SESSION_RECV_DATA = 
+    HTTP2_SESSION_RECV_DATA.n;
+
+  type HTTP2_SESSION_RECV_HEADERS = 
+    HTTP2_SESSION_RECV_HEADERS.n;
+
+  type HTTP2_SESSION_RECV_SETTING = 
+    HTTP2_SESSION_RECV_SETTING.n;
+
+  type HTTP2_SESSION_RECV_SETTINGS_ACK = 
+    HTTP2_SESSION_RECV_SETTINGS_ACK.n;
+
+  type HTTP2_SESSION_RECV_SETTINGS = 
+    HTTP2_SESSION_RECV_SETTINGS.n;
+
+  type HTTP2_SESSION_RECV_WINDOW_UPDATE = 
+    HTTP2_SESSION_RECV_WINDOW_UPDATE.n;
+
+  type HTTP2_SESSION_SEND_HEADERS = 
+    HTTP2_SESSION_SEND_HEADERS.n;
+
+  type HTTP2_SESSION_SEND_SETTINGS_ACK = 
+    HTTP2_SESSION_SEND_SETTINGS_ACK.n;
+
+  type HTTP2_SESSION_SEND_SETTINGS = 
+    HTTP2_SESSION_SEND_SETTINGS.n;
+
+  type HTTP2_SESSION_SEND_WINDOW_UPDATE = 
+    HTTP2_SESSION_SEND_WINDOW_UPDATE.n;
+
+  type HTTP2_SESSION_UPDATE_RECV_WINDOW = 
+    HTTP2_SESSION_UPDATE_RECV_WINDOW.n;
+
+  type HTTP2_SESSION_UPDATE_SEND_WINDOW = 
+    HTTP2_SESSION_UPDATE_SEND_WINDOW.n;
+
+  type HTTP2_SESSION_UPDATE_STREAMS_SEND_WINDOW_SIZE = 
+    HTTP2_SESSION_UPDATE_STREAMS_SEND_WINDOW_SIZE.n;
+
+  type HTTP2_SESSION = 
+    HTTP2_SESSION.b;
+
+  type HTTP2_STREAM_UPDATE_RECV_WINDOW = 
+    HTTP2_STREAM_UPDATE_RECV_WINDOW.n;
+
+  type HTTP2_STREAM_UPDATE_SEND_WINDOW = 
+    HTTP2_STREAM_UPDATE_SEND_WINDOW.n;
+
+  type Idle_tq = 
+    Idle_tq.C;
+
+  type ImageDecodeTask = 
+    ImageDecodeTask.B |
+    ImageDecodeTask.E;
+
+  type Input_tq = 
+    Input_tq.C;
+
+  type InputEventSentBlocking = 
+    InputEventSentBlocking.I;
+
+  type InputMsg_SetFocus = 
+    InputMsg_SetFocus.X;
+
+  type InstallConditionalFeatures = 
+    InstallConditionalFeatures.X;
+
+  type InteractiveTime = 
+    InteractiveTime.R;
+
+  type InvalidateLayout = 
+    InvalidateLayout.I;
+
+  type Ipc_tq = 
+    Ipc_tq.C;
+
+  type IPCChannel = 
+    IPCChannel.X;
+
+  type Is_gesture_active = 
+    Is_gesture_active.C;
+
+  type KeyframeModel = 
+    KeyframeModel.F |
+    KeyframeModel.S;
+
+  type LaunchProcess = 
+    LaunchProcess.X;
+
+  type LayerId = 
+    LayerId.D |
+    LayerId.N;
+
+  type LayerInvalidationTracking = 
+    LayerInvalidationTracking.I;
+
+  type Layout = 
+    Layout.B |
+    Layout.E;
+
+  type LayoutInvalidationTracking = 
+    LayoutInvalidationTracking.I;
+
+  type LoadAnyStartablePendingRequests = 
+    LoadAnyStartablePendingRequests.X;
+
+  type LoadEndeventUtils = 
+    LoadEndeventUtils.R;
+
+  type LoadEndpixelQueue = 
+    LoadEndpixelQueue.R;
+
+  type LoadEventEnd = 
+    LoadEventEnd.R;
+
+  type LoadEventStart = 
+    LoadEventStart.R;
+
+  type LoadFinished = 
+    LoadFinished.I;
+
+  type LoadStarteventUtils = 
+    LoadStarteventUtils.R;
+
+  type LoadStartpixelQueue = 
+    LoadStartpixelQueue.R;
+
+  type LongTask = 
+    LongTask.I;
+
+  type Lteu = 
+    Lteu.b |
+    Lteu.e;
+
+  type Ltpq = 
+    Ltpq.b |
+    Ltpq.e;
+
+  type MainThreadLatency = 
+    MainThreadLatency.C;
+
+  type MainThreadSchedulerIdlePeriod = 
+    MainThreadSchedulerIdlePeriod.F |
+    MainThreadSchedulerIdlePeriod.S |
+    MainThreadSchedulerIdlePeriod.T;
+
+  type MajorGC = 
+    MajorGC.B |
+    MajorGC.E;
+
+  type Mark_test = 
+    Mark_test.R;
+
+  type MarkAsMainFrame = 
+    MarkAsMainFrame.I;
+
+  type MarkDOMContent = 
+    MarkDOMContent.I;
+
+  type MarkLoad = 
+    MarkLoad.I;
+
+  type Measure_test = 
+    Measure_test.b |
+    Measure_test.e;
+
+  type MediaPlayerDelegateHostMsg_OnMutedStatusChanged = 
+    MediaPlayerDelegateHostMsg_OnMutedStatusChanged.X;
+
+  type MemoryUsage = 
+    MemoryUsage.C;
+
+  type MinorGC = 
+    MinorGC.B |
+    MinorGC.E;
+
+  type ModelNeutralWriteTransaction = 
+    ModelNeutralWriteTransaction.B |
+    ModelNeutralWriteTransaction.E;
+
+  type Moredamageexpectedsoon = 
+    Moredamageexpectedsoon.I;
+
+  type NavigationHandle = 
+    NavigationHandle.F |
+    NavigationHandle.S |
+    NavigationHandle.T;
+
+  type NavigationRequest = 
+    NavigationRequest.F |
+    NavigationRequest.S |
+    NavigationRequest.T;
+
+  type NavigationStart = 
+    NavigationStart.R;
+
+  type NavigationStartToCommit = 
+    NavigationStartToCommit.F |
+    NavigationStartToCommit.S;
+
+  type NavigationtimeToResponseStarted = 
+    NavigationtimeToResponseStarted.F |
+    NavigationtimeToResponseStarted.S;
+
+  type NavigationTimingnavigationStart = 
+    NavigationTimingnavigationStart.I;
+
+  type NeedsBeginFrameChanged = 
+    NeedsBeginFrameChanged.I;
+
+  type NeedsTickAnimations = 
+    NeedsTickAnimations.I;
+
+  type NETWORK_DELEGATE_BEFORE_START_TRANSACTION = 
+    NETWORK_DELEGATE_BEFORE_START_TRANSACTION.b |
+    NETWORK_DELEGATE_BEFORE_START_TRANSACTION.e;
+
+  type NETWORK_DELEGATE_BEFORE_URL_REQUEST = 
+    NETWORK_DELEGATE_BEFORE_URL_REQUEST.b |
+    NETWORK_DELEGATE_BEFORE_URL_REQUEST.e;
+
+  type NETWORK_DELEGATE_HEADERS_RECEIVED = 
+    NETWORK_DELEGATE_HEADERS_RECEIVED.b |
+    NETWORK_DELEGATE_HEADERS_RECEIVED.e;
+
+  type NETWORK_QUALITY_CHANGED = 
+    NETWORK_QUALITY_CHANGED.n;
+
+  type NetworkHintsMsg_DNSPrefetch = 
+    NetworkHintsMsg_DNSPrefetch.X;
+
+  type Nodamageyet = 
+    Nodamageyet.I;
+
+  type NotStartingIdlePeriodBecauseDeadlineIsTooClose = 
+    NotStartingIdlePeriodBecauseDeadlineIsTooClose.X;
+
+  type Num_cpus = 
+    Num_cpus.M;
+
+  type Obmark0c_search = 
+    Obmark0c_search.R;
+
+  type Obmark0odbMB_120 = 
+    Obmark0odbMB_120.R;
+
+  type Obmark0odbTR_11 = 
+    Obmark0odbTR_11.R;
+
+  type Obmark0renderMB_120 = 
+    Obmark0renderMB_120.R;
+
+  type Obmark0renderTR_11 = 
+    Obmark0renderTR_11.R;
+
+  type Obmark0start = 
+    Obmark0start.R;
+
+  type Obmark1c_foundMB_120 = 
+    Obmark1c_foundMB_120.R;
+
+  type Obmark1c_foundTR_11 = 
+    Obmark1c_foundTR_11.R;
+
+  type Obmark1odb_rMB_120 = 
+    Obmark1odb_rMB_120.R;
+
+  type Obmark1odb_rTR_11 = 
+    Obmark1odb_rTR_11.R;
+
+  type Obmark1renderedMB_120 = 
+    Obmark1renderedMB_120.R;
+
+  type Obmark1renderedTR_11 = 
+    Obmark1renderedTR_11.R;
+
+  type Obmeasurec_foundMB_120 = 
+    Obmeasurec_foundMB_120.b |
+    Obmeasurec_foundMB_120.e;
+
+  type Obmeasurec_foundTR_11 = 
+    Obmeasurec_foundTR_11.b |
+    Obmeasurec_foundTR_11.e;
+
+  type Obmeasureodb_rMB_120 = 
+    Obmeasureodb_rMB_120.b |
+    Obmeasureodb_rMB_120.e;
+
+  type Obmeasureodb_rTR_11 = 
+    Obmeasureodb_rTR_11.b |
+    Obmeasureodb_rTR_11.e;
+
+  type ObmeasureodbMB_120 = 
+    ObmeasureodbMB_120.b |
+    ObmeasureodbMB_120.e;
+
+  type ObmeasureodbTR_11 = 
+    ObmeasureodbTR_11.b |
+    ObmeasureodbTR_11.e;
+
+  type ObmeasurerenderedMB_120 = 
+    ObmeasurerenderedMB_120.b |
+    ObmeasurerenderedMB_120.e;
+
+  type ObmeasurerenderedTR_11 = 
+    ObmeasurerenderedTR_11.b |
+    ObmeasurerenderedTR_11.e;
+
+  type OnIdleTaskPosted = 
+    OnIdleTaskPosted.X;
+
+  type OnIdleTaskPostedOnMainThread = 
+    OnIdleTaskPostedOnMainThread.X;
+
+  type OnLibevent = 
+    OnLibevent.X;
+
+  type OnLoad = 
+    OnLoad.b |
+    OnLoad.e;
+
+  type OptimizelyEnd = 
+    OptimizelyEnd.R;
+
+  type OptimizelyStart = 
+    OptimizelyStart.R;
+
+  type OptimizelyTime = 
+    OptimizelyTime.b |
+    OptimizelyTime.e;
+
+  type PageLoad = 
+    PageLoad.b |
+    PageLoad.e;
+
+  type PageMsg_SetHistoryOffsetAndLength = 
+    PageMsg_SetHistoryOffsetAndLength.X;
+
+  type PageMsg_UpdateScreenInfo = 
+    PageMsg_UpdateScreenInfo.X;
+
+  type PageMsg_UpdateWindowScreenRect = 
+    PageMsg_UpdateWindowScreenRect.X;
+
+  type PageMsg_WasHidden = 
+    PageMsg_WasHidden.X;
+
+  type PageMsg_WasShown = 
+    PageMsg_WasShown.X;
+
+  type Paint = 
+    Paint.X;
+
+  type PaintImage = 
+    PaintImage.X;
+
+  type PaintInvalidationTracking = 
+    PaintInvalidationTracking.I;
+
+  type PaintNonDefaultBackgroundColor = 
+    PaintNonDefaultBackgroundColor.R;
+
+  type ParseAuthorStyleSheet = 
+    ParseAuthorStyleSheet.X;
+
+  type ParseHTML = 
+    ParseHTML.B |
+    ParseHTML.E;
+
+  type PlatformResourceSendRequest = 
+    PlatformResourceSendRequest.B |
+    PlatformResourceSendRequest.E;
+
+  type PostCommit = 
+    PostCommit.B |
+    PostCommit.E;
+
+  type PrintMsg_SetPrintingEnabled = 
+    PrintMsg_SetPrintingEnabled.X;
+
+  type Process_labels = 
+    Process_labels.M;
+
+  type Process_name = 
+    Process_name.M;
+
+  type Process_sort_index = 
+    Process_sort_index.M;
+
+  type Process_uptime_seconds = 
+    Process_uptime_seconds.M;
+
+  type ProcessCommitResponse = 
+    ProcessCommitResponse.X;
+
+  type ProcessMemoryDump = 
+    ProcessMemoryDump.b |
+    ProcessMemoryDump.e;
+
+  type ProcessPriority = 
+    ProcessPriority.I;
+
+  type Profile = 
+    Profile.P;
+
+  type ProfileChunk = 
+    ProfileChunk.P;
+
+  type PROXY_RESOLUTION_SERVICE_RESOLVED_PROXY_LIST = 
+    PROXY_RESOLUTION_SERVICE_RESOLVED_PROXY_LIST.n;
+
+  type PROXY_RESOLUTION_SERVICE = 
+    PROXY_RESOLUTION_SERVICE.b |
+    PROXY_RESOLUTION_SERVICE.e;
+
+  type QUIC_CHROMIUM_CLIENT_STREAM_READ_RESPONSE_HEADERS = 
+    QUIC_CHROMIUM_CLIENT_STREAM_READ_RESPONSE_HEADERS.n;
+
+  type QUIC_CHROMIUM_CLIENT_STREAM_SEND_REQUEST_HEADERS = 
+    QUIC_CHROMIUM_CLIENT_STREAM_SEND_REQUEST_HEADERS.n;
+
+  type QUIC_CONNECTION_MIGRATION_MODE = 
+    QUIC_CONNECTION_MIGRATION_MODE.n;
+
+  type QUIC_SESSION_ACK_FRAME_SENT = 
+    QUIC_SESSION_ACK_FRAME_SENT.n;
+
+  type QUIC_SESSION_CERTIFICATE_VERIFIED = 
+    QUIC_SESSION_CERTIFICATE_VERIFIED.n;
+
+  type QUIC_SESSION_CLOSED = 
+    QUIC_SESSION_CLOSED.n;
+
+  type QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED = 
+    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED.n;
+
+  type QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT = 
+    QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT.n;
+
+  type QUIC_SESSION_PACKET_AUTHENTICATED = 
+    QUIC_SESSION_PACKET_AUTHENTICATED.n;
+
+  type QUIC_SESSION_PACKET_LOST = 
+    QUIC_SESSION_PACKET_LOST.n;
+
+  type QUIC_SESSION_PACKET_RECEIVED = 
+    QUIC_SESSION_PACKET_RECEIVED.n;
+
+  type QUIC_SESSION_PACKET_SENT = 
+    QUIC_SESSION_PACKET_SENT.n;
+
+  type QUIC_SESSION_PING_FRAME_SENT = 
+    QUIC_SESSION_PING_FRAME_SENT.n;
+
+  type QUIC_SESSION_RST_STREAM_FRAME_RECEIVED = 
+    QUIC_SESSION_RST_STREAM_FRAME_RECEIVED.n;
+
+  type QUIC_SESSION_RST_STREAM_FRAME_SENT = 
+    QUIC_SESSION_RST_STREAM_FRAME_SENT.n;
+
+  type QUIC_SESSION_STREAM_FRAME_RECEIVED = 
+    QUIC_SESSION_STREAM_FRAME_RECEIVED.n;
+
+  type QUIC_SESSION_STREAM_FRAME_SENT = 
+    QUIC_SESSION_STREAM_FRAME_SENT.n;
+
+  type QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED = 
+    QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED.n;
+
+  type QUIC_SESSION_VERSION_NEGOTIATED = 
+    QUIC_SESSION_VERSION_NEGOTIATED.n;
+
+  type QUIC_SESSION = 
+    QUIC_SESSION.b |
+    QUIC_SESSION.e;
+
+  type QUIC_STREAM_FACTORY_JOB_BOUND_TO_HTTP_STREAM_JOB = 
+    QUIC_STREAM_FACTORY_JOB_BOUND_TO_HTTP_STREAM_JOB.n;
+
+  type QUIC_STREAM_FACTORY_JOB_CONNECT = 
+    QUIC_STREAM_FACTORY_JOB_CONNECT.b |
+    QUIC_STREAM_FACTORY_JOB_CONNECT.e;
+
+  type QUIC_STREAM_FACTORY_JOB = 
+    QUIC_STREAM_FACTORY_JOB.b |
+    QUIC_STREAM_FACTORY_JOB.e;
+
+  type RasterTask = 
+    RasterTask.B |
+    RasterTask.E;
+
+  type ReadTransaction = 
+    ReadTransaction.B |
+    ReadTransaction.E;
+
+  type RedirectEnd = 
+    RedirectEnd.R;
+
+  type RedirectStart = 
+    RedirectStart.R;
+
+  type RendererAudioState = 
+    RendererAudioState.S |
+    RendererAudioState.T;
+
+  type RendererProcessType = 
+    RendererProcessType.S |
+    RendererProcessType.T;
+
+  type RendererVisibility = 
+    RendererVisibility.F |
+    RendererVisibility.S |
+    RendererVisibility.T;
+
+  type RenderFrame = 
+    RenderFrame.D |
+    RenderFrame.N |
+    RenderFrame.O;
+
+  type RenderFrameHostImplBeforeUnload = 
+    RenderFrameHostImplBeforeUnload.F |
+    RenderFrameHostImplBeforeUnload.S;
+
+  type RenderPass = 
+    RenderPass.D;
+
+  type RenderWorker0x7f8e1500b000 = 
+    RenderWorker0x7f8e1500b000.b |
+    RenderWorker0x7f8e1500b000.e |
+    RenderWorker0x7f8e1500b000.F |
+    RenderWorker0x7f8e1500b000.S;
+
+  type RenderWorker0x7fa57a039c00 = 
+    RenderWorker0x7fa57a039c00.b |
+    RenderWorker0x7fa57a039c00.e |
+    RenderWorker0x7fa57a039c00.F |
+    RenderWorker0x7fa57a039c00.S;
+
+  type RenderWorker0x7fcab207b200 = 
+    RenderWorker0x7fcab207b200.b |
+    RenderWorker0x7fcab207b200.e |
+    RenderWorker0x7fcab207b200.F |
+    RenderWorker0x7fcab207b200.S;
+
+  type RenderWorker0x7fd50f00aa00 = 
+    RenderWorker0x7fd50f00aa00.b |
+    RenderWorker0x7fd50f00aa00.e |
+    RenderWorker0x7fd50f00aa00.F |
+    RenderWorker0x7fd50f00aa00.S;
+
+  type RenderWorker0x7fdabc07b400 = 
+    RenderWorker0x7fdabc07b400.b |
+    RenderWorker0x7fdabc07b400.e |
+    RenderWorker0x7fdabc07b400.F |
+    RenderWorker0x7fdabc07b400.S;
+
+  type RenderWorker0x7fdefa843000 = 
+    RenderWorker0x7fdefa843000.b |
+    RenderWorker0x7fdefa843000.e |
+    RenderWorker0x7fdefa843000.F |
+    RenderWorker0x7fdefa843000.S;
+
+  type RenderWorker0x7fe5c4821c00 = 
+    RenderWorker0x7fe5c4821c00.b |
+    RenderWorker0x7fe5c4821c00.e |
+    RenderWorker0x7fe5c4821c00.F |
+    RenderWorker0x7fe5c4821c00.S;
+
+  type REQUEST_ALIVE = 
+    REQUEST_ALIVE.b |
+    REQUEST_ALIVE.e;
+
+  type RequestAnimationFrame = 
+    RequestAnimationFrame.I;
+
+  type RequestIdleCallback = 
+    RequestIdleCallback.I;
+
+  type RequestMainThreadFrame = 
+    RequestMainThreadFrame.I;
+
+  type RequestStart = 
+    RequestStart.R;
+
+  type ResourceChangePriority = 
+    ResourceChangePriority.I |
+    ResourceChangePriority.X;
+
+  type ResourceFinish = 
+    ResourceFinish.I;
+
+  type ResourceLoad = 
+    ResourceLoad.b |
+    ResourceLoad.e;
+
+  type ResourcePrioritySet = 
+    ResourcePrioritySet.n;
+
+  type ResourceReceivedData = 
+    ResourceReceivedData.I;
+
+  type ResourceReceiveResponse = 
+    ResourceReceiveResponse.I;
+
+  type ResourceSendRequest = 
+    ResourceSendRequest.I;
+
+  type ResponseEnd = 
+    ResponseEnd.R;
+
+  type RunMicrotasks = 
+    RunMicrotasks.B |
+    RunMicrotasks.E |
+    RunMicrotasks.X;
+
+  type RunTask = 
+    RunTask.X;
+
+  type RunWithFaviconResults = 
+    RunWithFaviconResults.X;
+
+  type ScheduledTasks = 
+    ScheduledTasks.F |
+    ScheduledTasks.S |
+    ScheduledTasks.T;
+
+  type SchedulerWorkerThreadactive = 
+    SchedulerWorkerThreadactive.B |
+    SchedulerWorkerThreadactive.E;
+
+  type SchedulerWorkerThreadborn = 
+    SchedulerWorkerThreadborn.I;
+
+  type SchedulerWorkerThreaddead = 
+    SchedulerWorkerThreaddead.I;
+
+  type ScheduleStyleInvalidationTracking = 
+    ScheduleStyleInvalidationTracking.I;
+
+  type ScheduleStyleRecalculation = 
+    ScheduleStyleRecalculation.I;
+
+  type ScopedBlockingCall = 
+    ScopedBlockingCall.B |
+    ScopedBlockingCall.E;
+
+  type ScopedBlockingCallWithBaseSyncPrimitives = 
+    ScopedBlockingCallWithBaseSyncPrimitives.B |
+    ScopedBlockingCallWithBaseSyncPrimitives.E;
+
+  type Screenshot = 
+    Screenshot.O;
+
+  type SequenceEnabled = 
+    SequenceEnabled.F;
+
+  type SetIdlePeriodState = 
+    SetIdlePeriodState.X;
+
+  type SetLayerTreeId = 
+    SetLayerTreeId.I;
+
+  type ShCompile = 
+    ShCompile.X;
+
+  type SIGNED_CERTIFICATE_TIMESTAMPS_CHECKED = 
+    SIGNED_CERTIFICATE_TIMESTAMPS_CHECKED.n;
+
+  type SIGNED_CERTIFICATE_TIMESTAMPS_RECEIVED = 
+    SIGNED_CERTIFICATE_TIMESTAMPS_RECEIVED.n;
+
+  type SIMPLE_CACHE_ENTRY_CLOSE_BEGIN = 
+    SIMPLE_CACHE_ENTRY_CLOSE_BEGIN.n;
+
+  type SIMPLE_CACHE_ENTRY_CLOSE_CALL = 
+    SIMPLE_CACHE_ENTRY_CLOSE_CALL.n;
+
+  type SIMPLE_CACHE_ENTRY_CLOSE_END = 
+    SIMPLE_CACHE_ENTRY_CLOSE_END.n;
+
+  type SIMPLE_CACHE_ENTRY_CREATE_BEGIN = 
+    SIMPLE_CACHE_ENTRY_CREATE_BEGIN.n;
+
+  type SIMPLE_CACHE_ENTRY_CREATE_CALL = 
+    SIMPLE_CACHE_ENTRY_CREATE_CALL.n;
+
+  type SIMPLE_CACHE_ENTRY_CREATE_END = 
+    SIMPLE_CACHE_ENTRY_CREATE_END.n;
+
+  type SIMPLE_CACHE_ENTRY_CREATE_OPTIMISTIC = 
+    SIMPLE_CACHE_ENTRY_CREATE_OPTIMISTIC.n;
+
+  type SIMPLE_CACHE_ENTRY_DOOM_BEGIN = 
+    SIMPLE_CACHE_ENTRY_DOOM_BEGIN.n;
+
+  type SIMPLE_CACHE_ENTRY_DOOM_CALL = 
+    SIMPLE_CACHE_ENTRY_DOOM_CALL.n;
+
+  type SIMPLE_CACHE_ENTRY_DOOM_END = 
+    SIMPLE_CACHE_ENTRY_DOOM_END.n;
+
+  type SIMPLE_CACHE_ENTRY_OPEN_BEGIN = 
+    SIMPLE_CACHE_ENTRY_OPEN_BEGIN.n;
+
+  type SIMPLE_CACHE_ENTRY_OPEN_CALL = 
+    SIMPLE_CACHE_ENTRY_OPEN_CALL.n;
+
+  type SIMPLE_CACHE_ENTRY_OPEN_END = 
+    SIMPLE_CACHE_ENTRY_OPEN_END.n;
+
+  type SIMPLE_CACHE_ENTRY_READ_BEGIN = 
+    SIMPLE_CACHE_ENTRY_READ_BEGIN.n;
+
+  type SIMPLE_CACHE_ENTRY_READ_CALL = 
+    SIMPLE_CACHE_ENTRY_READ_CALL.n;
+
+  type SIMPLE_CACHE_ENTRY_READ_END = 
+    SIMPLE_CACHE_ENTRY_READ_END.n;
+
+  type SIMPLE_CACHE_ENTRY_SET_KEY = 
+    SIMPLE_CACHE_ENTRY_SET_KEY.n;
+
+  type SIMPLE_CACHE_ENTRY_WRITE_BEGIN = 
+    SIMPLE_CACHE_ENTRY_WRITE_BEGIN.n;
+
+  type SIMPLE_CACHE_ENTRY_WRITE_CALL = 
+    SIMPLE_CACHE_ENTRY_WRITE_CALL.n;
+
+  type SIMPLE_CACHE_ENTRY_WRITE_END = 
+    SIMPLE_CACHE_ENTRY_WRITE_END.n;
+
+  type SIMPLE_CACHE_ENTRY_WRITE_OPTIMISTIC = 
+    SIMPLE_CACHE_ENTRY_WRITE_OPTIMISTIC.n;
+
+  type SIMPLE_CACHE_ENTRY = 
+    SIMPLE_CACHE_ENTRY.b |
+    SIMPLE_CACHE_ENTRY.e;
+
+  type Skiabudget = 
+    Skiabudget.C;
+
+  type SkipBeginImplFrameToReduceLatency = 
+    SkipBeginImplFrameToReduceLatency.I;
+
+  type SkipBeginMainFrameToReduceLatency = 
+    SkipBeginMainFrameToReduceLatency.I;
+
+  type SmallPathOp = 
+    SmallPathOp.X;
+
+  type SOCKET_ALIVE = 
+    SOCKET_ALIVE.b |
+    SOCKET_ALIVE.e;
+
+  type SOCKET_BYTES_RECEIVED = 
+    SOCKET_BYTES_RECEIVED.n;
+
+  type SOCKET_BYTES_SENT = 
+    SOCKET_BYTES_SENT.n;
+
+  type SOCKET_IN_USE = 
+    SOCKET_IN_USE.b |
+    SOCKET_IN_USE.e;
+
+  type SOCKET_POOL_BOUND_TO_CONNECT_JOB = 
+    SOCKET_POOL_BOUND_TO_CONNECT_JOB.n;
+
+  type SOCKET_POOL_BOUND_TO_SOCKET = 
+    SOCKET_POOL_BOUND_TO_SOCKET.n;
+
+  type SOCKET_POOL_CONNECT_JOB_CONNECT = 
+    SOCKET_POOL_CONNECT_JOB_CONNECT.b |
+    SOCKET_POOL_CONNECT_JOB_CONNECT.e;
+
+  type SOCKET_POOL_CONNECT_JOB = 
+    SOCKET_POOL_CONNECT_JOB.b |
+    SOCKET_POOL_CONNECT_JOB.e;
+
+  type SOCKET_POOL_REUSED_AN_EXISTING_SOCKET = 
+    SOCKET_POOL_REUSED_AN_EXISTING_SOCKET.n;
+
+  type SOCKET_POOL = 
+    SOCKET_POOL.b |
+    SOCKET_POOL.e;
+
+  type SpeedIndex = 
+    SpeedIndex.b |
+    SpeedIndex.e;
+
+  type SSL_CONNECT = 
+    SSL_CONNECT.b |
+    SSL_CONNECT.e;
+
+  type SSL_HANDSHAKE_MESSAGE_RECEIVED = 
+    SSL_HANDSHAKE_MESSAGE_RECEIVED.n;
+
+  type SSL_HANDSHAKE_MESSAGE_SENT = 
+    SSL_HANDSHAKE_MESSAGE_SENT.n;
+
+  type SSL_SOCKET_BYTES_RECEIVED = 
+    SSL_SOCKET_BYTES_RECEIVED.n;
+
+  type SSL_SOCKET_BYTES_SENT = 
+    SSL_SOCKET_BYTES_SENT.n;
+
+  type StackCpuSampling = 
+    StackCpuSampling.I;
+
+  type StartIdlePeriod = 
+    StartIdlePeriod.X;
+
+  type StyleRecalcInvalidationTracking = 
+    StyleRecalcInvalidationTracking.I;
+
+  type SubImage = 
+    SubImage.X;
+
+  type Submitrejectedtoevictedsurface = 
+    Submitrejectedtoevictedsurface.I;
+
+  type SubresourceFilterMsg_SetRulesetForProcess = 
+    SubresourceFilterMsg_SetRulesetForProcess.X;
+
+  type SubresourceFilterSBCheck = 
+    SubresourceFilterSBCheck.F |
+    SubresourceFilterSBCheck.S;
+
+  type Subthread_default_tq = 
+    Subthread_default_tq.C;
+
+  type SwapBuffers = 
+    SwapBuffers.I;
+
+  type Swapskipped = 
+    Swapskipped.I;
+
+  type Swapthrottled = 
+    Swapthrottled.I;
+
+  type TabSwitchVisibilityRequest = 
+    TabSwitchVisibilityRequest.F |
+    TabSwitchVisibilityRequest.S;
+
+  type TaskQueueThrottler_TaskQueueThrottled = 
+    TaskQueueThrottler_TaskQueueThrottled.X;
+
+  type TaskQueueThrottler_TaskQueueUnthrottled = 
+    TaskQueueThrottler_TaskQueueUnthrottled.X;
+
+  type TaskSchedulerPostTask = 
+    TaskSchedulerPostTask.X;
+
+  type TaskSchedulerRunTask = 
+    TaskSchedulerRunTask.X;
+
+  type TCP_CLIENT_SOCKET_POOL_REQUESTED_SOCKET = 
+    TCP_CLIENT_SOCKET_POOL_REQUESTED_SOCKET.n;
+
+  type TCP_CONNECT_ATTEMPT = 
+    TCP_CONNECT_ATTEMPT.b |
+    TCP_CONNECT_ATTEMPT.e;
+
+  type TCP_CONNECT = 
+    TCP_CONNECT.b |
+    TCP_CONNECT.e;
+
+  type TessellatingPathOp = 
+    TessellatingPathOp.X;
+
+  type TextureOp = 
+    TextureOp.X;
+
+  type Thread_name = 
+    Thread_name.M;
+
+  type Thread_sort_index = 
+    Thread_sort_index.M;
+
+  type TimerFire = 
+    TimerFire.X;
+
+  type TimerInstall = 
+    TimerInstall.I;
+
+  type TimerRemove = 
+    TimerRemove.I;
+
+  type TimeStamp = 
+    TimeStamp.I;
+
+  type TimeToDomReady = 
+    TimeToDomReady.b |
+    TimeToDomReady.e;
+
+  type TimeToInteractive = 
+    TimeToInteractive.b |
+    TimeToInteractive.e;
+
+  type TimeToZonesAndDomReady = 
+    TimeToZonesAndDomReady.b |
+    TimeToZonesAndDomReady.e;
+
+  type TimeToZonesComplete = 
+    TimeToZonesComplete.b |
+    TimeToZonesComplete.e;
+
+  type TopLevel = 
+    TopLevel.O;
+
+  type Trace_buffer_overflowed = 
+    Trace_buffer_overflowed.M;
+
+  type TracingHostMsg_ChildSupportsTracing = 
+    TracingHostMsg_ChildSupportsTracing.X;
+
+  type TracingMsg_SetTracingProcessId = 
+    TracingMsg_SetTracingProcessId.X;
+
+  type TracingSessionIdForWorker = 
+    TracingSessionIdForWorker.I;
+
+  type TracingStartedInBrowser = 
+    TracingStartedInBrowser.I;
+
+  type TracingStartedInPage = 
+    TracingStartedInPage.I;
+
+  type TransfersBytesPendingOnDisk = 
+    TransfersBytesPendingOnDisk.C;
+
+  type TransfersPendingOnDisk = 
+    TransfersPendingOnDisk.C;
+
+  type TrianglesDrawn = 
+    TrianglesDrawn.C;
+
+  type UDP_BYTES_RECEIVED = 
+    UDP_BYTES_RECEIVED.n;
+
+  type UDP_BYTES_SENT = 
+    UDP_BYTES_SENT.n;
+
+  type UDP_CONNECT = 
+    UDP_CONNECT.b |
+    UDP_CONNECT.e;
+
+  type UDP_LOCAL_ADDRESS = 
+    UDP_LOCAL_ADDRESS.n;
+
+  type Unknowninterface = 
+    Unknowninterface.X;
+
+  type UnloadEventEnd = 
+    UnloadEventEnd.R;
+
+  type UnloadEventStart = 
+    UnloadEventStart.R;
+
+  type UpdateCounters = 
+    UpdateCounters.I;
+
+  type UpdateLayer = 
+    UpdateLayer.B |
+    UpdateLayer.E;
+
+  type UpdateLayerTree = 
+    UpdateLayerTree.X;
+
+  type UpdateLayoutTree = 
+    UpdateLayoutTree.B |
+    UpdateLayoutTree.E;
+
+  type UpdateLongIdlePeriodStateAfterIdleTask = 
+    UpdateLongIdlePeriodStateAfterIdleTask.X;
+
+  type UpdateStateFromAnimationDrivers = 
+    UpdateStateFromAnimationDrivers.X;
+
+  type UPLOAD_DATA_STREAM_INIT = 
+    UPLOAD_DATA_STREAM_INIT.b |
+    UPLOAD_DATA_STREAM_INIT.e;
+
+  type UPLOAD_DATA_STREAM_READ = 
+    UPLOAD_DATA_STREAM_READ.b |
+    UPLOAD_DATA_STREAM_READ.e;
+
+  type URL_REQUEST_DELEGATE_RECEIVED_REDIRECT = 
+    URL_REQUEST_DELEGATE_RECEIVED_REDIRECT.b |
+    URL_REQUEST_DELEGATE_RECEIVED_REDIRECT.e;
+
+  type URL_REQUEST_DELEGATE_RESPONSE_STARTED = 
+    URL_REQUEST_DELEGATE_RESPONSE_STARTED.b |
+    URL_REQUEST_DELEGATE_RESPONSE_STARTED.e;
+
+  type URL_REQUEST_FAKE_RESPONSE_HEADERS_CREATED = 
+    URL_REQUEST_FAKE_RESPONSE_HEADERS_CREATED.n;
+
+  type URL_REQUEST_FILTERS_SET = 
+    URL_REQUEST_FILTERS_SET.n;
+
+  type URL_REQUEST_JOB_BYTES_READ = 
+    URL_REQUEST_JOB_BYTES_READ.n;
+
+  type URL_REQUEST_JOB_FILTERED_BYTES_READ = 
+    URL_REQUEST_JOB_FILTERED_BYTES_READ.n;
+
+  type URL_REQUEST_REDIRECT_JOB = 
+    URL_REQUEST_REDIRECT_JOB.n;
+
+  type URL_REQUEST_REDIRECTED = 
+    URL_REQUEST_REDIRECTED.n;
+
+  type URL_REQUEST_START_JOB = 
+    URL_REQUEST_START_JOB.b |
+    URL_REQUEST_START_JOB.e;
+
+  type UserEvent = 
+    UserEvent.I;
+
+  type Usingexistingdeadline = 
+    Usingexistingdeadline.I;
+
+  type Usingnewdeadline = 
+    Usingnewdeadline.X;
+
+  type V8_tq = 
+    V8_tq.C;
+
+  type ViewHostMsg_DidContentsPreferredSizeChange = 
+    ViewHostMsg_DidContentsPreferredSizeChange.X;
+
+  type ViewHostMsg_DocumentAvailableInMainFrame = 
+    ViewHostMsg_DocumentAvailableInMainFrame.X;
+
+  type ViewHostMsg_UpdateZoomLimits = 
+    ViewHostMsg_UpdateZoomLimits.X;
+
+  type ViewMsg_EnablePreferredSizeChangedMode = 
+    ViewMsg_EnablePreferredSizeChangedMode.X;
+
+  type VisuallyComplete100 = 
+    VisuallyComplete100.b |
+    VisuallyComplete100.e;
+
+  type WaitingfornextBeginFrame = 
+    WaitingfornextBeginFrame.I;
+
+  type WebContentsImplLoading = 
+    WebContentsImplLoading.F |
+    WebContentsImplLoading.S;
+
+  type WidgetHostMsg_Close_ACK = 
+    WidgetHostMsg_Close_ACK.X;
+
+  type WidgetHostMsg_DidCommitAndDrawCompositorFrame = 
+    WidgetHostMsg_DidCommitAndDrawCompositorFrame.X;
+
+  type WidgetHostMsg_DidFirstVisuallyNonEmptyPaint = 
+    WidgetHostMsg_DidFirstVisuallyNonEmptyPaint.X;
+
+  type WidgetHostMsg_FrameSwapMessages = 
+    WidgetHostMsg_FrameSwapMessages.X;
+
+  type WidgetHostMsg_HasTouchEventHandlers = 
+    WidgetHostMsg_HasTouchEventHandlers.X;
+
+  type WidgetHostMsg_SelectionBoundsChanged = 
+    WidgetHostMsg_SelectionBoundsChanged.X;
+
+  type WidgetHostMsg_TextInputStateChanged = 
+    WidgetHostMsg_TextInputStateChanged.X;
+
+  type WidgetHostMsg_UpdateScreenRects_ACK = 
+    WidgetHostMsg_UpdateScreenRects_ACK.X;
+
+  type WidgetMsg_SetActive = 
+    WidgetMsg_SetActive.X;
+
+  type WidgetMsg_SetInheritedEffectiveTouchAction = 
+    WidgetMsg_SetInheritedEffectiveTouchAction.X;
+
+  type WidgetMsg_SetIsInert = 
+    WidgetMsg_SetIsInert.X;
+
+  type WidgetMsg_SetViewportIntersection = 
+    WidgetMsg_SetViewportIntersection.X;
+
+  type WidgetMsg_SynchronizeVisualProperties = 
+    WidgetMsg_SynchronizeVisualProperties.X;
+
+  type WidgetMsg_UpdateRenderThrottlingStatus = 
+    WidgetMsg_UpdateRenderThrottlingStatus.X;
+
+  type WidgetMsg_UpdateScreenRects = 
+    WidgetMsg_UpdateScreenRects.X;
+
+  type WidgetMsg_WasHidden = 
+    WidgetMsg_WasHidden.X;
+
+  type WidgetMsg_WasShown = 
+    WidgetMsg_WasShown.X;
+
+  type WriteTransaction = 
+    WriteTransaction.B |
+    WriteTransaction.E;
+
+  type XHRLoad = 
+    XHRLoad.X;
+
+  type XHRReadyStateChange = 
+    XHRReadyStateChange.X;
+
+  type YieldParserForScriptBlockingResources = 
+    YieldParserForScriptBlockingResources.X;
+
+  type YieldParserForScriptLoad = 
+    YieldParserForScriptLoad.X;
+
+  type ZonesAndDomReady = 
+    ZonesAndDomReady.R;
+
+  type ZonesReady = 
+    ZonesReady.R;
+
   namespace A {
     interface F extends Base {
       args: {
@@ -2285,6 +4236,171 @@ export namespace TraceEvent {
   }
 
   namespace ADFUEL {
+    type AdFuelDOMContentLoaded = 
+      ADFUEL.AdFuelDOMContentLoaded.R;
+  
+    type AdFuelInitialized = 
+      ADFUEL.AdFuelInitialized.R;
+  
+    type AdFuelRequestComplete = 
+      ADFUEL.AdFuelRequestComplete.R;
+  
+    type AdRenderedad_bnr_atf_01 = 
+      ADFUEL.AdRenderedad_bnr_atf_01.R;
+  
+    type AdRenderedad_bnr_btf_01 = 
+      ADFUEL.AdRenderedad_bnr_btf_01.R;
+  
+    type AdRenderedad_mod_35731bb1e = 
+      ADFUEL.AdRenderedad_mod_35731bb1e.R;
+  
+    type AdRenderedad_oop_float_01 = 
+      ADFUEL.AdRenderedad_oop_float_01.R;
+  
+    type AdRenderedad_rect_btf_02 = 
+      ADFUEL.AdRenderedad_rect_btf_02.R;
+  
+    type ApplyingPageLevelTargeting = 
+      ADFUEL.ApplyingPageLevelTargeting.R;
+  
+    type ApplyingWindowSiteLevelOptions = 
+      ADFUEL.ApplyingWindowSiteLevelOptions.R;
+  
+    type BuildingSlotad_bnr_atf_01 = 
+      ADFUEL.BuildingSlotad_bnr_atf_01.b |
+      ADFUEL.BuildingSlotad_bnr_atf_01.e;
+  
+    type BuildingSlotad_bnr_atf_01End = 
+      ADFUEL.BuildingSlotad_bnr_atf_01End.R;
+  
+    type BuildingSlotad_bnr_atf_01Start = 
+      ADFUEL.BuildingSlotad_bnr_atf_01Start.R;
+  
+    type BuildingSlotad_bnr_btf_01 = 
+      ADFUEL.BuildingSlotad_bnr_btf_01.b |
+      ADFUEL.BuildingSlotad_bnr_btf_01.e;
+  
+    type BuildingSlotad_bnr_btf_01End = 
+      ADFUEL.BuildingSlotad_bnr_btf_01End.R;
+  
+    type BuildingSlotad_bnr_btf_01Start = 
+      ADFUEL.BuildingSlotad_bnr_btf_01Start.R;
+  
+    type BuildingSlotad_bnr_btf_02 = 
+      ADFUEL.BuildingSlotad_bnr_btf_02.b |
+      ADFUEL.BuildingSlotad_bnr_btf_02.e;
+  
+    type BuildingSlotad_bnr_btf_02End = 
+      ADFUEL.BuildingSlotad_bnr_btf_02End.R;
+  
+    type BuildingSlotad_bnr_btf_02Start = 
+      ADFUEL.BuildingSlotad_bnr_btf_02Start.R;
+  
+    type BuildingSlotad_mod_35731bb1e = 
+      ADFUEL.BuildingSlotad_mod_35731bb1e.b |
+      ADFUEL.BuildingSlotad_mod_35731bb1e.e;
+  
+    type BuildingSlotad_mod_35731bb1eEnd = 
+      ADFUEL.BuildingSlotad_mod_35731bb1eEnd.R;
+  
+    type BuildingSlotad_mod_35731bb1eStart = 
+      ADFUEL.BuildingSlotad_mod_35731bb1eStart.R;
+  
+    type BuildingSlotad_oop_float_01 = 
+      ADFUEL.BuildingSlotad_oop_float_01.b |
+      ADFUEL.BuildingSlotad_oop_float_01.e;
+  
+    type BuildingSlotad_oop_float_01End = 
+      ADFUEL.BuildingSlotad_oop_float_01End.R;
+  
+    type BuildingSlotad_oop_float_01Start = 
+      ADFUEL.BuildingSlotad_oop_float_01Start.R;
+  
+    type BuildingSlotad_oop_skin_01 = 
+      ADFUEL.BuildingSlotad_oop_skin_01.b |
+      ADFUEL.BuildingSlotad_oop_skin_01.e;
+  
+    type BuildingSlotad_oop_skin_01End = 
+      ADFUEL.BuildingSlotad_oop_skin_01End.R;
+  
+    type BuildingSlotad_oop_skin_01Start = 
+      ADFUEL.BuildingSlotad_oop_skin_01Start.R;
+  
+    type BuildingSlotad_rect_btf_02 = 
+      ADFUEL.BuildingSlotad_rect_btf_02.b |
+      ADFUEL.BuildingSlotad_rect_btf_02.e;
+  
+    type BuildingSlotad_rect_btf_02End = 
+      ADFUEL.BuildingSlotad_rect_btf_02End.R;
+  
+    type BuildingSlotad_rect_btf_02Start = 
+      ADFUEL.BuildingSlotad_rect_btf_02Start.R;
+  
+    type DispatchQueue = 
+      ADFUEL.DispatchQueue.b |
+      ADFUEL.DispatchQueue.e;
+  
+    type DispatchQueueEnd = 
+      ADFUEL.DispatchQueueEnd.R;
+  
+    type DispatchQueueStart = 
+      ADFUEL.DispatchQueueStart.R;
+  
+    type GPTIncluded = 
+      ADFUEL.GPTIncluded.R;
+  
+    type PageLevelGPTBuild = 
+      ADFUEL.PageLevelGPTBuild.b |
+      ADFUEL.PageLevelGPTBuild.e;
+  
+    type PageLevelGPTBuildEnd = 
+      ADFUEL.PageLevelGPTBuildEnd.R;
+  
+    type PageLevelGPTBuildStart = 
+      ADFUEL.PageLevelGPTBuildStart.R;
+  
+    type QueueRegistrycnn_homepage_rb = 
+      ADFUEL.QueueRegistrycnn_homepage_rb.b |
+      ADFUEL.QueueRegistrycnn_homepage_rb.e;
+  
+    type QueueRegistrycnn_homepage_rbEnd = 
+      ADFUEL.QueueRegistrycnn_homepage_rbEnd.R;
+  
+    type QueueRegistrycnn_homepage_rbStart = 
+      ADFUEL.QueueRegistrycnn_homepage_rbStart.R;
+  
+    type QueueRegistrycnn_homepage = 
+      ADFUEL.QueueRegistrycnn_homepage.b |
+      ADFUEL.QueueRegistrycnn_homepage.e;
+  
+    type QueueRegistrycnn_homepageEnd = 
+      ADFUEL.QueueRegistrycnn_homepageEnd.R;
+  
+    type QueueRegistrycnn_homepageStart = 
+      ADFUEL.QueueRegistrycnn_homepageStart.R;
+  
+    type SendingRequest = 
+      ADFUEL.SendingRequest.b |
+      ADFUEL.SendingRequest.e;
+  
+    type SendingRequestEnd = 
+      ADFUEL.SendingRequestEnd.R;
+  
+    type SendingRequestStart = 
+      ADFUEL.SendingRequestStart.R;
+  
+    type SlotLoadedad_bnr_atf_01 = 
+      ADFUEL.SlotLoadedad_bnr_atf_01.R;
+  
+    type SlotLoadedad_mod_35731bb1e = 
+      ADFUEL.SlotLoadedad_mod_35731bb1e.R;
+  
+    type SlotLoadedad_oop_float_01 = 
+      ADFUEL.SlotLoadedad_oop_float_01.R;
+  
+    type SlotLoadedad_rect_btf_02 = 
+      ADFUEL.SlotLoadedad_rect_btf_02.R;
+  
     namespace AdFuelDOMContentLoaded {
       interface R extends Base {
         args: {
@@ -2325,6 +4441,9 @@ export namespace TraceEvent {
     }
   
     namespace AdFuelwindow {
+      type Load = 
+        ADFUEL.AdFuelwindow.Load.R;
+    
       namespace Load {
         interface R extends Base {
           args: {
@@ -2972,6 +5091,39 @@ export namespace TraceEvent {
     }
   
     namespace RegisteringModule {
+      type AmazonA9Modulev3_2_5 = 
+        ADFUEL.RegisteringModule.AmazonA9Modulev3_2_5.R;
+    
+      type CEPModulev3_0_2 = 
+        ADFUEL.RegisteringModule.CEPModulev3_0_2.R;
+    
+      type CreativeReviewModulev3_0_5 = 
+        ADFUEL.RegisteringModule.CreativeReviewModulev3_0_5.R;
+    
+      type CriteoModulev3_2_2 = 
+        ADFUEL.RegisteringModule.CriteoModulev3_2_2.R;
+    
+      type IndexExchangeWrapperModulev3_1_1 = 
+        ADFUEL.RegisteringModule.IndexExchangeWrapperModulev3_1_1.R;
+    
+      type InViewRefreshv3_0_5 = 
+        ADFUEL.RegisteringModule.InViewRefreshv3_0_5.R;
+    
+      type KruxModulev3_1_1 = 
+        ADFUEL.RegisteringModule.KruxModulev3_1_1.R;
+    
+      type PrebidModulev3_3_0 = 
+        ADFUEL.RegisteringModule.PrebidModulev3_3_0.R;
+    
+      type ProximicModulev3_1_2 = 
+        ADFUEL.RegisteringModule.ProximicModulev3_1_2.R;
+    
+      type TransactionIDModulev3_1_1 = 
+        ADFUEL.RegisteringModule.TransactionIDModulev3_1_1.R;
+    
+      type TurnerGUIDModulev3_1_1 = 
+        ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1.R;
+    
       namespace AmazonA9Modulev3_2_5 {
         interface R extends Base {
           args: {
@@ -3119,6 +5271,16 @@ export namespace TraceEvent {
     namespace RegistryLoadcdn {
       namespace Cnn {
         namespace Comadscnncnn_homepage {
+          type Json = 
+            ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json.b |
+            ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json.e;
+        
+          type JsonEnd = 
+            ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonEnd.R;
+        
+          type JsonStart = 
+            ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonStart.R;
+        
           namespace Json {
             interface b extends Base {
               args: {
@@ -3326,6 +5488,15 @@ export namespace TraceEvent {
   }
 
   namespace AnimationHost {
+    type ActivateAnimations = 
+      AnimationHost.ActivateAnimations.X;
+  
+    type TickAnimations = 
+      AnimationHost.TickAnimations.X;
+  
+    type UpdateAnimationState = 
+      AnimationHost.UpdateAnimationState.X;
+  
     namespace ActivateAnimations {
       interface X extends Base {
         args: {
@@ -3367,6 +5538,9 @@ export namespace TraceEvent {
   }
 
   namespace ArrayBufferTrackerUpdatingItem {
+    type Process = 
+      ArrayBufferTrackerUpdatingItem.Process.X;
+  
     namespace Process {
       interface X extends Base {
         args: {
@@ -3382,6 +5556,9 @@ export namespace TraceEvent {
   }
 
   namespace AsyncLayerTreeFrameSink {
+    type SubmitCompositorFrame = 
+      AsyncLayerTreeFrameSink.SubmitCompositorFrame.X;
+  
     namespace SubmitCompositorFrame {
       interface X extends Base {
         args: {
@@ -3450,6 +5627,12 @@ export namespace TraceEvent {
   }
 
   namespace AutocompleteController {
+    type Start = 
+      AutocompleteController.Start.X;
+  
+    type UpdateResult = 
+      AutocompleteController.UpdateResult.X;
+  
     namespace Start {
       interface X extends Base {
         args: {
@@ -3478,6 +5661,9 @@ export namespace TraceEvent {
   }
 
   namespace BackgroundCompileTask {
+    type Run = 
+      BackgroundCompileTask.Run.X;
+  
     namespace Run {
       interface X extends Base {
         args: {
@@ -3493,6 +5679,12 @@ export namespace TraceEvent {
   }
 
   namespace BackgroundHTMLParser {
+    type PumpTokenizer = 
+      BackgroundHTMLParser.PumpTokenizer.X;
+  
+    type SendTokensToMainThread = 
+      BackgroundHTMLParser.SendTokensToMainThread.X;
+  
     namespace PumpTokenizer {
       interface X extends Base {
         args: {
@@ -3525,6 +5717,9 @@ export namespace TraceEvent {
 
   namespace Base {
     namespace TraceEventSystemStatsMonitor {
+      type SystemStats = 
+        Base.TraceEventSystemStatsMonitor.SystemStats.O;
+    
       namespace SystemStats {
         interface O extends Base {
           args: {
@@ -3581,6 +5776,12 @@ export namespace TraceEvent {
   }
 
   namespace BenchmarkInstrumentation {
+    type DisplayRenderingStats = 
+      BenchmarkInstrumentation.DisplayRenderingStats.I;
+  
+    type ImplThreadRenderingStats = 
+      BenchmarkInstrumentation.ImplThreadRenderingStats.I;
+  
     namespace DisplayRenderingStats {
       interface I extends Base {
         args: {
@@ -3616,6 +5817,12 @@ export namespace TraceEvent {
   }
 
   namespace BitmapImage {
+    type DataChanged = 
+      BitmapImage.DataChanged.X;
+  
+    type Draw = 
+      BitmapImage.Draw.X;
+  
     namespace DataChanged {
       interface X extends Base {
         args: {
@@ -3644,6 +5851,9 @@ export namespace TraceEvent {
   }
 
   namespace Blankframe {
+    type NooverlaysorCALayers = 
+      Blankframe.NooverlaysorCALayers.X;
+  
     namespace NooverlaysorCALayers {
       interface X extends Base {
         args: {
@@ -3660,6 +5870,33 @@ export namespace TraceEvent {
 
   namespace Blink {
     namespace Mojom {
+      type AppCacheBackend = 
+        Blink.Mojom.AppCacheBackend.X;
+    
+      type AppCacheFrontend = 
+        Blink.Mojom.AppCacheFrontend.X;
+    
+      type Blob = 
+        Blink.Mojom.Blob.X;
+    
+      type BlobRegistry = 
+        Blink.Mojom.BlobRegistry.X;
+    
+      type CodeCacheHost = 
+        Blink.Mojom.CodeCacheHost.X;
+    
+      type ManifestManager = 
+        Blink.Mojom.ManifestManager.X;
+    
+      type PluginRegistry = 
+        Blink.Mojom.PluginRegistry.X;
+    
+      type StorageArea = 
+        Blink.Mojom.StorageArea.X;
+    
+      type StoragePartitionService = 
+        Blink.Mojom.StoragePartitionService.X;
+    
       namespace AppCacheBackend {
         interface X extends Base {
           args: {
@@ -3780,6 +6017,96 @@ export namespace TraceEvent {
   }
 
   namespace BlinkGC {
+    type AllocatedObjectSizeSincePreviousGCKB = 
+      BlinkGC.AllocatedObjectSizeSincePreviousGCKB.C;
+  
+    type AllocatedSpaceAtLastGCKB = 
+      BlinkGC.AllocatedSpaceAtLastGCKB.C;
+  
+    type AllocatedSpaceKB = 
+      BlinkGC.AllocatedSpaceKB.C;
+  
+    type AtomicPhase = 
+      BlinkGC.AtomicPhase.B |
+      BlinkGC.AtomicPhase.E;
+  
+    type AtomicPhaseMarking = 
+      BlinkGC.AtomicPhaseMarking.B |
+      BlinkGC.AtomicPhaseMarking.E;
+  
+    type CollectedWrapperCount = 
+      BlinkGC.CollectedWrapperCount.C;
+  
+    type CollectionRate = 
+      BlinkGC.CollectionRate.C;
+  
+    type CompleteSweep = 
+      BlinkGC.CompleteSweep.B |
+      BlinkGC.CompleteSweep.E;
+  
+    type EagerSweep = 
+      BlinkGC.EagerSweep.B |
+      BlinkGC.EagerSweep.E;
+  
+    type InvokePreFinalizers = 
+      BlinkGC.InvokePreFinalizers.B |
+      BlinkGC.InvokePreFinalizers.E;
+  
+    type LazySweepOnAllocation = 
+      BlinkGC.LazySweepOnAllocation.B |
+      BlinkGC.LazySweepOnAllocation.E;
+  
+    type MarkedObjectSizeAtLastCompleteSweepKB = 
+      BlinkGC.MarkedObjectSizeAtLastCompleteSweepKB.C;
+  
+    type MarkInvokeEphemeronCallbacks = 
+      BlinkGC.MarkInvokeEphemeronCallbacks.B |
+      BlinkGC.MarkInvokeEphemeronCallbacks.E;
+  
+    type MarkNotFullyConstructedObjects = 
+      BlinkGC.MarkNotFullyConstructedObjects.B |
+      BlinkGC.MarkNotFullyConstructedObjects.E;
+  
+    type MarkProcessWorklist = 
+      BlinkGC.MarkProcessWorklist.B |
+      BlinkGC.MarkProcessWorklist.E;
+  
+    type MarkWeakProcessing = 
+      BlinkGC.MarkWeakProcessing.B |
+      BlinkGC.MarkWeakProcessing.E;
+  
+    type ObjectSizeAtLastGCKB = 
+      BlinkGC.ObjectSizeAtLastGCKB.C;
+  
+    type PartitionAllocSizeAtLastGCKB = 
+      BlinkGC.PartitionAllocSizeAtLastGCKB.C;
+  
+    type VisitCrossThreadPersistents = 
+      BlinkGC.VisitCrossThreadPersistents.B |
+      BlinkGC.VisitCrossThreadPersistents.E;
+  
+    type VisitDOMWrappers = 
+      BlinkGC.VisitDOMWrappers.B |
+      BlinkGC.VisitDOMWrappers.E;
+  
+    type VisitPersistentRoots = 
+      BlinkGC.VisitPersistentRoots.B |
+      BlinkGC.VisitPersistentRoots.E;
+  
+    type VisitPersistents = 
+      BlinkGC.VisitPersistents.B |
+      BlinkGC.VisitPersistents.E;
+  
+    type VisitStackRoots = 
+      BlinkGC.VisitStackRoots.B |
+      BlinkGC.VisitStackRoots.E;
+  
+    type WrapperCount = 
+      BlinkGC.WrapperCount.C;
+  
+    type WrapperCountAtLastGC = 
+      BlinkGC.WrapperCountAtLastGC.C;
+  
     namespace AllocatedObjectSizeSincePreviousGCKB {
       interface C extends Base {
         args: {
@@ -4207,6 +6534,17 @@ export namespace TraceEvent {
   }
 
   namespace BlobReader {
+    type CountSize = 
+      BlobReader.CountSize.F |
+      BlobReader.CountSize.S;
+  
+    type ReadBytesItem = 
+      BlobReader.ReadBytesItem.X;
+  
+    type ReadMore = 
+      BlobReader.ReadMore.F |
+      BlobReader.ReadMore.S;
+  
     namespace CountSize {
       interface F extends Base {
         args: {
@@ -4288,6 +6626,9 @@ export namespace TraceEvent {
   }
 
   namespace BookmarkProvider {
+    type Start = 
+      BookmarkProvider.Start.X;
+  
     namespace Start {
       interface X extends Base {
         args: {
@@ -4303,6 +6644,9 @@ export namespace TraceEvent {
   }
 
   namespace BrowserCrApplication {
+    type SendEvent = 
+      BrowserCrApplication.SendEvent.X;
+  
     namespace SendEvent {
       interface X extends Base {
         args: {
@@ -4440,6 +6784,12 @@ export namespace TraceEvent {
   }
 
   namespace Canvas2DLayerBridge {
+    type FinalizeFrame = 
+      Canvas2DLayerBridge.FinalizeFrame.X;
+  
+    type FlushRecording = 
+      Canvas2DLayerBridge.FlushRecording.X;
+  
     namespace FinalizeFrame {
       interface X extends Base {
         args: {
@@ -4480,6 +6830,9 @@ export namespace TraceEvent {
   }
 
   namespace CanvasResourceProvider {
+    type Canvas = 
+      CanvasResourceProvider.Canvas.X;
+  
     namespace Canvas {
       interface X extends Base {
         args: {
@@ -4495,6 +6848,9 @@ export namespace TraceEvent {
   }
 
   namespace CanvasResourceProviderBitmap {
+    type CreateSkSurface = 
+      CanvasResourceProviderBitmap.CreateSkSurface.X;
+  
     namespace CreateSkSurface {
       interface X extends Base {
         args: {
@@ -4510,6 +6866,9 @@ export namespace TraceEvent {
   }
 
   namespace CARendererLayerTree {
+    type CommitScheduledCALayers = 
+      CARendererLayerTree.CommitScheduledCALayers.X;
+  
     namespace CommitScheduledCALayers {
       interface X extends Base {
         args: {
@@ -4525,6 +6884,15 @@ export namespace TraceEvent {
   }
 
   namespace CategorizedWorkerPool {
+    type CollectCompletedTasks = 
+      CategorizedWorkerPool.CollectCompletedTasks.X;
+  
+    type ScheduleTasks = 
+      CategorizedWorkerPool.ScheduleTasks.X;
+  
+    type WaitForTasksToFinishRunning = 
+      CategorizedWorkerPool.WaitForTasksToFinishRunning.X;
+  
     namespace CollectCompletedTasks {
       interface X extends Base {
         args: {
@@ -4567,6 +6935,12 @@ export namespace TraceEvent {
   }
 
   namespace CATransactionCoordinator {
+    type Postcommithandler = 
+      CATransactionCoordinator.Postcommithandler.X;
+  
+    type Precommithandler = 
+      CATransactionCoordinator.Precommithandler.X;
+  
     namespace Postcommithandler {
       interface X extends Base {
         args: {
@@ -4595,6 +6969,20 @@ export namespace TraceEvent {
   }
 
   namespace Cc {
+    type DisplayItemList = 
+      Cc.DisplayItemList.O;
+  
+    type LayerImpl = 
+      Cc.LayerImpl.D;
+  
+    type LayerTreeHostImpl = 
+      Cc.LayerTreeHostImpl.D |
+      Cc.LayerTreeHostImpl.N |
+      Cc.LayerTreeHostImpl.O;
+  
+    type Tile = 
+      Cc.Tile.D;
+  
     namespace DisplayItemList {
       interface O extends Base {
         args: {
@@ -4945,6 +7333,10 @@ export namespace TraceEvent {
   }
 
   namespace Ccschedulerscheduler {
+    type L38 = 
+      Ccschedulerscheduler.L38.F |
+      Ccschedulerscheduler.L38.S;
+  
     namespace L38 {
       interface F extends Base {
         args: {
@@ -4990,6 +7382,10 @@ export namespace TraceEvent {
   }
 
   namespace Cctreeslayer_tree_host_impl {
+    type L300 = 
+      Cctreeslayer_tree_host_impl.L300.F |
+      Cctreeslayer_tree_host_impl.L300.S;
+  
     namespace L300 {
       interface F extends Base {
         args: {
@@ -5077,6 +7473,9 @@ export namespace TraceEvent {
   }
 
   namespace CertVerifierJob {
+    type OnJobCompleted = 
+      CertVerifierJob.OnJobCompleted.X;
+  
     namespace OnJobCompleted {
       interface X extends Base {
         args: {
@@ -5092,6 +7491,9 @@ export namespace TraceEvent {
   }
 
   namespace ChannelMojo {
+    type OnMessageReceived = 
+      ChannelMojo.OnMessageReceived.X;
+  
     namespace OnMessageReceived {
       interface X extends Base {
         args: {
@@ -5108,6 +7510,21 @@ export namespace TraceEvent {
   }
 
   namespace CheckerImageTracker {
+    type DidActivateSyncTree = 
+      CheckerImageTracker.DidActivateSyncTree.X;
+  
+    type ScheduleImageDecodeQueue = 
+      CheckerImageTracker.ScheduleImageDecodeQueue.X;
+  
+    type ScheduleNextImageDecode = 
+      CheckerImageTracker.ScheduleNextImageDecode.X;
+  
+    type ShouldCheckerImage = 
+      CheckerImageTracker.ShouldCheckerImage.X;
+  
+    type TakeImagesToInvalidateOnSyncTree = 
+      CheckerImageTracker.TakeImagesToInvalidateOnSyncTree.X;
+  
     namespace DidActivateSyncTree {
       interface X extends Base {
         args: {
@@ -5188,6 +7605,9 @@ export namespace TraceEvent {
   }
 
   namespace ChromiumRandomAccessFile {
+    type Read = 
+      ChromiumRandomAccessFile.Read.X;
+  
     namespace Read {
       interface X extends Base {
         args: {
@@ -5230,6 +7650,9 @@ export namespace TraceEvent {
   }
 
   namespace ClassicPendingScript {
+    type GetSource = 
+      ClassicPendingScript.GetSource.X;
+  
     namespace GetSource {
       interface X extends Base {
         args: {
@@ -5269,6 +7692,9 @@ export namespace TraceEvent {
   }
 
   namespace ClientSocketHandle {
+    type OnIOComplete = 
+      ClientSocketHandle.OnIOComplete.X;
+  
     namespace OnIOComplete {
       interface X extends Base {
         args: {
@@ -5284,6 +7710,9 @@ export namespace TraceEvent {
   }
 
   namespace ColdModeSpellCheckRequester {
+    type Invoke = 
+      ColdModeSpellCheckRequester.Invoke.X;
+  
     namespace Invoke {
       interface X extends Base {
         args: {
@@ -5299,6 +7728,12 @@ export namespace TraceEvent {
   }
 
   namespace CommandBufferHelper {
+    type Finish = 
+      CommandBufferHelper.Finish.X;
+  
+    type Flush = 
+      CommandBufferHelper.Flush.X;
+  
     namespace Finish {
       interface X extends Base {
         args: {
@@ -5327,6 +7762,18 @@ export namespace TraceEvent {
   }
 
   namespace CommandBufferProxyImpl {
+    type Flush = 
+      CommandBufferProxyImpl.Flush.X;
+  
+    type Initialize = 
+      CommandBufferProxyImpl.Initialize.X;
+  
+    type OrderingBarrier = 
+      CommandBufferProxyImpl.OrderingBarrier.X;
+  
+    type WaitForGetOffset = 
+      CommandBufferProxyImpl.WaitForGetOffset.X;
+  
     namespace Flush {
       interface X extends Base {
         args: {
@@ -5382,6 +7829,12 @@ export namespace TraceEvent {
   }
 
   namespace CommandBufferService {
+    type Paused = 
+      CommandBufferService.Paused.C;
+  
+    type PutChanged = 
+      CommandBufferService.PutChanged.X;
+  
     namespace Paused {
       interface C extends Base {
         args: {
@@ -5409,6 +7862,24 @@ export namespace TraceEvent {
   }
 
   namespace CommandBufferStub {
+    type OnAsyncFlush = 
+      CommandBufferStub.OnAsyncFlush.X;
+  
+    type OnDestroyTransferBuffer = 
+      CommandBufferStub.OnDestroyTransferBuffer.X;
+  
+    type OnRegisterTransferBuffer = 
+      CommandBufferStub.OnRegisterTransferBuffer.X;
+  
+    type OnSetGetBuffer = 
+      CommandBufferStub.OnSetGetBuffer.X;
+  
+    type OnWaitForGetOffsetInRange = 
+      CommandBufferStub.OnWaitForGetOffsetInRange.X;
+  
+    type PerformWork = 
+      CommandBufferStub.PerformWork.X;
+  
     namespace OnAsyncFlush {
       interface X extends Base {
         args: {
@@ -5543,6 +8014,9 @@ export namespace TraceEvent {
   }
 
   namespace CompositingInputsUpdater {
+    type Update = 
+      CompositingInputsUpdater.Update.X;
+  
     namespace Update {
       interface X extends Base {
         args: {
@@ -5558,6 +8032,9 @@ export namespace TraceEvent {
   }
 
   namespace CompositingLayerAssigner {
+    type Assign = 
+      CompositingLayerAssigner.Assign.X;
+  
     namespace Assign {
       interface X extends Base {
         args: {
@@ -5573,6 +8050,9 @@ export namespace TraceEvent {
   }
 
   namespace CompositingRequirementsUpdater {
+    type UpdateRecursive = 
+      CompositingRequirementsUpdater.UpdateRecursive.X;
+  
     namespace UpdateRecursive {
       interface X extends Base {
         args: {
@@ -5599,6 +8079,12 @@ export namespace TraceEvent {
   }
 
   namespace CompositorFrameSinkSupport {
+    type DidNotProduceFrame = 
+      CompositorFrameSinkSupport.DidNotProduceFrame.X;
+  
+    type MaybeSubmitCompositorFrame = 
+      CompositorFrameSinkSupport.MaybeSubmitCompositorFrame.X;
+  
     namespace DidNotProduceFrame {
       interface X extends Base {
         args: {
@@ -5628,6 +8114,9 @@ export namespace TraceEvent {
   }
 
   namespace CompositorTimingHistory {
+    type DidDraw = 
+      CompositorTimingHistory.DidDraw.X;
+  
     namespace DidDraw {
       interface X extends Base {
         args: {
@@ -5644,6 +8133,9 @@ export namespace TraceEvent {
   }
 
   namespace ConcurrentMarking {
+    type RunPreempted = 
+      ConcurrentMarking.RunPreempted.X;
+  
     namespace RunPreempted {
       interface X extends Base {
         args: {
@@ -5677,6 +8169,9 @@ export namespace TraceEvent {
   }
 
   namespace ConnectJob {
+    type NotifyDelegateOfCompletion = 
+      ConnectJob.NotifyDelegateOfCompletion.X;
+  
     namespace NotifyDelegateOfCompletion {
       interface X extends Base {
         args: {
@@ -5692,6 +8187,9 @@ export namespace TraceEvent {
   }
 
   namespace ConsoleMessage {
+    type Error = 
+      ConsoleMessage.Error.I;
+  
     namespace Error {
       interface I extends Base {
         args: {
@@ -5707,6 +8205,30 @@ export namespace TraceEvent {
 
   namespace Content {
     namespace Mojom {
+      type ChildHistogramFetcherFactory = 
+        Content.Mojom.ChildHistogramFetcherFactory.X;
+    
+      type Frame = 
+        Content.Mojom.Frame.X;
+    
+      type FrameFactory = 
+        Content.Mojom.FrameFactory.X;
+    
+      type FrameInputHandler = 
+        Content.Mojom.FrameInputHandler.X;
+    
+      type FrameSinkProvider = 
+        Content.Mojom.FrameSinkProvider.X;
+    
+      type RenderFrameMetadataObserverClient = 
+        Content.Mojom.RenderFrameMetadataObserverClient.X;
+    
+      type SandboxSupportMac = 
+        Content.Mojom.SandboxSupportMac.X;
+    
+      type Widget = 
+        Content.Mojom.Widget.X;
+    
       namespace ChildHistogramFetcherFactory {
         interface X extends Base {
           args: {
@@ -5814,6 +8336,9 @@ export namespace TraceEvent {
   }
 
   namespace ContentLayerDelegate {
+    type PaintContents = 
+      ContentLayerDelegate.PaintContents.X;
+  
     namespace PaintContents {
       interface X extends Base {
         args: {
@@ -5829,6 +8354,9 @@ export namespace TraceEvent {
   }
 
   namespace ContentSubresourceFilterThrottleManager {
+    type ReadyToCommitNavigation = 
+      ContentSubresourceFilterThrottleManager.ReadyToCommitNavigation.X;
+  
     namespace ReadyToCommitNavigation {
       interface X extends Base {
         args: {
@@ -5894,6 +8422,9 @@ export namespace TraceEvent {
   }
 
   namespace CpuProfiler {
+    type StartProfiling = 
+      CpuProfiler.StartProfiling.X;
+  
     namespace StartProfiling {
       interface X extends Base {
         args: {
@@ -5936,6 +8467,10 @@ export namespace TraceEvent {
 
   namespace CSSParserImpl {
     namespace ParseStyleSheet {
+      type Parse = 
+        CSSParserImpl.ParseStyleSheet.Parse.B |
+        CSSParserImpl.ParseStyleSheet.Parse.E;
+    
       namespace Parse {
         interface B extends Base {
           args: {
@@ -5979,6 +8514,9 @@ export namespace TraceEvent {
   }
 
   namespace CustomElementRegistry {
+    type Define = 
+      CustomElementRegistry.Define.X;
+  
     namespace Define {
       interface X extends Base {
         args: {
@@ -6006,6 +8544,9 @@ export namespace TraceEvent {
   }
 
   namespace DataReductionProxyCompressionStats {
+    type RecordDataUseWithMimeType = 
+      DataReductionProxyCompressionStats.RecordDataUseWithMimeType.X;
+  
     namespace RecordDataUseWithMimeType {
       interface X extends Base {
         args: {
@@ -6091,6 +8632,9 @@ export namespace TraceEvent {
   }
 
   namespace DelayBasedTimeSource {
+    type SetActive = 
+      DelayBasedTimeSource.SetActive.X;
+  
     namespace SetActive {
       interface X extends Base {
         args: {
@@ -6107,6 +8651,24 @@ export namespace TraceEvent {
 
   namespace Device {
     namespace Mojom {
+      type PowerMonitor = 
+        Device.Mojom.PowerMonitor.X;
+    
+      type PowerMonitorClient = 
+        Device.Mojom.PowerMonitorClient.X;
+    
+      type TimeZoneMonitor = 
+        Device.Mojom.TimeZoneMonitor.X;
+    
+      type WakeLock = 
+        Device.Mojom.WakeLock.X;
+    
+      type WakeLockContext = 
+        Device.Mojom.WakeLockContext.X;
+    
+      type WakeLockProvider = 
+        Device.Mojom.WakeLockProvider.X;
+    
       namespace PowerMonitor {
         interface X extends Base {
           args: {
@@ -6223,6 +8785,12 @@ export namespace TraceEvent {
   }
 
   namespace DirectRenderer {
+    type DrawFrame = 
+      DirectRenderer.DrawFrame.X;
+  
+    type DrawRenderPass = 
+      DirectRenderer.DrawRenderPass.X;
+  
     namespace DrawFrame {
       interface X extends Base {
         args: {
@@ -6252,6 +8820,9 @@ export namespace TraceEvent {
 
   namespace Discardable_memory {
     namespace Mojom {
+      type DiscardableSharedMemoryManager = 
+        Discardable_memory.Mojom.DiscardableSharedMemoryManager.X;
+    
       namespace DiscardableSharedMemoryManager {
         interface X extends Base {
           args: {
@@ -6268,6 +8839,9 @@ export namespace TraceEvent {
   }
 
   namespace DiscardableImageMap {
+    type Generate = 
+      DiscardableImageMap.Generate.X;
+  
     namespace Generate {
       interface X extends Base {
         args: {
@@ -6294,6 +8868,21 @@ export namespace TraceEvent {
   }
 
   namespace Display {
+    type DrawAndSwap = 
+      Display.DrawAndSwap.X;
+  
+    type Resize = 
+      Display.Resize.X;
+  
+    type SetSurfaceId = 
+      Display.SetSurfaceId.X;
+  
+    type SetVisible = 
+      Display.SetVisible.X;
+  
+    type SurfaceDiscarded = 
+      Display.SurfaceDiscarded.X;
+  
     namespace DrawAndSwap {
       interface X extends Base {
         args: {
@@ -6361,6 +8950,9 @@ export namespace TraceEvent {
   }
 
   namespace DisplayCALayerTree {
+    type GotCAContextFrame = 
+      DisplayCALayerTree.GotCAContextFrame.X;
+  
     namespace GotCAContextFrame {
       interface X extends Base {
         args: {
@@ -6424,6 +9016,9 @@ export namespace TraceEvent {
   }
 
   namespace DisplayItemList {
+    type Finalize = 
+      DisplayItemList.Finalize.X;
+  
     namespace Finalize {
       interface X extends Base {
         args: {
@@ -6439,6 +9034,12 @@ export namespace TraceEvent {
   }
 
   namespace DisplayLinkMac {
+    type DisplayLinkCallback = 
+      DisplayLinkMac.DisplayLinkCallback.X;
+  
+    type UpdateVSyncParameters = 
+      DisplayLinkMac.UpdateVSyncParameters.X;
+  
     namespace DisplayLinkCallback {
       interface X extends Base {
         args: {
@@ -6467,6 +9068,37 @@ export namespace TraceEvent {
   }
 
   namespace DisplayScheduler {
+    type BeginFrame = 
+      DisplayScheduler.BeginFrame.X;
+  
+    type DrawAndSwap = 
+      DisplayScheduler.DrawAndSwap.X;
+  
+    type OnBeginFrameDeadline = 
+      DisplayScheduler.OnBeginFrameDeadline.X;
+  
+    type Pending_swaps = 
+      DisplayScheduler.Pending_swaps.F |
+      DisplayScheduler.Pending_swaps.S;
+  
+    type ScheduleBeginFrameDeadline = 
+      DisplayScheduler.ScheduleBeginFrameDeadline.X;
+  
+    type SetNewRootSurface = 
+      DisplayScheduler.SetNewRootSurface.X;
+  
+    type SetRootFrameMissing = 
+      DisplayScheduler.SetRootFrameMissing.X;
+  
+    type SurfaceDamaged = 
+      DisplayScheduler.SurfaceDamaged.X;
+  
+    type SurfaceDamageExpected = 
+      DisplayScheduler.SurfaceDamageExpected.X;
+  
+    type UpdateHasPendingSurfaces = 
+      DisplayScheduler.UpdateHasPendingSurfaces.I;
+  
     namespace BeginFrame {
       interface X extends Base {
         args: {
@@ -6714,6 +9346,25 @@ export namespace TraceEvent {
   }
 
   namespace Document {
+    type RebuildLayoutTree = 
+      Document.RebuildLayoutTree.X;
+  
+    type RecalcStyle = 
+      Document.RecalcStyle.X;
+  
+    type Shutdown = 
+      Document.Shutdown.X;
+  
+    type UpdateActiveStyle = 
+      Document.UpdateActiveStyle.X;
+  
+    type UpdateStyle = 
+      Document.UpdateStyle.B |
+      Document.UpdateStyle.E;
+  
+    type UpdateStyleInvalidationIfNeeded = 
+      Document.UpdateStyleInvalidationIfNeeded.X;
+  
     namespace RebuildLayoutTree {
       interface X extends Base {
         args: {
@@ -6818,6 +9469,9 @@ export namespace TraceEvent {
   }
 
   namespace DocumentSubresourceFilter {
+    type GetLoadPolicy = 
+      DocumentSubresourceFilter.GetLoadPolicy.X;
+  
     namespace GetLoadPolicy {
       interface X extends Base {
         args: {
@@ -6833,6 +9487,9 @@ export namespace TraceEvent {
   }
 
   namespace DocumentTimeline {
+    type ServiceAnimations = 
+      DocumentTimeline.ServiceAnimations.X;
+  
     namespace ServiceAnimations {
       interface X extends Base {
         args: {
@@ -7036,6 +9693,9 @@ export namespace TraceEvent {
   }
 
   namespace DosplayResourceProvider {
+    type DeleteResourceInternal = 
+      DosplayResourceProvider.DeleteResourceInternal.X;
+  
     namespace DeleteResourceInternal {
       interface X extends Base {
         args: {
@@ -7064,6 +9724,12 @@ export namespace TraceEvent {
   }
 
   namespace Draw_property_utils {
+    type ComputeDrawPropertiesOfVisibleLayers = 
+      Draw_property_utils.ComputeDrawPropertiesOfVisibleLayers.X;
+  
+    type FindLayersThatNeedUpdates = 
+      Draw_property_utils.FindLayersThatNeedUpdates.X;
+  
     namespace ComputeDrawPropertiesOfVisibleLayers {
       interface X extends Base {
         args: {
@@ -7104,6 +9770,9 @@ export namespace TraceEvent {
   }
 
   namespace DrawLayers {
+    type FrameViewerTracing = 
+      DrawLayers.FrameViewerTracing.X;
+  
     namespace FrameViewerTracing {
       interface X extends Base {
         args: {
@@ -7180,6 +9849,12 @@ export namespace TraceEvent {
   }
 
   namespace EditingUtility {
+    type NextCandidateAlgorithm = 
+      EditingUtility.NextCandidateAlgorithm.X;
+  
+    type PreviousCandidateAlgorithm = 
+      EditingUtility.PreviousCandidateAlgorithm.X;
+  
     namespace NextCandidateAlgorithm {
       interface X extends Base {
         args: {
@@ -7208,6 +9883,9 @@ export namespace TraceEvent {
   }
 
   namespace ElementAnimations {
+    type SetRunState = 
+      ElementAnimations.SetRunState.I;
+  
     namespace SetRunState {
       interface I extends Base {
         args: {
@@ -7280,6 +9958,9 @@ export namespace TraceEvent {
   }
 
   namespace Evacuator {
+    type EvacuatePage = 
+      Evacuator.EvacuatePage.X;
+  
     namespace EvacuatePage {
       interface X extends Base {
         args: {
@@ -7320,6 +10001,9 @@ export namespace TraceEvent {
   }
 
   namespace Event {
+    type Pipeline = 
+      Event.Pipeline.X;
+  
     namespace Pipeline {
       interface X extends Base {
         args: {
@@ -7363,6 +10047,12 @@ export namespace TraceEvent {
   }
 
   namespace EventDispatcher {
+    type Dispatch = 
+      EventDispatcher.Dispatch.X;
+  
+    type DispatchEvent = 
+      EventDispatcher.DispatchEvent.X;
+  
     namespace Dispatch {
       interface X extends Base {
         args: {
@@ -7391,6 +10081,21 @@ export namespace TraceEvent {
   }
 
   namespace EventHandler {
+    type HandleMouseLeaveEvent = 
+      EventHandler.HandleMouseLeaveEvent.X;
+  
+    type HandleMouseMoveEvent = 
+      EventHandler.HandleMouseMoveEvent.X;
+  
+    type HandleMousePressEvent = 
+      EventHandler.HandleMousePressEvent.X;
+  
+    type HandleMouseReleaseEvent = 
+      EventHandler.HandleMouseReleaseEvent.X;
+  
+    type HitTestResultAtLocation = 
+      EventHandler.HitTestResultAtLocation.X;
+  
     namespace HandleMouseLeaveEvent {
       interface X extends Base {
         args: {
@@ -7862,6 +10567,9 @@ export namespace TraceEvent {
 
   namespace Extensions {
     namespace FeatureProvider {
+      type FeatureProviderStatic = 
+        Extensions.FeatureProvider.FeatureProviderStatic.X;
+    
       namespace FeatureProviderStatic {
         interface X extends Base {
           args: {
@@ -7913,6 +10621,15 @@ export namespace TraceEvent {
   }
 
   namespace FaviconServiceImpl {
+    type GetFaviconForPageURL = 
+      FaviconServiceImpl.GetFaviconForPageURL.X;
+  
+    type GetFaviconImageForPageURL = 
+      FaviconServiceImpl.GetFaviconImageForPageURL.X;
+  
+    type RunFaviconImageCallbackWithBitmapResults = 
+      FaviconServiceImpl.RunFaviconImageCallbackWithBitmapResults.X;
+  
     namespace GetFaviconForPageURL {
       interface X extends Base {
         args: {
@@ -7954,6 +10671,12 @@ export namespace TraceEvent {
   }
 
   namespace FaviconUtil {
+    type SelectFaviconFramesFromPNGs = 
+      FaviconUtil.SelectFaviconFramesFromPNGs.X;
+  
+    type SelectFaviconFramesFromPNGsWithoutResizing = 
+      FaviconUtil.SelectFaviconFramesFromPNGsWithoutResizing.X;
+  
     namespace SelectFaviconFramesFromPNGs {
       interface X extends Base {
         args: {
@@ -8006,6 +10729,50 @@ export namespace TraceEvent {
   }
 
   namespace File {
+    type Close = 
+      File.Close.b |
+      File.Close.e;
+  
+    type Duplicate = 
+      File.Duplicate.b |
+      File.Duplicate.e;
+  
+    type Flush = 
+      File.Flush.b |
+      File.Flush.e;
+  
+    type GetInfo = 
+      File.GetInfo.b |
+      File.GetInfo.e;
+  
+    type Initialize = 
+      File.Initialize.b |
+      File.Initialize.e;
+  
+    type Read = 
+      File.Read.b |
+      File.Read.e;
+  
+    type ReadAtCurrentPos = 
+      File.ReadAtCurrentPos.b |
+      File.ReadAtCurrentPos.e;
+  
+    type Seek = 
+      File.Seek.b |
+      File.Seek.e;
+  
+    type SetLength = 
+      File.SetLength.b |
+      File.SetLength.e;
+  
+    type Write = 
+      File.Write.b |
+      File.Write.e;
+  
+    type WriteAtCurrentPos = 
+      File.WriteAtCurrentPos.b |
+      File.WriteAtCurrentPos.e;
+  
     namespace Close {
       interface b extends Base {
         args: {
@@ -9251,6 +12018,56 @@ export namespace TraceEvent {
   }
 
   namespace FrameScheduler {
+    type FramePaused = 
+      FrameScheduler.FramePaused.F |
+      FrameScheduler.FramePaused.S |
+      FrameScheduler.FramePaused.T;
+  
+    type FrameVisible = 
+      FrameScheduler.FrameVisible.F |
+      FrameScheduler.FrameVisible.S |
+      FrameScheduler.FrameVisible.T;
+  
+    type HasActiveConnection = 
+      FrameScheduler.HasActiveConnection.F |
+      FrameScheduler.HasActiveConnection.S |
+      FrameScheduler.HasActiveConnection.T;
+  
+    type KeepActive = 
+      FrameScheduler.KeepActive.F |
+      FrameScheduler.KeepActive.S |
+      FrameScheduler.KeepActive.T;
+  
+    type Origin = 
+      FrameScheduler.Origin.F |
+      FrameScheduler.Origin.S |
+      FrameScheduler.Origin.T;
+  
+    type PageFrozen = 
+      FrameScheduler.PageFrozen.F |
+      FrameScheduler.PageFrozen.S |
+      FrameScheduler.PageFrozen.T;
+  
+    type PageVisibility = 
+      FrameScheduler.PageVisibility.F |
+      FrameScheduler.PageVisibility.S |
+      FrameScheduler.PageVisibility.T;
+  
+    type SubResourceLoadingPaused = 
+      FrameScheduler.SubResourceLoadingPaused.F |
+      FrameScheduler.SubResourceLoadingPaused.S |
+      FrameScheduler.SubResourceLoadingPaused.T;
+  
+    type TaskQueuesThrottled = 
+      FrameScheduler.TaskQueuesThrottled.F |
+      FrameScheduler.TaskQueuesThrottled.S |
+      FrameScheduler.TaskQueuesThrottled.T;
+  
+    type URL = 
+      FrameScheduler.URL.F |
+      FrameScheduler.URL.S |
+      FrameScheduler.URL.T;
+  
     namespace FramePaused {
       interface F extends Base {
         args: {
@@ -9585,6 +12402,12 @@ export namespace TraceEvent {
   }
 
   namespace FrameTreeNode {
+    type DidStartLoading = 
+      FrameTreeNode.DidStartLoading.X;
+  
+    type DidStopLoading = 
+      FrameTreeNode.DidStopLoading.X;
+  
     namespace DidStartLoading {
       interface X extends Base {
         args: {
@@ -9647,6 +12470,19 @@ export namespace TraceEvent {
   }
 
   namespace FrameView {
+    type Layout = 
+      FrameView.Layout.X;
+  
+    type PerformLayout = 
+      FrameView.PerformLayout.B |
+      FrameView.PerformLayout.E;
+  
+    type PerformPostLayoutTasks = 
+      FrameView.PerformPostLayoutTasks.X;
+  
+    type PerformPreLayoutTasks = 
+      FrameView.PerformPreLayoutTasks.X;
+  
     namespace Layout {
       interface X extends Base {
         args: {
@@ -9726,6 +12562,9 @@ export namespace TraceEvent {
   }
 
   namespace FullEvacuator {
+    type RawEvacuatePage = 
+      FullEvacuator.RawEvacuatePage.X;
+  
     namespace RawEvacuatePage {
       interface X extends Base {
         args: {
@@ -9781,6 +12620,12 @@ export namespace TraceEvent {
   }
 
   namespace GestureProvider {
+    type InitGestureDetectors = 
+      GestureProvider.InitGestureDetectors.X;
+  
+    type OnTouchEvent = 
+      GestureProvider.OnTouchEvent.X;
+  
     namespace InitGestureDetectors {
       interface X extends Base {
         args: {
@@ -9809,6 +12654,15 @@ export namespace TraceEvent {
   }
 
   namespace GLContextCGL {
+    type BackpressureFenceCreate = 
+      GLContextCGL.BackpressureFenceCreate.X;
+  
+    type BackpressureFenceWait = 
+      GLContextCGL.BackpressureFenceWait.X;
+  
+    type MakeCurrent = 
+      GLContextCGL.MakeCurrent.X;
+  
     namespace BackpressureFenceCreate {
       interface X extends Base {
         args: {
@@ -9850,6 +12704,21 @@ export namespace TraceEvent {
   }
 
   namespace GLES2 {
+    type Finish = 
+      GLES2.Finish.X;
+  
+    type GetGLError = 
+      GLES2.GetGLError.X;
+  
+    type GetShaderPrecisionFormat = 
+      GLES2.GetShaderPrecisionFormat.X;
+  
+    type GetString = 
+      GLES2.GetString.X;
+  
+    type PostSubBufferCHROMIUM = 
+      GLES2.PostSubBufferCHROMIUM.X;
+  
     namespace Finish {
       interface X extends Base {
         args: {
@@ -9918,6 +12787,9 @@ export namespace TraceEvent {
   }
 
   namespace GLES2CommandBufferStub {
+    type Initialize = 
+      GLES2CommandBufferStub.Initialize.X;
+  
     namespace Initialize {
       interface X extends Base {
         args: {
@@ -9933,6 +12805,45 @@ export namespace TraceEvent {
   }
 
   namespace GLES2DecoderImpl {
+    type ClearLevel = 
+      GLES2DecoderImpl.ClearLevel.X;
+  
+    type ClearLevelUsingGL = 
+      GLES2DecoderImpl.ClearLevelUsingGL.X;
+  
+    type DoCompileShader = 
+      GLES2DecoderImpl.DoCompileShader.X;
+  
+    type DoCreateAndConsumeTextureINTERNAL = 
+      GLES2DecoderImpl.DoCreateAndConsumeTextureINTERNAL.X;
+  
+    type DoLinkProgram = 
+      GLES2DecoderImpl.DoLinkProgram.X;
+  
+    type DoTexStorage2D = 
+      GLES2DecoderImpl.DoTexStorage2D.X;
+  
+    type DoTexStorage2DImageCHROMIUM = 
+      GLES2DecoderImpl.DoTexStorage2DImageCHROMIUM.X;
+  
+    type HandlePostSubBufferCHROMIUM = 
+      GLES2DecoderImpl.HandlePostSubBufferCHROMIUM.X;
+  
+    type HandleTexImage2D = 
+      GLES2DecoderImpl.HandleTexImage2D.X;
+  
+    type HandleTexSubImage2D = 
+      GLES2DecoderImpl.HandleTexSubImage2D.X;
+  
+    type Initialize = 
+      GLES2DecoderImpl.Initialize.X;
+  
+    type InitializeShaderTranslator = 
+      GLES2DecoderImpl.InitializeShaderTranslator.X;
+  
+    type RestoreState = 
+      GLES2DecoderImpl.RestoreState.X;
+  
     namespace ClearLevel {
       interface X extends Base {
         args: {
@@ -10109,6 +13020,18 @@ export namespace TraceEvent {
   }
 
   namespace GLES2Implementation {
+    type CheckFramebufferStatus = 
+      GLES2Implementation.CheckFramebufferStatus.X;
+  
+    type GetIntegerv = 
+      GLES2Implementation.GetIntegerv.X;
+  
+    type Initialize = 
+      GLES2Implementation.Initialize.X;
+  
+    type SetAggressivelyFreeResources = 
+      GLES2Implementation.SetAggressivelyFreeResources.X;
+  
     namespace CheckFramebufferStatus {
       interface X extends Base {
         args: {
@@ -10163,6 +13086,9 @@ export namespace TraceEvent {
   }
 
   namespace GLFence {
+    type HasCompleted = 
+      GLFence.HasCompleted.X;
+  
     namespace HasCompleted {
       interface X extends Base {
         args: {
@@ -10178,6 +13104,9 @@ export namespace TraceEvent {
   }
 
   namespace GLImageIOSurface {
+    type BindTexImage = 
+      GLImageIOSurface.BindTexImage.X;
+  
     namespace BindTexImage {
       interface X extends Base {
         args: {
@@ -10193,6 +13122,9 @@ export namespace TraceEvent {
   }
 
   namespace GlobalMemoryDump {
+    type Computation = 
+      GlobalMemoryDump.Computation.X;
+  
     namespace Computation {
       interface X extends Base {
         args: {
@@ -10234,6 +13166,15 @@ export namespace TraceEvent {
   }
 
   namespace GLRenderer {
+    type BeginDrawingFrame = 
+      GLRenderer.BeginDrawingFrame.X;
+  
+    type InitializeSharedObjects = 
+      GLRenderer.InitializeSharedObjects.X;
+  
+    type SwapBuffers = 
+      GLRenderer.SwapBuffers.X;
+  
     namespace BeginDrawingFrame {
       interface X extends Base {
         args: {
@@ -10333,6 +13274,14 @@ export namespace TraceEvent {
   }
 
   namespace Gpu {
+    type EstablishGpuChannelSync = 
+      Gpu.EstablishGpuChannelSync.X;
+  
+    type State = 
+      Gpu.State.D |
+      Gpu.State.N |
+      Gpu.State.O;
+  
     namespace EstablishGpuChannelSync {
       interface X extends Base {
         args: {
@@ -10382,6 +13331,12 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannel {
+    type OnCreateCommandBuffer = 
+      GpuChannel.OnCreateCommandBuffer.X;
+  
+    type OnDestroyCommandBuffer = 
+      GpuChannel.OnDestroyCommandBuffer.X;
+  
     namespace OnCreateCommandBuffer {
       interface X extends Base {
         args: {
@@ -10411,6 +13366,12 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelHost {
+    type CreateViewCommandBuffer = 
+      GpuChannelHost.CreateViewCommandBuffer.X;
+  
+    type Send = 
+      GpuChannelHost.Send.X;
+  
     namespace CreateViewCommandBuffer {
       interface X extends Base {
         args: {
@@ -10596,6 +13557,18 @@ export namespace TraceEvent {
   }
 
   namespace GpuHostImpl {
+    type CreateChannelCache = 
+      GpuHostImpl.CreateChannelCache.X;
+  
+    type DidDestroyChannel = 
+      GpuHostImpl.DidDestroyChannel.X;
+  
+    type EstablishGpuChannel = 
+      GpuHostImpl.EstablishGpuChannel.X;
+  
+    type OnChannelEstablished = 
+      GpuHostImpl.OnChannelEstablished.X;
+  
     namespace CreateChannelCache {
       interface X extends Base {
         args: {
@@ -10650,6 +13623,54 @@ export namespace TraceEvent {
   }
 
   namespace GpuImageDecodeCache {
+    type CreateImageData = 
+      GpuImageDecodeCache.CreateImageData.X;
+  
+    type DrawWithImageFinished = 
+      GpuImageDecodeCache.DrawWithImageFinished.X;
+  
+    type EnsureCapacity = 
+      GpuImageDecodeCache.EnsureCapacity.X;
+  
+    type GetDecodedImageForDraw = 
+      GpuImageDecodeCache.GetDecodedImageForDraw.X;
+  
+    type GetImageDataForDrawImage = 
+      GpuImageDecodeCache.GetImageDataForDrawImage.X;
+  
+    type GetImageDecodeTaskAndRef = 
+      GpuImageDecodeCache.GetImageDecodeTaskAndRef.X;
+  
+    type GetTaskForImageAndRef = 
+      GpuImageDecodeCache.GetTaskForImageAndRef.X;
+  
+    type OnImageUploadTaskCompleted = 
+      GpuImageDecodeCache.OnImageUploadTaskCompleted.X;
+  
+    type OnMemoryDump = 
+      GpuImageDecodeCache.OnMemoryDump.X;
+  
+    type ReduceCacheUsage = 
+      GpuImageDecodeCache.ReduceCacheUsage.X;
+  
+    type RefImage = 
+      GpuImageDecodeCache.RefImage.X;
+  
+    type RefImageDecode = 
+      GpuImageDecodeCache.RefImageDecode.X;
+  
+    type SetShouldAggressivelyFreeResources = 
+      GpuImageDecodeCache.SetShouldAggressivelyFreeResources.X;
+  
+    type UnrefImage = 
+      GpuImageDecodeCache.UnrefImage.X;
+  
+    type UnrefImageDecode = 
+      GpuImageDecodeCache.UnrefImageDecode.X;
+  
+    type UploadImage = 
+      GpuImageDecodeCache.UploadImage.X;
+  
     namespace CreateImageData {
       interface X extends Base {
         args: {
@@ -10860,6 +13881,9 @@ export namespace TraceEvent {
   }
 
   namespace GpuRasterBuffer {
+    type Playback = 
+      GpuRasterBuffer.Playback.X;
+  
     namespace Playback {
       interface X extends Base {
         args: {
@@ -10923,6 +13947,9 @@ export namespace TraceEvent {
   }
 
   namespace GPUStateTracer {
+    type TakeSnapshotWithCurrentFramebuffer = 
+      GPUStateTracer.TakeSnapshotWithCurrentFramebuffer.X;
+  
     namespace TakeSnapshotWithCurrentFramebuffer {
       interface X extends Base {
         args: {
@@ -10954,6 +13981,9 @@ export namespace TraceEvent {
   }
 
   namespace GPUTracer {
+    type ProcessTraces = 
+      GPUTracer.ProcessTraces.X;
+  
     namespace ProcessTraces {
       interface X extends Base {
         args: {
@@ -10970,6 +14000,11 @@ export namespace TraceEvent {
 
   namespace Graphics {
     namespace Pipeline {
+      type DrawAndSwap = 
+        Graphics.Pipeline.DrawAndSwap.F |
+        Graphics.Pipeline.DrawAndSwap.S |
+        Graphics.Pipeline.DrawAndSwap.T;
+    
       namespace DrawAndSwap {
         interface F extends Base {
           args: {
@@ -11023,6 +14058,9 @@ export namespace TraceEvent {
   }
 
   namespace GraphicsLayer {
+    type PaintContents = 
+      GraphicsLayer.PaintContents.X;
+  
     namespace PaintContents {
       interface X extends Base {
         args: {
@@ -11038,6 +14076,9 @@ export namespace TraceEvent {
   }
 
   namespace GraphicsLayerTreeBuilder {
+    type Rebuild = 
+      GraphicsLayerTreeBuilder.Rebuild.X;
+  
     namespace Rebuild {
       interface X extends Base {
         args: {
@@ -11053,6 +14094,9 @@ export namespace TraceEvent {
   }
 
   namespace GraphicsLayerUpdater {
+    type Update = 
+      GraphicsLayerUpdater.Update.X;
+  
     namespace Update {
       interface X extends Base {
         args: {
@@ -11068,6 +14112,9 @@ export namespace TraceEvent {
   }
 
   namespace GrContextPriv {
+    type WriteSurfacePixels = 
+      GrContextPriv.WriteSurfacePixels.X;
+  
     namespace WriteSurfacePixels {
       interface X extends Base {
         args: {
@@ -11083,6 +14130,9 @@ export namespace TraceEvent {
   }
 
   namespace GrDrawingManager {
+    type Flush = 
+      GrDrawingManager.Flush.X;
+  
     namespace Flush {
       interface X extends Base {
         args: {
@@ -11099,6 +14149,9 @@ export namespace TraceEvent {
 
   namespace GrDrawOpAtlas {
     namespace Plot {
+      type UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy = 
+        GrDrawOpAtlas.Plot.UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy.X;
+    
       namespace UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy {
         interface X extends Base {
           args: {
@@ -11115,6 +14168,9 @@ export namespace TraceEvent {
   }
 
   namespace GrGLProgramGrGLProgramBuilder {
+    type Finalize = 
+      GrGLProgramGrGLProgramBuilder.Finalize.X;
+  
     namespace Finalize {
       interface X extends Base {
         args: {
@@ -11130,6 +14186,9 @@ export namespace TraceEvent {
   }
 
   namespace GrGpu {
+    type CreateTexture = 
+      GrGpu.CreateTexture.X;
+  
     namespace CreateTexture {
       interface X extends Base {
         args: {
@@ -11145,6 +14204,54 @@ export namespace TraceEvent {
   }
 
   namespace GrRenderTargetContext {
+    type AddDrawOp = 
+      GrRenderTargetContext.AddDrawOp.X;
+  
+    type Clear = 
+      GrRenderTargetContext.Clear.X;
+  
+    type Discard = 
+      GrRenderTargetContext.Discard.X;
+  
+    type DrawGlyphRunList = 
+      GrRenderTargetContext.DrawGlyphRunList.X;
+  
+    type DrawOval = 
+      GrRenderTargetContext.DrawOval.X;
+  
+    type DrawPaint = 
+      GrRenderTargetContext.DrawPaint.X;
+  
+    type DrawPath = 
+      GrRenderTargetContext.DrawPath.X;
+  
+    type DrawRect = 
+      GrRenderTargetContext.DrawRect.X;
+  
+    type DrawRRect = 
+      GrRenderTargetContext.DrawRRect.X;
+  
+    type DrawShape = 
+      GrRenderTargetContext.DrawShape.X;
+  
+    type DrawTexture = 
+      GrRenderTargetContext.DrawTexture.X;
+  
+    type DrawVertices = 
+      GrRenderTargetContext.DrawVertices.X;
+  
+    type FillRectToRect = 
+      GrRenderTargetContext.FillRectToRect.X;
+  
+    type FillRectWithLocalMatrix = 
+      GrRenderTargetContext.FillRectWithLocalMatrix.X;
+  
+    type InternalDrawPath = 
+      GrRenderTargetContext.InternalDrawPath.X;
+  
+    type PrepareForExternalIO = 
+      GrRenderTargetContext.PrepareForExternalIO.X;
+  
     namespace AddDrawOp {
       interface X extends Base {
         args: {
@@ -11355,6 +14462,9 @@ export namespace TraceEvent {
   }
 
   namespace GrRenderTargetContextPriv {
+    type AbsClear = 
+      GrRenderTargetContextPriv.AbsClear.X;
+  
     namespace AbsClear {
       interface X extends Base {
         args: {
@@ -11419,6 +14529,9 @@ export namespace TraceEvent {
   }
 
   namespace Heap {
+    type CollectCodeStatistics = 
+      Heap.CollectCodeStatistics.X;
+  
     namespace CollectCodeStatistics {
       interface X extends Base {
         args: {
@@ -11434,6 +14547,9 @@ export namespace TraceEvent {
   }
 
   namespace HistoryBackend {
+    type GetFaviconsForURL = 
+      HistoryBackend.GetFaviconsForURL.X;
+  
     namespace GetFaviconsForURL {
       interface X extends Base {
         args: {
@@ -11449,6 +14565,9 @@ export namespace TraceEvent {
   }
 
   namespace HistoryQuickProvider {
+    type Start = 
+      HistoryQuickProvider.Start.X;
+  
     namespace Start {
       interface X extends Base {
         args: {
@@ -11464,6 +14583,9 @@ export namespace TraceEvent {
   }
 
   namespace HistoryService {
+    type GetFaviconsForURL = 
+      HistoryService.GetFaviconsForURL.X;
+  
     namespace GetFaviconsForURL {
       interface X extends Base {
         args: {
@@ -11479,6 +14601,12 @@ export namespace TraceEvent {
   }
 
   namespace HistoryURLProvider {
+    type QueryComplete = 
+      HistoryURLProvider.QueryComplete.X;
+  
+    type Start = 
+      HistoryURLProvider.Start.X;
+  
     namespace QueryComplete {
       interface X extends Base {
         args: {
@@ -11818,6 +14946,9 @@ export namespace TraceEvent {
   }
 
   namespace HostCache {
+    type Set = 
+      HostCache.Set.X;
+  
     namespace Set {
       interface X extends Base {
         args: {
@@ -11833,6 +14964,9 @@ export namespace TraceEvent {
   }
 
   namespace HTMLCanvasElement {
+    type FinalizeFrame = 
+      HTMLCanvasElement.FinalizeFrame.X;
+  
     namespace FinalizeFrame {
       interface X extends Base {
         args: {
@@ -11848,6 +14982,24 @@ export namespace TraceEvent {
   }
 
   namespace HTMLDocumentParser {
+    type Append = 
+      HTMLDocumentParser.Append.X;
+  
+    type AppendBytes = 
+      HTMLDocumentParser.AppendBytes.X;
+  
+    type DocumentElementAvailable = 
+      HTMLDocumentParser.DocumentElementAvailable.X;
+  
+    type EnqueueTokenizedChunk = 
+      HTMLDocumentParser.EnqueueTokenizedChunk.X;
+  
+    type Insert = 
+      HTMLDocumentParser.Insert.X;
+  
+    type ProcessTokenizedChunkFromBackgroundParser = 
+      HTMLDocumentParser.ProcessTokenizedChunkFromBackgroundParser.X;
+  
     namespace Append {
       interface X extends Base {
         args: {
@@ -11931,6 +15083,18 @@ export namespace TraceEvent {
   }
 
   namespace HTMLParserScriptRunner {
+    type Execute = 
+      HTMLParserScriptRunner.Execute.X;
+  
+    type ExecuteScriptsWaitingForLoad = 
+      HTMLParserScriptRunner.ExecuteScriptsWaitingForLoad.X;
+  
+    type ExecuteScriptsWaitingForParsing = 
+      HTMLParserScriptRunner.ExecuteScriptsWaitingForParsing.X;
+  
+    type ExecuteScriptsWaitingForResources = 
+      HTMLParserScriptRunner.ExecuteScriptsWaitingForResources.X;
+  
     namespace Execute {
       interface X extends Base {
         args: {
@@ -12010,6 +15174,9 @@ export namespace TraceEvent {
   }
 
   namespace HTMLSelectElement {
+    type SelectOption = 
+      HTMLSelectElement.SelectOption.X;
+  
     namespace SelectOption {
       interface X extends Base {
         args: {
@@ -13257,6 +16424,84 @@ export namespace TraceEvent {
   }
 
   namespace HttpCacheTransaction {
+    type DoAddToEntry = 
+      HttpCacheTransaction.DoAddToEntry.X;
+  
+    type DoAddToEntryComplete = 
+      HttpCacheTransaction.DoAddToEntryComplete.X;
+  
+    type DoCacheDispatchValidation = 
+      HttpCacheTransaction.DoCacheDispatchValidation.X;
+  
+    type DoCacheReadData = 
+      HttpCacheTransaction.DoCacheReadData.X;
+  
+    type DoCacheReadDataComplete = 
+      HttpCacheTransaction.DoCacheReadDataComplete.X;
+  
+    type DoCacheReadResponse = 
+      HttpCacheTransaction.DoCacheReadResponse.X;
+  
+    type DoCacheReadResponseComplete = 
+      HttpCacheTransaction.DoCacheReadResponseComplete.X;
+  
+    type DoCacheWriteResponse = 
+      HttpCacheTransaction.DoCacheWriteResponse.X;
+  
+    type DoCacheWriteResponseComplete = 
+      HttpCacheTransaction.DoCacheWriteResponseComplete.X;
+  
+    type DoCreateEntry = 
+      HttpCacheTransaction.DoCreateEntry.X;
+  
+    type DoCreateEntryComplete = 
+      HttpCacheTransaction.DoCreateEntryComplete.X;
+  
+    type DoInitEntry = 
+      HttpCacheTransaction.DoInitEntry.X;
+  
+    type DoNetworkRead = 
+      HttpCacheTransaction.DoNetworkRead.X;
+  
+    type DoNetworkReadCacheWrite = 
+      HttpCacheTransaction.DoNetworkReadCacheWrite.X;
+  
+    type DoNetworkReadCacheWriteComplete = 
+      HttpCacheTransaction.DoNetworkReadCacheWriteComplete.X;
+  
+    type DoNetworkReadComplete = 
+      HttpCacheTransaction.DoNetworkReadComplete.X;
+  
+    type DoOpenEntry = 
+      HttpCacheTransaction.DoOpenEntry.X;
+  
+    type DoOpenEntryComplete = 
+      HttpCacheTransaction.DoOpenEntryComplete.X;
+  
+    type DoOverwriteCachedResponse = 
+      HttpCacheTransaction.DoOverwriteCachedResponse.X;
+  
+    type DoSendRequest = 
+      HttpCacheTransaction.DoSendRequest.X;
+  
+    type DoSendRequestComplete = 
+      HttpCacheTransaction.DoSendRequestComplete.X;
+  
+    type DoSuccessfulSendRequest = 
+      HttpCacheTransaction.DoSuccessfulSendRequest.X;
+  
+    type DoTruncateCachedData = 
+      HttpCacheTransaction.DoTruncateCachedData.X;
+  
+    type DoTruncateCachedMetadata = 
+      HttpCacheTransaction.DoTruncateCachedMetadata.X;
+  
+    type DoTruncateCachedMetadataComplete = 
+      HttpCacheTransaction.DoTruncateCachedMetadataComplete.X;
+  
+    type Transaction = 
+      HttpCacheTransaction.Transaction.X;
+  
     namespace DoAddToEntry {
       interface X extends Base {
         args: {
@@ -13598,6 +16843,12 @@ export namespace TraceEvent {
 
   namespace HttpStreamFactory {
     namespace Job {
+      type OnIOComplete = 
+        HttpStreamFactory.Job.OnIOComplete.X;
+    
+      type RunLoop = 
+        HttpStreamFactory.Job.RunLoop.X;
+    
       namespace OnIOComplete {
         interface X extends Base {
           args: {
@@ -13628,6 +16879,9 @@ export namespace TraceEvent {
 
   namespace Identity {
     namespace Mojom {
+      type IdentityManager = 
+        Identity.Mojom.IdentityManager.X;
+    
       namespace IdentityManager {
         interface X extends Base {
           args: {
@@ -13655,6 +16909,9 @@ export namespace TraceEvent {
   }
 
   namespace IdleSpellCheckController {
+    type HotModeInvocation = 
+      IdleSpellCheckController.HotModeInvocation.X;
+  
     namespace HotModeInvocation {
       interface X extends Base {
         args: {
@@ -13670,6 +16927,12 @@ export namespace TraceEvent {
   }
 
   namespace ImageAnimationController {
+    type AnimateImagesForSyncTree = 
+      ImageAnimationController.AnimateImagesForSyncTree.X;
+  
+    type WillActivate = 
+      ImageAnimationController.WillActivate.X;
+  
     namespace AnimateImagesForSyncTree {
       interface X extends Base {
         args: {
@@ -13718,6 +16981,9 @@ export namespace TraceEvent {
   }
 
   namespace ImageOperations {
+    type Resize = 
+      ImageOperations.Resize.X;
+  
     namespace Resize {
       interface X extends Base {
         args: {
@@ -13734,6 +17000,9 @@ export namespace TraceEvent {
   }
 
   namespace ImageResourceContent {
+    type UpdateImage = 
+      ImageResourceContent.UpdateImage.X;
+  
     namespace UpdateImage {
       interface X extends Base {
         args: {
@@ -13749,6 +17018,12 @@ export namespace TraceEvent {
   }
 
   namespace ImageTransportSurfaceOverlayMac {
+    type ApplyBackpressure = 
+      ImageTransportSurfaceOverlayMac.ApplyBackpressure.X;
+  
+    type SwapBuffersInternal = 
+      ImageTransportSurfaceOverlayMac.SwapBuffersInternal.X;
+  
     namespace ApplyBackpressure {
       interface X extends Base {
         args: {
@@ -13777,6 +17052,9 @@ export namespace TraceEvent {
   }
 
   namespace ImageUploadTaskImpl {
+    type RunOnWorkerThread = 
+      ImageUploadTaskImpl.RunOnWorkerThread.X;
+  
     namespace RunOnWorkerThread {
       interface X extends Base {
         args: {
@@ -13793,6 +17071,15 @@ export namespace TraceEvent {
   }
 
   namespace ImplementationBase {
+    type GetBucketContents = 
+      ImplementationBase.GetBucketContents.X;
+  
+    type Initialize = 
+      ImplementationBase.Initialize.X;
+  
+    type WaitForCmd = 
+      ImplementationBase.WaitForCmd.X;
+  
     namespace GetBucketContents {
       interface X extends Base {
         args: {
@@ -13834,6 +17121,18 @@ export namespace TraceEvent {
   }
 
   namespace InProcessCommandBuffer {
+    type Flush = 
+      InProcessCommandBuffer.Flush.X;
+  
+    type FlushOnGpuThread = 
+      InProcessCommandBuffer.FlushOnGpuThread.X;
+  
+    type Initialize = 
+      InProcessCommandBuffer.Initialize.X;
+  
+    type InitializeOnGpuThread = 
+      InProcessCommandBuffer.InitializeOnGpuThread.X;
+  
     namespace Flush {
       interface X extends Base {
         args: {
@@ -13911,6 +17210,22 @@ export namespace TraceEvent {
   }
 
   namespace InputLatency {
+    type KeyUp = 
+      InputLatency.KeyUp.F |
+      InputLatency.KeyUp.S;
+  
+    type MouseLeave = 
+      InputLatency.MouseLeave.F |
+      InputLatency.MouseLeave.S;
+  
+    type MouseMove = 
+      InputLatency.MouseMove.F |
+      InputLatency.MouseMove.S;
+  
+    type RawKeyDown = 
+      InputLatency.RawKeyDown.F |
+      InputLatency.RawKeyDown.S;
+  
     namespace KeyUp {
       interface F extends Base {
         args: {
@@ -14082,6 +17397,18 @@ export namespace TraceEvent {
   }
 
   namespace InputRouterImpl {
+    type FilterAndSendWebInputEvent = 
+      InputRouterImpl.FilterAndSendWebInputEvent.X;
+  
+    type KeboardEventHandled = 
+      InputRouterImpl.KeboardEventHandled.X;
+  
+    type MouseEventHandled = 
+      InputRouterImpl.MouseEventHandled.X;
+  
+    type OnHasTouchEventHandlers = 
+      InputRouterImpl.OnHasTouchEventHandlers.X;
+  
     namespace FilterAndSendWebInputEvent {
       interface X extends Base {
         args: {
@@ -14219,6 +17546,9 @@ export namespace TraceEvent {
   }
 
   namespace ItemParallelJob {
+    type Run = 
+      ItemParallelJob.Run.I;
+  
     namespace Run {
       interface I extends Base {
         args: {
@@ -14234,6 +17564,9 @@ export namespace TraceEvent {
   }
 
   namespace Job {
+    type ExecuteProxyResolver = 
+      Job.ExecuteProxyResolver.X;
+  
     namespace ExecuteProxyResolver {
       interface X extends Base {
         args: {
@@ -14249,6 +17582,9 @@ export namespace TraceEvent {
   }
 
   namespace KeyedServiceFactory {
+    type GetServiceForContext = 
+      KeyedServiceFactory.GetServiceForContext.X;
+  
     namespace GetServiceForContext {
       interface X extends Base {
         args: {
@@ -14286,6 +17622,9 @@ export namespace TraceEvent {
   }
 
   namespace KeywordProvider {
+    type Start = 
+      KeywordProvider.Start.X;
+  
     namespace Start {
       interface X extends Base {
         args: {
@@ -14301,6 +17640,9 @@ export namespace TraceEvent {
   }
 
   namespace LatencyInfo {
+    type Flow = 
+      LatencyInfo.Flow.X;
+  
     namespace Flow {
       interface X extends Base {
         args: {
@@ -14336,6 +17678,15 @@ export namespace TraceEvent {
   }
 
   namespace Layer {
+    type PaintContentsToDisplayList = 
+      Layer.PaintContentsToDisplayList.X;
+  
+    type PushPropertiesTo = 
+      Layer.PushPropertiesTo.X;
+  
+    type SetElementId = 
+      Layer.SetElementId.X;
+  
     namespace PaintContentsToDisplayList {
       interface X extends Base {
         args: {
@@ -14377,6 +17728,9 @@ export namespace TraceEvent {
   }
 
   namespace LayerAnimator {
+    type Step = 
+      LayerAnimator.Step.X;
+  
     namespace Step {
       interface X extends Base {
         args: {
@@ -14414,6 +17768,9 @@ export namespace TraceEvent {
   }
 
   namespace LayerImpl {
+    type SetElementId = 
+      LayerImpl.SetElementId.X;
+  
     namespace SetElementId {
       interface X extends Base {
         args: {
@@ -14445,7 +17802,34 @@ export namespace TraceEvent {
   }
 
   namespace LayerTreeHost {
+    type DoUpdateLayers = 
+      LayerTreeHost.DoUpdateLayers.X;
+  
+    type FinishCommitOnImplThread = 
+      LayerTreeHost.FinishCommitOnImplThread.X;
+  
+    type InitializeForReal = 
+      LayerTreeHost.InitializeForReal.X;
+  
+    type LayerTreeHost = 
+      LayerTreeHost.LayerTreeHost.X;
+  
+    type PushProperties = 
+      LayerTreeHost.PushProperties.X;
+  
+    type SetHasGpuRasterizationTrigger = 
+      LayerTreeHost.SetHasGpuRasterizationTrigger.I;
+  
+    type SetLayerTreeFrameSink = 
+      LayerTreeHost.SetLayerTreeFrameSink.X;
+  
+    type UpdateLayers_BuiltPropertyTrees = 
+      LayerTreeHost.UpdateLayers_BuiltPropertyTrees.I;
+  
     namespace AnimationHost {
+      type PushProperties = 
+        LayerTreeHost.AnimationHost.PushProperties.X;
+    
       namespace PushProperties {
         interface X extends Base {
           args: {
@@ -14656,6 +18040,9 @@ export namespace TraceEvent {
     }
   
     namespace UpdateLayers {
+      type BuildPropertyTrees = 
+        LayerTreeHost.UpdateLayers.BuildPropertyTrees.X;
+    
       namespace BuildPropertyTrees {
         interface X extends Base {
           args: {
@@ -14672,6 +18059,53 @@ export namespace TraceEvent {
   }
 
   namespace LayerTreeHostImpl {
+    type ActivateSyncTree = 
+      LayerTreeHostImpl.ActivateSyncTree.X;
+  
+    type BeginCommit = 
+      LayerTreeHostImpl.BeginCommit.X;
+  
+    type BuildEvictionQueue = 
+      LayerTreeHostImpl.BuildEvictionQueue.X;
+  
+    type BuildRasterQueue = 
+      LayerTreeHostImpl.BuildRasterQueue.X;
+  
+    type CalculateRenderPasses = 
+      LayerTreeHostImpl.CalculateRenderPasses.B |
+      LayerTreeHostImpl.CalculateRenderPasses.E;
+  
+    type CanDrawemptyviewport = 
+      LayerTreeHostImpl.CanDrawemptyviewport.I;
+  
+    type CanDrawnorootlayer = 
+      LayerTreeHostImpl.CanDrawnorootlayer.I;
+  
+    type CommitComplete = 
+      LayerTreeHostImpl.CommitComplete.X;
+  
+    type GenerateCompositorFrame = 
+      LayerTreeHostImpl.GenerateCompositorFrame.X;
+  
+    type InitializeFrameSink = 
+      LayerTreeHostImpl.InitializeFrameSink.X;
+  
+    type LayerTreeHostImpl = 
+      LayerTreeHostImpl.LayerTreeHostImpl.X;
+  
+    type NotifyTileStateChanged = 
+      LayerTreeHostImpl.NotifyTileStateChanged.X;
+  
+    type PrepareToDraw = 
+      LayerTreeHostImpl.PrepareToDraw.X;
+  
+    type ReleaseLayerTreeFrameSink = 
+      LayerTreeHostImpl.ReleaseLayerTreeFrameSink.X;
+  
+    type SetVisible = 
+      LayerTreeHostImpl.SetVisible.F |
+      LayerTreeHostImpl.SetVisible.S;
+  
     namespace ActivateSyncTree {
       interface X extends Base {
         args: {
@@ -14885,6 +18319,22 @@ export namespace TraceEvent {
   }
 
   namespace LayerTreeImpl {
+    type AddToElementLayerList = 
+      LayerTreeImpl.AddToElementLayerList.X;
+  
+    type InvalidateRegionForImages = 
+      LayerTreeImpl.InvalidateRegionForImages.B |
+      LayerTreeImpl.InvalidateRegionForImages.E;
+  
+    type PushPropertiesTo = 
+      LayerTreeImpl.PushPropertiesTo.X;
+  
+    type PushPropertyTreesTo = 
+      LayerTreeImpl.PushPropertyTreesTo.X;
+  
+    type RemoveFromElementLayerList = 
+      LayerTreeImpl.RemoveFromElementLayerList.X;
+  
     namespace AddToElementLayerList {
       interface X extends Base {
         args: {
@@ -14958,6 +18408,16 @@ export namespace TraceEvent {
     }
   
     namespace UpdateDrawProperties {
+      type CalculateDrawProperties = 
+        LayerTreeImpl.UpdateDrawProperties.CalculateDrawProperties.X;
+    
+      type Occlusion = 
+        LayerTreeImpl.UpdateDrawProperties.Occlusion.X;
+    
+      type UpdateTiles = 
+        LayerTreeImpl.UpdateDrawProperties.UpdateTiles.B |
+        LayerTreeImpl.UpdateDrawProperties.UpdateTiles.E;
+    
       namespace CalculateDrawProperties {
         interface X extends Base {
           args: {
@@ -15082,6 +18542,9 @@ export namespace TraceEvent {
   }
 
   namespace LayoutView {
+    type CommitPendingSelection = 
+      LayoutView.CommitPendingSelection.X;
+  
     namespace CommitPendingSelection {
       interface X extends Base {
         args: {
@@ -15098,6 +18561,9 @@ export namespace TraceEvent {
 
   namespace Leveldb {
     namespace Mojom {
+      type LevelDBService = 
+        Leveldb.Mojom.LevelDBService.X;
+    
       namespace LevelDBService {
         interface X extends Base {
           args: {
@@ -15114,6 +18580,12 @@ export namespace TraceEvent {
   }
 
   namespace LiveObjectVisitor {
+    type VisitBlackObjects = 
+      LiveObjectVisitor.VisitBlackObjects.X;
+  
+    type VisitBlackObjectsNoFail = 
+      LiveObjectVisitor.VisitBlackObjectsNoFail.X;
+  
     namespace VisitBlackObjects {
       interface X extends Base {
         args: {
@@ -15241,6 +18713,43 @@ export namespace TraceEvent {
   }
 
   namespace LocalFrameView {
+    type FrameRectsChanged = 
+      LocalFrameView.FrameRectsChanged.X;
+  
+    type Layout = 
+      LocalFrameView.Layout.X;
+  
+    type PerformLayout = 
+      LocalFrameView.PerformLayout.B |
+      LocalFrameView.PerformLayout.E;
+  
+    type PerformPostLayoutTasks = 
+      LocalFrameView.PerformPostLayoutTasks.X;
+  
+    type PerformPreLayoutTasks = 
+      LocalFrameView.PerformPreLayoutTasks.X;
+  
+    type RunCompositingLifecyclePhase = 
+      LocalFrameView.RunCompositingLifecyclePhase.X;
+  
+    type RunPaintLifecyclePhase = 
+      LocalFrameView.RunPaintLifecyclePhase.X;
+  
+    type RunPrePaintLifecyclePhase = 
+      LocalFrameView.RunPrePaintLifecyclePhase.X;
+  
+    type RunStyleAndLayoutLifecyclePhases = 
+      LocalFrameView.RunStyleAndLayoutLifecyclePhases.X;
+  
+    type UpdateRenderThrottlingStatus = 
+      LocalFrameView.UpdateRenderThrottlingStatus.X;
+  
+    type UpdateStyleAndLayoutIfNeededRecursive = 
+      LocalFrameView.UpdateStyleAndLayoutIfNeededRecursive.X;
+  
+    type UpdateViewportIntersectionsForSubtree = 
+      LocalFrameView.UpdateViewportIntersectionsForSubtree.X;
+  
     namespace FrameRectsChanged {
       interface X extends Base {
         args: {
@@ -15426,6 +18935,9 @@ export namespace TraceEvent {
 
   namespace LocalSurfaceId {
     namespace Embed {
+      type Flow = 
+        LocalSurfaceId.Embed.Flow.X;
+    
       namespace Flow {
         interface X extends Base {
           args: {
@@ -15450,6 +18962,9 @@ export namespace TraceEvent {
     }
   
     namespace Submission {
+      type Flow = 
+        LocalSurfaceId.Submission.Flow.X;
+    
       namespace Flow {
         interface X extends Base {
           args: {
@@ -15475,6 +18990,18 @@ export namespace TraceEvent {
   }
 
   namespace LocalWindowProxy {
+    type CreateContext = 
+      LocalWindowProxy.CreateContext.X;
+  
+    type Initialize = 
+      LocalWindowProxy.Initialize.X;
+  
+    type SetupWindowPrototypeChain = 
+      LocalWindowProxy.SetupWindowPrototypeChain.X;
+  
+    type UpdateDocumentProperty = 
+      LocalWindowProxy.UpdateDocumentProperty.X;
+  
     namespace CreateContext {
       interface X extends Base {
         args: {
@@ -15597,6 +19124,12 @@ export namespace TraceEvent {
 
   namespace MainThreadScheduler {
     namespace RendererMainThreadLoad {
+      type Background = 
+        MainThreadScheduler.RendererMainThreadLoad.Background.C;
+    
+      type Foreground = 
+        MainThreadScheduler.RendererMainThreadLoad.Foreground.C;
+    
       namespace Background {
         interface C extends Base {
           args: {
@@ -15663,6 +19196,57 @@ export namespace TraceEvent {
   }
 
   namespace MainThreadSchedulerImpl {
+    type BeginFrameNotExpectedSoon = 
+      MainThreadSchedulerImpl.BeginFrameNotExpectedSoon.X;
+  
+    type DidCommitFrameToCompositor = 
+      MainThreadSchedulerImpl.DidCommitFrameToCompositor.X;
+  
+    type DidCommitProvisionalLoad = 
+      MainThreadSchedulerImpl.DidCommitProvisionalLoad.X;
+  
+    type DidHandleInputEventOnCompositorThread = 
+      MainThreadSchedulerImpl.DidHandleInputEventOnCompositorThread.X;
+  
+    type DidHandleInputEventOnMainThread = 
+      MainThreadSchedulerImpl.DidHandleInputEventOnMainThread.X;
+  
+    type DidStartProvisionalLoad = 
+      MainThreadSchedulerImpl.DidStartProvisionalLoad.X;
+  
+    type DispatchRequestBeginMainFrameNotExpected = 
+      MainThreadSchedulerImpl.DispatchRequestBeginMainFrameNotExpected.X;
+  
+    type EndIdlePeriod = 
+      MainThreadSchedulerImpl.EndIdlePeriod.X;
+  
+    type OnFirstMeaningfulPaint = 
+      MainThreadSchedulerImpl.OnFirstMeaningfulPaint.X;
+  
+    type OnRendererBackgrounded = 
+      MainThreadSchedulerImpl.OnRendererBackgrounded.X;
+  
+    type OnRendererForegrounded = 
+      MainThreadSchedulerImpl.OnRendererForegrounded.X;
+  
+    type OnRendererHidden = 
+      MainThreadSchedulerImpl.OnRendererHidden.X;
+  
+    type OnRendererVisible = 
+      MainThreadSchedulerImpl.OnRendererVisible.X;
+  
+    type ResetForNavigationLocked = 
+      MainThreadSchedulerImpl.ResetForNavigationLocked.X;
+  
+    type SetAllRenderWidgetsHidden = 
+      MainThreadSchedulerImpl.SetAllRenderWidgetsHidden.X;
+  
+    type UpdateForInputEventOnCompositorThread = 
+      MainThreadSchedulerImpl.UpdateForInputEventOnCompositorThread.X;
+  
+    type WillBeginFrame = 
+      MainThreadSchedulerImpl.WillBeginFrame.X;
+  
     namespace BeginFrameNotExpectedSoon {
       interface X extends Base {
         args: {
@@ -15996,6 +19580,21 @@ export namespace TraceEvent {
 
   namespace Media {
     namespace Mojom {
+      type InterfaceFactory = 
+        Media.Mojom.InterfaceFactory.X;
+    
+      type MediaMetricsProvider = 
+        Media.Mojom.MediaMetricsProvider.X;
+    
+      type MediaService = 
+        Media.Mojom.MediaService.X;
+    
+      type RemoterFactory = 
+        Media.Mojom.RemoterFactory.X;
+    
+      type VideoDecoder = 
+        Media.Mojom.VideoDecoder.X;
+    
       namespace InterfaceFactory {
         interface X extends Base {
           args: {
@@ -16078,6 +19677,12 @@ export namespace TraceEvent {
 
   namespace Memory_instrumentation {
     namespace Mojom {
+      type ClientProcess = 
+        Memory_instrumentation.Mojom.ClientProcess.X;
+    
+      type Coordinator = 
+        Memory_instrumentation.Mojom.Coordinator.X;
+    
       namespace ClientProcess {
         interface X extends Base {
           args: {
@@ -16107,6 +19712,12 @@ export namespace TraceEvent {
   }
 
   namespace MemoryCache {
+    type Evict = 
+      MemoryCache.Evict.X;
+  
+    type Prune = 
+      MemoryCache.Prune.X;
+  
     namespace Evict {
       interface X extends Base {
         args: {
@@ -16135,6 +19746,12 @@ export namespace TraceEvent {
   }
 
   namespace MemoryDumpManager {
+    type FinishAsyncProcessDump = 
+      MemoryDumpManager.FinishAsyncProcessDump.X;
+  
+    type InvokeOnMemoryDump = 
+      MemoryDumpManager.InvokeOnMemoryDump.X;
+  
     namespace FinishAsyncProcessDump {
       interface X extends Base {
         args: {
@@ -16175,6 +19792,12 @@ export namespace TraceEvent {
   }
 
   namespace MessageLoop {
+    type PostTask = 
+      MessageLoop.PostTask.X;
+  
+    type RunTask = 
+      MessageLoop.RunTask.X;
+  
     namespace PostTask {
       interface X extends Base {
         args: {
@@ -16208,6 +19831,12 @@ export namespace TraceEvent {
   }
 
   namespace MessagePipeReader {
+    type Receive = 
+      MessagePipeReader.Receive.X;
+  
+    type Send = 
+      MessagePipeReader.Send.X;
+  
     namespace Receive {
       interface X extends Base {
         args: {
@@ -16243,6 +19872,12 @@ export namespace TraceEvent {
 
   namespace Metrics {
     namespace Mojom {
+      type SingleSampleMetric = 
+        Metrics.Mojom.SingleSampleMetric.X;
+    
+      type SingleSampleMetricsProvider = 
+        Metrics.Mojom.SingleSampleMetricsProvider.X;
+    
       namespace SingleSampleMetric {
         interface X extends Base {
           args: {
@@ -16313,6 +19948,24 @@ export namespace TraceEvent {
   }
 
   namespace MojoVideoDecoderService {
+    type Construct = 
+      MojoVideoDecoderService.Construct.X;
+  
+    type Decode = 
+      MojoVideoDecoderService.Decode.F |
+      MojoVideoDecoderService.Decode.p |
+      MojoVideoDecoderService.Decode.S;
+  
+    type GetSupportedConfigs = 
+      MojoVideoDecoderService.GetSupportedConfigs.X;
+  
+    type Initialize = 
+      MojoVideoDecoderService.Initialize.F |
+      MojoVideoDecoderService.Initialize.S;
+  
+    type OnDecoderOutput = 
+      MojoVideoDecoderService.OnDecoderOutput.X;
+  
     namespace Construct {
       interface X extends Base {
         args: {
@@ -16423,6 +20076,15 @@ export namespace TraceEvent {
   }
 
   namespace MouseEventManager {
+    type FakeMouseMoveEventTimerFired = 
+      MouseEventManager.FakeMouseMoveEventTimerFired.X;
+  
+    type HandleMouseDraggedEvent = 
+      MouseEventManager.HandleMouseDraggedEvent.X;
+  
+    type HandleMousePressEvent = 
+      MouseEventManager.HandleMousePressEvent.X;
+  
     namespace FakeMouseMoveEventTimerFired {
       interface X extends Base {
         args: {
@@ -16466,6 +20128,9 @@ export namespace TraceEvent {
   namespace Namespace {
     namespace TextureOp {
       namespace Tessnamespace {
+        type VertexSpecGrTextureProxy = 
+          Namespace.TextureOp.Tessnamespace.VertexSpecGrTextureProxy.X;
+      
         namespace VertexSpecGrTextureProxy {
           interface X extends Base {
             args: {
@@ -16483,6 +20148,9 @@ export namespace TraceEvent {
   }
 
   namespace NavigationControllerImpl {
+    type LoadURLWithParams = 
+      NavigationControllerImpl.LoadURLWithParams.X;
+  
     namespace LoadURLWithParams {
       interface X extends Base {
         args: {
@@ -16603,6 +20271,12 @@ export namespace TraceEvent {
   }
 
   namespace NavigationThrottle {
+    type WillProcessResponse = 
+      NavigationThrottle.WillProcessResponse.X;
+  
+    type WillStartRequest = 
+      NavigationThrottle.WillStartRequest.X;
+  
     namespace WillProcessResponse {
       interface X extends Base {
         args: {
@@ -16666,6 +20340,9 @@ export namespace TraceEvent {
   }
 
   namespace NavigatorImpl {
+    type Navigate = 
+      NavigatorImpl.Navigate.X;
+  
     namespace Navigate {
       interface X extends Base {
         args: {
@@ -16799,6 +20476,48 @@ export namespace TraceEvent {
 
   namespace Network {
     namespace Mojom {
+      type CookieChangeListener = 
+        Network.Mojom.CookieChangeListener.X;
+    
+      type CookieManager = 
+        Network.Mojom.CookieManager.X;
+    
+      type NetworkContext = 
+        Network.Mojom.NetworkContext.X;
+    
+      type NetworkContextClient = 
+        Network.Mojom.NetworkContextClient.X;
+    
+      type NetworkQualityEstimatorManagerClient = 
+        Network.Mojom.NetworkQualityEstimatorManagerClient.X;
+    
+      type NetworkServiceClient = 
+        Network.Mojom.NetworkServiceClient.X;
+    
+      type ProxyConfigPollerClient = 
+        Network.Mojom.ProxyConfigPollerClient.X;
+    
+      type ProxyLookupClient = 
+        Network.Mojom.ProxyLookupClient.X;
+    
+      type ResolveHostClient = 
+        Network.Mojom.ResolveHostClient.X;
+    
+      type TrustedHeaderClient = 
+        Network.Mojom.TrustedHeaderClient.X;
+    
+      type TrustedURLLoaderHeaderClient = 
+        Network.Mojom.TrustedURLLoaderHeaderClient.X;
+    
+      type URLLoader = 
+        Network.Mojom.URLLoader.X;
+    
+      type URLLoaderClient = 
+        Network.Mojom.URLLoaderClient.X;
+    
+      type URLLoaderFactory = 
+        Network.Mojom.URLLoaderFactory.X;
+    
       namespace CookieChangeListener {
         interface X extends Base {
           args: {
@@ -16984,6 +20703,30 @@ export namespace TraceEvent {
   }
 
   namespace NetworkDelegate {
+    type ForcePrivacyMode = 
+      NetworkDelegate.ForcePrivacyMode.X;
+  
+    type NotifyBeforeStartTransation = 
+      NetworkDelegate.NotifyBeforeStartTransation.X;
+  
+    type NotifyBeforeURLRequest = 
+      NetworkDelegate.NotifyBeforeURLRequest.X;
+  
+    type NotifyCompleted = 
+      NetworkDelegate.NotifyCompleted.X;
+  
+    type NotifyHeadersReceived = 
+      NetworkDelegate.NotifyHeadersReceived.X;
+  
+    type NotifyNetworkBytesReceived = 
+      NetworkDelegate.NotifyNetworkBytesReceived.X;
+  
+    type NotifyStartTransaction = 
+      NetworkDelegate.NotifyStartTransaction.X;
+  
+    type NotifyURLRequestDestroyed = 
+      NetworkDelegate.NotifyURLRequestDestroyed.X;
+  
     namespace ForcePrivacyMode {
       interface X extends Base {
         args: {
@@ -17103,6 +20846,12 @@ export namespace TraceEvent {
   }
 
   namespace NetworkQualityEstimator {
+    type NotifyHeadersReceived = 
+      NetworkQualityEstimator.NotifyHeadersReceived.X;
+  
+    type NotifyRequestCompleted = 
+      NetworkQualityEstimator.NotifyRequestCompleted.X;
+  
     namespace NotifyHeadersReceived {
       interface X extends Base {
         args: {
@@ -17143,6 +20892,9 @@ export namespace TraceEvent {
   }
 
   namespace Node {
+    type UpdateDistribution = 
+      Node.UpdateDistribution.X;
+  
     namespace UpdateDistribution {
       interface X extends Base {
         args: {
@@ -17513,6 +21265,12 @@ export namespace TraceEvent {
   }
 
   namespace Onetapvideo {
+    type EmbedRequest = 
+      Onetapvideo.EmbedRequest.R;
+  
+    type PlayerReady = 
+      Onetapvideo.PlayerReady.R;
+  
     namespace EmbedRequest {
       interface R extends Base {
         args: {
@@ -17600,6 +21358,9 @@ export namespace TraceEvent {
   }
 
   namespace Optimizely {
+    type BlockBegin = 
+      Optimizely.BlockBegin.R;
+  
     namespace BlockBegin {
       interface R extends Base {
         args: {
@@ -17663,6 +21424,9 @@ export namespace TraceEvent {
   }
 
   namespace OverlayProcessor {
+    type ProcessForOverlays = 
+      OverlayProcessor.ProcessForOverlays.X;
+  
     namespace ProcessForOverlays {
       interface X extends Base {
         args: {
@@ -17678,6 +21442,9 @@ export namespace TraceEvent {
   }
 
   namespace PageAnimator {
+    type ServiceScriptedAnimations = 
+      PageAnimator.ServiceScriptedAnimations.X;
+  
     namespace ServiceScriptedAnimations {
       interface X extends Base {
         args: {
@@ -17715,6 +21482,21 @@ export namespace TraceEvent {
   }
 
   namespace PageLoadMetricsObserver {
+    type OnCommit = 
+      PageLoadMetricsObserver.OnCommit.X;
+  
+    type OnHidden = 
+      PageLoadMetricsObserver.OnHidden.X;
+  
+    type OnShown = 
+      PageLoadMetricsObserver.OnShown.X;
+  
+    type OnStart = 
+      PageLoadMetricsObserver.OnStart.X;
+  
+    type ShouldObserveMimeType = 
+      PageLoadMetricsObserver.ShouldObserveMimeType.X;
+  
     namespace OnCommit {
       interface X extends Base {
         args: {
@@ -17867,6 +21649,12 @@ export namespace TraceEvent {
   }
 
   namespace PaintArtifact {
+    type AppendToWebDisplayItemList = 
+      PaintArtifact.AppendToWebDisplayItemList.X;
+  
+    type Replay = 
+      PaintArtifact.Replay.X;
+  
     namespace AppendToWebDisplayItemList {
       interface X extends Base {
         args: {
@@ -17895,6 +21683,9 @@ export namespace TraceEvent {
   }
 
   namespace PaintController {
+    type CommitNewDisplayItems = 
+      PaintController.CommitNewDisplayItems.X;
+  
     namespace CommitNewDisplayItems {
       interface X extends Base {
         args: {
@@ -17950,6 +21741,9 @@ export namespace TraceEvent {
   }
 
   namespace PaintInvalidator {
+    type InvalidatePaint = 
+      PaintInvalidator.InvalidatePaint.X;
+  
     namespace InvalidatePaint {
       interface X extends Base {
         args: {
@@ -17965,6 +21759,9 @@ export namespace TraceEvent {
   }
 
   namespace PaintLayer {
+    type UpdateLayerPositionsAfterLayout = 
+      PaintLayer.UpdateLayerPositionsAfterLayout.X;
+  
     namespace UpdateLayerPositionsAfterLayout {
       interface X extends Base {
         args: {
@@ -17980,6 +21777,9 @@ export namespace TraceEvent {
   }
 
   namespace PaintLayerCompositor {
+    type UpdateIfNeededRecursive = 
+      PaintLayerCompositor.UpdateIfNeededRecursive.X;
+  
     namespace UpdateIfNeededRecursive {
       interface X extends Base {
         args: {
@@ -18006,6 +21806,12 @@ export namespace TraceEvent {
   }
 
   namespace ParkableStringImpl {
+    type CompressInBackground = 
+      ParkableStringImpl.CompressInBackground.X;
+  
+    type Unpark = 
+      ParkableStringImpl.Unpark.X;
+  
     namespace CompressInBackground {
       interface X extends Base {
         args: {
@@ -18082,6 +21888,9 @@ export namespace TraceEvent {
   }
 
   namespace PartitionAlloc {
+    type TotalSizeOfCommittedPagesKB = 
+      PartitionAlloc.TotalSizeOfCommittedPagesKB.C;
+  
     namespace TotalSizeOfCommittedPagesKB {
       interface C extends Base {
         args: {
@@ -18095,6 +21904,9 @@ export namespace TraceEvent {
   }
 
   namespace PendingScript {
+    type ExecuteScriptBlock = 
+      PendingScript.ExecuteScriptBlock.X;
+  
     namespace ExecuteScriptBlock {
       interface X extends Base {
         args: {
@@ -18110,6 +21922,10 @@ export namespace TraceEvent {
   }
 
   namespace PendingTree {
+    type Waiting = 
+      PendingTree.Waiting.F |
+      PendingTree.Waiting.S;
+  
     namespace Waiting {
       interface F extends Base {
         args: {
@@ -18134,6 +21950,12 @@ export namespace TraceEvent {
   }
 
   namespace PictureLayer {
+    type PushPropertiesTo = 
+      PictureLayer.PushPropertiesTo.X;
+  
+    type Update = 
+      PictureLayer.Update.X;
+  
     namespace PushPropertiesTo {
       interface X extends Base {
         args: {
@@ -18162,6 +21984,9 @@ export namespace TraceEvent {
   }
 
   namespace PictureLayerImpl {
+    type AppendQuadscheckerboard = 
+      PictureLayerImpl.AppendQuadscheckerboard.I;
+  
     namespace AppendQuadscheckerboard {
       interface I extends Base {
         args: {
@@ -18219,6 +22044,9 @@ export namespace TraceEvent {
   }
 
   namespace PrerenderManagerFactory {
+    type GetForProfile = 
+      PrerenderManagerFactory.GetForProfile.X;
+  
     namespace GetForProfile {
       interface X extends Base {
         args: {
@@ -18338,6 +22166,9 @@ export namespace TraceEvent {
   }
 
   namespace ProcTask {
+    type OnLookupComplete = 
+      ProcTask.OnLookupComplete.X;
+  
     namespace OnLookupComplete {
       interface X extends Base {
         args: {
@@ -18399,6 +22230,9 @@ export namespace TraceEvent {
   }
 
   namespace ProfileManager {
+    type GetProfileInfoCache = 
+      ProfileManager.GetProfileInfoCache.X;
+  
     namespace GetProfileInfoCache {
       interface X extends Base {
         args: {
@@ -18414,6 +22248,9 @@ export namespace TraceEvent {
   }
 
   namespace ProgramBindingBase {
+    type Init = 
+      ProgramBindingBase.Init.X;
+  
     namespace Init {
       interface X extends Base {
         args: {
@@ -18429,6 +22266,9 @@ export namespace TraceEvent {
   }
 
   namespace PropertyTreeBuilder {
+    type ShouldCreateRenderSurfaceopacity = 
+      PropertyTreeBuilder.ShouldCreateRenderSurfaceopacity.I;
+  
     namespace ShouldCreateRenderSurfaceopacity {
       interface I extends Base {
         args: {
@@ -18483,6 +22323,12 @@ export namespace TraceEvent {
 
   namespace Proxy_resolver {
     namespace Mojom {
+      type ProxyResolver = 
+        Proxy_resolver.Mojom.ProxyResolver.X;
+    
+      type ProxyResolverRequestClient = 
+        Proxy_resolver.Mojom.ProxyResolverRequestClient.X;
+    
       namespace ProxyResolver {
         interface X extends Base {
           args: {
@@ -18512,6 +22358,66 @@ export namespace TraceEvent {
   }
 
   namespace ProxyImpl {
+    type BeginMainFrameAbortedOnImplThread = 
+      ProxyImpl.BeginMainFrameAbortedOnImplThread.X;
+  
+    type DidActivateSyncTreeOnImplThread = 
+      ProxyImpl.DidActivateSyncTreeOnImplThread.X;
+  
+    type DidLoseLayerTreeFrameSinkOnImplThread = 
+      ProxyImpl.DidLoseLayerTreeFrameSinkOnImplThread.X;
+  
+    type DidReceiveCompositorFrameAckOnImplThread = 
+      ProxyImpl.DidReceiveCompositorFrameAckOnImplThread.X;
+  
+    type FinishGLOnImplThread = 
+      ProxyImpl.FinishGLOnImplThread.X;
+  
+    type InitializeLayerTreeFrameSinkOnImplThread = 
+      ProxyImpl.InitializeLayerTreeFrameSinkOnImplThread.X;
+  
+    type NotifyReadyToActivate = 
+      ProxyImpl.NotifyReadyToActivate.X;
+  
+    type NotifyReadyToCommitOnImpl = 
+      ProxyImpl.NotifyReadyToCommitOnImpl.X;
+  
+    type NotifyReadyToDraw = 
+      ProxyImpl.NotifyReadyToDraw.X;
+  
+    type OnCanDrawStateChanged = 
+      ProxyImpl.OnCanDrawStateChanged.X;
+  
+    type ProxyImpl = 
+      ProxyImpl.ProxyImpl.X;
+  
+    type RequestBeginMainFrameNotExpected = 
+      ProxyImpl.RequestBeginMainFrameNotExpected.X;
+  
+    type ScheduledActionActivateSyncTree = 
+      ProxyImpl.ScheduledActionActivateSyncTree.X;
+  
+    type ScheduledActionBeginLayerTreeFrameSinkCreation = 
+      ProxyImpl.ScheduledActionBeginLayerTreeFrameSinkCreation.X;
+  
+    type ScheduledActionCommit = 
+      ProxyImpl.ScheduledActionCommit.X;
+  
+    type ScheduledActionDraw = 
+      ProxyImpl.ScheduledActionDraw.X;
+  
+    type ScheduledActionPrepareTiles = 
+      ProxyImpl.ScheduledActionPrepareTiles.X;
+  
+    type SetNeedsCommitOnImplThread = 
+      ProxyImpl.SetNeedsCommitOnImplThread.X;
+  
+    type SetNeedsRedrawOnImplThread = 
+      ProxyImpl.SetNeedsRedrawOnImplThread.X;
+  
+    type SetVisibleOnImplThread = 
+      ProxyImpl.SetVisibleOnImplThread.X;
+  
     namespace BeginMainFrameAbortedOnImplThread {
       interface X extends Base {
         args: {
@@ -18774,7 +22680,41 @@ export namespace TraceEvent {
   }
 
   namespace ProxyMain {
+    type BeginMainFrameNotExpectedSoon = 
+      ProxyMain.BeginMainFrameNotExpectedSoon.X;
+  
+    type DidInitializeLayerTreeFrameSink = 
+      ProxyMain.DidInitializeLayerTreeFrameSink.X;
+  
+    type ProxyMain = 
+      ProxyMain.ProxyMain.X;
+  
+    type RequestNewLayerTreeFrameSink = 
+      ProxyMain.RequestNewLayerTreeFrameSink.X;
+  
+    type SetDeferMainFrameUpdate = 
+      ProxyMain.SetDeferMainFrameUpdate.F |
+      ProxyMain.SetDeferMainFrameUpdate.S;
+  
+    type SetNeedsAnimate = 
+      ProxyMain.SetNeedsAnimate.I;
+  
+    type SetNeedsCommit = 
+      ProxyMain.SetNeedsCommit.I;
+  
+    type SetNeedsUpdateLayers = 
+      ProxyMain.SetNeedsUpdateLayers.I;
+  
+    type SetVisible = 
+      ProxyMain.SetVisible.X;
+  
+    type Stop = 
+      ProxyMain.Stop.X;
+  
     namespace BeginMainFrame {
+      type Commit = 
+        ProxyMain.BeginMainFrame.Commit.X;
+    
       namespace Commit {
         interface X extends Base {
           args: {
@@ -19375,6 +23315,9 @@ export namespace TraceEvent {
   }
 
   namespace QuicStreamFactory {
+    type CreateSession = 
+      QuicStreamFactory.CreateSession.X;
+  
     namespace CreateSession {
       interface X extends Base {
         args: {
@@ -19389,6 +23332,9 @@ export namespace TraceEvent {
     }
   
     namespace Job {
+      type DoLoop = 
+        QuicStreamFactory.Job.DoLoop.X;
+    
       namespace DoLoop {
         interface X extends Base {
           args: {
@@ -19406,6 +23352,9 @@ export namespace TraceEvent {
 
   namespace Rappor {
     namespace Mojom {
+      type RapporRecorder = 
+        Rappor.Mojom.RapporRecorder.X;
+    
       namespace RapporRecorder {
         interface X extends Base {
           args: {
@@ -19422,6 +23371,9 @@ export namespace TraceEvent {
   }
 
   namespace RasterizerTaskImpl {
+    type RunOnWorkerThread = 
+      RasterizerTaskImpl.RunOnWorkerThread.X;
+  
     namespace RunOnWorkerThread {
       interface X extends Base {
         args: {
@@ -19437,6 +23389,9 @@ export namespace TraceEvent {
   }
 
   namespace RasterSource {
+    type PerformSolidColorAnalysis = 
+      RasterSource.PerformSolidColorAnalysis.X;
+  
     namespace PerformSolidColorAnalysis {
       interface X extends Base {
         args: {
@@ -19500,6 +23455,9 @@ export namespace TraceEvent {
   }
 
   namespace RealTimeDomain {
+    type DelayTillNextTask = 
+      RealTimeDomain.DelayTillNextTask.X;
+  
     namespace DelayTillNextTask {
       interface X extends Base {
         args: {
@@ -19515,6 +23473,12 @@ export namespace TraceEvent {
   }
 
   namespace RecordingSource {
+    type DetermineIfSolidColor = 
+      RecordingSource.DetermineIfSolidColor.X;
+  
+    type FinishDisplayItemListUpdate = 
+      RecordingSource.FinishDisplayItemListUpdate.X;
+  
     namespace DetermineIfSolidColor {
       interface X extends Base {
         args: {
@@ -19565,6 +23529,9 @@ export namespace TraceEvent {
   }
 
   namespace RememberedSetUpdatingItem {
+    type Process = 
+      RememberedSetUpdatingItem.Process.X;
+  
     namespace Process {
       interface X extends Base {
         args: {
@@ -19580,6 +23547,9 @@ export namespace TraceEvent {
   }
 
   namespace RemoteWindowProxy {
+    type Initialize = 
+      RemoteWindowProxy.Initialize.X;
+  
     namespace Initialize {
       interface X extends Base {
         args: {
@@ -19617,6 +23587,9 @@ export namespace TraceEvent {
   }
 
   namespace RendererMain {
+    type START_MSG_LOOP = 
+      RendererMain.START_MSG_LOOP.S;
+  
     namespace START_MSG_LOOP {
       interface S extends Base {
         args: {
@@ -19653,6 +23626,9 @@ export namespace TraceEvent {
   }
 
   namespace RendererScheduler {
+    type BackgroundBudgetMs = 
+      RendererScheduler.BackgroundBudgetMs.C;
+  
     namespace BackgroundBudgetMs {
       interface C extends Base {
         args: {
@@ -19739,6 +23715,34 @@ export namespace TraceEvent {
   }
 
   namespace RenderFrameHostImpl {
+    type BeginNavigation = 
+      RenderFrameHostImpl.BeginNavigation.X;
+  
+    type CommitNavigation = 
+      RenderFrameHostImpl.CommitNavigation.X;
+  
+    type CreateRenderFrame = 
+      RenderFrameHostImpl.CreateRenderFrame.X;
+  
+    type DidCommitProvisionalLoad = 
+      RenderFrameHostImpl.DidCommitProvisionalLoad.X;
+  
+    type OnDidAddContentSecurityPolicies = 
+      RenderFrameHostImpl.OnDidAddContentSecurityPolicies.X;
+  
+    type OnDidFailProvisionalLoadWithError = 
+      RenderFrameHostImpl.OnDidFailProvisionalLoadWithError.X;
+  
+    type OnDidStopLoading = 
+      RenderFrameHostImpl.OnDidStopLoading.X;
+  
+    type OnDispatchLoad = 
+      RenderFrameHostImpl.OnDispatchLoad.X;
+  
+    type SwapOut = 
+      RenderFrameHostImpl.SwapOut.F |
+      RenderFrameHostImpl.SwapOut.S;
+  
     namespace BeginNavigation {
       interface X extends Base {
         args: {
@@ -19900,6 +23904,12 @@ export namespace TraceEvent {
   }
 
   namespace RenderFrameHostManager {
+    type CommitPending = 
+      RenderFrameHostManager.CommitPending.X;
+  
+    type SwapOutOldFrame = 
+      RenderFrameHostManager.SwapOutOldFrame.X;
+  
     namespace CommitPending {
       interface X extends Base {
         args: {
@@ -19928,6 +23938,30 @@ export namespace TraceEvent {
   }
 
   namespace RenderFrameImpl {
+    type CreateChildFrame = 
+      RenderFrameImpl.CreateChildFrame.X;
+  
+    type DidCommitProvisionalLoad = 
+      RenderFrameImpl.DidCommitProvisionalLoad.X;
+  
+    type DidFinishDocumentLoad = 
+      RenderFrameImpl.DidFinishDocumentLoad.X;
+  
+    type DidFinishLoad = 
+      RenderFrameImpl.DidFinishLoad.X;
+  
+    type DidStartLoading = 
+      RenderFrameImpl.DidStartLoading.X;
+  
+    type DidStartProvisionalLoad = 
+      RenderFrameImpl.DidStartProvisionalLoad.X;
+  
+    type DidStopLoading = 
+      RenderFrameImpl.DidStopLoading.X;
+  
+    type Initialize = 
+      RenderFrameImpl.Initialize.X;
+  
     namespace CreateChildFrame {
       interface X extends Base {
         args: {
@@ -20050,6 +24084,9 @@ export namespace TraceEvent {
   }
 
   namespace RenderProcessHostImpl {
+    type Send = 
+      RenderProcessHostImpl.Send.X;
+  
     namespace Send {
       interface X extends Base {
         args: {
@@ -20065,6 +24102,9 @@ export namespace TraceEvent {
     }
   
     namespace UpdateProcessPriority {
+      type SetProcessPriority = 
+        RenderProcessHostImpl.UpdateProcessPriority.SetProcessPriority.X;
+    
       namespace SetProcessPriority {
         interface X extends Base {
           args: {
@@ -20094,6 +24134,9 @@ export namespace TraceEvent {
   }
 
   namespace RenderSurfaceImpl {
+    type AppendQuads = 
+      RenderSurfaceImpl.AppendQuads.X;
+  
     namespace AppendQuads {
       interface X extends Base {
         args: {
@@ -20109,6 +24152,15 @@ export namespace TraceEvent {
   }
 
   namespace RenderTextHarfBuzz {
+    type ItemizeTextToRuns = 
+      RenderTextHarfBuzz.ItemizeTextToRuns.X;
+  
+    type ShapeRuns = 
+      RenderTextHarfBuzz.ShapeRuns.X;
+  
+    type ShapeRunWithFontInternal = 
+      RenderTextHarfBuzz.ShapeRunWithFontInternal.X;
+  
     namespace ItemizeTextToRuns {
       interface X extends Base {
         args: {
@@ -20150,6 +24202,9 @@ export namespace TraceEvent {
   }
 
   namespace RenderThreadImpl {
+    type EstablishGpuChannelSync = 
+      RenderThreadImpl.EstablishGpuChannelSync.X;
+  
     namespace EstablishGpuChannelSync {
       interface X extends Base {
         args: {
@@ -20165,6 +24220,12 @@ export namespace TraceEvent {
   }
 
   namespace RenderViewHostImpl {
+    type CreateRenderView = 
+      RenderViewHostImpl.CreateRenderView.X;
+  
+    type GetWebkitPrefs = 
+      RenderViewHostImpl.GetWebkitPrefs.X;
+  
     namespace CreateRenderView {
       interface X extends Base {
         args: {
@@ -20193,6 +24254,30 @@ export namespace TraceEvent {
   }
 
   namespace RenderWidget {
+    type DidCommitAndDrawCompositorFrame = 
+      RenderWidget.DidCommitAndDrawCompositorFrame.X;
+  
+    type InitializeLayerTreeView = 
+      RenderWidget.InitializeLayerTreeView.X;
+  
+    type OnSynchronizeVisualProperties = 
+      RenderWidget.OnSynchronizeVisualProperties.X;
+  
+    type OnWasHidden = 
+      RenderWidget.OnWasHidden.X;
+  
+    type OnWasShown = 
+      RenderWidget.OnWasShown.X;
+  
+    type UpdateSelectionBounds = 
+      RenderWidget.UpdateSelectionBounds.X;
+  
+    type UpdateTextInputState = 
+      RenderWidget.UpdateTextInputState.X;
+  
+    type WillBeginCompositorFrame = 
+      RenderWidget.WillBeginCompositorFrame.X;
+  
     namespace DidCommitAndDrawCompositorFrame {
       interface X extends Base {
         args: {
@@ -20299,6 +24384,24 @@ export namespace TraceEvent {
   }
 
   namespace RenderWidgetHostImpl {
+    type DidUpdateVisualProperties = 
+      RenderWidgetHostImpl.DidUpdateVisualProperties.X;
+  
+    type ForwardKeyboardEvent = 
+      RenderWidgetHostImpl.ForwardKeyboardEvent.X;
+  
+    type ForwardMouseEvent = 
+      RenderWidgetHostImpl.ForwardMouseEvent.X;
+  
+    type GetScreenInfo = 
+      RenderWidgetHostImpl.GetScreenInfo.X;
+  
+    type WasHidden = 
+      RenderWidgetHostImpl.WasHidden.X;
+  
+    type WasShown = 
+      RenderWidgetHostImpl.WasShown.X;
+  
     namespace DidUpdateVisualProperties {
       interface X extends Base {
         args: {
@@ -20380,6 +24483,18 @@ export namespace TraceEvent {
   }
 
   namespace RenderWidgetHostViewCocoa {
+    type KeyEvent = 
+      RenderWidgetHostViewCocoa.KeyEvent.X;
+  
+    type MouseEvent = 
+      RenderWidgetHostViewCocoa.MouseEvent.X;
+  
+    type SendViewBoundsInWindowToClient = 
+      RenderWidgetHostViewCocoa.SendViewBoundsInWindowToClient.X;
+  
+    type SendWindowFrameInScreenToClient = 
+      RenderWidgetHostViewCocoa.SendWindowFrameInScreenToClient.X;
+  
     namespace KeyEvent {
       interface X extends Base {
         args: {
@@ -20434,6 +24549,9 @@ export namespace TraceEvent {
   }
 
   namespace RenderWidgetInputHandler {
+    type OnHandleInputEvent = 
+      RenderWidgetInputHandler.OnHandleInputEvent.X;
+  
     namespace OnHandleInputEvent {
       interface X extends Base {
         args: {
@@ -20883,6 +25001,21 @@ export namespace TraceEvent {
 
   namespace Resource_coordinator {
     namespace Mojom {
+      type CoordinationUnitProvider = 
+        Resource_coordinator.Mojom.CoordinationUnitProvider.X;
+    
+      type FrameCoordinationUnit = 
+        Resource_coordinator.Mojom.FrameCoordinationUnit.X;
+    
+      type PageCoordinationUnit = 
+        Resource_coordinator.Mojom.PageCoordinationUnit.X;
+    
+      type PageSignalReceiver = 
+        Resource_coordinator.Mojom.PageSignalReceiver.X;
+    
+      type ProcessCoordinationUnit = 
+        Resource_coordinator.Mojom.ProcessCoordinationUnit.X;
+    
       namespace CoordinationUnitProvider {
         interface X extends Base {
           args: {
@@ -20951,6 +25084,9 @@ export namespace TraceEvent {
   }
 
   namespace Resource {
+    type AppendData = 
+      Resource.AppendData.X;
+  
     namespace AppendData {
       interface X extends Base {
         args: {
@@ -20995,6 +25131,15 @@ export namespace TraceEvent {
   }
 
   namespace ResourceDispatcher {
+    type OnReceivedRedirect = 
+      ResourceDispatcher.OnReceivedRedirect.X;
+  
+    type OnReceivedResponse = 
+      ResourceDispatcher.OnReceivedResponse.X;
+  
+    type OnRequestComplete = 
+      ResourceDispatcher.OnRequestComplete.X;
+  
     namespace OnReceivedRedirect {
       interface X extends Base {
         args: {
@@ -21036,6 +25181,12 @@ export namespace TraceEvent {
   }
 
   namespace ResourceFetcher {
+    type DetermineRevalidationPolicy = 
+      ResourceFetcher.DetermineRevalidationPolicy.I;
+  
+    type RequestResource = 
+      ResourceFetcher.RequestResource.X;
+  
     namespace DetermineRevalidationPolicy {
       interface I extends Base {
         args: {
@@ -21116,6 +25267,9 @@ export namespace TraceEvent {
   }
 
   namespace ResourceLoadPriorityOptimizer {
+    type UpdateAllImageResourcePriorities = 
+      ResourceLoadPriorityOptimizer.UpdateAllImageResourcePriorities.X;
+  
     namespace UpdateAllImageResourcePriorities {
       interface X extends Base {
         args: {
@@ -21131,6 +25285,9 @@ export namespace TraceEvent {
   }
 
   namespace ResourcePrefetchPredictor {
+    type StartInitialization = 
+      ResourcePrefetchPredictor.StartInitialization.X;
+  
     namespace StartInitialization {
       interface X extends Base {
         args: {
@@ -21253,6 +25410,9 @@ export namespace TraceEvent {
   }
 
   namespace RootScrollerController {
+    type PerformRootScrollerSelection = 
+      RootScrollerController.PerformRootScrollerSelection.X;
+  
     namespace PerformRootScrollerSelection {
       interface X extends Base {
         args: {
@@ -21268,6 +25428,9 @@ export namespace TraceEvent {
   }
 
   namespace RuleSet {
+    type AddRulesFromSheet = 
+      RuleSet.AddRulesFromSheet.X;
+  
     namespace AddRulesFromSheet {
       interface X extends Base {
         args: {
@@ -21341,6 +25504,18 @@ export namespace TraceEvent {
 
   namespace Safe_browsing {
     namespace Mojom {
+      type PhishingDetector = 
+        Safe_browsing.Mojom.PhishingDetector.X;
+    
+      type PhishingModelSetter = 
+        Safe_browsing.Mojom.PhishingModelSetter.X;
+    
+      type SafeBrowsing = 
+        Safe_browsing.Mojom.SafeBrowsing.X;
+    
+      type SafeBrowsingUrlChecker = 
+        Safe_browsing.Mojom.SafeBrowsingUrlChecker.X;
+    
       namespace PhishingDetector {
         interface X extends Base {
           args: {
@@ -21396,6 +25571,9 @@ export namespace TraceEvent {
   }
 
   namespace ScheduledAction {
+    type Execute = 
+      ScheduledAction.Execute.X;
+  
     namespace Execute {
       interface X extends Base {
         args: {
@@ -21450,6 +25628,178 @@ export namespace TraceEvent {
   }
 
   namespace Scheduler {
+    type AwaitingTouchstartResponse = 
+      Scheduler.AwaitingTouchstartResponse.S |
+      Scheduler.AwaitingTouchstartResponse.T;
+  
+    type BeginFrame = 
+      Scheduler.BeginFrame.X;
+  
+    type BeginFrameDropped = 
+      Scheduler.BeginFrameDropped.I;
+  
+    type BeginFrameNotExpectedSoon = 
+      Scheduler.BeginFrameNotExpectedSoon.F |
+      Scheduler.BeginFrameNotExpectedSoon.S |
+      Scheduler.BeginFrameNotExpectedSoon.T;
+  
+    type BeginImplFrame = 
+      Scheduler.BeginImplFrame.X;
+  
+    type BeginMainFrameAborted = 
+      Scheduler.BeginMainFrameAborted.X;
+  
+    type BeginMainFrameOnCriticalPath = 
+      Scheduler.BeginMainFrameOnCriticalPath.F |
+      Scheduler.BeginMainFrameOnCriticalPath.S |
+      Scheduler.BeginMainFrameOnCriticalPath.T;
+  
+    type BlockingInputExpectedSoon = 
+      Scheduler.BlockingInputExpectedSoon.S |
+      Scheduler.BlockingInputExpectedSoon.T;
+  
+    type CompositorWillSendMainFrameNotExpected = 
+      Scheduler.CompositorWillSendMainFrameNotExpected.F |
+      Scheduler.CompositorWillSendMainFrameNotExpected.S |
+      Scheduler.CompositorWillSendMainFrameNotExpected.T;
+  
+    type DefaultGesturePrevented = 
+      Scheduler.DefaultGesturePrevented.S |
+      Scheduler.DefaultGesturePrevented.T;
+  
+    type DidCreateAndInitializeLayerTreeFrameSink = 
+      Scheduler.DidCreateAndInitializeLayerTreeFrameSink.X;
+  
+    type DidLoseLayerTreeFrameSink = 
+      Scheduler.DidLoseLayerTreeFrameSink.X;
+  
+    type HasNavigated = 
+      Scheduler.HasNavigated.F |
+      Scheduler.HasNavigated.S |
+      Scheduler.HasNavigated.T;
+  
+    type HasReportedBlockingInterventionInCurrentPolicy = 
+      Scheduler.HasReportedBlockingInterventionInCurrentPolicy.S |
+      Scheduler.HasReportedBlockingInterventionInCurrentPolicy.T;
+  
+    type HasReportedBlockingInterventionSinceNavigation = 
+      Scheduler.HasReportedBlockingInterventionSinceNavigation.S |
+      Scheduler.HasReportedBlockingInterventionSinceNavigation.T;
+  
+    type HasSeenBeginMainFrame = 
+      Scheduler.HasSeenBeginMainFrame.F |
+      Scheduler.HasSeenBeginMainFrame.S |
+      Scheduler.HasSeenBeginMainFrame.T;
+  
+    type HasVisibleRenderWidgetWithTouchHandler = 
+      Scheduler.HasVisibleRenderWidgetWithTouchHandler.F |
+      Scheduler.HasVisibleRenderWidgetWithTouchHandler.S |
+      Scheduler.HasVisibleRenderWidgetWithTouchHandler.T;
+  
+    type HaveSeenBlockingGesture = 
+      Scheduler.HaveSeenBlockingGesture.S |
+      Scheduler.HaveSeenBlockingGesture.T;
+  
+    type HaveSeenInputSinceNavigation = 
+      Scheduler.HaveSeenInputSinceNavigation.S |
+      Scheduler.HaveSeenInputSinceNavigation.T;
+  
+    type Hidden = 
+      Scheduler.Hidden.F |
+      Scheduler.Hidden.S |
+      Scheduler.Hidden.T;
+  
+    type InIdlePeriod = 
+      Scheduler.InIdlePeriod.F |
+      Scheduler.InIdlePeriod.S |
+      Scheduler.InIdlePeriod.T;
+  
+    type KeepRendererActive = 
+      Scheduler.KeepRendererActive.F |
+      Scheduler.KeepRendererActive.S |
+      Scheduler.KeepRendererActive.T;
+  
+    type LastGestureWasCompositorDriven = 
+      Scheduler.LastGestureWasCompositorDriven.S |
+      Scheduler.LastGestureWasCompositorDriven.T;
+  
+    type LongestJankFreeTaskDuration = 
+      Scheduler.LongestJankFreeTaskDuration.C;
+  
+    type MainThreadTask = 
+      Scheduler.MainThreadTask.F |
+      Scheduler.MainThreadTask.S |
+      Scheduler.MainThreadTask.T;
+  
+    type MissedBeginFrameDropped = 
+      Scheduler.MissedBeginFrameDropped.I;
+  
+    type NotifyBeginMainFrameStarted = 
+      Scheduler.NotifyBeginMainFrameStarted.X;
+  
+    type NotifyReadyToCommit = 
+      Scheduler.NotifyReadyToCommit.X;
+  
+    type Now = 
+      Scheduler.Now.X;
+  
+    type OnBeginImplFrameDeadline = 
+      Scheduler.OnBeginImplFrameDeadline.X;
+  
+    type PauseCount = 
+      Scheduler.PauseCount.C;
+  
+    type PauseTimersForWebview = 
+      Scheduler.PauseTimersForWebview.S |
+      Scheduler.PauseTimersForWebview.T;
+  
+    type Pending_submit_frames = 
+      Scheduler.Pending_submit_frames.F |
+      Scheduler.Pending_submit_frames.S;
+  
+    type RAILMode = 
+      Scheduler.RAILMode.F |
+      Scheduler.RAILMode.S |
+      Scheduler.RAILMode.T;
+  
+    type RunNextTask = 
+      Scheduler.RunNextTask.X;
+  
+    type Running = 
+      Scheduler.Running.F |
+      Scheduler.Running.S;
+  
+    type ScheduleBeginImplFrameDeadline = 
+      Scheduler.ScheduleBeginImplFrameDeadline.X;
+  
+    type Scheduler = 
+      Scheduler.Scheduler.X;
+  
+    type SetDeferMainFrameUpdate = 
+      Scheduler.SetDeferMainFrameUpdate.X;
+  
+    type SkipNextBeginMainFrameToReduceLatency = 
+      Scheduler.SkipNextBeginMainFrameToReduceLatency.I;
+  
+    type TaskPriority = 
+      Scheduler.TaskPriority.F |
+      Scheduler.TaskPriority.S |
+      Scheduler.TaskPriority.T;
+  
+    type UseCase = 
+      Scheduler.UseCase.F |
+      Scheduler.UseCase.S |
+      Scheduler.UseCase.T;
+  
+    type UseVirtualTime = 
+      Scheduler.UseVirtualTime.S |
+      Scheduler.UseVirtualTime.T;
+  
+    type WaitingForMeaningfulPaint = 
+      Scheduler.WaitingForMeaningfulPaint.F |
+      Scheduler.WaitingForMeaningfulPaint.S |
+      Scheduler.WaitingForMeaningfulPaint.T;
+  
     namespace AwaitingTouchstartResponse {
       interface S extends Base {
         args: {
@@ -22286,6 +26636,12 @@ export namespace TraceEvent {
     }
   
     namespace Sequence {
+      type RemoveWaitingPriority = 
+        Scheduler.Sequence.RemoveWaitingPriority.X;
+    
+      type UpdateSchedulingPriority = 
+        Scheduler.Sequence.UpdateSchedulingPriority.X;
+    
       namespace RemoveWaitingPriority {
         interface X extends Base {
           args: {
@@ -22460,6 +26816,9 @@ export namespace TraceEvent {
   }
 
   namespace SchedulerStateMachine {
+    type SetNeedsPrepareTiles = 
+      SchedulerStateMachine.SetNeedsPrepareTiles.X;
+  
     namespace SetNeedsPrepareTiles {
       interface X extends Base {
         args: {
@@ -22772,6 +27131,9 @@ export namespace TraceEvent {
   }
 
   namespace ScriptRunner {
+    type ExecuteAsyncTask = 
+      ScriptRunner.ExecuteAsyncTask.X;
+  
     namespace ExecuteAsyncTask {
       interface X extends Base {
         args: {
@@ -22787,6 +27149,9 @@ export namespace TraceEvent {
   }
 
   namespace ScrollAnchor {
+    type FindAnchor = 
+      ScrollAnchor.FindAnchor.X;
+  
     namespace FindAnchor {
       interface X extends Base {
         args: {
@@ -22802,6 +27167,12 @@ export namespace TraceEvent {
   }
 
   namespace ScrollingCoordinator {
+    type UpdateAfterPaint = 
+      ScrollingCoordinator.UpdateAfterPaint.X;
+  
+    type UpdateTouchEventTargetRectsIfNeeded = 
+      ScrollingCoordinator.UpdateTouchEventTargetRectsIfNeeded.X;
+  
     namespace UpdateAfterPaint {
       interface X extends Base {
         args: {
@@ -22830,6 +27201,15 @@ export namespace TraceEvent {
   }
 
   namespace SearchProvider {
+    type OnURLLoadComplete = 
+      SearchProvider.OnURLLoadComplete.X;
+  
+    type Question_mark = 
+      SearchProvider.Question_mark.X;
+  
+    type Start = 
+      SearchProvider.Start.X;
+  
     namespace OnURLLoadComplete {
       interface X extends Base {
         args: {
@@ -22871,6 +27251,15 @@ export namespace TraceEvent {
   }
 
   namespace SelectionController {
+    type HandleMousePressEvent = 
+      SelectionController.HandleMousePressEvent.X;
+  
+    type HandleMousePressEventSingleClick = 
+      SelectionController.HandleMousePressEventSingleClick.X;
+  
+    type HandleMouseReleaseEvent = 
+      SelectionController.HandleMouseReleaseEvent.X;
+  
     namespace HandleMousePressEvent {
       interface X extends Base {
         args: {
@@ -22924,6 +27313,36 @@ export namespace TraceEvent {
   }
 
   namespace SequenceManager {
+    type DidProcessTaskObservers = 
+      SequenceManager.DidProcessTaskObservers.X;
+  
+    type DidProcessTaskTimeObservers = 
+      SequenceManager.DidProcessTaskTimeObservers.X;
+  
+    type PostTask = 
+      SequenceManager.PostTask.X;
+  
+    type QueueNotifyDidProcessTask = 
+      SequenceManager.QueueNotifyDidProcessTask.X;
+  
+    type QueueNotifyWillProcessTask = 
+      SequenceManager.QueueNotifyWillProcessTask.X;
+  
+    type QueueOnTaskCompleted = 
+      SequenceManager.QueueOnTaskCompleted.X;
+  
+    type QueueOnTaskStarted = 
+      SequenceManager.QueueOnTaskStarted.X;
+  
+    type RunTask = 
+      SequenceManager.RunTask.B;
+  
+    type WillProcessTaskObservers = 
+      SequenceManager.WillProcessTaskObservers.X;
+  
+    type WillProcessTaskTimeObservers = 
+      SequenceManager.WillProcessTaskTimeObservers.X;
+  
     namespace DidProcessTaskObservers {
       interface X extends Base {
         args: {
@@ -23219,6 +27638,24 @@ export namespace TraceEvent {
   }
 
   namespace SequenceManagerImpl {
+    type NotifyDidProcessTaskObservers = 
+      SequenceManagerImpl.NotifyDidProcessTaskObservers.X;
+  
+    type NotifyWillProcessTaskObservers = 
+      SequenceManagerImpl.NotifyWillProcessTaskObservers.X;
+  
+    type RunTask = 
+      SequenceManagerImpl.RunTask.E;
+  
+    type TakeTask = 
+      SequenceManagerImpl.TakeTask.X;
+  
+    type UnregisterTaskQueue = 
+      SequenceManagerImpl.UnregisterTaskQueue.X;
+  
+    type WakeUpReadyDelayedQueues = 
+      SequenceManagerImpl.WakeUpReadyDelayedQueues.X;
+  
     namespace NotifyDidProcessTaskObservers {
       interface X extends Base {
         args: {
@@ -23297,6 +27734,12 @@ export namespace TraceEvent {
   }
 
   namespace SerializedScriptValueFactory {
+    type Create = 
+      SerializedScriptValueFactory.Create.X;
+  
+    type Deserialize = 
+      SerializedScriptValueFactory.Deserialize.X;
+  
     namespace Create {
       interface X extends Base {
         args: {
@@ -23326,6 +27769,24 @@ export namespace TraceEvent {
 
   namespace Service_manager {
     namespace Mojom {
+      type Connector = 
+        Service_manager.Mojom.Connector.X;
+    
+      type InterfaceProvider = 
+        Service_manager.Mojom.InterfaceProvider.X;
+    
+      type PIDReceiver = 
+        Service_manager.Mojom.PIDReceiver.X;
+    
+      type Service = 
+        Service_manager.Mojom.Service.X;
+    
+      type ServiceFactory = 
+        Service_manager.Mojom.ServiceFactory.X;
+    
+      type ServiceManagerListener = 
+        Service_manager.Mojom.ServiceManagerListener.X;
+    
       namespace Connector {
         interface X extends Base {
           args: {
@@ -23407,6 +27868,9 @@ export namespace TraceEvent {
   }
 
   namespace ServiceManager {
+    type Connect = 
+      ServiceManager.Connect.I;
+  
     namespace Connect {
       interface I extends Base {
         args: {
@@ -23421,6 +27885,10 @@ export namespace TraceEvent {
   }
 
   namespace ServiceWorkerControlleeRequestHandler {
+    type PrepareForMainResource = 
+      ServiceWorkerControlleeRequestHandler.PrepareForMainResource.F |
+      ServiceWorkerControlleeRequestHandler.PrepareForMainResource.S;
+  
     namespace PrepareForMainResource {
       interface F extends Base {
         args: {
@@ -23445,6 +27913,9 @@ export namespace TraceEvent {
   }
 
   namespace ServiceWorkerDispatcherHost {
+    type OnProviderCreated = 
+      ServiceWorkerDispatcherHost.OnProviderCreated.X;
+  
     namespace OnProviderCreated {
       interface X extends Base {
         args: {
@@ -23460,6 +27931,12 @@ export namespace TraceEvent {
   }
 
   namespace ServiceWorkerNavigationLoader {
+    type FallbackToNetwork = 
+      ServiceWorkerNavigationLoader.FallbackToNetwork.X;
+  
+    type ServiceWorkerNavigationloader = 
+      ServiceWorkerNavigationLoader.ServiceWorkerNavigationloader.X;
+  
     namespace FallbackToNetwork {
       interface X extends Base {
         args: {
@@ -23496,6 +27973,9 @@ export namespace TraceEvent {
   }
 
   namespace ServiceWorkerProviderHost {
+    type RemoveProviderHost = 
+      ServiceWorkerProviderHost.RemoveProviderHost.X;
+  
     namespace RemoveProviderHost {
       interface X extends Base {
         args: {
@@ -23512,6 +27992,9 @@ export namespace TraceEvent {
 
   namespace ServiceWorkerStorage {
     namespace FindRegistrationForDocument {
+      type CheckInstalling = 
+        ServiceWorkerStorage.FindRegistrationForDocument.CheckInstalling.I;
+    
       namespace CheckInstalling {
         interface I extends Base {
           args: {
@@ -23558,6 +28041,18 @@ export namespace TraceEvent {
   }
 
   namespace SharedImageStub {
+    type OnCreateSharedImage = 
+      SharedImageStub.OnCreateSharedImage.X;
+  
+    type OnCreateSharedImageWithData = 
+      SharedImageStub.OnCreateSharedImageWithData.X;
+  
+    type OnDestroySharedImage = 
+      SharedImageStub.OnDestroySharedImage.X;
+  
+    type OnRegisterSharedImageUploadBuffer = 
+      SharedImageStub.OnRegisterSharedImageUploadBuffer.X;
+  
     namespace OnCreateSharedImage {
       interface X extends Base {
         args: {
@@ -23627,6 +28122,9 @@ export namespace TraceEvent {
   }
 
   namespace ShortcutsProvider {
+    type Start = 
+      ShortcutsProvider.Start.X;
+  
     namespace Start {
       interface X extends Base {
         args: {
@@ -24011,6 +28509,9 @@ export namespace TraceEvent {
   }
 
   namespace SingleThreadIdleTaskRunner {
+    type RunTask = 
+      SingleThreadIdleTaskRunner.RunTask.X;
+  
     namespace RunTask {
       interface X extends Base {
         args: {
@@ -24026,6 +28527,55 @@ export namespace TraceEvent {
   }
 
   namespace SingleThreadProxy {
+    type DidReceiveCompositorFrameAckOnImplThread = 
+      SingleThreadProxy.DidReceiveCompositorFrameAckOnImplThread.X;
+  
+    type DoCommit = 
+      SingleThreadProxy.DoCommit.X;
+  
+    type DoComposite = 
+      SingleThreadProxy.DoComposite.X;
+  
+    type NotifyReadyToActivate = 
+      SingleThreadProxy.NotifyReadyToActivate.X;
+  
+    type NotifyReadyToDraw = 
+      SingleThreadProxy.NotifyReadyToDraw.X;
+  
+    type OnCanDrawStateChanged = 
+      SingleThreadProxy.OnCanDrawStateChanged.X;
+  
+    type PostAnimationEventsToMainThreadOnImplThread = 
+      SingleThreadProxy.PostAnimationEventsToMainThreadOnImplThread.X;
+  
+    type ScheduledActionPrepareTiles = 
+      SingleThreadProxy.ScheduledActionPrepareTiles.X;
+  
+    type ScheduledActionSendBeginMainFrame = 
+      SingleThreadProxy.ScheduledActionSendBeginMainFrame.X;
+  
+    type SetDeferMainFrameUpdate = 
+      SingleThreadProxy.SetDeferMainFrameUpdate.F |
+      SingleThreadProxy.SetDeferMainFrameUpdate.S;
+  
+    type SetNeedsAnimate = 
+      SingleThreadProxy.SetNeedsAnimate.X;
+  
+    type SetNeedsOneBeginImplFrameOnImplThread = 
+      SingleThreadProxy.SetNeedsOneBeginImplFrameOnImplThread.X;
+  
+    type SetNeedsPrepareTilesOnImplThread = 
+      SingleThreadProxy.SetNeedsPrepareTilesOnImplThread.X;
+  
+    type SetNeedsUpdateLayers = 
+      SingleThreadProxy.SetNeedsUpdateLayers.X;
+  
+    type SetVisible = 
+      SingleThreadProxy.SetVisible.X;
+  
+    type SingleThreadProxy = 
+      SingleThreadProxy.SingleThreadProxy.X;
+  
     namespace DidReceiveCompositorFrameAckOnImplThread {
       interface X extends Base {
         args: {
@@ -24245,6 +28795,18 @@ export namespace TraceEvent {
   }
 
   namespace SingleThreadTaskGraphRunner {
+    type CollectCompletedTasks = 
+      SingleThreadTaskGraphRunner.CollectCompletedTasks.X;
+  
+    type RunTaskWithLockAcquired = 
+      SingleThreadTaskGraphRunner.RunTaskWithLockAcquired.X;
+  
+    type ScheduleTasks = 
+      SingleThreadTaskGraphRunner.ScheduleTasks.X;
+  
+    type WaitForTasksToFinishRunning = 
+      SingleThreadTaskGraphRunner.WaitForTasksToFinishRunning.X;
+  
     namespace CollectCompletedTasks {
       interface X extends Base {
         args: {
@@ -24300,6 +28862,15 @@ export namespace TraceEvent {
   }
 
   namespace SiteInstanceImpl {
+    type GetProcess = 
+      SiteInstanceImpl.GetProcess.X;
+  
+    type LockToOrigin = 
+      SiteInstanceImpl.LockToOrigin.X;
+  
+    type SetSite = 
+      SiteInstanceImpl.SetSite.X;
+  
     namespace GetProcess {
       interface X extends Base {
         args: {
@@ -24344,7 +28915,31 @@ export namespace TraceEvent {
   }
 
   namespace SkCanvas {
+    type DrawImageSkImageSkScalarSkScalarSkPaint = 
+      SkCanvas.DrawImageSkImageSkScalarSkScalarSkPaint.X;
+  
+    type DrawOvalSkRectSkPaint = 
+      SkCanvas.DrawOvalSkRectSkPaint.X;
+  
+    type DrawPaintSkPaint = 
+      SkCanvas.DrawPaintSkPaint.X;
+  
+    type DrawPathSkPathSkPaint = 
+      SkCanvas.DrawPathSkPathSkPaint.X;
+  
+    type DrawRectSkRectSkPaint = 
+      SkCanvas.DrawRectSkRectSkPaint.X;
+  
+    type DrawRRectSkRRectSkPaint = 
+      SkCanvas.DrawRRectSkRRectSkPaint.X;
+  
+    type DrawTextBlobSkTextBlobSkScalarSkScalarSkPaint = 
+      SkCanvas.DrawTextBlobSkTextBlobSkScalarSkScalarSkPaint.X;
+  
     namespace DrawImageRectSkImageSkRectSkRectSkPaintSkCanvas {
+      type SrcRectConstraint = 
+        SkCanvas.DrawImageRectSkImageSkRectSkRectSkPaintSkCanvas.SrcRectConstraint.X;
+    
       namespace SrcRectConstraint {
         interface X extends Base {
           args: {
@@ -24412,6 +29007,9 @@ export namespace TraceEvent {
     }
   
     namespace DrawPointsSkCanvas {
+      type PointModesize_tSkPointSkPaint = 
+        SkCanvas.DrawPointsSkCanvas.PointModesize_tSkPointSkPaint.X;
+    
       namespace PointModesize_tSkPointSkPaint {
         interface X extends Base {
           args: {
@@ -24467,6 +29065,9 @@ export namespace TraceEvent {
   
     namespace InternalSaveLayerSkCanvas {
       namespace SaveLayerRecSkCanvas {
+        type SaveLayerStrategy = 
+          SkCanvas.InternalSaveLayerSkCanvas.SaveLayerRecSkCanvas.SaveLayerStrategy.X;
+      
         namespace SaveLayerStrategy {
           interface X extends Base {
             args: {
@@ -24483,6 +29084,9 @@ export namespace TraceEvent {
     }
   
     namespace SaveLayerSkCanvas {
+      type SaveLayerRec = 
+        SkCanvas.SaveLayerSkCanvas.SaveLayerRec.X;
+    
       namespace SaveLayerRec {
         interface X extends Base {
           args: {
@@ -24499,6 +29103,39 @@ export namespace TraceEvent {
   }
 
   namespace SkGpuDevice {
+    type ClearAll = 
+      SkGpuDevice.ClearAll.X;
+  
+    type DrawDevice = 
+      SkGpuDevice.DrawDevice.X;
+  
+    type DrawGlyphRunList = 
+      SkGpuDevice.DrawGlyphRunList.X;
+  
+    type DrawOval = 
+      SkGpuDevice.DrawOval.X;
+  
+    type DrawPaint = 
+      SkGpuDevice.DrawPaint.X;
+  
+    type DrawPath = 
+      SkGpuDevice.DrawPath.X;
+  
+    type DrawPoints = 
+      SkGpuDevice.DrawPoints.X;
+  
+    type DrawRect = 
+      SkGpuDevice.DrawRect.X;
+  
+    type DrawRRect = 
+      SkGpuDevice.DrawRRect.X;
+  
+    type DrawSpecial = 
+      SkGpuDevice.DrawSpecial.X;
+  
+    type DrawStrokedLine = 
+      SkGpuDevice.DrawStrokedLine.X;
+  
     namespace ClearAll {
       interface X extends Base {
         args: {
@@ -24644,6 +29281,9 @@ export namespace TraceEvent {
   }
 
   namespace Skia_gpu {
+    type GLShader = 
+      Skia_gpu.GLShader.I;
+  
     namespace GLShader {
       interface I extends Base {
         args: {
@@ -24924,6 +29564,9 @@ export namespace TraceEvent {
   }
 
   namespace SocketPosix {
+    type OnFileCanReadWithoutBlocking = 
+      SocketPosix.OnFileCanReadWithoutBlocking.X;
+  
     namespace OnFileCanReadWithoutBlocking {
       interface X extends Base {
         args: {
@@ -24939,6 +29582,21 @@ export namespace TraceEvent {
   }
 
   namespace SoftwareImageDecodeCache {
+    type DecodeImageIfNecessary = 
+      SoftwareImageDecodeCache.DecodeImageIfNecessary.X;
+  
+    type DrawWithImageFinished = 
+      SoftwareImageDecodeCache.DrawWithImageFinished.X;
+  
+    type GetDecodedImageForDrawInternal = 
+      SoftwareImageDecodeCache.GetDecodedImageForDrawInternal.X;
+  
+    type ReduceCacheUsageUntilWithinLimit = 
+      SoftwareImageDecodeCache.ReduceCacheUsageUntilWithinLimit.X;
+  
+    type UnrefImage = 
+      SoftwareImageDecodeCache.UnrefImage.X;
+  
     namespace DecodeImageIfNecessary {
       interface X extends Base {
         args: {
@@ -25006,6 +29664,12 @@ export namespace TraceEvent {
   }
 
   namespace SolidColorAnalyzer {
+    type CheckIfRRectClipCoversCanvas = 
+      SolidColorAnalyzer.CheckIfRRectClipCoversCanvas.X;
+  
+    type CheckIfSolidShape = 
+      SolidColorAnalyzer.CheckIfSolidShape.X;
+  
     namespace CheckIfRRectClipCoversCanvas {
       interface X extends Base {
         args: {
@@ -25034,6 +29698,9 @@ export namespace TraceEvent {
   }
 
   namespace SpdySessionPool {
+    type CreateAvailableSessionFromSocket = 
+      SpdySessionPool.CreateAvailableSessionFromSocket.X;
+  
     namespace CreateAvailableSessionFromSocket {
       interface X extends Base {
         args: {
@@ -25070,6 +29737,12 @@ export namespace TraceEvent {
 
   namespace Spellcheck {
     namespace Mojom {
+      type SpellChecker = 
+        Spellcheck.Mojom.SpellChecker.X;
+    
+      type SpellCheckHost = 
+        Spellcheck.Mojom.SpellCheckHost.X;
+    
       namespace SpellChecker {
         interface X extends Base {
           args: {
@@ -25190,6 +29863,9 @@ export namespace TraceEvent {
   }
 
   namespace SSLClientSocketImpl {
+    type DoHandshakeLoop = 
+      SSLClientSocketImpl.DoHandshakeLoop.X;
+  
     namespace DoHandshakeLoop {
       interface X extends Base {
         args: {
@@ -25205,6 +29881,12 @@ export namespace TraceEvent {
   }
 
   namespace SSLConnectJob {
+    type DoLoop = 
+      SSLConnectJob.DoLoop.X;
+  
+    type DoSSLConnect = 
+      SSLConnectJob.DoSSLConnect.X;
+  
     namespace DoLoop {
       interface X extends Base {
         args: {
@@ -25246,6 +29928,15 @@ export namespace TraceEvent {
   }
 
   namespace StackSamplingProfiler {
+    type StackSamplingProfiler = 
+      StackSamplingProfiler.StackSamplingProfiler.X;
+  
+    type Start = 
+      StackSamplingProfiler.Start.X;
+  
+    type Started = 
+      StackSamplingProfiler.Started.X;
+  
     namespace StackSamplingProfiler {
       interface X extends Base {
         args: {
@@ -25301,6 +29992,9 @@ export namespace TraceEvent {
 
   namespace Startup_metric_utils {
     namespace Mojom {
+      type StartupMetricHost = 
+        Startup_metric_utils.Mojom.StartupMetricHost.X;
+    
       namespace StartupMetricHost {
         interface X extends Base {
           args: {
@@ -25318,6 +30012,9 @@ export namespace TraceEvent {
 
   namespace StructTraits {
     namespace CompositorFrame {
+      type Read = 
+        StructTraits.CompositorFrame.Read.X;
+    
       namespace Read {
         interface X extends Base {
           args: {
@@ -25333,6 +30030,9 @@ export namespace TraceEvent {
     }
   
     namespace RenderPass {
+      type Read = 
+        StructTraits.RenderPass.Read.X;
+    
       namespace Read {
         interface X extends Base {
           args: {
@@ -25348,6 +30048,9 @@ export namespace TraceEvent {
     }
   
     namespace TransferableResource {
+      type Read = 
+        StructTraits.TransferableResource.Read.X;
+    
       namespace Read {
         interface X extends Base {
           args: {
@@ -25364,6 +30067,9 @@ export namespace TraceEvent {
   }
 
   namespace StyleElement {
+    type ProcessStyleSheet = 
+      StyleElement.ProcessStyleSheet.X;
+  
     namespace ProcessStyleSheet {
       interface X extends Base {
         args: {
@@ -25379,6 +30085,15 @@ export namespace TraceEvent {
   }
 
   namespace StyleEngine {
+    type ClearResolver = 
+      StyleEngine.ClearResolver.X;
+  
+    type ScheduleInvalidationsForRuleSets = 
+      StyleEngine.ScheduleInvalidationsForRuleSets.X;
+  
+    type UpdateActiveStyleSheets = 
+      StyleEngine.UpdateActiveStyleSheets.X;
+  
     namespace ClearResolver {
       interface X extends Base {
         args: {
@@ -25458,6 +30173,9 @@ export namespace TraceEvent {
   }
 
   namespace SubmitCompositorFrame {
+    type TimeElapsed = 
+      SubmitCompositorFrame.TimeElapsed.I;
+  
     namespace TimeElapsed {
       interface I extends Base {
         args: {
@@ -25517,6 +30235,15 @@ export namespace TraceEvent {
   }
 
   namespace SubresourceFilterSafeBrowsingActivationThrottle {
+    type DoesMainFrameURLSatisfyActivationConditions = 
+      SubresourceFilterSafeBrowsingActivationThrottle.DoesMainFrameURLSatisfyActivationConditions.X;
+  
+    type GetHighestPriorityConfiguration = 
+      SubresourceFilterSafeBrowsingActivationThrottle.GetHighestPriorityConfiguration.X;
+  
+    type NotifyResult = 
+      SubresourceFilterSafeBrowsingActivationThrottle.NotifyResult.X;
+  
     namespace DoesMainFrameURLSatisfyActivationConditions {
       interface X extends Base {
         args: {
@@ -25619,6 +30346,12 @@ export namespace TraceEvent {
   }
 
   namespace Surface {
+    type ActivateFrame = 
+      Surface.ActivateFrame.X;
+  
+    type OnDeadline = 
+      Surface.OnDeadline.X;
+  
     namespace ActivateFrame {
       interface X extends Base {
         args: {
@@ -25667,6 +30400,9 @@ export namespace TraceEvent {
   }
 
   namespace SurfaceLayer {
+    type PushPropertiesTo = 
+      SurfaceLayer.PushPropertiesTo.X;
+  
     namespace PushPropertiesTo {
       interface X extends Base {
         args: {
@@ -25682,6 +30418,9 @@ export namespace TraceEvent {
   }
 
   namespace SurfaceManager {
+    type GarbageCollectSurfaces = 
+      SurfaceManager.GarbageCollectSurfaces.X;
+  
     namespace GarbageCollectSurfaces {
       interface X extends Base {
         args: {
@@ -25734,6 +30473,10 @@ export namespace TraceEvent {
   }
 
   namespace SyncChannel {
+    type Send = 
+      SyncChannel.Send.f |
+      SyncChannel.Send.X;
+  
     namespace Send {
       interface f extends Base {
         args: {
@@ -25759,6 +30502,9 @@ export namespace TraceEvent {
     }
   
     namespace SyncContext {
+      type TryToUnblockListener = 
+        SyncChannel.SyncContext.TryToUnblockListener.s;
+    
       namespace TryToUnblockListener {
         interface s extends Base {
           args: {
@@ -25774,6 +30520,9 @@ export namespace TraceEvent {
   }
 
   namespace TabManager {
+    type LoadNextBackgroundTabIfNeeded = 
+      TabManager.LoadNextBackgroundTabIfNeeded.I;
+  
     namespace LoadNextBackgroundTabIfNeeded {
       interface I extends Base {
         args: {
@@ -25793,6 +30542,10 @@ export namespace TraceEvent {
   }
 
   namespace TabSwitching {
+    type Latency = 
+      TabSwitching.Latency.F |
+      TabSwitching.Latency.S;
+  
     namespace Latency {
       interface F extends Base {
         args: {
@@ -25843,6 +30596,9 @@ export namespace TraceEvent {
   }
 
   namespace TaskGraphRunner {
+    type RunTask = 
+      TaskGraphRunner.RunTask.X;
+  
     namespace RunTask {
       interface X extends Base {
         args: {
@@ -25858,6 +30614,9 @@ export namespace TraceEvent {
   }
 
   namespace TaskQueueManager {
+    type ProcessTaskFromWorkQueue = 
+      TaskQueueManager.ProcessTaskFromWorkQueue.X;
+  
     namespace ProcessTaskFromWorkQueue {
       interface X extends Base {
         args: {
@@ -25900,6 +30659,15 @@ export namespace TraceEvent {
   }
 
   namespace TaskQueueThrottler {
+    type MaybeSchedulePumpThrottledTasks = 
+      TaskQueueThrottler.MaybeSchedulePumpThrottledTasks.X;
+  
+    type OnQueueNextWakeUpChanged = 
+      TaskQueueThrottler.OnQueueNextWakeUpChanged.X;
+  
+    type PumpThrottledTasks = 
+      TaskQueueThrottler.PumpThrottledTasks.X;
+  
     namespace MaybeSchedulePumpThrottledTasks {
       interface X extends Base {
         args: {
@@ -25972,6 +30740,9 @@ export namespace TraceEvent {
   }
 
   namespace TaskSetFinishedTaskImpl {
+    type RunOnWorkerThread = 
+      TaskSetFinishedTaskImpl.RunOnWorkerThread.X;
+  
     namespace RunOnWorkerThread {
       interface X extends Base {
         args: {
@@ -25987,6 +30758,9 @@ export namespace TraceEvent {
   }
 
   namespace TaskTracker {
+    type RunTask = 
+      TaskTracker.RunTask.X;
+  
     namespace RunTask {
       interface X extends Base {
         args: {
@@ -26108,6 +30882,9 @@ export namespace TraceEvent {
   }
 
   namespace Textfield {
+    type PaintTextAndCursor = 
+      Textfield.PaintTextAndCursor.X;
+  
     namespace PaintTextAndCursor {
       interface X extends Base {
         args: {
@@ -26123,6 +30900,9 @@ export namespace TraceEvent {
   }
 
   namespace TextureManager {
+    type ValidateAndDoTexSubImage = 
+      TextureManager.ValidateAndDoTexSubImage.X;
+  
     namespace ValidateAndDoTexSubImage {
       interface X extends Base {
         args: {
@@ -26171,6 +30951,12 @@ export namespace TraceEvent {
   }
 
   namespace ThreadControllerImpl {
+    type DoWork = 
+      ThreadControllerImpl.DoWork.X;
+  
+    type RunTask = 
+      ThreadControllerImpl.RunTask.X;
+  
     namespace DoWork {
       interface X extends Base {
         args: {
@@ -26202,6 +30988,9 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleWork {
+      type PostTask = 
+        ThreadControllerImpl.ScheduleWork.PostTask.X;
+    
       namespace PostTask {
         interface X extends Base {
           args: {
@@ -26218,6 +31007,14 @@ export namespace TraceEvent {
   }
 
   namespace ThreadProxy {
+    type BeginMainFrame = 
+      ThreadProxy.BeginMainFrame.B |
+      ThreadProxy.BeginMainFrame.E;
+  
+    type ScheduledActionSendBeginMainFrame = 
+      ThreadProxy.ScheduledActionSendBeginMainFrame.B |
+      ThreadProxy.ScheduledActionSendBeginMainFrame.E;
+  
     namespace BeginMainFrame {
       interface B extends Base {
         args: {
@@ -26260,6 +31057,21 @@ export namespace TraceEvent {
   }
 
   namespace ThreadState {
+    type HeapEstimatedSizeKB = 
+      ThreadState.HeapEstimatedSizeKB.C;
+  
+    type HeapGrowingRate = 
+      ThreadState.HeapGrowingRate.C;
+  
+    type PartitionAllocEstimatedSizeKB = 
+      ThreadState.PartitionAllocEstimatedSizeKB.C;
+  
+    type PartitionAllocGrowingRate = 
+      ThreadState.PartitionAllocGrowingRate.C;
+  
+    type PerformIdleLazySweep = 
+      ThreadState.PerformIdleLazySweep.X;
+  
     namespace HeapEstimatedSizeKB {
       interface C extends Base {
         args: {
@@ -26319,6 +31131,58 @@ export namespace TraceEvent {
   }
 
   namespace TileManager {
+    type AssignGpuMemorytileviolatesmemorypolicy = 
+      TileManager.AssignGpuMemorytileviolatesmemorypolicy.I;
+  
+    type AssignGpuMemoryToTiles = 
+      TileManager.AssignGpuMemoryToTiles.B |
+      TileManager.AssignGpuMemoryToTiles.E;
+  
+    type CheckForCompletedTasks = 
+      TileManager.CheckForCompletedTasks.X;
+  
+    type CheckForCompletedTasksFinished = 
+      TileManager.CheckForCompletedTasksFinished.I;
+  
+    type CheckPendingGpuWorkAndIssueSignals = 
+      TileManager.CheckPendingGpuWorkAndIssueSignals.X;
+  
+    type CreateRasterTask = 
+      TileManager.CreateRasterTask.X;
+  
+    type DidFinishRunningAllTileTasks = 
+      TileManager.DidFinishRunningAllTileTasks.X;
+  
+    type DidFinishRunningTileTasksRequiredForActivation = 
+      TileManager.DidFinishRunningTileTasksRequiredForActivation.X;
+  
+    type DidFinishRunningTileTasksRequiredForDraw = 
+      TileManager.DidFinishRunningTileTasksRequiredForDraw.X;
+  
+    type FlushAndIssueSignals = 
+      TileManager.FlushAndIssueSignals.X;
+  
+    type IsReadyToActivate = 
+      TileManager.IsReadyToActivate.X;
+  
+    type IsReadyToDraw = 
+      TileManager.IsReadyToDraw.X;
+  
+    type IssueSignalsalltiletaskscompleted = 
+      TileManager.IssueSignalsalltiletaskscompleted.X;
+  
+    type IssueSignalsreadytoactivate = 
+      TileManager.IssueSignalsreadytoactivate.X;
+  
+    type IssueSignalsreadytodraw = 
+      TileManager.IssueSignalsreadytodraw.X;
+  
+    type PrepareTiles = 
+      TileManager.PrepareTiles.X;
+  
+    type ScheduleTasks = 
+      TileManager.ScheduleTasks.X;
+  
     namespace AssignGpuMemorytileviolatesmemorypolicy {
       interface I extends Base {
         args: {
@@ -26552,6 +31416,15 @@ export namespace TraceEvent {
   }
 
   namespace TileTaskManagerImpl {
+    type CheckForCompletedTasks = 
+      TileTaskManagerImpl.CheckForCompletedTasks.X;
+  
+    type ScheduleTasks = 
+      TileTaskManagerImpl.ScheduleTasks.X;
+  
+    type Shutdown = 
+      TileTaskManagerImpl.Shutdown.X;
+  
     namespace CheckForCompletedTasks {
       interface X extends Base {
         args: {
@@ -26593,6 +31466,18 @@ export namespace TraceEvent {
   }
 
   namespace TimeoutMonitor {
+    type Restart = 
+      TimeoutMonitor.Restart.I;
+  
+    type Start = 
+      TimeoutMonitor.Start.I;
+  
+    type Stop = 
+      TimeoutMonitor.Stop.I;
+  
+    type TimeOutHandler = 
+      TimeoutMonitor.TimeOutHandler.X;
+  
     namespace Restart {
       interface I extends Base {
         args: {
@@ -26664,6 +31549,9 @@ export namespace TraceEvent {
   }
 
   namespace TimerBase {
+    type Run = 
+      TimerBase.Run.X;
+  
     namespace Run {
       interface X extends Base {
         args: {
@@ -26859,6 +31747,9 @@ export namespace TraceEvent {
   }
 
   namespace ToSpaceUpdatingItem {
+    type ProcessVisitAll = 
+      ToSpaceUpdatingItem.ProcessVisitAll.X;
+  
     namespace ProcessVisitAll {
       interface X extends Base {
         args: {
@@ -26885,6 +31776,21 @@ export namespace TraceEvent {
 
   namespace Tracing {
     namespace Mojom {
+      type Agent = 
+        Tracing.Mojom.Agent.X;
+    
+      type AgentRegistry = 
+        Tracing.Mojom.AgentRegistry.X;
+    
+      type Coordinator = 
+        Tracing.Mojom.Coordinator.X;
+    
+      type PerfettoService = 
+        Tracing.Mojom.PerfettoService.X;
+    
+      type ProducerHost = 
+        Tracing.Mojom.ProducerHost.X;
+    
       namespace Agent {
         interface X extends Base {
           args: {
@@ -27032,6 +31938,9 @@ export namespace TraceEvent {
   }
 
   namespace TransferBuffer {
+    type Free = 
+      TransferBuffer.Free.X;
+  
     namespace Free {
       interface X extends Base {
         args: {
@@ -27070,6 +31979,9 @@ export namespace TraceEvent {
 
   namespace Translate {
     namespace Mojom {
+      type ContentTranslateDriver = 
+        Translate.Mojom.ContentTranslateDriver.X;
+    
       namespace ContentTranslateDriver {
         interface X extends Base {
           args: {
@@ -27086,6 +31998,9 @@ export namespace TraceEvent {
   }
 
   namespace TransportConnectJob {
+    type DoResolveHostComplete = 
+      TransportConnectJob.DoResolveHostComplete.X;
+  
     namespace DoResolveHostComplete {
       interface X extends Base {
         args: {
@@ -27101,7 +32016,16 @@ export namespace TraceEvent {
   }
 
   namespace TreeSynchronizer {
+    type SynchronizeTrees = 
+      TreeSynchronizer.SynchronizeTrees.X;
+  
     namespace PushLayerPropertiesTo {
+      type Impl = 
+        TreeSynchronizer.PushLayerPropertiesTo.Impl.X;
+    
+      type Main = 
+        TreeSynchronizer.PushLayerPropertiesTo.Main.X;
+    
       namespace Impl {
         interface X extends Base {
           args: {
@@ -27228,6 +32152,9 @@ export namespace TraceEvent {
 
   namespace UDPSocketPosix {
     namespace ReadWatcher {
+      type OnFileCanReadWithoutBlocking = 
+        UDPSocketPosix.ReadWatcher.OnFileCanReadWithoutBlocking.X;
+    
       namespace OnFileCanReadWithoutBlocking {
         interface X extends Base {
           args: {
@@ -27245,6 +32172,9 @@ export namespace TraceEvent {
 
   namespace Ukm {
     namespace Mojom {
+      type UkmRecorderInterface = 
+        Ukm.Mojom.UkmRecorderInterface.X;
+    
       namespace UkmRecorderInterface {
         interface X extends Base {
           args: {
@@ -27659,6 +32589,9 @@ export namespace TraceEvent {
   }
 
   namespace UrlPatternIndexMatcher {
+    type FindMatch = 
+      UrlPatternIndexMatcher.FindMatch.X;
+  
     namespace FindMatch {
       interface X extends Base {
         args: {
@@ -27674,6 +32607,12 @@ export namespace TraceEvent {
   }
 
   namespace URLRequestHttpJob {
+    type OnReadCompleted = 
+      URLRequestHttpJob.OnReadCompleted.X;
+  
+    type OnStartCompleted = 
+      URLRequestHttpJob.OnStartCompleted.X;
+  
     namespace OnReadCompleted {
       interface X extends Base {
         args: {
@@ -27751,6 +32690,768 @@ export namespace TraceEvent {
   }
 
   namespace V8 {
+    type Builtin_ArrayConcat = 
+      V8.Builtin_ArrayConcat.X;
+  
+    type Builtin_ArrayPop = 
+      V8.Builtin_ArrayPop.X;
+  
+    type Builtin_ArrayPush = 
+      V8.Builtin_ArrayPush.X;
+  
+    type Builtin_ArrayShift = 
+      V8.Builtin_ArrayShift.X;
+  
+    type Builtin_ArrayUnshift = 
+      V8.Builtin_ArrayUnshift.X;
+  
+    type Builtin_BooleanConstructor = 
+      V8.Builtin_BooleanConstructor.X;
+  
+    type Builtin_ConsoleLog = 
+      V8.Builtin_ConsoleLog.X;
+  
+    type Builtin_ConsoleWarn = 
+      V8.Builtin_ConsoleWarn.X;
+  
+    type Builtin_DateConstructor = 
+      V8.Builtin_DateConstructor.X;
+  
+    type Builtin_DateNow = 
+      V8.Builtin_DateNow.X;
+  
+    type Builtin_DatePrototypeSetTime = 
+      V8.Builtin_DatePrototypeSetTime.X;
+  
+    type Builtin_DatePrototypeToUTCString = 
+      V8.Builtin_DatePrototypeToUTCString.X;
+  
+    type Builtin_ErrorConstructor = 
+      V8.Builtin_ErrorConstructor.X;
+  
+    type Builtin_FunctionConstructor = 
+      V8.Builtin_FunctionConstructor.X;
+  
+    type Builtin_FunctionPrototypeBind = 
+      V8.Builtin_FunctionPrototypeBind.X;
+  
+    type Builtin_FunctionPrototypeToString = 
+      V8.Builtin_FunctionPrototypeToString.X;
+  
+    type Builtin_GlobalDecodeURI = 
+      V8.Builtin_GlobalDecodeURI.X;
+  
+    type Builtin_GlobalDecodeURIComponent = 
+      V8.Builtin_GlobalDecodeURIComponent.X;
+  
+    type Builtin_GlobalEncodeURIComponent = 
+      V8.Builtin_GlobalEncodeURIComponent.X;
+  
+    type Builtin_GlobalEval = 
+      V8.Builtin_GlobalEval.X;
+  
+    type Builtin_HandleApiCall = 
+      V8.Builtin_HandleApiCall.X;
+  
+    type Builtin_JsonParse = 
+      V8.Builtin_JsonParse.X;
+  
+    type Builtin_JsonStringify = 
+      V8.Builtin_JsonStringify.X;
+  
+    type Builtin_MapPrototypeClear = 
+      V8.Builtin_MapPrototypeClear.X;
+  
+    type Builtin_NumberPrototypeToFixed = 
+      V8.Builtin_NumberPrototypeToFixed.X;
+  
+    type Builtin_NumberPrototypeToString = 
+      V8.Builtin_NumberPrototypeToString.X;
+  
+    type Builtin_ObjectDefineGetter = 
+      V8.Builtin_ObjectDefineGetter.X;
+  
+    type Builtin_ObjectDefineProperties = 
+      V8.Builtin_ObjectDefineProperties.X;
+  
+    type Builtin_ObjectDefineProperty = 
+      V8.Builtin_ObjectDefineProperty.X;
+  
+    type Builtin_ObjectFreeze = 
+      V8.Builtin_ObjectFreeze.X;
+  
+    type Builtin_ObjectGetPrototypeOf = 
+      V8.Builtin_ObjectGetPrototypeOf.X;
+  
+    type Builtin_ObjectLookupGetter = 
+      V8.Builtin_ObjectLookupGetter.X;
+  
+    type Builtin_ObjectPrototypeGetProto = 
+      V8.Builtin_ObjectPrototypeGetProto.X;
+  
+    type Builtin_ObjectPrototypePropertyIsEnumerable = 
+      V8.Builtin_ObjectPrototypePropertyIsEnumerable.X;
+  
+    type Builtin_ObjectPrototypeSetProto = 
+      V8.Builtin_ObjectPrototypeSetProto.X;
+  
+    type Builtin_ObjectSetPrototypeOf = 
+      V8.Builtin_ObjectSetPrototypeOf.X;
+  
+    type Builtin_RegExpPrototypeToString = 
+      V8.Builtin_RegExpPrototypeToString.X;
+  
+    type Builtin_SetPrototypeClear = 
+      V8.Builtin_SetPrototypeClear.X;
+  
+    type Builtin_StringPrototypeEndsWith = 
+      V8.Builtin_StringPrototypeEndsWith.X;
+  
+    type Builtin_StringPrototypeLastIndexOf = 
+      V8.Builtin_StringPrototypeLastIndexOf.X;
+  
+    type Builtin_StringPrototypeStartsWith = 
+      V8.Builtin_StringPrototypeStartsWith.X;
+  
+    type Builtin_StringPrototypeToUpperCaseIntl = 
+      V8.Builtin_StringPrototypeToUpperCaseIntl.X;
+  
+    type CallFunction = 
+      V8.CallFunction.X;
+  
+    type Compile = 
+      V8.Compile.B |
+      V8.Compile.E |
+      V8.Compile.X;
+  
+    type CompileCode = 
+      V8.CompileCode.X;
+  
+    type CompileCodeBackground = 
+      V8.CompileCodeBackground.X;
+  
+    type CompileEval = 
+      V8.CompileEval.X;
+  
+    type CompileIgnition = 
+      V8.CompileIgnition.X;
+  
+    type CompileIgnitionFinalization = 
+      V8.CompileIgnitionFinalization.X;
+  
+    type CompileScript = 
+      V8.CompileScript.X;
+  
+    type CompileStreamedScript = 
+      V8.CompileStreamedScript.X;
+  
+    type DeoptimizeCode = 
+      V8.DeoptimizeCode.X;
+  
+    type ExternalCallback = 
+      V8.ExternalCallback.B |
+      V8.ExternalCallback.E;
+  
+    type GC_BACKGROUND_ARRAY_BUFFER_FREE = 
+      V8.GC_BACKGROUND_ARRAY_BUFFER_FREE.X;
+  
+    type GC_BACKGROUND_STORE_BUFFER = 
+      V8.GC_BACKGROUND_STORE_BUFFER.X;
+  
+    type GC_BACKGROUND_UNMAPPER = 
+      V8.GC_BACKGROUND_UNMAPPER.X;
+  
+    type GC_HEAP_EMBEDDER_TRACING_EPILOGUE = 
+      V8.GC_HEAP_EMBEDDER_TRACING_EPILOGUE.X;
+  
+    type GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE = 
+      V8.GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE.X;
+  
+    type GC_HEAP_EPILOGUE = 
+      V8.GC_HEAP_EPILOGUE.X;
+  
+    type GC_HEAP_EXTERNAL_EPILOGUE = 
+      V8.GC_HEAP_EXTERNAL_EPILOGUE.X;
+  
+    type GC_HEAP_EXTERNAL_PROLOGUE = 
+      V8.GC_HEAP_EXTERNAL_PROLOGUE.X;
+  
+    type GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES = 
+      V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES.X;
+  
+    type GC_HEAP_PROLOGUE = 
+      V8.GC_HEAP_PROLOGUE.X;
+  
+    type GC_MC_BACKGROUND_EVACUATE_COPY = 
+      V8.GC_MC_BACKGROUND_EVACUATE_COPY.X;
+  
+    type GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS = 
+      V8.GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS.X;
+  
+    type GC_MC_BACKGROUND_MARKING = 
+      V8.GC_MC_BACKGROUND_MARKING.X;
+  
+    type GC_MC_BACKGROUND_SWEEPING = 
+      V8.GC_MC_BACKGROUND_SWEEPING.X;
+  
+    type GC_MC_CLEAR_FLUSHABLE_BYTECODE = 
+      V8.GC_MC_CLEAR_FLUSHABLE_BYTECODE.X;
+  
+    type GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS = 
+      V8.GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS.X;
+  
+    type GC_MC_CLEAR_MAPS = 
+      V8.GC_MC_CLEAR_MAPS.X;
+  
+    type GC_MC_CLEAR_STRING_TABLE = 
+      V8.GC_MC_CLEAR_STRING_TABLE.X;
+  
+    type GC_MC_CLEAR_WEAK_COLLECTIONS = 
+      V8.GC_MC_CLEAR_WEAK_COLLECTIONS.X;
+  
+    type GC_MC_CLEAR_WEAK_LISTS = 
+      V8.GC_MC_CLEAR_WEAK_LISTS.X;
+  
+    type GC_MC_CLEAR_WEAK_REFERENCES = 
+      V8.GC_MC_CLEAR_WEAK_REFERENCES.X;
+  
+    type GC_MC_CLEAR = 
+      V8.GC_MC_CLEAR.X;
+  
+    type GC_MC_EPILOGUE = 
+      V8.GC_MC_EPILOGUE.X;
+  
+    type GC_MC_EVACUATE_CLEAN_UP = 
+      V8.GC_MC_EVACUATE_CLEAN_UP.X;
+  
+    type GC_MC_EVACUATE_COPY = 
+      V8.GC_MC_EVACUATE_COPY.X;
+  
+    type GC_MC_EVACUATE_EPILOGUE = 
+      V8.GC_MC_EVACUATE_EPILOGUE.X;
+  
+    type GC_MC_EVACUATE_PROLOGUE = 
+      V8.GC_MC_EVACUATE_PROLOGUE.X;
+  
+    type GC_MC_EVACUATE_REBALANCE = 
+      V8.GC_MC_EVACUATE_REBALANCE.X;
+  
+    type GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN = 
+      V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN.X;
+  
+    type GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE = 
+      V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE.X;
+  
+    type GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS = 
+      V8.GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS.X;
+  
+    type GC_MC_EVACUATE_UPDATE_POINTERS_WEAK = 
+      V8.GC_MC_EVACUATE_UPDATE_POINTERS_WEAK.X;
+  
+    type GC_MC_EVACUATE_UPDATE_POINTERS = 
+      V8.GC_MC_EVACUATE_UPDATE_POINTERS.X;
+  
+    type GC_MC_EVACUATE = 
+      V8.GC_MC_EVACUATE.X;
+  
+    type GC_MC_FINISH = 
+      V8.GC_MC_FINISH.X;
+  
+    type GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE = 
+      V8.GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE.X;
+  
+    type GC_MC_INCREMENTAL_EMBEDDER_TRACING = 
+      V8.GC_MC_INCREMENTAL_EMBEDDER_TRACING.X;
+  
+    type GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE = 
+      V8.GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE.X;
+  
+    type GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE = 
+      V8.GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE.X;
+  
+    type GC_MC_INCREMENTAL_FINALIZE_BODY = 
+      V8.GC_MC_INCREMENTAL_FINALIZE_BODY.X;
+  
+    type GC_MC_INCREMENTAL_FINALIZE = 
+      V8.GC_MC_INCREMENTAL_FINALIZE.X;
+  
+    type GC_MC_INCREMENTAL_LAYOUT_CHANGE = 
+      V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE.X;
+  
+    type GC_MC_INCREMENTAL_START = 
+      V8.GC_MC_INCREMENTAL_START.X;
+  
+    type GC_MC_INCREMENTAL_SWEEPING = 
+      V8.GC_MC_INCREMENTAL_SWEEPING.X;
+  
+    type GC_MC_INCREMENTAL = 
+      V8.GC_MC_INCREMENTAL.X;
+  
+    type GC_MC_MARK_EMBEDDER_TRACING_CLOSURE = 
+      V8.GC_MC_MARK_EMBEDDER_TRACING_CLOSURE.X;
+  
+    type GC_MC_MARK_EMBEDDER_TRACING = 
+      V8.GC_MC_MARK_EMBEDDER_TRACING.X;
+  
+    type GC_MC_MARK_FINISH_INCREMENTAL = 
+      V8.GC_MC_MARK_FINISH_INCREMENTAL.X;
+  
+    type GC_MC_MARK_MAIN = 
+      V8.GC_MC_MARK_MAIN.X;
+  
+    type GC_MC_MARK_ROOTS = 
+      V8.GC_MC_MARK_ROOTS.X;
+  
+    type GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING = 
+      V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING.X;
+  
+    type GC_MC_MARK_WEAK_CLOSURE_EPHEMERON = 
+      V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON.X;
+  
+    type GC_MC_MARK_WEAK_CLOSURE_HARMONY = 
+      V8.GC_MC_MARK_WEAK_CLOSURE_HARMONY.X;
+  
+    type GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES = 
+      V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES.X;
+  
+    type GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS = 
+      V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS.X;
+  
+    type GC_MC_MARK_WEAK_CLOSURE = 
+      V8.GC_MC_MARK_WEAK_CLOSURE.X;
+  
+    type GC_MC_MARK = 
+      V8.GC_MC_MARK.X;
+  
+    type GC_MC_PROLOGUE = 
+      V8.GC_MC_PROLOGUE.X;
+  
+    type GC_MC_SWEEP = 
+      V8.GC_MC_SWEEP.X;
+  
+    type GC_Objects_Stats = 
+      V8.GC_Objects_Stats.I;
+  
+    type GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL = 
+      V8.GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL.X;
+  
+    type GC_SCAVENGER_PROCESS_ARRAY_BUFFERS = 
+      V8.GC_SCAVENGER_PROCESS_ARRAY_BUFFERS.X;
+  
+    type GC_SCAVENGER_SCAVENGE_FINALIZE = 
+      V8.GC_SCAVENGER_SCAVENGE_FINALIZE.X;
+  
+    type GC_SCAVENGER_SCAVENGE_PARALLEL = 
+      V8.GC_SCAVENGER_SCAVENGE_PARALLEL.X;
+  
+    type GC_SCAVENGER_SCAVENGE_ROOTS = 
+      V8.GC_SCAVENGER_SCAVENGE_ROOTS.X;
+  
+    type GC_SCAVENGER_SCAVENGE_UPDATE_REFS = 
+      V8.GC_SCAVENGER_SCAVENGE_UPDATE_REFS.X;
+  
+    type GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY = 
+      V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY.X;
+  
+    type GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS = 
+      V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS.X;
+  
+    type GC_SCAVENGER_SCAVENGE = 
+      V8.GC_SCAVENGER_SCAVENGE.X;
+  
+    type GCCompactor = 
+      V8.GCCompactor.X;
+  
+    type GCFinalizeMC = 
+      V8.GCFinalizeMC.X;
+  
+    type GCFinalizeMCReduceMemory = 
+      V8.GCFinalizeMCReduceMemory.X;
+  
+    type GCIdleNotification = 
+      V8.GCIdleNotification.X;
+  
+    type GCIncrementalMarking = 
+      V8.GCIncrementalMarking.X;
+  
+    type GCIncrementalMarkingFinalize = 
+      V8.GCIncrementalMarkingFinalize.X;
+  
+    type GCIncrementalMarkingLayoutChange = 
+      V8.GCIncrementalMarkingLayoutChange.X;
+  
+    type GCIncrementalMarkingStart = 
+      V8.GCIncrementalMarkingStart.X;
+  
+    type GCMarkCompactorMarkingSummary = 
+      V8.GCMarkCompactorMarkingSummary.I;
+  
+    type GCMarkCompactorSummary = 
+      V8.GCMarkCompactorSummary.I;
+  
+    type GCPhantomHandleProcessingCallback = 
+      V8.GCPhantomHandleProcessingCallback.X;
+  
+    type GCScavenger = 
+      V8.GCScavenger.X;
+  
+    type HandleInterrupts = 
+      V8.HandleInterrupts.X;
+  
+    type ICStats = 
+      V8.ICStats.I;
+  
+    type InvokeApiInterruptCallbacks = 
+      V8.InvokeApiInterruptCallbacks.X;
+  
+    type NewContext = 
+      V8.NewContext.B |
+      V8.NewContext.E;
+  
+    type NewInstance = 
+      V8.NewInstance.X;
+  
+    type OptimizeCode = 
+      V8.OptimizeCode.X;
+  
+    type ParseFunction = 
+      V8.ParseFunction.X;
+  
+    type ParseOnBackground = 
+      V8.ParseOnBackground.X;
+  
+    type ParseProgram = 
+      V8.ParseProgram.X;
+  
+    type PreParse = 
+      V8.PreParse.X;
+  
+    type RecompileConcurrent = 
+      V8.RecompileConcurrent.X;
+  
+    type RecompileSynchronous = 
+      V8.RecompileSynchronous.X;
+  
+    type Run = 
+      V8.Run.X;
+  
+    type Runtime_Runtime_AddDictionaryProperty = 
+      V8.Runtime_Runtime_AddDictionaryProperty.X;
+  
+    type Runtime_Runtime_AllocateInNewSpace = 
+      V8.Runtime_Runtime_AllocateInNewSpace.X;
+  
+    type Runtime_Runtime_AllocateInTargetSpace = 
+      V8.Runtime_Runtime_AllocateInTargetSpace.X;
+  
+    type Runtime_Runtime_AllocateSeqTwoByteString = 
+      V8.Runtime_Runtime_AllocateSeqTwoByteString.X;
+  
+    type Runtime_Runtime_ArrayIndexOf = 
+      V8.Runtime_Runtime_ArrayIndexOf.X;
+  
+    type Runtime_Runtime_ArraySpeciesConstructor = 
+      V8.Runtime_Runtime_ArraySpeciesConstructor.X;
+  
+    type Runtime_Runtime_CompileLazy = 
+      V8.Runtime_Runtime_CompileLazy.X;
+  
+    type Runtime_Runtime_CompileOptimized_Concurrent = 
+      V8.Runtime_Runtime_CompileOptimized_Concurrent.X;
+  
+    type Runtime_Runtime_CompleteInobjectSlackTrackingForMap = 
+      V8.Runtime_Runtime_CompleteInobjectSlackTrackingForMap.X;
+  
+    type Runtime_Runtime_CreateArrayLiteral = 
+      V8.Runtime_Runtime_CreateArrayLiteral.X;
+  
+    type Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite = 
+      V8.Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite.X;
+  
+    type Runtime_Runtime_CreateDataProperty = 
+      V8.Runtime_Runtime_CreateDataProperty.X;
+  
+    type Runtime_Runtime_CreateJSGeneratorObject = 
+      V8.Runtime_Runtime_CreateJSGeneratorObject.X;
+  
+    type Runtime_Runtime_CreateListFromArrayLike = 
+      V8.Runtime_Runtime_CreateListFromArrayLike.X;
+  
+    type Runtime_Runtime_CreateObjectLiteral = 
+      V8.Runtime_Runtime_CreateObjectLiteral.X;
+  
+    type Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite = 
+      V8.Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite.X;
+  
+    type Runtime_Runtime_CreateRegExpLiteral = 
+      V8.Runtime_Runtime_CreateRegExpLiteral.X;
+  
+    type Runtime_Runtime_DateCurrentTime = 
+      V8.Runtime_Runtime_DateCurrentTime.X;
+  
+    type Runtime_Runtime_DeclareEvalFunction = 
+      V8.Runtime_Runtime_DeclareEvalFunction.X;
+  
+    type Runtime_Runtime_DeclareGlobals = 
+      V8.Runtime_Runtime_DeclareGlobals.X;
+  
+    type Runtime_Runtime_DefineAccessorPropertyUnchecked = 
+      V8.Runtime_Runtime_DefineAccessorPropertyUnchecked.X;
+  
+    type Runtime_Runtime_DefineClass = 
+      V8.Runtime_Runtime_DefineClass.X;
+  
+    type Runtime_Runtime_DefineDataPropertyInLiteral = 
+      V8.Runtime_Runtime_DefineDataPropertyInLiteral.X;
+  
+    type Runtime_Runtime_DeleteProperty = 
+      V8.Runtime_Runtime_DeleteProperty.X;
+  
+    type Runtime_Runtime_ElementsTransitionAndStoreIC_Miss = 
+      V8.Runtime_Runtime_ElementsTransitionAndStoreIC_Miss.X;
+  
+    type Runtime_Runtime_ForInEnumerate = 
+      V8.Runtime_Runtime_ForInEnumerate.X;
+  
+    type Runtime_Runtime_GetOwnPropertyDescriptor = 
+      V8.Runtime_Runtime_GetOwnPropertyDescriptor.X;
+  
+    type Runtime_Runtime_GetProperty = 
+      V8.Runtime_Runtime_GetProperty.X;
+  
+    type Runtime_Runtime_HasInPrototypeChain = 
+      V8.Runtime_Runtime_HasInPrototypeChain.X;
+  
+    type Runtime_Runtime_HasProperty = 
+      V8.Runtime_Runtime_HasProperty.X;
+  
+    type Runtime_Runtime_Interrupt = 
+      V8.Runtime_Runtime_Interrupt.X;
+  
+    type Runtime_Runtime_KeyedLoadIC_Miss = 
+      V8.Runtime_Runtime_KeyedLoadIC_Miss.X;
+  
+    type Runtime_Runtime_KeyedStoreIC_Miss = 
+      V8.Runtime_Runtime_KeyedStoreIC_Miss.X;
+  
+    type Runtime_Runtime_KeyedStoreIC_Slow = 
+      V8.Runtime_Runtime_KeyedStoreIC_Slow.X;
+  
+    type Runtime_Runtime_LoadAccessorProperty = 
+      V8.Runtime_Runtime_LoadAccessorProperty.X;
+  
+    type Runtime_Runtime_LoadCallbackProperty = 
+      V8.Runtime_Runtime_LoadCallbackProperty.X;
+  
+    type Runtime_Runtime_LoadElementWithInterceptor = 
+      V8.Runtime_Runtime_LoadElementWithInterceptor.X;
+  
+    type Runtime_Runtime_LoadGlobalIC_Miss = 
+      V8.Runtime_Runtime_LoadGlobalIC_Miss.X;
+  
+    type Runtime_Runtime_LoadGlobalIC_Slow = 
+      V8.Runtime_Runtime_LoadGlobalIC_Slow.X;
+  
+    type Runtime_Runtime_LoadIC_Miss = 
+      V8.Runtime_Runtime_LoadIC_Miss.X;
+  
+    type Runtime_Runtime_LoadLookupSlot = 
+      V8.Runtime_Runtime_LoadLookupSlot.X;
+  
+    type Runtime_Runtime_LoadLookupSlotForCall = 
+      V8.Runtime_Runtime_LoadLookupSlotForCall.X;
+  
+    type Runtime_Runtime_LoadLookupSlotInsideTypeof = 
+      V8.Runtime_Runtime_LoadLookupSlotInsideTypeof.X;
+  
+    type Runtime_Runtime_LoadPropertyWithInterceptor = 
+      V8.Runtime_Runtime_LoadPropertyWithInterceptor.X;
+  
+    type Runtime_Runtime_MapGrow = 
+      V8.Runtime_Runtime_MapGrow.X;
+  
+    type Runtime_Runtime_MapShrink = 
+      V8.Runtime_Runtime_MapShrink.X;
+  
+    type Runtime_Runtime_NewArray = 
+      V8.Runtime_Runtime_NewArray.X;
+  
+    type Runtime_Runtime_NewClosure_Tenured = 
+      V8.Runtime_Runtime_NewClosure_Tenured.X;
+  
+    type Runtime_Runtime_NewClosure = 
+      V8.Runtime_Runtime_NewClosure.X;
+  
+    type Runtime_Runtime_NewObject = 
+      V8.Runtime_Runtime_NewObject.X;
+  
+    type Runtime_Runtime_NewScriptContext = 
+      V8.Runtime_Runtime_NewScriptContext.X;
+  
+    type Runtime_Runtime_NotifyDeoptimized = 
+      V8.Runtime_Runtime_NotifyDeoptimized.X;
+  
+    type Runtime_Runtime_NumberToString = 
+      V8.Runtime_Runtime_NumberToString.X;
+  
+    type Runtime_Runtime_ObjectCreate = 
+      V8.Runtime_Runtime_ObjectCreate.X;
+  
+    type Runtime_Runtime_ObjectEntries = 
+      V8.Runtime_Runtime_ObjectEntries.X;
+  
+    type Runtime_Runtime_ObjectGetOwnPropertyNames = 
+      V8.Runtime_Runtime_ObjectGetOwnPropertyNames.X;
+  
+    type Runtime_Runtime_ObjectHasOwnProperty = 
+      V8.Runtime_Runtime_ObjectHasOwnProperty.X;
+  
+    type Runtime_Runtime_ObjectKeys = 
+      V8.Runtime_Runtime_ObjectKeys.X;
+  
+    type Runtime_Runtime_OrdinaryHasInstance = 
+      V8.Runtime_Runtime_OrdinaryHasInstance.X;
+  
+    type Runtime_Runtime_PrepareElementsForSort = 
+      V8.Runtime_Runtime_PrepareElementsForSort.X;
+  
+    type Runtime_Runtime_PushBlockContext = 
+      V8.Runtime_Runtime_PushBlockContext.X;
+  
+    type Runtime_Runtime_PushCatchContext = 
+      V8.Runtime_Runtime_PushCatchContext.X;
+  
+    type Runtime_Runtime_PushWithContext = 
+      V8.Runtime_Runtime_PushWithContext.X;
+  
+    type Runtime_Runtime_RegExpExec = 
+      V8.Runtime_Runtime_RegExpExec.X;
+  
+    type Runtime_Runtime_RegExpExecMultiple = 
+      V8.Runtime_Runtime_RegExpExecMultiple.X;
+  
+    type Runtime_Runtime_RegExpInitializeAndCompile = 
+      V8.Runtime_Runtime_RegExpInitializeAndCompile.X;
+  
+    type Runtime_Runtime_RegExpReplace = 
+      V8.Runtime_Runtime_RegExpReplace.X;
+  
+    type Runtime_Runtime_ResolvePossiblyDirectEval = 
+      V8.Runtime_Runtime_ResolvePossiblyDirectEval.X;
+  
+    type Runtime_Runtime_RunMicrotaskCallback = 
+      V8.Runtime_Runtime_RunMicrotaskCallback.X;
+  
+    type Runtime_Runtime_SetGrow = 
+      V8.Runtime_Runtime_SetGrow.X;
+  
+    type Runtime_Runtime_SetKeyedProperty = 
+      V8.Runtime_Runtime_SetKeyedProperty.X;
+  
+    type Runtime_Runtime_SetNamedProperty = 
+      V8.Runtime_Runtime_SetNamedProperty.X;
+  
+    type Runtime_Runtime_ShrinkPropertyDictionary = 
+      V8.Runtime_Runtime_ShrinkPropertyDictionary.X;
+  
+    type Runtime_Runtime_StackGuard = 
+      V8.Runtime_Runtime_StackGuard.X;
+  
+    type Runtime_Runtime_StoreCallbackProperty = 
+      V8.Runtime_Runtime_StoreCallbackProperty.X;
+  
+    type Runtime_Runtime_StoreGlobalIC_Miss = 
+      V8.Runtime_Runtime_StoreGlobalIC_Miss.X;
+  
+    type Runtime_Runtime_StoreGlobalIC_Slow = 
+      V8.Runtime_Runtime_StoreGlobalIC_Slow.X;
+  
+    type Runtime_Runtime_StoreIC_Miss = 
+      V8.Runtime_Runtime_StoreIC_Miss.X;
+  
+    type Runtime_Runtime_StoreInArrayLiteralIC_Miss = 
+      V8.Runtime_Runtime_StoreInArrayLiteralIC_Miss.X;
+  
+    type Runtime_Runtime_StoreLookupSlot_Sloppy = 
+      V8.Runtime_Runtime_StoreLookupSlot_Sloppy.X;
+  
+    type Runtime_Runtime_StoreLookupSlot_Strict = 
+      V8.Runtime_Runtime_StoreLookupSlot_Strict.X;
+  
+    type Runtime_Runtime_StringAdd = 
+      V8.Runtime_Runtime_StringAdd.X;
+  
+    type Runtime_Runtime_StringBuilderConcat = 
+      V8.Runtime_Runtime_StringBuilderConcat.X;
+  
+    type Runtime_Runtime_StringCharCodeAt = 
+      V8.Runtime_Runtime_StringCharCodeAt.X;
+  
+    type Runtime_Runtime_StringEqual = 
+      V8.Runtime_Runtime_StringEqual.X;
+  
+    type Runtime_Runtime_StringIncludes = 
+      V8.Runtime_Runtime_StringIncludes.X;
+  
+    type Runtime_Runtime_StringIndexOfUnchecked = 
+      V8.Runtime_Runtime_StringIndexOfUnchecked.X;
+  
+    type Runtime_Runtime_StringLessThan = 
+      V8.Runtime_Runtime_StringLessThan.X;
+  
+    type Runtime_Runtime_StringParseFloat = 
+      V8.Runtime_Runtime_StringParseFloat.X;
+  
+    type Runtime_Runtime_StringParseInt = 
+      V8.Runtime_Runtime_StringParseInt.X;
+  
+    type Runtime_Runtime_StringSplit = 
+      V8.Runtime_Runtime_StringSplit.X;
+  
+    type Runtime_Runtime_StringSubstring = 
+      V8.Runtime_Runtime_StringSubstring.X;
+  
+    type Runtime_Runtime_StringToArray = 
+      V8.Runtime_Runtime_StringToArray.X;
+  
+    type Runtime_Runtime_StringToLowerCaseIntl = 
+      V8.Runtime_Runtime_StringToLowerCaseIntl.X;
+  
+    type Runtime_Runtime_StringToNumber = 
+      V8.Runtime_Runtime_StringToNumber.X;
+  
+    type Runtime_Runtime_Throw = 
+      V8.Runtime_Runtime_Throw.X;
+  
+    type Runtime_Runtime_ThrowCalledNonCallable = 
+      V8.Runtime_Runtime_ThrowCalledNonCallable.X;
+  
+    type Runtime_Runtime_ThrowConstructedNonConstructable = 
+      V8.Runtime_Runtime_ThrowConstructedNonConstructable.X;
+  
+    type Runtime_Runtime_ToString = 
+      V8.Runtime_Runtime_ToString.X;
+  
+    type Runtime_Runtime_TransitionElementsKind = 
+      V8.Runtime_Runtime_TransitionElementsKind.X;
+  
+    type Runtime_Runtime_UnwindAndFindExceptionHandler = 
+      V8.Runtime_Runtime_UnwindAndFindExceptionHandler.X;
+  
+    type RuntimeStats = 
+      V8.RuntimeStats.I;
+  
+    type ScriptCompiler = 
+      V8.ScriptCompiler.B |
+      V8.ScriptCompiler.E;
+  
+    type StackGuard = 
+      V8.StackGuard.X;
+  
+    type Task = 
+      V8.Task.B |
+      V8.Task.E;
+  
     namespace Builtin_ArrayConcat {
       interface X extends Base {
         args: {
@@ -31563,6 +37264,9 @@ export namespace TraceEvent {
   }
 
   namespace V8ContextSnapshot {
+    type InstallRuntimeEnabled = 
+      V8ContextSnapshot.InstallRuntimeEnabled.X;
+  
     namespace InstallRuntimeEnabled {
       interface X extends Base {
         args: {
@@ -31578,6 +37282,9 @@ export namespace TraceEvent {
   }
 
   namespace VerifiedRulesetDealer {
+    type GetRuleset = 
+      VerifiedRulesetDealer.GetRuleset.X;
+  
     namespace GetRuleset {
       interface X extends Base {
         args: {
@@ -31593,6 +37300,30 @@ export namespace TraceEvent {
   }
 
   namespace View {
+    type Layout = 
+      View.Layout.X;
+  
+    type Layoutbounds_changed = 
+      View.Layoutbounds_changed.X;
+  
+    type Layoutset_bounds = 
+      View.Layoutset_bounds.X;
+  
+    type OnPaint = 
+      View.OnPaint.X;
+  
+    type OnPaintBackground = 
+      View.OnPaintBackground.X;
+  
+    type OnPaintBorder = 
+      View.OnPaintBorder.X;
+  
+    type Paint = 
+      View.Paint.X;
+  
+    type PaintChildren = 
+      View.PaintChildren.X;
+  
     namespace Layout {
       interface X extends Base {
         args: {
@@ -31751,6 +37482,9 @@ export namespace TraceEvent {
   }
 
   namespace VirtualboolGrRenderTargetOpList {
+    type OnExecuteGrOpFlushState = 
+      VirtualboolGrRenderTargetOpList.OnExecuteGrOpFlushState.X;
+  
     namespace OnExecuteGrOpFlushState {
       interface X extends Base {
         args: {
@@ -31768,6 +37502,9 @@ export namespace TraceEvent {
   namespace VirtualGrOp {
     namespace CombineResultnamespace {
       namespace FillRectOp {
+        type OnCombineIfPossibleGrOpGrCaps = 
+          VirtualGrOp.CombineResultnamespace.FillRectOp.OnCombineIfPossibleGrOpGrCaps.X;
+      
         namespace OnCombineIfPossibleGrOpGrCaps {
           interface X extends Base {
             args: {
@@ -31783,6 +37520,9 @@ export namespace TraceEvent {
       }
     
       namespace TextureOp {
+        type OnCombineIfPossibleGrOpGrCaps = 
+          VirtualGrOp.CombineResultnamespace.TextureOp.OnCombineIfPossibleGrOpGrCaps.X;
+      
         namespace OnCombineIfPossibleGrOpGrCaps {
           interface X extends Base {
             args: {
@@ -31802,6 +37542,9 @@ export namespace TraceEvent {
   namespace Virtualnamespace {
     namespace FillRectOp {
       namespace OnPrepareDrawsGrMeshDrawOp {
+        type Target = 
+          Virtualnamespace.FillRectOp.OnPrepareDrawsGrMeshDrawOp.Target.X;
+      
         namespace Target {
           interface X extends Base {
             args: {
@@ -31819,6 +37562,9 @@ export namespace TraceEvent {
   
     namespace TextureOp {
       namespace OnPrepareDrawsGrMeshDrawOp {
+        type Target = 
+          Virtualnamespace.TextureOp.OnPrepareDrawsGrMeshDrawOp.Target.X;
+      
         namespace Target {
           interface X extends Base {
             args: {
@@ -31836,6 +37582,15 @@ export namespace TraceEvent {
   }
 
   namespace VisibleUnits {
+    type CanonicalPosition = 
+      VisibleUnits.CanonicalPosition.X;
+  
+    type MostBackwardCaretPosition = 
+      VisibleUnits.MostBackwardCaretPosition.X;
+  
+    type MostForwardCaretPosition = 
+      VisibleUnits.MostForwardCaretPosition.X;
+  
     namespace CanonicalPosition {
       interface X extends Base {
         args: {
@@ -31878,6 +37633,9 @@ export namespace TraceEvent {
 
   namespace Visitedlink {
     namespace Mojom {
+      type VisitedLinkNotificationSink = 
+        Visitedlink.Mojom.VisitedLinkNotificationSink.X;
+    
       namespace VisitedLinkNotificationSink {
         interface X extends Base {
           args: {
@@ -31914,6 +37672,12 @@ export namespace TraceEvent {
   }
 
   namespace VisualViewport {
+    type MainFrameDidChangeSize = 
+      VisualViewport.MainFrameDidChangeSize.X;
+  
+    type SetSize = 
+      VisualViewport.SetSize.X;
+  
     namespace MainFrameDidChangeSize {
       interface X extends Base {
         args: {
@@ -31943,6 +37707,12 @@ export namespace TraceEvent {
   }
 
   namespace Viz {
+    type BeginFrameArgs = 
+      Viz.BeginFrameArgs.s;
+  
+    type SharedQuadState = 
+      Viz.SharedQuadState.D;
+  
     namespace BeginFrameArgs {
       interface s extends Base {
         args: {
@@ -31956,6 +37726,30 @@ export namespace TraceEvent {
     }
   
     namespace Mojom {
+      type CompositingModeReporter = 
+        Viz.Mojom.CompositingModeReporter.X;
+    
+      type CompositorFrameSink = 
+        Viz.Mojom.CompositorFrameSink.X;
+    
+      type CompositorFrameSinkClient = 
+        Viz.Mojom.CompositorFrameSinkClient.X;
+    
+      type DisplayClient = 
+        Viz.Mojom.DisplayClient.X;
+    
+      type FrameSinkManager = 
+        Viz.Mojom.FrameSinkManager.X;
+    
+      type FrameSinkManagerClient = 
+        Viz.Mojom.FrameSinkManagerClient.X;
+    
+      type GpuHost = 
+        Viz.Mojom.GpuHost.X;
+    
+      type GpuService = 
+        Viz.Mojom.GpuService.X;
+    
       namespace CompositingModeReporter {
         interface X extends Base {
           args: {
@@ -32088,6 +37882,9 @@ export namespace TraceEvent {
 
   namespace Web_cache {
     namespace Mojom {
+      type WebCache = 
+        Web_cache.Mojom.WebCache.X;
+    
       namespace WebCache {
         interface X extends Base {
           args: {
@@ -32104,6 +37901,24 @@ export namespace TraceEvent {
   }
 
   namespace WebContentsImpl {
+    type CreateRenderFrameForRenderManager = 
+      WebContentsImpl.CreateRenderFrameForRenderManager.X;
+  
+    type CreateRenderViewForRenderManager = 
+      WebContentsImpl.CreateRenderViewForRenderManager.X;
+  
+    type CreateWithOpener = 
+      WebContentsImpl.CreateWithOpener.X;
+  
+    type DidFinishNavigation = 
+      WebContentsImpl.DidFinishNavigation.X;
+  
+    type DidStartNavigation = 
+      WebContentsImpl.DidStartNavigation.X;
+  
+    type ReadyToCommitNavigation = 
+      WebContentsImpl.ReadyToCommitNavigation.X;
+  
     namespace CreateRenderFrameForRenderManager {
       interface X extends Base {
         args: {
@@ -32207,6 +38022,12 @@ export namespace TraceEvent {
   }
 
   namespace WebFrameWidgetImpl {
+    type BeginFrame = 
+      WebFrameWidgetImpl.BeginFrame.X;
+  
+    type UpdateAllLifecyclePhases = 
+      WebFrameWidgetImpl.UpdateAllLifecyclePhases.X;
+  
     namespace BeginFrame {
       interface X extends Base {
         args: {
@@ -32235,6 +38056,12 @@ export namespace TraceEvent {
   }
 
   namespace WebLocalFrameImpl {
+    type CreateChildframe = 
+      WebLocalFrameImpl.CreateChildframe.X;
+  
+    type CreateFrameView = 
+      WebLocalFrameImpl.CreateFrameView.X;
+  
     namespace CreateChildframe {
       interface X extends Base {
         args: {
@@ -32263,6 +38090,10 @@ export namespace TraceEvent {
   }
 
   namespace WebScopedVirtualTimePauser {
+    type PauseVirtualTime = 
+      WebScopedVirtualTimePauser.PauseVirtualTime.b |
+      WebScopedVirtualTimePauser.PauseVirtualTime.e;
+  
     namespace PauseVirtualTime {
       interface b extends Base {
         args: {
@@ -32287,7 +38118,28 @@ export namespace TraceEvent {
   }
 
   namespace WebURLLoaderImpl {
+    type LoadAsynchronously = 
+      WebURLLoaderImpl.LoadAsynchronously.X;
+  
     namespace Context {
+      type Cancel = 
+        WebURLLoaderImpl.Context.Cancel.X;
+    
+      type OnCompletedRequest = 
+        WebURLLoaderImpl.Context.OnCompletedRequest.X;
+    
+      type OnReceivedData = 
+        WebURLLoaderImpl.Context.OnReceivedData.X;
+    
+      type OnReceivedRedirect = 
+        WebURLLoaderImpl.Context.OnReceivedRedirect.X;
+    
+      type OnReceivedResponse = 
+        WebURLLoaderImpl.Context.OnReceivedResponse.X;
+    
+      type Start = 
+        WebURLLoaderImpl.Context.Start.X;
+    
       namespace Cancel {
         interface X extends Base {
           args: {
@@ -32406,6 +38258,21 @@ export namespace TraceEvent {
   }
 
   namespace WebViewImpl {
+    type BeginFrame = 
+      WebViewImpl.BeginFrame.X;
+  
+    type HandleInputEvent = 
+      WebViewImpl.HandleInputEvent.X;
+  
+    type HandleKeyEvent = 
+      WebViewImpl.HandleKeyEvent.X;
+  
+    type SetIsAcceleratedCompositingActivetrue = 
+      WebViewImpl.SetIsAcceleratedCompositingActivetrue.X;
+  
+    type UpdateAllLifecyclePhases = 
+      WebViewImpl.UpdateAllLifecyclePhases.X;
+  
     namespace BeginFrame {
       interface X extends Base {
         args: {
@@ -32474,6 +38341,9 @@ export namespace TraceEvent {
   }
 
   namespace Widget {
+    type Init = 
+      Widget.Init.X;
+  
     namespace Init {
       interface X extends Base {
         args: {
@@ -32593,6 +38463,9 @@ export namespace TraceEvent {
   }
 
   namespace WidgetInputHandlerImpl {
+    type DispatchEvent = 
+      WidgetInputHandlerImpl.DispatchEvent.X;
+  
     namespace DispatchEvent {
       interface X extends Base {
         args: {
@@ -32747,6 +38620,9 @@ export namespace TraceEvent {
 
   namespace Ws {
     namespace Mojom {
+      type Gpu = 
+        Ws.Mojom.Gpu.X;
+    
       namespace Gpu {
         interface X extends Base {
           args: {
@@ -32763,6 +38639,9 @@ export namespace TraceEvent {
   }
 
   namespace X509Certificate {
+    type CreateFromDERCertChain = 
+      X509Certificate.CreateFromDERCertChain.X;
+  
     namespace CreateFromDERCertChain {
       interface X extends Base {
         args: {
@@ -32864,6 +38743,9 @@ export namespace TraceEvent {
   }
 
   namespace ZeroSuggestProvider {
+    type Start = 
+      ZeroSuggestProvider.Start.X;
+  
     namespace Start {
       interface X extends Base {
         args: {
