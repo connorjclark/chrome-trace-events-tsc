@@ -169,6 +169,7 @@ export namespace _TraceEvent {
     BlinkGC.VisitStackRoots.E |
     BlinkGC.WrapperCount.C |
     BlinkGC.WrapperCountAtLastGC.C |
+    BlinkGCMarking.X |
     BlobReader.CountSize.F |
     BlobReader.CountSize.S |
     BlobReader.F |
@@ -264,6 +265,7 @@ export namespace _TraceEvent {
     Content.Mojom.RenderFrameMetadataObserverClient.X |
     Content.Mojom.SandboxSupportMac.X |
     Content.Mojom.Widget.X |
+    ContentLayerDelegate.PaintContents.X |
     ContentSubresourceFilterThrottleManager.ReadyToCommitNavigation.X |
     ContextCreatedNotification.X |
     Control_tq.C |
@@ -455,6 +457,7 @@ export namespace _TraceEvent {
     FireIdleCallback.X |
     FirstContentfulPaint.b |
     FirstContentfulPaint.e |
+    FirstContentfulPaint.I |
     FirstContentfulPaint.R |
     FirstImagePaint.R |
     FirstLayout.R |
@@ -462,7 +465,9 @@ export namespace _TraceEvent {
     FirstMeaningfulPaint.e |
     FirstMeaningfulPaint.R |
     FirstMeaningfulPaintCandidate.R |
+    FirstPaint.I |
     FirstPaint.R |
+    FirstTextPaint.R |
     FirstVisualChange.b |
     FirstVisualChange.e |
     FooterEnd.R |
@@ -559,6 +564,11 @@ export namespace _TraceEvent {
     FrameTreeNode.DidStopLoading.X |
     FrameTreeNode.N |
     FrameTreeNode.O |
+    FrameView.Layout.X |
+    FrameView.PerformLayout.B |
+    FrameView.PerformLayout.E |
+    FrameView.PerformPostLayoutTasks.X |
+    FrameView.PerformPreLayoutTasks.X |
     FullEvacuator.RawEvacuatePage.X |
     FullImage.X |
     FunctionCall.B |
@@ -1131,6 +1141,8 @@ export namespace _TraceEvent {
     PageMsg_WasHidden.X |
     PageMsg_WasShown.X |
     Paint.X |
+    PaintArtifact.AppendToWebDisplayItemList.X |
+    PaintArtifact.Replay.X |
     PaintController.CommitNewDisplayItems.X |
     PaintImage.X |
     PaintInvalidationTracking.I |
@@ -1251,6 +1263,7 @@ export namespace _TraceEvent {
     RemoteWindowProxy.Initialize.X |
     RendererAudioState.S |
     RendererAudioState.T |
+    RendererMain.START_MSG_LOOP.S |
     RendererProcessType.S |
     RendererProcessType.T |
     RendererScheduler.BackgroundBudgetMs.C |
@@ -1352,6 +1365,7 @@ export namespace _TraceEvent {
     Resource_coordinator.Mojom.PageSignalReceiver.X |
     Resource_coordinator.Mojom.ProcessCoordinationUnit.X |
     Resource.AppendData.X |
+    ResourceChangePriority.I |
     ResourceChangePriority.X |
     ResourceDispatcher.OnReceivedRedirect.X |
     ResourceDispatcher.OnReceivedResponse.X |
@@ -1692,6 +1706,7 @@ export namespace _TraceEvent {
     TabSwitchVisibilityRequest.F |
     TabSwitchVisibilityRequest.S |
     TaskGraphRunner.RunTask.X |
+    TaskQueueManager.ProcessTaskFromWorkQueue.X |
     TaskQueueThrottler_TaskQueueThrottled.X |
     TaskQueueThrottler_TaskQueueUnthrottled.X |
     TaskQueueThrottler.MaybeSchedulePumpThrottledTasks.X |
@@ -1723,6 +1738,7 @@ export namespace _TraceEvent {
     ThreadState.HeapGrowingRate.C |
     ThreadState.PartitionAllocEstimatedSizeKB.C |
     ThreadState.PartitionAllocGrowingRate.C |
+    ThreadState.PerformIdleLazySweep.X |
     TileManager.AssignGpuMemorytileviolatesmemorypolicy.I |
     TileManager.AssignGpuMemoryToTiles.B |
     TileManager.AssignGpuMemoryToTiles.E |
@@ -4176,6 +4192,20 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace BlinkGCMarking {
+    interface X extends Base {
+      args: {
+        gcReason: string;
+        lazySweeping: boolean;
+      };
+      dur: number;
+      name: 'BlinkGCMarking';
+      ph: 'X';
+      tdur: number;
+      tts: number;
+    }
+  }
+
   namespace BlobReader {
     namespace CountSize {
       interface F extends Base {
@@ -5464,11 +5494,11 @@ export namespace _TraceEvent {
         data: {
           frame: string;
           isMainFrame: boolean;
-          name: string;
+          name?: string;
           nodeId?: number;
           page: string;
           parent?: string;
-          url: string;
+          url?: string;
         };
       };
       dur: number;
@@ -5779,6 +5809,21 @@ export namespace _TraceEvent {
           tdur: number;
           tts: number;
         }
+      }
+    }
+  }
+
+  namespace ContentLayerDelegate {
+    namespace PaintContents {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'ContentLayerDelegate::paintContents';
+        ph: 'X';
+        tdur: number;
+        tts: number;
       }
     }
   }
@@ -8301,6 +8346,16 @@ export namespace _TraceEvent {
       ph: 'e';
     }
   
+    interface I extends Base {
+      args: {
+        frame: string;
+      };
+      name: 'firstContentfulPaint';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  
     interface R extends Base {
       args: {
         data?: {
@@ -8317,7 +8372,7 @@ export namespace _TraceEvent {
   namespace FirstImagePaint {
     interface R extends Base {
       args: {
-        data: {
+        data?: {
           navigationId: string;
         };
         frame: string;
@@ -8387,6 +8442,16 @@ export namespace _TraceEvent {
   }
 
   namespace FirstPaint {
+    interface I extends Base {
+      args: {
+        frame: string;
+      };
+      name: 'firstPaint';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  
     interface R extends Base {
       args: {
         data?: {
@@ -8395,6 +8460,17 @@ export namespace _TraceEvent {
         frame: string;
       };
       name: 'firstPaint';
+      ph: 'R';
+      tts: number;
+    }
+  }
+
+  namespace FirstTextPaint {
+    interface R extends Base {
+      args: {
+        frame: string;
+      };
+      name: 'firstTextPaint';
       ph: 'R';
       tts: number;
     }
@@ -9570,6 +9646,85 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace FrameView {
+    namespace Layout {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'FrameView::layout';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  
+    namespace PerformLayout {
+      interface B extends Base {
+        args: {
+          contentsHeightBeforeLayout: number;
+        };
+        name: 'FrameView::performLayout';
+        ph: 'B';
+        tts: number;
+      }
+    
+      interface E extends Base {
+        args: {
+          counters: {
+            LayoutAnalyzerStackMaximumDepth?: number;
+            LayoutBlockHeightChanged?: number;
+            LayoutBlockSizeChanged?: number;
+            LayoutBlockSizeDidNotChange?: number;
+            LayoutBlockWidthChanged?: number;
+            LayoutObjectsThatAreFloating?: number;
+            LayoutObjectsThatAreOutOfFlowPositioned?: number;
+            LayoutObjectsThatAreTableCells?: number;
+            LayoutObjectsThatHadNeverHadLayout?: number;
+            LayoutObjectsThatHaveALayer?: number;
+            LayoutObjectsThatNeedLayoutForThemselves?: number;
+            TotalLayoutObjectsThatWereLaidOut?: number;
+            approximateBlankCharacterCount: number;
+            contentsHeightAfterLayout: number;
+            frame: string;
+            host: string;
+            visibleHeight: number;
+          };
+        };
+        name: 'FrameView::performLayout';
+        ph: 'E';
+        tts: number;
+      }
+    }
+  
+    namespace PerformPostLayoutTasks {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'FrameView::performPostLayoutTasks';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  
+    namespace PerformPreLayoutTasks {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'FrameView::performPreLayoutTasks';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  }
+
   namespace FullEvacuator {
     namespace RawEvacuatePage {
       interface X extends Base {
@@ -9602,7 +9757,7 @@ export namespace _TraceEvent {
     interface B extends Base {
       args: {
         data: {
-          columnNumber: number;
+          columnNumber?: number;
           frame: string;
           functionName: string;
           lineNumber: number;
@@ -14155,6 +14310,7 @@ export namespace _TraceEvent {
         };
         bind_id: string;
         dur: number;
+        flowPhase?: string;
         flow_in?: boolean;
         flow_out?: boolean;
         id: string;
@@ -17710,6 +17866,34 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace PaintArtifact {
+    namespace AppendToWebDisplayItemList {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'PaintArtifact::appendToWebDisplayItemList';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  
+    namespace Replay {
+      interface X extends Base {
+        args: {
+        
+        };
+        dur: number;
+        name: 'PaintArtifact::replay';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  }
+
   namespace PaintController {
     namespace CommitNewDisplayItems {
       interface X extends Base {
@@ -17730,14 +17914,14 @@ export namespace _TraceEvent {
     interface X extends Base {
       args: {
         data: {
-          height: number;
+          height?: number;
           nodeId: number;
-          srcHeight: number;
-          srcWidth: number;
+          srcHeight?: number;
+          srcWidth?: number;
           url?: string;
-          width: number;
-          x: number;
-          y: number;
+          width?: number;
+          x?: number;
+          y?: number;
         };
       };
       dur: number;
@@ -19432,6 +19616,20 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace RendererMain {
+    namespace START_MSG_LOOP {
+      interface S extends Base {
+        args: {
+        
+        };
+        id: string;
+        name: 'RendererMain.START_MSG_LOOP';
+        ph: 'S';
+        tts: number;
+      }
+    }
+  }
+
   namespace RendererProcessType {
     interface S extends Base {
       args: {
@@ -20768,6 +20966,19 @@ export namespace _TraceEvent {
   }
 
   namespace ResourceChangePriority {
+    interface I extends Base {
+      args: {
+        data: {
+          priority: string;
+          requestId: string;
+        };
+      };
+      name: 'ResourceChangePriority';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  
     interface X extends Base {
       args: {
         data: {
@@ -20857,10 +21068,11 @@ export namespace _TraceEvent {
     interface I extends Base {
       args: {
         data: {
-          decodedBodyLength: number;
+          decodedBodyLength?: number;
           didFail: boolean;
-          encodedDataLength: number;
+          encodedDataLength?: number;
           finishTime?: number;
+          networkTime?: number;
           requestId: string;
         };
       };
@@ -20970,10 +21182,10 @@ export namespace _TraceEvent {
     interface I extends Base {
       args: {
         data: {
-          encodedDataLength: number;
+          encodedDataLength?: number;
           frame: string;
-          fromCache: boolean;
-          fromServiceWorker: boolean;
+          fromCache?: boolean;
+          fromServiceWorker?: boolean;
           mimeType: string;
           requestId: string;
           statusCode: number;
@@ -23333,8 +23545,9 @@ export namespace _TraceEvent {
     interface I extends Base {
       args: {
         data: {
-          frame: string;
+          frame?: string;
           layerTreeId: number;
+          sessionId?: string;
         };
       };
       name: 'SetLayerTreeId';
@@ -25644,6 +25857,22 @@ export namespace _TraceEvent {
     }
   }
 
+  namespace TaskQueueManager {
+    namespace ProcessTaskFromWorkQueue {
+      interface X extends Base {
+        args: {
+          src_file: string;
+          src_func: string;
+        };
+        dur?: number;
+        name: 'TaskQueueManager::ProcessTaskFromWorkQueue';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
+    }
+  }
+
   namespace TaskQueueThrottler_TaskQueueThrottled {
     interface X extends Base {
       args: {
@@ -26071,6 +26300,19 @@ export namespace _TraceEvent {
         };
         name: 'ThreadState::partitionAllocGrowingRate';
         ph: 'C';
+        tts: number;
+      }
+    }
+  
+    namespace PerformIdleLazySweep {
+      interface X extends Base {
+        args: {
+          idleDeltaInSeconds: number;
+        };
+        dur: number;
+        name: 'ThreadState::performIdleLazySweep';
+        ph: 'X';
+        tdur: number;
         tts: number;
       }
     }
@@ -28100,7 +28342,12 @@ export namespace _TraceEvent {
     
       interface X extends Base {
         args: {
-        
+          data?: {
+            columnNumber: number;
+            lineNumber: number;
+            url: string;
+          };
+          fileName?: string;
         };
         dur?: number;
         name: 'v8.compile';

@@ -9,9 +9,11 @@ export namespace _TraceEvent {
   type TraceEvent = 
     DomContentLoadedEventEnd.R |
     EvaluateScript.X |
+    FirstContentfulPaint.I |
     FirstContentfulPaint.R |
     FirstMeaningfulPaint.R |
     FirstMeaningfulPaintCandidate.R |
+    FirstPaint.I |
     FirstPaint.R |
     FunctionCall.B |
     FunctionCall.E |
@@ -30,6 +32,7 @@ export namespace _TraceEvent {
     RunTask.X |
     ScheduleStyleRecalculation.I |
     Screenshot.O |
+    TaskQueueManager.ProcessTaskFromWorkQueue.X |
     Thread_name.M |
     ThreadControllerImpl.DoWork.X |
     ThreadControllerImpl.RunTask.X |
@@ -79,6 +82,16 @@ export namespace _TraceEvent {
   }
 
   namespace FirstContentfulPaint {
+    interface I extends Base {
+      args: {
+        frame: string;
+      };
+      name: 'firstContentfulPaint';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  
     interface R extends Base {
       args: {
         data?: {
@@ -122,6 +135,16 @@ export namespace _TraceEvent {
   }
 
   namespace FirstPaint {
+    interface I extends Base {
+      args: {
+        frame: string;
+      };
+      name: 'firstPaint';
+      ph: 'I';
+      s: string;
+      tts: number;
+    }
+  
     interface R extends Base {
       args: {
         data?: {
@@ -139,7 +162,7 @@ export namespace _TraceEvent {
     interface B extends Base {
       args: {
         data: {
-          columnNumber: number;
+          columnNumber?: number;
           frame: string;
           functionName: string;
           lineNumber: number;
@@ -298,10 +321,11 @@ export namespace _TraceEvent {
     interface I extends Base {
       args: {
         data: {
-          decodedBodyLength: number;
+          decodedBodyLength?: number;
           didFail: boolean;
-          encodedDataLength: number;
+          encodedDataLength?: number;
           finishTime?: number;
+          networkTime?: number;
           requestId: string;
         };
       };
@@ -316,10 +340,10 @@ export namespace _TraceEvent {
     interface I extends Base {
       args: {
         data: {
-          encodedDataLength: number;
+          encodedDataLength?: number;
           frame: string;
-          fromCache: boolean;
-          fromServiceWorker: boolean;
+          fromCache?: boolean;
+          fromServiceWorker?: boolean;
           mimeType: string;
           requestId: string;
           statusCode: number;
@@ -418,6 +442,22 @@ export namespace _TraceEvent {
       name: 'Screenshot';
       ph: 'O';
       tts: number;
+    }
+  }
+
+  namespace TaskQueueManager {
+    namespace ProcessTaskFromWorkQueue {
+      interface X extends Base {
+        args: {
+          src_file: string;
+          src_func: string;
+        };
+        dur?: number;
+        name: 'TaskQueueManager::ProcessTaskFromWorkQueue';
+        ph: 'X';
+        tdur: number;
+        tts: number;
+      }
     }
   }
 
@@ -572,7 +612,12 @@ export namespace _TraceEvent {
     
       interface X extends Base {
         args: {
-        
+          data?: {
+            columnNumber: number;
+            lineNumber: number;
+            url: string;
+          };
+          fileName?: string;
         };
         dur?: number;
         name: 'v8.compile';
