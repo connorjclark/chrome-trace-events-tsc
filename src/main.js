@@ -341,7 +341,7 @@ async function run() {
 
       const name = namespaceIdPath[namespaceIdPath.length - 1];
       const namespace = {
-        idPath: namespaceIdPath,
+        idPath: ['TraceEvent', ...namespaceIdPath], // hacky...
         name,
         interfaces: [],
         unions: [],
@@ -377,11 +377,11 @@ async function run() {
       continue;
     }
 
-    const grandNamespaceId = namespace.idPath.slice(0, namespace.idPath.length - 1).join('.');
+    const grandNamespaceId = namespace.idPath.slice(1, namespace.idPath.length - 1).join('.'); // TODO hack, should be 0
     const grandNamespace = namespaceById.get(grandNamespaceId) || topLevelNamespace;
     /** @type {Gen.TypeUnion} */
     const union = {
-      id: [...grandNamespace.idPath, namespace.name].join('.'),
+      id: namespace.idPath.join('.'),
       name: namespace.name,
       types: namespace.interfaces,
     };
@@ -392,7 +392,7 @@ async function run() {
   // Create union that encompasses all trace events. Use the unioned types create above.
   /** @type {Gen.TypeUnion} */
   const traceEventTypeUnion = {
-    id: 'TraceEvent.TraveEvent',
+    id: 'TraceEvent.TraceEvent',
     name: 'TraceEvent',
     types: traceEventUnions,
   };

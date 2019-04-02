@@ -32,15 +32,15 @@ export namespace TraceEvent {
     TraceEvent.RunTask |
     TraceEvent.ScheduleStyleRecalculation |
     TraceEvent.Screenshot |
-    TaskQueueManager.ProcessTaskFromWorkQueue |
+    TraceEvent.TaskQueueManager.ProcessTaskFromWorkQueue |
     TraceEvent.Thread_name |
-    ThreadControllerImpl.DoWork |
-    ThreadControllerImpl.RunTask |
+    TraceEvent.ThreadControllerImpl.DoWork |
+    TraceEvent.ThreadControllerImpl.RunTask |
     TraceEvent.TimerFire |
     TraceEvent.TimerInstall |
     TraceEvent.TracingStartedInBrowser |
     TraceEvent.TracingStartedInPage |
-    V8.Compile |
+    TraceEvent.V8.Compile |
     TraceEvent.XHRReadyStateChange;
 
   type DomContentLoadedEventEnd = 

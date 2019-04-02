@@ -17,276 +17,276 @@ export namespace TraceEvent {
     TraceEvent.AcquireLock |
     TraceEvent.ActivateLayerTree |
     TraceEvent.AddFrameDisplayed |
-    ADFUEL.AdFuelDOMContentLoaded |
-    ADFUEL.AdFuelInitialized |
-    ADFUEL.AdFuelRequestComplete |
-    ADFUEL.AdFuelwindow.Load |
-    ADFUEL.AdRenderedad_bnr_atf_01 |
-    ADFUEL.AdRenderedad_bnr_btf_01 |
-    ADFUEL.AdRenderedad_mod_35731bb1e |
-    ADFUEL.AdRenderedad_oop_float_01 |
-    ADFUEL.AdRenderedad_rect_btf_02 |
-    ADFUEL.ApplyingPageLevelTargeting |
-    ADFUEL.ApplyingWindowSiteLevelOptions |
-    ADFUEL.BuildingSlotad_bnr_atf_01 |
-    ADFUEL.BuildingSlotad_bnr_atf_01End |
-    ADFUEL.BuildingSlotad_bnr_atf_01Start |
-    ADFUEL.BuildingSlotad_bnr_btf_01 |
-    ADFUEL.BuildingSlotad_bnr_btf_01End |
-    ADFUEL.BuildingSlotad_bnr_btf_01Start |
-    ADFUEL.BuildingSlotad_bnr_btf_02 |
-    ADFUEL.BuildingSlotad_bnr_btf_02End |
-    ADFUEL.BuildingSlotad_bnr_btf_02Start |
-    ADFUEL.BuildingSlotad_mod_35731bb1e |
-    ADFUEL.BuildingSlotad_mod_35731bb1eEnd |
-    ADFUEL.BuildingSlotad_mod_35731bb1eStart |
-    ADFUEL.BuildingSlotad_oop_float_01 |
-    ADFUEL.BuildingSlotad_oop_float_01End |
-    ADFUEL.BuildingSlotad_oop_float_01Start |
-    ADFUEL.BuildingSlotad_oop_skin_01 |
-    ADFUEL.BuildingSlotad_oop_skin_01End |
-    ADFUEL.BuildingSlotad_oop_skin_01Start |
-    ADFUEL.BuildingSlotad_rect_btf_02 |
-    ADFUEL.BuildingSlotad_rect_btf_02End |
-    ADFUEL.BuildingSlotad_rect_btf_02Start |
-    ADFUEL.DispatchQueue |
-    ADFUEL.DispatchQueueEnd |
-    ADFUEL.DispatchQueueStart |
-    ADFUEL.GPTIncluded |
-    ADFUEL.PageLevelGPTBuild |
-    ADFUEL.PageLevelGPTBuildEnd |
-    ADFUEL.PageLevelGPTBuildStart |
-    ADFUEL.QueueRegistrycnn_homepage_rb |
-    ADFUEL.QueueRegistrycnn_homepage_rbEnd |
-    ADFUEL.QueueRegistrycnn_homepage_rbStart |
-    ADFUEL.QueueRegistrycnn_homepage |
-    ADFUEL.QueueRegistrycnn_homepageEnd |
-    ADFUEL.QueueRegistrycnn_homepageStart |
-    ADFUEL.RegisteringModule.AmazonA9Modulev3_2_5 |
-    ADFUEL.RegisteringModule.CEPModulev3_0_2 |
-    ADFUEL.RegisteringModule.CreativeReviewModulev3_0_5 |
-    ADFUEL.RegisteringModule.CriteoModulev3_2_2 |
-    ADFUEL.RegisteringModule.IndexExchangeWrapperModulev3_1_1 |
-    ADFUEL.RegisteringModule.InViewRefreshv3_0_5 |
-    ADFUEL.RegisteringModule.KruxModulev3_1_1 |
-    ADFUEL.RegisteringModule.PrebidModulev3_3_0 |
-    ADFUEL.RegisteringModule.ProximicModulev3_1_2 |
-    ADFUEL.RegisteringModule.TransactionIDModulev3_1_1 |
-    ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1 |
-    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json |
-    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonEnd |
-    ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonStart |
-    ADFUEL.SendingRequest |
-    ADFUEL.SendingRequestEnd |
-    ADFUEL.SendingRequestStart |
-    ADFUEL.SlotLoadedad_bnr_atf_01 |
-    ADFUEL.SlotLoadedad_mod_35731bb1e |
-    ADFUEL.SlotLoadedad_oop_float_01 |
-    ADFUEL.SlotLoadedad_rect_btf_02 |
+    TraceEvent.ADFUEL.AdFuelDOMContentLoaded |
+    TraceEvent.ADFUEL.AdFuelInitialized |
+    TraceEvent.ADFUEL.AdFuelRequestComplete |
+    TraceEvent.ADFUEL.AdFuelwindow.Load |
+    TraceEvent.ADFUEL.AdRenderedad_bnr_atf_01 |
+    TraceEvent.ADFUEL.AdRenderedad_bnr_btf_01 |
+    TraceEvent.ADFUEL.AdRenderedad_mod_35731bb1e |
+    TraceEvent.ADFUEL.AdRenderedad_oop_float_01 |
+    TraceEvent.ADFUEL.AdRenderedad_rect_btf_02 |
+    TraceEvent.ADFUEL.ApplyingPageLevelTargeting |
+    TraceEvent.ADFUEL.ApplyingWindowSiteLevelOptions |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_atf_01 |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_atf_01End |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_atf_01Start |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_btf_01 |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_btf_01End |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_btf_01Start |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_btf_02 |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_btf_02End |
+    TraceEvent.ADFUEL.BuildingSlotad_bnr_btf_02Start |
+    TraceEvent.ADFUEL.BuildingSlotad_mod_35731bb1e |
+    TraceEvent.ADFUEL.BuildingSlotad_mod_35731bb1eEnd |
+    TraceEvent.ADFUEL.BuildingSlotad_mod_35731bb1eStart |
+    TraceEvent.ADFUEL.BuildingSlotad_oop_float_01 |
+    TraceEvent.ADFUEL.BuildingSlotad_oop_float_01End |
+    TraceEvent.ADFUEL.BuildingSlotad_oop_float_01Start |
+    TraceEvent.ADFUEL.BuildingSlotad_oop_skin_01 |
+    TraceEvent.ADFUEL.BuildingSlotad_oop_skin_01End |
+    TraceEvent.ADFUEL.BuildingSlotad_oop_skin_01Start |
+    TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02 |
+    TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02End |
+    TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02Start |
+    TraceEvent.ADFUEL.DispatchQueue |
+    TraceEvent.ADFUEL.DispatchQueueEnd |
+    TraceEvent.ADFUEL.DispatchQueueStart |
+    TraceEvent.ADFUEL.GPTIncluded |
+    TraceEvent.ADFUEL.PageLevelGPTBuild |
+    TraceEvent.ADFUEL.PageLevelGPTBuildEnd |
+    TraceEvent.ADFUEL.PageLevelGPTBuildStart |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rbEnd |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rbStart |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepageEnd |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepageStart |
+    TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev3_2_5 |
+    TraceEvent.ADFUEL.RegisteringModule.CEPModulev3_0_2 |
+    TraceEvent.ADFUEL.RegisteringModule.CreativeReviewModulev3_0_5 |
+    TraceEvent.ADFUEL.RegisteringModule.CriteoModulev3_2_2 |
+    TraceEvent.ADFUEL.RegisteringModule.IndexExchangeWrapperModulev3_1_1 |
+    TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv3_0_5 |
+    TraceEvent.ADFUEL.RegisteringModule.KruxModulev3_1_1 |
+    TraceEvent.ADFUEL.RegisteringModule.PrebidModulev3_3_0 |
+    TraceEvent.ADFUEL.RegisteringModule.ProximicModulev3_1_2 |
+    TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev3_1_1 |
+    TraceEvent.ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1 |
+    TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json |
+    TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonEnd |
+    TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonStart |
+    TraceEvent.ADFUEL.SendingRequest |
+    TraceEvent.ADFUEL.SendingRequestEnd |
+    TraceEvent.ADFUEL.SendingRequestStart |
+    TraceEvent.ADFUEL.SlotLoadedad_bnr_atf_01 |
+    TraceEvent.ADFUEL.SlotLoadedad_mod_35731bb1e |
+    TraceEvent.ADFUEL.SlotLoadedad_oop_float_01 |
+    TraceEvent.ADFUEL.SlotLoadedad_rect_btf_02 |
     TraceEvent.Allactivesurfacesready |
     TraceEvent.Animation |
-    AnimationHost.ActivateAnimations |
-    AnimationHost.TickAnimations |
-    AnimationHost.UpdateAnimationState |
-    ArrayBufferTrackerUpdatingItem.Process |
-    AsyncLayerTreeFrameSink.SubmitCompositorFrame |
+    TraceEvent.AnimationHost.ActivateAnimations |
+    TraceEvent.AnimationHost.TickAnimations |
+    TraceEvent.AnimationHost.UpdateAnimationState |
+    TraceEvent.ArrayBufferTrackerUpdatingItem.Process |
+    TraceEvent.AsyncLayerTreeFrameSink.SubmitCompositorFrame |
     TraceEvent.AsyncTask |
     TraceEvent.AtlasTextOp |
-    AutocompleteController.Start |
-    AutocompleteController.UpdateResult |
-    BackgroundCompileTask.Run |
-    BackgroundHTMLParser.PumpTokenizer |
-    BackgroundHTMLParser.SendTokensToMainThread |
-    Base.TraceEventSystemStatsMonitor.SystemStats |
+    TraceEvent.AutocompleteController.Start |
+    TraceEvent.AutocompleteController.UpdateResult |
+    TraceEvent.BackgroundCompileTask.Run |
+    TraceEvent.BackgroundHTMLParser.PumpTokenizer |
+    TraceEvent.BackgroundHTMLParser.SendTokensToMainThread |
+    TraceEvent.Base.TraceEventSystemStatsMonitor.SystemStats |
     TraceEvent.BeginFrame |
     TraceEvent.BeginFrameArgs |
     TraceEvent.BeginMainThreadFrame |
-    BenchmarkInstrumentation.DisplayRenderingStats |
-    BenchmarkInstrumentation.ImplThreadRenderingStats |
-    BitmapImage.DataChanged |
-    BitmapImage.Draw |
-    Blankframe.NooverlaysorCALayers |
-    Blink.Mojom.AppCacheBackend |
-    Blink.Mojom.AppCacheFrontend |
-    Blink.Mojom.Blob |
-    Blink.Mojom.BlobRegistry |
-    Blink.Mojom.CodeCacheHost |
-    Blink.Mojom.ManifestManager |
-    Blink.Mojom.PluginRegistry |
-    Blink.Mojom.StorageArea |
-    Blink.Mojom.StoragePartitionService |
-    BlinkGC.AllocatedObjectSizeSincePreviousGCKB |
-    BlinkGC.AllocatedSpaceAtLastGCKB |
-    BlinkGC.AllocatedSpaceKB |
-    BlinkGC.AtomicPhase |
-    BlinkGC.AtomicPhaseMarking |
-    BlinkGC.CollectedWrapperCount |
-    BlinkGC.CollectionRate |
-    BlinkGC.CompleteSweep |
-    BlinkGC.EagerSweep |
-    BlinkGC.InvokePreFinalizers |
-    BlinkGC.LazySweepOnAllocation |
-    BlinkGC.MarkedObjectSizeAtLastCompleteSweepKB |
-    BlinkGC.MarkInvokeEphemeronCallbacks |
-    BlinkGC.MarkNotFullyConstructedObjects |
-    BlinkGC.MarkProcessWorklist |
-    BlinkGC.MarkWeakProcessing |
-    BlinkGC.ObjectSizeAtLastGCKB |
-    BlinkGC.PartitionAllocSizeAtLastGCKB |
-    BlinkGC.VisitCrossThreadPersistents |
-    BlinkGC.VisitDOMWrappers |
-    BlinkGC.VisitPersistentRoots |
-    BlinkGC.VisitPersistents |
-    BlinkGC.VisitStackRoots |
-    BlinkGC.WrapperCount |
-    BlinkGC.WrapperCountAtLastGC |
+    TraceEvent.BenchmarkInstrumentation.DisplayRenderingStats |
+    TraceEvent.BenchmarkInstrumentation.ImplThreadRenderingStats |
+    TraceEvent.BitmapImage.DataChanged |
+    TraceEvent.BitmapImage.Draw |
+    TraceEvent.Blankframe.NooverlaysorCALayers |
+    TraceEvent.Blink.Mojom.AppCacheBackend |
+    TraceEvent.Blink.Mojom.AppCacheFrontend |
+    TraceEvent.Blink.Mojom.Blob |
+    TraceEvent.Blink.Mojom.BlobRegistry |
+    TraceEvent.Blink.Mojom.CodeCacheHost |
+    TraceEvent.Blink.Mojom.ManifestManager |
+    TraceEvent.Blink.Mojom.PluginRegistry |
+    TraceEvent.Blink.Mojom.StorageArea |
+    TraceEvent.Blink.Mojom.StoragePartitionService |
+    TraceEvent.BlinkGC.AllocatedObjectSizeSincePreviousGCKB |
+    TraceEvent.BlinkGC.AllocatedSpaceAtLastGCKB |
+    TraceEvent.BlinkGC.AllocatedSpaceKB |
+    TraceEvent.BlinkGC.AtomicPhase |
+    TraceEvent.BlinkGC.AtomicPhaseMarking |
+    TraceEvent.BlinkGC.CollectedWrapperCount |
+    TraceEvent.BlinkGC.CollectionRate |
+    TraceEvent.BlinkGC.CompleteSweep |
+    TraceEvent.BlinkGC.EagerSweep |
+    TraceEvent.BlinkGC.InvokePreFinalizers |
+    TraceEvent.BlinkGC.LazySweepOnAllocation |
+    TraceEvent.BlinkGC.MarkedObjectSizeAtLastCompleteSweepKB |
+    TraceEvent.BlinkGC.MarkInvokeEphemeronCallbacks |
+    TraceEvent.BlinkGC.MarkNotFullyConstructedObjects |
+    TraceEvent.BlinkGC.MarkProcessWorklist |
+    TraceEvent.BlinkGC.MarkWeakProcessing |
+    TraceEvent.BlinkGC.ObjectSizeAtLastGCKB |
+    TraceEvent.BlinkGC.PartitionAllocSizeAtLastGCKB |
+    TraceEvent.BlinkGC.VisitCrossThreadPersistents |
+    TraceEvent.BlinkGC.VisitDOMWrappers |
+    TraceEvent.BlinkGC.VisitPersistentRoots |
+    TraceEvent.BlinkGC.VisitPersistents |
+    TraceEvent.BlinkGC.VisitStackRoots |
+    TraceEvent.BlinkGC.WrapperCount |
+    TraceEvent.BlinkGC.WrapperCountAtLastGC |
     TraceEvent.BlinkGCMarking |
-    BlobReader.CountSize |
-    BlobReader.ReadBytesItem |
-    BlobReader.ReadMore |
-    BookmarkProvider.Start |
-    BrowserCrApplication.SendEvent |
+    TraceEvent.BlobReader.CountSize |
+    TraceEvent.BlobReader.ReadBytesItem |
+    TraceEvent.BlobReader.ReadMore |
+    TraceEvent.BookmarkProvider.Start |
+    TraceEvent.BrowserCrApplication.SendEvent |
     TraceEvent.BrowserWorker0x7fd3431d1a00 |
     TraceEvent.BudgetPool_DisableThrottling |
     TraceEvent.CalculateRenderSurfaceLayerList |
     TraceEvent.CancelAnimationFrame |
     TraceEvent.CANCELLED |
     TraceEvent.CanExceedIdleDeadlineIfRequired |
-    Canvas2DLayerBridge.FinalizeFrame |
-    Canvas2DLayerBridge.FlushRecording |
+    TraceEvent.Canvas2DLayerBridge.FinalizeFrame |
+    TraceEvent.Canvas2DLayerBridge.FlushRecording |
     TraceEvent.Canvas2DLayerBridgeCreation |
-    CanvasResourceProvider.Canvas |
-    CanvasResourceProviderBitmap.CreateSkSurface |
-    CARendererLayerTree.CommitScheduledCALayers |
-    CategorizedWorkerPool.CollectCompletedTasks |
-    CategorizedWorkerPool.ScheduleTasks |
-    CategorizedWorkerPool.WaitForTasksToFinishRunning |
-    CATransactionCoordinator.Postcommithandler |
-    CATransactionCoordinator.Precommithandler |
-    Cc.DisplayItemList |
-    Cc.LayerImpl |
-    Cc.LayerTreeHostImpl |
-    Cc.Tile |
-    Ccschedulerscheduler.L38 |
-    Cctreeslayer_tree_host_impl.L300 |
+    TraceEvent.CanvasResourceProvider.Canvas |
+    TraceEvent.CanvasResourceProviderBitmap.CreateSkSurface |
+    TraceEvent.CARendererLayerTree.CommitScheduledCALayers |
+    TraceEvent.CategorizedWorkerPool.CollectCompletedTasks |
+    TraceEvent.CategorizedWorkerPool.ScheduleTasks |
+    TraceEvent.CategorizedWorkerPool.WaitForTasksToFinishRunning |
+    TraceEvent.CATransactionCoordinator.Postcommithandler |
+    TraceEvent.CATransactionCoordinator.Precommithandler |
+    TraceEvent.Cc.DisplayItemList |
+    TraceEvent.Cc.LayerImpl |
+    TraceEvent.Cc.LayerTreeHostImpl |
+    TraceEvent.Cc.Tile |
+    TraceEvent.Ccschedulerscheduler.L38 |
+    TraceEvent.Cctreeslayer_tree_host_impl.L300 |
     TraceEvent.CERT_VERIFIER_REQUEST_BOUND_TO_JOB |
     TraceEvent.CERT_VERIFIER_REQUEST |
-    CertVerifierJob.OnJobCompleted |
-    ChannelMojo.OnMessageReceived |
-    CheckerImageTracker.DidActivateSyncTree |
-    CheckerImageTracker.ScheduleImageDecodeQueue |
-    CheckerImageTracker.ScheduleNextImageDecode |
-    CheckerImageTracker.ShouldCheckerImage |
-    CheckerImageTracker.TakeImagesToInvalidateOnSyncTree |
+    TraceEvent.CertVerifierJob.OnJobCompleted |
+    TraceEvent.ChannelMojo.OnMessageReceived |
+    TraceEvent.CheckerImageTracker.DidActivateSyncTree |
+    TraceEvent.CheckerImageTracker.ScheduleImageDecodeQueue |
+    TraceEvent.CheckerImageTracker.ScheduleNextImageDecode |
+    TraceEvent.CheckerImageTracker.ShouldCheckerImage |
+    TraceEvent.CheckerImageTracker.TakeImagesToInvalidateOnSyncTree |
     TraceEvent.ChromeViewHostMsg_AllowDOMStorage |
-    ChromiumRandomAccessFile.Read |
+    TraceEvent.ChromiumRandomAccessFile.Read |
     TraceEvent.CircleOp |
     TraceEvent.CircularRRectOp |
-    ClassicPendingScript.GetSource |
+    TraceEvent.ClassicPendingScript.GetSource |
     TraceEvent.Cleanup_tq |
     TraceEvent.ClearusingTexSubImage2D |
-    ClientSocketHandle.OnIOComplete |
-    ColdModeSpellCheckRequester.Invoke |
-    CommandBufferHelper.Finish |
-    CommandBufferHelper.Flush |
-    CommandBufferProxyImpl.Flush |
-    CommandBufferProxyImpl.Initialize |
-    CommandBufferProxyImpl.OrderingBarrier |
-    CommandBufferProxyImpl.WaitForGetOffset |
-    CommandBufferService.Paused |
-    CommandBufferService.PutChanged |
-    CommandBufferStub.OnAsyncFlush |
-    CommandBufferStub.OnDestroyTransferBuffer |
-    CommandBufferStub.OnRegisterTransferBuffer |
-    CommandBufferStub.OnSetGetBuffer |
-    CommandBufferStub.OnWaitForGetOffsetInRange |
-    CommandBufferStub.PerformWork |
+    TraceEvent.ClientSocketHandle.OnIOComplete |
+    TraceEvent.ColdModeSpellCheckRequester.Invoke |
+    TraceEvent.CommandBufferHelper.Finish |
+    TraceEvent.CommandBufferHelper.Flush |
+    TraceEvent.CommandBufferProxyImpl.Flush |
+    TraceEvent.CommandBufferProxyImpl.Initialize |
+    TraceEvent.CommandBufferProxyImpl.OrderingBarrier |
+    TraceEvent.CommandBufferProxyImpl.WaitForGetOffset |
+    TraceEvent.CommandBufferService.Paused |
+    TraceEvent.CommandBufferService.PutChanged |
+    TraceEvent.CommandBufferStub.OnAsyncFlush |
+    TraceEvent.CommandBufferStub.OnDestroyTransferBuffer |
+    TraceEvent.CommandBufferStub.OnRegisterTransferBuffer |
+    TraceEvent.CommandBufferStub.OnSetGetBuffer |
+    TraceEvent.CommandBufferStub.OnWaitForGetOffsetInRange |
+    TraceEvent.CommandBufferStub.PerformWork |
     TraceEvent.CommitLoad |
     TraceEvent.CommitPendingTreesToCA |
     TraceEvent.CompositeLayers |
-    CompositingInputsUpdater.Update |
-    CompositingLayerAssigner.Assign |
-    CompositingRequirementsUpdater.UpdateRecursive |
+    TraceEvent.CompositingInputsUpdater.Update |
+    TraceEvent.CompositingLayerAssigner.Assign |
+    TraceEvent.CompositingRequirementsUpdater.UpdateRecursive |
     TraceEvent.Compositor_tq |
-    CompositorFrameSinkSupport.DidNotProduceFrame |
-    CompositorFrameSinkSupport.MaybeSubmitCompositorFrame |
-    CompositorTimingHistory.DidDraw |
-    ConcurrentMarking.RunPreempted |
+    TraceEvent.CompositorFrameSinkSupport.DidNotProduceFrame |
+    TraceEvent.CompositorFrameSinkSupport.MaybeSubmitCompositorFrame |
+    TraceEvent.CompositorTimingHistory.DidDraw |
+    TraceEvent.ConcurrentMarking.RunPreempted |
     TraceEvent.CONNECT_JOB_SET_SOCKET |
-    ConnectJob.NotifyDelegateOfCompletion |
-    ConsoleMessage.Error |
-    Content.Mojom.ChildHistogramFetcherFactory |
-    Content.Mojom.Frame |
-    Content.Mojom.FrameFactory |
-    Content.Mojom.FrameInputHandler |
-    Content.Mojom.FrameSinkProvider |
-    Content.Mojom.RenderFrameMetadataObserverClient |
-    Content.Mojom.SandboxSupportMac |
-    Content.Mojom.Widget |
-    ContentLayerDelegate.PaintContents |
-    ContentSubresourceFilterThrottleManager.ReadyToCommitNavigation |
+    TraceEvent.ConnectJob.NotifyDelegateOfCompletion |
+    TraceEvent.ConsoleMessage.Error |
+    TraceEvent.Content.Mojom.ChildHistogramFetcherFactory |
+    TraceEvent.Content.Mojom.Frame |
+    TraceEvent.Content.Mojom.FrameFactory |
+    TraceEvent.Content.Mojom.FrameInputHandler |
+    TraceEvent.Content.Mojom.FrameSinkProvider |
+    TraceEvent.Content.Mojom.RenderFrameMetadataObserverClient |
+    TraceEvent.Content.Mojom.SandboxSupportMac |
+    TraceEvent.Content.Mojom.Widget |
+    TraceEvent.ContentLayerDelegate.PaintContents |
+    TraceEvent.ContentSubresourceFilterThrottleManager.ReadyToCommitNavigation |
     TraceEvent.ContextCreatedNotification |
     TraceEvent.Control_tq |
     TraceEvent.COOKIE_STORE_COOKIE_ADDED |
     TraceEvent.COOKIE_STORE_COOKIE_DELETED |
-    CpuProfiler.StartProfiling |
+    TraceEvent.CpuProfiler.StartProfiling |
     TraceEvent.CreateIOSurface |
     TraceEvent.CSSFirstUsed |
-    CSSParserImpl.ParseStyleSheet.Parse |
-    CustomElementRegistry.Define |
+    TraceEvent.CSSParserImpl.ParseStyleSheet.Parse |
+    TraceEvent.CustomElementRegistry.Define |
     TraceEvent.Damagenotvisible |
-    DataReductionProxyCompressionStats.RecordDataUseWithMimeType |
+    TraceEvent.DataReductionProxyCompressionStats.RecordDataUseWithMimeType |
     TraceEvent.DecodeFont |
     TraceEvent.DecodeImage |
     TraceEvent.DecodeLazyPixelRef |
     TraceEvent.Default_tq |
     TraceEvent.DefaultPathOp |
-    DelayBasedTimeSource.SetActive |
-    Device.Mojom.PowerMonitor |
-    Device.Mojom.PowerMonitorClient |
-    Device.Mojom.TimeZoneMonitor |
-    Device.Mojom.WakeLock |
-    Device.Mojom.WakeLockContext |
-    Device.Mojom.WakeLockProvider |
+    TraceEvent.DelayBasedTimeSource.SetActive |
+    TraceEvent.Device.Mojom.PowerMonitor |
+    TraceEvent.Device.Mojom.PowerMonitorClient |
+    TraceEvent.Device.Mojom.TimeZoneMonitor |
+    TraceEvent.Device.Mojom.WakeLock |
+    TraceEvent.Device.Mojom.WakeLockContext |
+    TraceEvent.Device.Mojom.WakeLockProvider |
     TraceEvent.DidPrepareTiles |
     TraceEvent.DidProcessTask |
-    DirectRenderer.DrawFrame |
-    DirectRenderer.DrawRenderPass |
-    Discardable_memory.Mojom.DiscardableSharedMemoryManager |
-    DiscardableImageMap.Generate |
+    TraceEvent.DirectRenderer.DrawFrame |
+    TraceEvent.DirectRenderer.DrawRenderPass |
+    TraceEvent.Discardable_memory.Mojom.DiscardableSharedMemoryManager |
+    TraceEvent.DiscardableImageMap.Generate |
     TraceEvent.DiskUsage |
-    Display.DrawAndSwap |
-    Display.Resize |
-    Display.SetSurfaceId |
-    Display.SetVisible |
-    Display.SurfaceDiscarded |
-    DisplayCALayerTree.GotCAContextFrame |
+    TraceEvent.Display.DrawAndSwap |
+    TraceEvent.Display.Resize |
+    TraceEvent.Display.SetSurfaceId |
+    TraceEvent.Display.SetVisible |
+    TraceEvent.Display.SurfaceDiscarded |
+    TraceEvent.DisplayCALayerTree.GotCAContextFrame |
     TraceEvent.DisplayCompositor |
-    DisplayItemList.Finalize |
-    DisplayLinkMac.DisplayLinkCallback |
-    DisplayLinkMac.UpdateVSyncParameters |
-    DisplayScheduler.BeginFrame |
-    DisplayScheduler.DrawAndSwap |
-    DisplayScheduler.OnBeginFrameDeadline |
-    DisplayScheduler.Pending_swaps |
-    DisplayScheduler.ScheduleBeginFrameDeadline |
-    DisplayScheduler.SetNewRootSurface |
-    DisplayScheduler.SetRootFrameMissing |
-    DisplayScheduler.SurfaceDamaged |
-    DisplayScheduler.SurfaceDamageExpected |
-    DisplayScheduler.UpdateHasPendingSurfaces |
+    TraceEvent.DisplayItemList.Finalize |
+    TraceEvent.DisplayLinkMac.DisplayLinkCallback |
+    TraceEvent.DisplayLinkMac.UpdateVSyncParameters |
+    TraceEvent.DisplayScheduler.BeginFrame |
+    TraceEvent.DisplayScheduler.DrawAndSwap |
+    TraceEvent.DisplayScheduler.OnBeginFrameDeadline |
+    TraceEvent.DisplayScheduler.Pending_swaps |
+    TraceEvent.DisplayScheduler.ScheduleBeginFrameDeadline |
+    TraceEvent.DisplayScheduler.SetNewRootSurface |
+    TraceEvent.DisplayScheduler.SetRootFrameMissing |
+    TraceEvent.DisplayScheduler.SurfaceDamaged |
+    TraceEvent.DisplayScheduler.SurfaceDamageExpected |
+    TraceEvent.DisplayScheduler.UpdateHasPendingSurfaces |
     TraceEvent.DNS_TRANSACTION_ATTEMPT |
     TraceEvent.DNS_TRANSACTION_QUERY |
     TraceEvent.DNS_TRANSACTION_RESPONSE |
     TraceEvent.DNS_TRANSACTION |
-    Document.RebuildLayoutTree |
-    Document.RecalcStyle |
-    Document.Shutdown |
-    Document.UpdateActiveStyle |
-    Document.UpdateStyle |
-    Document.UpdateStyleInvalidationIfNeeded |
-    DocumentSubresourceFilter.GetLoadPolicy |
-    DocumentTimeline.ServiceAnimations |
+    TraceEvent.Document.RebuildLayoutTree |
+    TraceEvent.Document.RecalcStyle |
+    TraceEvent.Document.Shutdown |
+    TraceEvent.Document.UpdateActiveStyle |
+    TraceEvent.Document.UpdateStyle |
+    TraceEvent.Document.UpdateStyleInvalidationIfNeeded |
+    TraceEvent.DocumentSubresourceFilter.GetLoadPolicy |
+    TraceEvent.DocumentTimeline.ServiceAnimations |
     TraceEvent.DomComplete |
     TraceEvent.DOMContentLoaded |
     TraceEvent.DomContentLoadedEventEnd |
@@ -301,35 +301,35 @@ export namespace TraceEvent {
     TraceEvent.DOMStorageMsg_AsyncOperationComplete |
     TraceEvent.DOMStorageMsg_Event |
     TraceEvent.DomTime |
-    DosplayResourceProvider.DeleteResourceInternal |
+    TraceEvent.DosplayResourceProvider.DeleteResourceInternal |
     TraceEvent.DoVerifyOnWorkerThread |
-    Draw_property_utils.ComputeDrawPropertiesOfVisibleLayers |
-    Draw_property_utils.FindLayersThatNeedUpdates |
+    TraceEvent.Draw_property_utils.ComputeDrawPropertiesOfVisibleLayers |
+    TraceEvent.Draw_property_utils.FindLayersThatNeedUpdates |
     TraceEvent.DrawFrame |
-    DrawLayers.FrameViewerTracing |
+    TraceEvent.DrawLayers.FrameViewerTracing |
     TraceEvent.DrawLazyPixelRef |
     TraceEvent.Drawskipped |
     TraceEvent.DrawVerticesOp |
     TraceEvent.EarlyOut_DeferCommit_InsideBeginMainFrame |
     TraceEvent.EarlyOut_NoUpdates |
-    EditingUtility.NextCandidateAlgorithm |
-    EditingUtility.PreviousCandidateAlgorithm |
-    ElementAnimations.SetRunState |
+    TraceEvent.EditingUtility.NextCandidateAlgorithm |
+    TraceEvent.EditingUtility.PreviousCandidateAlgorithm |
+    TraceEvent.ElementAnimations.SetRunState |
     TraceEvent.EnableLongIdlePeriod |
     TraceEvent.EndIdlePeriod |
     TraceEvent.EndofTrace |
     TraceEvent.Estimated_queueing_time_for_window |
-    Evacuator.EvacuatePage |
+    TraceEvent.Evacuator.EvacuatePage |
     TraceEvent.EvaluateScript |
-    Event.Pipeline |
+    TraceEvent.Event.Pipeline |
     TraceEvent.EventDispatch |
-    EventDispatcher.Dispatch |
-    EventDispatcher.DispatchEvent |
-    EventHandler.HandleMouseLeaveEvent |
-    EventHandler.HandleMouseMoveEvent |
-    EventHandler.HandleMousePressEvent |
-    EventHandler.HandleMouseReleaseEvent |
-    EventHandler.HitTestResultAtLocation |
+    TraceEvent.EventDispatcher.Dispatch |
+    TraceEvent.EventDispatcher.DispatchEvent |
+    TraceEvent.EventHandler.HandleMouseLeaveEvent |
+    TraceEvent.EventHandler.HandleMouseMoveEvent |
+    TraceEvent.EventHandler.HandleMousePressEvent |
+    TraceEvent.EventHandler.HandleMouseReleaseEvent |
+    TraceEvent.EventHandler.HitTestResultAtLocation |
     TraceEvent.ExtensionHostMsg_AddLazyListener |
     TraceEvent.ExtensionHostMsg_AddListener |
     TraceEvent.ExtensionHostMsg_CloseMessagePort |
@@ -361,27 +361,27 @@ export namespace TraceEvent {
     TraceEvent.ExtensionMsg_UpdateUserScripts |
     TraceEvent.ExtensionMsg_ValidateMessagePort |
     TraceEvent.ExtensionMsg_WatchPages |
-    Extensions.FeatureProvider.FeatureProviderStatic |
+    TraceEvent.Extensions.FeatureProvider.FeatureProviderStatic |
     TraceEvent.FaveReady_mark |
     TraceEvent.FaveReady |
-    FaviconServiceImpl.GetFaviconForPageURL |
-    FaviconServiceImpl.GetFaviconImageForPageURL |
-    FaviconServiceImpl.RunFaviconImageCallbackWithBitmapResults |
-    FaviconUtil.SelectFaviconFramesFromPNGs |
-    FaviconUtil.SelectFaviconFramesFromPNGsWithoutResizing |
+    TraceEvent.FaviconServiceImpl.GetFaviconForPageURL |
+    TraceEvent.FaviconServiceImpl.GetFaviconImageForPageURL |
+    TraceEvent.FaviconServiceImpl.RunFaviconImageCallbackWithBitmapResults |
+    TraceEvent.FaviconUtil.SelectFaviconFramesFromPNGs |
+    TraceEvent.FaviconUtil.SelectFaviconFramesFromPNGsWithoutResizing |
     TraceEvent.FeatureFirstUsed |
     TraceEvent.FetchStart |
-    File.Close |
-    File.Duplicate |
-    File.Flush |
-    File.GetInfo |
-    File.Initialize |
-    File.Read |
-    File.ReadAtCurrentPos |
-    File.Seek |
-    File.SetLength |
-    File.Write |
-    File.WriteAtCurrentPos |
+    TraceEvent.File.Close |
+    TraceEvent.File.Duplicate |
+    TraceEvent.File.Flush |
+    TraceEvent.File.GetInfo |
+    TraceEvent.File.Initialize |
+    TraceEvent.File.Read |
+    TraceEvent.File.ReadAtCurrentPos |
+    TraceEvent.File.Seek |
+    TraceEvent.File.SetLength |
+    TraceEvent.File.Write |
+    TraceEvent.File.WriteAtCurrentPos |
     TraceEvent.FillRectOp |
     TraceEvent.FireAnimationFrame |
     TraceEvent.FireIdleCallback |
@@ -448,70 +448,70 @@ export namespace TraceEvent {
     TraceEvent.FrameMsg_SetFrameOwnerProperties |
     TraceEvent.FrameMsg_UpdateUserActivationState |
     TraceEvent.FramePresented |
-    FrameScheduler.FramePaused |
-    FrameScheduler.FrameVisible |
-    FrameScheduler.HasActiveConnection |
-    FrameScheduler.KeepActive |
-    FrameScheduler.Origin |
-    FrameScheduler.PageFrozen |
-    FrameScheduler.PageVisibility |
-    FrameScheduler.SubResourceLoadingPaused |
-    FrameScheduler.TaskQueuesThrottled |
-    FrameScheduler.URL |
+    TraceEvent.FrameScheduler.FramePaused |
+    TraceEvent.FrameScheduler.FrameVisible |
+    TraceEvent.FrameScheduler.HasActiveConnection |
+    TraceEvent.FrameScheduler.KeepActive |
+    TraceEvent.FrameScheduler.Origin |
+    TraceEvent.FrameScheduler.PageFrozen |
+    TraceEvent.FrameScheduler.PageVisibility |
+    TraceEvent.FrameScheduler.SubResourceLoadingPaused |
+    TraceEvent.FrameScheduler.TaskQueuesThrottled |
+    TraceEvent.FrameScheduler.URL |
     TraceEvent.FrameStartedLoading |
-    FrameTreeNode.DidStartLoading |
-    FrameTreeNode.DidStopLoading |
-    FrameView.Layout |
-    FrameView.PerformLayout |
-    FrameView.PerformPostLayoutTasks |
-    FrameView.PerformPreLayoutTasks |
-    FullEvacuator.RawEvacuatePage |
+    TraceEvent.FrameTreeNode.DidStartLoading |
+    TraceEvent.FrameTreeNode.DidStopLoading |
+    TraceEvent.FrameView.Layout |
+    TraceEvent.FrameView.PerformLayout |
+    TraceEvent.FrameView.PerformPostLayoutTasks |
+    TraceEvent.FrameView.PerformPreLayoutTasks |
+    TraceEvent.FullEvacuator.RawEvacuatePage |
     TraceEvent.FullImage |
     TraceEvent.FunctionCall |
-    GestureProvider.InitGestureDetectors |
-    GestureProvider.OnTouchEvent |
-    GLContextCGL.BackpressureFenceCreate |
-    GLContextCGL.BackpressureFenceWait |
-    GLContextCGL.MakeCurrent |
-    GLES2.Finish |
-    GLES2.GetGLError |
-    GLES2.GetShaderPrecisionFormat |
-    GLES2.GetString |
-    GLES2.PostSubBufferCHROMIUM |
-    GLES2CommandBufferStub.Initialize |
-    GLES2DecoderImpl.ClearLevel |
-    GLES2DecoderImpl.ClearLevelUsingGL |
-    GLES2DecoderImpl.DoCompileShader |
-    GLES2DecoderImpl.DoCreateAndConsumeTextureINTERNAL |
-    GLES2DecoderImpl.DoLinkProgram |
-    GLES2DecoderImpl.DoTexStorage2D |
-    GLES2DecoderImpl.DoTexStorage2DImageCHROMIUM |
-    GLES2DecoderImpl.HandlePostSubBufferCHROMIUM |
-    GLES2DecoderImpl.HandleTexImage2D |
-    GLES2DecoderImpl.HandleTexSubImage2D |
-    GLES2DecoderImpl.Initialize |
-    GLES2DecoderImpl.InitializeShaderTranslator |
-    GLES2DecoderImpl.RestoreState |
-    GLES2Implementation.CheckFramebufferStatus |
-    GLES2Implementation.GetIntegerv |
-    GLES2Implementation.Initialize |
-    GLES2Implementation.SetAggressivelyFreeResources |
-    GLFence.HasCompleted |
-    GLImageIOSurface.BindTexImage |
-    GlobalMemoryDump.Computation |
-    GLRenderer.BeginDrawingFrame |
-    GLRenderer.InitializeSharedObjects |
-    GLRenderer.SwapBuffers |
+    TraceEvent.GestureProvider.InitGestureDetectors |
+    TraceEvent.GestureProvider.OnTouchEvent |
+    TraceEvent.GLContextCGL.BackpressureFenceCreate |
+    TraceEvent.GLContextCGL.BackpressureFenceWait |
+    TraceEvent.GLContextCGL.MakeCurrent |
+    TraceEvent.GLES2.Finish |
+    TraceEvent.GLES2.GetGLError |
+    TraceEvent.GLES2.GetShaderPrecisionFormat |
+    TraceEvent.GLES2.GetString |
+    TraceEvent.GLES2.PostSubBufferCHROMIUM |
+    TraceEvent.GLES2CommandBufferStub.Initialize |
+    TraceEvent.GLES2DecoderImpl.ClearLevel |
+    TraceEvent.GLES2DecoderImpl.ClearLevelUsingGL |
+    TraceEvent.GLES2DecoderImpl.DoCompileShader |
+    TraceEvent.GLES2DecoderImpl.DoCreateAndConsumeTextureINTERNAL |
+    TraceEvent.GLES2DecoderImpl.DoLinkProgram |
+    TraceEvent.GLES2DecoderImpl.DoTexStorage2D |
+    TraceEvent.GLES2DecoderImpl.DoTexStorage2DImageCHROMIUM |
+    TraceEvent.GLES2DecoderImpl.HandlePostSubBufferCHROMIUM |
+    TraceEvent.GLES2DecoderImpl.HandleTexImage2D |
+    TraceEvent.GLES2DecoderImpl.HandleTexSubImage2D |
+    TraceEvent.GLES2DecoderImpl.Initialize |
+    TraceEvent.GLES2DecoderImpl.InitializeShaderTranslator |
+    TraceEvent.GLES2DecoderImpl.RestoreState |
+    TraceEvent.GLES2Implementation.CheckFramebufferStatus |
+    TraceEvent.GLES2Implementation.GetIntegerv |
+    TraceEvent.GLES2Implementation.Initialize |
+    TraceEvent.GLES2Implementation.SetAggressivelyFreeResources |
+    TraceEvent.GLFence.HasCompleted |
+    TraceEvent.GLImageIOSurface.BindTexImage |
+    TraceEvent.GlobalMemoryDump.Computation |
+    TraceEvent.GLRenderer.BeginDrawingFrame |
+    TraceEvent.GLRenderer.InitializeSharedObjects |
+    TraceEvent.GLRenderer.SwapBuffers |
     TraceEvent.GlResizeChromium |
     TraceEvent.Goog_123_3_1_end |
     TraceEvent.Goog_123_3_1_start |
     TraceEvent.Goog_123_3_1 |
-    Gpu.EstablishGpuChannelSync |
-    Gpu.State |
-    GpuChannel.OnCreateCommandBuffer |
-    GpuChannel.OnDestroyCommandBuffer |
-    GpuChannelHost.CreateViewCommandBuffer |
-    GpuChannelHost.Send |
+    TraceEvent.Gpu.EstablishGpuChannelSync |
+    TraceEvent.Gpu.State |
+    TraceEvent.GpuChannel.OnCreateCommandBuffer |
+    TraceEvent.GpuChannel.OnDestroyCommandBuffer |
+    TraceEvent.GpuChannelHost.CreateViewCommandBuffer |
+    TraceEvent.GpuChannelHost.Send |
     TraceEvent.GpuChannelMsg_CreateCommandBuffer |
     TraceEvent.GpuChannelMsg_CreateSharedImage |
     TraceEvent.GpuChannelMsg_CreateSharedImageWithData |
@@ -524,66 +524,66 @@ export namespace TraceEvent {
     TraceEvent.GpuCommandBufferMsg_RegisterTransferBuffer |
     TraceEvent.GpuCommandBufferMsg_SetGetBuffer |
     TraceEvent.GpuCommandBufferMsg_WaitForGetOffsetInRange |
-    GpuHostImpl.CreateChannelCache |
-    GpuHostImpl.DidDestroyChannel |
-    GpuHostImpl.EstablishGpuChannel |
-    GpuHostImpl.OnChannelEstablished |
-    GpuImageDecodeCache.CreateImageData |
-    GpuImageDecodeCache.DrawWithImageFinished |
-    GpuImageDecodeCache.EnsureCapacity |
-    GpuImageDecodeCache.GetDecodedImageForDraw |
-    GpuImageDecodeCache.GetImageDataForDrawImage |
-    GpuImageDecodeCache.GetImageDecodeTaskAndRef |
-    GpuImageDecodeCache.GetTaskForImageAndRef |
-    GpuImageDecodeCache.OnImageUploadTaskCompleted |
-    GpuImageDecodeCache.OnMemoryDump |
-    GpuImageDecodeCache.ReduceCacheUsage |
-    GpuImageDecodeCache.RefImage |
-    GpuImageDecodeCache.RefImageDecode |
-    GpuImageDecodeCache.SetShouldAggressivelyFreeResources |
-    GpuImageDecodeCache.UnrefImage |
-    GpuImageDecodeCache.UnrefImageDecode |
-    GpuImageDecodeCache.UploadImage |
-    GpuRasterBuffer.Playback |
+    TraceEvent.GpuHostImpl.CreateChannelCache |
+    TraceEvent.GpuHostImpl.DidDestroyChannel |
+    TraceEvent.GpuHostImpl.EstablishGpuChannel |
+    TraceEvent.GpuHostImpl.OnChannelEstablished |
+    TraceEvent.GpuImageDecodeCache.CreateImageData |
+    TraceEvent.GpuImageDecodeCache.DrawWithImageFinished |
+    TraceEvent.GpuImageDecodeCache.EnsureCapacity |
+    TraceEvent.GpuImageDecodeCache.GetDecodedImageForDraw |
+    TraceEvent.GpuImageDecodeCache.GetImageDataForDrawImage |
+    TraceEvent.GpuImageDecodeCache.GetImageDecodeTaskAndRef |
+    TraceEvent.GpuImageDecodeCache.GetTaskForImageAndRef |
+    TraceEvent.GpuImageDecodeCache.OnImageUploadTaskCompleted |
+    TraceEvent.GpuImageDecodeCache.OnMemoryDump |
+    TraceEvent.GpuImageDecodeCache.ReduceCacheUsage |
+    TraceEvent.GpuImageDecodeCache.RefImage |
+    TraceEvent.GpuImageDecodeCache.RefImageDecode |
+    TraceEvent.GpuImageDecodeCache.SetShouldAggressivelyFreeResources |
+    TraceEvent.GpuImageDecodeCache.UnrefImage |
+    TraceEvent.GpuImageDecodeCache.UnrefImageDecode |
+    TraceEvent.GpuImageDecodeCache.UploadImage |
+    TraceEvent.GpuRasterBuffer.Playback |
     TraceEvent.GpuRasterization |
-    GPUStateTracer.TakeSnapshotWithCurrentFramebuffer |
+    TraceEvent.GPUStateTracer.TakeSnapshotWithCurrentFramebuffer |
     TraceEvent.GPUTask |
-    GPUTracer.ProcessTraces |
-    Graphics.Pipeline.DrawAndSwap |
-    GraphicsLayer.PaintContents |
-    GraphicsLayerTreeBuilder.Rebuild |
-    GraphicsLayerUpdater.Update |
-    GrContextPriv.WriteSurfacePixels |
-    GrDrawingManager.Flush |
-    GrDrawOpAtlas.Plot.UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy |
-    GrGLProgramGrGLProgramBuilder.Finalize |
-    GrGpu.CreateTexture |
-    GrRenderTargetContext.AddDrawOp |
-    GrRenderTargetContext.Clear |
-    GrRenderTargetContext.Discard |
-    GrRenderTargetContext.DrawGlyphRunList |
-    GrRenderTargetContext.DrawOval |
-    GrRenderTargetContext.DrawPaint |
-    GrRenderTargetContext.DrawPath |
-    GrRenderTargetContext.DrawRect |
-    GrRenderTargetContext.DrawRRect |
-    GrRenderTargetContext.DrawShape |
-    GrRenderTargetContext.DrawTexture |
-    GrRenderTargetContext.DrawVertices |
-    GrRenderTargetContext.FillRectToRect |
-    GrRenderTargetContext.FillRectWithLocalMatrix |
-    GrRenderTargetContext.InternalDrawPath |
-    GrRenderTargetContext.PrepareForExternalIO |
-    GrRenderTargetContextPriv.AbsClear |
+    TraceEvent.GPUTracer.ProcessTraces |
+    TraceEvent.Graphics.Pipeline.DrawAndSwap |
+    TraceEvent.GraphicsLayer.PaintContents |
+    TraceEvent.GraphicsLayerTreeBuilder.Rebuild |
+    TraceEvent.GraphicsLayerUpdater.Update |
+    TraceEvent.GrContextPriv.WriteSurfacePixels |
+    TraceEvent.GrDrawingManager.Flush |
+    TraceEvent.GrDrawOpAtlas.Plot.UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy |
+    TraceEvent.GrGLProgramGrGLProgramBuilder.Finalize |
+    TraceEvent.GrGpu.CreateTexture |
+    TraceEvent.GrRenderTargetContext.AddDrawOp |
+    TraceEvent.GrRenderTargetContext.Clear |
+    TraceEvent.GrRenderTargetContext.Discard |
+    TraceEvent.GrRenderTargetContext.DrawGlyphRunList |
+    TraceEvent.GrRenderTargetContext.DrawOval |
+    TraceEvent.GrRenderTargetContext.DrawPaint |
+    TraceEvent.GrRenderTargetContext.DrawPath |
+    TraceEvent.GrRenderTargetContext.DrawRect |
+    TraceEvent.GrRenderTargetContext.DrawRRect |
+    TraceEvent.GrRenderTargetContext.DrawShape |
+    TraceEvent.GrRenderTargetContext.DrawTexture |
+    TraceEvent.GrRenderTargetContext.DrawVertices |
+    TraceEvent.GrRenderTargetContext.FillRectToRect |
+    TraceEvent.GrRenderTargetContext.FillRectWithLocalMatrix |
+    TraceEvent.GrRenderTargetContext.InternalDrawPath |
+    TraceEvent.GrRenderTargetContext.PrepareForExternalIO |
+    TraceEvent.GrRenderTargetContextPriv.AbsClear |
     TraceEvent.HandleMouseMove |
     TraceEvent.HeadEnd |
     TraceEvent.HeadTime |
-    Heap.CollectCodeStatistics |
-    HistoryBackend.GetFaviconsForURL |
-    HistoryQuickProvider.Start |
-    HistoryService.GetFaviconsForURL |
-    HistoryURLProvider.QueryComplete |
-    HistoryURLProvider.Start |
+    TraceEvent.Heap.CollectCodeStatistics |
+    TraceEvent.HistoryBackend.GetFaviconsForURL |
+    TraceEvent.HistoryQuickProvider.Start |
+    TraceEvent.HistoryService.GetFaviconsForURL |
+    TraceEvent.HistoryURLProvider.QueryComplete |
+    TraceEvent.HistoryURLProvider.Start |
     TraceEvent.HitTest |
     TraceEvent.HOST_RESOLVER_IMPL_ATTEMPT_FINISHED |
     TraceEvent.HOST_RESOLVER_IMPL_ATTEMPT_STARTED |
@@ -597,20 +597,20 @@ export namespace TraceEvent {
     TraceEvent.HOST_RESOLVER_IMPL_JOB |
     TraceEvent.HOST_RESOLVER_IMPL_PROC_TASK |
     TraceEvent.HOST_RESOLVER_IMPL_REQUEST |
-    HostCache.Set |
-    HTMLCanvasElement.FinalizeFrame |
-    HTMLDocumentParser.Append |
-    HTMLDocumentParser.AppendBytes |
-    HTMLDocumentParser.DocumentElementAvailable |
-    HTMLDocumentParser.EnqueueTokenizedChunk |
-    HTMLDocumentParser.Insert |
-    HTMLDocumentParser.ProcessTokenizedChunkFromBackgroundParser |
-    HTMLParserScriptRunner.Execute |
-    HTMLParserScriptRunner.ExecuteScriptsWaitingForLoad |
-    HTMLParserScriptRunner.ExecuteScriptsWaitingForParsing |
-    HTMLParserScriptRunner.ExecuteScriptsWaitingForResources |
+    TraceEvent.HostCache.Set |
+    TraceEvent.HTMLCanvasElement.FinalizeFrame |
+    TraceEvent.HTMLDocumentParser.Append |
+    TraceEvent.HTMLDocumentParser.AppendBytes |
+    TraceEvent.HTMLDocumentParser.DocumentElementAvailable |
+    TraceEvent.HTMLDocumentParser.EnqueueTokenizedChunk |
+    TraceEvent.HTMLDocumentParser.Insert |
+    TraceEvent.HTMLDocumentParser.ProcessTokenizedChunkFromBackgroundParser |
+    TraceEvent.HTMLParserScriptRunner.Execute |
+    TraceEvent.HTMLParserScriptRunner.ExecuteScriptsWaitingForLoad |
+    TraceEvent.HTMLParserScriptRunner.ExecuteScriptsWaitingForParsing |
+    TraceEvent.HTMLParserScriptRunner.ExecuteScriptsWaitingForResources |
     TraceEvent.HTMLParserScriptRunnerExecuteScript |
-    HTMLSelectElement.SelectOption |
+    TraceEvent.HTMLSelectElement.SelectOption |
     TraceEvent.HTTP_CACHE_ADD_TO_ENTRY |
     TraceEvent.HTTP_CACHE_CALLER_REQUEST_HEADERS |
     TraceEvent.HTTP_CACHE_CREATE_ENTRY |
@@ -664,122 +664,122 @@ export namespace TraceEvent {
     TraceEvent.HTTP2_SESSION |
     TraceEvent.HTTP2_STREAM_UPDATE_RECV_WINDOW |
     TraceEvent.HTTP2_STREAM_UPDATE_SEND_WINDOW |
-    HttpCacheTransaction.DoAddToEntry |
-    HttpCacheTransaction.DoAddToEntryComplete |
-    HttpCacheTransaction.DoCacheDispatchValidation |
-    HttpCacheTransaction.DoCacheReadData |
-    HttpCacheTransaction.DoCacheReadDataComplete |
-    HttpCacheTransaction.DoCacheReadResponse |
-    HttpCacheTransaction.DoCacheReadResponseComplete |
-    HttpCacheTransaction.DoCacheWriteResponse |
-    HttpCacheTransaction.DoCacheWriteResponseComplete |
-    HttpCacheTransaction.DoCreateEntry |
-    HttpCacheTransaction.DoCreateEntryComplete |
-    HttpCacheTransaction.DoInitEntry |
-    HttpCacheTransaction.DoNetworkRead |
-    HttpCacheTransaction.DoNetworkReadCacheWrite |
-    HttpCacheTransaction.DoNetworkReadCacheWriteComplete |
-    HttpCacheTransaction.DoNetworkReadComplete |
-    HttpCacheTransaction.DoOpenEntry |
-    HttpCacheTransaction.DoOpenEntryComplete |
-    HttpCacheTransaction.DoOverwriteCachedResponse |
-    HttpCacheTransaction.DoSendRequest |
-    HttpCacheTransaction.DoSendRequestComplete |
-    HttpCacheTransaction.DoSuccessfulSendRequest |
-    HttpCacheTransaction.DoTruncateCachedData |
-    HttpCacheTransaction.DoTruncateCachedMetadata |
-    HttpCacheTransaction.DoTruncateCachedMetadataComplete |
-    HttpCacheTransaction.Transaction |
-    HttpStreamFactory.Job.OnIOComplete |
-    HttpStreamFactory.Job.RunLoop |
-    Identity.Mojom.IdentityManager |
+    TraceEvent.HttpCacheTransaction.DoAddToEntry |
+    TraceEvent.HttpCacheTransaction.DoAddToEntryComplete |
+    TraceEvent.HttpCacheTransaction.DoCacheDispatchValidation |
+    TraceEvent.HttpCacheTransaction.DoCacheReadData |
+    TraceEvent.HttpCacheTransaction.DoCacheReadDataComplete |
+    TraceEvent.HttpCacheTransaction.DoCacheReadResponse |
+    TraceEvent.HttpCacheTransaction.DoCacheReadResponseComplete |
+    TraceEvent.HttpCacheTransaction.DoCacheWriteResponse |
+    TraceEvent.HttpCacheTransaction.DoCacheWriteResponseComplete |
+    TraceEvent.HttpCacheTransaction.DoCreateEntry |
+    TraceEvent.HttpCacheTransaction.DoCreateEntryComplete |
+    TraceEvent.HttpCacheTransaction.DoInitEntry |
+    TraceEvent.HttpCacheTransaction.DoNetworkRead |
+    TraceEvent.HttpCacheTransaction.DoNetworkReadCacheWrite |
+    TraceEvent.HttpCacheTransaction.DoNetworkReadCacheWriteComplete |
+    TraceEvent.HttpCacheTransaction.DoNetworkReadComplete |
+    TraceEvent.HttpCacheTransaction.DoOpenEntry |
+    TraceEvent.HttpCacheTransaction.DoOpenEntryComplete |
+    TraceEvent.HttpCacheTransaction.DoOverwriteCachedResponse |
+    TraceEvent.HttpCacheTransaction.DoSendRequest |
+    TraceEvent.HttpCacheTransaction.DoSendRequestComplete |
+    TraceEvent.HttpCacheTransaction.DoSuccessfulSendRequest |
+    TraceEvent.HttpCacheTransaction.DoTruncateCachedData |
+    TraceEvent.HttpCacheTransaction.DoTruncateCachedMetadata |
+    TraceEvent.HttpCacheTransaction.DoTruncateCachedMetadataComplete |
+    TraceEvent.HttpCacheTransaction.Transaction |
+    TraceEvent.HttpStreamFactory.Job.OnIOComplete |
+    TraceEvent.HttpStreamFactory.Job.RunLoop |
+    TraceEvent.Identity.Mojom.IdentityManager |
     TraceEvent.Idle_tq |
-    IdleSpellCheckController.HotModeInvocation |
-    ImageAnimationController.AnimateImagesForSyncTree |
-    ImageAnimationController.WillActivate |
+    TraceEvent.IdleSpellCheckController.HotModeInvocation |
+    TraceEvent.ImageAnimationController.AnimateImagesForSyncTree |
+    TraceEvent.ImageAnimationController.WillActivate |
     TraceEvent.ImageDecodeTask |
-    ImageOperations.Resize |
-    ImageResourceContent.UpdateImage |
-    ImageTransportSurfaceOverlayMac.ApplyBackpressure |
-    ImageTransportSurfaceOverlayMac.SwapBuffersInternal |
-    ImageUploadTaskImpl.RunOnWorkerThread |
-    ImplementationBase.GetBucketContents |
-    ImplementationBase.Initialize |
-    ImplementationBase.WaitForCmd |
-    InProcessCommandBuffer.Flush |
-    InProcessCommandBuffer.FlushOnGpuThread |
-    InProcessCommandBuffer.Initialize |
-    InProcessCommandBuffer.InitializeOnGpuThread |
+    TraceEvent.ImageOperations.Resize |
+    TraceEvent.ImageResourceContent.UpdateImage |
+    TraceEvent.ImageTransportSurfaceOverlayMac.ApplyBackpressure |
+    TraceEvent.ImageTransportSurfaceOverlayMac.SwapBuffersInternal |
+    TraceEvent.ImageUploadTaskImpl.RunOnWorkerThread |
+    TraceEvent.ImplementationBase.GetBucketContents |
+    TraceEvent.ImplementationBase.Initialize |
+    TraceEvent.ImplementationBase.WaitForCmd |
+    TraceEvent.InProcessCommandBuffer.Flush |
+    TraceEvent.InProcessCommandBuffer.FlushOnGpuThread |
+    TraceEvent.InProcessCommandBuffer.Initialize |
+    TraceEvent.InProcessCommandBuffer.InitializeOnGpuThread |
     TraceEvent.Input_tq |
     TraceEvent.InputEventSentBlocking |
-    InputLatency.KeyUp |
-    InputLatency.MouseLeave |
-    InputLatency.MouseMove |
-    InputLatency.RawKeyDown |
+    TraceEvent.InputLatency.KeyUp |
+    TraceEvent.InputLatency.MouseLeave |
+    TraceEvent.InputLatency.MouseMove |
+    TraceEvent.InputLatency.RawKeyDown |
     TraceEvent.InputMsg_SetFocus |
-    InputRouterImpl.FilterAndSendWebInputEvent |
-    InputRouterImpl.KeboardEventHandled |
-    InputRouterImpl.MouseEventHandled |
-    InputRouterImpl.OnHasTouchEventHandlers |
+    TraceEvent.InputRouterImpl.FilterAndSendWebInputEvent |
+    TraceEvent.InputRouterImpl.KeboardEventHandled |
+    TraceEvent.InputRouterImpl.MouseEventHandled |
+    TraceEvent.InputRouterImpl.OnHasTouchEventHandlers |
     TraceEvent.InstallConditionalFeatures |
     TraceEvent.InteractiveTime |
     TraceEvent.InvalidateLayout |
     TraceEvent.Ipc_tq |
     TraceEvent.IPCChannel |
     TraceEvent.Is_gesture_active |
-    ItemParallelJob.Run |
-    Job.ExecuteProxyResolver |
-    KeyedServiceFactory.GetServiceForContext |
+    TraceEvent.ItemParallelJob.Run |
+    TraceEvent.Job.ExecuteProxyResolver |
+    TraceEvent.KeyedServiceFactory.GetServiceForContext |
     TraceEvent.KeyframeModel |
-    KeywordProvider.Start |
-    LatencyInfo.Flow |
+    TraceEvent.KeywordProvider.Start |
+    TraceEvent.LatencyInfo.Flow |
     TraceEvent.LaunchProcess |
-    Layer.PaintContentsToDisplayList |
-    Layer.PushPropertiesTo |
-    Layer.SetElementId |
-    LayerAnimator.Step |
+    TraceEvent.Layer.PaintContentsToDisplayList |
+    TraceEvent.Layer.PushPropertiesTo |
+    TraceEvent.Layer.SetElementId |
+    TraceEvent.LayerAnimator.Step |
     TraceEvent.LayerId |
-    LayerImpl.SetElementId |
+    TraceEvent.LayerImpl.SetElementId |
     TraceEvent.LayerInvalidationTracking |
-    LayerTreeHost.AnimationHost.PushProperties |
-    LayerTreeHost.DoUpdateLayers |
-    LayerTreeHost.FinishCommitOnImplThread |
-    LayerTreeHost.InitializeForReal |
-    LayerTreeHost.LayerTreeHost |
-    LayerTreeHost.PushProperties |
-    LayerTreeHost.SetHasGpuRasterizationTrigger |
-    LayerTreeHost.SetLayerTreeFrameSink |
-    LayerTreeHost.UpdateLayers_BuiltPropertyTrees |
-    LayerTreeHost.UpdateLayers.BuildPropertyTrees |
-    LayerTreeHostImpl.ActivateSyncTree |
-    LayerTreeHostImpl.BeginCommit |
-    LayerTreeHostImpl.BuildEvictionQueue |
-    LayerTreeHostImpl.BuildRasterQueue |
-    LayerTreeHostImpl.CalculateRenderPasses |
-    LayerTreeHostImpl.CanDrawemptyviewport |
-    LayerTreeHostImpl.CanDrawnorootlayer |
-    LayerTreeHostImpl.CommitComplete |
-    LayerTreeHostImpl.GenerateCompositorFrame |
-    LayerTreeHostImpl.InitializeFrameSink |
-    LayerTreeHostImpl.LayerTreeHostImpl |
-    LayerTreeHostImpl.NotifyTileStateChanged |
-    LayerTreeHostImpl.PrepareToDraw |
-    LayerTreeHostImpl.ReleaseLayerTreeFrameSink |
-    LayerTreeHostImpl.SetVisible |
-    LayerTreeImpl.AddToElementLayerList |
-    LayerTreeImpl.InvalidateRegionForImages |
-    LayerTreeImpl.PushPropertiesTo |
-    LayerTreeImpl.PushPropertyTreesTo |
-    LayerTreeImpl.RemoveFromElementLayerList |
-    LayerTreeImpl.UpdateDrawProperties.CalculateDrawProperties |
-    LayerTreeImpl.UpdateDrawProperties.Occlusion |
-    LayerTreeImpl.UpdateDrawProperties.UpdateTiles |
+    TraceEvent.LayerTreeHost.AnimationHost.PushProperties |
+    TraceEvent.LayerTreeHost.DoUpdateLayers |
+    TraceEvent.LayerTreeHost.FinishCommitOnImplThread |
+    TraceEvent.LayerTreeHost.InitializeForReal |
+    TraceEvent.LayerTreeHost.LayerTreeHost |
+    TraceEvent.LayerTreeHost.PushProperties |
+    TraceEvent.LayerTreeHost.SetHasGpuRasterizationTrigger |
+    TraceEvent.LayerTreeHost.SetLayerTreeFrameSink |
+    TraceEvent.LayerTreeHost.UpdateLayers_BuiltPropertyTrees |
+    TraceEvent.LayerTreeHost.UpdateLayers.BuildPropertyTrees |
+    TraceEvent.LayerTreeHostImpl.ActivateSyncTree |
+    TraceEvent.LayerTreeHostImpl.BeginCommit |
+    TraceEvent.LayerTreeHostImpl.BuildEvictionQueue |
+    TraceEvent.LayerTreeHostImpl.BuildRasterQueue |
+    TraceEvent.LayerTreeHostImpl.CalculateRenderPasses |
+    TraceEvent.LayerTreeHostImpl.CanDrawemptyviewport |
+    TraceEvent.LayerTreeHostImpl.CanDrawnorootlayer |
+    TraceEvent.LayerTreeHostImpl.CommitComplete |
+    TraceEvent.LayerTreeHostImpl.GenerateCompositorFrame |
+    TraceEvent.LayerTreeHostImpl.InitializeFrameSink |
+    TraceEvent.LayerTreeHostImpl.LayerTreeHostImpl |
+    TraceEvent.LayerTreeHostImpl.NotifyTileStateChanged |
+    TraceEvent.LayerTreeHostImpl.PrepareToDraw |
+    TraceEvent.LayerTreeHostImpl.ReleaseLayerTreeFrameSink |
+    TraceEvent.LayerTreeHostImpl.SetVisible |
+    TraceEvent.LayerTreeImpl.AddToElementLayerList |
+    TraceEvent.LayerTreeImpl.InvalidateRegionForImages |
+    TraceEvent.LayerTreeImpl.PushPropertiesTo |
+    TraceEvent.LayerTreeImpl.PushPropertyTreesTo |
+    TraceEvent.LayerTreeImpl.RemoveFromElementLayerList |
+    TraceEvent.LayerTreeImpl.UpdateDrawProperties.CalculateDrawProperties |
+    TraceEvent.LayerTreeImpl.UpdateDrawProperties.Occlusion |
+    TraceEvent.LayerTreeImpl.UpdateDrawProperties.UpdateTiles |
     TraceEvent.Layout |
     TraceEvent.LayoutInvalidationTracking |
-    LayoutView.CommitPendingSelection |
-    Leveldb.Mojom.LevelDBService |
-    LiveObjectVisitor.VisitBlackObjects |
-    LiveObjectVisitor.VisitBlackObjectsNoFail |
+    TraceEvent.LayoutView.CommitPendingSelection |
+    TraceEvent.Leveldb.Mojom.LevelDBService |
+    TraceEvent.LiveObjectVisitor.VisitBlackObjects |
+    TraceEvent.LiveObjectVisitor.VisitBlackObjectsNoFail |
     TraceEvent.LoadAnyStartablePendingRequests |
     TraceEvent.LoadEndeventUtils |
     TraceEvent.LoadEndpixelQueue |
@@ -788,128 +788,128 @@ export namespace TraceEvent {
     TraceEvent.LoadFinished |
     TraceEvent.LoadStarteventUtils |
     TraceEvent.LoadStartpixelQueue |
-    LocalFrameView.FrameRectsChanged |
-    LocalFrameView.Layout |
-    LocalFrameView.PerformLayout |
-    LocalFrameView.PerformPostLayoutTasks |
-    LocalFrameView.PerformPreLayoutTasks |
-    LocalFrameView.RunCompositingLifecyclePhase |
-    LocalFrameView.RunPaintLifecyclePhase |
-    LocalFrameView.RunPrePaintLifecyclePhase |
-    LocalFrameView.RunStyleAndLayoutLifecyclePhases |
-    LocalFrameView.UpdateRenderThrottlingStatus |
-    LocalFrameView.UpdateStyleAndLayoutIfNeededRecursive |
-    LocalFrameView.UpdateViewportIntersectionsForSubtree |
-    LocalSurfaceId.Embed.Flow |
-    LocalSurfaceId.Submission.Flow |
-    LocalWindowProxy.CreateContext |
-    LocalWindowProxy.Initialize |
-    LocalWindowProxy.SetupWindowPrototypeChain |
-    LocalWindowProxy.UpdateDocumentProperty |
+    TraceEvent.LocalFrameView.FrameRectsChanged |
+    TraceEvent.LocalFrameView.Layout |
+    TraceEvent.LocalFrameView.PerformLayout |
+    TraceEvent.LocalFrameView.PerformPostLayoutTasks |
+    TraceEvent.LocalFrameView.PerformPreLayoutTasks |
+    TraceEvent.LocalFrameView.RunCompositingLifecyclePhase |
+    TraceEvent.LocalFrameView.RunPaintLifecyclePhase |
+    TraceEvent.LocalFrameView.RunPrePaintLifecyclePhase |
+    TraceEvent.LocalFrameView.RunStyleAndLayoutLifecyclePhases |
+    TraceEvent.LocalFrameView.UpdateRenderThrottlingStatus |
+    TraceEvent.LocalFrameView.UpdateStyleAndLayoutIfNeededRecursive |
+    TraceEvent.LocalFrameView.UpdateViewportIntersectionsForSubtree |
+    TraceEvent.LocalSurfaceId.Embed.Flow |
+    TraceEvent.LocalSurfaceId.Submission.Flow |
+    TraceEvent.LocalWindowProxy.CreateContext |
+    TraceEvent.LocalWindowProxy.Initialize |
+    TraceEvent.LocalWindowProxy.SetupWindowPrototypeChain |
+    TraceEvent.LocalWindowProxy.UpdateDocumentProperty |
     TraceEvent.LongTask |
     TraceEvent.Lteu |
     TraceEvent.Ltpq |
     TraceEvent.MainThreadLatency |
-    MainThreadScheduler.RendererMainThreadLoad.Background |
-    MainThreadScheduler.RendererMainThreadLoad.Foreground |
+    TraceEvent.MainThreadScheduler.RendererMainThreadLoad.Background |
+    TraceEvent.MainThreadScheduler.RendererMainThreadLoad.Foreground |
     TraceEvent.MainThreadSchedulerIdlePeriod |
-    MainThreadSchedulerImpl.BeginFrameNotExpectedSoon |
-    MainThreadSchedulerImpl.DidCommitFrameToCompositor |
-    MainThreadSchedulerImpl.DidCommitProvisionalLoad |
-    MainThreadSchedulerImpl.DidHandleInputEventOnCompositorThread |
-    MainThreadSchedulerImpl.DidHandleInputEventOnMainThread |
-    MainThreadSchedulerImpl.DidStartProvisionalLoad |
-    MainThreadSchedulerImpl.DispatchRequestBeginMainFrameNotExpected |
-    MainThreadSchedulerImpl.EndIdlePeriod |
-    MainThreadSchedulerImpl.OnFirstMeaningfulPaint |
-    MainThreadSchedulerImpl.OnRendererBackgrounded |
-    MainThreadSchedulerImpl.OnRendererForegrounded |
-    MainThreadSchedulerImpl.OnRendererHidden |
-    MainThreadSchedulerImpl.OnRendererVisible |
-    MainThreadSchedulerImpl.ResetForNavigationLocked |
-    MainThreadSchedulerImpl.SetAllRenderWidgetsHidden |
-    MainThreadSchedulerImpl.UpdateForInputEventOnCompositorThread |
-    MainThreadSchedulerImpl.WillBeginFrame |
+    TraceEvent.MainThreadSchedulerImpl.BeginFrameNotExpectedSoon |
+    TraceEvent.MainThreadSchedulerImpl.DidCommitFrameToCompositor |
+    TraceEvent.MainThreadSchedulerImpl.DidCommitProvisionalLoad |
+    TraceEvent.MainThreadSchedulerImpl.DidHandleInputEventOnCompositorThread |
+    TraceEvent.MainThreadSchedulerImpl.DidHandleInputEventOnMainThread |
+    TraceEvent.MainThreadSchedulerImpl.DidStartProvisionalLoad |
+    TraceEvent.MainThreadSchedulerImpl.DispatchRequestBeginMainFrameNotExpected |
+    TraceEvent.MainThreadSchedulerImpl.EndIdlePeriod |
+    TraceEvent.MainThreadSchedulerImpl.OnFirstMeaningfulPaint |
+    TraceEvent.MainThreadSchedulerImpl.OnRendererBackgrounded |
+    TraceEvent.MainThreadSchedulerImpl.OnRendererForegrounded |
+    TraceEvent.MainThreadSchedulerImpl.OnRendererHidden |
+    TraceEvent.MainThreadSchedulerImpl.OnRendererVisible |
+    TraceEvent.MainThreadSchedulerImpl.ResetForNavigationLocked |
+    TraceEvent.MainThreadSchedulerImpl.SetAllRenderWidgetsHidden |
+    TraceEvent.MainThreadSchedulerImpl.UpdateForInputEventOnCompositorThread |
+    TraceEvent.MainThreadSchedulerImpl.WillBeginFrame |
     TraceEvent.MajorGC |
     TraceEvent.Mark_test |
     TraceEvent.MarkAsMainFrame |
     TraceEvent.MarkDOMContent |
     TraceEvent.MarkLoad |
     TraceEvent.Measure_test |
-    Media.Mojom.InterfaceFactory |
-    Media.Mojom.MediaMetricsProvider |
-    Media.Mojom.MediaService |
-    Media.Mojom.RemoterFactory |
-    Media.Mojom.VideoDecoder |
+    TraceEvent.Media.Mojom.InterfaceFactory |
+    TraceEvent.Media.Mojom.MediaMetricsProvider |
+    TraceEvent.Media.Mojom.MediaService |
+    TraceEvent.Media.Mojom.RemoterFactory |
+    TraceEvent.Media.Mojom.VideoDecoder |
     TraceEvent.MediaPlayerDelegateHostMsg_OnMutedStatusChanged |
-    Memory_instrumentation.Mojom.ClientProcess |
-    Memory_instrumentation.Mojom.Coordinator |
-    MemoryCache.Evict |
-    MemoryCache.Prune |
-    MemoryDumpManager.FinishAsyncProcessDump |
-    MemoryDumpManager.InvokeOnMemoryDump |
+    TraceEvent.Memory_instrumentation.Mojom.ClientProcess |
+    TraceEvent.Memory_instrumentation.Mojom.Coordinator |
+    TraceEvent.MemoryCache.Evict |
+    TraceEvent.MemoryCache.Prune |
+    TraceEvent.MemoryDumpManager.FinishAsyncProcessDump |
+    TraceEvent.MemoryDumpManager.InvokeOnMemoryDump |
     TraceEvent.MemoryUsage |
-    MessageLoop.PostTask |
-    MessageLoop.RunTask |
-    MessagePipeReader.Receive |
-    MessagePipeReader.Send |
-    Metrics.Mojom.SingleSampleMetric |
-    Metrics.Mojom.SingleSampleMetricsProvider |
+    TraceEvent.MessageLoop.PostTask |
+    TraceEvent.MessageLoop.RunTask |
+    TraceEvent.MessagePipeReader.Receive |
+    TraceEvent.MessagePipeReader.Send |
+    TraceEvent.Metrics.Mojom.SingleSampleMetric |
+    TraceEvent.Metrics.Mojom.SingleSampleMetricsProvider |
     TraceEvent.MinorGC |
     TraceEvent.ModelNeutralWriteTransaction |
-    MojoVideoDecoderService.Construct |
-    MojoVideoDecoderService.Decode |
-    MojoVideoDecoderService.GetSupportedConfigs |
-    MojoVideoDecoderService.Initialize |
-    MojoVideoDecoderService.OnDecoderOutput |
+    TraceEvent.MojoVideoDecoderService.Construct |
+    TraceEvent.MojoVideoDecoderService.Decode |
+    TraceEvent.MojoVideoDecoderService.GetSupportedConfigs |
+    TraceEvent.MojoVideoDecoderService.Initialize |
+    TraceEvent.MojoVideoDecoderService.OnDecoderOutput |
     TraceEvent.Moredamageexpectedsoon |
-    MouseEventManager.FakeMouseMoveEventTimerFired |
-    MouseEventManager.HandleMouseDraggedEvent |
-    MouseEventManager.HandleMousePressEvent |
-    Namespace.TextureOp.Tessnamespace.VertexSpecGrTextureProxy |
-    NavigationControllerImpl.LoadURLWithParams |
+    TraceEvent.MouseEventManager.FakeMouseMoveEventTimerFired |
+    TraceEvent.MouseEventManager.HandleMouseDraggedEvent |
+    TraceEvent.MouseEventManager.HandleMousePressEvent |
+    TraceEvent.Namespace.TextureOp.Tessnamespace.VertexSpecGrTextureProxy |
+    TraceEvent.NavigationControllerImpl.LoadURLWithParams |
     TraceEvent.NavigationHandle |
     TraceEvent.NavigationRequest |
     TraceEvent.NavigationStart |
     TraceEvent.NavigationStartToCommit |
-    NavigationThrottle.WillProcessResponse |
-    NavigationThrottle.WillStartRequest |
+    TraceEvent.NavigationThrottle.WillProcessResponse |
+    TraceEvent.NavigationThrottle.WillStartRequest |
     TraceEvent.NavigationtimeToResponseStarted |
     TraceEvent.NavigationTimingnavigationStart |
-    NavigatorImpl.Navigate |
+    TraceEvent.NavigatorImpl.Navigate |
     TraceEvent.NeedsBeginFrameChanged |
     TraceEvent.NeedsTickAnimations |
     TraceEvent.NETWORK_DELEGATE_BEFORE_START_TRANSACTION |
     TraceEvent.NETWORK_DELEGATE_BEFORE_URL_REQUEST |
     TraceEvent.NETWORK_DELEGATE_HEADERS_RECEIVED |
     TraceEvent.NETWORK_QUALITY_CHANGED |
-    Network.Mojom.CookieChangeListener |
-    Network.Mojom.CookieManager |
-    Network.Mojom.NetworkContext |
-    Network.Mojom.NetworkContextClient |
-    Network.Mojom.NetworkQualityEstimatorManagerClient |
-    Network.Mojom.NetworkServiceClient |
-    Network.Mojom.ProxyConfigPollerClient |
-    Network.Mojom.ProxyLookupClient |
-    Network.Mojom.ResolveHostClient |
-    Network.Mojom.TrustedHeaderClient |
-    Network.Mojom.TrustedURLLoaderHeaderClient |
-    Network.Mojom.URLLoader |
-    Network.Mojom.URLLoaderClient |
-    Network.Mojom.URLLoaderFactory |
-    NetworkDelegate.ForcePrivacyMode |
-    NetworkDelegate.NotifyBeforeStartTransation |
-    NetworkDelegate.NotifyBeforeURLRequest |
-    NetworkDelegate.NotifyCompleted |
-    NetworkDelegate.NotifyHeadersReceived |
-    NetworkDelegate.NotifyNetworkBytesReceived |
-    NetworkDelegate.NotifyStartTransaction |
-    NetworkDelegate.NotifyURLRequestDestroyed |
+    TraceEvent.Network.Mojom.CookieChangeListener |
+    TraceEvent.Network.Mojom.CookieManager |
+    TraceEvent.Network.Mojom.NetworkContext |
+    TraceEvent.Network.Mojom.NetworkContextClient |
+    TraceEvent.Network.Mojom.NetworkQualityEstimatorManagerClient |
+    TraceEvent.Network.Mojom.NetworkServiceClient |
+    TraceEvent.Network.Mojom.ProxyConfigPollerClient |
+    TraceEvent.Network.Mojom.ProxyLookupClient |
+    TraceEvent.Network.Mojom.ResolveHostClient |
+    TraceEvent.Network.Mojom.TrustedHeaderClient |
+    TraceEvent.Network.Mojom.TrustedURLLoaderHeaderClient |
+    TraceEvent.Network.Mojom.URLLoader |
+    TraceEvent.Network.Mojom.URLLoaderClient |
+    TraceEvent.Network.Mojom.URLLoaderFactory |
+    TraceEvent.NetworkDelegate.ForcePrivacyMode |
+    TraceEvent.NetworkDelegate.NotifyBeforeStartTransation |
+    TraceEvent.NetworkDelegate.NotifyBeforeURLRequest |
+    TraceEvent.NetworkDelegate.NotifyCompleted |
+    TraceEvent.NetworkDelegate.NotifyHeadersReceived |
+    TraceEvent.NetworkDelegate.NotifyNetworkBytesReceived |
+    TraceEvent.NetworkDelegate.NotifyStartTransaction |
+    TraceEvent.NetworkDelegate.NotifyURLRequestDestroyed |
     TraceEvent.NetworkHintsMsg_DNSPrefetch |
-    NetworkQualityEstimator.NotifyHeadersReceived |
-    NetworkQualityEstimator.NotifyRequestCompleted |
+    TraceEvent.NetworkQualityEstimator.NotifyHeadersReceived |
+    TraceEvent.NetworkQualityEstimator.NotifyRequestCompleted |
     TraceEvent.Nodamageyet |
-    Node.UpdateDistribution |
+    TraceEvent.Node.UpdateDistribution |
     TraceEvent.NotStartingIdlePeriodBecauseDeadlineIsTooClose |
     TraceEvent.Num_cpus |
     TraceEvent.Obmark0c_search |
@@ -932,52 +932,52 @@ export namespace TraceEvent {
     TraceEvent.ObmeasureodbTR_11 |
     TraceEvent.ObmeasurerenderedMB_120 |
     TraceEvent.ObmeasurerenderedTR_11 |
-    Onetapvideo.EmbedRequest |
-    Onetapvideo.PlayerReady |
+    TraceEvent.Onetapvideo.EmbedRequest |
+    TraceEvent.Onetapvideo.PlayerReady |
     TraceEvent.OnIdleTaskPosted |
     TraceEvent.OnIdleTaskPostedOnMainThread |
     TraceEvent.OnLibevent |
     TraceEvent.OnLoad |
-    Optimizely.BlockBegin |
+    TraceEvent.Optimizely.BlockBegin |
     TraceEvent.OptimizelyEnd |
     TraceEvent.OptimizelyStart |
     TraceEvent.OptimizelyTime |
-    OverlayProcessor.ProcessForOverlays |
-    PageAnimator.ServiceScriptedAnimations |
+    TraceEvent.OverlayProcessor.ProcessForOverlays |
+    TraceEvent.PageAnimator.ServiceScriptedAnimations |
     TraceEvent.PageLoad |
-    PageLoadMetricsObserver.OnCommit |
-    PageLoadMetricsObserver.OnHidden |
-    PageLoadMetricsObserver.OnShown |
-    PageLoadMetricsObserver.OnStart |
-    PageLoadMetricsObserver.ShouldObserveMimeType |
+    TraceEvent.PageLoadMetricsObserver.OnCommit |
+    TraceEvent.PageLoadMetricsObserver.OnHidden |
+    TraceEvent.PageLoadMetricsObserver.OnShown |
+    TraceEvent.PageLoadMetricsObserver.OnStart |
+    TraceEvent.PageLoadMetricsObserver.ShouldObserveMimeType |
     TraceEvent.PageMsg_SetHistoryOffsetAndLength |
     TraceEvent.PageMsg_UpdateScreenInfo |
     TraceEvent.PageMsg_UpdateWindowScreenRect |
     TraceEvent.PageMsg_WasHidden |
     TraceEvent.PageMsg_WasShown |
     TraceEvent.Paint |
-    PaintArtifact.AppendToWebDisplayItemList |
-    PaintArtifact.Replay |
-    PaintController.CommitNewDisplayItems |
+    TraceEvent.PaintArtifact.AppendToWebDisplayItemList |
+    TraceEvent.PaintArtifact.Replay |
+    TraceEvent.PaintController.CommitNewDisplayItems |
     TraceEvent.PaintImage |
     TraceEvent.PaintInvalidationTracking |
-    PaintInvalidator.InvalidatePaint |
-    PaintLayer.UpdateLayerPositionsAfterLayout |
-    PaintLayerCompositor.UpdateIfNeededRecursive |
+    TraceEvent.PaintInvalidator.InvalidatePaint |
+    TraceEvent.PaintLayer.UpdateLayerPositionsAfterLayout |
+    TraceEvent.PaintLayerCompositor.UpdateIfNeededRecursive |
     TraceEvent.PaintNonDefaultBackgroundColor |
-    ParkableStringImpl.CompressInBackground |
-    ParkableStringImpl.Unpark |
+    TraceEvent.ParkableStringImpl.CompressInBackground |
+    TraceEvent.ParkableStringImpl.Unpark |
     TraceEvent.ParseAuthorStyleSheet |
     TraceEvent.ParseHTML |
-    PartitionAlloc.TotalSizeOfCommittedPagesKB |
-    PendingScript.ExecuteScriptBlock |
-    PendingTree.Waiting |
-    PictureLayer.PushPropertiesTo |
-    PictureLayer.Update |
-    PictureLayerImpl.AppendQuadscheckerboard |
+    TraceEvent.PartitionAlloc.TotalSizeOfCommittedPagesKB |
+    TraceEvent.PendingScript.ExecuteScriptBlock |
+    TraceEvent.PendingTree.Waiting |
+    TraceEvent.PictureLayer.PushPropertiesTo |
+    TraceEvent.PictureLayer.Update |
+    TraceEvent.PictureLayerImpl.AppendQuadscheckerboard |
     TraceEvent.PlatformResourceSendRequest |
     TraceEvent.PostCommit |
-    PrerenderManagerFactory.GetForProfile |
+    TraceEvent.PrerenderManagerFactory.GetForProfile |
     TraceEvent.PrintMsg_SetPrintingEnabled |
     TraceEvent.Process_labels |
     TraceEvent.Process_name |
@@ -986,47 +986,47 @@ export namespace TraceEvent {
     TraceEvent.ProcessCommitResponse |
     TraceEvent.ProcessMemoryDump |
     TraceEvent.ProcessPriority |
-    ProcTask.OnLookupComplete |
+    TraceEvent.ProcTask.OnLookupComplete |
     TraceEvent.Profile |
     TraceEvent.ProfileChunk |
-    ProfileManager.GetProfileInfoCache |
-    ProgramBindingBase.Init |
-    PropertyTreeBuilder.ShouldCreateRenderSurfaceopacity |
+    TraceEvent.ProfileManager.GetProfileInfoCache |
+    TraceEvent.ProgramBindingBase.Init |
+    TraceEvent.PropertyTreeBuilder.ShouldCreateRenderSurfaceopacity |
     TraceEvent.PROXY_RESOLUTION_SERVICE_RESOLVED_PROXY_LIST |
     TraceEvent.PROXY_RESOLUTION_SERVICE |
-    Proxy_resolver.Mojom.ProxyResolver |
-    Proxy_resolver.Mojom.ProxyResolverRequestClient |
-    ProxyImpl.BeginMainFrameAbortedOnImplThread |
-    ProxyImpl.DidActivateSyncTreeOnImplThread |
-    ProxyImpl.DidLoseLayerTreeFrameSinkOnImplThread |
-    ProxyImpl.DidReceiveCompositorFrameAckOnImplThread |
-    ProxyImpl.FinishGLOnImplThread |
-    ProxyImpl.InitializeLayerTreeFrameSinkOnImplThread |
-    ProxyImpl.NotifyReadyToActivate |
-    ProxyImpl.NotifyReadyToCommitOnImpl |
-    ProxyImpl.NotifyReadyToDraw |
-    ProxyImpl.OnCanDrawStateChanged |
-    ProxyImpl.ProxyImpl |
-    ProxyImpl.RequestBeginMainFrameNotExpected |
-    ProxyImpl.ScheduledActionActivateSyncTree |
-    ProxyImpl.ScheduledActionBeginLayerTreeFrameSinkCreation |
-    ProxyImpl.ScheduledActionCommit |
-    ProxyImpl.ScheduledActionDraw |
-    ProxyImpl.ScheduledActionPrepareTiles |
-    ProxyImpl.SetNeedsCommitOnImplThread |
-    ProxyImpl.SetNeedsRedrawOnImplThread |
-    ProxyImpl.SetVisibleOnImplThread |
-    ProxyMain.BeginMainFrame.Commit |
-    ProxyMain.BeginMainFrameNotExpectedSoon |
-    ProxyMain.DidInitializeLayerTreeFrameSink |
-    ProxyMain.ProxyMain |
-    ProxyMain.RequestNewLayerTreeFrameSink |
-    ProxyMain.SetDeferMainFrameUpdate |
-    ProxyMain.SetNeedsAnimate |
-    ProxyMain.SetNeedsCommit |
-    ProxyMain.SetNeedsUpdateLayers |
-    ProxyMain.SetVisible |
-    ProxyMain.Stop |
+    TraceEvent.Proxy_resolver.Mojom.ProxyResolver |
+    TraceEvent.Proxy_resolver.Mojom.ProxyResolverRequestClient |
+    TraceEvent.ProxyImpl.BeginMainFrameAbortedOnImplThread |
+    TraceEvent.ProxyImpl.DidActivateSyncTreeOnImplThread |
+    TraceEvent.ProxyImpl.DidLoseLayerTreeFrameSinkOnImplThread |
+    TraceEvent.ProxyImpl.DidReceiveCompositorFrameAckOnImplThread |
+    TraceEvent.ProxyImpl.FinishGLOnImplThread |
+    TraceEvent.ProxyImpl.InitializeLayerTreeFrameSinkOnImplThread |
+    TraceEvent.ProxyImpl.NotifyReadyToActivate |
+    TraceEvent.ProxyImpl.NotifyReadyToCommitOnImpl |
+    TraceEvent.ProxyImpl.NotifyReadyToDraw |
+    TraceEvent.ProxyImpl.OnCanDrawStateChanged |
+    TraceEvent.ProxyImpl.ProxyImpl |
+    TraceEvent.ProxyImpl.RequestBeginMainFrameNotExpected |
+    TraceEvent.ProxyImpl.ScheduledActionActivateSyncTree |
+    TraceEvent.ProxyImpl.ScheduledActionBeginLayerTreeFrameSinkCreation |
+    TraceEvent.ProxyImpl.ScheduledActionCommit |
+    TraceEvent.ProxyImpl.ScheduledActionDraw |
+    TraceEvent.ProxyImpl.ScheduledActionPrepareTiles |
+    TraceEvent.ProxyImpl.SetNeedsCommitOnImplThread |
+    TraceEvent.ProxyImpl.SetNeedsRedrawOnImplThread |
+    TraceEvent.ProxyImpl.SetVisibleOnImplThread |
+    TraceEvent.ProxyMain.BeginMainFrame.Commit |
+    TraceEvent.ProxyMain.BeginMainFrameNotExpectedSoon |
+    TraceEvent.ProxyMain.DidInitializeLayerTreeFrameSink |
+    TraceEvent.ProxyMain.ProxyMain |
+    TraceEvent.ProxyMain.RequestNewLayerTreeFrameSink |
+    TraceEvent.ProxyMain.SetDeferMainFrameUpdate |
+    TraceEvent.ProxyMain.SetNeedsAnimate |
+    TraceEvent.ProxyMain.SetNeedsCommit |
+    TraceEvent.ProxyMain.SetNeedsUpdateLayers |
+    TraceEvent.ProxyMain.SetVisible |
+    TraceEvent.ProxyMain.Stop |
     TraceEvent.QUIC_CHROMIUM_CLIENT_STREAM_READ_RESPONSE_HEADERS |
     TraceEvent.QUIC_CHROMIUM_CLIENT_STREAM_SEND_REQUEST_HEADERS |
     TraceEvent.QUIC_CONNECTION_MIGRATION_MODE |
@@ -1050,75 +1050,75 @@ export namespace TraceEvent {
     TraceEvent.QUIC_STREAM_FACTORY_JOB_BOUND_TO_HTTP_STREAM_JOB |
     TraceEvent.QUIC_STREAM_FACTORY_JOB_CONNECT |
     TraceEvent.QUIC_STREAM_FACTORY_JOB |
-    QuicStreamFactory.CreateSession |
-    QuicStreamFactory.Job.DoLoop |
-    Rappor.Mojom.RapporRecorder |
-    RasterizerTaskImpl.RunOnWorkerThread |
-    RasterSource.PerformSolidColorAnalysis |
+    TraceEvent.QuicStreamFactory.CreateSession |
+    TraceEvent.QuicStreamFactory.Job.DoLoop |
+    TraceEvent.Rappor.Mojom.RapporRecorder |
+    TraceEvent.RasterizerTaskImpl.RunOnWorkerThread |
+    TraceEvent.RasterSource.PerformSolidColorAnalysis |
     TraceEvent.RasterTask |
     TraceEvent.ReadTransaction |
-    RealTimeDomain.DelayTillNextTask |
-    RecordingSource.DetermineIfSolidColor |
-    RecordingSource.FinishDisplayItemListUpdate |
+    TraceEvent.RealTimeDomain.DelayTillNextTask |
+    TraceEvent.RecordingSource.DetermineIfSolidColor |
+    TraceEvent.RecordingSource.FinishDisplayItemListUpdate |
     TraceEvent.RedirectEnd |
     TraceEvent.RedirectStart |
-    RememberedSetUpdatingItem.Process |
-    RemoteWindowProxy.Initialize |
+    TraceEvent.RememberedSetUpdatingItem.Process |
+    TraceEvent.RemoteWindowProxy.Initialize |
     TraceEvent.RendererAudioState |
-    RendererMain.START_MSG_LOOP |
+    TraceEvent.RendererMain.START_MSG_LOOP |
     TraceEvent.RendererProcessType |
-    RendererScheduler.BackgroundBudgetMs |
+    TraceEvent.RendererScheduler.BackgroundBudgetMs |
     TraceEvent.RendererVisibility |
     TraceEvent.RenderFrame |
-    RenderFrameHostImpl.BeginNavigation |
-    RenderFrameHostImpl.CommitNavigation |
-    RenderFrameHostImpl.CreateRenderFrame |
-    RenderFrameHostImpl.DidCommitProvisionalLoad |
-    RenderFrameHostImpl.OnDidAddContentSecurityPolicies |
-    RenderFrameHostImpl.OnDidFailProvisionalLoadWithError |
-    RenderFrameHostImpl.OnDidStopLoading |
-    RenderFrameHostImpl.OnDispatchLoad |
-    RenderFrameHostImpl.SwapOut |
+    TraceEvent.RenderFrameHostImpl.BeginNavigation |
+    TraceEvent.RenderFrameHostImpl.CommitNavigation |
+    TraceEvent.RenderFrameHostImpl.CreateRenderFrame |
+    TraceEvent.RenderFrameHostImpl.DidCommitProvisionalLoad |
+    TraceEvent.RenderFrameHostImpl.OnDidAddContentSecurityPolicies |
+    TraceEvent.RenderFrameHostImpl.OnDidFailProvisionalLoadWithError |
+    TraceEvent.RenderFrameHostImpl.OnDidStopLoading |
+    TraceEvent.RenderFrameHostImpl.OnDispatchLoad |
+    TraceEvent.RenderFrameHostImpl.SwapOut |
     TraceEvent.RenderFrameHostImplBeforeUnload |
-    RenderFrameHostManager.CommitPending |
-    RenderFrameHostManager.SwapOutOldFrame |
-    RenderFrameImpl.CreateChildFrame |
-    RenderFrameImpl.DidCommitProvisionalLoad |
-    RenderFrameImpl.DidFinishDocumentLoad |
-    RenderFrameImpl.DidFinishLoad |
-    RenderFrameImpl.DidStartLoading |
-    RenderFrameImpl.DidStartProvisionalLoad |
-    RenderFrameImpl.DidStopLoading |
-    RenderFrameImpl.Initialize |
+    TraceEvent.RenderFrameHostManager.CommitPending |
+    TraceEvent.RenderFrameHostManager.SwapOutOldFrame |
+    TraceEvent.RenderFrameImpl.CreateChildFrame |
+    TraceEvent.RenderFrameImpl.DidCommitProvisionalLoad |
+    TraceEvent.RenderFrameImpl.DidFinishDocumentLoad |
+    TraceEvent.RenderFrameImpl.DidFinishLoad |
+    TraceEvent.RenderFrameImpl.DidStartLoading |
+    TraceEvent.RenderFrameImpl.DidStartProvisionalLoad |
+    TraceEvent.RenderFrameImpl.DidStopLoading |
+    TraceEvent.RenderFrameImpl.Initialize |
     TraceEvent.RenderPass |
-    RenderProcessHostImpl.Send |
-    RenderProcessHostImpl.UpdateProcessPriority.SetProcessPriority |
-    RenderSurfaceImpl.AppendQuads |
-    RenderTextHarfBuzz.ItemizeTextToRuns |
-    RenderTextHarfBuzz.ShapeRuns |
-    RenderTextHarfBuzz.ShapeRunWithFontInternal |
-    RenderThreadImpl.EstablishGpuChannelSync |
-    RenderViewHostImpl.CreateRenderView |
-    RenderViewHostImpl.GetWebkitPrefs |
-    RenderWidget.DidCommitAndDrawCompositorFrame |
-    RenderWidget.InitializeLayerTreeView |
-    RenderWidget.OnSynchronizeVisualProperties |
-    RenderWidget.OnWasHidden |
-    RenderWidget.OnWasShown |
-    RenderWidget.UpdateSelectionBounds |
-    RenderWidget.UpdateTextInputState |
-    RenderWidget.WillBeginCompositorFrame |
-    RenderWidgetHostImpl.DidUpdateVisualProperties |
-    RenderWidgetHostImpl.ForwardKeyboardEvent |
-    RenderWidgetHostImpl.ForwardMouseEvent |
-    RenderWidgetHostImpl.GetScreenInfo |
-    RenderWidgetHostImpl.WasHidden |
-    RenderWidgetHostImpl.WasShown |
-    RenderWidgetHostViewCocoa.KeyEvent |
-    RenderWidgetHostViewCocoa.MouseEvent |
-    RenderWidgetHostViewCocoa.SendViewBoundsInWindowToClient |
-    RenderWidgetHostViewCocoa.SendWindowFrameInScreenToClient |
-    RenderWidgetInputHandler.OnHandleInputEvent |
+    TraceEvent.RenderProcessHostImpl.Send |
+    TraceEvent.RenderProcessHostImpl.UpdateProcessPriority.SetProcessPriority |
+    TraceEvent.RenderSurfaceImpl.AppendQuads |
+    TraceEvent.RenderTextHarfBuzz.ItemizeTextToRuns |
+    TraceEvent.RenderTextHarfBuzz.ShapeRuns |
+    TraceEvent.RenderTextHarfBuzz.ShapeRunWithFontInternal |
+    TraceEvent.RenderThreadImpl.EstablishGpuChannelSync |
+    TraceEvent.RenderViewHostImpl.CreateRenderView |
+    TraceEvent.RenderViewHostImpl.GetWebkitPrefs |
+    TraceEvent.RenderWidget.DidCommitAndDrawCompositorFrame |
+    TraceEvent.RenderWidget.InitializeLayerTreeView |
+    TraceEvent.RenderWidget.OnSynchronizeVisualProperties |
+    TraceEvent.RenderWidget.OnWasHidden |
+    TraceEvent.RenderWidget.OnWasShown |
+    TraceEvent.RenderWidget.UpdateSelectionBounds |
+    TraceEvent.RenderWidget.UpdateTextInputState |
+    TraceEvent.RenderWidget.WillBeginCompositorFrame |
+    TraceEvent.RenderWidgetHostImpl.DidUpdateVisualProperties |
+    TraceEvent.RenderWidgetHostImpl.ForwardKeyboardEvent |
+    TraceEvent.RenderWidgetHostImpl.ForwardMouseEvent |
+    TraceEvent.RenderWidgetHostImpl.GetScreenInfo |
+    TraceEvent.RenderWidgetHostImpl.WasHidden |
+    TraceEvent.RenderWidgetHostImpl.WasShown |
+    TraceEvent.RenderWidgetHostViewCocoa.KeyEvent |
+    TraceEvent.RenderWidgetHostViewCocoa.MouseEvent |
+    TraceEvent.RenderWidgetHostViewCocoa.SendViewBoundsInWindowToClient |
+    TraceEvent.RenderWidgetHostViewCocoa.SendWindowFrameInScreenToClient |
+    TraceEvent.RenderWidgetInputHandler.OnHandleInputEvent |
     TraceEvent.RenderWorker0x7f8e1500b000 |
     TraceEvent.RenderWorker0x7fa57a039c00 |
     TraceEvent.RenderWorker0x7fcab207b200 |
@@ -1131,85 +1131,85 @@ export namespace TraceEvent {
     TraceEvent.RequestIdleCallback |
     TraceEvent.RequestMainThreadFrame |
     TraceEvent.RequestStart |
-    Resource_coordinator.Mojom.CoordinationUnitProvider |
-    Resource_coordinator.Mojom.FrameCoordinationUnit |
-    Resource_coordinator.Mojom.PageCoordinationUnit |
-    Resource_coordinator.Mojom.PageSignalReceiver |
-    Resource_coordinator.Mojom.ProcessCoordinationUnit |
-    Resource.AppendData |
+    TraceEvent.Resource_coordinator.Mojom.CoordinationUnitProvider |
+    TraceEvent.Resource_coordinator.Mojom.FrameCoordinationUnit |
+    TraceEvent.Resource_coordinator.Mojom.PageCoordinationUnit |
+    TraceEvent.Resource_coordinator.Mojom.PageSignalReceiver |
+    TraceEvent.Resource_coordinator.Mojom.ProcessCoordinationUnit |
+    TraceEvent.Resource.AppendData |
     TraceEvent.ResourceChangePriority |
-    ResourceDispatcher.OnReceivedRedirect |
-    ResourceDispatcher.OnReceivedResponse |
-    ResourceDispatcher.OnRequestComplete |
-    ResourceFetcher.DetermineRevalidationPolicy |
-    ResourceFetcher.RequestResource |
+    TraceEvent.ResourceDispatcher.OnReceivedRedirect |
+    TraceEvent.ResourceDispatcher.OnReceivedResponse |
+    TraceEvent.ResourceDispatcher.OnRequestComplete |
+    TraceEvent.ResourceFetcher.DetermineRevalidationPolicy |
+    TraceEvent.ResourceFetcher.RequestResource |
     TraceEvent.ResourceFinish |
     TraceEvent.ResourceLoad |
-    ResourceLoadPriorityOptimizer.UpdateAllImageResourcePriorities |
-    ResourcePrefetchPredictor.StartInitialization |
+    TraceEvent.ResourceLoadPriorityOptimizer.UpdateAllImageResourcePriorities |
+    TraceEvent.ResourcePrefetchPredictor.StartInitialization |
     TraceEvent.ResourcePrioritySet |
     TraceEvent.ResourceReceivedData |
     TraceEvent.ResourceReceiveResponse |
     TraceEvent.ResourceSendRequest |
     TraceEvent.ResponseEnd |
-    RootScrollerController.PerformRootScrollerSelection |
-    RuleSet.AddRulesFromSheet |
+    TraceEvent.RootScrollerController.PerformRootScrollerSelection |
+    TraceEvent.RuleSet.AddRulesFromSheet |
     TraceEvent.RunMicrotasks |
     TraceEvent.RunTask |
     TraceEvent.RunWithFaviconResults |
-    Safe_browsing.Mojom.PhishingDetector |
-    Safe_browsing.Mojom.PhishingModelSetter |
-    Safe_browsing.Mojom.SafeBrowsing |
-    Safe_browsing.Mojom.SafeBrowsingUrlChecker |
-    ScheduledAction.Execute |
+    TraceEvent.Safe_browsing.Mojom.PhishingDetector |
+    TraceEvent.Safe_browsing.Mojom.PhishingModelSetter |
+    TraceEvent.Safe_browsing.Mojom.SafeBrowsing |
+    TraceEvent.Safe_browsing.Mojom.SafeBrowsingUrlChecker |
+    TraceEvent.ScheduledAction.Execute |
     TraceEvent.ScheduledTasks |
-    Scheduler.AwaitingTouchstartResponse |
-    Scheduler.BeginFrame |
-    Scheduler.BeginFrameDropped |
-    Scheduler.BeginFrameNotExpectedSoon |
-    Scheduler.BeginImplFrame |
-    Scheduler.BeginMainFrameAborted |
-    Scheduler.BeginMainFrameOnCriticalPath |
-    Scheduler.BlockingInputExpectedSoon |
-    Scheduler.CompositorWillSendMainFrameNotExpected |
-    Scheduler.DefaultGesturePrevented |
-    Scheduler.DidCreateAndInitializeLayerTreeFrameSink |
-    Scheduler.DidLoseLayerTreeFrameSink |
-    Scheduler.HasNavigated |
-    Scheduler.HasReportedBlockingInterventionInCurrentPolicy |
-    Scheduler.HasReportedBlockingInterventionSinceNavigation |
-    Scheduler.HasSeenBeginMainFrame |
-    Scheduler.HasVisibleRenderWidgetWithTouchHandler |
-    Scheduler.HaveSeenBlockingGesture |
-    Scheduler.HaveSeenInputSinceNavigation |
-    Scheduler.Hidden |
-    Scheduler.InIdlePeriod |
-    Scheduler.KeepRendererActive |
-    Scheduler.LastGestureWasCompositorDriven |
-    Scheduler.LongestJankFreeTaskDuration |
-    Scheduler.MainThreadTask |
-    Scheduler.MissedBeginFrameDropped |
-    Scheduler.NotifyBeginMainFrameStarted |
-    Scheduler.NotifyReadyToCommit |
-    Scheduler.Now |
-    Scheduler.OnBeginImplFrameDeadline |
-    Scheduler.PauseCount |
-    Scheduler.PauseTimersForWebview |
-    Scheduler.Pending_submit_frames |
-    Scheduler.RAILMode |
-    Scheduler.RunNextTask |
-    Scheduler.Running |
-    Scheduler.ScheduleBeginImplFrameDeadline |
-    Scheduler.Scheduler |
-    Scheduler.Sequence.RemoveWaitingPriority |
-    Scheduler.Sequence.UpdateSchedulingPriority |
-    Scheduler.SetDeferMainFrameUpdate |
-    Scheduler.SkipNextBeginMainFrameToReduceLatency |
-    Scheduler.TaskPriority |
-    Scheduler.UseCase |
-    Scheduler.UseVirtualTime |
-    Scheduler.WaitingForMeaningfulPaint |
-    SchedulerStateMachine.SetNeedsPrepareTiles |
+    TraceEvent.Scheduler.AwaitingTouchstartResponse |
+    TraceEvent.Scheduler.BeginFrame |
+    TraceEvent.Scheduler.BeginFrameDropped |
+    TraceEvent.Scheduler.BeginFrameNotExpectedSoon |
+    TraceEvent.Scheduler.BeginImplFrame |
+    TraceEvent.Scheduler.BeginMainFrameAborted |
+    TraceEvent.Scheduler.BeginMainFrameOnCriticalPath |
+    TraceEvent.Scheduler.BlockingInputExpectedSoon |
+    TraceEvent.Scheduler.CompositorWillSendMainFrameNotExpected |
+    TraceEvent.Scheduler.DefaultGesturePrevented |
+    TraceEvent.Scheduler.DidCreateAndInitializeLayerTreeFrameSink |
+    TraceEvent.Scheduler.DidLoseLayerTreeFrameSink |
+    TraceEvent.Scheduler.HasNavigated |
+    TraceEvent.Scheduler.HasReportedBlockingInterventionInCurrentPolicy |
+    TraceEvent.Scheduler.HasReportedBlockingInterventionSinceNavigation |
+    TraceEvent.Scheduler.HasSeenBeginMainFrame |
+    TraceEvent.Scheduler.HasVisibleRenderWidgetWithTouchHandler |
+    TraceEvent.Scheduler.HaveSeenBlockingGesture |
+    TraceEvent.Scheduler.HaveSeenInputSinceNavigation |
+    TraceEvent.Scheduler.Hidden |
+    TraceEvent.Scheduler.InIdlePeriod |
+    TraceEvent.Scheduler.KeepRendererActive |
+    TraceEvent.Scheduler.LastGestureWasCompositorDriven |
+    TraceEvent.Scheduler.LongestJankFreeTaskDuration |
+    TraceEvent.Scheduler.MainThreadTask |
+    TraceEvent.Scheduler.MissedBeginFrameDropped |
+    TraceEvent.Scheduler.NotifyBeginMainFrameStarted |
+    TraceEvent.Scheduler.NotifyReadyToCommit |
+    TraceEvent.Scheduler.Now |
+    TraceEvent.Scheduler.OnBeginImplFrameDeadline |
+    TraceEvent.Scheduler.PauseCount |
+    TraceEvent.Scheduler.PauseTimersForWebview |
+    TraceEvent.Scheduler.Pending_submit_frames |
+    TraceEvent.Scheduler.RAILMode |
+    TraceEvent.Scheduler.RunNextTask |
+    TraceEvent.Scheduler.Running |
+    TraceEvent.Scheduler.ScheduleBeginImplFrameDeadline |
+    TraceEvent.Scheduler.Scheduler |
+    TraceEvent.Scheduler.Sequence.RemoveWaitingPriority |
+    TraceEvent.Scheduler.Sequence.UpdateSchedulingPriority |
+    TraceEvent.Scheduler.SetDeferMainFrameUpdate |
+    TraceEvent.Scheduler.SkipNextBeginMainFrameToReduceLatency |
+    TraceEvent.Scheduler.TaskPriority |
+    TraceEvent.Scheduler.UseCase |
+    TraceEvent.Scheduler.UseVirtualTime |
+    TraceEvent.Scheduler.WaitingForMeaningfulPaint |
+    TraceEvent.SchedulerStateMachine.SetNeedsPrepareTiles |
     TraceEvent.SchedulerWorkerThreadactive |
     TraceEvent.SchedulerWorkerThreadborn |
     TraceEvent.SchedulerWorkerThreaddead |
@@ -1218,56 +1218,56 @@ export namespace TraceEvent {
     TraceEvent.ScopedBlockingCall |
     TraceEvent.ScopedBlockingCallWithBaseSyncPrimitives |
     TraceEvent.Screenshot |
-    ScriptRunner.ExecuteAsyncTask |
-    ScrollAnchor.FindAnchor |
-    ScrollingCoordinator.UpdateAfterPaint |
-    ScrollingCoordinator.UpdateTouchEventTargetRectsIfNeeded |
-    SearchProvider.OnURLLoadComplete |
-    SearchProvider.Question_mark |
-    SearchProvider.Start |
-    SelectionController.HandleMousePressEvent |
-    SelectionController.HandleMousePressEventSingleClick |
-    SelectionController.HandleMouseReleaseEvent |
+    TraceEvent.ScriptRunner.ExecuteAsyncTask |
+    TraceEvent.ScrollAnchor.FindAnchor |
+    TraceEvent.ScrollingCoordinator.UpdateAfterPaint |
+    TraceEvent.ScrollingCoordinator.UpdateTouchEventTargetRectsIfNeeded |
+    TraceEvent.SearchProvider.OnURLLoadComplete |
+    TraceEvent.SearchProvider.Question_mark |
+    TraceEvent.SearchProvider.Start |
+    TraceEvent.SelectionController.HandleMousePressEvent |
+    TraceEvent.SelectionController.HandleMousePressEventSingleClick |
+    TraceEvent.SelectionController.HandleMouseReleaseEvent |
     TraceEvent.SequenceEnabled |
-    SequenceManager.DidProcessTaskObservers |
-    SequenceManager.DidProcessTaskTimeObservers |
-    SequenceManager.PostTask |
-    SequenceManager.QueueNotifyDidProcessTask |
-    SequenceManager.QueueNotifyWillProcessTask |
-    SequenceManager.QueueOnTaskCompleted |
-    SequenceManager.QueueOnTaskStarted |
-    SequenceManager.RunTask |
-    SequenceManager.WillProcessTaskObservers |
-    SequenceManager.WillProcessTaskTimeObservers |
-    SequenceManagerImpl.NotifyDidProcessTaskObservers |
-    SequenceManagerImpl.NotifyWillProcessTaskObservers |
-    SequenceManagerImpl.RunTask |
-    SequenceManagerImpl.TakeTask |
-    SequenceManagerImpl.UnregisterTaskQueue |
-    SequenceManagerImpl.WakeUpReadyDelayedQueues |
-    SerializedScriptValueFactory.Create |
-    SerializedScriptValueFactory.Deserialize |
-    Service_manager.Mojom.Connector |
-    Service_manager.Mojom.InterfaceProvider |
-    Service_manager.Mojom.PIDReceiver |
-    Service_manager.Mojom.Service |
-    Service_manager.Mojom.ServiceFactory |
-    Service_manager.Mojom.ServiceManagerListener |
-    ServiceManager.Connect |
-    ServiceWorkerControlleeRequestHandler.PrepareForMainResource |
-    ServiceWorkerDispatcherHost.OnProviderCreated |
-    ServiceWorkerNavigationLoader.FallbackToNetwork |
-    ServiceWorkerNavigationLoader.ServiceWorkerNavigationloader |
-    ServiceWorkerProviderHost.RemoveProviderHost |
-    ServiceWorkerStorage.FindRegistrationForDocument.CheckInstalling |
+    TraceEvent.SequenceManager.DidProcessTaskObservers |
+    TraceEvent.SequenceManager.DidProcessTaskTimeObservers |
+    TraceEvent.SequenceManager.PostTask |
+    TraceEvent.SequenceManager.QueueNotifyDidProcessTask |
+    TraceEvent.SequenceManager.QueueNotifyWillProcessTask |
+    TraceEvent.SequenceManager.QueueOnTaskCompleted |
+    TraceEvent.SequenceManager.QueueOnTaskStarted |
+    TraceEvent.SequenceManager.RunTask |
+    TraceEvent.SequenceManager.WillProcessTaskObservers |
+    TraceEvent.SequenceManager.WillProcessTaskTimeObservers |
+    TraceEvent.SequenceManagerImpl.NotifyDidProcessTaskObservers |
+    TraceEvent.SequenceManagerImpl.NotifyWillProcessTaskObservers |
+    TraceEvent.SequenceManagerImpl.RunTask |
+    TraceEvent.SequenceManagerImpl.TakeTask |
+    TraceEvent.SequenceManagerImpl.UnregisterTaskQueue |
+    TraceEvent.SequenceManagerImpl.WakeUpReadyDelayedQueues |
+    TraceEvent.SerializedScriptValueFactory.Create |
+    TraceEvent.SerializedScriptValueFactory.Deserialize |
+    TraceEvent.Service_manager.Mojom.Connector |
+    TraceEvent.Service_manager.Mojom.InterfaceProvider |
+    TraceEvent.Service_manager.Mojom.PIDReceiver |
+    TraceEvent.Service_manager.Mojom.Service |
+    TraceEvent.Service_manager.Mojom.ServiceFactory |
+    TraceEvent.Service_manager.Mojom.ServiceManagerListener |
+    TraceEvent.ServiceManager.Connect |
+    TraceEvent.ServiceWorkerControlleeRequestHandler.PrepareForMainResource |
+    TraceEvent.ServiceWorkerDispatcherHost.OnProviderCreated |
+    TraceEvent.ServiceWorkerNavigationLoader.FallbackToNetwork |
+    TraceEvent.ServiceWorkerNavigationLoader.ServiceWorkerNavigationloader |
+    TraceEvent.ServiceWorkerProviderHost.RemoveProviderHost |
+    TraceEvent.ServiceWorkerStorage.FindRegistrationForDocument.CheckInstalling |
     TraceEvent.SetIdlePeriodState |
     TraceEvent.SetLayerTreeId |
-    SharedImageStub.OnCreateSharedImage |
-    SharedImageStub.OnCreateSharedImageWithData |
-    SharedImageStub.OnDestroySharedImage |
-    SharedImageStub.OnRegisterSharedImageUploadBuffer |
+    TraceEvent.SharedImageStub.OnCreateSharedImage |
+    TraceEvent.SharedImageStub.OnCreateSharedImageWithData |
+    TraceEvent.SharedImageStub.OnDestroySharedImage |
+    TraceEvent.SharedImageStub.OnRegisterSharedImageUploadBuffer |
     TraceEvent.ShCompile |
-    ShortcutsProvider.Start |
+    TraceEvent.ShortcutsProvider.Start |
     TraceEvent.SIGNED_CERTIFICATE_TIMESTAMPS_CHECKED |
     TraceEvent.SIGNED_CERTIFICATE_TIMESTAMPS_RECEIVED |
     TraceEvent.SIMPLE_CACHE_ENTRY_CLOSE_BEGIN |
@@ -1292,53 +1292,53 @@ export namespace TraceEvent {
     TraceEvent.SIMPLE_CACHE_ENTRY_WRITE_END |
     TraceEvent.SIMPLE_CACHE_ENTRY_WRITE_OPTIMISTIC |
     TraceEvent.SIMPLE_CACHE_ENTRY |
-    SingleThreadIdleTaskRunner.RunTask |
-    SingleThreadProxy.DidReceiveCompositorFrameAckOnImplThread |
-    SingleThreadProxy.DoCommit |
-    SingleThreadProxy.DoComposite |
-    SingleThreadProxy.NotifyReadyToActivate |
-    SingleThreadProxy.NotifyReadyToDraw |
-    SingleThreadProxy.OnCanDrawStateChanged |
-    SingleThreadProxy.PostAnimationEventsToMainThreadOnImplThread |
-    SingleThreadProxy.ScheduledActionPrepareTiles |
-    SingleThreadProxy.ScheduledActionSendBeginMainFrame |
-    SingleThreadProxy.SetDeferMainFrameUpdate |
-    SingleThreadProxy.SetNeedsAnimate |
-    SingleThreadProxy.SetNeedsOneBeginImplFrameOnImplThread |
-    SingleThreadProxy.SetNeedsPrepareTilesOnImplThread |
-    SingleThreadProxy.SetNeedsUpdateLayers |
-    SingleThreadProxy.SetVisible |
-    SingleThreadProxy.SingleThreadProxy |
-    SingleThreadTaskGraphRunner.CollectCompletedTasks |
-    SingleThreadTaskGraphRunner.RunTaskWithLockAcquired |
-    SingleThreadTaskGraphRunner.ScheduleTasks |
-    SingleThreadTaskGraphRunner.WaitForTasksToFinishRunning |
-    SiteInstanceImpl.GetProcess |
-    SiteInstanceImpl.LockToOrigin |
-    SiteInstanceImpl.SetSite |
-    SkCanvas.DrawImageRectSkImageSkRectSkRectSkPaintSkCanvas.SrcRectConstraint |
-    SkCanvas.DrawImageSkImageSkScalarSkScalarSkPaint |
-    SkCanvas.DrawOvalSkRectSkPaint |
-    SkCanvas.DrawPaintSkPaint |
-    SkCanvas.DrawPathSkPathSkPaint |
-    SkCanvas.DrawPointsSkCanvas.PointModesize_tSkPointSkPaint |
-    SkCanvas.DrawRectSkRectSkPaint |
-    SkCanvas.DrawRRectSkRRectSkPaint |
-    SkCanvas.DrawTextBlobSkTextBlobSkScalarSkScalarSkPaint |
-    SkCanvas.InternalSaveLayerSkCanvas.SaveLayerRecSkCanvas.SaveLayerStrategy |
-    SkCanvas.SaveLayerSkCanvas.SaveLayerRec |
-    SkGpuDevice.ClearAll |
-    SkGpuDevice.DrawDevice |
-    SkGpuDevice.DrawGlyphRunList |
-    SkGpuDevice.DrawOval |
-    SkGpuDevice.DrawPaint |
-    SkGpuDevice.DrawPath |
-    SkGpuDevice.DrawPoints |
-    SkGpuDevice.DrawRect |
-    SkGpuDevice.DrawRRect |
-    SkGpuDevice.DrawSpecial |
-    SkGpuDevice.DrawStrokedLine |
-    Skia_gpu.GLShader |
+    TraceEvent.SingleThreadIdleTaskRunner.RunTask |
+    TraceEvent.SingleThreadProxy.DidReceiveCompositorFrameAckOnImplThread |
+    TraceEvent.SingleThreadProxy.DoCommit |
+    TraceEvent.SingleThreadProxy.DoComposite |
+    TraceEvent.SingleThreadProxy.NotifyReadyToActivate |
+    TraceEvent.SingleThreadProxy.NotifyReadyToDraw |
+    TraceEvent.SingleThreadProxy.OnCanDrawStateChanged |
+    TraceEvent.SingleThreadProxy.PostAnimationEventsToMainThreadOnImplThread |
+    TraceEvent.SingleThreadProxy.ScheduledActionPrepareTiles |
+    TraceEvent.SingleThreadProxy.ScheduledActionSendBeginMainFrame |
+    TraceEvent.SingleThreadProxy.SetDeferMainFrameUpdate |
+    TraceEvent.SingleThreadProxy.SetNeedsAnimate |
+    TraceEvent.SingleThreadProxy.SetNeedsOneBeginImplFrameOnImplThread |
+    TraceEvent.SingleThreadProxy.SetNeedsPrepareTilesOnImplThread |
+    TraceEvent.SingleThreadProxy.SetNeedsUpdateLayers |
+    TraceEvent.SingleThreadProxy.SetVisible |
+    TraceEvent.SingleThreadProxy.SingleThreadProxy |
+    TraceEvent.SingleThreadTaskGraphRunner.CollectCompletedTasks |
+    TraceEvent.SingleThreadTaskGraphRunner.RunTaskWithLockAcquired |
+    TraceEvent.SingleThreadTaskGraphRunner.ScheduleTasks |
+    TraceEvent.SingleThreadTaskGraphRunner.WaitForTasksToFinishRunning |
+    TraceEvent.SiteInstanceImpl.GetProcess |
+    TraceEvent.SiteInstanceImpl.LockToOrigin |
+    TraceEvent.SiteInstanceImpl.SetSite |
+    TraceEvent.SkCanvas.DrawImageRectSkImageSkRectSkRectSkPaintSkCanvas.SrcRectConstraint |
+    TraceEvent.SkCanvas.DrawImageSkImageSkScalarSkScalarSkPaint |
+    TraceEvent.SkCanvas.DrawOvalSkRectSkPaint |
+    TraceEvent.SkCanvas.DrawPaintSkPaint |
+    TraceEvent.SkCanvas.DrawPathSkPathSkPaint |
+    TraceEvent.SkCanvas.DrawPointsSkCanvas.PointModesize_tSkPointSkPaint |
+    TraceEvent.SkCanvas.DrawRectSkRectSkPaint |
+    TraceEvent.SkCanvas.DrawRRectSkRRectSkPaint |
+    TraceEvent.SkCanvas.DrawTextBlobSkTextBlobSkScalarSkScalarSkPaint |
+    TraceEvent.SkCanvas.InternalSaveLayerSkCanvas.SaveLayerRecSkCanvas.SaveLayerStrategy |
+    TraceEvent.SkCanvas.SaveLayerSkCanvas.SaveLayerRec |
+    TraceEvent.SkGpuDevice.ClearAll |
+    TraceEvent.SkGpuDevice.DrawDevice |
+    TraceEvent.SkGpuDevice.DrawGlyphRunList |
+    TraceEvent.SkGpuDevice.DrawOval |
+    TraceEvent.SkGpuDevice.DrawPaint |
+    TraceEvent.SkGpuDevice.DrawPath |
+    TraceEvent.SkGpuDevice.DrawPoints |
+    TraceEvent.SkGpuDevice.DrawRect |
+    TraceEvent.SkGpuDevice.DrawRRect |
+    TraceEvent.SkGpuDevice.DrawSpecial |
+    TraceEvent.SkGpuDevice.DrawStrokedLine |
+    TraceEvent.Skia_gpu.GLShader |
     TraceEvent.Skiabudget |
     TraceEvent.SkipBeginImplFrameToReduceLatency |
     TraceEvent.SkipBeginMainFrameToReduceLatency |
@@ -1353,116 +1353,116 @@ export namespace TraceEvent {
     TraceEvent.SOCKET_POOL_CONNECT_JOB |
     TraceEvent.SOCKET_POOL_REUSED_AN_EXISTING_SOCKET |
     TraceEvent.SOCKET_POOL |
-    SocketPosix.OnFileCanReadWithoutBlocking |
-    SoftwareImageDecodeCache.DecodeImageIfNecessary |
-    SoftwareImageDecodeCache.DrawWithImageFinished |
-    SoftwareImageDecodeCache.GetDecodedImageForDrawInternal |
-    SoftwareImageDecodeCache.ReduceCacheUsageUntilWithinLimit |
-    SoftwareImageDecodeCache.UnrefImage |
-    SolidColorAnalyzer.CheckIfRRectClipCoversCanvas |
-    SolidColorAnalyzer.CheckIfSolidShape |
-    SpdySessionPool.CreateAvailableSessionFromSocket |
+    TraceEvent.SocketPosix.OnFileCanReadWithoutBlocking |
+    TraceEvent.SoftwareImageDecodeCache.DecodeImageIfNecessary |
+    TraceEvent.SoftwareImageDecodeCache.DrawWithImageFinished |
+    TraceEvent.SoftwareImageDecodeCache.GetDecodedImageForDrawInternal |
+    TraceEvent.SoftwareImageDecodeCache.ReduceCacheUsageUntilWithinLimit |
+    TraceEvent.SoftwareImageDecodeCache.UnrefImage |
+    TraceEvent.SolidColorAnalyzer.CheckIfRRectClipCoversCanvas |
+    TraceEvent.SolidColorAnalyzer.CheckIfSolidShape |
+    TraceEvent.SpdySessionPool.CreateAvailableSessionFromSocket |
     TraceEvent.SpeedIndex |
-    Spellcheck.Mojom.SpellChecker |
-    Spellcheck.Mojom.SpellCheckHost |
+    TraceEvent.Spellcheck.Mojom.SpellChecker |
+    TraceEvent.Spellcheck.Mojom.SpellCheckHost |
     TraceEvent.SSL_CONNECT |
     TraceEvent.SSL_HANDSHAKE_MESSAGE_RECEIVED |
     TraceEvent.SSL_HANDSHAKE_MESSAGE_SENT |
     TraceEvent.SSL_SOCKET_BYTES_RECEIVED |
     TraceEvent.SSL_SOCKET_BYTES_SENT |
-    SSLClientSocketImpl.DoHandshakeLoop |
-    SSLConnectJob.DoLoop |
-    SSLConnectJob.DoSSLConnect |
+    TraceEvent.SSLClientSocketImpl.DoHandshakeLoop |
+    TraceEvent.SSLConnectJob.DoLoop |
+    TraceEvent.SSLConnectJob.DoSSLConnect |
     TraceEvent.StackCpuSampling |
-    StackSamplingProfiler.StackSamplingProfiler |
-    StackSamplingProfiler.Start |
-    StackSamplingProfiler.Started |
+    TraceEvent.StackSamplingProfiler.StackSamplingProfiler |
+    TraceEvent.StackSamplingProfiler.Start |
+    TraceEvent.StackSamplingProfiler.Started |
     TraceEvent.StartIdlePeriod |
-    Startup_metric_utils.Mojom.StartupMetricHost |
-    StructTraits.CompositorFrame.Read |
-    StructTraits.RenderPass.Read |
-    StructTraits.TransferableResource.Read |
-    StyleElement.ProcessStyleSheet |
-    StyleEngine.ClearResolver |
-    StyleEngine.ScheduleInvalidationsForRuleSets |
-    StyleEngine.UpdateActiveStyleSheets |
+    TraceEvent.Startup_metric_utils.Mojom.StartupMetricHost |
+    TraceEvent.StructTraits.CompositorFrame.Read |
+    TraceEvent.StructTraits.RenderPass.Read |
+    TraceEvent.StructTraits.TransferableResource.Read |
+    TraceEvent.StyleElement.ProcessStyleSheet |
+    TraceEvent.StyleEngine.ClearResolver |
+    TraceEvent.StyleEngine.ScheduleInvalidationsForRuleSets |
+    TraceEvent.StyleEngine.UpdateActiveStyleSheets |
     TraceEvent.StyleRecalcInvalidationTracking |
     TraceEvent.SubImage |
-    SubmitCompositorFrame.TimeElapsed |
+    TraceEvent.SubmitCompositorFrame.TimeElapsed |
     TraceEvent.Submitrejectedtoevictedsurface |
     TraceEvent.SubresourceFilterMsg_SetRulesetForProcess |
-    SubresourceFilterSafeBrowsingActivationThrottle.DoesMainFrameURLSatisfyActivationConditions |
-    SubresourceFilterSafeBrowsingActivationThrottle.GetHighestPriorityConfiguration |
-    SubresourceFilterSafeBrowsingActivationThrottle.NotifyResult |
+    TraceEvent.SubresourceFilterSafeBrowsingActivationThrottle.DoesMainFrameURLSatisfyActivationConditions |
+    TraceEvent.SubresourceFilterSafeBrowsingActivationThrottle.GetHighestPriorityConfiguration |
+    TraceEvent.SubresourceFilterSafeBrowsingActivationThrottle.NotifyResult |
     TraceEvent.SubresourceFilterSBCheck |
     TraceEvent.Subthread_default_tq |
-    Surface.ActivateFrame |
-    Surface.OnDeadline |
-    SurfaceLayer.PushPropertiesTo |
-    SurfaceManager.GarbageCollectSurfaces |
+    TraceEvent.Surface.ActivateFrame |
+    TraceEvent.Surface.OnDeadline |
+    TraceEvent.SurfaceLayer.PushPropertiesTo |
+    TraceEvent.SurfaceManager.GarbageCollectSurfaces |
     TraceEvent.SwapBuffers |
     TraceEvent.Swapskipped |
     TraceEvent.Swapthrottled |
-    SyncChannel.Send |
-    SyncChannel.SyncContext.TryToUnblockListener |
-    TabManager.LoadNextBackgroundTabIfNeeded |
-    TabSwitching.Latency |
+    TraceEvent.SyncChannel.Send |
+    TraceEvent.SyncChannel.SyncContext.TryToUnblockListener |
+    TraceEvent.TabManager.LoadNextBackgroundTabIfNeeded |
+    TraceEvent.TabSwitching.Latency |
     TraceEvent.TabSwitchVisibilityRequest |
-    TaskGraphRunner.RunTask |
-    TaskQueueManager.ProcessTaskFromWorkQueue |
+    TraceEvent.TaskGraphRunner.RunTask |
+    TraceEvent.TaskQueueManager.ProcessTaskFromWorkQueue |
     TraceEvent.TaskQueueThrottler_TaskQueueThrottled |
     TraceEvent.TaskQueueThrottler_TaskQueueUnthrottled |
-    TaskQueueThrottler.MaybeSchedulePumpThrottledTasks |
-    TaskQueueThrottler.OnQueueNextWakeUpChanged |
-    TaskQueueThrottler.PumpThrottledTasks |
+    TraceEvent.TaskQueueThrottler.MaybeSchedulePumpThrottledTasks |
+    TraceEvent.TaskQueueThrottler.OnQueueNextWakeUpChanged |
+    TraceEvent.TaskQueueThrottler.PumpThrottledTasks |
     TraceEvent.TaskSchedulerPostTask |
     TraceEvent.TaskSchedulerRunTask |
-    TaskSetFinishedTaskImpl.RunOnWorkerThread |
-    TaskTracker.RunTask |
+    TraceEvent.TaskSetFinishedTaskImpl.RunOnWorkerThread |
+    TraceEvent.TaskTracker.RunTask |
     TraceEvent.TCP_CLIENT_SOCKET_POOL_REQUESTED_SOCKET |
     TraceEvent.TCP_CONNECT_ATTEMPT |
     TraceEvent.TCP_CONNECT |
     TraceEvent.TessellatingPathOp |
-    Textfield.PaintTextAndCursor |
-    TextureManager.ValidateAndDoTexSubImage |
+    TraceEvent.Textfield.PaintTextAndCursor |
+    TraceEvent.TextureManager.ValidateAndDoTexSubImage |
     TraceEvent.TextureOp |
     TraceEvent.Thread_name |
     TraceEvent.Thread_sort_index |
-    ThreadControllerImpl.DoWork |
-    ThreadControllerImpl.RunTask |
-    ThreadControllerImpl.ScheduleWork.PostTask |
-    ThreadProxy.BeginMainFrame |
-    ThreadProxy.ScheduledActionSendBeginMainFrame |
-    ThreadState.HeapEstimatedSizeKB |
-    ThreadState.HeapGrowingRate |
-    ThreadState.PartitionAllocEstimatedSizeKB |
-    ThreadState.PartitionAllocGrowingRate |
-    ThreadState.PerformIdleLazySweep |
-    TileManager.AssignGpuMemorytileviolatesmemorypolicy |
-    TileManager.AssignGpuMemoryToTiles |
-    TileManager.CheckForCompletedTasks |
-    TileManager.CheckForCompletedTasksFinished |
-    TileManager.CheckPendingGpuWorkAndIssueSignals |
-    TileManager.CreateRasterTask |
-    TileManager.DidFinishRunningAllTileTasks |
-    TileManager.DidFinishRunningTileTasksRequiredForActivation |
-    TileManager.DidFinishRunningTileTasksRequiredForDraw |
-    TileManager.FlushAndIssueSignals |
-    TileManager.IsReadyToActivate |
-    TileManager.IsReadyToDraw |
-    TileManager.IssueSignalsalltiletaskscompleted |
-    TileManager.IssueSignalsreadytoactivate |
-    TileManager.IssueSignalsreadytodraw |
-    TileManager.PrepareTiles |
-    TileManager.ScheduleTasks |
-    TileTaskManagerImpl.CheckForCompletedTasks |
-    TileTaskManagerImpl.ScheduleTasks |
-    TileTaskManagerImpl.Shutdown |
-    TimeoutMonitor.Restart |
-    TimeoutMonitor.Start |
-    TimeoutMonitor.Stop |
-    TimeoutMonitor.TimeOutHandler |
-    TimerBase.Run |
+    TraceEvent.ThreadControllerImpl.DoWork |
+    TraceEvent.ThreadControllerImpl.RunTask |
+    TraceEvent.ThreadControllerImpl.ScheduleWork.PostTask |
+    TraceEvent.ThreadProxy.BeginMainFrame |
+    TraceEvent.ThreadProxy.ScheduledActionSendBeginMainFrame |
+    TraceEvent.ThreadState.HeapEstimatedSizeKB |
+    TraceEvent.ThreadState.HeapGrowingRate |
+    TraceEvent.ThreadState.PartitionAllocEstimatedSizeKB |
+    TraceEvent.ThreadState.PartitionAllocGrowingRate |
+    TraceEvent.ThreadState.PerformIdleLazySweep |
+    TraceEvent.TileManager.AssignGpuMemorytileviolatesmemorypolicy |
+    TraceEvent.TileManager.AssignGpuMemoryToTiles |
+    TraceEvent.TileManager.CheckForCompletedTasks |
+    TraceEvent.TileManager.CheckForCompletedTasksFinished |
+    TraceEvent.TileManager.CheckPendingGpuWorkAndIssueSignals |
+    TraceEvent.TileManager.CreateRasterTask |
+    TraceEvent.TileManager.DidFinishRunningAllTileTasks |
+    TraceEvent.TileManager.DidFinishRunningTileTasksRequiredForActivation |
+    TraceEvent.TileManager.DidFinishRunningTileTasksRequiredForDraw |
+    TraceEvent.TileManager.FlushAndIssueSignals |
+    TraceEvent.TileManager.IsReadyToActivate |
+    TraceEvent.TileManager.IsReadyToDraw |
+    TraceEvent.TileManager.IssueSignalsalltiletaskscompleted |
+    TraceEvent.TileManager.IssueSignalsreadytoactivate |
+    TraceEvent.TileManager.IssueSignalsreadytodraw |
+    TraceEvent.TileManager.PrepareTiles |
+    TraceEvent.TileManager.ScheduleTasks |
+    TraceEvent.TileTaskManagerImpl.CheckForCompletedTasks |
+    TraceEvent.TileTaskManagerImpl.ScheduleTasks |
+    TraceEvent.TileTaskManagerImpl.Shutdown |
+    TraceEvent.TimeoutMonitor.Restart |
+    TraceEvent.TimeoutMonitor.Start |
+    TraceEvent.TimeoutMonitor.Stop |
+    TraceEvent.TimeoutMonitor.TimeOutHandler |
+    TraceEvent.TimerBase.Run |
     TraceEvent.TimerFire |
     TraceEvent.TimerInstall |
     TraceEvent.TimerRemove |
@@ -1472,33 +1472,33 @@ export namespace TraceEvent {
     TraceEvent.TimeToZonesAndDomReady |
     TraceEvent.TimeToZonesComplete |
     TraceEvent.TopLevel |
-    ToSpaceUpdatingItem.ProcessVisitAll |
+    TraceEvent.ToSpaceUpdatingItem.ProcessVisitAll |
     TraceEvent.Trace_buffer_overflowed |
-    Tracing.Mojom.Agent |
-    Tracing.Mojom.AgentRegistry |
-    Tracing.Mojom.Coordinator |
-    Tracing.Mojom.PerfettoService |
-    Tracing.Mojom.ProducerHost |
+    TraceEvent.Tracing.Mojom.Agent |
+    TraceEvent.Tracing.Mojom.AgentRegistry |
+    TraceEvent.Tracing.Mojom.Coordinator |
+    TraceEvent.Tracing.Mojom.PerfettoService |
+    TraceEvent.Tracing.Mojom.ProducerHost |
     TraceEvent.TracingHostMsg_ChildSupportsTracing |
     TraceEvent.TracingMsg_SetTracingProcessId |
     TraceEvent.TracingSessionIdForWorker |
     TraceEvent.TracingStartedInBrowser |
     TraceEvent.TracingStartedInPage |
-    TransferBuffer.Free |
+    TraceEvent.TransferBuffer.Free |
     TraceEvent.TransfersBytesPendingOnDisk |
     TraceEvent.TransfersPendingOnDisk |
-    Translate.Mojom.ContentTranslateDriver |
-    TransportConnectJob.DoResolveHostComplete |
-    TreeSynchronizer.PushLayerPropertiesTo.Impl |
-    TreeSynchronizer.PushLayerPropertiesTo.Main |
-    TreeSynchronizer.SynchronizeTrees |
+    TraceEvent.Translate.Mojom.ContentTranslateDriver |
+    TraceEvent.TransportConnectJob.DoResolveHostComplete |
+    TraceEvent.TreeSynchronizer.PushLayerPropertiesTo.Impl |
+    TraceEvent.TreeSynchronizer.PushLayerPropertiesTo.Main |
+    TraceEvent.TreeSynchronizer.SynchronizeTrees |
     TraceEvent.TrianglesDrawn |
     TraceEvent.UDP_BYTES_RECEIVED |
     TraceEvent.UDP_BYTES_SENT |
     TraceEvent.UDP_CONNECT |
     TraceEvent.UDP_LOCAL_ADDRESS |
-    UDPSocketPosix.ReadWatcher.OnFileCanReadWithoutBlocking |
-    Ukm.Mojom.UkmRecorderInterface |
+    TraceEvent.UDPSocketPosix.ReadWatcher.OnFileCanReadWithoutBlocking |
+    TraceEvent.Ukm.Mojom.UkmRecorderInterface |
     TraceEvent.Unknowninterface |
     TraceEvent.UnloadEventEnd |
     TraceEvent.UnloadEventStart |
@@ -1519,328 +1519,328 @@ export namespace TraceEvent {
     TraceEvent.URL_REQUEST_REDIRECT_JOB |
     TraceEvent.URL_REQUEST_REDIRECTED |
     TraceEvent.URL_REQUEST_START_JOB |
-    UrlPatternIndexMatcher.FindMatch |
-    URLRequestHttpJob.OnReadCompleted |
-    URLRequestHttpJob.OnStartCompleted |
+    TraceEvent.UrlPatternIndexMatcher.FindMatch |
+    TraceEvent.URLRequestHttpJob.OnReadCompleted |
+    TraceEvent.URLRequestHttpJob.OnStartCompleted |
     TraceEvent.UserEvent |
     TraceEvent.Usingexistingdeadline |
     TraceEvent.Usingnewdeadline |
     TraceEvent.V8_tq |
-    V8.Builtin_ArrayConcat |
-    V8.Builtin_ArrayPop |
-    V8.Builtin_ArrayPush |
-    V8.Builtin_ArrayShift |
-    V8.Builtin_ArrayUnshift |
-    V8.Builtin_BooleanConstructor |
-    V8.Builtin_ConsoleLog |
-    V8.Builtin_ConsoleWarn |
-    V8.Builtin_DateConstructor |
-    V8.Builtin_DateNow |
-    V8.Builtin_DatePrototypeSetTime |
-    V8.Builtin_DatePrototypeToUTCString |
-    V8.Builtin_ErrorConstructor |
-    V8.Builtin_FunctionConstructor |
-    V8.Builtin_FunctionPrototypeBind |
-    V8.Builtin_FunctionPrototypeToString |
-    V8.Builtin_GlobalDecodeURI |
-    V8.Builtin_GlobalDecodeURIComponent |
-    V8.Builtin_GlobalEncodeURIComponent |
-    V8.Builtin_GlobalEval |
-    V8.Builtin_HandleApiCall |
-    V8.Builtin_JsonParse |
-    V8.Builtin_JsonStringify |
-    V8.Builtin_MapPrototypeClear |
-    V8.Builtin_NumberPrototypeToFixed |
-    V8.Builtin_NumberPrototypeToString |
-    V8.Builtin_ObjectDefineGetter |
-    V8.Builtin_ObjectDefineProperties |
-    V8.Builtin_ObjectDefineProperty |
-    V8.Builtin_ObjectFreeze |
-    V8.Builtin_ObjectGetPrototypeOf |
-    V8.Builtin_ObjectLookupGetter |
-    V8.Builtin_ObjectPrototypeGetProto |
-    V8.Builtin_ObjectPrototypePropertyIsEnumerable |
-    V8.Builtin_ObjectPrototypeSetProto |
-    V8.Builtin_ObjectSetPrototypeOf |
-    V8.Builtin_RegExpPrototypeToString |
-    V8.Builtin_SetPrototypeClear |
-    V8.Builtin_StringPrototypeEndsWith |
-    V8.Builtin_StringPrototypeLastIndexOf |
-    V8.Builtin_StringPrototypeStartsWith |
-    V8.Builtin_StringPrototypeToUpperCaseIntl |
-    V8.CallFunction |
-    V8.Compile |
-    V8.CompileCode |
-    V8.CompileCodeBackground |
-    V8.CompileEval |
-    V8.CompileIgnition |
-    V8.CompileIgnitionFinalization |
-    V8.CompileScript |
-    V8.CompileStreamedScript |
-    V8.DeoptimizeCode |
-    V8.ExternalCallback |
-    V8.GC_BACKGROUND_ARRAY_BUFFER_FREE |
-    V8.GC_BACKGROUND_STORE_BUFFER |
-    V8.GC_BACKGROUND_UNMAPPER |
-    V8.GC_HEAP_EMBEDDER_TRACING_EPILOGUE |
-    V8.GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE |
-    V8.GC_HEAP_EPILOGUE |
-    V8.GC_HEAP_EXTERNAL_EPILOGUE |
-    V8.GC_HEAP_EXTERNAL_PROLOGUE |
-    V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES |
-    V8.GC_HEAP_PROLOGUE |
-    V8.GC_MC_BACKGROUND_EVACUATE_COPY |
-    V8.GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS |
-    V8.GC_MC_BACKGROUND_MARKING |
-    V8.GC_MC_BACKGROUND_SWEEPING |
-    V8.GC_MC_CLEAR_FLUSHABLE_BYTECODE |
-    V8.GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS |
-    V8.GC_MC_CLEAR_MAPS |
-    V8.GC_MC_CLEAR_STRING_TABLE |
-    V8.GC_MC_CLEAR_WEAK_COLLECTIONS |
-    V8.GC_MC_CLEAR_WEAK_LISTS |
-    V8.GC_MC_CLEAR_WEAK_REFERENCES |
-    V8.GC_MC_CLEAR |
-    V8.GC_MC_EPILOGUE |
-    V8.GC_MC_EVACUATE_CLEAN_UP |
-    V8.GC_MC_EVACUATE_COPY |
-    V8.GC_MC_EVACUATE_EPILOGUE |
-    V8.GC_MC_EVACUATE_PROLOGUE |
-    V8.GC_MC_EVACUATE_REBALANCE |
-    V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN |
-    V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE |
-    V8.GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS |
-    V8.GC_MC_EVACUATE_UPDATE_POINTERS_WEAK |
-    V8.GC_MC_EVACUATE_UPDATE_POINTERS |
-    V8.GC_MC_EVACUATE |
-    V8.GC_MC_FINISH |
-    V8.GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE |
-    V8.GC_MC_INCREMENTAL_EMBEDDER_TRACING |
-    V8.GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE |
-    V8.GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE |
-    V8.GC_MC_INCREMENTAL_FINALIZE_BODY |
-    V8.GC_MC_INCREMENTAL_FINALIZE |
-    V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE |
-    V8.GC_MC_INCREMENTAL_START |
-    V8.GC_MC_INCREMENTAL_SWEEPING |
-    V8.GC_MC_INCREMENTAL |
-    V8.GC_MC_MARK_EMBEDDER_TRACING_CLOSURE |
-    V8.GC_MC_MARK_EMBEDDER_TRACING |
-    V8.GC_MC_MARK_FINISH_INCREMENTAL |
-    V8.GC_MC_MARK_MAIN |
-    V8.GC_MC_MARK_ROOTS |
-    V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING |
-    V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON |
-    V8.GC_MC_MARK_WEAK_CLOSURE_HARMONY |
-    V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES |
-    V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS |
-    V8.GC_MC_MARK_WEAK_CLOSURE |
-    V8.GC_MC_MARK |
-    V8.GC_MC_PROLOGUE |
-    V8.GC_MC_SWEEP |
-    V8.GC_Objects_Stats |
-    V8.GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL |
-    V8.GC_SCAVENGER_PROCESS_ARRAY_BUFFERS |
-    V8.GC_SCAVENGER_SCAVENGE_FINALIZE |
-    V8.GC_SCAVENGER_SCAVENGE_PARALLEL |
-    V8.GC_SCAVENGER_SCAVENGE_ROOTS |
-    V8.GC_SCAVENGER_SCAVENGE_UPDATE_REFS |
-    V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY |
-    V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS |
-    V8.GC_SCAVENGER_SCAVENGE |
-    V8.GCCompactor |
-    V8.GCFinalizeMC |
-    V8.GCFinalizeMCReduceMemory |
-    V8.GCIdleNotification |
-    V8.GCIncrementalMarking |
-    V8.GCIncrementalMarkingFinalize |
-    V8.GCIncrementalMarkingLayoutChange |
-    V8.GCIncrementalMarkingStart |
-    V8.GCMarkCompactorMarkingSummary |
-    V8.GCMarkCompactorSummary |
-    V8.GCPhantomHandleProcessingCallback |
-    V8.GCScavenger |
-    V8.HandleInterrupts |
-    V8.ICStats |
-    V8.InvokeApiInterruptCallbacks |
-    V8.NewContext |
-    V8.NewInstance |
-    V8.OptimizeCode |
-    V8.ParseFunction |
-    V8.ParseOnBackground |
-    V8.ParseProgram |
-    V8.PreParse |
-    V8.RecompileConcurrent |
-    V8.RecompileSynchronous |
-    V8.Run |
-    V8.Runtime_Runtime_AddDictionaryProperty |
-    V8.Runtime_Runtime_AllocateInNewSpace |
-    V8.Runtime_Runtime_AllocateInTargetSpace |
-    V8.Runtime_Runtime_AllocateSeqTwoByteString |
-    V8.Runtime_Runtime_ArrayIndexOf |
-    V8.Runtime_Runtime_ArraySpeciesConstructor |
-    V8.Runtime_Runtime_CompileLazy |
-    V8.Runtime_Runtime_CompileOptimized_Concurrent |
-    V8.Runtime_Runtime_CompleteInobjectSlackTrackingForMap |
-    V8.Runtime_Runtime_CreateArrayLiteral |
-    V8.Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite |
-    V8.Runtime_Runtime_CreateDataProperty |
-    V8.Runtime_Runtime_CreateJSGeneratorObject |
-    V8.Runtime_Runtime_CreateListFromArrayLike |
-    V8.Runtime_Runtime_CreateObjectLiteral |
-    V8.Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite |
-    V8.Runtime_Runtime_CreateRegExpLiteral |
-    V8.Runtime_Runtime_DateCurrentTime |
-    V8.Runtime_Runtime_DeclareEvalFunction |
-    V8.Runtime_Runtime_DeclareGlobals |
-    V8.Runtime_Runtime_DefineAccessorPropertyUnchecked |
-    V8.Runtime_Runtime_DefineClass |
-    V8.Runtime_Runtime_DefineDataPropertyInLiteral |
-    V8.Runtime_Runtime_DeleteProperty |
-    V8.Runtime_Runtime_ElementsTransitionAndStoreIC_Miss |
-    V8.Runtime_Runtime_ForInEnumerate |
-    V8.Runtime_Runtime_GetOwnPropertyDescriptor |
-    V8.Runtime_Runtime_GetProperty |
-    V8.Runtime_Runtime_HasInPrototypeChain |
-    V8.Runtime_Runtime_HasProperty |
-    V8.Runtime_Runtime_Interrupt |
-    V8.Runtime_Runtime_KeyedLoadIC_Miss |
-    V8.Runtime_Runtime_KeyedStoreIC_Miss |
-    V8.Runtime_Runtime_KeyedStoreIC_Slow |
-    V8.Runtime_Runtime_LoadAccessorProperty |
-    V8.Runtime_Runtime_LoadCallbackProperty |
-    V8.Runtime_Runtime_LoadElementWithInterceptor |
-    V8.Runtime_Runtime_LoadGlobalIC_Miss |
-    V8.Runtime_Runtime_LoadGlobalIC_Slow |
-    V8.Runtime_Runtime_LoadIC_Miss |
-    V8.Runtime_Runtime_LoadLookupSlot |
-    V8.Runtime_Runtime_LoadLookupSlotForCall |
-    V8.Runtime_Runtime_LoadLookupSlotInsideTypeof |
-    V8.Runtime_Runtime_LoadPropertyWithInterceptor |
-    V8.Runtime_Runtime_MapGrow |
-    V8.Runtime_Runtime_MapShrink |
-    V8.Runtime_Runtime_NewArray |
-    V8.Runtime_Runtime_NewClosure_Tenured |
-    V8.Runtime_Runtime_NewClosure |
-    V8.Runtime_Runtime_NewObject |
-    V8.Runtime_Runtime_NewScriptContext |
-    V8.Runtime_Runtime_NotifyDeoptimized |
-    V8.Runtime_Runtime_NumberToString |
-    V8.Runtime_Runtime_ObjectCreate |
-    V8.Runtime_Runtime_ObjectEntries |
-    V8.Runtime_Runtime_ObjectGetOwnPropertyNames |
-    V8.Runtime_Runtime_ObjectHasOwnProperty |
-    V8.Runtime_Runtime_ObjectKeys |
-    V8.Runtime_Runtime_OrdinaryHasInstance |
-    V8.Runtime_Runtime_PrepareElementsForSort |
-    V8.Runtime_Runtime_PushBlockContext |
-    V8.Runtime_Runtime_PushCatchContext |
-    V8.Runtime_Runtime_PushWithContext |
-    V8.Runtime_Runtime_RegExpExec |
-    V8.Runtime_Runtime_RegExpExecMultiple |
-    V8.Runtime_Runtime_RegExpInitializeAndCompile |
-    V8.Runtime_Runtime_RegExpReplace |
-    V8.Runtime_Runtime_ResolvePossiblyDirectEval |
-    V8.Runtime_Runtime_RunMicrotaskCallback |
-    V8.Runtime_Runtime_SetGrow |
-    V8.Runtime_Runtime_SetKeyedProperty |
-    V8.Runtime_Runtime_SetNamedProperty |
-    V8.Runtime_Runtime_ShrinkPropertyDictionary |
-    V8.Runtime_Runtime_StackGuard |
-    V8.Runtime_Runtime_StoreCallbackProperty |
-    V8.Runtime_Runtime_StoreGlobalIC_Miss |
-    V8.Runtime_Runtime_StoreGlobalIC_Slow |
-    V8.Runtime_Runtime_StoreIC_Miss |
-    V8.Runtime_Runtime_StoreInArrayLiteralIC_Miss |
-    V8.Runtime_Runtime_StoreLookupSlot_Sloppy |
-    V8.Runtime_Runtime_StoreLookupSlot_Strict |
-    V8.Runtime_Runtime_StringAdd |
-    V8.Runtime_Runtime_StringBuilderConcat |
-    V8.Runtime_Runtime_StringCharCodeAt |
-    V8.Runtime_Runtime_StringEqual |
-    V8.Runtime_Runtime_StringIncludes |
-    V8.Runtime_Runtime_StringIndexOfUnchecked |
-    V8.Runtime_Runtime_StringLessThan |
-    V8.Runtime_Runtime_StringParseFloat |
-    V8.Runtime_Runtime_StringParseInt |
-    V8.Runtime_Runtime_StringSplit |
-    V8.Runtime_Runtime_StringSubstring |
-    V8.Runtime_Runtime_StringToArray |
-    V8.Runtime_Runtime_StringToLowerCaseIntl |
-    V8.Runtime_Runtime_StringToNumber |
-    V8.Runtime_Runtime_Throw |
-    V8.Runtime_Runtime_ThrowCalledNonCallable |
-    V8.Runtime_Runtime_ThrowConstructedNonConstructable |
-    V8.Runtime_Runtime_ToString |
-    V8.Runtime_Runtime_TransitionElementsKind |
-    V8.Runtime_Runtime_UnwindAndFindExceptionHandler |
-    V8.RuntimeStats |
-    V8.ScriptCompiler |
-    V8.StackGuard |
-    V8.Task |
-    V8ContextSnapshot.InstallRuntimeEnabled |
-    VerifiedRulesetDealer.GetRuleset |
-    View.Layout |
-    View.Layoutbounds_changed |
-    View.Layoutset_bounds |
-    View.OnPaint |
-    View.OnPaintBackground |
-    View.OnPaintBorder |
-    View.Paint |
-    View.PaintChildren |
+    TraceEvent.V8.Builtin_ArrayConcat |
+    TraceEvent.V8.Builtin_ArrayPop |
+    TraceEvent.V8.Builtin_ArrayPush |
+    TraceEvent.V8.Builtin_ArrayShift |
+    TraceEvent.V8.Builtin_ArrayUnshift |
+    TraceEvent.V8.Builtin_BooleanConstructor |
+    TraceEvent.V8.Builtin_ConsoleLog |
+    TraceEvent.V8.Builtin_ConsoleWarn |
+    TraceEvent.V8.Builtin_DateConstructor |
+    TraceEvent.V8.Builtin_DateNow |
+    TraceEvent.V8.Builtin_DatePrototypeSetTime |
+    TraceEvent.V8.Builtin_DatePrototypeToUTCString |
+    TraceEvent.V8.Builtin_ErrorConstructor |
+    TraceEvent.V8.Builtin_FunctionConstructor |
+    TraceEvent.V8.Builtin_FunctionPrototypeBind |
+    TraceEvent.V8.Builtin_FunctionPrototypeToString |
+    TraceEvent.V8.Builtin_GlobalDecodeURI |
+    TraceEvent.V8.Builtin_GlobalDecodeURIComponent |
+    TraceEvent.V8.Builtin_GlobalEncodeURIComponent |
+    TraceEvent.V8.Builtin_GlobalEval |
+    TraceEvent.V8.Builtin_HandleApiCall |
+    TraceEvent.V8.Builtin_JsonParse |
+    TraceEvent.V8.Builtin_JsonStringify |
+    TraceEvent.V8.Builtin_MapPrototypeClear |
+    TraceEvent.V8.Builtin_NumberPrototypeToFixed |
+    TraceEvent.V8.Builtin_NumberPrototypeToString |
+    TraceEvent.V8.Builtin_ObjectDefineGetter |
+    TraceEvent.V8.Builtin_ObjectDefineProperties |
+    TraceEvent.V8.Builtin_ObjectDefineProperty |
+    TraceEvent.V8.Builtin_ObjectFreeze |
+    TraceEvent.V8.Builtin_ObjectGetPrototypeOf |
+    TraceEvent.V8.Builtin_ObjectLookupGetter |
+    TraceEvent.V8.Builtin_ObjectPrototypeGetProto |
+    TraceEvent.V8.Builtin_ObjectPrototypePropertyIsEnumerable |
+    TraceEvent.V8.Builtin_ObjectPrototypeSetProto |
+    TraceEvent.V8.Builtin_ObjectSetPrototypeOf |
+    TraceEvent.V8.Builtin_RegExpPrototypeToString |
+    TraceEvent.V8.Builtin_SetPrototypeClear |
+    TraceEvent.V8.Builtin_StringPrototypeEndsWith |
+    TraceEvent.V8.Builtin_StringPrototypeLastIndexOf |
+    TraceEvent.V8.Builtin_StringPrototypeStartsWith |
+    TraceEvent.V8.Builtin_StringPrototypeToUpperCaseIntl |
+    TraceEvent.V8.CallFunction |
+    TraceEvent.V8.Compile |
+    TraceEvent.V8.CompileCode |
+    TraceEvent.V8.CompileCodeBackground |
+    TraceEvent.V8.CompileEval |
+    TraceEvent.V8.CompileIgnition |
+    TraceEvent.V8.CompileIgnitionFinalization |
+    TraceEvent.V8.CompileScript |
+    TraceEvent.V8.CompileStreamedScript |
+    TraceEvent.V8.DeoptimizeCode |
+    TraceEvent.V8.ExternalCallback |
+    TraceEvent.V8.GC_BACKGROUND_ARRAY_BUFFER_FREE |
+    TraceEvent.V8.GC_BACKGROUND_STORE_BUFFER |
+    TraceEvent.V8.GC_BACKGROUND_UNMAPPER |
+    TraceEvent.V8.GC_HEAP_EMBEDDER_TRACING_EPILOGUE |
+    TraceEvent.V8.GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE |
+    TraceEvent.V8.GC_HEAP_EPILOGUE |
+    TraceEvent.V8.GC_HEAP_EXTERNAL_EPILOGUE |
+    TraceEvent.V8.GC_HEAP_EXTERNAL_PROLOGUE |
+    TraceEvent.V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES |
+    TraceEvent.V8.GC_HEAP_PROLOGUE |
+    TraceEvent.V8.GC_MC_BACKGROUND_EVACUATE_COPY |
+    TraceEvent.V8.GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS |
+    TraceEvent.V8.GC_MC_BACKGROUND_MARKING |
+    TraceEvent.V8.GC_MC_BACKGROUND_SWEEPING |
+    TraceEvent.V8.GC_MC_CLEAR_FLUSHABLE_BYTECODE |
+    TraceEvent.V8.GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS |
+    TraceEvent.V8.GC_MC_CLEAR_MAPS |
+    TraceEvent.V8.GC_MC_CLEAR_STRING_TABLE |
+    TraceEvent.V8.GC_MC_CLEAR_WEAK_COLLECTIONS |
+    TraceEvent.V8.GC_MC_CLEAR_WEAK_LISTS |
+    TraceEvent.V8.GC_MC_CLEAR_WEAK_REFERENCES |
+    TraceEvent.V8.GC_MC_CLEAR |
+    TraceEvent.V8.GC_MC_EPILOGUE |
+    TraceEvent.V8.GC_MC_EVACUATE_CLEAN_UP |
+    TraceEvent.V8.GC_MC_EVACUATE_COPY |
+    TraceEvent.V8.GC_MC_EVACUATE_EPILOGUE |
+    TraceEvent.V8.GC_MC_EVACUATE_PROLOGUE |
+    TraceEvent.V8.GC_MC_EVACUATE_REBALANCE |
+    TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN |
+    TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE |
+    TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS |
+    TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_WEAK |
+    TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS |
+    TraceEvent.V8.GC_MC_EVACUATE |
+    TraceEvent.V8.GC_MC_FINISH |
+    TraceEvent.V8.GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE |
+    TraceEvent.V8.GC_MC_INCREMENTAL_EMBEDDER_TRACING |
+    TraceEvent.V8.GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE |
+    TraceEvent.V8.GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE |
+    TraceEvent.V8.GC_MC_INCREMENTAL_FINALIZE_BODY |
+    TraceEvent.V8.GC_MC_INCREMENTAL_FINALIZE |
+    TraceEvent.V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE |
+    TraceEvent.V8.GC_MC_INCREMENTAL_START |
+    TraceEvent.V8.GC_MC_INCREMENTAL_SWEEPING |
+    TraceEvent.V8.GC_MC_INCREMENTAL |
+    TraceEvent.V8.GC_MC_MARK_EMBEDDER_TRACING_CLOSURE |
+    TraceEvent.V8.GC_MC_MARK_EMBEDDER_TRACING |
+    TraceEvent.V8.GC_MC_MARK_FINISH_INCREMENTAL |
+    TraceEvent.V8.GC_MC_MARK_MAIN |
+    TraceEvent.V8.GC_MC_MARK_ROOTS |
+    TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING |
+    TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON |
+    TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_HARMONY |
+    TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES |
+    TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS |
+    TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE |
+    TraceEvent.V8.GC_MC_MARK |
+    TraceEvent.V8.GC_MC_PROLOGUE |
+    TraceEvent.V8.GC_MC_SWEEP |
+    TraceEvent.V8.GC_Objects_Stats |
+    TraceEvent.V8.GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL |
+    TraceEvent.V8.GC_SCAVENGER_PROCESS_ARRAY_BUFFERS |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE_FINALIZE |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE_PARALLEL |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE_ROOTS |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE_UPDATE_REFS |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS |
+    TraceEvent.V8.GC_SCAVENGER_SCAVENGE |
+    TraceEvent.V8.GCCompactor |
+    TraceEvent.V8.GCFinalizeMC |
+    TraceEvent.V8.GCFinalizeMCReduceMemory |
+    TraceEvent.V8.GCIdleNotification |
+    TraceEvent.V8.GCIncrementalMarking |
+    TraceEvent.V8.GCIncrementalMarkingFinalize |
+    TraceEvent.V8.GCIncrementalMarkingLayoutChange |
+    TraceEvent.V8.GCIncrementalMarkingStart |
+    TraceEvent.V8.GCMarkCompactorMarkingSummary |
+    TraceEvent.V8.GCMarkCompactorSummary |
+    TraceEvent.V8.GCPhantomHandleProcessingCallback |
+    TraceEvent.V8.GCScavenger |
+    TraceEvent.V8.HandleInterrupts |
+    TraceEvent.V8.ICStats |
+    TraceEvent.V8.InvokeApiInterruptCallbacks |
+    TraceEvent.V8.NewContext |
+    TraceEvent.V8.NewInstance |
+    TraceEvent.V8.OptimizeCode |
+    TraceEvent.V8.ParseFunction |
+    TraceEvent.V8.ParseOnBackground |
+    TraceEvent.V8.ParseProgram |
+    TraceEvent.V8.PreParse |
+    TraceEvent.V8.RecompileConcurrent |
+    TraceEvent.V8.RecompileSynchronous |
+    TraceEvent.V8.Run |
+    TraceEvent.V8.Runtime_Runtime_AddDictionaryProperty |
+    TraceEvent.V8.Runtime_Runtime_AllocateInNewSpace |
+    TraceEvent.V8.Runtime_Runtime_AllocateInTargetSpace |
+    TraceEvent.V8.Runtime_Runtime_AllocateSeqTwoByteString |
+    TraceEvent.V8.Runtime_Runtime_ArrayIndexOf |
+    TraceEvent.V8.Runtime_Runtime_ArraySpeciesConstructor |
+    TraceEvent.V8.Runtime_Runtime_CompileLazy |
+    TraceEvent.V8.Runtime_Runtime_CompileOptimized_Concurrent |
+    TraceEvent.V8.Runtime_Runtime_CompleteInobjectSlackTrackingForMap |
+    TraceEvent.V8.Runtime_Runtime_CreateArrayLiteral |
+    TraceEvent.V8.Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite |
+    TraceEvent.V8.Runtime_Runtime_CreateDataProperty |
+    TraceEvent.V8.Runtime_Runtime_CreateJSGeneratorObject |
+    TraceEvent.V8.Runtime_Runtime_CreateListFromArrayLike |
+    TraceEvent.V8.Runtime_Runtime_CreateObjectLiteral |
+    TraceEvent.V8.Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite |
+    TraceEvent.V8.Runtime_Runtime_CreateRegExpLiteral |
+    TraceEvent.V8.Runtime_Runtime_DateCurrentTime |
+    TraceEvent.V8.Runtime_Runtime_DeclareEvalFunction |
+    TraceEvent.V8.Runtime_Runtime_DeclareGlobals |
+    TraceEvent.V8.Runtime_Runtime_DefineAccessorPropertyUnchecked |
+    TraceEvent.V8.Runtime_Runtime_DefineClass |
+    TraceEvent.V8.Runtime_Runtime_DefineDataPropertyInLiteral |
+    TraceEvent.V8.Runtime_Runtime_DeleteProperty |
+    TraceEvent.V8.Runtime_Runtime_ElementsTransitionAndStoreIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_ForInEnumerate |
+    TraceEvent.V8.Runtime_Runtime_GetOwnPropertyDescriptor |
+    TraceEvent.V8.Runtime_Runtime_GetProperty |
+    TraceEvent.V8.Runtime_Runtime_HasInPrototypeChain |
+    TraceEvent.V8.Runtime_Runtime_HasProperty |
+    TraceEvent.V8.Runtime_Runtime_Interrupt |
+    TraceEvent.V8.Runtime_Runtime_KeyedLoadIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_KeyedStoreIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_KeyedStoreIC_Slow |
+    TraceEvent.V8.Runtime_Runtime_LoadAccessorProperty |
+    TraceEvent.V8.Runtime_Runtime_LoadCallbackProperty |
+    TraceEvent.V8.Runtime_Runtime_LoadElementWithInterceptor |
+    TraceEvent.V8.Runtime_Runtime_LoadGlobalIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_LoadGlobalIC_Slow |
+    TraceEvent.V8.Runtime_Runtime_LoadIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_LoadLookupSlot |
+    TraceEvent.V8.Runtime_Runtime_LoadLookupSlotForCall |
+    TraceEvent.V8.Runtime_Runtime_LoadLookupSlotInsideTypeof |
+    TraceEvent.V8.Runtime_Runtime_LoadPropertyWithInterceptor |
+    TraceEvent.V8.Runtime_Runtime_MapGrow |
+    TraceEvent.V8.Runtime_Runtime_MapShrink |
+    TraceEvent.V8.Runtime_Runtime_NewArray |
+    TraceEvent.V8.Runtime_Runtime_NewClosure_Tenured |
+    TraceEvent.V8.Runtime_Runtime_NewClosure |
+    TraceEvent.V8.Runtime_Runtime_NewObject |
+    TraceEvent.V8.Runtime_Runtime_NewScriptContext |
+    TraceEvent.V8.Runtime_Runtime_NotifyDeoptimized |
+    TraceEvent.V8.Runtime_Runtime_NumberToString |
+    TraceEvent.V8.Runtime_Runtime_ObjectCreate |
+    TraceEvent.V8.Runtime_Runtime_ObjectEntries |
+    TraceEvent.V8.Runtime_Runtime_ObjectGetOwnPropertyNames |
+    TraceEvent.V8.Runtime_Runtime_ObjectHasOwnProperty |
+    TraceEvent.V8.Runtime_Runtime_ObjectKeys |
+    TraceEvent.V8.Runtime_Runtime_OrdinaryHasInstance |
+    TraceEvent.V8.Runtime_Runtime_PrepareElementsForSort |
+    TraceEvent.V8.Runtime_Runtime_PushBlockContext |
+    TraceEvent.V8.Runtime_Runtime_PushCatchContext |
+    TraceEvent.V8.Runtime_Runtime_PushWithContext |
+    TraceEvent.V8.Runtime_Runtime_RegExpExec |
+    TraceEvent.V8.Runtime_Runtime_RegExpExecMultiple |
+    TraceEvent.V8.Runtime_Runtime_RegExpInitializeAndCompile |
+    TraceEvent.V8.Runtime_Runtime_RegExpReplace |
+    TraceEvent.V8.Runtime_Runtime_ResolvePossiblyDirectEval |
+    TraceEvent.V8.Runtime_Runtime_RunMicrotaskCallback |
+    TraceEvent.V8.Runtime_Runtime_SetGrow |
+    TraceEvent.V8.Runtime_Runtime_SetKeyedProperty |
+    TraceEvent.V8.Runtime_Runtime_SetNamedProperty |
+    TraceEvent.V8.Runtime_Runtime_ShrinkPropertyDictionary |
+    TraceEvent.V8.Runtime_Runtime_StackGuard |
+    TraceEvent.V8.Runtime_Runtime_StoreCallbackProperty |
+    TraceEvent.V8.Runtime_Runtime_StoreGlobalIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_StoreGlobalIC_Slow |
+    TraceEvent.V8.Runtime_Runtime_StoreIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_StoreInArrayLiteralIC_Miss |
+    TraceEvent.V8.Runtime_Runtime_StoreLookupSlot_Sloppy |
+    TraceEvent.V8.Runtime_Runtime_StoreLookupSlot_Strict |
+    TraceEvent.V8.Runtime_Runtime_StringAdd |
+    TraceEvent.V8.Runtime_Runtime_StringBuilderConcat |
+    TraceEvent.V8.Runtime_Runtime_StringCharCodeAt |
+    TraceEvent.V8.Runtime_Runtime_StringEqual |
+    TraceEvent.V8.Runtime_Runtime_StringIncludes |
+    TraceEvent.V8.Runtime_Runtime_StringIndexOfUnchecked |
+    TraceEvent.V8.Runtime_Runtime_StringLessThan |
+    TraceEvent.V8.Runtime_Runtime_StringParseFloat |
+    TraceEvent.V8.Runtime_Runtime_StringParseInt |
+    TraceEvent.V8.Runtime_Runtime_StringSplit |
+    TraceEvent.V8.Runtime_Runtime_StringSubstring |
+    TraceEvent.V8.Runtime_Runtime_StringToArray |
+    TraceEvent.V8.Runtime_Runtime_StringToLowerCaseIntl |
+    TraceEvent.V8.Runtime_Runtime_StringToNumber |
+    TraceEvent.V8.Runtime_Runtime_Throw |
+    TraceEvent.V8.Runtime_Runtime_ThrowCalledNonCallable |
+    TraceEvent.V8.Runtime_Runtime_ThrowConstructedNonConstructable |
+    TraceEvent.V8.Runtime_Runtime_ToString |
+    TraceEvent.V8.Runtime_Runtime_TransitionElementsKind |
+    TraceEvent.V8.Runtime_Runtime_UnwindAndFindExceptionHandler |
+    TraceEvent.V8.RuntimeStats |
+    TraceEvent.V8.ScriptCompiler |
+    TraceEvent.V8.StackGuard |
+    TraceEvent.V8.Task |
+    TraceEvent.V8ContextSnapshot.InstallRuntimeEnabled |
+    TraceEvent.VerifiedRulesetDealer.GetRuleset |
+    TraceEvent.View.Layout |
+    TraceEvent.View.Layoutbounds_changed |
+    TraceEvent.View.Layoutset_bounds |
+    TraceEvent.View.OnPaint |
+    TraceEvent.View.OnPaintBackground |
+    TraceEvent.View.OnPaintBorder |
+    TraceEvent.View.Paint |
+    TraceEvent.View.PaintChildren |
     TraceEvent.ViewHostMsg_DidContentsPreferredSizeChange |
     TraceEvent.ViewHostMsg_DocumentAvailableInMainFrame |
     TraceEvent.ViewHostMsg_UpdateZoomLimits |
     TraceEvent.ViewMsg_EnablePreferredSizeChangedMode |
-    VirtualboolGrRenderTargetOpList.OnExecuteGrOpFlushState |
-    VirtualGrOp.CombineResultnamespace.FillRectOp.OnCombineIfPossibleGrOpGrCaps |
-    VirtualGrOp.CombineResultnamespace.TextureOp.OnCombineIfPossibleGrOpGrCaps |
-    Virtualnamespace.FillRectOp.OnPrepareDrawsGrMeshDrawOp.Target |
-    Virtualnamespace.TextureOp.OnPrepareDrawsGrMeshDrawOp.Target |
-    VisibleUnits.CanonicalPosition |
-    VisibleUnits.MostBackwardCaretPosition |
-    VisibleUnits.MostForwardCaretPosition |
-    Visitedlink.Mojom.VisitedLinkNotificationSink |
+    TraceEvent.VirtualboolGrRenderTargetOpList.OnExecuteGrOpFlushState |
+    TraceEvent.VirtualGrOp.CombineResultnamespace.FillRectOp.OnCombineIfPossibleGrOpGrCaps |
+    TraceEvent.VirtualGrOp.CombineResultnamespace.TextureOp.OnCombineIfPossibleGrOpGrCaps |
+    TraceEvent.Virtualnamespace.FillRectOp.OnPrepareDrawsGrMeshDrawOp.Target |
+    TraceEvent.Virtualnamespace.TextureOp.OnPrepareDrawsGrMeshDrawOp.Target |
+    TraceEvent.VisibleUnits.CanonicalPosition |
+    TraceEvent.VisibleUnits.MostBackwardCaretPosition |
+    TraceEvent.VisibleUnits.MostForwardCaretPosition |
+    TraceEvent.Visitedlink.Mojom.VisitedLinkNotificationSink |
     TraceEvent.VisuallyComplete100 |
-    VisualViewport.MainFrameDidChangeSize |
-    VisualViewport.SetSize |
-    Viz.BeginFrameArgs |
-    Viz.Mojom.CompositingModeReporter |
-    Viz.Mojom.CompositorFrameSink |
-    Viz.Mojom.CompositorFrameSinkClient |
-    Viz.Mojom.DisplayClient |
-    Viz.Mojom.FrameSinkManager |
-    Viz.Mojom.FrameSinkManagerClient |
-    Viz.Mojom.GpuHost |
-    Viz.Mojom.GpuService |
-    Viz.SharedQuadState |
+    TraceEvent.VisualViewport.MainFrameDidChangeSize |
+    TraceEvent.VisualViewport.SetSize |
+    TraceEvent.Viz.BeginFrameArgs |
+    TraceEvent.Viz.Mojom.CompositingModeReporter |
+    TraceEvent.Viz.Mojom.CompositorFrameSink |
+    TraceEvent.Viz.Mojom.CompositorFrameSinkClient |
+    TraceEvent.Viz.Mojom.DisplayClient |
+    TraceEvent.Viz.Mojom.FrameSinkManager |
+    TraceEvent.Viz.Mojom.FrameSinkManagerClient |
+    TraceEvent.Viz.Mojom.GpuHost |
+    TraceEvent.Viz.Mojom.GpuService |
+    TraceEvent.Viz.SharedQuadState |
     TraceEvent.WaitingfornextBeginFrame |
-    Web_cache.Mojom.WebCache |
-    WebContentsImpl.CreateRenderFrameForRenderManager |
-    WebContentsImpl.CreateRenderViewForRenderManager |
-    WebContentsImpl.CreateWithOpener |
-    WebContentsImpl.DidFinishNavigation |
-    WebContentsImpl.DidStartNavigation |
-    WebContentsImpl.ReadyToCommitNavigation |
+    TraceEvent.Web_cache.Mojom.WebCache |
+    TraceEvent.WebContentsImpl.CreateRenderFrameForRenderManager |
+    TraceEvent.WebContentsImpl.CreateRenderViewForRenderManager |
+    TraceEvent.WebContentsImpl.CreateWithOpener |
+    TraceEvent.WebContentsImpl.DidFinishNavigation |
+    TraceEvent.WebContentsImpl.DidStartNavigation |
+    TraceEvent.WebContentsImpl.ReadyToCommitNavigation |
     TraceEvent.WebContentsImplLoading |
-    WebFrameWidgetImpl.BeginFrame |
-    WebFrameWidgetImpl.UpdateAllLifecyclePhases |
-    WebLocalFrameImpl.CreateChildframe |
-    WebLocalFrameImpl.CreateFrameView |
-    WebScopedVirtualTimePauser.PauseVirtualTime |
-    WebURLLoaderImpl.Context.Cancel |
-    WebURLLoaderImpl.Context.OnCompletedRequest |
-    WebURLLoaderImpl.Context.OnReceivedData |
-    WebURLLoaderImpl.Context.OnReceivedRedirect |
-    WebURLLoaderImpl.Context.OnReceivedResponse |
-    WebURLLoaderImpl.Context.Start |
-    WebURLLoaderImpl.LoadAsynchronously |
-    WebViewImpl.BeginFrame |
-    WebViewImpl.HandleInputEvent |
-    WebViewImpl.HandleKeyEvent |
-    WebViewImpl.SetIsAcceleratedCompositingActivetrue |
-    WebViewImpl.UpdateAllLifecyclePhases |
-    Widget.Init |
+    TraceEvent.WebFrameWidgetImpl.BeginFrame |
+    TraceEvent.WebFrameWidgetImpl.UpdateAllLifecyclePhases |
+    TraceEvent.WebLocalFrameImpl.CreateChildframe |
+    TraceEvent.WebLocalFrameImpl.CreateFrameView |
+    TraceEvent.WebScopedVirtualTimePauser.PauseVirtualTime |
+    TraceEvent.WebURLLoaderImpl.Context.Cancel |
+    TraceEvent.WebURLLoaderImpl.Context.OnCompletedRequest |
+    TraceEvent.WebURLLoaderImpl.Context.OnReceivedData |
+    TraceEvent.WebURLLoaderImpl.Context.OnReceivedRedirect |
+    TraceEvent.WebURLLoaderImpl.Context.OnReceivedResponse |
+    TraceEvent.WebURLLoaderImpl.Context.Start |
+    TraceEvent.WebURLLoaderImpl.LoadAsynchronously |
+    TraceEvent.WebViewImpl.BeginFrame |
+    TraceEvent.WebViewImpl.HandleInputEvent |
+    TraceEvent.WebViewImpl.HandleKeyEvent |
+    TraceEvent.WebViewImpl.SetIsAcceleratedCompositingActivetrue |
+    TraceEvent.WebViewImpl.UpdateAllLifecyclePhases |
+    TraceEvent.Widget.Init |
     TraceEvent.WidgetHostMsg_Close_ACK |
     TraceEvent.WidgetHostMsg_DidCommitAndDrawCompositorFrame |
     TraceEvent.WidgetHostMsg_DidFirstVisuallyNonEmptyPaint |
@@ -1849,7 +1849,7 @@ export namespace TraceEvent {
     TraceEvent.WidgetHostMsg_SelectionBoundsChanged |
     TraceEvent.WidgetHostMsg_TextInputStateChanged |
     TraceEvent.WidgetHostMsg_UpdateScreenRects_ACK |
-    WidgetInputHandlerImpl.DispatchEvent |
+    TraceEvent.WidgetInputHandlerImpl.DispatchEvent |
     TraceEvent.WidgetMsg_SetActive |
     TraceEvent.WidgetMsg_SetInheritedEffectiveTouchAction |
     TraceEvent.WidgetMsg_SetIsInert |
@@ -1860,13 +1860,13 @@ export namespace TraceEvent {
     TraceEvent.WidgetMsg_WasHidden |
     TraceEvent.WidgetMsg_WasShown |
     TraceEvent.WriteTransaction |
-    Ws.Mojom.Gpu |
-    X509Certificate.CreateFromDERCertChain |
+    TraceEvent.Ws.Mojom.Gpu |
+    TraceEvent.X509Certificate.CreateFromDERCertChain |
     TraceEvent.XHRLoad |
     TraceEvent.XHRReadyStateChange |
     TraceEvent.YieldParserForScriptBlockingResources |
     TraceEvent.YieldParserForScriptLoad |
-    ZeroSuggestProvider.Start |
+    TraceEvent.ZeroSuggestProvider.Start |
     TraceEvent.ZonesAndDomReady |
     TraceEvent.ZonesReady;
 
