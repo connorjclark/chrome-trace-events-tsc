@@ -326,10 +326,6 @@ async function run() {
   /** @type {Map<string, Gen.Namespace>} */
   const namespaceById = new Map();
   for (const _interface of interfaces) {
-    // Augment interface ids to account for the fact they are within the TraceEvent namespace.
-    _interface.idPath.unshift(topLevelNamespace.name);
-    _interface.id = topLevelNamespace.name + '.' + _interface.id;
-
     if (_interface.idPath.length === 1) {
       topLevelNamespace.interfaces.push(_interface);
       continue;
@@ -367,6 +363,10 @@ async function run() {
     const namespace = namespaceById.get(namespaceId);
     if (!namespace) throw new Error();
     namespace.interfaces.push(_interface);
+
+    // Augment interface ids to account for the fact they are within the TraceEvent namespace.
+    _interface.idPath.unshift(topLevelNamespace.name);
+    _interface.id = topLevelNamespace.name + '.' + _interface.id;
   }
 
   // Make a union (over all phases) for each TraceEvent.
