@@ -2,8 +2,11 @@ export namespace TraceEvent {
   interface Base {
     // Comma-separated list of category names.
     cat: string;
+    // Process id of the process that generated the event.
     pid: number;
+    // Thread id of the thread that generated the event.
     tid: number;
+    // Timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
     ts: number;
   }
 
@@ -132,7 +135,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'domContentLoadedEventEnd';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -154,10 +159,13 @@ export namespace TraceEvent {
             url: string;
           };
         };
+        // Duration.
         dur: number;
         name: 'EvaluateScript';
+        // Phase.
         ph: 'X';
         tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -168,8 +176,10 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstContentfulPaint';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     
@@ -181,7 +191,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstContentfulPaint';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -196,7 +208,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstMeaningfulPaint';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -210,7 +224,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstMeaningfulPaintCandidate';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -221,8 +237,10 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstPaint';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     
@@ -234,7 +252,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstPaint';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -252,7 +272,9 @@ export namespace TraceEvent {
           };
         };
         name: 'FunctionCall';
+        // Phase.
         ph: 'B';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     
@@ -261,7 +283,9 @@ export namespace TraceEvent {
         
         };
         name: 'FunctionCall';
+        // Phase.
         ph: 'E';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -281,8 +305,10 @@ export namespace TraceEvent {
           };
         };
         name: 'InvalidateLayout';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -305,7 +331,9 @@ export namespace TraceEvent {
           };
         };
         name: 'Layout';
+        // Phase.
         ph: 'B';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     
@@ -319,7 +347,9 @@ export namespace TraceEvent {
           };
         };
         name: 'Layout';
+        // Phase.
         ph: 'E';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -330,7 +360,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'loadEventEnd';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -346,7 +378,9 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'navigationStart';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -357,7 +391,9 @@ export namespace TraceEvent {
         
         };
         name: 'paintNonDefaultBackgroundColor';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -369,10 +405,13 @@ export namespace TraceEvent {
             styleSheetUrl: string;
           };
         };
+        // Duration.
         dur: number;
         name: 'ParseAuthorStyleSheet';
+        // Phase.
         ph: 'X';
         tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -383,6 +422,7 @@ export namespace TraceEvent {
           labels: string;
         };
         name: 'process_labels';
+        // Phase.
         ph: 'M';
       }
     }
@@ -393,7 +433,9 @@ export namespace TraceEvent {
         
         };
         name: 'requestStart';
+        // Phase.
         ph: 'R';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -411,8 +453,10 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceFinish';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -449,8 +493,10 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceReceiveResponse';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -474,8 +520,10 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceSendRequest';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -485,10 +533,13 @@ export namespace TraceEvent {
         args: {
         
         };
+        // Duration.
         dur?: number;
         name: 'RunTask';
+        // Phase.
         ph: 'X';
         tdur?: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -508,8 +559,10 @@ export namespace TraceEvent {
           };
         };
         name: 'ScheduleStyleRecalculation';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -521,7 +574,9 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Screenshot';
+        // Phase.
         ph: 'O';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -536,10 +591,13 @@ export namespace TraceEvent {
             src_file: string;
             src_func: string;
           };
+          // Duration.
           dur?: number;
           name: 'TaskQueueManager::ProcessTaskFromWorkQueue';
+          // Phase.
           ph: 'X';
           tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
       }
@@ -551,6 +609,7 @@ export namespace TraceEvent {
           name: string;
         };
         name: 'thread_name';
+        // Phase.
         ph: 'M';
       }
     }
@@ -567,10 +626,13 @@ export namespace TraceEvent {
           args: {
           
           };
+          // Duration.
           dur?: number;
           name: 'ThreadControllerImpl::DoWork';
+          // Phase.
           ph: 'X';
           tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
       }
@@ -582,12 +644,15 @@ export namespace TraceEvent {
             src_func?: string;
           };
           bind_id?: string;
+          // Duration.
           dur?: number;
           flow_in?: boolean;
           id?: string;
           name: 'ThreadControllerImpl::RunTask';
+          // Phase.
           ph: 'X';
           tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
       }
@@ -601,10 +666,13 @@ export namespace TraceEvent {
             timerId: number;
           };
         };
+        // Duration.
         dur: number;
         name: 'TimerFire';
+        // Phase.
         ph: 'X';
         tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -627,8 +695,10 @@ export namespace TraceEvent {
           };
         };
         name: 'TimerInstall';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -648,8 +718,10 @@ export namespace TraceEvent {
           };
         };
         name: 'TracingStartedInBrowser';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -663,8 +735,10 @@ export namespace TraceEvent {
           };
         };
         name: 'TracingStartedInPage';
+        // Phase.
         ph: 'I';
         s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }
@@ -681,7 +755,9 @@ export namespace TraceEvent {
             fileName: string;
           };
           name: 'v8.compile';
+          // Phase.
           ph: 'B';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
       
@@ -701,7 +777,9 @@ export namespace TraceEvent {
             };
           };
           name: 'v8.compile';
+          // Phase.
           ph: 'E';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
       
@@ -714,10 +792,13 @@ export namespace TraceEvent {
             };
             fileName?: string;
           };
+          // Duration.
           dur?: number;
           name: 'v8.compile';
+          // Phase.
           ph: 'X';
           tdur?: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
       }
@@ -739,10 +820,13 @@ export namespace TraceEvent {
             url: string;
           };
         };
+        // Duration.
         dur: number;
         name: 'XHRReadyStateChange';
+        // Phase.
         ph: 'X';
         tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
     }

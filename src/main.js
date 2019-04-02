@@ -399,17 +399,32 @@ async function run() {
   topLevelNamespace.unions.unshift(traceEventTypeUnion);
 
   // Add comments.
-  const comments = {
+  const commentsByType = {
     'Base': {
       cat: 'Comma-separated list of category names.',
+      pid: 'Process id of the process that generated the event.',
+      tid: 'Thread id of the thread that generated the event.',
+      ts: 'Timestamp of the event. This value is monotonically increasing among all events generated in the same thread.',
     },
   };
-  for (const [id, propertyComments] of Object.entries(comments)) {
+  const commentsByKey = {
+    dur: 'Duration.',
+    ph: 'Phase.',
+    tts: 'Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.',
+  };
+  for (const [id, propertyComments] of Object.entries(commentsByType)) {
     const _interface = interfaceById.get(id);
     if (!_interface) throw new Error();
     for (const [key, comment] of Object.entries(propertyComments)) {
       const prop = _interface.objectType[key];
       if (!prop) throw new Error();
+      prop.comment = comment;
+    }
+  }
+  for (const [key, comment] of Object.entries(commentsByKey)) {
+    for (const _interface of interfaceById.values()) {
+      const prop = _interface.objectType[key];
+      if (!prop) continue;
       prop.comment = comment;
     }
   }
