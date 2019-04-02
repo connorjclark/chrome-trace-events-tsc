@@ -3822,7 +3822,7 @@ export namespace TraceEvent {
     TraceEvent.ZonesReady.R;
 
   namespace A {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -3834,7 +3834,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -3848,7 +3848,7 @@ export namespace TraceEvent {
   }
 
   namespace AAConvexPathOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -3864,7 +3864,7 @@ export namespace TraceEvent {
   }
 
   namespace AAStrokeRect {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -3880,7 +3880,7 @@ export namespace TraceEvent {
   }
 
   namespace AcquireLock {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         src_file: string;
         src_func: string;
@@ -3897,7 +3897,7 @@ export namespace TraceEvent {
   }
 
   namespace ActivateLayerTree {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frameId: number;
         layerTreeId: number;
@@ -3912,7 +3912,7 @@ export namespace TraceEvent {
   }
 
   namespace AddFrameDisplayed {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -4094,7 +4094,7 @@ export namespace TraceEvent {
       TraceEvent.ADFUEL.SlotLoadedad_rect_btf_02.R;
   
     namespace AdFuelDOMContentLoaded {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4109,7 +4109,7 @@ export namespace TraceEvent {
     }
   
     namespace AdFuelInitialized {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4124,7 +4124,7 @@ export namespace TraceEvent {
     }
   
     namespace AdFuelRequestComplete {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4143,7 +4143,7 @@ export namespace TraceEvent {
         TraceEvent.ADFUEL.AdFuelwindow.Load.R;
     
       namespace Load {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -4159,7 +4159,7 @@ export namespace TraceEvent {
     }
   
     namespace AdRenderedad_bnr_atf_01 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4174,7 +4174,7 @@ export namespace TraceEvent {
     }
   
     namespace AdRenderedad_bnr_btf_01 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4189,7 +4189,7 @@ export namespace TraceEvent {
     }
   
     namespace AdRenderedad_mod_35731bb1e {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4204,7 +4204,7 @@ export namespace TraceEvent {
     }
   
     namespace AdRenderedad_oop_float_01 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4219,7 +4219,7 @@ export namespace TraceEvent {
     }
   
     namespace AdRenderedad_rect_btf_02 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4234,7 +4234,7 @@ export namespace TraceEvent {
     }
   
     namespace ApplyingPageLevelTargeting {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4249,7 +4249,7 @@ export namespace TraceEvent {
     }
   
     namespace ApplyingWindowSiteLevelOptions {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4264,7 +4264,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_atf_01 {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4276,7 +4276,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4290,7 +4290,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_atf_01End {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4305,7 +4305,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_atf_01Start {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4320,7 +4320,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_btf_01 {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4332,7 +4332,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4346,7 +4346,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_btf_01End {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4361,7 +4361,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_btf_01Start {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4376,7 +4376,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_btf_02 {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4388,7 +4388,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4402,7 +4402,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_btf_02End {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4417,7 +4417,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_bnr_btf_02Start {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4432,7 +4432,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_mod_35731bb1e {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4444,7 +4444,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4458,7 +4458,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_mod_35731bb1eEnd {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4473,7 +4473,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_mod_35731bb1eStart {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4488,7 +4488,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_oop_float_01 {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4500,7 +4500,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4514,7 +4514,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_oop_float_01End {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4529,7 +4529,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_oop_float_01Start {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4544,7 +4544,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_oop_skin_01 {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4556,7 +4556,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4570,7 +4570,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_oop_skin_01End {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4585,7 +4585,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_oop_skin_01Start {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4600,7 +4600,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_rect_btf_02 {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4612,7 +4612,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4626,7 +4626,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_rect_btf_02End {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4641,7 +4641,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildingSlotad_rect_btf_02Start {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4656,7 +4656,7 @@ export namespace TraceEvent {
     }
   
     namespace DispatchQueue {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4668,7 +4668,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4682,7 +4682,7 @@ export namespace TraceEvent {
     }
   
     namespace DispatchQueueEnd {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4697,7 +4697,7 @@ export namespace TraceEvent {
     }
   
     namespace DispatchQueueStart {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4712,7 +4712,7 @@ export namespace TraceEvent {
     }
   
     namespace GPTIncluded {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4727,7 +4727,7 @@ export namespace TraceEvent {
     }
   
     namespace PageLevelGPTBuild {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4739,7 +4739,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4753,7 +4753,7 @@ export namespace TraceEvent {
     }
   
     namespace PageLevelGPTBuildEnd {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4768,7 +4768,7 @@ export namespace TraceEvent {
     }
   
     namespace PageLevelGPTBuildStart {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4783,7 +4783,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueRegistrycnn_homepage_rb {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4795,7 +4795,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4809,7 +4809,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueRegistrycnn_homepage_rbEnd {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4824,7 +4824,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueRegistrycnn_homepage_rbStart {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4839,7 +4839,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueRegistrycnn_homepage {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -4851,7 +4851,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -4865,7 +4865,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueRegistrycnn_homepageEnd {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4880,7 +4880,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueRegistrycnn_homepageStart {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -4929,7 +4929,7 @@ export namespace TraceEvent {
         TraceEvent.ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1.R;
     
       namespace AmazonA9Modulev3_2_5 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -4944,7 +4944,7 @@ export namespace TraceEvent {
       }
     
       namespace CEPModulev3_0_2 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -4959,7 +4959,7 @@ export namespace TraceEvent {
       }
     
       namespace CreativeReviewModulev3_0_5 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -4974,7 +4974,7 @@ export namespace TraceEvent {
       }
     
       namespace CriteoModulev3_2_2 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -4989,7 +4989,7 @@ export namespace TraceEvent {
       }
     
       namespace IndexExchangeWrapperModulev3_1_1 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5004,7 +5004,7 @@ export namespace TraceEvent {
       }
     
       namespace InViewRefreshv3_0_5 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5019,7 +5019,7 @@ export namespace TraceEvent {
       }
     
       namespace KruxModulev3_1_1 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5034,7 +5034,7 @@ export namespace TraceEvent {
       }
     
       namespace PrebidModulev3_3_0 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5049,7 +5049,7 @@ export namespace TraceEvent {
       }
     
       namespace ProximicModulev3_1_2 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5064,7 +5064,7 @@ export namespace TraceEvent {
       }
     
       namespace TransactionIDModulev3_1_1 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5079,7 +5079,7 @@ export namespace TraceEvent {
       }
     
       namespace TurnerGUIDModulev3_1_1 {
-        interface R extends Base {
+        interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
@@ -5108,7 +5108,7 @@ export namespace TraceEvent {
             TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonStart.R;
         
           namespace Json {
-            interface b extends Base {
+            interface b extends TraceEvent.Base {
               args: {
               
               };
@@ -5120,7 +5120,7 @@ export namespace TraceEvent {
               tts: number;
             }
           
-            interface e extends Base {
+            interface e extends TraceEvent.Base {
               args: {
               
               };
@@ -5134,7 +5134,7 @@ export namespace TraceEvent {
           }
         
           namespace JsonEnd {
-            interface R extends Base {
+            interface R extends TraceEvent.Base {
               args: {
                 data: {
                   navigationId: string;
@@ -5149,7 +5149,7 @@ export namespace TraceEvent {
           }
         
           namespace JsonStart {
-            interface R extends Base {
+            interface R extends TraceEvent.Base {
               args: {
                 data: {
                   navigationId: string;
@@ -5167,7 +5167,7 @@ export namespace TraceEvent {
     }
   
     namespace SendingRequest {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
         
         };
@@ -5179,7 +5179,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -5193,7 +5193,7 @@ export namespace TraceEvent {
     }
   
     namespace SendingRequestEnd {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -5208,7 +5208,7 @@ export namespace TraceEvent {
     }
   
     namespace SendingRequestStart {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -5223,7 +5223,7 @@ export namespace TraceEvent {
     }
   
     namespace SlotLoadedad_bnr_atf_01 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -5238,7 +5238,7 @@ export namespace TraceEvent {
     }
   
     namespace SlotLoadedad_mod_35731bb1e {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -5253,7 +5253,7 @@ export namespace TraceEvent {
     }
   
     namespace SlotLoadedad_oop_float_01 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -5268,7 +5268,7 @@ export namespace TraceEvent {
     }
   
     namespace SlotLoadedad_rect_btf_02 {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -5284,7 +5284,7 @@ export namespace TraceEvent {
   }
 
   namespace Allactivesurfacesready {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -5298,7 +5298,7 @@ export namespace TraceEvent {
   }
 
   namespace Animation {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         data: {
           id: string;
@@ -5316,7 +5316,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         endData: {
           state: string;
@@ -5330,7 +5330,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         data: {
           state: string;
@@ -5356,7 +5356,7 @@ export namespace TraceEvent {
       TraceEvent.AnimationHost.UpdateAnimationState.X;
   
     namespace ActivateAnimations {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5372,7 +5372,7 @@ export namespace TraceEvent {
     }
   
     namespace TickAnimations {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5388,7 +5388,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateAnimationState {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5409,7 +5409,7 @@ export namespace TraceEvent {
       TraceEvent.ArrayBufferTrackerUpdatingItem.Process.X;
   
     namespace Process {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           EvacuationState: number;
         };
@@ -5430,7 +5430,7 @@ export namespace TraceEvent {
       TraceEvent.AsyncLayerTreeFrameSink.SubmitCompositorFrame.X;
   
     namespace SubmitCompositorFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           source_frame_number_: number;
         };
@@ -5447,7 +5447,7 @@ export namespace TraceEvent {
   }
 
   namespace AsyncTask {
-    interface f extends Base {
+    interface f extends TraceEvent.Base {
       args: {
       
       };
@@ -5461,7 +5461,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface s extends Base {
+    interface s extends TraceEvent.Base {
       args: {
         data: {
           name: string;
@@ -5477,7 +5477,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface t extends Base {
+    interface t extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -5493,7 +5493,7 @@ export namespace TraceEvent {
   }
 
   namespace AtlasTextOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -5516,7 +5516,7 @@ export namespace TraceEvent {
       TraceEvent.AutocompleteController.UpdateResult.X;
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           text: string;
         };
@@ -5532,7 +5532,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateResult {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5553,7 +5553,7 @@ export namespace TraceEvent {
       TraceEvent.BackgroundCompileTask.Run.X;
   
     namespace Run {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5577,7 +5577,7 @@ export namespace TraceEvent {
       TraceEvent.BackgroundHTMLParser.SendTokensToMainThread.X;
   
     namespace PumpTokenizer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5593,7 +5593,7 @@ export namespace TraceEvent {
     }
   
     namespace SendTokensToMainThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5618,7 +5618,7 @@ export namespace TraceEvent {
         TraceEvent.Base.TraceEventSystemStatsMonitor.SystemStats.O;
     
       namespace SystemStats {
-        interface O extends Base {
+        interface O extends TraceEvent.Base {
           args: {
             snapshot: {
               committed_memory: number;
@@ -5636,7 +5636,7 @@ export namespace TraceEvent {
   }
 
   namespace BeginFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         layerTreeId: number;
       };
@@ -5650,7 +5650,7 @@ export namespace TraceEvent {
   }
 
   namespace BeginFrameArgs {
-    interface t extends Base {
+    interface t extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -5664,7 +5664,7 @@ export namespace TraceEvent {
   }
 
   namespace BeginMainThreadFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frameId: number;
@@ -5688,7 +5688,7 @@ export namespace TraceEvent {
       TraceEvent.BenchmarkInstrumentation.ImplThreadRenderingStats.I;
   
     namespace DisplayRenderingStats {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           data: {
             frame_count: number;
@@ -5704,7 +5704,7 @@ export namespace TraceEvent {
     }
   
     namespace ImplThreadRenderingStats {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           data: {
             approximated_visible_content_area: number;
@@ -5733,7 +5733,7 @@ export namespace TraceEvent {
       TraceEvent.BitmapImage.Draw.X;
   
     namespace DataChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5749,7 +5749,7 @@ export namespace TraceEvent {
     }
   
     namespace Draw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5770,7 +5770,7 @@ export namespace TraceEvent {
       TraceEvent.Blankframe.NooverlaysorCALayers.X;
   
     namespace NooverlaysorCALayers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -5816,7 +5816,7 @@ export namespace TraceEvent {
         TraceEvent.Blink.Mojom.StoragePartitionService.X;
     
       namespace AppCacheBackend {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5832,7 +5832,7 @@ export namespace TraceEvent {
       }
     
       namespace AppCacheFrontend {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5848,7 +5848,7 @@ export namespace TraceEvent {
       }
     
       namespace Blob {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5864,7 +5864,7 @@ export namespace TraceEvent {
       }
     
       namespace BlobRegistry {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5880,7 +5880,7 @@ export namespace TraceEvent {
       }
     
       namespace CodeCacheHost {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5896,7 +5896,7 @@ export namespace TraceEvent {
       }
     
       namespace ManifestManager {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5912,7 +5912,7 @@ export namespace TraceEvent {
       }
     
       namespace PluginRegistry {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5928,7 +5928,7 @@ export namespace TraceEvent {
       }
     
       namespace StorageArea {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -5944,7 +5944,7 @@ export namespace TraceEvent {
       }
     
       namespace StoragePartitionService {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -6053,7 +6053,7 @@ export namespace TraceEvent {
       TraceEvent.BlinkGC.WrapperCountAtLastGC.C;
   
     namespace AllocatedObjectSizeSincePreviousGCKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6066,7 +6066,7 @@ export namespace TraceEvent {
     }
   
     namespace AllocatedSpaceAtLastGCKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6079,7 +6079,7 @@ export namespace TraceEvent {
     }
   
     namespace AllocatedSpaceKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6092,7 +6092,7 @@ export namespace TraceEvent {
     }
   
     namespace AtomicPhase {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           forced: boolean;
         };
@@ -6103,7 +6103,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6116,7 +6116,7 @@ export namespace TraceEvent {
     }
   
     namespace AtomicPhaseMarking {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           gcReason: string;
           lazySweeping: string;
@@ -6128,7 +6128,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6141,7 +6141,7 @@ export namespace TraceEvent {
     }
   
     namespace CollectedWrapperCount {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6154,7 +6154,7 @@ export namespace TraceEvent {
     }
   
     namespace CollectionRate {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6167,7 +6167,7 @@ export namespace TraceEvent {
     }
   
     namespace CompleteSweep {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           forced: boolean;
         };
@@ -6178,7 +6178,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6191,7 +6191,7 @@ export namespace TraceEvent {
     }
   
     namespace EagerSweep {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6202,7 +6202,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6215,7 +6215,7 @@ export namespace TraceEvent {
     }
   
     namespace InvokePreFinalizers {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6226,7 +6226,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6239,7 +6239,7 @@ export namespace TraceEvent {
     }
   
     namespace LazySweepOnAllocation {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6250,7 +6250,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6263,7 +6263,7 @@ export namespace TraceEvent {
     }
   
     namespace MarkedObjectSizeAtLastCompleteSweepKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6276,7 +6276,7 @@ export namespace TraceEvent {
     }
   
     namespace MarkInvokeEphemeronCallbacks {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6287,7 +6287,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6300,7 +6300,7 @@ export namespace TraceEvent {
     }
   
     namespace MarkNotFullyConstructedObjects {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6311,7 +6311,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6324,7 +6324,7 @@ export namespace TraceEvent {
     }
   
     namespace MarkProcessWorklist {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6335,7 +6335,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6348,7 +6348,7 @@ export namespace TraceEvent {
     }
   
     namespace MarkWeakProcessing {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6359,7 +6359,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6372,7 +6372,7 @@ export namespace TraceEvent {
     }
   
     namespace ObjectSizeAtLastGCKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6385,7 +6385,7 @@ export namespace TraceEvent {
     }
   
     namespace PartitionAllocSizeAtLastGCKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6398,7 +6398,7 @@ export namespace TraceEvent {
     }
   
     namespace VisitCrossThreadPersistents {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6409,7 +6409,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6422,7 +6422,7 @@ export namespace TraceEvent {
     }
   
     namespace VisitDOMWrappers {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6433,7 +6433,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6446,7 +6446,7 @@ export namespace TraceEvent {
     }
   
     namespace VisitPersistentRoots {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6457,7 +6457,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6470,7 +6470,7 @@ export namespace TraceEvent {
     }
   
     namespace VisitPersistents {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6481,7 +6481,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6494,7 +6494,7 @@ export namespace TraceEvent {
     }
   
     namespace VisitStackRoots {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -6505,7 +6505,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -6518,7 +6518,7 @@ export namespace TraceEvent {
     }
   
     namespace WrapperCount {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6531,7 +6531,7 @@ export namespace TraceEvent {
     }
   
     namespace WrapperCountAtLastGC {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -6545,7 +6545,7 @@ export namespace TraceEvent {
   }
 
   namespace BlinkGCMarking {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         gcReason: string;
         lazySweeping: boolean;
@@ -6574,7 +6574,7 @@ export namespace TraceEvent {
       TraceEvent.BlobReader.ReadMore.S;
   
     namespace CountSize {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           result: string;
           size: number;
@@ -6587,7 +6587,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -6601,7 +6601,7 @@ export namespace TraceEvent {
     }
   
     namespace ReadBytesItem {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           uuid: string;
         };
@@ -6617,7 +6617,7 @@ export namespace TraceEvent {
     }
   
     namespace ReadMore {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           num_bytes: number;
           result: string;
@@ -6630,7 +6630,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -6643,7 +6643,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         bytes_written: number;
       };
@@ -6655,7 +6655,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         uuid: string;
       };
@@ -6673,7 +6673,7 @@ export namespace TraceEvent {
       TraceEvent.BookmarkProvider.Start.X;
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6694,7 +6694,7 @@ export namespace TraceEvent {
       TraceEvent.BrowserCrApplication.SendEvent.X;
   
     namespace SendEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6711,7 +6711,7 @@ export namespace TraceEvent {
   }
 
   namespace BrowserWorker0x7fd3431d1a00 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -6725,7 +6725,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -6739,7 +6739,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -6752,7 +6752,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -6767,7 +6767,7 @@ export namespace TraceEvent {
   }
 
   namespace BudgetPool_DisableThrottling {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -6783,7 +6783,7 @@ export namespace TraceEvent {
   }
 
   namespace CalculateRenderSurfaceLayerList {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -6799,7 +6799,7 @@ export namespace TraceEvent {
   }
 
   namespace CancelAnimationFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -6823,7 +6823,7 @@ export namespace TraceEvent {
   }
 
   namespace CANCELLED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -6838,7 +6838,7 @@ export namespace TraceEvent {
   }
 
   namespace CanExceedIdleDeadlineIfRequired {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -6861,7 +6861,7 @@ export namespace TraceEvent {
       TraceEvent.Canvas2DLayerBridge.FlushRecording.X;
   
     namespace FinalizeFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6877,7 +6877,7 @@ export namespace TraceEvent {
     }
   
     namespace FlushRecording {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6894,7 +6894,7 @@ export namespace TraceEvent {
   }
 
   namespace Canvas2DLayerBridgeCreation {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -6912,7 +6912,7 @@ export namespace TraceEvent {
       TraceEvent.CanvasResourceProvider.Canvas.X;
   
     namespace Canvas {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6933,7 +6933,7 @@ export namespace TraceEvent {
       TraceEvent.CanvasResourceProviderBitmap.CreateSkSurface.X;
   
     namespace CreateSkSurface {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6954,7 +6954,7 @@ export namespace TraceEvent {
       TraceEvent.CARendererLayerTree.CommitScheduledCALayers.X;
   
     namespace CommitScheduledCALayers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6981,7 +6981,7 @@ export namespace TraceEvent {
       TraceEvent.CategorizedWorkerPool.WaitForTasksToFinishRunning.X;
   
     namespace CollectCompletedTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -6997,7 +6997,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           num_edges: number;
           num_nodes: number;
@@ -7014,7 +7014,7 @@ export namespace TraceEvent {
     }
   
     namespace WaitForTasksToFinishRunning {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7038,7 +7038,7 @@ export namespace TraceEvent {
       TraceEvent.CATransactionCoordinator.Precommithandler.X;
   
     namespace Postcommithandler {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7054,7 +7054,7 @@ export namespace TraceEvent {
     }
   
     namespace Precommithandler {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7086,7 +7086,7 @@ export namespace TraceEvent {
       TraceEvent.Cc.Tile.D;
   
     namespace DisplayItemList {
-      interface O extends Base {
+      interface O extends TraceEvent.Base {
         args: {
           snapshot: {
             params: {
@@ -7116,7 +7116,7 @@ export namespace TraceEvent {
     }
   
     namespace LayerImpl {
-      interface D extends Base {
+      interface D extends TraceEvent.Base {
         args: {
         
         };
@@ -7130,7 +7130,7 @@ export namespace TraceEvent {
     }
   
     namespace LayerTreeHostImpl {
-      interface D extends Base {
+      interface D extends TraceEvent.Base {
         args: {
         
         };
@@ -7142,7 +7142,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface N extends Base {
+      interface N extends TraceEvent.Base {
         args: {
         
         };
@@ -7154,7 +7154,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface O extends Base {
+      interface O extends TraceEvent.Base {
         args: {
           snapshot: {
             active_tiles: {
@@ -7432,7 +7432,7 @@ export namespace TraceEvent {
     }
   
     namespace Tile {
-      interface D extends Base {
+      interface D extends TraceEvent.Base {
         args: {
         
         };
@@ -7452,7 +7452,7 @@ export namespace TraceEvent {
       TraceEvent.Ccschedulerscheduler.L38.S;
   
     namespace L38 {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -7464,7 +7464,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           'current args': {
             animate_only: boolean;
@@ -7505,7 +7505,7 @@ export namespace TraceEvent {
       TraceEvent.Cctreeslayer_tree_host_impl.L300.S;
   
     namespace L300 {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -7517,7 +7517,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           'current args': {
             animate_only: boolean;
@@ -7553,7 +7553,7 @@ export namespace TraceEvent {
   }
 
   namespace CERT_VERIFIER_REQUEST_BOUND_TO_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -7573,7 +7573,7 @@ export namespace TraceEvent {
   }
 
   namespace CERT_VERIFIER_REQUEST {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -7586,7 +7586,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -7605,7 +7605,7 @@ export namespace TraceEvent {
       TraceEvent.CertVerifierJob.OnJobCompleted.X;
   
     namespace OnJobCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7626,7 +7626,7 @@ export namespace TraceEvent {
       TraceEvent.ChannelMojo.OnMessageReceived.X;
   
     namespace OnMessageReceived {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: number;
           line: number;
@@ -7660,7 +7660,7 @@ export namespace TraceEvent {
       TraceEvent.CheckerImageTracker.TakeImagesToInvalidateOnSyncTree.X;
   
     namespace DidActivateSyncTree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7676,7 +7676,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleImageDecodeQueue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7692,7 +7692,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleNextImageDecode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7708,7 +7708,7 @@ export namespace TraceEvent {
     }
   
     namespace ShouldCheckerImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           image_id: number;
         };
@@ -7724,7 +7724,7 @@ export namespace TraceEvent {
     }
   
     namespace TakeImagesToInvalidateOnSyncTree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7741,7 +7741,7 @@ export namespace TraceEvent {
   }
 
   namespace ChromeViewHostMsg_AllowDOMStorage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -7761,7 +7761,7 @@ export namespace TraceEvent {
       TraceEvent.ChromiumRandomAccessFile.Read.X;
   
     namespace Read {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           offset: number;
           size: number;
@@ -7779,7 +7779,7 @@ export namespace TraceEvent {
   }
 
   namespace CircleOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -7795,7 +7795,7 @@ export namespace TraceEvent {
   }
 
   namespace CircularRRectOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -7815,7 +7815,7 @@ export namespace TraceEvent {
       TraceEvent.ClassicPendingScript.GetSource.X;
   
     namespace GetSource {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7832,7 +7832,7 @@ export namespace TraceEvent {
   }
 
   namespace Cleanup_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -7845,7 +7845,7 @@ export namespace TraceEvent {
   }
 
   namespace ClearusingTexSubImage2D {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         size: number;
       };
@@ -7865,7 +7865,7 @@ export namespace TraceEvent {
       TraceEvent.ClientSocketHandle.OnIOComplete.X;
   
     namespace OnIOComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7886,7 +7886,7 @@ export namespace TraceEvent {
       TraceEvent.ColdModeSpellCheckRequester.Invoke.X;
   
     namespace Invoke {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7910,7 +7910,7 @@ export namespace TraceEvent {
       TraceEvent.CommandBufferHelper.Flush.X;
   
     namespace Finish {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7926,7 +7926,7 @@ export namespace TraceEvent {
     }
   
     namespace Flush {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7956,7 +7956,7 @@ export namespace TraceEvent {
       TraceEvent.CommandBufferProxyImpl.WaitForGetOffset.X;
   
     namespace Flush {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           put_offset: number;
         };
@@ -7972,7 +7972,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -7988,7 +7988,7 @@ export namespace TraceEvent {
     }
   
     namespace OrderingBarrier {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           put_offset: number;
         };
@@ -8004,7 +8004,7 @@ export namespace TraceEvent {
     }
   
     namespace WaitForGetOffset {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           end: number;
           start: number;
@@ -8029,7 +8029,7 @@ export namespace TraceEvent {
       TraceEvent.CommandBufferService.PutChanged.X;
   
     namespace Paused {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -8043,7 +8043,7 @@ export namespace TraceEvent {
     }
   
     namespace PutChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           handler: string;
         };
@@ -8079,7 +8079,7 @@ export namespace TraceEvent {
       TraceEvent.CommandBufferStub.PerformWork.X;
   
     namespace OnAsyncFlush {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           put_offset: number;
         };
@@ -8095,7 +8095,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDestroyTransferBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8111,7 +8111,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRegisterTransferBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8127,7 +8127,7 @@ export namespace TraceEvent {
     }
   
     namespace OnSetGetBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8143,7 +8143,7 @@ export namespace TraceEvent {
     }
   
     namespace OnWaitForGetOffsetInRange {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8159,7 +8159,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformWork {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8176,7 +8176,7 @@ export namespace TraceEvent {
   }
 
   namespace CommitLoad {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -8200,7 +8200,7 @@ export namespace TraceEvent {
   }
 
   namespace CommitPendingTreesToCA {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -8216,7 +8216,7 @@ export namespace TraceEvent {
   }
 
   namespace CompositeLayers {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         layerTreeId: number;
       };
@@ -8227,7 +8227,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -8244,7 +8244,7 @@ export namespace TraceEvent {
       TraceEvent.CompositingInputsUpdater.Update.X;
   
     namespace Update {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8265,7 +8265,7 @@ export namespace TraceEvent {
       TraceEvent.CompositingLayerAssigner.Assign.X;
   
     namespace Assign {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8286,7 +8286,7 @@ export namespace TraceEvent {
       TraceEvent.CompositingRequirementsUpdater.UpdateRecursive.X;
   
     namespace UpdateRecursive {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8303,7 +8303,7 @@ export namespace TraceEvent {
   }
 
   namespace Compositor_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -8323,7 +8323,7 @@ export namespace TraceEvent {
       TraceEvent.CompositorFrameSinkSupport.MaybeSubmitCompositorFrame.X;
   
     namespace DidNotProduceFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'ack.sequence_number': number;
           'ack.source_id': number;
@@ -8340,7 +8340,7 @@ export namespace TraceEvent {
     }
   
     namespace MaybeSubmitCompositorFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           FrameSinkId: string;
         };
@@ -8361,7 +8361,7 @@ export namespace TraceEvent {
       TraceEvent.CompositorTimingHistory.DidDraw.X;
   
     namespace DidDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           active_tree_main_frame_time: number;
           impl_frame_time: number;
@@ -8383,7 +8383,7 @@ export namespace TraceEvent {
       TraceEvent.ConcurrentMarking.RunPreempted.X;
   
     namespace RunPreempted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8400,7 +8400,7 @@ export namespace TraceEvent {
   }
 
   namespace CONNECT_JOB_SET_SOCKET {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -8424,7 +8424,7 @@ export namespace TraceEvent {
       TraceEvent.ConnectJob.NotifyDelegateOfCompletion.X;
   
     namespace NotifyDelegateOfCompletion {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8445,7 +8445,7 @@ export namespace TraceEvent {
       TraceEvent.ConsoleMessage.Error.I;
   
     namespace Error {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           source: string;
         };
@@ -8486,7 +8486,7 @@ export namespace TraceEvent {
         TraceEvent.Content.Mojom.Widget.X;
     
       namespace ChildHistogramFetcherFactory {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8502,7 +8502,7 @@ export namespace TraceEvent {
       }
     
       namespace Frame {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8518,7 +8518,7 @@ export namespace TraceEvent {
       }
     
       namespace FrameFactory {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8534,7 +8534,7 @@ export namespace TraceEvent {
       }
     
       namespace FrameInputHandler {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8550,7 +8550,7 @@ export namespace TraceEvent {
       }
     
       namespace FrameSinkProvider {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8566,7 +8566,7 @@ export namespace TraceEvent {
       }
     
       namespace RenderFrameMetadataObserverClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8582,7 +8582,7 @@ export namespace TraceEvent {
       }
     
       namespace SandboxSupportMac {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8598,7 +8598,7 @@ export namespace TraceEvent {
       }
     
       namespace Widget {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -8620,7 +8620,7 @@ export namespace TraceEvent {
       TraceEvent.ContentLayerDelegate.PaintContents.X;
   
     namespace PaintContents {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8641,7 +8641,7 @@ export namespace TraceEvent {
       TraceEvent.ContentSubresourceFilterThrottleManager.ReadyToCommitNavigation.X;
   
     namespace ReadyToCommitNavigation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           activation_state: number;
         };
@@ -8658,7 +8658,7 @@ export namespace TraceEvent {
   }
 
   namespace ContextCreatedNotification {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         IsMainFrame: boolean;
       };
@@ -8674,7 +8674,7 @@ export namespace TraceEvent {
   }
 
   namespace Control_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -8687,7 +8687,7 @@ export namespace TraceEvent {
   }
 
   namespace COOKIE_STORE_COOKIE_ADDED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -8702,7 +8702,7 @@ export namespace TraceEvent {
   }
 
   namespace COOKIE_STORE_COOKIE_DELETED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -8721,7 +8721,7 @@ export namespace TraceEvent {
       TraceEvent.CpuProfiler.StartProfiling.X;
   
     namespace StartProfiling {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8738,7 +8738,7 @@ export namespace TraceEvent {
   }
 
   namespace CreateIOSurface {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -8754,7 +8754,7 @@ export namespace TraceEvent {
   }
 
   namespace CSSFirstUsed {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         feature: number;
       };
@@ -8776,7 +8776,7 @@ export namespace TraceEvent {
         TraceEvent.CSSParserImpl.ParseStyleSheet.Parse.E;
     
       namespace Parse {
-        interface B extends Base {
+        interface B extends TraceEvent.Base {
           args: {
           
           };
@@ -8787,7 +8787,7 @@ export namespace TraceEvent {
           tts: number;
         }
       
-        interface E extends Base {
+        interface E extends TraceEvent.Base {
           args: {
           
           };
@@ -8799,7 +8799,7 @@ export namespace TraceEvent {
         }
       }
     
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           baseUrl: string;
           mode: number;
@@ -8811,7 +8811,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           length: number;
           tokenCount: number;
@@ -8830,7 +8830,7 @@ export namespace TraceEvent {
       TraceEvent.CustomElementRegistry.Define.X;
   
     namespace Define {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           name: string;
         };
@@ -8847,7 +8847,7 @@ export namespace TraceEvent {
   }
 
   namespace Damagenotvisible {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -8865,7 +8865,7 @@ export namespace TraceEvent {
       TraceEvent.DataReductionProxyCompressionStats.RecordDataUseWithMimeType.X;
   
     namespace RecordDataUseWithMimeType {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -8882,7 +8882,7 @@ export namespace TraceEvent {
   }
 
   namespace DecodeFont {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
       
       };
@@ -8893,7 +8893,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -8906,7 +8906,7 @@ export namespace TraceEvent {
   }
 
   namespace DecodeImage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         imageType: string;
       };
@@ -8922,7 +8922,7 @@ export namespace TraceEvent {
   }
 
   namespace DecodeLazyPixelRef {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         LazyPixelRef: number;
       };
@@ -8938,7 +8938,7 @@ export namespace TraceEvent {
   }
 
   namespace Default_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -8951,7 +8951,7 @@ export namespace TraceEvent {
   }
 
   namespace DefaultPathOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -8971,7 +8971,7 @@ export namespace TraceEvent {
       TraceEvent.DelayBasedTimeSource.SetActive.X;
   
     namespace SetActive {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           active: boolean;
         };
@@ -9008,7 +9008,7 @@ export namespace TraceEvent {
         TraceEvent.Device.Mojom.WakeLockProvider.X;
     
       namespace PowerMonitor {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9024,7 +9024,7 @@ export namespace TraceEvent {
       }
     
       namespace PowerMonitorClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9040,7 +9040,7 @@ export namespace TraceEvent {
       }
     
       namespace TimeZoneMonitor {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9056,7 +9056,7 @@ export namespace TraceEvent {
       }
     
       namespace WakeLock {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9072,7 +9072,7 @@ export namespace TraceEvent {
       }
     
       namespace WakeLockContext {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9088,7 +9088,7 @@ export namespace TraceEvent {
       }
     
       namespace WakeLockProvider {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9106,7 +9106,7 @@ export namespace TraceEvent {
   }
 
   namespace DidPrepareTiles {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         state: {
           did_oom_on_last_assign: boolean;
@@ -9130,7 +9130,7 @@ export namespace TraceEvent {
   }
 
   namespace DidProcessTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -9153,7 +9153,7 @@ export namespace TraceEvent {
       TraceEvent.DirectRenderer.DrawRenderPass.X;
   
     namespace DrawFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9169,7 +9169,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRenderPass {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9191,7 +9191,7 @@ export namespace TraceEvent {
         TraceEvent.Discardable_memory.Mojom.DiscardableSharedMemoryManager.X;
     
       namespace DiscardableSharedMemoryManager {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -9213,7 +9213,7 @@ export namespace TraceEvent {
       TraceEvent.DiscardableImageMap.Generate.X;
   
     namespace Generate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9230,7 +9230,7 @@ export namespace TraceEvent {
   }
 
   namespace DiskUsage {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -9259,7 +9259,7 @@ export namespace TraceEvent {
       TraceEvent.Display.SurfaceDiscarded.X;
   
     namespace DrawAndSwap {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9275,7 +9275,7 @@ export namespace TraceEvent {
     }
   
     namespace Resize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9291,7 +9291,7 @@ export namespace TraceEvent {
     }
   
     namespace SetSurfaceId {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9307,7 +9307,7 @@ export namespace TraceEvent {
     }
   
     namespace SetVisible {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           visible: boolean;
         };
@@ -9323,7 +9323,7 @@ export namespace TraceEvent {
     }
   
     namespace SurfaceDiscarded {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9344,7 +9344,7 @@ export namespace TraceEvent {
       TraceEvent.DisplayCALayerTree.GotCAContextFrame.X;
   
     namespace GotCAContextFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9361,7 +9361,7 @@ export namespace TraceEvent {
   }
 
   namespace DisplayCompositor {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -9375,7 +9375,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -9389,7 +9389,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -9402,7 +9402,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -9421,7 +9421,7 @@ export namespace TraceEvent {
       TraceEvent.DisplayItemList.Finalize.X;
   
     namespace Finalize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9445,7 +9445,7 @@ export namespace TraceEvent {
       TraceEvent.DisplayLinkMac.UpdateVSyncParameters.X;
   
     namespace DisplayLinkCallback {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9461,7 +9461,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateVSyncParameters {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9510,7 +9510,7 @@ export namespace TraceEvent {
       TraceEvent.DisplayScheduler.UpdateHasPendingSurfaces.I;
   
     namespace BeginFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           args: {
             animate_only: boolean;
@@ -9537,7 +9537,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawAndSwap {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9553,7 +9553,7 @@ export namespace TraceEvent {
     }
   
     namespace OnBeginFrameDeadline {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9569,7 +9569,7 @@ export namespace TraceEvent {
     }
   
     namespace Pending_swaps {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -9581,7 +9581,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -9595,7 +9595,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleBeginFrameDeadline {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9611,7 +9611,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNewRootSurface {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9627,7 +9627,7 @@ export namespace TraceEvent {
     }
   
     namespace SetRootFrameMissing {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           missing: boolean;
         };
@@ -9643,7 +9643,7 @@ export namespace TraceEvent {
     }
   
     namespace SurfaceDamaged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           surface_id: string;
         };
@@ -9659,7 +9659,7 @@ export namespace TraceEvent {
     }
   
     namespace SurfaceDamageExpected {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           surface_id: string;
         };
@@ -9675,7 +9675,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateHasPendingSurfaces {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           has_pending_surfaces: boolean;
           pending_surface_id?: string;
@@ -9691,7 +9691,7 @@ export namespace TraceEvent {
   }
 
   namespace DNS_TRANSACTION_ATTEMPT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -9711,7 +9711,7 @@ export namespace TraceEvent {
   }
 
   namespace DNS_TRANSACTION_QUERY {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           qname: string;
@@ -9726,7 +9726,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -9743,7 +9743,7 @@ export namespace TraceEvent {
   }
 
   namespace DNS_TRANSACTION_RESPONSE {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           answer_count: number;
@@ -9765,7 +9765,7 @@ export namespace TraceEvent {
   }
 
   namespace DNS_TRANSACTION {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           hostname: string;
@@ -9781,7 +9781,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -9818,7 +9818,7 @@ export namespace TraceEvent {
       TraceEvent.Document.UpdateStyleInvalidationIfNeeded.X;
   
     namespace RebuildLayoutTree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9834,7 +9834,7 @@ export namespace TraceEvent {
     }
   
     namespace RecalcStyle {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9850,7 +9850,7 @@ export namespace TraceEvent {
     }
   
     namespace Shutdown {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9866,7 +9866,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateActiveStyle {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9882,7 +9882,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateStyle {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -9893,7 +9893,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           counters: {
             baseStylesUsed: number;
@@ -9923,7 +9923,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateStyleInvalidationIfNeeded {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9944,7 +9944,7 @@ export namespace TraceEvent {
       TraceEvent.DocumentSubresourceFilter.GetLoadPolicy.X;
   
     namespace GetLoadPolicy {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           url: string;
         };
@@ -9965,7 +9965,7 @@ export namespace TraceEvent {
       TraceEvent.DocumentTimeline.ServiceAnimations.X;
   
     namespace ServiceAnimations {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -9982,7 +9982,7 @@ export namespace TraceEvent {
   }
 
   namespace DomComplete {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -9995,7 +9995,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMContentLoaded {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -10005,7 +10005,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -10017,7 +10017,7 @@ export namespace TraceEvent {
   }
 
   namespace DomContentLoadedEventEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -10030,7 +10030,7 @@ export namespace TraceEvent {
   }
 
   namespace DomContentLoadedEventStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -10043,7 +10043,7 @@ export namespace TraceEvent {
   }
 
   namespace DomInteractive {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -10056,7 +10056,7 @@ export namespace TraceEvent {
   }
 
   namespace DomLoading {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -10069,7 +10069,7 @@ export namespace TraceEvent {
   }
 
   namespace DomReady {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -10084,7 +10084,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMStorageHostMsg_LoadStorageArea {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10100,7 +10100,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMStorageHostMsg_OpenStorageArea {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10116,7 +10116,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMStorageHostMsg_RemoveItem {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10132,7 +10132,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMStorageHostMsg_SetItem {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10148,7 +10148,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMStorageMsg_AsyncOperationComplete {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10164,7 +10164,7 @@ export namespace TraceEvent {
   }
 
   namespace DOMStorageMsg_Event {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10180,7 +10180,7 @@ export namespace TraceEvent {
   }
 
   namespace DomTime {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -10192,7 +10192,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -10210,7 +10210,7 @@ export namespace TraceEvent {
       TraceEvent.DosplayResourceProvider.DeleteResourceInternal.X;
   
     namespace DeleteResourceInternal {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10227,7 +10227,7 @@ export namespace TraceEvent {
   }
 
   namespace DoVerifyOnWorkerThread {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10250,7 +10250,7 @@ export namespace TraceEvent {
       TraceEvent.Draw_property_utils.FindLayersThatNeedUpdates.X;
   
     namespace ComputeDrawPropertiesOfVisibleLayers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           visible_layers: number;
         };
@@ -10266,7 +10266,7 @@ export namespace TraceEvent {
     }
   
     namespace FindLayersThatNeedUpdates {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10283,7 +10283,7 @@ export namespace TraceEvent {
   }
 
   namespace DrawFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         layerTreeId: number;
       };
@@ -10301,7 +10301,7 @@ export namespace TraceEvent {
       TraceEvent.DrawLayers.FrameViewerTracing.X;
   
     namespace FrameViewerTracing {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10318,7 +10318,7 @@ export namespace TraceEvent {
   }
 
   namespace DrawLazyPixelRef {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         LazyPixelRef: number;
       };
@@ -10332,7 +10332,7 @@ export namespace TraceEvent {
   }
 
   namespace Drawskipped {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -10346,7 +10346,7 @@ export namespace TraceEvent {
   }
 
   namespace DrawVerticesOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10362,7 +10362,7 @@ export namespace TraceEvent {
   }
 
   namespace EarlyOut_DeferCommit_InsideBeginMainFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -10376,7 +10376,7 @@ export namespace TraceEvent {
   }
 
   namespace EarlyOut_NoUpdates {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -10397,7 +10397,7 @@ export namespace TraceEvent {
       TraceEvent.EditingUtility.PreviousCandidateAlgorithm.X;
   
     namespace NextCandidateAlgorithm {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10413,7 +10413,7 @@ export namespace TraceEvent {
     }
   
     namespace PreviousCandidateAlgorithm {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10434,7 +10434,7 @@ export namespace TraceEvent {
       TraceEvent.ElementAnimations.SetRunState.I;
   
     namespace SetRunState {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           Name: string;
           State: string;
@@ -10450,7 +10450,7 @@ export namespace TraceEvent {
   }
 
   namespace EnableLongIdlePeriod {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10466,7 +10466,7 @@ export namespace TraceEvent {
   }
 
   namespace EndIdlePeriod {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10482,7 +10482,7 @@ export namespace TraceEvent {
   }
 
   namespace EndofTrace {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -10492,7 +10492,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -10504,7 +10504,7 @@ export namespace TraceEvent {
   }
 
   namespace Estimated_queueing_time_for_window {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -10521,7 +10521,7 @@ export namespace TraceEvent {
       TraceEvent.Evacuator.EvacuatePage.X;
   
     namespace EvacuatePage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10538,7 +10538,7 @@ export namespace TraceEvent {
   }
 
   namespace EvaluateScript {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data?: {
           columnNumber: number;
@@ -10570,7 +10570,7 @@ export namespace TraceEvent {
       TraceEvent.Event.Pipeline.X;
   
     namespace Pipeline {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -10593,7 +10593,7 @@ export namespace TraceEvent {
   }
 
   namespace EventDispatch {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           stackTrace?: {
@@ -10625,7 +10625,7 @@ export namespace TraceEvent {
       TraceEvent.EventDispatcher.DispatchEvent.X;
   
     namespace Dispatch {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10641,7 +10641,7 @@ export namespace TraceEvent {
     }
   
     namespace DispatchEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10674,7 +10674,7 @@ export namespace TraceEvent {
       TraceEvent.EventHandler.HitTestResultAtLocation.X;
   
     namespace HandleMouseLeaveEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10690,7 +10690,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMouseMoveEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10706,7 +10706,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMousePressEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10722,7 +10722,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMouseReleaseEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10738,7 +10738,7 @@ export namespace TraceEvent {
     }
   
     namespace HitTestResultAtLocation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -10755,7 +10755,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_AddLazyListener {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10771,7 +10771,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_AddListener {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10787,7 +10787,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_CloseMessagePort {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10803,7 +10803,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_EventAck {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10819,7 +10819,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_ExecuteCodeFinished {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10835,7 +10835,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_GenerateUniqueID {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10851,7 +10851,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_GetMessageBundle {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10867,7 +10867,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_OpenChannelToExtension {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10883,7 +10883,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_OpenChannelToTab {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10899,7 +10899,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_OpenMessagePort {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10915,7 +10915,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_PostMessage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10931,7 +10931,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_Request {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10947,7 +10947,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionHostMsg_RequestForIOThread {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10963,7 +10963,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_ActivateExtension {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10979,7 +10979,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_DeliverMessage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -10995,7 +10995,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_DispatchEvent {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11011,7 +11011,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_DispatchOnConnect {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11027,7 +11027,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_DispatchOnDisconnect {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11043,7 +11043,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_ExecuteCode {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11059,7 +11059,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_Loaded {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11075,7 +11075,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_NotifyRenderViewType {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11091,7 +11091,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_Response {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11107,7 +11107,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_SetScriptingWhitelist {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11123,7 +11123,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_SetSessionInfo {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11139,7 +11139,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_SetSystemFont {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11155,7 +11155,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_SetTabId {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11171,7 +11171,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_UpdateBrowserWindowId {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11187,7 +11187,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_UpdateDefaultPolicyHostRestrictions {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11203,7 +11203,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_UpdateUserScripts {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11219,7 +11219,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_ValidateMessagePort {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11235,7 +11235,7 @@ export namespace TraceEvent {
   }
 
   namespace ExtensionMsg_WatchPages {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11256,7 +11256,7 @@ export namespace TraceEvent {
         TraceEvent.Extensions.FeatureProvider.FeatureProviderStatic.X;
     
       namespace FeatureProviderStatic {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -11274,7 +11274,7 @@ export namespace TraceEvent {
   }
 
   namespace FaveReady_mark {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -11289,7 +11289,7 @@ export namespace TraceEvent {
   }
 
   namespace FaveReady {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -11301,7 +11301,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -11325,7 +11325,7 @@ export namespace TraceEvent {
       TraceEvent.FaviconServiceImpl.RunFaviconImageCallbackWithBitmapResults.X;
   
     namespace GetFaviconForPageURL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -11341,7 +11341,7 @@ export namespace TraceEvent {
     }
   
     namespace GetFaviconImageForPageURL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -11357,7 +11357,7 @@ export namespace TraceEvent {
     }
   
     namespace RunFaviconImageCallbackWithBitmapResults {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -11381,7 +11381,7 @@ export namespace TraceEvent {
       TraceEvent.FaviconUtil.SelectFaviconFramesFromPNGsWithoutResizing.X;
   
     namespace SelectFaviconFramesFromPNGs {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -11397,7 +11397,7 @@ export namespace TraceEvent {
     }
   
     namespace SelectFaviconFramesFromPNGsWithoutResizing {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -11414,7 +11414,7 @@ export namespace TraceEvent {
   }
 
   namespace FeatureFirstUsed {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         feature: number;
       };
@@ -11430,7 +11430,7 @@ export namespace TraceEvent {
   }
 
   namespace FetchStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -11488,7 +11488,7 @@ export namespace TraceEvent {
       TraceEvent.File.WriteAtCurrentPos.e;
   
     namespace Close {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11501,7 +11501,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11515,7 +11515,7 @@ export namespace TraceEvent {
     }
   
     namespace Duplicate {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11528,7 +11528,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11542,7 +11542,7 @@ export namespace TraceEvent {
     }
   
     namespace Flush {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11555,7 +11555,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11569,7 +11569,7 @@ export namespace TraceEvent {
     }
   
     namespace GetInfo {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11582,7 +11582,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11596,7 +11596,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11609,7 +11609,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11623,7 +11623,7 @@ export namespace TraceEvent {
     }
   
     namespace Read {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11636,7 +11636,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11650,7 +11650,7 @@ export namespace TraceEvent {
     }
   
     namespace ReadAtCurrentPos {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11663,7 +11663,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11677,7 +11677,7 @@ export namespace TraceEvent {
     }
   
     namespace Seek {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11690,7 +11690,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11704,7 +11704,7 @@ export namespace TraceEvent {
     }
   
     namespace SetLength {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11717,7 +11717,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11731,7 +11731,7 @@ export namespace TraceEvent {
     }
   
     namespace Write {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11744,7 +11744,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11758,7 +11758,7 @@ export namespace TraceEvent {
     }
   
     namespace WriteAtCurrentPos {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           path: string;
           size: number;
@@ -11771,7 +11771,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -11784,7 +11784,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -11796,7 +11796,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -11810,7 +11810,7 @@ export namespace TraceEvent {
   }
 
   namespace FillRectOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -11826,7 +11826,7 @@ export namespace TraceEvent {
   }
 
   namespace FireAnimationFrame {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -11845,7 +11845,7 @@ export namespace TraceEvent {
   }
 
   namespace FireIdleCallback {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           allottedMilliseconds: number;
@@ -11866,7 +11866,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstContentfulPaint {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -11876,7 +11876,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -11886,7 +11886,7 @@ export namespace TraceEvent {
       ph: 'e';
     }
   
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -11898,7 +11898,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           navigationId: string;
@@ -11914,7 +11914,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstImagePaint {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           navigationId: string;
@@ -11930,7 +11930,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstLayout {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -11943,7 +11943,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstMeaningfulPaint {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -11953,7 +11953,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -11963,7 +11963,7 @@ export namespace TraceEvent {
       ph: 'e';
     }
   
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         afterUserInput?: number;
         data?: {
@@ -11980,7 +11980,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstMeaningfulPaintCandidate {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -11996,7 +11996,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstPaint {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -12008,7 +12008,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           navigationId: string;
@@ -12024,7 +12024,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstTextPaint {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -12037,7 +12037,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstVisualChange {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -12047,7 +12047,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -12059,7 +12059,7 @@ export namespace TraceEvent {
   }
 
   namespace FooterEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -12074,7 +12074,7 @@ export namespace TraceEvent {
   }
 
   namespace FooterStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -12089,7 +12089,7 @@ export namespace TraceEvent {
   }
 
   namespace FooterTime {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -12101,7 +12101,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -12115,7 +12115,7 @@ export namespace TraceEvent {
   }
 
   namespace Frame_deferrable_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -12128,7 +12128,7 @@ export namespace TraceEvent {
   }
 
   namespace Frame_loading_control_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -12141,7 +12141,7 @@ export namespace TraceEvent {
   }
 
   namespace Frame_loading_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -12154,7 +12154,7 @@ export namespace TraceEvent {
   }
 
   namespace Frame_pausable_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -12167,7 +12167,7 @@ export namespace TraceEvent {
   }
 
   namespace Frame_throttleable_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -12180,7 +12180,7 @@ export namespace TraceEvent {
   }
 
   namespace Frame_unpausable_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -12193,7 +12193,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameBlameContext {
-    interface LP extends Base {
+    interface LP extends TraceEvent.Base {
       args: {
       
       };
@@ -12206,7 +12206,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface RP extends Base {
+    interface RP extends TraceEvent.Base {
       args: {
       
       };
@@ -12221,7 +12221,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameCommittedInBrowser {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -12241,7 +12241,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameDeletedInBrowser {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -12257,7 +12257,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_BeforeUnload_ACK {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12273,7 +12273,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_CheckCompleted {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12289,7 +12289,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_CookiesEnabled {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12305,7 +12305,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_CreateChildFrame {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12321,7 +12321,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidAddContentSecurityPolicies {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12337,7 +12337,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidAddMessageToConsole {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12353,7 +12353,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidChangeFrameOwnerProperties {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12369,7 +12369,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidChangeLoadProgress {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12385,7 +12385,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidFailLoadWithError {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12401,7 +12401,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidFinishDocumentLoad {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12417,7 +12417,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidFinishLoad {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12433,7 +12433,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DidStopLoading {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12449,7 +12449,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DispatchLoad {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12465,7 +12465,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_DocumentOnLoadCompleted {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12481,7 +12481,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_FocusedNodeChanged {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12497,7 +12497,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_ForwardResourceTimingToParent {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12513,7 +12513,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_FrameFocused {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12529,7 +12529,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_HittestData {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12545,7 +12545,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_RouteMessageEvent {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12561,7 +12561,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_SuddenTerminationDisablerChanged {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12577,7 +12577,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_SwapOut_ACK {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12593,7 +12593,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_SynchronizeVisualProperties {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12609,7 +12609,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_UpdatePageImportanceSignals {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12625,7 +12625,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_UpdateRenderThrottlingStatus {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12641,7 +12641,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_UpdateState {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12657,7 +12657,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_UpdateTitle {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12673,7 +12673,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_UpdateUserActivationState {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12689,7 +12689,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_UpdateViewportIntersection {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12705,7 +12705,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameHostMsg_VisibilityChanged {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12721,7 +12721,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameLoader {
-    interface D extends Base {
+    interface D extends TraceEvent.Base {
       args: {
       
       };
@@ -12733,7 +12733,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface N extends Base {
+    interface N extends TraceEvent.Base {
       args: {
       
       };
@@ -12745,7 +12745,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: {
           documentLoaderURL: string;
@@ -12767,7 +12767,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_AddContentSecurityPolicies {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12783,7 +12783,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_Delete {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12799,7 +12799,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_DeleteProxy {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12815,7 +12815,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_DidStartLoading {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12831,7 +12831,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_DidStopLoading {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12847,7 +12847,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_DidUpdateFramePolicy {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12863,7 +12863,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_DidUpdateOrigin {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12879,7 +12879,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_PostMessageEvent {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12895,7 +12895,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_ResetContentSecurityPolicy {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12911,7 +12911,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_SetAccessibilityMode {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12927,7 +12927,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_SetFrameOwnerProperties {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12943,7 +12943,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameMsg_UpdateUserActivationState {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -12959,7 +12959,7 @@ export namespace TraceEvent {
   }
 
   namespace FramePresented {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         environment: string;
       };
@@ -13023,7 +13023,7 @@ export namespace TraceEvent {
       TraceEvent.FrameScheduler.URL.T;
   
     namespace FramePaused {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13035,7 +13035,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13047,7 +13047,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13061,7 +13061,7 @@ export namespace TraceEvent {
     }
   
     namespace FrameVisible {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13073,7 +13073,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13085,7 +13085,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13099,7 +13099,7 @@ export namespace TraceEvent {
     }
   
     namespace HasActiveConnection {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13111,7 +13111,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13123,7 +13123,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13137,7 +13137,7 @@ export namespace TraceEvent {
     }
   
     namespace KeepActive {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13149,7 +13149,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13161,7 +13161,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13175,7 +13175,7 @@ export namespace TraceEvent {
     }
   
     namespace Origin {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13187,7 +13187,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13199,7 +13199,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13213,7 +13213,7 @@ export namespace TraceEvent {
     }
   
     namespace PageFrozen {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13225,7 +13225,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13237,7 +13237,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13251,7 +13251,7 @@ export namespace TraceEvent {
     }
   
     namespace PageVisibility {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13263,7 +13263,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13275,7 +13275,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13289,7 +13289,7 @@ export namespace TraceEvent {
     }
   
     namespace SubResourceLoadingPaused {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13301,7 +13301,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13313,7 +13313,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13327,7 +13327,7 @@ export namespace TraceEvent {
     }
   
     namespace TaskQueuesThrottled {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13339,7 +13339,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13351,7 +13351,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13365,7 +13365,7 @@ export namespace TraceEvent {
     }
   
     namespace URL {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -13377,7 +13377,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -13389,7 +13389,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -13404,7 +13404,7 @@ export namespace TraceEvent {
   }
 
   namespace FrameStartedLoading {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -13425,7 +13425,7 @@ export namespace TraceEvent {
       TraceEvent.FrameTreeNode.DidStopLoading.X;
   
     namespace DidStartLoading {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
           'to different document': boolean;
@@ -13442,7 +13442,7 @@ export namespace TraceEvent {
     }
   
     namespace DidStopLoading {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
         };
@@ -13457,7 +13457,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface N extends Base {
+    interface N extends TraceEvent.Base {
       args: {
       
       };
@@ -13470,7 +13470,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: {
           parent?: {
@@ -13510,7 +13510,7 @@ export namespace TraceEvent {
       TraceEvent.FrameView.PerformPreLayoutTasks.X;
   
     namespace Layout {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13526,7 +13526,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformLayout {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           contentsHeightBeforeLayout: number;
         };
@@ -13537,7 +13537,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           counters: {
             LayoutAnalyzerStackMaximumDepth?: number;
@@ -13568,7 +13568,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformPostLayoutTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13584,7 +13584,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformPreLayoutTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13605,7 +13605,7 @@ export namespace TraceEvent {
       TraceEvent.FullEvacuator.RawEvacuatePage.X;
   
     namespace RawEvacuatePage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           evacuation_mode: number;
         };
@@ -13622,7 +13622,7 @@ export namespace TraceEvent {
   }
 
   namespace FullImage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -13638,7 +13638,7 @@ export namespace TraceEvent {
   }
 
   namespace FunctionCall {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         data: {
           columnNumber?: number;
@@ -13656,7 +13656,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -13676,7 +13676,7 @@ export namespace TraceEvent {
       TraceEvent.GestureProvider.OnTouchEvent.X;
   
     namespace InitGestureDetectors {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13692,7 +13692,7 @@ export namespace TraceEvent {
     }
   
     namespace OnTouchEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           action: string;
         };
@@ -13719,7 +13719,7 @@ export namespace TraceEvent {
       TraceEvent.GLContextCGL.MakeCurrent.X;
   
     namespace BackpressureFenceCreate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13735,7 +13735,7 @@ export namespace TraceEvent {
     }
   
     namespace BackpressureFenceWait {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13751,7 +13751,7 @@ export namespace TraceEvent {
     }
   
     namespace MakeCurrent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13784,7 +13784,7 @@ export namespace TraceEvent {
       TraceEvent.GLES2.PostSubBufferCHROMIUM.X;
   
     namespace Finish {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13800,7 +13800,7 @@ export namespace TraceEvent {
     }
   
     namespace GetGLError {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13816,7 +13816,7 @@ export namespace TraceEvent {
     }
   
     namespace GetShaderPrecisionFormat {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13832,7 +13832,7 @@ export namespace TraceEvent {
     }
   
     namespace GetString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13848,7 +13848,7 @@ export namespace TraceEvent {
     }
   
     namespace PostSubBufferCHROMIUM {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -13870,7 +13870,7 @@ export namespace TraceEvent {
       TraceEvent.GLES2CommandBufferStub.Initialize.X;
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13927,7 +13927,7 @@ export namespace TraceEvent {
       TraceEvent.GLES2DecoderImpl.RestoreState.X;
   
     namespace ClearLevel {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13943,7 +13943,7 @@ export namespace TraceEvent {
     }
   
     namespace ClearLevelUsingGL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13959,7 +13959,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCompileShader {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -13975,7 +13975,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCreateAndConsumeTextureINTERNAL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           context: string;
           'mailbox[0]': number;
@@ -13992,7 +13992,7 @@ export namespace TraceEvent {
     }
   
     namespace DoLinkProgram {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14008,7 +14008,7 @@ export namespace TraceEvent {
     }
   
     namespace DoTexStorage2D {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -14025,7 +14025,7 @@ export namespace TraceEvent {
     }
   
     namespace DoTexStorage2DImageCHROMIUM {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -14042,7 +14042,7 @@ export namespace TraceEvent {
     }
   
     namespace HandlePostSubBufferCHROMIUM {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14058,7 +14058,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleTexImage2D {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -14075,7 +14075,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleTexSubImage2D {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -14092,7 +14092,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14108,7 +14108,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeShaderTranslator {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14124,7 +14124,7 @@ export namespace TraceEvent {
     }
   
     namespace RestoreState {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           context: string;
         };
@@ -14154,7 +14154,7 @@ export namespace TraceEvent {
       TraceEvent.GLES2Implementation.SetAggressivelyFreeResources.X;
   
     namespace CheckFramebufferStatus {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14170,7 +14170,7 @@ export namespace TraceEvent {
     }
   
     namespace GetIntegerv {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14186,7 +14186,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14202,7 +14202,7 @@ export namespace TraceEvent {
     }
   
     namespace SetAggressivelyFreeResources {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           aggressively_free_resources: boolean;
         };
@@ -14223,7 +14223,7 @@ export namespace TraceEvent {
       TraceEvent.GLFence.HasCompleted.X;
   
     namespace HasCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14244,7 +14244,7 @@ export namespace TraceEvent {
       TraceEvent.GLImageIOSurface.BindTexImage.X;
   
     namespace BindTexImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14265,7 +14265,7 @@ export namespace TraceEvent {
       TraceEvent.GlobalMemoryDump.Computation.X;
   
     namespace Computation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14280,7 +14280,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         dump_type: string;
         level_of_detail: string;
@@ -14295,7 +14295,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         dump_guid: string;
         success: boolean;
@@ -14322,7 +14322,7 @@ export namespace TraceEvent {
       TraceEvent.GLRenderer.SwapBuffers.X;
   
     namespace BeginDrawingFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14338,7 +14338,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeSharedObjects {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14354,7 +14354,7 @@ export namespace TraceEvent {
     }
   
     namespace SwapBuffers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14371,7 +14371,7 @@ export namespace TraceEvent {
   }
 
   namespace GlResizeChromium {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         height: number;
         width: number;
@@ -14388,7 +14388,7 @@ export namespace TraceEvent {
   }
 
   namespace Goog_123_3_1_end {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -14401,7 +14401,7 @@ export namespace TraceEvent {
   }
 
   namespace Goog_123_3_1_start {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -14414,7 +14414,7 @@ export namespace TraceEvent {
   }
 
   namespace Goog_123_3_1 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -14426,7 +14426,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -14449,7 +14449,7 @@ export namespace TraceEvent {
       TraceEvent.Gpu.State.O;
   
     namespace EstablishGpuChannelSync {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14465,7 +14465,7 @@ export namespace TraceEvent {
     }
   
     namespace State {
-      interface D extends Base {
+      interface D extends TraceEvent.Base {
         args: {
         
         };
@@ -14477,7 +14477,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface N extends Base {
+      interface N extends TraceEvent.Base {
         args: {
         
         };
@@ -14489,7 +14489,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface O extends Base {
+      interface O extends TraceEvent.Base {
         args: {
           snapshot: {
           
@@ -14513,7 +14513,7 @@ export namespace TraceEvent {
       TraceEvent.GpuChannel.OnDestroyCommandBuffer.X;
   
     namespace OnCreateCommandBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           offscreen: boolean;
           route_id: number;
@@ -14530,7 +14530,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDestroyCommandBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           route_id: number;
         };
@@ -14554,7 +14554,7 @@ export namespace TraceEvent {
       TraceEvent.GpuChannelHost.Send.X;
   
     namespace CreateViewCommandBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           surface_handle: number;
         };
@@ -14570,7 +14570,7 @@ export namespace TraceEvent {
     }
   
     namespace Send {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: number;
           line: number;
@@ -14588,7 +14588,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelMsg_CreateCommandBuffer {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14604,7 +14604,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelMsg_CreateSharedImage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14620,7 +14620,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelMsg_CreateSharedImageWithData {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14636,7 +14636,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelMsg_DestroyCommandBuffer {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14652,7 +14652,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelMsg_DestroySharedImage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14668,7 +14668,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuChannelMsg_RegisterSharedImageUploadBuffer {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14684,7 +14684,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuCommandBufferMsg_AsyncFlush {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14700,7 +14700,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuCommandBufferMsg_DestroyTransferBuffer {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14716,7 +14716,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuCommandBufferMsg_GetChannelToken {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14732,7 +14732,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuCommandBufferMsg_RegisterTransferBuffer {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14748,7 +14748,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuCommandBufferMsg_SetGetBuffer {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14764,7 +14764,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuCommandBufferMsg_WaitForGetOffsetInRange {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -14793,7 +14793,7 @@ export namespace TraceEvent {
       TraceEvent.GpuHostImpl.OnChannelEstablished.X;
   
     namespace CreateChannelCache {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14809,7 +14809,7 @@ export namespace TraceEvent {
     }
   
     namespace DidDestroyChannel {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14825,7 +14825,7 @@ export namespace TraceEvent {
     }
   
     namespace EstablishGpuChannel {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14841,7 +14841,7 @@ export namespace TraceEvent {
     }
   
     namespace OnChannelEstablished {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14907,7 +14907,7 @@ export namespace TraceEvent {
       TraceEvent.GpuImageDecodeCache.UploadImage.X;
   
     namespace CreateImageData {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14923,7 +14923,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawWithImageFinished {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14939,7 +14939,7 @@ export namespace TraceEvent {
     }
   
     namespace EnsureCapacity {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14955,7 +14955,7 @@ export namespace TraceEvent {
     }
   
     namespace GetDecodedImageForDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14971,7 +14971,7 @@ export namespace TraceEvent {
     }
   
     namespace GetImageDataForDrawImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -14987,7 +14987,7 @@ export namespace TraceEvent {
     }
   
     namespace GetImageDecodeTaskAndRef {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15003,7 +15003,7 @@ export namespace TraceEvent {
     }
   
     namespace GetTaskForImageAndRef {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15019,7 +15019,7 @@ export namespace TraceEvent {
     }
   
     namespace OnImageUploadTaskCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15035,7 +15035,7 @@ export namespace TraceEvent {
     }
   
     namespace OnMemoryDump {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15051,7 +15051,7 @@ export namespace TraceEvent {
     }
   
     namespace ReduceCacheUsage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15067,7 +15067,7 @@ export namespace TraceEvent {
     }
   
     namespace RefImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15083,7 +15083,7 @@ export namespace TraceEvent {
     }
   
     namespace RefImageDecode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15099,7 +15099,7 @@ export namespace TraceEvent {
     }
   
     namespace SetShouldAggressivelyFreeResources {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           agressive_free_resources: boolean;
         };
@@ -15115,7 +15115,7 @@ export namespace TraceEvent {
     }
   
     namespace UnrefImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15131,7 +15131,7 @@ export namespace TraceEvent {
     }
   
     namespace UnrefImageDecode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15147,7 +15147,7 @@ export namespace TraceEvent {
     }
   
     namespace UploadImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15168,7 +15168,7 @@ export namespace TraceEvent {
       TraceEvent.GpuRasterBuffer.Playback.X;
   
     namespace Playback {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15185,7 +15185,7 @@ export namespace TraceEvent {
   }
 
   namespace GpuRasterization {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -15199,7 +15199,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -15213,7 +15213,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -15226,7 +15226,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -15245,7 +15245,7 @@ export namespace TraceEvent {
       TraceEvent.GPUStateTracer.TakeSnapshotWithCurrentFramebuffer.X;
   
     namespace TakeSnapshotWithCurrentFramebuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15262,7 +15262,7 @@ export namespace TraceEvent {
   }
 
   namespace GPUTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           renderer_pid: number;
@@ -15285,7 +15285,7 @@ export namespace TraceEvent {
       TraceEvent.GPUTracer.ProcessTraces.X;
   
     namespace ProcessTraces {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15309,7 +15309,7 @@ export namespace TraceEvent {
         TraceEvent.Graphics.Pipeline.DrawAndSwap.T;
     
       namespace DrawAndSwap {
-        interface F extends Base {
+        interface F extends TraceEvent.Base {
           args: {
             status?: string;
           };
@@ -15321,7 +15321,7 @@ export namespace TraceEvent {
           tts: number;
         }
       
-        interface S extends Base {
+        interface S extends TraceEvent.Base {
           args: {
           
           };
@@ -15333,7 +15333,7 @@ export namespace TraceEvent {
           tts: number;
         }
       
-        interface T extends Base {
+        interface T extends TraceEvent.Base {
           args: {
             step: string;
           };
@@ -15346,7 +15346,7 @@ export namespace TraceEvent {
         }
       }
     
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           display_trace?: number;
           step: string;
@@ -15374,7 +15374,7 @@ export namespace TraceEvent {
       TraceEvent.GraphicsLayer.PaintContents.X;
   
     namespace PaintContents {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15395,7 +15395,7 @@ export namespace TraceEvent {
       TraceEvent.GraphicsLayerTreeBuilder.Rebuild.X;
   
     namespace Rebuild {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15416,7 +15416,7 @@ export namespace TraceEvent {
       TraceEvent.GraphicsLayerUpdater.Update.X;
   
     namespace Update {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15437,7 +15437,7 @@ export namespace TraceEvent {
       TraceEvent.GrContextPriv.WriteSurfacePixels.X;
   
     namespace WriteSurfacePixels {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15458,7 +15458,7 @@ export namespace TraceEvent {
       TraceEvent.GrDrawingManager.Flush.X;
   
     namespace Flush {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15480,7 +15480,7 @@ export namespace TraceEvent {
         TraceEvent.GrDrawOpAtlas.Plot.UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy.X;
     
       namespace UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -15502,7 +15502,7 @@ export namespace TraceEvent {
       TraceEvent.GrGLProgramGrGLProgramBuilder.Finalize.X;
   
     namespace Finalize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15523,7 +15523,7 @@ export namespace TraceEvent {
       TraceEvent.GrGpu.CreateTexture.X;
   
     namespace CreateTexture {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15589,7 +15589,7 @@ export namespace TraceEvent {
       TraceEvent.GrRenderTargetContext.PrepareForExternalIO.X;
   
     namespace AddDrawOp {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15605,7 +15605,7 @@ export namespace TraceEvent {
     }
   
     namespace Clear {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15621,7 +15621,7 @@ export namespace TraceEvent {
     }
   
     namespace Discard {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15637,7 +15637,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawGlyphRunList {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15653,7 +15653,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawOval {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15669,7 +15669,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15685,7 +15685,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPath {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15701,7 +15701,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15717,7 +15717,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRRect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15733,7 +15733,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawShape {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15749,7 +15749,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawTexture {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15765,7 +15765,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawVertices {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15781,7 +15781,7 @@ export namespace TraceEvent {
     }
   
     namespace FillRectToRect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15797,7 +15797,7 @@ export namespace TraceEvent {
     }
   
     namespace FillRectWithLocalMatrix {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15813,7 +15813,7 @@ export namespace TraceEvent {
     }
   
     namespace InternalDrawPath {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15829,7 +15829,7 @@ export namespace TraceEvent {
     }
   
     namespace PrepareForExternalIO {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15850,7 +15850,7 @@ export namespace TraceEvent {
       TraceEvent.GrRenderTargetContextPriv.AbsClear.X;
   
     namespace AbsClear {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15867,7 +15867,7 @@ export namespace TraceEvent {
   }
 
   namespace HandleMouseMove {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         x: number;
         y: number;
@@ -15884,7 +15884,7 @@ export namespace TraceEvent {
   }
 
   namespace HeadEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -15899,7 +15899,7 @@ export namespace TraceEvent {
   }
 
   namespace HeadTime {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -15911,7 +15911,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -15929,7 +15929,7 @@ export namespace TraceEvent {
       TraceEvent.Heap.CollectCodeStatistics.X;
   
     namespace CollectCodeStatistics {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15950,7 +15950,7 @@ export namespace TraceEvent {
       TraceEvent.HistoryBackend.GetFaviconsForURL.X;
   
     namespace GetFaviconsForURL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15971,7 +15971,7 @@ export namespace TraceEvent {
       TraceEvent.HistoryQuickProvider.Start.X;
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -15992,7 +15992,7 @@ export namespace TraceEvent {
       TraceEvent.HistoryService.GetFaviconsForURL.X;
   
     namespace GetFaviconsForURL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16016,7 +16016,7 @@ export namespace TraceEvent {
       TraceEvent.HistoryURLProvider.Start.X;
   
     namespace QueryComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16032,7 +16032,7 @@ export namespace TraceEvent {
     }
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16049,7 +16049,7 @@ export namespace TraceEvent {
   }
 
   namespace HitTest {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
       
       };
@@ -16060,7 +16060,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         endData: {
           move?: boolean;
@@ -16080,7 +16080,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_ATTEMPT_FINISHED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           attempt_number: number;
@@ -16100,7 +16100,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_ATTEMPT_STARTED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           attempt_number: number;
@@ -16117,7 +16117,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_CACHE_HIT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           addresses: {
@@ -16154,7 +16154,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_CREATE_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16169,7 +16169,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_DNS_TASK {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16182,7 +16182,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           addresses?: {
@@ -16219,7 +16219,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_IPV6_REACHABILITY_CHECK {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           cached: boolean;
@@ -16237,7 +16237,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_JOB_ATTACH {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -16257,7 +16257,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_JOB_REQUEST_ATTACH {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           priority: string;
@@ -16278,7 +16278,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_JOB_STARTED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16293,7 +16293,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_JOB {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           host: string;
@@ -16312,7 +16312,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -16329,7 +16329,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_PROC_TASK {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16342,7 +16342,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -16361,7 +16361,7 @@ export namespace TraceEvent {
   }
 
   namespace HOST_RESOLVER_IMPL_REQUEST {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           address_family: number;
@@ -16379,7 +16379,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -16400,7 +16400,7 @@ export namespace TraceEvent {
       TraceEvent.HostCache.Set.X;
   
     namespace Set {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16421,7 +16421,7 @@ export namespace TraceEvent {
       TraceEvent.HTMLCanvasElement.FinalizeFrame.X;
   
     namespace FinalizeFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16457,7 +16457,7 @@ export namespace TraceEvent {
       TraceEvent.HTMLDocumentParser.ProcessTokenizedChunkFromBackgroundParser.X;
   
     namespace Append {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           size: number;
         };
@@ -16473,7 +16473,7 @@ export namespace TraceEvent {
     }
   
     namespace AppendBytes {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           size: number;
         };
@@ -16489,7 +16489,7 @@ export namespace TraceEvent {
     }
   
     namespace DocumentElementAvailable {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16505,7 +16505,7 @@ export namespace TraceEvent {
     }
   
     namespace EnqueueTokenizedChunk {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16521,7 +16521,7 @@ export namespace TraceEvent {
     }
   
     namespace Insert {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           source_length: number;
         };
@@ -16537,7 +16537,7 @@ export namespace TraceEvent {
     }
   
     namespace ProcessTokenizedChunkFromBackgroundParser {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16570,7 +16570,7 @@ export namespace TraceEvent {
       TraceEvent.HTMLParserScriptRunner.ExecuteScriptsWaitingForResources.X;
   
     namespace Execute {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           data: {
             columnNumber: number;
@@ -16590,7 +16590,7 @@ export namespace TraceEvent {
     }
   
     namespace ExecuteScriptsWaitingForLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16606,7 +16606,7 @@ export namespace TraceEvent {
     }
   
     namespace ExecuteScriptsWaitingForParsing {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16622,7 +16622,7 @@ export namespace TraceEvent {
     }
   
     namespace ExecuteScriptsWaitingForResources {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16639,7 +16639,7 @@ export namespace TraceEvent {
   }
 
   namespace HTMLParserScriptRunnerExecuteScript {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           columnNumber?: number;
@@ -16667,7 +16667,7 @@ export namespace TraceEvent {
       TraceEvent.HTMLSelectElement.SelectOption.X;
   
     namespace SelectOption {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -16684,7 +16684,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_ADD_TO_ENTRY {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16697,7 +16697,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16712,7 +16712,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_CALLER_REQUEST_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -16767,7 +16767,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_CREATE_ENTRY {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16780,7 +16780,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16795,7 +16795,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_GET_BACKEND {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16808,7 +16808,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16823,7 +16823,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_OPEN_ENTRY {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16836,7 +16836,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -16853,7 +16853,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_READ_DATA {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16866,7 +16866,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16881,7 +16881,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_READ_INFO {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16894,7 +16894,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16909,7 +16909,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_WRITE_DATA {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16922,7 +16922,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16937,7 +16937,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_CACHE_WRITE_INFO {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16950,7 +16950,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -16965,7 +16965,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_BOUND_TO_QUIC_STREAM_FACTORY_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -16985,7 +16985,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_BOUND_TO_REQUEST {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17005,7 +17005,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_CONTROLLER_ALT_SVC_FOUND {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           alt_svc: string;
@@ -17023,7 +17023,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_CONTROLLER_BOUND {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17043,7 +17043,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_CONTROLLER_PROXY_SERVER_RESOLVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           proxy_server: string;
@@ -17060,7 +17060,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_CONTROLLER {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           is_preconnect: boolean;
@@ -17076,7 +17076,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17091,7 +17091,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_DELAYED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delay: number;
@@ -17108,7 +17108,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_INIT_CONNECTION {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17121,7 +17121,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17136,7 +17136,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB_WAITING {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           should_wait: boolean;
@@ -17151,7 +17151,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17166,7 +17166,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_JOB {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           expect_spdy: boolean;
@@ -17189,7 +17189,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17204,7 +17204,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_PARSER_READ_HEADERS {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17217,7 +17217,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17232,7 +17232,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_REQUEST_BOUND_TO_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17252,7 +17252,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_REQUEST_BOUND_TO_QUIC_SESSION {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17272,7 +17272,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_REQUEST_PROTO {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           proto: string;
@@ -17289,7 +17289,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_REQUEST_STARTED_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17309,7 +17309,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_STREAM_REQUEST {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17322,7 +17322,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17337,7 +17337,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_HTTP2_SEND_REQUEST_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -17367,7 +17367,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_QUIC_SEND_REQUEST_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -17402,7 +17402,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_READ_BODY {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17415,7 +17415,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17430,7 +17430,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_READ_HEADERS {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17443,7 +17443,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17458,7 +17458,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_READ_RESPONSE_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -17497,7 +17497,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_SEND_REQUEST_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -17564,7 +17564,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP_TRANSACTION_SEND_REQUEST {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17577,7 +17577,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17592,7 +17592,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_INITIALIZED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           protocol: string;
@@ -17613,7 +17613,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_PING {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           is_ack: boolean;
@@ -17632,7 +17632,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION_FROM_IP_POOL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17652,7 +17652,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17672,7 +17672,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_POOL_IMPORTED_SESSION_FROM_SOCKET {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -17692,7 +17692,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_RECV_DATA {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           fin: boolean;
@@ -17711,7 +17711,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_RECV_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           fin: boolean;
@@ -17743,7 +17743,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_RECV_SETTING {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           id: string;
@@ -17761,7 +17761,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_RECV_SETTINGS_ACK {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17776,7 +17776,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_RECV_SETTINGS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17791,7 +17791,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_RECV_WINDOW_UPDATE {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta: number;
@@ -17809,7 +17809,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_SEND_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           exclusive: boolean;
@@ -17849,7 +17849,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_SEND_SETTINGS_ACK {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -17864,7 +17864,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_SEND_SETTINGS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           settings: {
@@ -17929,7 +17929,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_SEND_WINDOW_UPDATE {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta: number;
@@ -17947,7 +17947,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_UPDATE_RECV_WINDOW {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta: number;
@@ -17965,7 +17965,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_UPDATE_SEND_WINDOW {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta: number;
@@ -17983,7 +17983,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION_UPDATE_STREAMS_SEND_WINDOW_SIZE {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta_window_size: number;
@@ -18000,7 +18000,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_SESSION {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           host: string;
@@ -18018,7 +18018,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_STREAM_UPDATE_RECV_WINDOW {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta: number;
@@ -18037,7 +18037,7 @@ export namespace TraceEvent {
   }
 
   namespace HTTP2_STREAM_UPDATE_SEND_WINDOW {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta: number;
@@ -18135,7 +18135,7 @@ export namespace TraceEvent {
       TraceEvent.HttpCacheTransaction.Transaction.X;
   
     namespace DoAddToEntry {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18151,7 +18151,7 @@ export namespace TraceEvent {
     }
   
     namespace DoAddToEntryComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18167,7 +18167,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheDispatchValidation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18183,7 +18183,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheReadData {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18199,7 +18199,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheReadDataComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18215,7 +18215,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheReadResponse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18231,7 +18231,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheReadResponseComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18247,7 +18247,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheWriteResponse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18263,7 +18263,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCacheWriteResponseComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18279,7 +18279,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCreateEntry {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18295,7 +18295,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCreateEntryComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18311,7 +18311,7 @@ export namespace TraceEvent {
     }
   
     namespace DoInitEntry {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18327,7 +18327,7 @@ export namespace TraceEvent {
     }
   
     namespace DoNetworkRead {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18343,7 +18343,7 @@ export namespace TraceEvent {
     }
   
     namespace DoNetworkReadCacheWrite {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18359,7 +18359,7 @@ export namespace TraceEvent {
     }
   
     namespace DoNetworkReadCacheWriteComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18375,7 +18375,7 @@ export namespace TraceEvent {
     }
   
     namespace DoNetworkReadComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18391,7 +18391,7 @@ export namespace TraceEvent {
     }
   
     namespace DoOpenEntry {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18407,7 +18407,7 @@ export namespace TraceEvent {
     }
   
     namespace DoOpenEntryComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18423,7 +18423,7 @@ export namespace TraceEvent {
     }
   
     namespace DoOverwriteCachedResponse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18439,7 +18439,7 @@ export namespace TraceEvent {
     }
   
     namespace DoSendRequest {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18455,7 +18455,7 @@ export namespace TraceEvent {
     }
   
     namespace DoSendRequestComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18471,7 +18471,7 @@ export namespace TraceEvent {
     }
   
     namespace DoSuccessfulSendRequest {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18487,7 +18487,7 @@ export namespace TraceEvent {
     }
   
     namespace DoTruncateCachedData {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18503,7 +18503,7 @@ export namespace TraceEvent {
     }
   
     namespace DoTruncateCachedMetadata {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18519,7 +18519,7 @@ export namespace TraceEvent {
     }
   
     namespace DoTruncateCachedMetadataComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18535,7 +18535,7 @@ export namespace TraceEvent {
     }
   
     namespace Transaction {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18560,7 +18560,7 @@ export namespace TraceEvent {
         TraceEvent.HttpStreamFactory.Job.RunLoop.X;
     
       namespace OnIOComplete {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -18576,7 +18576,7 @@ export namespace TraceEvent {
       }
     
       namespace RunLoop {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -18599,7 +18599,7 @@ export namespace TraceEvent {
         TraceEvent.Identity.Mojom.IdentityManager.X;
     
       namespace IdentityManager {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -18617,7 +18617,7 @@ export namespace TraceEvent {
   }
 
   namespace Idle_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -18634,7 +18634,7 @@ export namespace TraceEvent {
       TraceEvent.IdleSpellCheckController.HotModeInvocation.X;
   
     namespace HotModeInvocation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18658,7 +18658,7 @@ export namespace TraceEvent {
       TraceEvent.ImageAnimationController.WillActivate.X;
   
     namespace AnimateImagesForSyncTree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18674,7 +18674,7 @@ export namespace TraceEvent {
     }
   
     namespace WillActivate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18691,7 +18691,7 @@ export namespace TraceEvent {
   }
 
   namespace ImageDecodeTask {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         pixelRefId: number;
       };
@@ -18702,7 +18702,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -18719,7 +18719,7 @@ export namespace TraceEvent {
       TraceEvent.ImageOperations.Resize.X;
   
     namespace Resize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           dst_pixels: number;
           src_pixels: number;
@@ -18741,7 +18741,7 @@ export namespace TraceEvent {
       TraceEvent.ImageResourceContent.UpdateImage.X;
   
     namespace UpdateImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18765,7 +18765,7 @@ export namespace TraceEvent {
       TraceEvent.ImageTransportSurfaceOverlayMac.SwapBuffersInternal.X;
   
     namespace ApplyBackpressure {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18781,7 +18781,7 @@ export namespace TraceEvent {
     }
   
     namespace SwapBuffersInternal {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18802,7 +18802,7 @@ export namespace TraceEvent {
       TraceEvent.ImageUploadTaskImpl.RunOnWorkerThread.X;
   
     namespace RunOnWorkerThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           mode: string;
           source_prepare_tiles_id: number;
@@ -18830,7 +18830,7 @@ export namespace TraceEvent {
       TraceEvent.ImplementationBase.WaitForCmd.X;
   
     namespace GetBucketContents {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18846,7 +18846,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18862,7 +18862,7 @@ export namespace TraceEvent {
     }
   
     namespace WaitForCmd {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18892,7 +18892,7 @@ export namespace TraceEvent {
       TraceEvent.InProcessCommandBuffer.InitializeOnGpuThread.X;
   
     namespace Flush {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           put_offset: number;
         };
@@ -18908,7 +18908,7 @@ export namespace TraceEvent {
     }
   
     namespace FlushOnGpuThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           put_offset: number;
         };
@@ -18924,7 +18924,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18940,7 +18940,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeOnGpuThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -18957,7 +18957,7 @@ export namespace TraceEvent {
   }
 
   namespace Input_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -18970,7 +18970,7 @@ export namespace TraceEvent {
   }
 
   namespace InputEventSentBlocking {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -19001,7 +19001,7 @@ export namespace TraceEvent {
       TraceEvent.InputLatency.RawKeyDown.S;
   
     namespace KeyUp {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           data: {
             INPUT_EVENT_LATENCY_ACK_RWH_COMPONENT: {
@@ -19030,7 +19030,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -19044,7 +19044,7 @@ export namespace TraceEvent {
     }
   
     namespace MouseLeave {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           data: {
             INPUT_EVENT_LATENCY_ACK_RWH_COMPONENT: {
@@ -19073,7 +19073,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -19087,7 +19087,7 @@ export namespace TraceEvent {
     }
   
     namespace MouseMove {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           data: {
             INPUT_EVENT_LATENCY_ACK_RWH_COMPONENT: {
@@ -19116,7 +19116,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -19130,7 +19130,7 @@ export namespace TraceEvent {
     }
   
     namespace RawKeyDown {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           data: {
             INPUT_EVENT_LATENCY_ACK_RWH_COMPONENT: {
@@ -19159,7 +19159,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -19174,7 +19174,7 @@ export namespace TraceEvent {
   }
 
   namespace InputMsg_SetFocus {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -19203,7 +19203,7 @@ export namespace TraceEvent {
       TraceEvent.InputRouterImpl.OnHasTouchEventHandlers.X;
   
     namespace FilterAndSendWebInputEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           type: string;
         };
@@ -19219,7 +19219,7 @@ export namespace TraceEvent {
     }
   
     namespace KeboardEventHandled {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           ack: string;
           type: string;
@@ -19236,7 +19236,7 @@ export namespace TraceEvent {
     }
   
     namespace MouseEventHandled {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           ack: string;
           type: string;
@@ -19253,7 +19253,7 @@ export namespace TraceEvent {
     }
   
     namespace OnHasTouchEventHandlers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           has_handlers: boolean;
         };
@@ -19270,7 +19270,7 @@ export namespace TraceEvent {
   }
 
   namespace InstallConditionalFeatures {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         IsMainFrame: boolean;
       };
@@ -19286,7 +19286,7 @@ export namespace TraceEvent {
   }
 
   namespace InteractiveTime {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
         had_user_input_before_interactive: boolean;
@@ -19300,7 +19300,7 @@ export namespace TraceEvent {
   }
 
   namespace InvalidateLayout {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -19323,7 +19323,7 @@ export namespace TraceEvent {
   }
 
   namespace Ipc_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -19336,7 +19336,7 @@ export namespace TraceEvent {
   }
 
   namespace IPCChannel {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -19352,7 +19352,7 @@ export namespace TraceEvent {
   }
 
   namespace Is_gesture_active {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -19369,7 +19369,7 @@ export namespace TraceEvent {
       TraceEvent.ItemParallelJob.Run.I;
   
     namespace Run {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           num_items: number;
           num_tasks: number;
@@ -19389,7 +19389,7 @@ export namespace TraceEvent {
       TraceEvent.Job.ExecuteProxyResolver.X;
   
     namespace ExecuteProxyResolver {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19410,7 +19410,7 @@ export namespace TraceEvent {
       TraceEvent.KeyedServiceFactory.GetServiceForContext.X;
   
     namespace GetServiceForContext {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           service_name: string;
         };
@@ -19427,7 +19427,7 @@ export namespace TraceEvent {
   }
 
   namespace KeyframeModel {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -19439,7 +19439,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         Name: string;
       };
@@ -19457,7 +19457,7 @@ export namespace TraceEvent {
       TraceEvent.KeywordProvider.Start.X;
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19478,7 +19478,7 @@ export namespace TraceEvent {
       TraceEvent.LatencyInfo.Flow.X;
   
     namespace Flow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frameTreeNodeId?: number;
           step?: string;
@@ -19502,7 +19502,7 @@ export namespace TraceEvent {
   }
 
   namespace LaunchProcess {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -19528,7 +19528,7 @@ export namespace TraceEvent {
       TraceEvent.Layer.SetElementId.X;
   
     namespace PaintContentsToDisplayList {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           name: string;
         };
@@ -19544,7 +19544,7 @@ export namespace TraceEvent {
     }
   
     namespace PushPropertiesTo {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19560,7 +19560,7 @@ export namespace TraceEvent {
     }
   
     namespace SetElementId {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           element: string;
         };
@@ -19581,7 +19581,7 @@ export namespace TraceEvent {
       TraceEvent.LayerAnimator.Step.X;
   
     namespace Step {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19598,7 +19598,7 @@ export namespace TraceEvent {
   }
 
   namespace LayerId {
-    interface D extends Base {
+    interface D extends TraceEvent.Base {
       args: {
       
       };
@@ -19610,7 +19610,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface N extends Base {
+    interface N extends TraceEvent.Base {
       args: {
       
       };
@@ -19628,7 +19628,7 @@ export namespace TraceEvent {
       TraceEvent.LayerImpl.SetElementId.X;
   
     namespace SetElementId {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           element: string;
         };
@@ -19645,7 +19645,7 @@ export namespace TraceEvent {
   }
 
   namespace LayerInvalidationTracking {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -19692,7 +19692,7 @@ export namespace TraceEvent {
         TraceEvent.LayerTreeHost.AnimationHost.PushProperties.X;
     
       namespace PushProperties {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -19709,7 +19709,7 @@ export namespace TraceEvent {
     }
   
     namespace DoUpdateLayers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           source_frame_number: number;
         };
@@ -19725,7 +19725,7 @@ export namespace TraceEvent {
     }
   
     namespace FinishCommitOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19741,7 +19741,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeForReal {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19757,7 +19757,7 @@ export namespace TraceEvent {
     }
   
     namespace LayerTreeHost {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19773,7 +19773,7 @@ export namespace TraceEvent {
     }
   
     namespace PushProperties {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19789,7 +19789,7 @@ export namespace TraceEvent {
     }
   
     namespace SetHasGpuRasterizationTrigger {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           has_trigger: boolean;
         };
@@ -19803,7 +19803,7 @@ export namespace TraceEvent {
     }
   
     namespace SetLayerTreeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -19819,7 +19819,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateLayers_BuiltPropertyTrees {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           property_trees: {
             clip_tree: {
@@ -19930,7 +19930,7 @@ export namespace TraceEvent {
         TraceEvent.LayerTreeHost.UpdateLayers.BuildPropertyTrees.X;
     
       namespace BuildPropertyTrees {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -19996,7 +19996,7 @@ export namespace TraceEvent {
       TraceEvent.LayerTreeHostImpl.SetVisible.S;
   
     namespace ActivateSyncTree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20012,7 +20012,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginCommit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20028,7 +20028,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildEvictionQueue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20044,7 +20044,7 @@ export namespace TraceEvent {
     }
   
     namespace BuildRasterQueue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20060,7 +20060,7 @@ export namespace TraceEvent {
     }
   
     namespace CalculateRenderPasses {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           RequiresHighResToDraw: boolean;
           'render_surface_list.size()': number;
@@ -20072,7 +20072,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           draw_result: number;
           'missing tiles': number;
@@ -20086,7 +20086,7 @@ export namespace TraceEvent {
     }
   
     namespace CanDrawemptyviewport {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -20100,7 +20100,7 @@ export namespace TraceEvent {
     }
   
     namespace CanDrawnorootlayer {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -20114,7 +20114,7 @@ export namespace TraceEvent {
     }
   
     namespace CommitComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20130,7 +20130,7 @@ export namespace TraceEvent {
     }
   
     namespace GenerateCompositorFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20146,7 +20146,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20162,7 +20162,7 @@ export namespace TraceEvent {
     }
   
     namespace LayerTreeHostImpl {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20178,7 +20178,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyTileStateChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20194,7 +20194,7 @@ export namespace TraceEvent {
     }
   
     namespace PrepareToDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           SourceFrameNumber: number;
         };
@@ -20210,7 +20210,7 @@ export namespace TraceEvent {
     }
   
     namespace ReleaseLayerTreeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20226,7 +20226,7 @@ export namespace TraceEvent {
     }
   
     namespace SetVisible {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -20238,7 +20238,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           LayerTreeHostImpl: string;
         };
@@ -20270,7 +20270,7 @@ export namespace TraceEvent {
       TraceEvent.LayerTreeImpl.RemoveFromElementLayerList.X;
   
     namespace AddToElementLayerList {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           element: string;
         };
@@ -20286,7 +20286,7 @@ export namespace TraceEvent {
     }
   
     namespace InvalidateRegionForImages {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           total_layer_count: number;
         };
@@ -20297,7 +20297,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           counts: string;
         };
@@ -20310,7 +20310,7 @@ export namespace TraceEvent {
     }
   
     namespace PushPropertiesTo {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20326,7 +20326,7 @@ export namespace TraceEvent {
     }
   
     namespace PushPropertyTreesTo {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20342,7 +20342,7 @@ export namespace TraceEvent {
     }
   
     namespace RemoveFromElementLayerList {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           element: string;
         };
@@ -20369,7 +20369,7 @@ export namespace TraceEvent {
         TraceEvent.LayerTreeImpl.UpdateDrawProperties.UpdateTiles.E;
     
       namespace CalculateDrawProperties {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             IsActive: boolean;
             SourceFrameNumber: number;
@@ -20386,7 +20386,7 @@ export namespace TraceEvent {
       }
     
       namespace Occlusion {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             IsActive: boolean;
             SourceFrameNumber: number;
@@ -20403,7 +20403,7 @@ export namespace TraceEvent {
       }
     
       namespace UpdateTiles {
-        interface B extends Base {
+        interface B extends TraceEvent.Base {
           args: {
             IsActive: boolean;
             SourceFrameNumber: number;
@@ -20415,7 +20415,7 @@ export namespace TraceEvent {
           tts: number;
         }
       
-        interface E extends Base {
+        interface E extends TraceEvent.Base {
           args: {
             layers_updated_count: number;
           };
@@ -20427,7 +20427,7 @@ export namespace TraceEvent {
         }
       }
     
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20444,7 +20444,7 @@ export namespace TraceEvent {
   }
 
   namespace Layout {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         beginData: {
           dirtyObjects: number;
@@ -20467,7 +20467,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         endData: {
           root: {
@@ -20485,7 +20485,7 @@ export namespace TraceEvent {
   }
 
   namespace LayoutInvalidationTracking {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -20515,7 +20515,7 @@ export namespace TraceEvent {
       TraceEvent.LayoutView.CommitPendingSelection.X;
   
     namespace CommitPendingSelection {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20537,7 +20537,7 @@ export namespace TraceEvent {
         TraceEvent.Leveldb.Mojom.LevelDBService.X;
     
       namespace LevelDBService {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -20562,7 +20562,7 @@ export namespace TraceEvent {
       TraceEvent.LiveObjectVisitor.VisitBlackObjectsNoFail.X;
   
     namespace VisitBlackObjects {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20578,7 +20578,7 @@ export namespace TraceEvent {
     }
   
     namespace VisitBlackObjectsNoFail {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20595,7 +20595,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadAnyStartablePendingRequests {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -20611,7 +20611,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadEndeventUtils {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -20626,7 +20626,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadEndpixelQueue {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -20641,7 +20641,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadEventEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -20654,7 +20654,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadEventStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -20667,7 +20667,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadFinished {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -20681,7 +20681,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadStarteventUtils {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -20696,7 +20696,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadStartpixelQueue {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -20749,7 +20749,7 @@ export namespace TraceEvent {
       TraceEvent.LocalFrameView.UpdateViewportIntersectionsForSubtree.X;
   
     namespace FrameRectsChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20765,7 +20765,7 @@ export namespace TraceEvent {
     }
   
     namespace Layout {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20781,7 +20781,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformLayout {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           contentsHeightBeforeLayout: number;
         };
@@ -20792,7 +20792,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           counters: {
             LayoutAnalyzerStackMaximumDepth: number;
@@ -20824,7 +20824,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformPostLayoutTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20840,7 +20840,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformPreLayoutTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20856,7 +20856,7 @@ export namespace TraceEvent {
     }
   
     namespace RunCompositingLifecyclePhase {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20872,7 +20872,7 @@ export namespace TraceEvent {
     }
   
     namespace RunPaintLifecyclePhase {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20888,7 +20888,7 @@ export namespace TraceEvent {
     }
   
     namespace RunPrePaintLifecyclePhase {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20904,7 +20904,7 @@ export namespace TraceEvent {
     }
   
     namespace RunStyleAndLayoutLifecyclePhases {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20920,7 +20920,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateRenderThrottlingStatus {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20936,7 +20936,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateStyleAndLayoutIfNeededRecursive {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20952,7 +20952,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateViewportIntersectionsForSubtree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -20974,7 +20974,7 @@ export namespace TraceEvent {
         TraceEvent.LocalSurfaceId.Embed.Flow.X;
     
       namespace Flow {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             child_surface_id?: string;
             local_surface_id?: string;
@@ -21004,7 +21004,7 @@ export namespace TraceEvent {
         TraceEvent.LocalSurfaceId.Submission.Flow.X;
     
       namespace Flow {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             local_surface_id?: string;
             local_surface_id_allocation?: string;
@@ -21044,7 +21044,7 @@ export namespace TraceEvent {
       TraceEvent.LocalWindowProxy.UpdateDocumentProperty.X;
   
     namespace CreateContext {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
         };
@@ -21060,7 +21060,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
         };
@@ -21076,7 +21076,7 @@ export namespace TraceEvent {
     }
   
     namespace SetupWindowPrototypeChain {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
         };
@@ -21092,7 +21092,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateDocumentProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
         };
@@ -21109,7 +21109,7 @@ export namespace TraceEvent {
   }
 
   namespace LongTask {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         duration: number;
       };
@@ -21123,7 +21123,7 @@ export namespace TraceEvent {
   }
 
   namespace Lteu {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -21135,7 +21135,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -21149,7 +21149,7 @@ export namespace TraceEvent {
   }
 
   namespace Ltpq {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -21161,7 +21161,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -21175,7 +21175,7 @@ export namespace TraceEvent {
   }
 
   namespace MainThreadLatency {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -21196,7 +21196,7 @@ export namespace TraceEvent {
         TraceEvent.MainThreadScheduler.RendererMainThreadLoad.Foreground.C;
     
       namespace Background {
-        interface C extends Base {
+        interface C extends TraceEvent.Base {
           args: {
             value: number;
           };
@@ -21209,7 +21209,7 @@ export namespace TraceEvent {
       }
     
       namespace Foreground {
-        interface C extends Base {
+        interface C extends TraceEvent.Base {
           args: {
             value: number;
           };
@@ -21221,7 +21221,7 @@ export namespace TraceEvent {
         }
       }
     
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -21235,7 +21235,7 @@ export namespace TraceEvent {
   }
 
   namespace MainThreadSchedulerIdlePeriod {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -21247,7 +21247,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         idle_period_length_ms: number;
       };
@@ -21259,7 +21259,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -21325,7 +21325,7 @@ export namespace TraceEvent {
       TraceEvent.MainThreadSchedulerImpl.WillBeginFrame.X;
   
     namespace BeginFrameNotExpectedSoon {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21341,7 +21341,7 @@ export namespace TraceEvent {
     }
   
     namespace DidCommitFrameToCompositor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21357,7 +21357,7 @@ export namespace TraceEvent {
     }
   
     namespace DidCommitProvisionalLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21373,7 +21373,7 @@ export namespace TraceEvent {
     }
   
     namespace DidHandleInputEventOnCompositorThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21389,7 +21389,7 @@ export namespace TraceEvent {
     }
   
     namespace DidHandleInputEventOnMainThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21405,7 +21405,7 @@ export namespace TraceEvent {
     }
   
     namespace DidStartProvisionalLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21421,7 +21421,7 @@ export namespace TraceEvent {
     }
   
     namespace DispatchRequestBeginMainFrameNotExpected {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           has_tasks: boolean;
         };
@@ -21437,7 +21437,7 @@ export namespace TraceEvent {
     }
   
     namespace EndIdlePeriod {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21453,7 +21453,7 @@ export namespace TraceEvent {
     }
   
     namespace OnFirstMeaningfulPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21469,7 +21469,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRendererBackgrounded {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21485,7 +21485,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRendererForegrounded {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21501,7 +21501,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRendererHidden {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21517,7 +21517,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRendererVisible {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21533,7 +21533,7 @@ export namespace TraceEvent {
     }
   
     namespace ResetForNavigationLocked {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21549,7 +21549,7 @@ export namespace TraceEvent {
     }
   
     namespace SetAllRenderWidgetsHidden {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           hidden: boolean;
         };
@@ -21565,7 +21565,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateForInputEventOnCompositorThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           input_event_state: string;
           type: number;
@@ -21582,7 +21582,7 @@ export namespace TraceEvent {
     }
   
     namespace WillBeginFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           args: {
             animate_only: boolean;
@@ -21609,7 +21609,7 @@ export namespace TraceEvent {
   }
 
   namespace MajorGC {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         type: string;
         usedHeapSizeBefore: number;
@@ -21621,7 +21621,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         usedHeapSizeAfter: number;
       };
@@ -21634,7 +21634,7 @@ export namespace TraceEvent {
   }
 
   namespace Mark_test {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -21647,7 +21647,7 @@ export namespace TraceEvent {
   }
 
   namespace MarkAsMainFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -21661,7 +21661,7 @@ export namespace TraceEvent {
   }
 
   namespace MarkDOMContent {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -21679,7 +21679,7 @@ export namespace TraceEvent {
   }
 
   namespace MarkLoad {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -21697,7 +21697,7 @@ export namespace TraceEvent {
   }
 
   namespace Measure_test {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -21709,7 +21709,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -21740,7 +21740,7 @@ export namespace TraceEvent {
         TraceEvent.Media.Mojom.VideoDecoder.X;
     
       namespace InterfaceFactory {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21756,7 +21756,7 @@ export namespace TraceEvent {
       }
     
       namespace MediaMetricsProvider {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21772,7 +21772,7 @@ export namespace TraceEvent {
       }
     
       namespace MediaService {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21788,7 +21788,7 @@ export namespace TraceEvent {
       }
     
       namespace RemoterFactory {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21804,7 +21804,7 @@ export namespace TraceEvent {
       }
     
       namespace VideoDecoder {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21822,7 +21822,7 @@ export namespace TraceEvent {
   }
 
   namespace MediaPlayerDelegateHostMsg_OnMutedStatusChanged {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -21846,7 +21846,7 @@ export namespace TraceEvent {
         TraceEvent.Memory_instrumentation.Mojom.Coordinator.X;
     
       namespace ClientProcess {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21862,7 +21862,7 @@ export namespace TraceEvent {
       }
     
       namespace Coordinator {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -21887,7 +21887,7 @@ export namespace TraceEvent {
       TraceEvent.MemoryCache.Prune.X;
   
     namespace Evict {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           resource: string;
         };
@@ -21903,7 +21903,7 @@ export namespace TraceEvent {
     }
   
     namespace Prune {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21927,7 +21927,7 @@ export namespace TraceEvent {
       TraceEvent.MemoryDumpManager.InvokeOnMemoryDump.X;
   
     namespace FinishAsyncProcessDump {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -21943,7 +21943,7 @@ export namespace TraceEvent {
     }
   
     namespace InvokeOnMemoryDump {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'dump_provider.name': string;
         };
@@ -21960,7 +21960,7 @@ export namespace TraceEvent {
   }
 
   namespace MemoryUsage {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         InFlightToDisk: number;
         TotalStorage: number;
@@ -21981,7 +21981,7 @@ export namespace TraceEvent {
       TraceEvent.MessageLoop.RunTask.X;
   
     namespace PostTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22001,7 +22001,7 @@ export namespace TraceEvent {
     }
   
     namespace RunTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           src_file: string;
           src_func: string;
@@ -22026,7 +22026,7 @@ export namespace TraceEvent {
       TraceEvent.MessagePipeReader.Send.X;
   
     namespace Receive {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22045,7 +22045,7 @@ export namespace TraceEvent {
     }
   
     namespace Send {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22073,7 +22073,7 @@ export namespace TraceEvent {
         TraceEvent.Metrics.Mojom.SingleSampleMetricsProvider.X;
     
       namespace SingleSampleMetric {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22089,7 +22089,7 @@ export namespace TraceEvent {
       }
     
       namespace SingleSampleMetricsProvider {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22107,7 +22107,7 @@ export namespace TraceEvent {
   }
 
   namespace MinorGC {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         usedHeapSizeBefore: number;
       };
@@ -22118,7 +22118,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         usedHeapSizeAfter: number;
       };
@@ -22131,7 +22131,7 @@ export namespace TraceEvent {
   }
 
   namespace ModelNeutralWriteTransaction {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         src_file: string;
         src_func: string;
@@ -22143,7 +22143,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -22175,7 +22175,7 @@ export namespace TraceEvent {
       TraceEvent.MojoVideoDecoderService.OnDecoderOutput.X;
   
     namespace Construct {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22191,7 +22191,7 @@ export namespace TraceEvent {
     }
   
     namespace Decode {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           status: string;
         };
@@ -22203,7 +22203,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface p extends Base {
+      interface p extends TraceEvent.Base {
         args: {
           decoder_buffer?: string;
           step: string;
@@ -22216,7 +22216,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           is_key_frame: boolean;
           timestamp_us: number;
@@ -22231,7 +22231,7 @@ export namespace TraceEvent {
     }
   
     namespace GetSupportedConfigs {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22247,7 +22247,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           success: boolean;
         };
@@ -22259,7 +22259,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           cdm_id: number;
           config: string;
@@ -22274,7 +22274,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDecoderOutput {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           video_frame: string;
         };
@@ -22291,7 +22291,7 @@ export namespace TraceEvent {
   }
 
   namespace Moredamageexpectedsoon {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -22315,7 +22315,7 @@ export namespace TraceEvent {
       TraceEvent.MouseEventManager.HandleMousePressEvent.X;
   
     namespace FakeMouseMoveEventTimerFired {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22331,7 +22331,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMouseDraggedEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22347,7 +22347,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMousePressEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22370,7 +22370,7 @@ export namespace TraceEvent {
           TraceEvent.Namespace.TextureOp.Tessnamespace.VertexSpecGrTextureProxy.X;
       
         namespace VertexSpecGrTextureProxy {
-          interface X extends Base {
+          interface X extends TraceEvent.Base {
             args: {
             
             };
@@ -22393,7 +22393,7 @@ export namespace TraceEvent {
       TraceEvent.NavigationControllerImpl.LoadURLWithParams.X;
   
     namespace LoadURLWithParams {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           url: string;
         };
@@ -22410,7 +22410,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationHandle {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -22422,7 +22422,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         frame_tree_node: number;
         url: string;
@@ -22435,7 +22435,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -22449,7 +22449,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationRequest {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -22461,7 +22461,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         frame_tree_node: number;
         url: string;
@@ -22474,7 +22474,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -22488,7 +22488,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           documentLoaderURL: string;
@@ -22506,7 +22506,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationStartToCommit {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         'Net Error Code': number;
         URL: string;
@@ -22519,7 +22519,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         'Initial URL': string;
       };
@@ -22540,7 +22540,7 @@ export namespace TraceEvent {
       TraceEvent.NavigationThrottle.WillStartRequest.X;
   
     namespace WillProcessResponse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           throttle: string;
         };
@@ -22556,7 +22556,7 @@ export namespace TraceEvent {
     }
   
     namespace WillStartRequest {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           throttle: string;
         };
@@ -22573,7 +22573,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationtimeToResponseStarted {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         '&NavigationURLLoaderImpl': string;
         success: boolean;
@@ -22586,7 +22586,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         'FrameTreeNode id': number;
       };
@@ -22600,7 +22600,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationTimingnavigationStart {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -22618,7 +22618,7 @@ export namespace TraceEvent {
       TraceEvent.NavigatorImpl.Navigate.X;
   
     namespace Navigate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -22635,7 +22635,7 @@ export namespace TraceEvent {
   }
 
   namespace NeedsBeginFrameChanged {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           needsBeginFrame: number;
@@ -22652,7 +22652,7 @@ export namespace TraceEvent {
   }
 
   namespace NeedsTickAnimations {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -22666,7 +22666,7 @@ export namespace TraceEvent {
   }
 
   namespace NETWORK_DELEGATE_BEFORE_START_TRANSACTION {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -22679,7 +22679,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -22694,7 +22694,7 @@ export namespace TraceEvent {
   }
 
   namespace NETWORK_DELEGATE_BEFORE_URL_REQUEST {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -22707,7 +22707,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -22722,7 +22722,7 @@ export namespace TraceEvent {
   }
 
   namespace NETWORK_DELEGATE_HEADERS_RECEIVED {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -22735,7 +22735,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -22750,7 +22750,7 @@ export namespace TraceEvent {
   }
 
   namespace NETWORK_QUALITY_CHANGED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           downstream_throughput_kbps: number;
@@ -22814,7 +22814,7 @@ export namespace TraceEvent {
         TraceEvent.Network.Mojom.URLLoaderFactory.X;
     
       namespace CookieChangeListener {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22830,7 +22830,7 @@ export namespace TraceEvent {
       }
     
       namespace CookieManager {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22846,7 +22846,7 @@ export namespace TraceEvent {
       }
     
       namespace NetworkContext {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22862,7 +22862,7 @@ export namespace TraceEvent {
       }
     
       namespace NetworkContextClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22878,7 +22878,7 @@ export namespace TraceEvent {
       }
     
       namespace NetworkQualityEstimatorManagerClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22894,7 +22894,7 @@ export namespace TraceEvent {
       }
     
       namespace NetworkServiceClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22910,7 +22910,7 @@ export namespace TraceEvent {
       }
     
       namespace ProxyConfigPollerClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22926,7 +22926,7 @@ export namespace TraceEvent {
       }
     
       namespace ProxyLookupClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22942,7 +22942,7 @@ export namespace TraceEvent {
       }
     
       namespace ResolveHostClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22958,7 +22958,7 @@ export namespace TraceEvent {
       }
     
       namespace TrustedHeaderClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22974,7 +22974,7 @@ export namespace TraceEvent {
       }
     
       namespace TrustedURLLoaderHeaderClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -22990,7 +22990,7 @@ export namespace TraceEvent {
       }
     
       namespace URLLoader {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -23006,7 +23006,7 @@ export namespace TraceEvent {
       }
     
       namespace URLLoaderClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -23022,7 +23022,7 @@ export namespace TraceEvent {
       }
     
       namespace URLLoaderFactory {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -23065,7 +23065,7 @@ export namespace TraceEvent {
       TraceEvent.NetworkDelegate.NotifyURLRequestDestroyed.X;
   
     namespace ForcePrivacyMode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23081,7 +23081,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyBeforeStartTransation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23097,7 +23097,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyBeforeURLRequest {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23113,7 +23113,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23129,7 +23129,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyHeadersReceived {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23145,7 +23145,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyNetworkBytesReceived {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23161,7 +23161,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyStartTransaction {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23177,7 +23177,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyURLRequestDestroyed {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23194,7 +23194,7 @@ export namespace TraceEvent {
   }
 
   namespace NetworkHintsMsg_DNSPrefetch {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -23217,7 +23217,7 @@ export namespace TraceEvent {
       TraceEvent.NetworkQualityEstimator.NotifyRequestCompleted.X;
   
     namespace NotifyHeadersReceived {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23233,7 +23233,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyRequestCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23250,7 +23250,7 @@ export namespace TraceEvent {
   }
 
   namespace Nodamageyet {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -23268,7 +23268,7 @@ export namespace TraceEvent {
       TraceEvent.Node.UpdateDistribution.X;
   
     namespace UpdateDistribution {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23285,7 +23285,7 @@ export namespace TraceEvent {
   }
 
   namespace NotStartingIdlePeriodBecauseDeadlineIsTooClose {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         idle_period_duration_ms: number;
       };
@@ -23301,7 +23301,7 @@ export namespace TraceEvent {
   }
 
   namespace Num_cpus {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         number: number;
       };
@@ -23312,7 +23312,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark0c_search {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23327,7 +23327,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark0odbMB_120 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23342,7 +23342,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark0odbTR_11 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23357,7 +23357,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark0renderMB_120 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23372,7 +23372,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark0renderTR_11 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23387,7 +23387,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark0start {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23402,7 +23402,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark1c_foundMB_120 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23417,7 +23417,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark1c_foundTR_11 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23432,7 +23432,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark1odb_rMB_120 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23447,7 +23447,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark1odb_rTR_11 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23462,7 +23462,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark1renderedMB_120 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23477,7 +23477,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmark1renderedTR_11 {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23492,7 +23492,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmeasurec_foundMB_120 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23504,7 +23504,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23518,7 +23518,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmeasurec_foundTR_11 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23530,7 +23530,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23544,7 +23544,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmeasureodb_rMB_120 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23556,7 +23556,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23570,7 +23570,7 @@ export namespace TraceEvent {
   }
 
   namespace Obmeasureodb_rTR_11 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23582,7 +23582,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23596,7 +23596,7 @@ export namespace TraceEvent {
   }
 
   namespace ObmeasureodbMB_120 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23608,7 +23608,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23622,7 +23622,7 @@ export namespace TraceEvent {
   }
 
   namespace ObmeasureodbTR_11 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23634,7 +23634,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23648,7 +23648,7 @@ export namespace TraceEvent {
   }
 
   namespace ObmeasurerenderedMB_120 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23660,7 +23660,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23674,7 +23674,7 @@ export namespace TraceEvent {
   }
 
   namespace ObmeasurerenderedTR_11 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23686,7 +23686,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23707,7 +23707,7 @@ export namespace TraceEvent {
       TraceEvent.Onetapvideo.PlayerReady.R;
   
     namespace EmbedRequest {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -23722,7 +23722,7 @@ export namespace TraceEvent {
     }
   
     namespace PlayerReady {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -23738,7 +23738,7 @@ export namespace TraceEvent {
   }
 
   namespace OnIdleTaskPosted {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -23754,7 +23754,7 @@ export namespace TraceEvent {
   }
 
   namespace OnIdleTaskPostedOnMainThread {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -23770,7 +23770,7 @@ export namespace TraceEvent {
   }
 
   namespace OnLibevent {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -23786,7 +23786,7 @@ export namespace TraceEvent {
   }
 
   namespace OnLoad {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23796,7 +23796,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23812,7 +23812,7 @@ export namespace TraceEvent {
       TraceEvent.Optimizely.BlockBegin.R;
   
     namespace BlockBegin {
-      interface R extends Base {
+      interface R extends TraceEvent.Base {
         args: {
           data: {
             navigationId: string;
@@ -23828,7 +23828,7 @@ export namespace TraceEvent {
   }
 
   namespace OptimizelyEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23843,7 +23843,7 @@ export namespace TraceEvent {
   }
 
   namespace OptimizelyStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -23858,7 +23858,7 @@ export namespace TraceEvent {
   }
 
   namespace OptimizelyTime {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23870,7 +23870,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23888,7 +23888,7 @@ export namespace TraceEvent {
       TraceEvent.OverlayProcessor.ProcessForOverlays.X;
   
     namespace ProcessForOverlays {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23909,7 +23909,7 @@ export namespace TraceEvent {
       TraceEvent.PageAnimator.ServiceScriptedAnimations.X;
   
     namespace ServiceScriptedAnimations {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23926,7 +23926,7 @@ export namespace TraceEvent {
   }
 
   namespace PageLoad {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -23938,7 +23938,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -23968,7 +23968,7 @@ export namespace TraceEvent {
       TraceEvent.PageLoadMetricsObserver.ShouldObserveMimeType.X;
   
     namespace OnCommit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -23984,7 +23984,7 @@ export namespace TraceEvent {
     }
   
     namespace OnHidden {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24000,7 +24000,7 @@ export namespace TraceEvent {
     }
   
     namespace OnShown {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24016,7 +24016,7 @@ export namespace TraceEvent {
     }
   
     namespace OnStart {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24032,7 +24032,7 @@ export namespace TraceEvent {
     }
   
     namespace ShouldObserveMimeType {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24049,7 +24049,7 @@ export namespace TraceEvent {
   }
 
   namespace PageMsg_SetHistoryOffsetAndLength {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -24065,7 +24065,7 @@ export namespace TraceEvent {
   }
 
   namespace PageMsg_UpdateScreenInfo {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -24081,7 +24081,7 @@ export namespace TraceEvent {
   }
 
   namespace PageMsg_UpdateWindowScreenRect {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -24097,7 +24097,7 @@ export namespace TraceEvent {
   }
 
   namespace PageMsg_WasHidden {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -24113,7 +24113,7 @@ export namespace TraceEvent {
   }
 
   namespace PageMsg_WasShown {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -24129,7 +24129,7 @@ export namespace TraceEvent {
   }
 
   namespace Paint {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           clip: {
@@ -24159,7 +24159,7 @@ export namespace TraceEvent {
       TraceEvent.PaintArtifact.Replay.X;
   
     namespace AppendToWebDisplayItemList {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24175,7 +24175,7 @@ export namespace TraceEvent {
     }
   
     namespace Replay {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24196,7 +24196,7 @@ export namespace TraceEvent {
       TraceEvent.PaintController.CommitNewDisplayItems.X;
   
     namespace CommitNewDisplayItems {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           current_display_list_size: number;
           num_non_cached_new_items: number;
@@ -24214,7 +24214,7 @@ export namespace TraceEvent {
   }
 
   namespace PaintImage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           height?: number;
@@ -24239,7 +24239,7 @@ export namespace TraceEvent {
   }
 
   namespace PaintInvalidationTracking {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -24262,7 +24262,7 @@ export namespace TraceEvent {
       TraceEvent.PaintInvalidator.InvalidatePaint.X;
   
     namespace InvalidatePaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           object: string;
         };
@@ -24283,7 +24283,7 @@ export namespace TraceEvent {
       TraceEvent.PaintLayer.UpdateLayerPositionsAfterLayout.X;
   
     namespace UpdateLayerPositionsAfterLayout {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24304,7 +24304,7 @@ export namespace TraceEvent {
       TraceEvent.PaintLayerCompositor.UpdateIfNeededRecursive.X;
   
     namespace UpdateIfNeededRecursive {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24321,7 +24321,7 @@ export namespace TraceEvent {
   }
 
   namespace PaintNonDefaultBackgroundColor {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -24341,7 +24341,7 @@ export namespace TraceEvent {
       TraceEvent.ParkableStringImpl.Unpark.X;
   
     namespace CompressInBackground {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           size: number;
         };
@@ -24357,7 +24357,7 @@ export namespace TraceEvent {
     }
   
     namespace Unpark {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           size: number;
         };
@@ -24374,7 +24374,7 @@ export namespace TraceEvent {
   }
 
   namespace ParseAuthorStyleSheet {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           styleSheetUrl: string;
@@ -24392,7 +24392,7 @@ export namespace TraceEvent {
   }
 
   namespace ParseHTML {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         beginData: {
           frame: string;
@@ -24414,7 +24414,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         endData: {
           endLine: number;
@@ -24433,7 +24433,7 @@ export namespace TraceEvent {
       TraceEvent.PartitionAlloc.TotalSizeOfCommittedPagesKB.C;
   
     namespace TotalSizeOfCommittedPagesKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -24451,7 +24451,7 @@ export namespace TraceEvent {
       TraceEvent.PendingScript.ExecuteScriptBlock.X;
   
     namespace ExecuteScriptBlock {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24473,7 +24473,7 @@ export namespace TraceEvent {
       TraceEvent.PendingTree.Waiting.S;
   
     namespace Waiting {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -24485,7 +24485,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -24507,7 +24507,7 @@ export namespace TraceEvent {
       TraceEvent.PictureLayer.Update.X;
   
     namespace PushPropertiesTo {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24523,7 +24523,7 @@ export namespace TraceEvent {
     }
   
     namespace Update {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           source_frame_number: number;
         };
@@ -24544,7 +24544,7 @@ export namespace TraceEvent {
       TraceEvent.PictureLayerImpl.AppendQuadscheckerboard.I;
   
     namespace AppendQuadscheckerboard {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           missing_tile_count: number;
           on_demand_missing_tile_count: number;
@@ -24560,7 +24560,7 @@ export namespace TraceEvent {
   }
 
   namespace PlatformResourceSendRequest {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         data: {
           id: string;
@@ -24573,7 +24573,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -24586,7 +24586,7 @@ export namespace TraceEvent {
   }
 
   namespace PostCommit {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
       
       };
@@ -24597,7 +24597,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -24614,7 +24614,7 @@ export namespace TraceEvent {
       TraceEvent.PrerenderManagerFactory.GetForProfile.X;
   
     namespace GetForProfile {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24631,7 +24631,7 @@ export namespace TraceEvent {
   }
 
   namespace PrintMsg_SetPrintingEnabled {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -24647,7 +24647,7 @@ export namespace TraceEvent {
   }
 
   namespace Process_labels {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         labels: string;
       };
@@ -24658,7 +24658,7 @@ export namespace TraceEvent {
   }
 
   namespace Process_name {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         name: string;
       };
@@ -24669,7 +24669,7 @@ export namespace TraceEvent {
   }
 
   namespace Process_sort_index {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         sort_index: number;
       };
@@ -24680,7 +24680,7 @@ export namespace TraceEvent {
   }
 
   namespace Process_uptime_seconds {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         uptime: number;
       };
@@ -24691,7 +24691,7 @@ export namespace TraceEvent {
   }
 
   namespace ProcessCommitResponse {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         type: string;
       };
@@ -24707,7 +24707,7 @@ export namespace TraceEvent {
   }
 
   namespace ProcessMemoryDump {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         dump_guid: string;
       };
@@ -24721,7 +24721,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -24737,7 +24737,7 @@ export namespace TraceEvent {
   }
 
   namespace ProcessPriority {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         priority: number;
       };
@@ -24755,7 +24755,7 @@ export namespace TraceEvent {
       TraceEvent.ProcTask.OnLookupComplete.X;
   
     namespace OnLookupComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24772,7 +24772,7 @@ export namespace TraceEvent {
   }
 
   namespace Profile {
-    interface P extends Base {
+    interface P extends TraceEvent.Base {
       args: {
         data: {
           startTime: number;
@@ -24788,7 +24788,7 @@ export namespace TraceEvent {
   }
 
   namespace ProfileChunk {
-    interface P extends Base {
+    interface P extends TraceEvent.Base {
       args: {
         data: {
           cpuProfile: {
@@ -24826,7 +24826,7 @@ export namespace TraceEvent {
       TraceEvent.ProfileManager.GetProfileInfoCache.X;
   
     namespace GetProfileInfoCache {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24847,7 +24847,7 @@ export namespace TraceEvent {
       TraceEvent.ProgramBindingBase.Init.X;
   
     namespace Init {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -24868,7 +24868,7 @@ export namespace TraceEvent {
       TraceEvent.PropertyTreeBuilder.ShouldCreateRenderSurfaceopacity.I;
   
     namespace ShouldCreateRenderSurfaceopacity {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -24883,7 +24883,7 @@ export namespace TraceEvent {
   }
 
   namespace PROXY_RESOLUTION_SERVICE_RESOLVED_PROXY_LIST {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           pac_string: string;
@@ -24900,7 +24900,7 @@ export namespace TraceEvent {
   }
 
   namespace PROXY_RESOLUTION_SERVICE {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -24913,7 +24913,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -24936,7 +24936,7 @@ export namespace TraceEvent {
         TraceEvent.Proxy_resolver.Mojom.ProxyResolverRequestClient.X;
     
       namespace ProxyResolver {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -24952,7 +24952,7 @@ export namespace TraceEvent {
       }
     
       namespace ProxyResolverRequestClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -25031,7 +25031,7 @@ export namespace TraceEvent {
       TraceEvent.ProxyImpl.SetVisibleOnImplThread.X;
   
     namespace BeginMainFrameAbortedOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           reason: string;
         };
@@ -25047,7 +25047,7 @@ export namespace TraceEvent {
     }
   
     namespace DidActivateSyncTreeOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25063,7 +25063,7 @@ export namespace TraceEvent {
     }
   
     namespace DidLoseLayerTreeFrameSinkOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25079,7 +25079,7 @@ export namespace TraceEvent {
     }
   
     namespace DidReceiveCompositorFrameAckOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25095,7 +25095,7 @@ export namespace TraceEvent {
     }
   
     namespace FinishGLOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25111,7 +25111,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeLayerTreeFrameSinkOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25127,7 +25127,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyReadyToActivate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25143,7 +25143,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyReadyToCommitOnImpl {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25159,7 +25159,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyReadyToDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25175,7 +25175,7 @@ export namespace TraceEvent {
     }
   
     namespace OnCanDrawStateChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           can_draw: boolean;
         };
@@ -25191,7 +25191,7 @@ export namespace TraceEvent {
     }
   
     namespace ProxyImpl {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25207,7 +25207,7 @@ export namespace TraceEvent {
     }
   
     namespace RequestBeginMainFrameNotExpected {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           new_state: boolean;
         };
@@ -25223,7 +25223,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionActivateSyncTree {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25239,7 +25239,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionBeginLayerTreeFrameSinkCreation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25255,7 +25255,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionCommit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25271,7 +25271,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25287,7 +25287,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionPrepareTiles {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25303,7 +25303,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsCommitOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25319,7 +25319,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsRedrawOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25335,7 +25335,7 @@ export namespace TraceEvent {
     }
   
     namespace SetVisibleOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           visible: boolean;
         };
@@ -25388,7 +25388,7 @@ export namespace TraceEvent {
         TraceEvent.ProxyMain.BeginMainFrame.Commit.X;
     
       namespace Commit {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -25405,7 +25405,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginMainFrameNotExpectedSoon {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25421,7 +25421,7 @@ export namespace TraceEvent {
     }
   
     namespace DidInitializeLayerTreeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25437,7 +25437,7 @@ export namespace TraceEvent {
     }
   
     namespace ProxyMain {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25453,7 +25453,7 @@ export namespace TraceEvent {
     }
   
     namespace RequestNewLayerTreeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25469,7 +25469,7 @@ export namespace TraceEvent {
     }
   
     namespace SetDeferMainFrameUpdate {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -25481,7 +25481,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -25495,7 +25495,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsAnimate {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -25509,7 +25509,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsCommit {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -25523,7 +25523,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsUpdateLayers {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -25537,7 +25537,7 @@ export namespace TraceEvent {
     }
   
     namespace SetVisible {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           visible: boolean;
         };
@@ -25553,7 +25553,7 @@ export namespace TraceEvent {
     }
   
     namespace Stop {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -25570,7 +25570,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_CHROMIUM_CLIENT_STREAM_READ_RESPONSE_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -25600,7 +25600,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_CHROMIUM_CLIENT_STREAM_SEND_REQUEST_HEADERS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -25635,7 +25635,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_CONNECTION_MIGRATION_MODE {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           connection_migration_mode: number;
@@ -25652,7 +25652,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_ACK_FRAME_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           delta_time_largest_observed_us: number;
@@ -25673,7 +25673,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_CERTIFICATE_VERIFIED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           subjects: {
@@ -25703,7 +25703,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_CLOSED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           from_peer: boolean;
@@ -25721,7 +25721,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           quic_crypto_handshake_message: string;
@@ -25738,7 +25738,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           quic_crypto_handshake_message: string;
@@ -25755,7 +25755,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_PACKET_AUTHENTICATED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -25770,7 +25770,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_PACKET_LOST {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           detection_time_us: number;
@@ -25789,7 +25789,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_PACKET_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           peer_address: string;
@@ -25808,7 +25808,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_PACKET_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           packet_number: number;
@@ -25828,7 +25828,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_PING_FRAME_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -25843,7 +25843,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_RST_STREAM_FRAME_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           quic_rst_stream_error: number;
@@ -25861,7 +25861,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_RST_STREAM_FRAME_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           quic_rst_stream_error: number;
@@ -25879,7 +25879,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_STREAM_FRAME_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           fin: boolean;
@@ -25899,7 +25899,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_STREAM_FRAME_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           fin: boolean;
@@ -25919,7 +25919,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           connection_id: string;
@@ -25939,7 +25939,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION_VERSION_NEGOTIATED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           version: string;
@@ -25956,7 +25956,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_SESSION {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           cert_verify_flags: number;
@@ -25975,7 +25975,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -25990,7 +25990,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_STREAM_FACTORY_JOB_BOUND_TO_HTTP_STREAM_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -26010,7 +26010,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_STREAM_FACTORY_JOB_CONNECT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           require_confirmation: boolean;
@@ -26025,7 +26025,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -26040,7 +26040,7 @@ export namespace TraceEvent {
   }
 
   namespace QUIC_STREAM_FACTORY_JOB {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           server_id: string;
@@ -26055,7 +26055,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -26074,7 +26074,7 @@ export namespace TraceEvent {
       TraceEvent.QuicStreamFactory.CreateSession.X;
   
     namespace CreateSession {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -26094,7 +26094,7 @@ export namespace TraceEvent {
         TraceEvent.QuicStreamFactory.Job.DoLoop.X;
     
       namespace DoLoop {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -26117,7 +26117,7 @@ export namespace TraceEvent {
         TraceEvent.Rappor.Mojom.RapporRecorder.X;
     
       namespace RapporRecorder {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -26139,7 +26139,7 @@ export namespace TraceEvent {
       TraceEvent.RasterizerTaskImpl.RunOnWorkerThread.X;
   
     namespace RunOnWorkerThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           source_prepare_tiles_id: number;
         };
@@ -26160,7 +26160,7 @@ export namespace TraceEvent {
       TraceEvent.RasterSource.PerformSolidColorAnalysis.X;
   
     namespace PerformSolidColorAnalysis {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -26177,7 +26177,7 @@ export namespace TraceEvent {
   }
 
   namespace RasterTask {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         tileData: {
           layerId: number;
@@ -26195,7 +26195,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -26208,7 +26208,7 @@ export namespace TraceEvent {
   }
 
   namespace ReadTransaction {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         src_file: string;
         src_func: string;
@@ -26220,7 +26220,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -26237,7 +26237,7 @@ export namespace TraceEvent {
       TraceEvent.RealTimeDomain.DelayTillNextTask.X;
   
     namespace DelayTillNextTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           delay_ms: number;
         };
@@ -26261,7 +26261,7 @@ export namespace TraceEvent {
       TraceEvent.RecordingSource.FinishDisplayItemListUpdate.X;
   
     namespace DetermineIfSolidColor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           opcount: number;
         };
@@ -26277,7 +26277,7 @@ export namespace TraceEvent {
     }
   
     namespace FinishDisplayItemListUpdate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -26294,7 +26294,7 @@ export namespace TraceEvent {
   }
 
   namespace RedirectEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -26307,7 +26307,7 @@ export namespace TraceEvent {
   }
 
   namespace RedirectStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -26324,7 +26324,7 @@ export namespace TraceEvent {
       TraceEvent.RememberedSetUpdatingItem.Process.X;
   
     namespace Process {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -26345,7 +26345,7 @@ export namespace TraceEvent {
       TraceEvent.RemoteWindowProxy.Initialize.X;
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           isMainWindow: boolean;
         };
@@ -26362,7 +26362,7 @@ export namespace TraceEvent {
   }
 
   namespace RendererAudioState {
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -26374,7 +26374,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -26392,7 +26392,7 @@ export namespace TraceEvent {
       TraceEvent.RendererMain.START_MSG_LOOP.S;
   
     namespace START_MSG_LOOP {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -26407,7 +26407,7 @@ export namespace TraceEvent {
   }
 
   namespace RendererProcessType {
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -26419,7 +26419,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -26437,7 +26437,7 @@ export namespace TraceEvent {
       TraceEvent.RendererScheduler.BackgroundBudgetMs.C;
   
     namespace BackgroundBudgetMs {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -26452,7 +26452,7 @@ export namespace TraceEvent {
   }
 
   namespace RendererVisibility {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -26464,7 +26464,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -26476,7 +26476,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         step: string;
       };
@@ -26490,7 +26490,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderFrame {
-    interface D extends Base {
+    interface D extends TraceEvent.Base {
       args: {
       
       };
@@ -26503,7 +26503,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface N extends Base {
+    interface N extends TraceEvent.Base {
       args: {
       
       };
@@ -26516,7 +26516,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: {
           parent: {
@@ -26565,7 +26565,7 @@ export namespace TraceEvent {
       TraceEvent.RenderFrameHostImpl.SwapOut.S;
   
     namespace BeginNavigation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
           url: string;
@@ -26582,7 +26582,7 @@ export namespace TraceEvent {
     }
   
     namespace CommitNavigation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
           url: string;
@@ -26599,7 +26599,7 @@ export namespace TraceEvent {
     }
   
     namespace CreateRenderFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -26615,7 +26615,7 @@ export namespace TraceEvent {
     }
   
     namespace DidCommitProvisionalLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           details: {
             base_url?: string;
@@ -26639,7 +26639,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDidAddContentSecurityPolicies {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
         };
@@ -26655,7 +26655,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDidFailProvisionalLoadWithError {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           error: number;
           frame_tree_node: number;
@@ -26672,7 +26672,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDidStopLoading {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
         };
@@ -26688,7 +26688,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDispatchLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
         };
@@ -26704,7 +26704,7 @@ export namespace TraceEvent {
     }
   
     namespace SwapOut {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -26716,7 +26716,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           frame_tree_node: number;
         };
@@ -26731,7 +26731,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderFrameHostImplBeforeUnload {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         'FrameTreeNode id': number;
       };
@@ -26743,7 +26743,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         '&RenderFrameHostImpl': string;
       };
@@ -26764,7 +26764,7 @@ export namespace TraceEvent {
       TraceEvent.RenderFrameHostManager.SwapOutOldFrame.X;
   
     namespace CommitPending {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'FrameTreeNode id': number;
         };
@@ -26780,7 +26780,7 @@ export namespace TraceEvent {
     }
   
     namespace SwapOutOldFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'FrameTreeNode id': number;
         };
@@ -26822,7 +26822,7 @@ export namespace TraceEvent {
       TraceEvent.RenderFrameImpl.Initialize.X;
   
     namespace CreateChildFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           child: number;
           id: number;
@@ -26839,7 +26839,7 @@ export namespace TraceEvent {
     }
   
     namespace DidCommitProvisionalLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
           url: string;
@@ -26856,7 +26856,7 @@ export namespace TraceEvent {
     }
   
     namespace DidFinishDocumentLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
         };
@@ -26872,7 +26872,7 @@ export namespace TraceEvent {
     }
   
     namespace DidFinishLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
         };
@@ -26888,7 +26888,7 @@ export namespace TraceEvent {
     }
   
     namespace DidStartLoading {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
         };
@@ -26904,7 +26904,7 @@ export namespace TraceEvent {
     }
   
     namespace DidStartProvisionalLoad {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
           url: string;
@@ -26921,7 +26921,7 @@ export namespace TraceEvent {
     }
   
     namespace DidStopLoading {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
         };
@@ -26937,7 +26937,7 @@ export namespace TraceEvent {
     }
   
     namespace Initialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           id: number;
           parent: number;
@@ -26955,7 +26955,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderPass {
-    interface D extends Base {
+    interface D extends TraceEvent.Base {
       args: {
       
       };
@@ -26973,7 +26973,7 @@ export namespace TraceEvent {
       TraceEvent.RenderProcessHostImpl.Send.X;
   
     namespace Send {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: number;
           line: number;
@@ -26994,7 +26994,7 @@ export namespace TraceEvent {
         TraceEvent.RenderProcessHostImpl.UpdateProcessPriority.SetProcessPriority.X;
     
       namespace SetProcessPriority {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             pid: number;
             priority_is_background: boolean;
@@ -27010,7 +27010,7 @@ export namespace TraceEvent {
         }
       }
     
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           has_pending_views: boolean;
           should_background: boolean;
@@ -27032,7 +27032,7 @@ export namespace TraceEvent {
       TraceEvent.RenderSurfaceImpl.AppendQuads.X;
   
     namespace AppendQuads {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           mask_layer_gpu_memory_usage: number;
         };
@@ -27059,7 +27059,7 @@ export namespace TraceEvent {
       TraceEvent.RenderTextHarfBuzz.ShapeRunWithFontInternal.X;
   
     namespace ItemizeTextToRuns {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           text_length: number;
         };
@@ -27075,7 +27075,7 @@ export namespace TraceEvent {
     }
   
     namespace ShapeRuns {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           run_count: number;
         };
@@ -27091,7 +27091,7 @@ export namespace TraceEvent {
     }
   
     namespace ShapeRunWithFontInternal {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27112,7 +27112,7 @@ export namespace TraceEvent {
       TraceEvent.RenderThreadImpl.EstablishGpuChannelSync.X;
   
     namespace EstablishGpuChannelSync {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27136,7 +27136,7 @@ export namespace TraceEvent {
       TraceEvent.RenderViewHostImpl.GetWebkitPrefs.X;
   
     namespace CreateRenderView {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27152,7 +27152,7 @@ export namespace TraceEvent {
     }
   
     namespace GetWebkitPrefs {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27194,7 +27194,7 @@ export namespace TraceEvent {
       TraceEvent.RenderWidget.WillBeginCompositorFrame.X;
   
     namespace DidCommitAndDrawCompositorFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27210,7 +27210,7 @@ export namespace TraceEvent {
     }
   
     namespace InitializeLayerTreeView {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27226,7 +27226,7 @@ export namespace TraceEvent {
     }
   
     namespace OnSynchronizeVisualProperties {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27242,7 +27242,7 @@ export namespace TraceEvent {
     }
   
     namespace OnWasHidden {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27258,7 +27258,7 @@ export namespace TraceEvent {
     }
   
     namespace OnWasShown {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27274,7 +27274,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateSelectionBounds {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27290,7 +27290,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateTextInputState {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27306,7 +27306,7 @@ export namespace TraceEvent {
     }
   
     namespace WillBeginCompositorFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27342,7 +27342,7 @@ export namespace TraceEvent {
       TraceEvent.RenderWidgetHostImpl.WasShown.X;
   
     namespace DidUpdateVisualProperties {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27358,7 +27358,7 @@ export namespace TraceEvent {
     }
   
     namespace ForwardKeyboardEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27374,7 +27374,7 @@ export namespace TraceEvent {
     }
   
     namespace ForwardMouseEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           x: number;
           y: number;
@@ -27391,7 +27391,7 @@ export namespace TraceEvent {
     }
   
     namespace GetScreenInfo {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27407,7 +27407,7 @@ export namespace TraceEvent {
     }
   
     namespace WasHidden {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27423,7 +27423,7 @@ export namespace TraceEvent {
     }
   
     namespace WasShown {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27453,7 +27453,7 @@ export namespace TraceEvent {
       TraceEvent.RenderWidgetHostViewCocoa.SendWindowFrameInScreenToClient.X;
   
     namespace KeyEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27469,7 +27469,7 @@ export namespace TraceEvent {
     }
   
     namespace MouseEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27485,7 +27485,7 @@ export namespace TraceEvent {
     }
   
     namespace SendViewBoundsInWindowToClient {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27501,7 +27501,7 @@ export namespace TraceEvent {
     }
   
     namespace SendWindowFrameInScreenToClient {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -27522,7 +27522,7 @@ export namespace TraceEvent {
       TraceEvent.RenderWidgetInputHandler.OnHandleInputEvent.X;
   
     namespace OnHandleInputEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           event: string;
         };
@@ -27539,7 +27539,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7f8e1500b000 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27553,7 +27553,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27567,7 +27567,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27580,7 +27580,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27595,7 +27595,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7fa57a039c00 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27609,7 +27609,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27623,7 +27623,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27636,7 +27636,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27651,7 +27651,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7fcab207b200 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27665,7 +27665,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27679,7 +27679,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27692,7 +27692,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27707,7 +27707,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7fd50f00aa00 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27721,7 +27721,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27735,7 +27735,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27748,7 +27748,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27763,7 +27763,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7fdabc07b400 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27777,7 +27777,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27791,7 +27791,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27804,7 +27804,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27819,7 +27819,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7fdefa843000 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27833,7 +27833,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27847,7 +27847,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27860,7 +27860,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27875,7 +27875,7 @@ export namespace TraceEvent {
   }
 
   namespace RenderWorker0x7fe5c4821c00 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27889,7 +27889,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27903,7 +27903,7 @@ export namespace TraceEvent {
       use_async_tts: number;
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27916,7 +27916,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         channel: string;
         gl_category: string;
@@ -27931,7 +27931,7 @@ export namespace TraceEvent {
   }
 
   namespace REQUEST_ALIVE {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           priority: string;
@@ -27947,7 +27947,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -27964,7 +27964,7 @@ export namespace TraceEvent {
   }
 
   namespace RequestAnimationFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -27988,7 +27988,7 @@ export namespace TraceEvent {
   }
 
   namespace RequestIdleCallback {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -28013,7 +28013,7 @@ export namespace TraceEvent {
   }
 
   namespace RequestMainThreadFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         layerTreeId: number;
       };
@@ -28027,7 +28027,7 @@ export namespace TraceEvent {
   }
 
   namespace RequestStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -28057,7 +28057,7 @@ export namespace TraceEvent {
         TraceEvent.Resource_coordinator.Mojom.ProcessCoordinationUnit.X;
     
       namespace CoordinationUnitProvider {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28073,7 +28073,7 @@ export namespace TraceEvent {
       }
     
       namespace FrameCoordinationUnit {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28089,7 +28089,7 @@ export namespace TraceEvent {
       }
     
       namespace PageCoordinationUnit {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28105,7 +28105,7 @@ export namespace TraceEvent {
       }
     
       namespace PageSignalReceiver {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28121,7 +28121,7 @@ export namespace TraceEvent {
       }
     
       namespace ProcessCoordinationUnit {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28143,7 +28143,7 @@ export namespace TraceEvent {
       TraceEvent.Resource.AppendData.X;
   
     namespace AppendData {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28160,7 +28160,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceChangePriority {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           priority: string;
@@ -28175,7 +28175,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           priority: string;
@@ -28204,7 +28204,7 @@ export namespace TraceEvent {
       TraceEvent.ResourceDispatcher.OnRequestComplete.X;
   
     namespace OnReceivedRedirect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28220,7 +28220,7 @@ export namespace TraceEvent {
     }
   
     namespace OnReceivedResponse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28236,7 +28236,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRequestComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28260,7 +28260,7 @@ export namespace TraceEvent {
       TraceEvent.ResourceFetcher.RequestResource.X;
   
     namespace DetermineRevalidationPolicy {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           revalidationPolicy: number;
         };
@@ -28274,7 +28274,7 @@ export namespace TraceEvent {
     }
   
     namespace RequestResource {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           url: {
             url: string;
@@ -28293,7 +28293,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceFinish {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           decodedBodyLength?: number;
@@ -28314,7 +28314,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceLoad {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         beginData: {
           url: string;
@@ -28331,7 +28331,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         endData: {
           outcome: string;
@@ -28354,7 +28354,7 @@ export namespace TraceEvent {
       TraceEvent.ResourceLoadPriorityOptimizer.UpdateAllImageResourcePriorities.X;
   
     namespace UpdateAllImageResourcePriorities {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28375,7 +28375,7 @@ export namespace TraceEvent {
       TraceEvent.ResourcePrefetchPredictor.StartInitialization.X;
   
     namespace StartInitialization {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28392,7 +28392,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourcePrioritySet {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         data: {
           priority: number;
@@ -28411,7 +28411,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceReceivedData {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           encodedDataLength: number;
@@ -28429,7 +28429,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceReceiveResponse {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           encodedDataLength?: number;
@@ -28469,7 +28469,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceSendRequest {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -28496,7 +28496,7 @@ export namespace TraceEvent {
   }
 
   namespace ResponseEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -28513,7 +28513,7 @@ export namespace TraceEvent {
       TraceEvent.RootScrollerController.PerformRootScrollerSelection.X;
   
     namespace PerformRootScrollerSelection {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28534,7 +28534,7 @@ export namespace TraceEvent {
       TraceEvent.RuleSet.AddRulesFromSheet.X;
   
     namespace AddRulesFromSheet {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28551,7 +28551,7 @@ export namespace TraceEvent {
   }
 
   namespace RunMicrotasks {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
       
       };
@@ -28562,7 +28562,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         microtask_count: number;
       };
@@ -28573,7 +28573,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -28589,7 +28589,7 @@ export namespace TraceEvent {
   }
 
   namespace RunTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -28605,7 +28605,7 @@ export namespace TraceEvent {
   }
 
   namespace RunWithFaviconResults {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -28635,7 +28635,7 @@ export namespace TraceEvent {
         TraceEvent.Safe_browsing.Mojom.SafeBrowsingUrlChecker.X;
     
       namespace PhishingDetector {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28651,7 +28651,7 @@ export namespace TraceEvent {
       }
     
       namespace PhishingModelSetter {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28667,7 +28667,7 @@ export namespace TraceEvent {
       }
     
       namespace SafeBrowsing {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28683,7 +28683,7 @@ export namespace TraceEvent {
       }
     
       namespace SafeBrowsingUrlChecker {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -28705,7 +28705,7 @@ export namespace TraceEvent {
       TraceEvent.ScheduledAction.Execute.X;
   
     namespace Execute {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -28722,7 +28722,7 @@ export namespace TraceEvent {
   }
 
   namespace ScheduledTasks {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -28734,7 +28734,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -28746,7 +28746,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface T extends Base {
+    interface T extends TraceEvent.Base {
       args: {
         state: {
           tasks_pending: {
@@ -28940,7 +28940,7 @@ export namespace TraceEvent {
       TraceEvent.Scheduler.WaitingForMeaningfulPaint.T;
   
     namespace AwaitingTouchstartResponse {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -28952,7 +28952,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -28966,7 +28966,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           args: {
             animate_only: boolean;
@@ -28992,7 +28992,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginFrameDropped {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -29006,7 +29006,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginFrameNotExpectedSoon {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29018,7 +29018,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29030,7 +29030,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29044,7 +29044,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginImplFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           args: {
             animate_only: boolean;
@@ -29071,7 +29071,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginMainFrameAborted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           reason: string;
         };
@@ -29087,7 +29087,7 @@ export namespace TraceEvent {
     }
   
     namespace BeginMainFrameOnCriticalPath {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29099,7 +29099,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29111,7 +29111,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29125,7 +29125,7 @@ export namespace TraceEvent {
     }
   
     namespace BlockingInputExpectedSoon {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29137,7 +29137,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29151,7 +29151,7 @@ export namespace TraceEvent {
     }
   
     namespace CompositorWillSendMainFrameNotExpected {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29163,7 +29163,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29175,7 +29175,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29189,7 +29189,7 @@ export namespace TraceEvent {
     }
   
     namespace DefaultGesturePrevented {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29201,7 +29201,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29215,7 +29215,7 @@ export namespace TraceEvent {
     }
   
     namespace DidCreateAndInitializeLayerTreeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -29231,7 +29231,7 @@ export namespace TraceEvent {
     }
   
     namespace DidLoseLayerTreeFrameSink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -29247,7 +29247,7 @@ export namespace TraceEvent {
     }
   
     namespace HasNavigated {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29259,7 +29259,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29271,7 +29271,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29285,7 +29285,7 @@ export namespace TraceEvent {
     }
   
     namespace HasReportedBlockingInterventionInCurrentPolicy {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29297,7 +29297,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29311,7 +29311,7 @@ export namespace TraceEvent {
     }
   
     namespace HasReportedBlockingInterventionSinceNavigation {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29323,7 +29323,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29337,7 +29337,7 @@ export namespace TraceEvent {
     }
   
     namespace HasSeenBeginMainFrame {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29349,7 +29349,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29361,7 +29361,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29375,7 +29375,7 @@ export namespace TraceEvent {
     }
   
     namespace HasVisibleRenderWidgetWithTouchHandler {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29387,7 +29387,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29399,7 +29399,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29413,7 +29413,7 @@ export namespace TraceEvent {
     }
   
     namespace HaveSeenBlockingGesture {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29425,7 +29425,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29439,7 +29439,7 @@ export namespace TraceEvent {
     }
   
     namespace HaveSeenInputSinceNavigation {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29451,7 +29451,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29465,7 +29465,7 @@ export namespace TraceEvent {
     }
   
     namespace Hidden {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29477,7 +29477,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29489,7 +29489,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29503,7 +29503,7 @@ export namespace TraceEvent {
     }
   
     namespace InIdlePeriod {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29515,7 +29515,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29527,7 +29527,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29541,7 +29541,7 @@ export namespace TraceEvent {
     }
   
     namespace KeepRendererActive {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29553,7 +29553,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29565,7 +29565,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29579,7 +29579,7 @@ export namespace TraceEvent {
     }
   
     namespace LastGestureWasCompositorDriven {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29591,7 +29591,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29605,7 +29605,7 @@ export namespace TraceEvent {
     }
   
     namespace LongestJankFreeTaskDuration {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -29619,7 +29619,7 @@ export namespace TraceEvent {
     }
   
     namespace MainThreadTask {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29631,7 +29631,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29643,7 +29643,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29657,7 +29657,7 @@ export namespace TraceEvent {
     }
   
     namespace MissedBeginFrameDropped {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -29671,7 +29671,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyBeginMainFrameStarted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -29687,7 +29687,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyReadyToCommit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -29703,7 +29703,7 @@ export namespace TraceEvent {
     }
   
     namespace Now {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           now: number;
         };
@@ -29719,7 +29719,7 @@ export namespace TraceEvent {
     }
   
     namespace OnBeginImplFrameDeadline {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -29735,7 +29735,7 @@ export namespace TraceEvent {
     }
   
     namespace PauseCount {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -29749,7 +29749,7 @@ export namespace TraceEvent {
     }
   
     namespace PauseTimersForWebview {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29761,7 +29761,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29775,7 +29775,7 @@ export namespace TraceEvent {
     }
   
     namespace Pending_submit_frames {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           pending_frames: number;
         };
@@ -29787,7 +29787,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           pending_frames: number;
         };
@@ -29801,7 +29801,7 @@ export namespace TraceEvent {
     }
   
     namespace RAILMode {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29813,7 +29813,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29825,7 +29825,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -29839,7 +29839,7 @@ export namespace TraceEvent {
     }
   
     namespace RunNextTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           state: {
             order_num: number;
@@ -29859,7 +29859,7 @@ export namespace TraceEvent {
     }
   
     namespace Running {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -29871,7 +29871,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -29885,7 +29885,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleBeginImplFrameDeadline {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'deadline mode': string;
           'new deadline': number;
@@ -29902,7 +29902,7 @@ export namespace TraceEvent {
     }
   
     namespace Scheduler {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           settings: {
             background_frame_interval: number;
@@ -29936,7 +29936,7 @@ export namespace TraceEvent {
         TraceEvent.Scheduler.Sequence.UpdateSchedulingPriority.X;
     
       namespace RemoveWaitingPriority {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             new_priority: string;
             sequence_id: number;
@@ -29953,7 +29953,7 @@ export namespace TraceEvent {
       }
     
       namespace UpdateSchedulingPriority {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             new_priority: string;
             sequence_id: number;
@@ -29971,7 +29971,7 @@ export namespace TraceEvent {
     }
   
     namespace SetDeferMainFrameUpdate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           defer_main_frame_update: boolean;
         };
@@ -29987,7 +29987,7 @@ export namespace TraceEvent {
     }
   
     namespace SkipNextBeginMainFrameToReduceLatency {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -30001,7 +30001,7 @@ export namespace TraceEvent {
     }
   
     namespace TaskPriority {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -30013,7 +30013,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -30025,7 +30025,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -30039,7 +30039,7 @@ export namespace TraceEvent {
     }
   
     namespace UseCase {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -30051,7 +30051,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -30063,7 +30063,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -30077,7 +30077,7 @@ export namespace TraceEvent {
     }
   
     namespace UseVirtualTime {
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -30089,7 +30089,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -30103,7 +30103,7 @@ export namespace TraceEvent {
     }
   
     namespace WaitingForMeaningfulPaint {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -30115,7 +30115,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -30127,7 +30127,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface T extends Base {
+      interface T extends TraceEvent.Base {
         args: {
           step: string;
         };
@@ -30146,7 +30146,7 @@ export namespace TraceEvent {
       TraceEvent.SchedulerStateMachine.SetNeedsPrepareTiles.X;
   
     namespace SetNeedsPrepareTiles {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30161,7 +30161,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         state: {
           begin_frame_observer_state: {
@@ -30318,7 +30318,7 @@ export namespace TraceEvent {
   }
 
   namespace SchedulerWorkerThreadactive {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
       
       };
@@ -30329,7 +30329,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -30342,7 +30342,7 @@ export namespace TraceEvent {
   }
 
   namespace SchedulerWorkerThreadborn {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -30356,7 +30356,7 @@ export namespace TraceEvent {
   }
 
   namespace SchedulerWorkerThreaddead {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -30370,7 +30370,7 @@ export namespace TraceEvent {
   }
 
   namespace ScheduleStyleInvalidationTracking {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           changedAttribute?: string;
@@ -30400,7 +30400,7 @@ export namespace TraceEvent {
   }
 
   namespace ScheduleStyleRecalculation {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -30423,7 +30423,7 @@ export namespace TraceEvent {
   }
 
   namespace ScopedBlockingCall {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         blocking_type: number;
       };
@@ -30434,7 +30434,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -30447,7 +30447,7 @@ export namespace TraceEvent {
   }
 
   namespace ScopedBlockingCallWithBaseSyncPrimitives {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         blocking_type: number;
       };
@@ -30458,7 +30458,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -30471,7 +30471,7 @@ export namespace TraceEvent {
   }
 
   namespace Screenshot {
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: string;
       };
@@ -30489,7 +30489,7 @@ export namespace TraceEvent {
       TraceEvent.ScriptRunner.ExecuteAsyncTask.X;
   
     namespace ExecuteAsyncTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30510,7 +30510,7 @@ export namespace TraceEvent {
       TraceEvent.ScrollAnchor.FindAnchor.X;
   
     namespace FindAnchor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30534,7 +30534,7 @@ export namespace TraceEvent {
       TraceEvent.ScrollingCoordinator.UpdateTouchEventTargetRectsIfNeeded.X;
   
     namespace UpdateAfterPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30550,7 +30550,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateTouchEventTargetRectsIfNeeded {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30577,7 +30577,7 @@ export namespace TraceEvent {
       TraceEvent.SearchProvider.Start.X;
   
     namespace OnURLLoadComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30593,7 +30593,7 @@ export namespace TraceEvent {
     }
   
     namespace Question_mark {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30609,7 +30609,7 @@ export namespace TraceEvent {
     }
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30636,7 +30636,7 @@ export namespace TraceEvent {
       TraceEvent.SelectionController.HandleMouseReleaseEvent.X;
   
     namespace HandleMousePressEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30652,7 +30652,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMousePressEventSingleClick {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30668,7 +30668,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleMouseReleaseEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30685,7 +30685,7 @@ export namespace TraceEvent {
   }
 
   namespace SequenceEnabled {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         sequence_id: number;
       };
@@ -30730,7 +30730,7 @@ export namespace TraceEvent {
       TraceEvent.SequenceManager.WillProcessTaskTimeObservers.X;
   
     namespace DidProcessTaskObservers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30746,7 +30746,7 @@ export namespace TraceEvent {
     }
   
     namespace DidProcessTaskTimeObservers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30762,7 +30762,7 @@ export namespace TraceEvent {
     }
   
     namespace PostTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30781,7 +30781,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueNotifyDidProcessTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30797,7 +30797,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueNotifyWillProcessTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30813,7 +30813,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueOnTaskCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30829,7 +30829,7 @@ export namespace TraceEvent {
     }
   
     namespace QueueOnTaskStarted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30845,7 +30845,7 @@ export namespace TraceEvent {
     }
   
     namespace RunTask {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           queue_type: string;
           task_type: number;
@@ -30859,7 +30859,7 @@ export namespace TraceEvent {
     }
   
     namespace WillProcessTaskObservers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30875,7 +30875,7 @@ export namespace TraceEvent {
     }
   
     namespace WillProcessTaskTimeObservers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -30890,7 +30890,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: {
           active_queues: {
@@ -31074,7 +31074,7 @@ export namespace TraceEvent {
       TraceEvent.SequenceManagerImpl.WakeUpReadyDelayedQueues.X;
   
     namespace NotifyDidProcessTaskObservers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31090,7 +31090,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyWillProcessTaskObservers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31106,7 +31106,7 @@ export namespace TraceEvent {
     }
   
     namespace RunTask {
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -31119,7 +31119,7 @@ export namespace TraceEvent {
     }
   
     namespace TakeTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31135,7 +31135,7 @@ export namespace TraceEvent {
     }
   
     namespace UnregisterTaskQueue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           queue_name: string;
         };
@@ -31151,7 +31151,7 @@ export namespace TraceEvent {
     }
   
     namespace WakeUpReadyDelayedQueues {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31175,7 +31175,7 @@ export namespace TraceEvent {
       TraceEvent.SerializedScriptValueFactory.Deserialize.X;
   
     namespace Create {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31191,7 +31191,7 @@ export namespace TraceEvent {
     }
   
     namespace Deserialize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31228,7 +31228,7 @@ export namespace TraceEvent {
         TraceEvent.Service_manager.Mojom.ServiceManagerListener.X;
     
       namespace Connector {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -31244,7 +31244,7 @@ export namespace TraceEvent {
       }
     
       namespace InterfaceProvider {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -31260,7 +31260,7 @@ export namespace TraceEvent {
       }
     
       namespace PIDReceiver {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -31276,7 +31276,7 @@ export namespace TraceEvent {
       }
     
       namespace Service {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -31292,7 +31292,7 @@ export namespace TraceEvent {
       }
     
       namespace ServiceFactory {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -31308,7 +31308,7 @@ export namespace TraceEvent {
       }
     
       namespace ServiceManagerListener {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -31330,7 +31330,7 @@ export namespace TraceEvent {
       TraceEvent.ServiceManager.Connect.I;
   
     namespace Connect {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           original_name: string;
         };
@@ -31350,7 +31350,7 @@ export namespace TraceEvent {
       TraceEvent.ServiceWorkerControlleeRequestHandler.PrepareForMainResource.S;
   
     namespace PrepareForMainResource {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           Status: string;
         };
@@ -31362,7 +31362,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
           URL: string;
         };
@@ -31381,7 +31381,7 @@ export namespace TraceEvent {
       TraceEvent.ServiceWorkerDispatcherHost.OnProviderCreated.X;
   
     namespace OnProviderCreated {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31405,7 +31405,7 @@ export namespace TraceEvent {
       TraceEvent.ServiceWorkerNavigationLoader.ServiceWorkerNavigationloader.X;
   
     namespace FallbackToNetwork {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31425,7 +31425,7 @@ export namespace TraceEvent {
     }
   
     namespace ServiceWorkerNavigationloader {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           url?: string;
         };
@@ -31450,7 +31450,7 @@ export namespace TraceEvent {
       TraceEvent.ServiceWorkerProviderHost.RemoveProviderHost.X;
   
     namespace RemoveProviderHost {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31472,7 +31472,7 @@ export namespace TraceEvent {
         TraceEvent.ServiceWorkerStorage.FindRegistrationForDocument.CheckInstalling.I;
     
       namespace CheckInstalling {
-        interface I extends Base {
+        interface I extends TraceEvent.Base {
           args: {
             Status: string;
             URL: string;
@@ -31489,7 +31489,7 @@ export namespace TraceEvent {
   }
 
   namespace SetIdlePeriodState {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         new_state: string;
         old_state: string;
@@ -31506,7 +31506,7 @@ export namespace TraceEvent {
   }
 
   namespace SetLayerTreeId {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame?: string;
@@ -31537,7 +31537,7 @@ export namespace TraceEvent {
       TraceEvent.SharedImageStub.OnRegisterSharedImageUploadBuffer.X;
   
     namespace OnCreateSharedImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -31554,7 +31554,7 @@ export namespace TraceEvent {
     }
   
     namespace OnCreateSharedImageWithData {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -31571,7 +31571,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDestroySharedImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31587,7 +31587,7 @@ export namespace TraceEvent {
     }
   
     namespace OnRegisterSharedImageUploadBuffer {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31604,7 +31604,7 @@ export namespace TraceEvent {
   }
 
   namespace ShCompile {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -31624,7 +31624,7 @@ export namespace TraceEvent {
       TraceEvent.ShortcutsProvider.Start.X;
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -31641,7 +31641,7 @@ export namespace TraceEvent {
   }
 
   namespace SIGNED_CERTIFICATE_TIMESTAMPS_CHECKED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           scts: {
@@ -31668,7 +31668,7 @@ export namespace TraceEvent {
   }
 
   namespace SIGNED_CERTIFICATE_TIMESTAMPS_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           embedded_scts: string;
@@ -31687,7 +31687,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CLOSE_BEGIN {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31702,7 +31702,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CLOSE_CALL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31717,7 +31717,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CLOSE_END {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31732,7 +31732,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CREATE_BEGIN {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31747,7 +31747,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CREATE_CALL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31762,7 +31762,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CREATE_END {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31777,7 +31777,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_CREATE_OPTIMISTIC {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31792,7 +31792,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_DOOM_BEGIN {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31807,7 +31807,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_DOOM_CALL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31822,7 +31822,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_DOOM_END {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31837,7 +31837,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_OPEN_BEGIN {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31852,7 +31852,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_OPEN_CALL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -31867,7 +31867,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_OPEN_END {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -31884,7 +31884,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_READ_BEGIN {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           buf_len: number;
@@ -31903,7 +31903,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_READ_CALL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           buf_len: number;
@@ -31922,7 +31922,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_READ_END {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           bytes_copied: number;
@@ -31939,7 +31939,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_SET_KEY {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           key: string;
@@ -31956,7 +31956,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_WRITE_BEGIN {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           buf_len: number;
@@ -31976,7 +31976,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_WRITE_CALL {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           buf_len: number;
@@ -31996,7 +31996,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_WRITE_END {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           bytes_copied: number;
@@ -32013,7 +32013,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY_WRITE_OPTIMISTIC {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           bytes_copied: number;
@@ -32030,7 +32030,7 @@ export namespace TraceEvent {
   }
 
   namespace SIMPLE_CACHE_ENTRY {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           entry_hash: string;
@@ -32045,7 +32045,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -32064,7 +32064,7 @@ export namespace TraceEvent {
       TraceEvent.SingleThreadIdleTaskRunner.RunTask.X;
   
     namespace RunTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           allotted_time_ms: number;
         };
@@ -32131,7 +32131,7 @@ export namespace TraceEvent {
       TraceEvent.SingleThreadProxy.SingleThreadProxy.X;
   
     namespace DidReceiveCompositorFrameAckOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32147,7 +32147,7 @@ export namespace TraceEvent {
     }
   
     namespace DoCommit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32163,7 +32163,7 @@ export namespace TraceEvent {
     }
   
     namespace DoComposite {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32179,7 +32179,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyReadyToActivate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32195,7 +32195,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyReadyToDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32211,7 +32211,7 @@ export namespace TraceEvent {
     }
   
     namespace OnCanDrawStateChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           can_draw: boolean;
         };
@@ -32227,7 +32227,7 @@ export namespace TraceEvent {
     }
   
     namespace PostAnimationEventsToMainThreadOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32243,7 +32243,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionPrepareTiles {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32259,7 +32259,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionSendBeginMainFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32275,7 +32275,7 @@ export namespace TraceEvent {
     }
   
     namespace SetDeferMainFrameUpdate {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
         
         };
@@ -32287,7 +32287,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -32301,7 +32301,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsAnimate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32317,7 +32317,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsOneBeginImplFrameOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32333,7 +32333,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsPrepareTilesOnImplThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32349,7 +32349,7 @@ export namespace TraceEvent {
     }
   
     namespace SetNeedsUpdateLayers {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32365,7 +32365,7 @@ export namespace TraceEvent {
     }
   
     namespace SetVisible {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           visible: boolean;
         };
@@ -32381,7 +32381,7 @@ export namespace TraceEvent {
     }
   
     namespace SingleThreadProxy {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32411,7 +32411,7 @@ export namespace TraceEvent {
       TraceEvent.SingleThreadTaskGraphRunner.WaitForTasksToFinishRunning.X;
   
     namespace CollectCompletedTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32427,7 +32427,7 @@ export namespace TraceEvent {
     }
   
     namespace RunTaskWithLockAcquired {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32443,7 +32443,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           num_edges: number;
           num_nodes: number;
@@ -32460,7 +32460,7 @@ export namespace TraceEvent {
     }
   
     namespace WaitForTasksToFinishRunning {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32487,7 +32487,7 @@ export namespace TraceEvent {
       TraceEvent.SiteInstanceImpl.SetSite.X;
   
     namespace GetProcess {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'process id': number;
           'site id': number;
@@ -32504,7 +32504,7 @@ export namespace TraceEvent {
     }
   
     namespace LockToOrigin {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           lock: string;
           'site id': number;
@@ -32521,7 +32521,7 @@ export namespace TraceEvent {
     }
   
     namespace SetSite {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           'site id': number;
           url: string;
@@ -32565,7 +32565,7 @@ export namespace TraceEvent {
         TraceEvent.SkCanvas.DrawImageRectSkImageSkRectSkRectSkPaintSkCanvas.SrcRectConstraint.X;
     
       namespace SrcRectConstraint {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -32582,7 +32582,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawImageSkImageSkScalarSkScalarSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32598,7 +32598,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawOvalSkRectSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32614,7 +32614,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPaintSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32630,7 +32630,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPathSkPathSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32650,7 +32650,7 @@ export namespace TraceEvent {
         TraceEvent.SkCanvas.DrawPointsSkCanvas.PointModesize_tSkPointSkPaint.X;
     
       namespace PointModesize_tSkPointSkPaint {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -32667,7 +32667,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRectSkRectSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32683,7 +32683,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRRectSkRRectSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32699,7 +32699,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawTextBlobSkTextBlobSkScalarSkScalarSkPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32720,7 +32720,7 @@ export namespace TraceEvent {
           TraceEvent.SkCanvas.InternalSaveLayerSkCanvas.SaveLayerRecSkCanvas.SaveLayerStrategy.X;
       
         namespace SaveLayerStrategy {
-          interface X extends Base {
+          interface X extends TraceEvent.Base {
             args: {
             
             };
@@ -32742,7 +32742,7 @@ export namespace TraceEvent {
         TraceEvent.SkCanvas.SaveLayerSkCanvas.SaveLayerRec.X;
     
       namespace SaveLayerRec {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -32794,7 +32794,7 @@ export namespace TraceEvent {
       TraceEvent.SkGpuDevice.DrawStrokedLine.X;
   
     namespace ClearAll {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32810,7 +32810,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawDevice {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32826,7 +32826,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawGlyphRunList {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32842,7 +32842,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawOval {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32858,7 +32858,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32874,7 +32874,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPath {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32890,7 +32890,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawPoints {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32906,7 +32906,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32922,7 +32922,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawRRect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32938,7 +32938,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawSpecial {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32954,7 +32954,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawStrokedLine {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -32975,7 +32975,7 @@ export namespace TraceEvent {
       TraceEvent.Skia_gpu.GLShader.I;
   
     namespace GLShader {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           shader: string;
         };
@@ -32990,7 +32990,7 @@ export namespace TraceEvent {
   }
 
   namespace Skiabudget {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         free: number;
         used: number;
@@ -33004,7 +33004,7 @@ export namespace TraceEvent {
   }
 
   namespace SkipBeginImplFrameToReduceLatency {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -33018,7 +33018,7 @@ export namespace TraceEvent {
   }
 
   namespace SkipBeginMainFrameToReduceLatency {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -33032,7 +33032,7 @@ export namespace TraceEvent {
   }
 
   namespace SmallPathOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -33048,7 +33048,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_ALIVE {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -33066,7 +33066,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -33081,7 +33081,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_BYTES_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -33098,7 +33098,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_BYTES_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -33115,7 +33115,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_IN_USE {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -33133,7 +33133,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -33148,7 +33148,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_POOL_BOUND_TO_CONNECT_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -33168,7 +33168,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_POOL_BOUND_TO_SOCKET {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           source_dependency: {
@@ -33188,7 +33188,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_POOL_CONNECT_JOB_CONNECT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -33201,7 +33201,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -33218,7 +33218,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_POOL_CONNECT_JOB {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           group_name: string;
@@ -33233,7 +33233,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -33248,7 +33248,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_POOL_REUSED_AN_EXISTING_SOCKET {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           idle_ms: number;
@@ -33265,7 +33265,7 @@ export namespace TraceEvent {
   }
 
   namespace SOCKET_POOL {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -33278,7 +33278,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -33299,7 +33299,7 @@ export namespace TraceEvent {
       TraceEvent.SocketPosix.OnFileCanReadWithoutBlocking.X;
   
     namespace OnFileCanReadWithoutBlocking {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33332,7 +33332,7 @@ export namespace TraceEvent {
       TraceEvent.SoftwareImageDecodeCache.UnrefImage.X;
   
     namespace DecodeImageIfNecessary {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           key: string;
         };
@@ -33348,7 +33348,7 @@ export namespace TraceEvent {
     }
   
     namespace DrawWithImageFinished {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           key: string;
         };
@@ -33364,7 +33364,7 @@ export namespace TraceEvent {
     }
   
     namespace GetDecodedImageForDrawInternal {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           key: string;
         };
@@ -33380,7 +33380,7 @@ export namespace TraceEvent {
     }
   
     namespace ReduceCacheUsageUntilWithinLimit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33396,7 +33396,7 @@ export namespace TraceEvent {
     }
   
     namespace UnrefImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           key: string;
         };
@@ -33420,7 +33420,7 @@ export namespace TraceEvent {
       TraceEvent.SolidColorAnalyzer.CheckIfSolidShape.X;
   
     namespace CheckIfRRectClipCoversCanvas {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33436,7 +33436,7 @@ export namespace TraceEvent {
     }
   
     namespace CheckIfSolidShape {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33457,7 +33457,7 @@ export namespace TraceEvent {
       TraceEvent.SpdySessionPool.CreateAvailableSessionFromSocket.X;
   
     namespace CreateAvailableSessionFromSocket {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33474,7 +33474,7 @@ export namespace TraceEvent {
   }
 
   namespace SpeedIndex {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -33484,7 +33484,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -33504,7 +33504,7 @@ export namespace TraceEvent {
         TraceEvent.Spellcheck.Mojom.SpellCheckHost.X;
     
       namespace SpellChecker {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -33520,7 +33520,7 @@ export namespace TraceEvent {
       }
     
       namespace SpellCheckHost {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -33538,7 +33538,7 @@ export namespace TraceEvent {
   }
 
   namespace SSL_CONNECT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -33551,7 +33551,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           cipher_suite: number;
@@ -33571,7 +33571,7 @@ export namespace TraceEvent {
   }
 
   namespace SSL_HANDSHAKE_MESSAGE_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           bytes: string;
@@ -33589,7 +33589,7 @@ export namespace TraceEvent {
   }
 
   namespace SSL_HANDSHAKE_MESSAGE_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           bytes: string;
@@ -33607,7 +33607,7 @@ export namespace TraceEvent {
   }
 
   namespace SSL_SOCKET_BYTES_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -33624,7 +33624,7 @@ export namespace TraceEvent {
   }
 
   namespace SSL_SOCKET_BYTES_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -33645,7 +33645,7 @@ export namespace TraceEvent {
       TraceEvent.SSLClientSocketImpl.DoHandshakeLoop.X;
   
     namespace DoHandshakeLoop {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33669,7 +33669,7 @@ export namespace TraceEvent {
       TraceEvent.SSLConnectJob.DoSSLConnect.X;
   
     namespace DoLoop {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33685,7 +33685,7 @@ export namespace TraceEvent {
     }
   
     namespace DoSSLConnect {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33702,7 +33702,7 @@ export namespace TraceEvent {
   }
 
   namespace StackCpuSampling {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frames: string;
         thread_id: number;
@@ -33727,7 +33727,7 @@ export namespace TraceEvent {
       TraceEvent.StackSamplingProfiler.Started.X;
   
     namespace StackSamplingProfiler {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33743,7 +33743,7 @@ export namespace TraceEvent {
     }
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33759,7 +33759,7 @@ export namespace TraceEvent {
     }
   
     namespace Started {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           profiler_id: number;
         };
@@ -33776,7 +33776,7 @@ export namespace TraceEvent {
   }
 
   namespace StartIdlePeriod {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -33797,7 +33797,7 @@ export namespace TraceEvent {
         TraceEvent.Startup_metric_utils.Mojom.StartupMetricHost.X;
     
       namespace StartupMetricHost {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -33820,7 +33820,7 @@ export namespace TraceEvent {
         TraceEvent.StructTraits.CompositorFrame.Read.X;
     
       namespace Read {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -33841,7 +33841,7 @@ export namespace TraceEvent {
         TraceEvent.StructTraits.RenderPass.Read.X;
     
       namespace Read {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -33862,7 +33862,7 @@ export namespace TraceEvent {
         TraceEvent.StructTraits.TransferableResource.Read.X;
     
       namespace Read {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -33884,7 +33884,7 @@ export namespace TraceEvent {
       TraceEvent.StyleElement.ProcessStyleSheet.X;
   
     namespace ProcessStyleSheet {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33911,7 +33911,7 @@ export namespace TraceEvent {
       TraceEvent.StyleEngine.UpdateActiveStyleSheets.X;
   
     namespace ClearResolver {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frame: string;
         };
@@ -33927,7 +33927,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleInvalidationsForRuleSets {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33943,7 +33943,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateActiveStyleSheets {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -33960,7 +33960,7 @@ export namespace TraceEvent {
   }
 
   namespace StyleRecalcInvalidationTracking {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           extraData: string;
@@ -33987,7 +33987,7 @@ export namespace TraceEvent {
   }
 
   namespace SubImage {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -34007,7 +34007,7 @@ export namespace TraceEvent {
       TraceEvent.SubmitCompositorFrame.TimeElapsed.I;
   
     namespace TimeElapsed {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           'elapsed time:': number;
         };
@@ -34020,7 +34020,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface f extends Base {
+    interface f extends TraceEvent.Base {
       args: {
       
       };
@@ -34032,7 +34032,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface s extends Base {
+    interface s extends TraceEvent.Base {
       args: {
       
       };
@@ -34046,7 +34046,7 @@ export namespace TraceEvent {
   }
 
   namespace Submitrejectedtoevictedsurface {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -34060,7 +34060,7 @@ export namespace TraceEvent {
   }
 
   namespace SubresourceFilterMsg_SetRulesetForProcess {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -34086,7 +34086,7 @@ export namespace TraceEvent {
       TraceEvent.SubresourceFilterSafeBrowsingActivationThrottle.NotifyResult.X;
   
     namespace DoesMainFrameURLSatisfyActivationConditions {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           conditions: {
             activation_list: string;
@@ -34107,7 +34107,7 @@ export namespace TraceEvent {
     }
   
     namespace GetHighestPriorityConfiguration {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           selected_config: {
             activation_conditions?: {
@@ -34132,7 +34132,7 @@ export namespace TraceEvent {
     }
   
     namespace NotifyResult {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34149,7 +34149,7 @@ export namespace TraceEvent {
   }
 
   namespace SubresourceFilterSBCheck {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         check_result: {
           'check_time (us)': number;
@@ -34173,7 +34173,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         check_result: {
         
@@ -34189,7 +34189,7 @@ export namespace TraceEvent {
   }
 
   namespace Subthread_default_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -34209,7 +34209,7 @@ export namespace TraceEvent {
       TraceEvent.Surface.OnDeadline.X;
   
     namespace ActivateFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           FrameSinkId: string;
         };
@@ -34225,7 +34225,7 @@ export namespace TraceEvent {
     }
   
     namespace OnDeadline {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           FrameSinkId: string;
         };
@@ -34240,7 +34240,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         surface_info: string;
       };
@@ -34252,7 +34252,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         surface_info: string;
       };
@@ -34270,7 +34270,7 @@ export namespace TraceEvent {
       TraceEvent.SurfaceLayer.PushPropertiesTo.X;
   
     namespace PushPropertiesTo {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34291,7 +34291,7 @@ export namespace TraceEvent {
       TraceEvent.SurfaceManager.GarbageCollectSurfaces.X;
   
     namespace GarbageCollectSurfaces {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34308,7 +34308,7 @@ export namespace TraceEvent {
   }
 
   namespace SwapBuffers {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         GLImpl: number;
         width: number;
@@ -34323,7 +34323,7 @@ export namespace TraceEvent {
   }
 
   namespace Swapskipped {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -34337,7 +34337,7 @@ export namespace TraceEvent {
   }
 
   namespace Swapthrottled {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -34356,7 +34356,7 @@ export namespace TraceEvent {
       TraceEvent.SyncChannel.Send.X;
   
     namespace Send {
-      interface f extends Base {
+      interface f extends TraceEvent.Base {
         args: {
         
         };
@@ -34368,7 +34368,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: number;
           line: number;
@@ -34389,7 +34389,7 @@ export namespace TraceEvent {
         TraceEvent.SyncChannel.SyncContext.TryToUnblockListener.s;
     
       namespace TryToUnblockListener {
-        interface s extends Base {
+        interface s extends TraceEvent.Base {
           args: {
           
           };
@@ -34409,7 +34409,7 @@ export namespace TraceEvent {
       TraceEvent.TabManager.LoadNextBackgroundTabIfNeeded.I;
   
     namespace LoadNextBackgroundTabIfNeeded {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           data: {
             background_tab_loading_mode: number;
@@ -34434,7 +34434,7 @@ export namespace TraceEvent {
       TraceEvent.TabSwitching.Latency.S;
   
     namespace Latency {
-      interface F extends Base {
+      interface F extends TraceEvent.Base {
         args: {
           latency: number;
         };
@@ -34448,7 +34448,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface S extends Base {
+      interface S extends TraceEvent.Base {
         args: {
         
         };
@@ -34465,7 +34465,7 @@ export namespace TraceEvent {
   }
 
   namespace TabSwitchVisibilityRequest {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
       
       };
@@ -34477,7 +34477,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -34495,7 +34495,7 @@ export namespace TraceEvent {
       TraceEvent.TaskGraphRunner.RunTask.X;
   
     namespace RunTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           source_frame_number_: number;
         };
@@ -34516,7 +34516,7 @@ export namespace TraceEvent {
       TraceEvent.TaskQueueManager.ProcessTaskFromWorkQueue.X;
   
     namespace ProcessTaskFromWorkQueue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           src_file: string;
           src_func: string;
@@ -34534,7 +34534,7 @@ export namespace TraceEvent {
   }
 
   namespace TaskQueueThrottler_TaskQueueThrottled {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         task_queue: string;
       };
@@ -34550,7 +34550,7 @@ export namespace TraceEvent {
   }
 
   namespace TaskQueueThrottler_TaskQueueUnthrottled {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         task_queue: string;
       };
@@ -34576,7 +34576,7 @@ export namespace TraceEvent {
       TraceEvent.TaskQueueThrottler.PumpThrottledTasks.X;
   
     namespace MaybeSchedulePumpThrottledTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           delay_till_next_pump_ms: number;
         };
@@ -34592,7 +34592,7 @@ export namespace TraceEvent {
     }
   
     namespace OnQueueNextWakeUpChanged {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34608,7 +34608,7 @@ export namespace TraceEvent {
     }
   
     namespace PumpThrottledTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34625,7 +34625,7 @@ export namespace TraceEvent {
   }
 
   namespace TaskSchedulerPostTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -34645,7 +34645,7 @@ export namespace TraceEvent {
   }
 
   namespace TaskSchedulerRunTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         src_file: string;
         src_func: string;
@@ -34666,7 +34666,7 @@ export namespace TraceEvent {
       TraceEvent.TaskSetFinishedTaskImpl.RunOnWorkerThread.X;
   
     namespace RunOnWorkerThread {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34687,7 +34687,7 @@ export namespace TraceEvent {
       TraceEvent.TaskTracker.RunTask.X;
   
     namespace RunTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           task_info: {
             execution_mode: string;
@@ -34708,7 +34708,7 @@ export namespace TraceEvent {
   }
 
   namespace TCP_CLIENT_SOCKET_POOL_REQUESTED_SOCKET {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           group: string;
@@ -34725,7 +34725,7 @@ export namespace TraceEvent {
   }
 
   namespace TCP_CONNECT_ATTEMPT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           address: string;
@@ -34740,7 +34740,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -34755,7 +34755,7 @@ export namespace TraceEvent {
   }
 
   namespace TCP_CONNECT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           address_list: {
@@ -34790,7 +34790,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           source_address: string;
@@ -34807,7 +34807,7 @@ export namespace TraceEvent {
   }
 
   namespace TessellatingPathOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -34827,7 +34827,7 @@ export namespace TraceEvent {
       TraceEvent.Textfield.PaintTextAndCursor.X;
   
     namespace PaintTextAndCursor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34848,7 +34848,7 @@ export namespace TraceEvent {
       TraceEvent.TextureManager.ValidateAndDoTexSubImage.X;
   
     namespace ValidateAndDoTexSubImage {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34865,7 +34865,7 @@ export namespace TraceEvent {
   }
 
   namespace TextureOp {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -34881,7 +34881,7 @@ export namespace TraceEvent {
   }
 
   namespace Thread_name {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         name: string;
       };
@@ -34892,7 +34892,7 @@ export namespace TraceEvent {
   }
 
   namespace Thread_sort_index {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         sort_index: number;
       };
@@ -34910,7 +34910,7 @@ export namespace TraceEvent {
       TraceEvent.ThreadControllerImpl.RunTask.X;
   
     namespace DoWork {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -34926,7 +34926,7 @@ export namespace TraceEvent {
     }
   
     namespace RunTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           src_file?: string;
           src_func?: string;
@@ -34950,7 +34950,7 @@ export namespace TraceEvent {
         TraceEvent.ThreadControllerImpl.ScheduleWork.PostTask.X;
     
       namespace PostTask {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -34977,7 +34977,7 @@ export namespace TraceEvent {
       TraceEvent.ThreadProxy.ScheduledActionSendBeginMainFrame.E;
   
     namespace BeginMainFrame {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           begin_frame_id: number;
         };
@@ -34988,7 +34988,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -35001,7 +35001,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduledActionSendBeginMainFrame {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           begin_frame_id: number;
         };
@@ -35012,7 +35012,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -35042,7 +35042,7 @@ export namespace TraceEvent {
       TraceEvent.ThreadState.PerformIdleLazySweep.X;
   
     namespace HeapEstimatedSizeKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -35055,7 +35055,7 @@ export namespace TraceEvent {
     }
   
     namespace HeapGrowingRate {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -35068,7 +35068,7 @@ export namespace TraceEvent {
     }
   
     namespace PartitionAllocEstimatedSizeKB {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -35081,7 +35081,7 @@ export namespace TraceEvent {
     }
   
     namespace PartitionAllocGrowingRate {
-      interface C extends Base {
+      interface C extends TraceEvent.Base {
         args: {
           value: number;
         };
@@ -35094,7 +35094,7 @@ export namespace TraceEvent {
     }
   
     namespace PerformIdleLazySweep {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           idleDeltaInSeconds: number;
         };
@@ -35164,7 +35164,7 @@ export namespace TraceEvent {
       TraceEvent.TileManager.ScheduleTasks.X;
   
     namespace AssignGpuMemorytileviolatesmemorypolicy {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -35178,7 +35178,7 @@ export namespace TraceEvent {
     }
   
     namespace AssignGpuMemoryToTiles {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -35189,7 +35189,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           all_tiles_that_need_to_be_rasterized_are_scheduled: boolean;
           had_enough_memory_to_schedule_tiles_needed_now: boolean;
@@ -35203,7 +35203,7 @@ export namespace TraceEvent {
     }
   
     namespace CheckForCompletedTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35219,7 +35219,7 @@ export namespace TraceEvent {
     }
   
     namespace CheckForCompletedTasksFinished {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           stats: {
             canceled_count: number;
@@ -35236,7 +35236,7 @@ export namespace TraceEvent {
     }
   
     namespace CheckPendingGpuWorkAndIssueSignals {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           pending_gpu_work_tiles: number;
           tree_priority: string;
@@ -35253,7 +35253,7 @@ export namespace TraceEvent {
     }
   
     namespace CreateRasterTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           Tile?: number;
         };
@@ -35269,7 +35269,7 @@ export namespace TraceEvent {
     }
   
     namespace DidFinishRunningAllTileTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35285,7 +35285,7 @@ export namespace TraceEvent {
     }
   
     namespace DidFinishRunningTileTasksRequiredForActivation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35301,7 +35301,7 @@ export namespace TraceEvent {
     }
   
     namespace DidFinishRunningTileTasksRequiredForDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35317,7 +35317,7 @@ export namespace TraceEvent {
     }
   
     namespace FlushAndIssueSignals {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35333,7 +35333,7 @@ export namespace TraceEvent {
     }
   
     namespace IsReadyToActivate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35349,7 +35349,7 @@ export namespace TraceEvent {
     }
   
     namespace IsReadyToDraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35365,7 +35365,7 @@ export namespace TraceEvent {
     }
   
     namespace IssueSignalsalltiletaskscompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35381,7 +35381,7 @@ export namespace TraceEvent {
     }
   
     namespace IssueSignalsreadytoactivate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35397,7 +35397,7 @@ export namespace TraceEvent {
     }
   
     namespace IssueSignalsreadytodraw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35413,7 +35413,7 @@ export namespace TraceEvent {
     }
   
     namespace PrepareTiles {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           prepare_tiles_id: number;
         };
@@ -35429,7 +35429,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           count: number;
         };
@@ -35456,7 +35456,7 @@ export namespace TraceEvent {
       TraceEvent.TileTaskManagerImpl.Shutdown.X;
   
     namespace CheckForCompletedTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35472,7 +35472,7 @@ export namespace TraceEvent {
     }
   
     namespace ScheduleTasks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35488,7 +35488,7 @@ export namespace TraceEvent {
     }
   
     namespace Shutdown {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35518,7 +35518,7 @@ export namespace TraceEvent {
       TraceEvent.TimeoutMonitor.TimeOutHandler.X;
   
     namespace Restart {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -35532,7 +35532,7 @@ export namespace TraceEvent {
     }
   
     namespace Start {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -35546,7 +35546,7 @@ export namespace TraceEvent {
     }
   
     namespace Stop {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
         
         };
@@ -35560,7 +35560,7 @@ export namespace TraceEvent {
     }
   
     namespace TimeOutHandler {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35575,7 +35575,7 @@ export namespace TraceEvent {
       }
     }
   
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         result: string;
       };
@@ -35587,7 +35587,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
       
       };
@@ -35605,7 +35605,7 @@ export namespace TraceEvent {
       TraceEvent.TimerBase.Run.X;
   
     namespace Run {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35622,7 +35622,7 @@ export namespace TraceEvent {
   }
 
   namespace TimerFire {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -35641,7 +35641,7 @@ export namespace TraceEvent {
   }
 
   namespace TimerInstall {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -35667,7 +35667,7 @@ export namespace TraceEvent {
   }
 
   namespace TimerRemove {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -35691,7 +35691,7 @@ export namespace TraceEvent {
   }
 
   namespace TimeStamp {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -35708,7 +35708,7 @@ export namespace TraceEvent {
   }
 
   namespace TimeToDomReady {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -35720,7 +35720,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -35734,7 +35734,7 @@ export namespace TraceEvent {
   }
 
   namespace TimeToInteractive {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -35746,7 +35746,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -35760,7 +35760,7 @@ export namespace TraceEvent {
   }
 
   namespace TimeToZonesAndDomReady {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -35772,7 +35772,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -35786,7 +35786,7 @@ export namespace TraceEvent {
   }
 
   namespace TimeToZonesComplete {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -35798,7 +35798,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -35812,7 +35812,7 @@ export namespace TraceEvent {
   }
 
   namespace TopLevel {
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: {
         
@@ -35833,7 +35833,7 @@ export namespace TraceEvent {
       TraceEvent.ToSpaceUpdatingItem.ProcessVisitAll.X;
   
     namespace ProcessVisitAll {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -35850,7 +35850,7 @@ export namespace TraceEvent {
   }
 
   namespace Trace_buffer_overflowed {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         overflowed_at_ts: number;
       };
@@ -35878,7 +35878,7 @@ export namespace TraceEvent {
         TraceEvent.Tracing.Mojom.ProducerHost.X;
     
       namespace Agent {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -35894,7 +35894,7 @@ export namespace TraceEvent {
       }
     
       namespace AgentRegistry {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -35910,7 +35910,7 @@ export namespace TraceEvent {
       }
     
       namespace Coordinator {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -35926,7 +35926,7 @@ export namespace TraceEvent {
       }
     
       namespace PerfettoService {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -35942,7 +35942,7 @@ export namespace TraceEvent {
       }
     
       namespace ProducerHost {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -35960,7 +35960,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingHostMsg_ChildSupportsTracing {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -35976,7 +35976,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingMsg_SetTracingProcessId {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -35992,7 +35992,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingSessionIdForWorker {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -36011,7 +36011,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingStartedInBrowser {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frameTreeNodeId: number;
@@ -36034,7 +36034,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingStartedInPage {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           page: string;
@@ -36055,7 +36055,7 @@ export namespace TraceEvent {
       TraceEvent.TransferBuffer.Free.X;
   
     namespace Free {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -36072,7 +36072,7 @@ export namespace TraceEvent {
   }
 
   namespace TransfersBytesPendingOnDisk {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -36085,7 +36085,7 @@ export namespace TraceEvent {
   }
 
   namespace TransfersPendingOnDisk {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -36103,7 +36103,7 @@ export namespace TraceEvent {
         TraceEvent.Translate.Mojom.ContentTranslateDriver.X;
     
       namespace ContentTranslateDriver {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -36125,7 +36125,7 @@ export namespace TraceEvent {
       TraceEvent.TransportConnectJob.DoResolveHostComplete.X;
   
     namespace DoResolveHostComplete {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -36153,7 +36153,7 @@ export namespace TraceEvent {
         TraceEvent.TreeSynchronizer.PushLayerPropertiesTo.Main.X;
     
       namespace Impl {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             layer_count: number;
           };
@@ -36169,7 +36169,7 @@ export namespace TraceEvent {
       }
     
       namespace Main {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
             layer_count: number;
           };
@@ -36186,7 +36186,7 @@ export namespace TraceEvent {
     }
   
     namespace SynchronizeTrees {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -36203,7 +36203,7 @@ export namespace TraceEvent {
   }
 
   namespace TrianglesDrawn {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -36216,7 +36216,7 @@ export namespace TraceEvent {
   }
 
   namespace UDP_BYTES_RECEIVED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           address: string;
@@ -36234,7 +36234,7 @@ export namespace TraceEvent {
   }
 
   namespace UDP_BYTES_SENT {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -36251,7 +36251,7 @@ export namespace TraceEvent {
   }
 
   namespace UDP_CONNECT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           address: string;
@@ -36266,7 +36266,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36281,7 +36281,7 @@ export namespace TraceEvent {
   }
 
   namespace UDP_LOCAL_ADDRESS {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           address: string;
@@ -36303,7 +36303,7 @@ export namespace TraceEvent {
         TraceEvent.UDPSocketPosix.ReadWatcher.OnFileCanReadWithoutBlocking.X;
     
       namespace OnFileCanReadWithoutBlocking {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -36326,7 +36326,7 @@ export namespace TraceEvent {
         TraceEvent.Ukm.Mojom.UkmRecorderInterface.X;
     
       namespace UkmRecorderInterface {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -36344,7 +36344,7 @@ export namespace TraceEvent {
   }
 
   namespace Unknowninterface {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -36360,7 +36360,7 @@ export namespace TraceEvent {
   }
 
   namespace UnloadEventEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -36373,7 +36373,7 @@ export namespace TraceEvent {
   }
 
   namespace UnloadEventStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -36386,7 +36386,7 @@ export namespace TraceEvent {
   }
 
   namespace UpdateCounters {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           documents: number;
@@ -36405,7 +36405,7 @@ export namespace TraceEvent {
   }
 
   namespace UpdateLayer {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         layerId: number;
         layerTreeId: number;
@@ -36417,7 +36417,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -36430,7 +36430,7 @@ export namespace TraceEvent {
   }
 
   namespace UpdateLayerTree {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -36448,7 +36448,7 @@ export namespace TraceEvent {
   }
 
   namespace UpdateLayoutTree {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         beginData: {
           frame: string;
@@ -36468,7 +36468,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         elementCount: number;
       };
@@ -36481,7 +36481,7 @@ export namespace TraceEvent {
   }
 
   namespace UpdateLongIdlePeriodStateAfterIdleTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -36497,7 +36497,7 @@ export namespace TraceEvent {
   }
 
   namespace UpdateStateFromAnimationDrivers {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -36513,7 +36513,7 @@ export namespace TraceEvent {
   }
 
   namespace UPLOAD_DATA_STREAM_INIT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36526,7 +36526,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           is_chunked: boolean;
@@ -36545,7 +36545,7 @@ export namespace TraceEvent {
   }
 
   namespace UPLOAD_DATA_STREAM_READ {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           current_position: number;
@@ -36560,7 +36560,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36575,7 +36575,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_DELEGATE_RECEIVED_REDIRECT {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36588,7 +36588,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36603,7 +36603,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_DELEGATE_RESPONSE_STARTED {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36616,7 +36616,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: string;
         source_type: string;
@@ -36631,7 +36631,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_FAKE_RESPONSE_HEADERS_CREATED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           headers: {
@@ -36679,7 +36679,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_FILTERS_SET {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           filters: string;
@@ -36696,7 +36696,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_JOB_BYTES_READ {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -36713,7 +36713,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_JOB_FILTERED_BYTES_READ {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           byte_count: number;
@@ -36730,7 +36730,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_REDIRECT_JOB {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           reason: string;
@@ -36747,7 +36747,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_REDIRECTED {
-    interface n extends Base {
+    interface n extends TraceEvent.Base {
       args: {
         params: {
           location: string;
@@ -36764,7 +36764,7 @@ export namespace TraceEvent {
   }
 
   namespace URL_REQUEST_START_JOB {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
         params: {
           load_flags: number;
@@ -36783,7 +36783,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
         params: {
           net_error: number;
@@ -36804,7 +36804,7 @@ export namespace TraceEvent {
       TraceEvent.UrlPatternIndexMatcher.FindMatch.X;
   
     namespace FindMatch {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           pattern: string;
         };
@@ -36828,7 +36828,7 @@ export namespace TraceEvent {
       TraceEvent.URLRequestHttpJob.OnStartCompleted.X;
   
     namespace OnReadCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -36844,7 +36844,7 @@ export namespace TraceEvent {
     }
   
     namespace OnStartCompleted {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -36861,7 +36861,7 @@ export namespace TraceEvent {
   }
 
   namespace UserEvent {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         action: string;
       };
@@ -36875,7 +36875,7 @@ export namespace TraceEvent {
   }
 
   namespace Usingexistingdeadline {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -36889,7 +36889,7 @@ export namespace TraceEvent {
   }
 
   namespace Usingnewdeadline {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         delta: number;
         desired_deadline: number;
@@ -36906,7 +36906,7 @@ export namespace TraceEvent {
   }
 
   namespace V8_tq {
-    interface C extends Base {
+    interface C extends TraceEvent.Base {
       args: {
         value: number;
       };
@@ -37682,7 +37682,7 @@ export namespace TraceEvent {
       TraceEvent.V8.Task.E;
   
     namespace Builtin_ArrayConcat {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37698,7 +37698,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ArrayPop {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37714,7 +37714,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ArrayPush {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37730,7 +37730,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ArrayShift {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37746,7 +37746,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ArrayUnshift {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37762,7 +37762,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_BooleanConstructor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37778,7 +37778,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ConsoleLog {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37794,7 +37794,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ConsoleWarn {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37810,7 +37810,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_DateConstructor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37826,7 +37826,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_DateNow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37842,7 +37842,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_DatePrototypeSetTime {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37858,7 +37858,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_DatePrototypeToUTCString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37874,7 +37874,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ErrorConstructor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37890,7 +37890,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_FunctionConstructor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37906,7 +37906,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_FunctionPrototypeBind {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37922,7 +37922,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_FunctionPrototypeToString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37938,7 +37938,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_GlobalDecodeURI {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37954,7 +37954,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_GlobalDecodeURIComponent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37970,7 +37970,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_GlobalEncodeURIComponent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -37986,7 +37986,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_GlobalEval {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38002,7 +38002,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_HandleApiCall {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38018,7 +38018,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_JsonParse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38034,7 +38034,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_JsonStringify {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38050,7 +38050,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_MapPrototypeClear {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38066,7 +38066,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_NumberPrototypeToFixed {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38082,7 +38082,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_NumberPrototypeToString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38098,7 +38098,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectDefineGetter {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38114,7 +38114,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectDefineProperties {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38130,7 +38130,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectDefineProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38146,7 +38146,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectFreeze {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38162,7 +38162,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectGetPrototypeOf {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38178,7 +38178,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectLookupGetter {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38194,7 +38194,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectPrototypeGetProto {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38210,7 +38210,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectPrototypePropertyIsEnumerable {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38226,7 +38226,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectPrototypeSetProto {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38242,7 +38242,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_ObjectSetPrototypeOf {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38258,7 +38258,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_RegExpPrototypeToString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38274,7 +38274,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_SetPrototypeClear {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38290,7 +38290,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_StringPrototypeEndsWith {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38306,7 +38306,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_StringPrototypeLastIndexOf {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38322,7 +38322,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_StringPrototypeStartsWith {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38338,7 +38338,7 @@ export namespace TraceEvent {
     }
   
     namespace Builtin_StringPrototypeToUpperCaseIntl {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38354,7 +38354,7 @@ export namespace TraceEvent {
     }
   
     namespace CallFunction {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38370,7 +38370,7 @@ export namespace TraceEvent {
     }
   
     namespace Compile {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           fileName: string;
         };
@@ -38381,7 +38381,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           data: {
             cacheConsumeOptions?: string;
@@ -38403,7 +38403,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           data?: {
             columnNumber: number;
@@ -38424,7 +38424,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileCode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38440,7 +38440,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileCodeBackground {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38456,7 +38456,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileEval {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38472,7 +38472,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileIgnition {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38488,7 +38488,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileIgnitionFinalization {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38504,7 +38504,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileScript {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38520,7 +38520,7 @@ export namespace TraceEvent {
     }
   
     namespace CompileStreamedScript {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38536,7 +38536,7 @@ export namespace TraceEvent {
     }
   
     namespace DeoptimizeCode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38552,7 +38552,7 @@ export namespace TraceEvent {
     }
   
     namespace ExternalCallback {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -38563,7 +38563,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
         
         };
@@ -38576,7 +38576,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_BACKGROUND_ARRAY_BUFFER_FREE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38592,7 +38592,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_BACKGROUND_STORE_BUFFER {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38608,7 +38608,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_BACKGROUND_UNMAPPER {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38624,7 +38624,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EMBEDDER_TRACING_EPILOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38640,7 +38640,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38656,7 +38656,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EPILOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38672,7 +38672,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EXTERNAL_EPILOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38688,7 +38688,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EXTERNAL_PROLOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38704,7 +38704,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38720,7 +38720,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_PROLOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38736,7 +38736,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_BACKGROUND_EVACUATE_COPY {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38752,7 +38752,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38768,7 +38768,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_BACKGROUND_MARKING {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38784,7 +38784,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_BACKGROUND_SWEEPING {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38800,7 +38800,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_FLUSHABLE_BYTECODE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38816,7 +38816,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38832,7 +38832,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_MAPS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38848,7 +38848,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_STRING_TABLE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38864,7 +38864,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_WEAK_COLLECTIONS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38880,7 +38880,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_WEAK_LISTS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38896,7 +38896,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR_WEAK_REFERENCES {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38912,7 +38912,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_CLEAR {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38928,7 +38928,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EPILOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38944,7 +38944,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_CLEAN_UP {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38960,7 +38960,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_COPY {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38976,7 +38976,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_EPILOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -38992,7 +38992,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_PROLOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39008,7 +39008,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_REBALANCE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39024,7 +39024,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39040,7 +39040,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39056,7 +39056,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39072,7 +39072,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_UPDATE_POINTERS_WEAK {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39088,7 +39088,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE_UPDATE_POINTERS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39104,7 +39104,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_EVACUATE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39120,7 +39120,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_FINISH {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39136,7 +39136,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39152,7 +39152,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_EMBEDDER_TRACING {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39168,7 +39168,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39184,7 +39184,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39200,7 +39200,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_FINALIZE_BODY {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39216,7 +39216,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_FINALIZE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39232,7 +39232,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_LAYOUT_CHANGE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39248,7 +39248,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_START {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39264,7 +39264,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_SWEEPING {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39280,7 +39280,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39296,7 +39296,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_EMBEDDER_TRACING_CLOSURE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39312,7 +39312,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_EMBEDDER_TRACING {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39328,7 +39328,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_FINISH_INCREMENTAL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39344,7 +39344,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_MAIN {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39360,7 +39360,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_ROOTS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39376,7 +39376,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39392,7 +39392,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_WEAK_CLOSURE_EPHEMERON {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39408,7 +39408,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_WEAK_CLOSURE_HARMONY {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39424,7 +39424,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39440,7 +39440,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39456,7 +39456,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK_WEAK_CLOSURE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39472,7 +39472,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_MARK {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39488,7 +39488,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_PROLOGUE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39504,7 +39504,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_SWEEP {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39520,7 +39520,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_Objects_Stats {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           dead: string;
           live: string;
@@ -39535,7 +39535,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39551,7 +39551,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_PROCESS_ARRAY_BUFFERS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39567,7 +39567,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE_FINALIZE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39583,7 +39583,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE_PARALLEL {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39599,7 +39599,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE_ROOTS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39615,7 +39615,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE_UPDATE_REFS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39631,7 +39631,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39647,7 +39647,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39663,7 +39663,7 @@ export namespace TraceEvent {
     }
   
     namespace GC_SCAVENGER_SCAVENGE {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39679,7 +39679,7 @@ export namespace TraceEvent {
     }
   
     namespace GCCompactor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39695,7 +39695,7 @@ export namespace TraceEvent {
     }
   
     namespace GCFinalizeMC {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39711,7 +39711,7 @@ export namespace TraceEvent {
     }
   
     namespace GCFinalizeMCReduceMemory {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39727,7 +39727,7 @@ export namespace TraceEvent {
     }
   
     namespace GCIdleNotification {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39743,7 +39743,7 @@ export namespace TraceEvent {
     }
   
     namespace GCIncrementalMarking {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39759,7 +39759,7 @@ export namespace TraceEvent {
     }
   
     namespace GCIncrementalMarkingFinalize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39775,7 +39775,7 @@ export namespace TraceEvent {
     }
   
     namespace GCIncrementalMarkingLayoutChange {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39791,7 +39791,7 @@ export namespace TraceEvent {
     }
   
     namespace GCIncrementalMarkingStart {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39807,7 +39807,7 @@ export namespace TraceEvent {
     }
   
     namespace GCMarkCompactorMarkingSummary {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           background_duration: number;
           duration: number;
@@ -39822,7 +39822,7 @@ export namespace TraceEvent {
     }
   
     namespace GCMarkCompactorSummary {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           background_duration: number;
           duration: number;
@@ -39837,7 +39837,7 @@ export namespace TraceEvent {
     }
   
     namespace GCPhantomHandleProcessingCallback {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39853,7 +39853,7 @@ export namespace TraceEvent {
     }
   
     namespace GCScavenger {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39869,7 +39869,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleInterrupts {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39885,7 +39885,7 @@ export namespace TraceEvent {
     }
   
     namespace ICStats {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           'ic-stats': {
             data: {
@@ -39912,7 +39912,7 @@ export namespace TraceEvent {
     }
   
     namespace InvokeApiInterruptCallbacks {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -39928,7 +39928,7 @@ export namespace TraceEvent {
     }
   
     namespace NewContext {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -39939,7 +39939,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           'runtime-call-stats': {
             API_Context_New?: {
@@ -40118,7 +40118,7 @@ export namespace TraceEvent {
     }
   
     namespace NewInstance {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40134,7 +40134,7 @@ export namespace TraceEvent {
     }
   
     namespace OptimizeCode {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40150,7 +40150,7 @@ export namespace TraceEvent {
     }
   
     namespace ParseFunction {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40166,7 +40166,7 @@ export namespace TraceEvent {
     }
   
     namespace ParseOnBackground {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           data: {
             requestId: string;
@@ -40189,7 +40189,7 @@ export namespace TraceEvent {
     }
   
     namespace ParseProgram {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40205,7 +40205,7 @@ export namespace TraceEvent {
     }
   
     namespace PreParse {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40221,7 +40221,7 @@ export namespace TraceEvent {
     }
   
     namespace RecompileConcurrent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40237,7 +40237,7 @@ export namespace TraceEvent {
     }
   
     namespace RecompileSynchronous {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40253,7 +40253,7 @@ export namespace TraceEvent {
     }
   
     namespace Run {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           fileName?: string;
         };
@@ -40269,7 +40269,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_AddDictionaryProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40285,7 +40285,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_AllocateInNewSpace {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40301,7 +40301,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_AllocateInTargetSpace {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40317,7 +40317,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_AllocateSeqTwoByteString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40333,7 +40333,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ArrayIndexOf {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40349,7 +40349,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ArraySpeciesConstructor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40365,7 +40365,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CompileLazy {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40381,7 +40381,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CompileOptimized_Concurrent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40397,7 +40397,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CompleteInobjectSlackTrackingForMap {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40413,7 +40413,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateArrayLiteral {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40429,7 +40429,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40445,7 +40445,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateDataProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40461,7 +40461,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateJSGeneratorObject {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40477,7 +40477,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateListFromArrayLike {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40493,7 +40493,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateObjectLiteral {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40509,7 +40509,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40525,7 +40525,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_CreateRegExpLiteral {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40541,7 +40541,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DateCurrentTime {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40557,7 +40557,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DeclareEvalFunction {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40573,7 +40573,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DeclareGlobals {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40589,7 +40589,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DefineAccessorPropertyUnchecked {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40605,7 +40605,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DefineClass {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40621,7 +40621,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DefineDataPropertyInLiteral {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40637,7 +40637,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_DeleteProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40653,7 +40653,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ElementsTransitionAndStoreIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40669,7 +40669,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ForInEnumerate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40685,7 +40685,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_GetOwnPropertyDescriptor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40701,7 +40701,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_GetProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40717,7 +40717,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_HasInPrototypeChain {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40733,7 +40733,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_HasProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40749,7 +40749,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_Interrupt {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40765,7 +40765,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_KeyedLoadIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40781,7 +40781,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_KeyedStoreIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40797,7 +40797,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_KeyedStoreIC_Slow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40813,7 +40813,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadAccessorProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40829,7 +40829,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadCallbackProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40845,7 +40845,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadElementWithInterceptor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40861,7 +40861,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadGlobalIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40877,7 +40877,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadGlobalIC_Slow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40893,7 +40893,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40909,7 +40909,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadLookupSlot {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40925,7 +40925,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadLookupSlotForCall {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40941,7 +40941,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadLookupSlotInsideTypeof {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40957,7 +40957,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_LoadPropertyWithInterceptor {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40973,7 +40973,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_MapGrow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -40989,7 +40989,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_MapShrink {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41005,7 +41005,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NewArray {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41021,7 +41021,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NewClosure_Tenured {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41037,7 +41037,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NewClosure {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41053,7 +41053,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NewObject {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41069,7 +41069,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NewScriptContext {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41085,7 +41085,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NotifyDeoptimized {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41101,7 +41101,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_NumberToString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41117,7 +41117,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ObjectCreate {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41133,7 +41133,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ObjectEntries {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41149,7 +41149,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ObjectGetOwnPropertyNames {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41165,7 +41165,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ObjectHasOwnProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41181,7 +41181,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ObjectKeys {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41197,7 +41197,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_OrdinaryHasInstance {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41213,7 +41213,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_PrepareElementsForSort {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41229,7 +41229,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_PushBlockContext {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41245,7 +41245,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_PushCatchContext {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41261,7 +41261,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_PushWithContext {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41277,7 +41277,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_RegExpExec {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41293,7 +41293,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_RegExpExecMultiple {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41309,7 +41309,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_RegExpInitializeAndCompile {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41325,7 +41325,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_RegExpReplace {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41341,7 +41341,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ResolvePossiblyDirectEval {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41357,7 +41357,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_RunMicrotaskCallback {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41373,7 +41373,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_SetGrow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41389,7 +41389,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_SetKeyedProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41405,7 +41405,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_SetNamedProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41421,7 +41421,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ShrinkPropertyDictionary {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41437,7 +41437,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StackGuard {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41453,7 +41453,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreCallbackProperty {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41469,7 +41469,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreGlobalIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41485,7 +41485,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreGlobalIC_Slow {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41501,7 +41501,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41517,7 +41517,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreInArrayLiteralIC_Miss {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41533,7 +41533,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreLookupSlot_Sloppy {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41549,7 +41549,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StoreLookupSlot_Strict {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41565,7 +41565,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringAdd {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41581,7 +41581,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringBuilderConcat {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41597,7 +41597,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringCharCodeAt {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41613,7 +41613,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringEqual {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41629,7 +41629,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringIncludes {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41645,7 +41645,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringIndexOfUnchecked {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41661,7 +41661,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringLessThan {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41677,7 +41677,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringParseFloat {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41693,7 +41693,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringParseInt {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41709,7 +41709,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringSplit {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41725,7 +41725,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringSubstring {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41741,7 +41741,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringToArray {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41757,7 +41757,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringToLowerCaseIntl {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41773,7 +41773,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_StringToNumber {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41789,7 +41789,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_Throw {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41805,7 +41805,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ThrowCalledNonCallable {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41821,7 +41821,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ThrowConstructedNonConstructable {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41837,7 +41837,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_ToString {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41853,7 +41853,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_TransitionElementsKind {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41869,7 +41869,7 @@ export namespace TraceEvent {
     }
   
     namespace Runtime_Runtime_UnwindAndFindExceptionHandler {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -41885,7 +41885,7 @@ export namespace TraceEvent {
     }
   
     namespace RuntimeStats {
-      interface I extends Base {
+      interface I extends TraceEvent.Base {
         args: {
           'runtime-call-stats': {
             CompileBackgroundAnalyse?: {
@@ -41933,7 +41933,7 @@ export namespace TraceEvent {
     }
   
     namespace ScriptCompiler {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -41944,7 +41944,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           'runtime-call-stats'?: {
             API_ScriptCompiler_CompileUnbound?: {
@@ -41997,7 +41997,7 @@ export namespace TraceEvent {
     }
   
     namespace StackGuard {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42013,7 +42013,7 @@ export namespace TraceEvent {
     }
   
     namespace Task {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
         
         };
@@ -42024,7 +42024,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           'runtime-call-stats': {
             GCEpilogueCallback?: {
@@ -42256,7 +42256,7 @@ export namespace TraceEvent {
       TraceEvent.V8ContextSnapshot.InstallRuntimeEnabled.X;
   
     namespace InstallRuntimeEnabled {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
         };
@@ -42277,7 +42277,7 @@ export namespace TraceEvent {
       TraceEvent.VerifiedRulesetDealer.GetRuleset.X;
   
     namespace GetRuleset {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42319,7 +42319,7 @@ export namespace TraceEvent {
       TraceEvent.View.PaintChildren.X;
   
     namespace Layout {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: string;
         };
@@ -42335,7 +42335,7 @@ export namespace TraceEvent {
     }
   
     namespace Layoutbounds_changed {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: string;
         };
@@ -42351,7 +42351,7 @@ export namespace TraceEvent {
     }
   
     namespace Layoutset_bounds {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: string;
         };
@@ -42367,7 +42367,7 @@ export namespace TraceEvent {
     }
   
     namespace OnPaint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: string;
         };
@@ -42383,7 +42383,7 @@ export namespace TraceEvent {
     }
   
     namespace OnPaintBackground {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42399,7 +42399,7 @@ export namespace TraceEvent {
     }
   
     namespace OnPaintBorder {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42415,7 +42415,7 @@ export namespace TraceEvent {
     }
   
     namespace Paint {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: string;
         };
@@ -42431,7 +42431,7 @@ export namespace TraceEvent {
     }
   
     namespace PaintChildren {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           class: string;
         };
@@ -42448,7 +42448,7 @@ export namespace TraceEvent {
   }
 
   namespace ViewHostMsg_DidContentsPreferredSizeChange {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -42464,7 +42464,7 @@ export namespace TraceEvent {
   }
 
   namespace ViewHostMsg_DocumentAvailableInMainFrame {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -42480,7 +42480,7 @@ export namespace TraceEvent {
   }
 
   namespace ViewHostMsg_UpdateZoomLimits {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -42496,7 +42496,7 @@ export namespace TraceEvent {
   }
 
   namespace ViewMsg_EnablePreferredSizeChangedMode {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -42516,7 +42516,7 @@ export namespace TraceEvent {
       TraceEvent.VirtualboolGrRenderTargetOpList.OnExecuteGrOpFlushState.X;
   
     namespace OnExecuteGrOpFlushState {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42539,7 +42539,7 @@ export namespace TraceEvent {
           TraceEvent.VirtualGrOp.CombineResultnamespace.FillRectOp.OnCombineIfPossibleGrOpGrCaps.X;
       
         namespace OnCombineIfPossibleGrOpGrCaps {
-          interface X extends Base {
+          interface X extends TraceEvent.Base {
             args: {
             
             };
@@ -42560,7 +42560,7 @@ export namespace TraceEvent {
           TraceEvent.VirtualGrOp.CombineResultnamespace.TextureOp.OnCombineIfPossibleGrOpGrCaps.X;
       
         namespace OnCombineIfPossibleGrOpGrCaps {
-          interface X extends Base {
+          interface X extends TraceEvent.Base {
             args: {
             
             };
@@ -42585,7 +42585,7 @@ export namespace TraceEvent {
           TraceEvent.Virtualnamespace.FillRectOp.OnPrepareDrawsGrMeshDrawOp.Target.X;
       
         namespace Target {
-          interface X extends Base {
+          interface X extends TraceEvent.Base {
             args: {
             
             };
@@ -42608,7 +42608,7 @@ export namespace TraceEvent {
           TraceEvent.Virtualnamespace.TextureOp.OnPrepareDrawsGrMeshDrawOp.Target.X;
       
         namespace Target {
-          interface X extends Base {
+          interface X extends TraceEvent.Base {
             args: {
             
             };
@@ -42637,7 +42637,7 @@ export namespace TraceEvent {
       TraceEvent.VisibleUnits.MostForwardCaretPosition.X;
   
     namespace CanonicalPosition {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42653,7 +42653,7 @@ export namespace TraceEvent {
     }
   
     namespace MostBackwardCaretPosition {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42669,7 +42669,7 @@ export namespace TraceEvent {
     }
   
     namespace MostForwardCaretPosition {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42691,7 +42691,7 @@ export namespace TraceEvent {
         TraceEvent.Visitedlink.Mojom.VisitedLinkNotificationSink.X;
     
       namespace VisitedLinkNotificationSink {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42709,7 +42709,7 @@ export namespace TraceEvent {
   }
 
   namespace VisuallyComplete100 {
-    interface b extends Base {
+    interface b extends TraceEvent.Base {
       args: {
       
       };
@@ -42719,7 +42719,7 @@ export namespace TraceEvent {
       ph: 'b';
     }
   
-    interface e extends Base {
+    interface e extends TraceEvent.Base {
       args: {
       
       };
@@ -42738,7 +42738,7 @@ export namespace TraceEvent {
       TraceEvent.VisualViewport.SetSize.X;
   
     namespace MainFrameDidChangeSize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -42754,7 +42754,7 @@ export namespace TraceEvent {
     }
   
     namespace SetSize {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           height: number;
           width: number;
@@ -42779,7 +42779,7 @@ export namespace TraceEvent {
       TraceEvent.Viz.SharedQuadState.D;
   
     namespace BeginFrameArgs {
-      interface s extends Base {
+      interface s extends TraceEvent.Base {
         args: {
         
         };
@@ -42818,7 +42818,7 @@ export namespace TraceEvent {
         TraceEvent.Viz.Mojom.GpuService.X;
     
       namespace CompositingModeReporter {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42834,7 +42834,7 @@ export namespace TraceEvent {
       }
     
       namespace CompositorFrameSink {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42850,7 +42850,7 @@ export namespace TraceEvent {
       }
     
       namespace CompositorFrameSinkClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42866,7 +42866,7 @@ export namespace TraceEvent {
       }
     
       namespace DisplayClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42882,7 +42882,7 @@ export namespace TraceEvent {
       }
     
       namespace FrameSinkManager {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42898,7 +42898,7 @@ export namespace TraceEvent {
       }
     
       namespace FrameSinkManagerClient {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42914,7 +42914,7 @@ export namespace TraceEvent {
       }
     
       namespace GpuHost {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42930,7 +42930,7 @@ export namespace TraceEvent {
       }
     
       namespace GpuService {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -42947,7 +42947,7 @@ export namespace TraceEvent {
     }
   
     namespace SharedQuadState {
-      interface D extends Base {
+      interface D extends TraceEvent.Base {
         args: {
         
         };
@@ -42962,7 +42962,7 @@ export namespace TraceEvent {
   }
 
   namespace WaitingfornextBeginFrame {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
       
       };
@@ -42981,7 +42981,7 @@ export namespace TraceEvent {
         TraceEvent.Web_cache.Mojom.WebCache.X;
     
       namespace WebCache {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43018,7 +43018,7 @@ export namespace TraceEvent {
       TraceEvent.WebContentsImpl.ReadyToCommitNavigation.X;
   
     namespace CreateRenderFrameForRenderManager {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43034,7 +43034,7 @@ export namespace TraceEvent {
     }
   
     namespace CreateRenderViewForRenderManager {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43050,7 +43050,7 @@ export namespace TraceEvent {
     }
   
     namespace CreateWithOpener {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43066,7 +43066,7 @@ export namespace TraceEvent {
     }
   
     namespace DidFinishNavigation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           navigation_handle: string;
         };
@@ -43082,7 +43082,7 @@ export namespace TraceEvent {
     }
   
     namespace DidStartNavigation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           navigation_handle: string;
         };
@@ -43098,7 +43098,7 @@ export namespace TraceEvent {
     }
   
     namespace ReadyToCommitNavigation {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           navigation_handle: string;
         };
@@ -43115,7 +43115,7 @@ export namespace TraceEvent {
   }
 
   namespace WebContentsImplLoading {
-    interface F extends Base {
+    interface F extends TraceEvent.Base {
       args: {
         URL: string;
       };
@@ -43127,7 +43127,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface S extends Base {
+    interface S extends TraceEvent.Base {
       args: {
         'Main FrameTreeNode id': number;
         URL: string;
@@ -43149,7 +43149,7 @@ export namespace TraceEvent {
       TraceEvent.WebFrameWidgetImpl.UpdateAllLifecyclePhases.X;
   
     namespace BeginFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frameTime: number;
         };
@@ -43165,7 +43165,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateAllLifecyclePhases {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43189,7 +43189,7 @@ export namespace TraceEvent {
       TraceEvent.WebLocalFrameImpl.CreateFrameView.X;
   
     namespace CreateChildframe {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43205,7 +43205,7 @@ export namespace TraceEvent {
     }
   
     namespace CreateFrameView {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43227,7 +43227,7 @@ export namespace TraceEvent {
       TraceEvent.WebScopedVirtualTimePauser.PauseVirtualTime.e;
   
     namespace PauseVirtualTime {
-      interface b extends Base {
+      interface b extends TraceEvent.Base {
         args: {
           name: string;
         };
@@ -43239,7 +43239,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface e extends Base {
+      interface e extends TraceEvent.Base {
         args: {
         
         };
@@ -43277,7 +43277,7 @@ export namespace TraceEvent {
         TraceEvent.WebURLLoaderImpl.Context.Start.X;
     
       namespace Cancel {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43296,7 +43296,7 @@ export namespace TraceEvent {
       }
     
       namespace OnCompletedRequest {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43315,7 +43315,7 @@ export namespace TraceEvent {
       }
     
       namespace OnReceivedData {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43335,7 +43335,7 @@ export namespace TraceEvent {
       }
     
       namespace OnReceivedRedirect {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43355,7 +43355,7 @@ export namespace TraceEvent {
       }
     
       namespace OnReceivedResponse {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43375,7 +43375,7 @@ export namespace TraceEvent {
       }
     
       namespace Start {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43395,7 +43395,7 @@ export namespace TraceEvent {
     }
   
     namespace LoadAsynchronously {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43431,7 +43431,7 @@ export namespace TraceEvent {
       TraceEvent.WebViewImpl.UpdateAllLifecyclePhases.X;
   
     namespace BeginFrame {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           frameTime: number;
         };
@@ -43447,7 +43447,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleInputEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           type: string;
         };
@@ -43463,7 +43463,7 @@ export namespace TraceEvent {
     }
   
     namespace HandleKeyEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           text: string;
           type: string;
@@ -43480,7 +43480,7 @@ export namespace TraceEvent {
     }
   
     namespace SetIsAcceleratedCompositingActivetrue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43496,7 +43496,7 @@ export namespace TraceEvent {
     }
   
     namespace UpdateAllLifecyclePhases {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43517,7 +43517,7 @@ export namespace TraceEvent {
       TraceEvent.Widget.Init.X;
   
     namespace Init {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43534,7 +43534,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_Close_ACK {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43550,7 +43550,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_DidCommitAndDrawCompositorFrame {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43566,7 +43566,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_DidFirstVisuallyNonEmptyPaint {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43582,7 +43582,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_FrameSwapMessages {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43598,7 +43598,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_HasTouchEventHandlers {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43614,7 +43614,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_SelectionBoundsChanged {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43630,7 +43630,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_TextInputStateChanged {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43646,7 +43646,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetHostMsg_UpdateScreenRects_ACK {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43666,7 +43666,7 @@ export namespace TraceEvent {
       TraceEvent.WidgetInputHandlerImpl.DispatchEvent.X;
   
     namespace DispatchEvent {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43683,7 +43683,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_SetActive {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43699,7 +43699,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_SetInheritedEffectiveTouchAction {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43715,7 +43715,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_SetIsInert {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43731,7 +43731,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_SetViewportIntersection {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43747,7 +43747,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_SynchronizeVisualProperties {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43763,7 +43763,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_UpdateRenderThrottlingStatus {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43779,7 +43779,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_UpdateScreenRects {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43795,7 +43795,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_WasHidden {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43811,7 +43811,7 @@ export namespace TraceEvent {
   }
 
   namespace WidgetMsg_WasShown {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -43827,7 +43827,7 @@ export namespace TraceEvent {
   }
 
   namespace WriteTransaction {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         src_file: string;
         src_func: string;
@@ -43839,7 +43839,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -43857,7 +43857,7 @@ export namespace TraceEvent {
         TraceEvent.Ws.Mojom.Gpu.X;
     
       namespace Gpu {
-        interface X extends Base {
+        interface X extends TraceEvent.Base {
           args: {
           
           };
@@ -43879,7 +43879,7 @@ export namespace TraceEvent {
       TraceEvent.X509Certificate.CreateFromDERCertChain.X;
   
     namespace CreateFromDERCertChain {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -43896,7 +43896,7 @@ export namespace TraceEvent {
   }
 
   namespace XHRLoad {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -43922,7 +43922,7 @@ export namespace TraceEvent {
   }
 
   namespace XHRReadyStateChange {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -43949,7 +43949,7 @@ export namespace TraceEvent {
   }
 
   namespace YieldParserForScriptBlockingResources {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           columnNumber: number;
@@ -43972,7 +43972,7 @@ export namespace TraceEvent {
   }
 
   namespace YieldParserForScriptLoad {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -43998,7 +43998,7 @@ export namespace TraceEvent {
       TraceEvent.ZeroSuggestProvider.Start.X;
   
     namespace Start {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -44015,7 +44015,7 @@ export namespace TraceEvent {
   }
 
   namespace ZonesAndDomReady {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -44030,7 +44030,7 @@ export namespace TraceEvent {
   }
 
   namespace ZonesReady {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;

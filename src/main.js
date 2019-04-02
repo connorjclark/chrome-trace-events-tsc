@@ -7,6 +7,7 @@ const print = require('./print');
 const utils = require('./utils');
 
 const eventFilter = process.env.EVENT_FILTER ? process.env.EVENT_FILTER.split(',') : null;
+const topLevelNamespaceName = 'TraceEvent';
 
 function loadTraceLog(path) {
   const lineReader = require('readline').createInterface({
@@ -38,7 +39,7 @@ function upper(str) {
  * @param {{name: string, ph: string}} event 
  */
 function getIdPath(event) {
-  const idPath = [];
+  const idPath = [topLevelNamespaceName];
 
   // TODO add "data.type"?
   let safePhase = event.ph;
@@ -135,8 +136,8 @@ function findCommonInterface(objectTypes) {
   }
 
   return {
-    id: 'Base',
-    idPath: ['Base'],
+    id: `${topLevelNamespaceName}.Base`,
+    idPath: [topLevelNamespaceName, 'Base'],
     name: 'Base',
     objectType: common,
   };
@@ -313,24 +314,22 @@ async function run() {
     }
   }
 
-  /** @type {Gen.Namespace} */
-  const topLevelNamespace = {
-    idPath: ['TraceEvent'],
-    name: 'TraceEvent',
-    interfaces: [],
-    unions: [],
-    namespaces: [],
-  };
-
   // Group interfaces into namespaces based off idPath.
   /** @type {Map<string, Gen.Namespace>} */
   const namespaceById = new Map();
-  for (const _interface of interfaces) {
-    if (_interface.idPath.length === 1) {
-      topLevelNamespace.interfaces.push(_interface);
-      continue;
-    }
 
+  // /** @type {Gen.Namespace} */
+  // const topLevelNamespace = {
+  //   idPath: ['TraceEvent'],
+  //   name: 'TraceEvent',
+  //   interfaces: [],
+  //   unions: [],
+  //   namespaces: [],
+  // };
+
+  // namespaceById.set(topLevelNamespace.name, topLevelNamespace);
+
+  for (const _interface of interfaces) {
     const namespaceId = _interface.idPath.slice(0, _interface.idPath.length - 1).join('.');
 
     // create namespaces as necessary
@@ -341,7 +340,7 @@ async function run() {
 
       const name = namespaceIdPath[namespaceIdPath.length - 1];
       const namespace = {
-        idPath: ['TraceEvent', ...namespaceIdPath], // hacky...
+        idPath: namespaceIdPath,
         name,
         interfaces: [],
         unions: [],
@@ -349,24 +348,17 @@ async function run() {
       };
       namespaceById.set(namespaceId, namespace);
 
-      let grandNamespace;
-      if (namespaceIdPath.length === 1) {
-        grandNamespace = topLevelNamespace;
-      } else {
+      if (namespaceIdPath.length > 1) {
         const grandNamespaceId = namespaceIdPath.slice(0, namespaceIdPath.length - 1).join('.');
-        grandNamespace = namespaceById.get(grandNamespaceId);
+        const grandNamespace = namespaceById.get(grandNamespaceId);
+        if (!grandNamespace) throw new Error();
+        grandNamespace.namespaces.push(namespace);
       }
-      if (!grandNamespace) throw new Error();
-      grandNamespace.namespaces.push(namespace);
     }
 
     const namespace = namespaceById.get(namespaceId);
     if (!namespace) throw new Error();
     namespace.interfaces.push(_interface);
-
-    // Augment interface ids to account for the fact they are within the TraceEvent namespace.
-    _interface.idPath.unshift(topLevelNamespace.name);
-    _interface.id = topLevelNamespace.name + '.' + _interface.id;
   }
 
   // Make a union (over all phases) for each TraceEvent.
@@ -377,8 +369,10 @@ async function run() {
       continue;
     }
 
-    const grandNamespaceId = namespace.idPath.slice(1, namespace.idPath.length - 1).join('.'); // TODO hack, should be 0
-    const grandNamespace = namespaceById.get(grandNamespaceId) || topLevelNamespace;
+    const grandNamespaceId = namespace.idPath.slice(0, namespace.idPath.length - 1).join('.');
+    const grandNamespace = namespaceById.get(grandNamespaceId);
+    if (!grandNamespace) throw new Error();
+
     /** @type {Gen.TypeUnion} */
     const union = {
       id: namespace.idPath.join('.'),
@@ -389,18 +383,9 @@ async function run() {
     traceEventUnions.push(union);
   }
 
-  // Create union that encompasses all trace events. Use the unioned types create above.
-  /** @type {Gen.TypeUnion} */
-  const traceEventTypeUnion = {
-    id: 'TraceEvent.TraceEvent',
-    name: 'TraceEvent',
-    types: traceEventUnions,
-  };
-  topLevelNamespace.unions.unshift(traceEventTypeUnion);
-
   // Add comments.
   const commentsByType = {
-    'Base': {
+    'TraceEvent.Base': {
       cat: 'Comma-separated list of category names.',
       pid: 'Process id of the process that generated the event.',
       tid: 'Thread id of the thread that generated the event.',
@@ -468,6 +453,17 @@ async function run() {
       }
     }
   }
+
+  // Create union that encompasses all trace events. Use the unioned types create above.
+  /** @type {Gen.TypeUnion} */
+  const traceEventTypeUnion = {
+    id: 'TraceEvent.TraceEvent',
+    name: 'TraceEvent',
+    types: traceEventUnions,
+  };
+  const topLevelNamespace = namespaceById.get(topLevelNamespaceName);
+  if (!topLevelNamespace) throw new Error();
+  topLevelNamespace.unions.unshift(traceEventTypeUnion);
 
   const rootNode = graph.makeNamespaceNode(topLevelNamespace);
   rootNode.children.unshift(graph.makeInterfaceNode(baseInterface));

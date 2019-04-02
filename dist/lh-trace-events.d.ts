@@ -129,7 +129,7 @@ export namespace TraceEvent {
     TraceEvent.XHRReadyStateChange.X;
 
   namespace DomContentLoadedEventEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -142,7 +142,7 @@ export namespace TraceEvent {
   }
 
   namespace EvaluateScript {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data?: {
           columnNumber: number;
@@ -170,7 +170,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstContentfulPaint {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -182,7 +182,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           navigationId: string;
@@ -198,7 +198,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstMeaningfulPaint {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         afterUserInput?: number;
         data?: {
@@ -215,7 +215,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstMeaningfulPaintCandidate {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data: {
           navigationId: string;
@@ -231,7 +231,7 @@ export namespace TraceEvent {
   }
 
   namespace FirstPaint {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -243,7 +243,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           navigationId: string;
@@ -259,7 +259,7 @@ export namespace TraceEvent {
   }
 
   namespace FunctionCall {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         data: {
           columnNumber?: number;
@@ -277,7 +277,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
       
       };
@@ -290,7 +290,7 @@ export namespace TraceEvent {
   }
 
   namespace InvalidateLayout {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -313,7 +313,7 @@ export namespace TraceEvent {
   }
 
   namespace Layout {
-    interface B extends Base {
+    interface B extends TraceEvent.Base {
       args: {
         beginData: {
           dirtyObjects: number;
@@ -336,7 +336,7 @@ export namespace TraceEvent {
       tts: number;
     }
   
-    interface E extends Base {
+    interface E extends TraceEvent.Base {
       args: {
         endData: {
           root: {
@@ -354,7 +354,7 @@ export namespace TraceEvent {
   }
 
   namespace LoadEventEnd {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         frame: string;
       };
@@ -367,7 +367,7 @@ export namespace TraceEvent {
   }
 
   namespace NavigationStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
         data?: {
           documentLoaderURL: string;
@@ -385,7 +385,7 @@ export namespace TraceEvent {
   }
 
   namespace PaintNonDefaultBackgroundColor {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -398,7 +398,7 @@ export namespace TraceEvent {
   }
 
   namespace ParseAuthorStyleSheet {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           styleSheetUrl: string;
@@ -416,7 +416,7 @@ export namespace TraceEvent {
   }
 
   namespace Process_labels {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         labels: string;
       };
@@ -427,7 +427,7 @@ export namespace TraceEvent {
   }
 
   namespace RequestStart {
-    interface R extends Base {
+    interface R extends TraceEvent.Base {
       args: {
       
       };
@@ -440,7 +440,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceFinish {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           decodedBodyLength?: number;
@@ -461,7 +461,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceReceiveResponse {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           encodedDataLength?: number;
@@ -501,7 +501,7 @@ export namespace TraceEvent {
   }
 
   namespace ResourceSendRequest {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -528,7 +528,7 @@ export namespace TraceEvent {
   }
 
   namespace RunTask {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
       
       };
@@ -544,7 +544,7 @@ export namespace TraceEvent {
   }
 
   namespace ScheduleStyleRecalculation {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -567,7 +567,7 @@ export namespace TraceEvent {
   }
 
   namespace Screenshot {
-    interface O extends Base {
+    interface O extends TraceEvent.Base {
       args: {
         snapshot: string;
       };
@@ -585,7 +585,7 @@ export namespace TraceEvent {
       TraceEvent.TaskQueueManager.ProcessTaskFromWorkQueue.X;
   
     namespace ProcessTaskFromWorkQueue {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           src_file: string;
           src_func: string;
@@ -603,7 +603,7 @@ export namespace TraceEvent {
   }
 
   namespace Thread_name {
-    interface M extends Base {
+    interface M extends TraceEvent.Base {
       args: {
         name: string;
       };
@@ -621,7 +621,7 @@ export namespace TraceEvent {
       TraceEvent.ThreadControllerImpl.RunTask.X;
   
     namespace DoWork {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
         
         };
@@ -637,7 +637,7 @@ export namespace TraceEvent {
     }
   
     namespace RunTask {
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           src_file?: string;
           src_func?: string;
@@ -658,7 +658,7 @@ export namespace TraceEvent {
   }
 
   namespace TimerFire {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -677,7 +677,7 @@ export namespace TraceEvent {
   }
 
   namespace TimerInstall {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
@@ -703,7 +703,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingStartedInBrowser {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           frameTreeNodeId: number;
@@ -726,7 +726,7 @@ export namespace TraceEvent {
   }
 
   namespace TracingStartedInPage {
-    interface I extends Base {
+    interface I extends TraceEvent.Base {
       args: {
         data: {
           page: string;
@@ -749,7 +749,7 @@ export namespace TraceEvent {
       TraceEvent.V8.Compile.X;
   
     namespace Compile {
-      interface B extends Base {
+      interface B extends TraceEvent.Base {
         args: {
           fileName: string;
         };
@@ -760,7 +760,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface E extends Base {
+      interface E extends TraceEvent.Base {
         args: {
           data: {
             cacheConsumeOptions?: string;
@@ -782,7 +782,7 @@ export namespace TraceEvent {
         tts: number;
       }
     
-      interface X extends Base {
+      interface X extends TraceEvent.Base {
         args: {
           data?: {
             columnNumber: number;
@@ -804,7 +804,7 @@ export namespace TraceEvent {
   }
 
   namespace XHRReadyStateChange {
-    interface X extends Base {
+    interface X extends TraceEvent.Base {
       args: {
         data: {
           frame: string;
