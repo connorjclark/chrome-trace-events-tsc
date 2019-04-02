@@ -3829,7 +3829,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'a';
-        // Phase.
+        // Denotes the ending of the async event A.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -3841,7 +3841,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'a';
-        // Phase.
+        // Denotes the beginning of the async event A.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -3856,7 +3856,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'AAConvexPathOp';
-        // Phase.
+        // Denotes the end of the event AAConvexPathOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -3872,7 +3872,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'AAStrokeRect';
-        // Phase.
+        // Denotes the end of the event AAStrokeRect.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -3889,7 +3889,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'AcquireLock';
-        // Phase.
+        // Denotes the end of the event AcquireLock.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -3904,7 +3904,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'ActivateLayerTree';
-        // Phase.
+        // Denotes an event ActivateLayerTree. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -3920,7 +3920,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'AddFrameDisplayed';
-        // Phase.
+        // Denotes the end of the event AddFrameDisplayed.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -4102,7 +4102,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] AdFuel DOMContentLoaded';
-          // Phase.
+          // Denotes a mark of the event AdFuelDOMContentLoaded.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4117,7 +4117,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] AdFuel Initialized';
-          // Phase.
+          // Denotes a mark of the event AdFuelInitialized.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4132,7 +4132,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] AdFuel Request Complete';
-          // Phase.
+          // Denotes a mark of the event AdFuelRequestComplete.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4151,7 +4151,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] AdFuel window.load';
-            // Phase.
+            // Denotes a mark of the event Load.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -4167,7 +4167,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Ad Rendered [ad_bnr_atf_01]';
-          // Phase.
+          // Denotes a mark of the event AdRenderedad_bnr_atf_01.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4182,7 +4182,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Ad Rendered [ad_bnr_btf_01]';
-          // Phase.
+          // Denotes a mark of the event AdRenderedad_bnr_btf_01.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4197,7 +4197,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Ad Rendered [ad_mod_35731bb1e]';
-          // Phase.
+          // Denotes a mark of the event AdRenderedad_mod_35731bb1e.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4212,7 +4212,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Ad Rendered [ad_oop_float_01]';
-          // Phase.
+          // Denotes a mark of the event AdRenderedad_oop_float_01.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4227,7 +4227,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Ad Rendered [ad_rect_btf_02]';
-          // Phase.
+          // Denotes a mark of the event AdRenderedad_rect_btf_02.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4242,7 +4242,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Applying Page-Level Targeting';
-          // Phase.
+          // Denotes a mark of the event ApplyingPageLevelTargeting.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4257,7 +4257,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Applying Window Site-Level Options.';
-          // Phase.
+          // Denotes a mark of the event ApplyingWindowSiteLevelOptions.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4271,7 +4271,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_bnr_atf_01]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_bnr_atf_01.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4283,7 +4283,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_bnr_atf_01]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_bnr_atf_01.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4298,7 +4298,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_bnr_atf_01] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_bnr_atf_01End.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4313,7 +4313,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_bnr_atf_01] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_bnr_atf_01Start.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4327,7 +4327,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_bnr_btf_01]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_bnr_btf_01.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4339,7 +4339,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_bnr_btf_01]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_bnr_btf_01.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4354,7 +4354,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_bnr_btf_01] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_bnr_btf_01End.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4369,7 +4369,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_bnr_btf_01] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_bnr_btf_01Start.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4383,7 +4383,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_bnr_btf_02]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_bnr_btf_02.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4395,7 +4395,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_bnr_btf_02]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_bnr_btf_02.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4410,7 +4410,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_bnr_btf_02] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_bnr_btf_02End.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4425,7 +4425,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_bnr_btf_02] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_bnr_btf_02Start.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4439,7 +4439,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_mod_35731bb1e]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_mod_35731bb1e.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4451,7 +4451,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_mod_35731bb1e]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_mod_35731bb1e.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4466,7 +4466,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_mod_35731bb1e] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_mod_35731bb1eEnd.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4481,7 +4481,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_mod_35731bb1e] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_mod_35731bb1eStart.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4495,7 +4495,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_oop_float_01]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_oop_float_01.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4507,7 +4507,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_oop_float_01]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_oop_float_01.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4522,7 +4522,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_oop_float_01] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_oop_float_01End.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4537,7 +4537,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_oop_float_01] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_oop_float_01Start.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4551,7 +4551,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_oop_skin_01]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_oop_skin_01.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4563,7 +4563,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_oop_skin_01]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_oop_skin_01.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4578,7 +4578,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_oop_skin_01] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_oop_skin_01End.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4593,7 +4593,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_oop_skin_01] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_oop_skin_01Start.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4607,7 +4607,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_rect_btf_02]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event BuildingSlotad_rect_btf_02.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4619,7 +4619,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Building Slot [ad_rect_btf_02]';
-          // Phase.
+          // Denotes a step into the nestable async flow event BuildingSlotad_rect_btf_02.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4634,7 +4634,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_rect_btf_02] End';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_rect_btf_02End.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4649,7 +4649,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Building Slot [ad_rect_btf_02] Start';
-          // Phase.
+          // Denotes a mark of the event BuildingSlotad_rect_btf_02Start.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4663,7 +4663,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Dispatch Queue';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event DispatchQueue.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4675,7 +4675,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Dispatch Queue';
-          // Phase.
+          // Denotes a step into the nestable async flow event DispatchQueue.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4690,7 +4690,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Dispatch Queue End';
-          // Phase.
+          // Denotes a mark of the event DispatchQueueEnd.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4705,7 +4705,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Dispatch Queue Start';
-          // Phase.
+          // Denotes a mark of the event DispatchQueueStart.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4720,7 +4720,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] GPT Included';
-          // Phase.
+          // Denotes a mark of the event GPTIncluded.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4734,7 +4734,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Page-Level GPT Build';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event PageLevelGPTBuild.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4746,7 +4746,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Page-Level GPT Build';
-          // Phase.
+          // Denotes a step into the nestable async flow event PageLevelGPTBuild.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4761,7 +4761,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Page-Level GPT Build End';
-          // Phase.
+          // Denotes a mark of the event PageLevelGPTBuildEnd.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4776,7 +4776,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Page-Level GPT Build Start';
-          // Phase.
+          // Denotes a mark of the event PageLevelGPTBuildStart.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4790,7 +4790,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Queue Registry [cnn_homepage_rb]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event QueueRegistrycnn_homepage_rb.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4802,7 +4802,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Queue Registry [cnn_homepage_rb]';
-          // Phase.
+          // Denotes a step into the nestable async flow event QueueRegistrycnn_homepage_rb.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4817,7 +4817,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Queue Registry [cnn_homepage_rb] End';
-          // Phase.
+          // Denotes a mark of the event QueueRegistrycnn_homepage_rbEnd.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4832,7 +4832,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Queue Registry [cnn_homepage_rb] Start';
-          // Phase.
+          // Denotes a mark of the event QueueRegistrycnn_homepage_rbStart.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4846,7 +4846,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Queue Registry [cnn_homepage]';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event QueueRegistrycnn_homepage.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4858,7 +4858,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Queue Registry [cnn_homepage]';
-          // Phase.
+          // Denotes a step into the nestable async flow event QueueRegistrycnn_homepage.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4873,7 +4873,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Queue Registry [cnn_homepage] End';
-          // Phase.
+          // Denotes a mark of the event QueueRegistrycnn_homepageEnd.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4888,7 +4888,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Queue Registry [cnn_homepage] Start';
-          // Phase.
+          // Denotes a mark of the event QueueRegistrycnn_homepageStart.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -4937,7 +4937,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Amazon A9 Module v3.2.5';
-            // Phase.
+            // Denotes a mark of the event AmazonA9Modulev3_2_5.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -4952,7 +4952,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: CEP Module v3.0.2';
-            // Phase.
+            // Denotes a mark of the event CEPModulev3_0_2.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -4967,7 +4967,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Creative Review Module v3.0.5';
-            // Phase.
+            // Denotes a mark of the event CreativeReviewModulev3_0_5.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -4982,7 +4982,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Criteo Module v3.2.2';
-            // Phase.
+            // Denotes a mark of the event CriteoModulev3_2_2.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -4997,7 +4997,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: IndexExchange Wrapper Module v3.1.1';
-            // Phase.
+            // Denotes a mark of the event IndexExchangeWrapperModulev3_1_1.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5012,7 +5012,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: In View Refresh v3.0.5';
-            // Phase.
+            // Denotes a mark of the event InViewRefreshv3_0_5.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5027,7 +5027,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Krux Module v3.1.1';
-            // Phase.
+            // Denotes a mark of the event KruxModulev3_1_1.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5042,7 +5042,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Prebid Module v3.3.0';
-            // Phase.
+            // Denotes a mark of the event PrebidModulev3_3_0.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5057,7 +5057,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Proximic Module v3.1.2';
-            // Phase.
+            // Denotes a mark of the event ProximicModulev3_1_2.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5072,7 +5072,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Transaction ID Module v3.1.1';
-            // Phase.
+            // Denotes a mark of the event TransactionIDModulev3_1_1.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5087,7 +5087,7 @@ export namespace TraceEvent {
               };
             };
             name: '[ADFUEL] Registering Module: Turner GUID Module v3.1.1';
-            // Phase.
+            // Denotes a mark of the event TurnerGUIDModulev3_1_1.
             ph: 'R';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5115,7 +5115,7 @@ export namespace TraceEvent {
                 };
                 id: string;
                 name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json]';
-                // Phase.
+                // Denotes the beginning of the nestable async flow event Json.
                 ph: 'b';
                 // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
                 tts: number;
@@ -5127,7 +5127,7 @@ export namespace TraceEvent {
                 };
                 id: string;
                 name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json]';
-                // Phase.
+                // Denotes a step into the nestable async flow event Json.
                 ph: 'e';
                 // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
                 tts: number;
@@ -5142,7 +5142,7 @@ export namespace TraceEvent {
                   };
                 };
                 name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json] End';
-                // Phase.
+                // Denotes a mark of the event JsonEnd.
                 ph: 'R';
                 // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
                 tts: number;
@@ -5157,7 +5157,7 @@ export namespace TraceEvent {
                   };
                 };
                 name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json] Start';
-                // Phase.
+                // Denotes a mark of the event JsonStart.
                 ph: 'R';
                 // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
                 tts: number;
@@ -5174,7 +5174,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Sending Request';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event SendingRequest.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5186,7 +5186,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '[ADFUEL] Sending Request';
-          // Phase.
+          // Denotes a step into the nestable async flow event SendingRequest.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5201,7 +5201,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Sending Request End';
-          // Phase.
+          // Denotes a mark of the event SendingRequestEnd.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5216,7 +5216,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Sending Request Start';
-          // Phase.
+          // Denotes a mark of the event SendingRequestStart.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5231,7 +5231,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Slot Loaded [ad_bnr_atf_01]';
-          // Phase.
+          // Denotes a mark of the event SlotLoadedad_bnr_atf_01.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5246,7 +5246,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Slot Loaded [ad_mod_35731bb1e]';
-          // Phase.
+          // Denotes a mark of the event SlotLoadedad_mod_35731bb1e.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5261,7 +5261,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Slot Loaded [ad_oop_float_01]';
-          // Phase.
+          // Denotes a mark of the event SlotLoadedad_oop_float_01.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5276,7 +5276,7 @@ export namespace TraceEvent {
             };
           };
           name: '[ADFUEL] Slot Loaded [ad_rect_btf_02]';
-          // Phase.
+          // Denotes a mark of the event SlotLoadedad_rect_btf_02.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -5290,7 +5290,7 @@ export namespace TraceEvent {
         
         };
         name: 'All active surfaces ready';
-        // Phase.
+        // Denotes an event Allactivesurfacesready. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5311,7 +5311,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Animation';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Animation.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5325,7 +5325,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Animation';
-        // Phase.
+        // Denotes a step into the nestable async flow event Animation.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5339,7 +5339,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Animation';
-        // Phase.
+        // Denotes the ending of the nestable async flow event Animation.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5364,7 +5364,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'AnimationHost::ActivateAnimations';
-          // Phase.
+          // Denotes the end of the event ActivateAnimations.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5380,7 +5380,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'AnimationHost::TickAnimations';
-          // Phase.
+          // Denotes the end of the event TickAnimations.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5396,7 +5396,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'AnimationHost::UpdateAnimationState';
-          // Phase.
+          // Denotes the end of the event UpdateAnimationState.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5417,7 +5417,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ArrayBufferTrackerUpdatingItem::Process';
-          // Phase.
+          // Denotes the end of the event Process.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5438,7 +5438,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'AsyncLayerTreeFrameSink::SubmitCompositorFrame';
-          // Phase.
+          // Denotes the end of the event SubmitCompositorFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5456,7 +5456,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'AsyncTask';
-        // Phase.
+        // Denotes the ending of the async flow event AsyncTask.
         ph: 'f';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5472,7 +5472,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'AsyncTask';
-        // Phase.
+        // Denotes the beginning of the async flow event AsyncTask.
         ph: 's';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5486,7 +5486,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'AsyncTask';
-        // Phase.
+        // Denotes a step into the async flow event AsyncTask.
         ph: 't';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5501,7 +5501,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'AtlasTextOp';
-        // Phase.
+        // Denotes the end of the event AtlasTextOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5524,7 +5524,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'AutocompleteController::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5540,7 +5540,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'AutocompleteController::UpdateResult';
-          // Phase.
+          // Denotes the end of the event UpdateResult.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5561,7 +5561,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'BackgroundCompileTask::Run';
-          // Phase.
+          // Denotes the end of the event Run.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5585,7 +5585,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'BackgroundHTMLParser::pumpTokenizer';
-          // Phase.
+          // Denotes the end of the event PumpTokenizer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5604,7 +5604,7 @@ export namespace TraceEvent {
           flow_out: boolean;
           id: string;
           name: 'BackgroundHTMLParser::sendTokensToMainThread';
-          // Phase.
+          // Denotes the end of the event SendTokensToMainThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5627,7 +5627,7 @@ export namespace TraceEvent {
             };
             id: string;
             name: 'base::TraceEventSystemStatsMonitor::SystemStats';
-            // Phase.
+            // Denotes a snapshot object of the event SystemStats.
             ph: 'O';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -5642,7 +5642,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'BeginFrame';
-        // Phase.
+        // Denotes an event BeginFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5657,7 +5657,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BeginFrameArgs';
-        // Phase.
+        // Denotes a step into the async flow event BeginFrameArgs.
         ph: 't';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -5673,7 +5673,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'BeginMainThreadFrame';
-        // Phase.
+        // Denotes an event BeginMainThreadFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5696,7 +5696,7 @@ export namespace TraceEvent {
             };
           };
           name: 'BenchmarkInstrumentation::DisplayRenderingStats';
-          // Phase.
+          // Denotes an event DisplayRenderingStats. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5717,7 +5717,7 @@ export namespace TraceEvent {
             };
           };
           name: 'BenchmarkInstrumentation::ImplThreadRenderingStats';
-          // Phase.
+          // Denotes an event ImplThreadRenderingStats. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5741,7 +5741,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'BitmapImage::dataChanged';
-          // Phase.
+          // Denotes the end of the event DataChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5757,7 +5757,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'BitmapImage::draw';
-          // Phase.
+          // Denotes the end of the event Draw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5778,7 +5778,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Blank frame: No overlays or CALayers';
-          // Phase.
+          // Denotes the end of the event NooverlaysorCALayers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5824,7 +5824,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.AppCacheBackend';
-            // Phase.
+            // Denotes the end of the event AppCacheBackend.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5840,7 +5840,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.AppCacheFrontend';
-            // Phase.
+            // Denotes the end of the event AppCacheFrontend.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5856,7 +5856,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.Blob';
-            // Phase.
+            // Denotes the end of the event Blob.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5872,7 +5872,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.BlobRegistry';
-            // Phase.
+            // Denotes the end of the event BlobRegistry.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5888,7 +5888,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.CodeCacheHost';
-            // Phase.
+            // Denotes the end of the event CodeCacheHost.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5904,7 +5904,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.ManifestManager';
-            // Phase.
+            // Denotes the end of the event ManifestManager.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5920,7 +5920,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.PluginRegistry';
-            // Phase.
+            // Denotes the end of the event PluginRegistry.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5936,7 +5936,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.StorageArea';
-            // Phase.
+            // Denotes the end of the event StorageArea.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -5952,7 +5952,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'blink.mojom.StoragePartitionService';
-            // Phase.
+            // Denotes the end of the event StoragePartitionService.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6059,7 +6059,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.AllocatedObjectSizeSincePreviousGCKB';
-          // Phase.
+          // Denotes a counter for the event AllocatedObjectSizeSincePreviousGCKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6072,7 +6072,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.AllocatedSpaceAtLastGCKB';
-          // Phase.
+          // Denotes a counter for the event AllocatedSpaceAtLastGCKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6085,7 +6085,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.AllocatedSpaceKB';
-          // Phase.
+          // Denotes a counter for the event AllocatedSpaceKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6098,7 +6098,7 @@ export namespace TraceEvent {
             forced: boolean;
           };
           name: 'BlinkGC.AtomicPhase';
-          // Phase.
+          // Denotes the beginning of the event AtomicPhase.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6109,7 +6109,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.AtomicPhase';
-          // Phase.
+          // Denotes the ending of the event AtomicPhase.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6123,7 +6123,7 @@ export namespace TraceEvent {
             lazySweeping: string;
           };
           name: 'BlinkGC.AtomicPhaseMarking';
-          // Phase.
+          // Denotes the beginning of the event AtomicPhaseMarking.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6134,7 +6134,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.AtomicPhaseMarking';
-          // Phase.
+          // Denotes the ending of the event AtomicPhaseMarking.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6147,7 +6147,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.CollectedWrapperCount';
-          // Phase.
+          // Denotes a counter for the event CollectedWrapperCount.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6160,7 +6160,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.CollectionRate';
-          // Phase.
+          // Denotes a counter for the event CollectionRate.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6173,7 +6173,7 @@ export namespace TraceEvent {
             forced: boolean;
           };
           name: 'BlinkGC.CompleteSweep';
-          // Phase.
+          // Denotes the beginning of the event CompleteSweep.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6184,7 +6184,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.CompleteSweep';
-          // Phase.
+          // Denotes the ending of the event CompleteSweep.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6197,7 +6197,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.EagerSweep';
-          // Phase.
+          // Denotes the beginning of the event EagerSweep.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6208,7 +6208,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.EagerSweep';
-          // Phase.
+          // Denotes the ending of the event EagerSweep.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6221,7 +6221,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.InvokePreFinalizers';
-          // Phase.
+          // Denotes the beginning of the event InvokePreFinalizers.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6232,7 +6232,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.InvokePreFinalizers';
-          // Phase.
+          // Denotes the ending of the event InvokePreFinalizers.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6245,7 +6245,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.LazySweepOnAllocation';
-          // Phase.
+          // Denotes the beginning of the event LazySweepOnAllocation.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6256,7 +6256,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.LazySweepOnAllocation';
-          // Phase.
+          // Denotes the ending of the event LazySweepOnAllocation.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6269,7 +6269,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.MarkedObjectSizeAtLastCompleteSweepKB';
-          // Phase.
+          // Denotes a counter for the event MarkedObjectSizeAtLastCompleteSweepKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6282,7 +6282,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkInvokeEphemeronCallbacks';
-          // Phase.
+          // Denotes the beginning of the event MarkInvokeEphemeronCallbacks.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6293,7 +6293,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkInvokeEphemeronCallbacks';
-          // Phase.
+          // Denotes the ending of the event MarkInvokeEphemeronCallbacks.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6306,7 +6306,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkNotFullyConstructedObjects';
-          // Phase.
+          // Denotes the beginning of the event MarkNotFullyConstructedObjects.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6317,7 +6317,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkNotFullyConstructedObjects';
-          // Phase.
+          // Denotes the ending of the event MarkNotFullyConstructedObjects.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6330,7 +6330,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkProcessWorklist';
-          // Phase.
+          // Denotes the beginning of the event MarkProcessWorklist.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6341,7 +6341,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkProcessWorklist';
-          // Phase.
+          // Denotes the ending of the event MarkProcessWorklist.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6354,7 +6354,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkWeakProcessing';
-          // Phase.
+          // Denotes the beginning of the event MarkWeakProcessing.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6365,7 +6365,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.MarkWeakProcessing';
-          // Phase.
+          // Denotes the ending of the event MarkWeakProcessing.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6378,7 +6378,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.ObjectSizeAtLastGCKB';
-          // Phase.
+          // Denotes a counter for the event ObjectSizeAtLastGCKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6391,7 +6391,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.PartitionAllocSizeAtLastGCKB';
-          // Phase.
+          // Denotes a counter for the event PartitionAllocSizeAtLastGCKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6404,7 +6404,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitCrossThreadPersistents';
-          // Phase.
+          // Denotes the beginning of the event VisitCrossThreadPersistents.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6415,7 +6415,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitCrossThreadPersistents';
-          // Phase.
+          // Denotes the ending of the event VisitCrossThreadPersistents.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6428,7 +6428,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitDOMWrappers';
-          // Phase.
+          // Denotes the beginning of the event VisitDOMWrappers.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6439,7 +6439,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitDOMWrappers';
-          // Phase.
+          // Denotes the ending of the event VisitDOMWrappers.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6452,7 +6452,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitPersistentRoots';
-          // Phase.
+          // Denotes the beginning of the event VisitPersistentRoots.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6463,7 +6463,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitPersistentRoots';
-          // Phase.
+          // Denotes the ending of the event VisitPersistentRoots.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6476,7 +6476,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitPersistents';
-          // Phase.
+          // Denotes the beginning of the event VisitPersistents.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6487,7 +6487,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitPersistents';
-          // Phase.
+          // Denotes the ending of the event VisitPersistents.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6500,7 +6500,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitStackRoots';
-          // Phase.
+          // Denotes the beginning of the event VisitStackRoots.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6511,7 +6511,7 @@ export namespace TraceEvent {
           
           };
           name: 'BlinkGC.VisitStackRoots';
-          // Phase.
+          // Denotes the ending of the event VisitStackRoots.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6524,7 +6524,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.WrapperCount';
-          // Phase.
+          // Denotes a counter for the event WrapperCount.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6537,7 +6537,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'BlinkGC.WrapperCountAtLastGC';
-          // Phase.
+          // Denotes a counter for the event WrapperCountAtLastGC.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6554,7 +6554,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'BlinkGCMarking';
-        // Phase.
+        // Denotes the end of the event BlinkGCMarking.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6582,7 +6582,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'BlobReader::CountSize';
-          // Phase.
+          // Denotes the ending of the async event CountSize.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6594,7 +6594,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'BlobReader::CountSize';
-          // Phase.
+          // Denotes the beginning of the async event CountSize.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6609,7 +6609,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'BlobReader::ReadBytesItem';
-          // Phase.
+          // Denotes the end of the event ReadBytesItem.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6625,7 +6625,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'BlobReader::ReadMore';
-          // Phase.
+          // Denotes the ending of the async event ReadMore.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6637,7 +6637,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'BlobReader::ReadMore';
-          // Phase.
+          // Denotes the beginning of the async event ReadMore.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -6650,7 +6650,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BlobReader';
-        // Phase.
+        // Denotes the ending of the async event BlobReader.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6662,7 +6662,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BlobReader';
-        // Phase.
+        // Denotes the beginning of the async event BlobReader.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6681,7 +6681,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'BookmarkProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6702,7 +6702,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'BrowserCrApplication::sendEvent';
-          // Phase.
+          // Denotes the end of the event SendEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6719,7 +6719,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BrowserWorker-0x7fd3431d1a00';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event BrowserWorker0x7fd3431d1a00.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6733,7 +6733,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BrowserWorker-0x7fd3431d1a00';
-        // Phase.
+        // Denotes a step into the nestable async flow event BrowserWorker0x7fd3431d1a00.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6747,7 +6747,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BrowserWorker-0x7fd3431d1a00';
-        // Phase.
+        // Denotes the ending of the async event BrowserWorker0x7fd3431d1a00.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6760,7 +6760,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'BrowserWorker-0x7fd3431d1a00';
-        // Phase.
+        // Denotes the beginning of the async event BrowserWorker0x7fd3431d1a00.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6775,7 +6775,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'BudgetPool_DisableThrottling';
-        // Phase.
+        // Denotes the end of the event BudgetPool_DisableThrottling.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6791,7 +6791,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CalculateRenderSurfaceLayerList';
-        // Phase.
+        // Denotes the end of the event CalculateRenderSurfaceLayerList.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6815,7 +6815,7 @@ export namespace TraceEvent {
           };
         };
         name: 'CancelAnimationFrame';
-        // Phase.
+        // Denotes an event CancelAnimationFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6831,7 +6831,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'CANCELLED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event CANCELLED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -6846,7 +6846,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CanExceedIdleDeadlineIfRequired';
-        // Phase.
+        // Denotes the end of the event CanExceedIdleDeadlineIfRequired.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6869,7 +6869,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Canvas2DLayerBridge::FinalizeFrame';
-          // Phase.
+          // Denotes the end of the event FinalizeFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6885,7 +6885,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Canvas2DLayerBridge::flushRecording';
-          // Phase.
+          // Denotes the end of the event FlushRecording.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6900,7 +6900,7 @@ export namespace TraceEvent {
         
         };
         name: 'Canvas2DLayerBridgeCreation';
-        // Phase.
+        // Denotes an event Canvas2DLayerBridgeCreation. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6920,7 +6920,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CanvasResourceProvider::Canvas';
-          // Phase.
+          // Denotes the end of the event Canvas.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6941,7 +6941,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CanvasResourceProviderBitmap::CreateSkSurface';
-          // Phase.
+          // Denotes the end of the event CreateSkSurface.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6962,7 +6962,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CARendererLayerTree::CommitScheduledCALayers';
-          // Phase.
+          // Denotes the end of the event CommitScheduledCALayers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -6989,7 +6989,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CategorizedWorkerPool::CollectCompletedTasks';
-          // Phase.
+          // Denotes the end of the event CollectCompletedTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7006,7 +7006,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CategorizedWorkerPool::ScheduleTasks';
-          // Phase.
+          // Denotes the end of the event ScheduleTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7022,7 +7022,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CategorizedWorkerPool::WaitForTasksToFinishRunning';
-          // Phase.
+          // Denotes the end of the event WaitForTasksToFinishRunning.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7046,7 +7046,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CATransactionCoordinator: post-commit handler';
-          // Phase.
+          // Denotes the end of the event Postcommithandler.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7062,7 +7062,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CATransactionCoordinator: pre-commit handler';
-          // Phase.
+          // Denotes the end of the event Precommithandler.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7109,7 +7109,7 @@ export namespace TraceEvent {
             local: string;
           };
           name: 'cc::DisplayItemList';
-          // Phase.
+          // Denotes a snapshot object of the event DisplayItemList.
           ph: 'O';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7123,7 +7123,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'cc::LayerImpl';
-          // Phase.
+          // Denotes a delete object of the event LayerImpl.
           ph: 'D';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7137,7 +7137,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'cc::LayerTreeHostImpl';
-          // Phase.
+          // Denotes a delete object of the event LayerTreeHostImpl.
           ph: 'D';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7149,7 +7149,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'cc::LayerTreeHostImpl';
-          // Phase.
+          // Denotes a create object of the event LayerTreeHostImpl.
           ph: 'N';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7425,7 +7425,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'cc::LayerTreeHostImpl';
-          // Phase.
+          // Denotes a snapshot object of the event LayerTreeHostImpl.
           ph: 'O';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7439,7 +7439,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'cc::Tile';
-          // Phase.
+          // Denotes a delete object of the event Tile.
           ph: 'D';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7459,7 +7459,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '@../../cc/scheduler/scheduler.cc:38';
-          // Phase.
+          // Denotes the ending of the async event L38.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7492,7 +7492,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '@../../cc/scheduler/scheduler.cc:38';
-          // Phase.
+          // Denotes the beginning of the async event L38.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7512,7 +7512,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '@../../cc/trees/layer_tree_host_impl.cc:300';
-          // Phase.
+          // Denotes the ending of the async event L300.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7545,7 +7545,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: '@../../cc/trees/layer_tree_host_impl.cc:300';
-          // Phase.
+          // Denotes the beginning of the async event L300.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -7566,7 +7566,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'CERT_VERIFIER_REQUEST_BOUND_TO_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event CERT_VERIFIER_REQUEST_BOUND_TO_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -7581,7 +7581,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'CERT_VERIFIER_REQUEST';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event CERT_VERIFIER_REQUEST.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -7594,7 +7594,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'CERT_VERIFIER_REQUEST';
-        // Phase.
+        // Denotes a step into the nestable async flow event CERT_VERIFIER_REQUEST.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -7613,7 +7613,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CertVerifierJob::OnJobCompleted';
-          // Phase.
+          // Denotes the end of the event OnJobCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7635,7 +7635,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ChannelMojo::OnMessageReceived';
-          // Phase.
+          // Denotes the end of the event OnMessageReceived.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7668,7 +7668,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CheckerImageTracker::DidActivateSyncTree';
-          // Phase.
+          // Denotes the end of the event DidActivateSyncTree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7684,7 +7684,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CheckerImageTracker::ScheduleImageDecodeQueue';
-          // Phase.
+          // Denotes the end of the event ScheduleImageDecodeQueue.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7700,7 +7700,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CheckerImageTracker::ScheduleNextImageDecode';
-          // Phase.
+          // Denotes the end of the event ScheduleNextImageDecode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7716,7 +7716,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CheckerImageTracker::ShouldCheckerImage';
-          // Phase.
+          // Denotes the end of the event ShouldCheckerImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7732,7 +7732,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CheckerImageTracker::TakeImagesToInvalidateOnSyncTree';
-          // Phase.
+          // Denotes the end of the event TakeImagesToInvalidateOnSyncTree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7749,7 +7749,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ChromeViewHostMsg_AllowDOMStorage';
-        // Phase.
+        // Denotes the end of the event ChromeViewHostMsg_AllowDOMStorage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7770,7 +7770,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ChromiumRandomAccessFile::Read';
-          // Phase.
+          // Denotes the end of the event Read.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7787,7 +7787,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CircleOp';
-        // Phase.
+        // Denotes the end of the event CircleOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7803,7 +7803,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CircularRRectOp';
-        // Phase.
+        // Denotes the end of the event CircularRRectOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7823,7 +7823,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ClassicPendingScript::GetSource';
-          // Phase.
+          // Denotes the end of the event GetSource.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7838,7 +7838,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'cleanup_tq';
-        // Phase.
+        // Denotes a counter for the event Cleanup_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -7853,7 +7853,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'Clear using TexSubImage2D';
-        // Phase.
+        // Denotes the end of the event ClearusingTexSubImage2D.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7873,7 +7873,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ClientSocketHandle::OnIOComplete';
-          // Phase.
+          // Denotes the end of the event OnIOComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7894,7 +7894,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ColdModeSpellCheckRequester::invoke';
-          // Phase.
+          // Denotes the end of the event Invoke.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7918,7 +7918,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferHelper::Finish';
-          // Phase.
+          // Denotes the end of the event Finish.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7934,7 +7934,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferHelper::Flush';
-          // Phase.
+          // Denotes the end of the event Flush.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7964,7 +7964,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferProxyImpl::Flush';
-          // Phase.
+          // Denotes the end of the event Flush.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7980,7 +7980,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferProxyImpl::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -7996,7 +7996,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferProxyImpl::OrderingBarrier';
-          // Phase.
+          // Denotes the end of the event OrderingBarrier.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8013,7 +8013,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferProxyImpl::WaitForGetOffset';
-          // Phase.
+          // Denotes the end of the event WaitForGetOffset.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8036,7 +8036,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'CommandBufferService::Paused';
-          // Phase.
+          // Denotes a counter for the event Paused.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -8051,7 +8051,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferService:PutChanged';
-          // Phase.
+          // Denotes the end of the event PutChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8087,7 +8087,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferStub::OnAsyncFlush';
-          // Phase.
+          // Denotes the end of the event OnAsyncFlush.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8103,7 +8103,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferStub::OnDestroyTransferBuffer';
-          // Phase.
+          // Denotes the end of the event OnDestroyTransferBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8119,7 +8119,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferStub::OnRegisterTransferBuffer';
-          // Phase.
+          // Denotes the end of the event OnRegisterTransferBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8135,7 +8135,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferStub::OnSetGetBuffer';
-          // Phase.
+          // Denotes the end of the event OnSetGetBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8151,7 +8151,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferStub::OnWaitForGetOffsetInRange';
-          // Phase.
+          // Denotes the end of the event OnWaitForGetOffsetInRange.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8167,7 +8167,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CommandBufferStub::PerformWork';
-          // Phase.
+          // Denotes the end of the event PerformWork.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8192,7 +8192,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CommitLoad';
-        // Phase.
+        // Denotes the end of the event CommitLoad.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8208,7 +8208,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CommitPendingTreesToCA';
-        // Phase.
+        // Denotes the end of the event CommitPendingTreesToCA.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8222,7 +8222,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'CompositeLayers';
-        // Phase.
+        // Denotes the beginning of the event CompositeLayers.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8233,7 +8233,7 @@ export namespace TraceEvent {
         
         };
         name: 'CompositeLayers';
-        // Phase.
+        // Denotes the ending of the event CompositeLayers.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8252,7 +8252,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CompositingInputsUpdater::update';
-          // Phase.
+          // Denotes the end of the event Update.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8273,7 +8273,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CompositingLayerAssigner::assign';
-          // Phase.
+          // Denotes the end of the event Assign.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8294,7 +8294,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CompositingRequirementsUpdater::updateRecursive';
-          // Phase.
+          // Denotes the end of the event UpdateRecursive.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8309,7 +8309,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'compositor_tq';
-        // Phase.
+        // Denotes a counter for the event Compositor_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8332,7 +8332,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CompositorFrameSinkSupport::DidNotProduceFrame';
-          // Phase.
+          // Denotes the end of the event DidNotProduceFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8348,7 +8348,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CompositorFrameSinkSupport::MaybeSubmitCompositorFrame';
-          // Phase.
+          // Denotes the end of the event MaybeSubmitCompositorFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8370,7 +8370,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CompositorTimingHistory::DidDraw';
-          // Phase.
+          // Denotes the end of the event DidDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8391,7 +8391,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ConcurrentMarking::Run Preempted';
-          // Phase.
+          // Denotes the end of the event RunPreempted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8413,7 +8413,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'CONNECT_JOB_SET_SOCKET';
-        // Phase.
+        // Denotes the ending of the nestable async flow event CONNECT_JOB_SET_SOCKET.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8432,7 +8432,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ConnectJob::NotifyDelegateOfCompletion';
-          // Phase.
+          // Denotes the end of the event NotifyDelegateOfCompletion.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8451,7 +8451,7 @@ export namespace TraceEvent {
             source: string;
           };
           name: 'ConsoleMessage::Error';
-          // Phase.
+          // Denotes an event Error. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8494,7 +8494,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.ChildHistogramFetcherFactory';
-            // Phase.
+            // Denotes the end of the event ChildHistogramFetcherFactory.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8510,7 +8510,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.Frame';
-            // Phase.
+            // Denotes the end of the event Frame.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8526,7 +8526,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.FrameFactory';
-            // Phase.
+            // Denotes the end of the event FrameFactory.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8542,7 +8542,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.FrameInputHandler';
-            // Phase.
+            // Denotes the end of the event FrameInputHandler.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8558,7 +8558,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.FrameSinkProvider';
-            // Phase.
+            // Denotes the end of the event FrameSinkProvider.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8574,7 +8574,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.RenderFrameMetadataObserverClient';
-            // Phase.
+            // Denotes the end of the event RenderFrameMetadataObserverClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8590,7 +8590,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.SandboxSupportMac';
-            // Phase.
+            // Denotes the end of the event SandboxSupportMac.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8606,7 +8606,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'content.mojom.Widget';
-            // Phase.
+            // Denotes the end of the event Widget.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8628,7 +8628,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ContentLayerDelegate::paintContents';
-          // Phase.
+          // Denotes the end of the event PaintContents.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8649,7 +8649,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ContentSubresourceFilterThrottleManager::ReadyToCommitNavigation';
-          // Phase.
+          // Denotes the end of the event ReadyToCommitNavigation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8666,7 +8666,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ContextCreatedNotification';
-        // Phase.
+        // Denotes the end of the event ContextCreatedNotification.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8680,7 +8680,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'control_tq';
-        // Phase.
+        // Denotes a counter for the event Control_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8695,7 +8695,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'COOKIE_STORE_COOKIE_ADDED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event COOKIE_STORE_COOKIE_ADDED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8710,7 +8710,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'COOKIE_STORE_COOKIE_DELETED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event COOKIE_STORE_COOKIE_DELETED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8729,7 +8729,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CpuProfiler::StartProfiling';
-          // Phase.
+          // Denotes the end of the event StartProfiling.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8746,7 +8746,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CreateIOSurface';
-        // Phase.
+        // Denotes the end of the event CreateIOSurface.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8762,7 +8762,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'CSSFirstUsed';
-        // Phase.
+        // Denotes the end of the event CSSFirstUsed.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8782,7 +8782,7 @@ export namespace TraceEvent {
             
             };
             name: 'CSSParserImpl::parseStyleSheet.parse';
-            // Phase.
+            // Denotes the beginning of the event Parse.
             ph: 'B';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -8793,7 +8793,7 @@ export namespace TraceEvent {
             
             };
             name: 'CSSParserImpl::parseStyleSheet.parse';
-            // Phase.
+            // Denotes the ending of the event Parse.
             ph: 'E';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -8806,7 +8806,7 @@ export namespace TraceEvent {
             mode: number;
           };
           name: 'CSSParserImpl::parseStyleSheet';
-          // Phase.
+          // Denotes the beginning of the event ParseStyleSheet.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -8818,7 +8818,7 @@ export namespace TraceEvent {
             tokenCount: number;
           };
           name: 'CSSParserImpl::parseStyleSheet';
-          // Phase.
+          // Denotes the ending of the event ParseStyleSheet.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -8838,7 +8838,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'CustomElementRegistry::define';
-          // Phase.
+          // Denotes the end of the event Define.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8853,7 +8853,7 @@ export namespace TraceEvent {
         
         };
         name: 'Damage not visible.';
-        // Phase.
+        // Denotes an event Damagenotvisible. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8873,7 +8873,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DataReductionProxyCompressionStats::RecordDataUseWithMimeType';
-          // Phase.
+          // Denotes the end of the event RecordDataUseWithMimeType.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8888,7 +8888,7 @@ export namespace TraceEvent {
         
         };
         name: 'DecodeFont';
-        // Phase.
+        // Denotes the beginning of the event DecodeFont.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8899,7 +8899,7 @@ export namespace TraceEvent {
         
         };
         name: 'DecodeFont';
-        // Phase.
+        // Denotes the ending of the event DecodeFont.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8914,7 +8914,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'Decode Image';
-        // Phase.
+        // Denotes the end of the event DecodeImage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8930,7 +8930,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'Decode LazyPixelRef';
-        // Phase.
+        // Denotes the end of the event DecodeLazyPixelRef.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8944,7 +8944,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'default_tq';
-        // Phase.
+        // Denotes a counter for the event Default_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -8959,7 +8959,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DefaultPathOp';
-        // Phase.
+        // Denotes the end of the event DefaultPathOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -8979,7 +8979,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DelayBasedTimeSource::SetActive';
-          // Phase.
+          // Denotes the end of the event SetActive.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9016,7 +9016,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'device.mojom.PowerMonitor';
-            // Phase.
+            // Denotes the end of the event PowerMonitor.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9032,7 +9032,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'device.mojom.PowerMonitorClient';
-            // Phase.
+            // Denotes the end of the event PowerMonitorClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9048,7 +9048,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'device.mojom.TimeZoneMonitor';
-            // Phase.
+            // Denotes the end of the event TimeZoneMonitor.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9064,7 +9064,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'device.mojom.WakeLock';
-            // Phase.
+            // Denotes the end of the event WakeLock.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9080,7 +9080,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'device.mojom.WakeLockContext';
-            // Phase.
+            // Denotes the end of the event WakeLockContext.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9096,7 +9096,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'device.mojom.WakeLockProvider';
-            // Phase.
+            // Denotes the end of the event WakeLockProvider.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9122,7 +9122,7 @@ export namespace TraceEvent {
           };
         };
         name: 'DidPrepareTiles';
-        // Phase.
+        // Denotes an event DidPrepareTiles. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9138,7 +9138,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DidProcessTask';
-        // Phase.
+        // Denotes the end of the event DidProcessTask.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9161,7 +9161,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DirectRenderer::DrawFrame';
-          // Phase.
+          // Denotes the end of the event DrawFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9177,7 +9177,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DirectRenderer::DrawRenderPass';
-          // Phase.
+          // Denotes the end of the event DrawRenderPass.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9199,7 +9199,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'discardable_memory.mojom.DiscardableSharedMemoryManager';
-            // Phase.
+            // Denotes the end of the event DiscardableSharedMemoryManager.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9221,7 +9221,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DiscardableImageMap::Generate';
-          // Phase.
+          // Denotes the end of the event Generate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9236,7 +9236,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'DiskUsage';
-        // Phase.
+        // Denotes a counter for the event DiskUsage.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9267,7 +9267,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Display::DrawAndSwap';
-          // Phase.
+          // Denotes the end of the event DrawAndSwap.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9283,7 +9283,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Display::Resize';
-          // Phase.
+          // Denotes the end of the event Resize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9299,7 +9299,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Display::SetSurfaceId';
-          // Phase.
+          // Denotes the end of the event SetSurfaceId.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9315,7 +9315,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Display::SetVisible';
-          // Phase.
+          // Denotes the end of the event SetVisible.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9331,7 +9331,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Display::SurfaceDiscarded';
-          // Phase.
+          // Denotes the end of the event SurfaceDiscarded.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9352,7 +9352,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayCALayerTree::GotCAContextFrame';
-          // Phase.
+          // Denotes the end of the event GotCAContextFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9369,7 +9369,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DisplayCompositor';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event DisplayCompositor.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9383,7 +9383,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DisplayCompositor';
-        // Phase.
+        // Denotes a step into the nestable async flow event DisplayCompositor.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9397,7 +9397,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DisplayCompositor';
-        // Phase.
+        // Denotes the ending of the async event DisplayCompositor.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9410,7 +9410,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DisplayCompositor';
-        // Phase.
+        // Denotes the beginning of the async event DisplayCompositor.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9429,7 +9429,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayItemList::Finalize';
-          // Phase.
+          // Denotes the end of the event Finalize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9453,7 +9453,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayLinkMac::DisplayLinkCallback';
-          // Phase.
+          // Denotes the end of the event DisplayLinkCallback.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9469,7 +9469,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayLinkMac::UpdateVSyncParameters';
-          // Phase.
+          // Denotes the end of the event UpdateVSyncParameters.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9529,7 +9529,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::BeginFrame';
-          // Phase.
+          // Denotes the end of the event BeginFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9545,7 +9545,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::DrawAndSwap';
-          // Phase.
+          // Denotes the end of the event DrawAndSwap.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9561,7 +9561,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::OnBeginFrameDeadline';
-          // Phase.
+          // Denotes the end of the event OnBeginFrameDeadline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9576,7 +9576,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'DisplayScheduler:pending_swaps';
-          // Phase.
+          // Denotes the ending of the async event Pending_swaps.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -9588,7 +9588,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'DisplayScheduler:pending_swaps';
-          // Phase.
+          // Denotes the beginning of the async event Pending_swaps.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -9603,7 +9603,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::ScheduleBeginFrameDeadline';
-          // Phase.
+          // Denotes the end of the event ScheduleBeginFrameDeadline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9619,7 +9619,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::SetNewRootSurface';
-          // Phase.
+          // Denotes the end of the event SetNewRootSurface.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9635,7 +9635,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::SetRootFrameMissing';
-          // Phase.
+          // Denotes the end of the event SetRootFrameMissing.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9651,7 +9651,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::SurfaceDamaged';
-          // Phase.
+          // Denotes the end of the event SurfaceDamaged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9667,7 +9667,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DisplayScheduler::SurfaceDamageExpected';
-          // Phase.
+          // Denotes the end of the event SurfaceDamageExpected.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9682,7 +9682,7 @@ export namespace TraceEvent {
             pending_surface_id?: string;
           };
           name: 'DisplayScheduler::UpdateHasPendingSurfaces';
-          // Phase.
+          // Denotes an event UpdateHasPendingSurfaces. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9704,7 +9704,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DNS_TRANSACTION_ATTEMPT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event DNS_TRANSACTION_ATTEMPT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9721,7 +9721,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DNS_TRANSACTION_QUERY';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event DNS_TRANSACTION_QUERY.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9736,7 +9736,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DNS_TRANSACTION_QUERY';
-        // Phase.
+        // Denotes a step into the nestable async flow event DNS_TRANSACTION_QUERY.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9758,7 +9758,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DNS_TRANSACTION_RESPONSE';
-        // Phase.
+        // Denotes the ending of the nestable async flow event DNS_TRANSACTION_RESPONSE.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9776,7 +9776,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DNS_TRANSACTION';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event DNS_TRANSACTION.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9791,7 +9791,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DNS_TRANSACTION';
-        // Phase.
+        // Denotes a step into the nestable async flow event DNS_TRANSACTION.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -9826,7 +9826,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Document::rebuildLayoutTree';
-          // Phase.
+          // Denotes the end of the event RebuildLayoutTree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9842,7 +9842,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Document::recalcStyle';
-          // Phase.
+          // Denotes the end of the event RecalcStyle.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9858,7 +9858,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Document::shutdown';
-          // Phase.
+          // Denotes the end of the event Shutdown.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9874,7 +9874,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Document::updateActiveStyle';
-          // Phase.
+          // Denotes the end of the event UpdateActiveStyle.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9888,7 +9888,7 @@ export namespace TraceEvent {
           
           };
           name: 'Document::updateStyle';
-          // Phase.
+          // Denotes the beginning of the event UpdateStyle.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -9916,7 +9916,7 @@ export namespace TraceEvent {
             resolverAccessCount: number;
           };
           name: 'Document::updateStyle';
-          // Phase.
+          // Denotes the ending of the event UpdateStyle.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -9931,7 +9931,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Document::updateStyleInvalidationIfNeeded';
-          // Phase.
+          // Denotes the end of the event UpdateStyleInvalidationIfNeeded.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9952,7 +9952,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DocumentSubresourceFilter::GetLoadPolicy';
-          // Phase.
+          // Denotes the end of the event GetLoadPolicy.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9973,7 +9973,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DocumentTimeline::serviceAnimations';
-          // Phase.
+          // Denotes the end of the event ServiceAnimations.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -9988,7 +9988,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'domComplete';
-        // Phase.
+        // Denotes a mark of the event DomComplete.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10002,7 +10002,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DOM Content Loaded';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event DOMContentLoaded.
         ph: 'b';
       }
     
@@ -10012,7 +10012,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'DOM Content Loaded';
-        // Phase.
+        // Denotes a step into the nestable async flow event DOMContentLoaded.
         ph: 'e';
       }
     }
@@ -10023,7 +10023,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'domContentLoadedEventEnd';
-        // Phase.
+        // Denotes a mark of the event DomContentLoadedEventEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10036,7 +10036,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'domContentLoadedEventStart';
-        // Phase.
+        // Denotes a mark of the event DomContentLoadedEventStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10049,7 +10049,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'domInteractive';
-        // Phase.
+        // Denotes a mark of the event DomInteractive.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10062,7 +10062,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'domLoading';
-        // Phase.
+        // Denotes a mark of the event DomLoading.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10077,7 +10077,7 @@ export namespace TraceEvent {
           };
         };
         name: 'domReady';
-        // Phase.
+        // Denotes a mark of the event DomReady.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10092,7 +10092,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DOMStorageHostMsg_LoadStorageArea';
-        // Phase.
+        // Denotes the end of the event DOMStorageHostMsg_LoadStorageArea.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10108,7 +10108,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DOMStorageHostMsg_OpenStorageArea';
-        // Phase.
+        // Denotes the end of the event DOMStorageHostMsg_OpenStorageArea.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10124,7 +10124,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DOMStorageHostMsg_RemoveItem';
-        // Phase.
+        // Denotes the end of the event DOMStorageHostMsg_RemoveItem.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10140,7 +10140,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DOMStorageHostMsg_SetItem';
-        // Phase.
+        // Denotes the end of the event DOMStorageHostMsg_SetItem.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10156,7 +10156,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DOMStorageMsg_AsyncOperationComplete';
-        // Phase.
+        // Denotes the end of the event DOMStorageMsg_AsyncOperationComplete.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10172,7 +10172,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DOMStorageMsg_Event';
-        // Phase.
+        // Denotes the end of the event DOMStorageMsg_Event.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10187,7 +10187,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'domTime';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event DomTime.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10199,7 +10199,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'domTime';
-        // Phase.
+        // Denotes a step into the nestable async flow event DomTime.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10218,7 +10218,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DosplayResourceProvider::DeleteResourceInternal';
-          // Phase.
+          // Denotes the end of the event DeleteResourceInternal.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10235,7 +10235,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DoVerifyOnWorkerThread';
-        // Phase.
+        // Denotes the end of the event DoVerifyOnWorkerThread.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10258,7 +10258,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'draw_property_utils::ComputeDrawPropertiesOfVisibleLayers';
-          // Phase.
+          // Denotes the end of the event ComputeDrawPropertiesOfVisibleLayers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10274,7 +10274,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'draw_property_utils::FindLayersThatNeedUpdates';
-          // Phase.
+          // Denotes the end of the event FindLayersThatNeedUpdates.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10289,7 +10289,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'DrawFrame';
-        // Phase.
+        // Denotes an event DrawFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10309,7 +10309,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'DrawLayers.FrameViewerTracing';
-          // Phase.
+          // Denotes the end of the event FrameViewerTracing.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10324,7 +10324,7 @@ export namespace TraceEvent {
           LazyPixelRef: number;
         };
         name: 'Draw LazyPixelRef';
-        // Phase.
+        // Denotes an event DrawLazyPixelRef. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10338,7 +10338,7 @@ export namespace TraceEvent {
         
         };
         name: 'Draw skipped.';
-        // Phase.
+        // Denotes an event Drawskipped. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10354,7 +10354,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'DrawVerticesOp';
-        // Phase.
+        // Denotes the end of the event DrawVerticesOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10368,7 +10368,7 @@ export namespace TraceEvent {
         
         };
         name: 'EarlyOut_DeferCommit_InsideBeginMainFrame';
-        // Phase.
+        // Denotes an event EarlyOut_DeferCommit_InsideBeginMainFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10382,7 +10382,7 @@ export namespace TraceEvent {
         
         };
         name: 'EarlyOut_NoUpdates';
-        // Phase.
+        // Denotes an event EarlyOut_NoUpdates. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10405,7 +10405,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EditingUtility::nextCandidateAlgorithm';
-          // Phase.
+          // Denotes the end of the event NextCandidateAlgorithm.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10421,7 +10421,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EditingUtility::previousCandidateAlgorithm';
-          // Phase.
+          // Denotes the end of the event PreviousCandidateAlgorithm.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10441,7 +10441,7 @@ export namespace TraceEvent {
             State: string;
           };
           name: 'ElementAnimations::SetRunState';
-          // Phase.
+          // Denotes an event SetRunState. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10458,7 +10458,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'EnableLongIdlePeriod';
-        // Phase.
+        // Denotes the end of the event EnableLongIdlePeriod.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10474,7 +10474,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'EndIdlePeriod';
-        // Phase.
+        // Denotes the end of the event EndIdlePeriod.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10489,7 +10489,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'End of Trace';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event EndofTrace.
         ph: 'b';
       }
     
@@ -10499,7 +10499,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'End of Trace';
-        // Phase.
+        // Denotes a step into the nestable async flow event EndofTrace.
         ph: 'e';
       }
     }
@@ -10510,7 +10510,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'estimated_queueing_time_for_window';
-        // Phase.
+        // Denotes a counter for the event Estimated_queueing_time_for_window.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -10529,7 +10529,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Evacuator::EvacuatePage';
-          // Phase.
+          // Denotes the end of the event EvacuatePage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10558,7 +10558,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'EvaluateScript';
-        // Phase.
+        // Denotes the end of the event EvaluateScript.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10584,7 +10584,7 @@ export namespace TraceEvent {
             global: string;
           };
           name: 'Event.Pipeline';
-          // Phase.
+          // Denotes the end of the event Pipeline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10610,7 +10610,7 @@ export namespace TraceEvent {
         // Duration.
         dur?: number;
         name: 'EventDispatch';
-        // Phase.
+        // Denotes the end of the event EventDispatch.
         ph: 'X';
         tdur?: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10633,7 +10633,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventDispatcher::dispatch';
-          // Phase.
+          // Denotes the end of the event Dispatch.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10649,7 +10649,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventDispatcher::dispatchEvent';
-          // Phase.
+          // Denotes the end of the event DispatchEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10682,7 +10682,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventHandler::handleMouseLeaveEvent';
-          // Phase.
+          // Denotes the end of the event HandleMouseLeaveEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10698,7 +10698,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventHandler::handleMouseMoveEvent';
-          // Phase.
+          // Denotes the end of the event HandleMouseMoveEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10714,7 +10714,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventHandler::handleMousePressEvent';
-          // Phase.
+          // Denotes the end of the event HandleMousePressEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10730,7 +10730,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventHandler::handleMouseReleaseEvent';
-          // Phase.
+          // Denotes the end of the event HandleMouseReleaseEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10746,7 +10746,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'EventHandler::HitTestResultAtLocation';
-          // Phase.
+          // Denotes the end of the event HitTestResultAtLocation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10763,7 +10763,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_AddLazyListener';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_AddLazyListener.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10779,7 +10779,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_AddListener';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_AddListener.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10795,7 +10795,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_CloseMessagePort';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_CloseMessagePort.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10811,7 +10811,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_EventAck';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_EventAck.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10827,7 +10827,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_ExecuteCodeFinished';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_ExecuteCodeFinished.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10843,7 +10843,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_GenerateUniqueID';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_GenerateUniqueID.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10859,7 +10859,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_GetMessageBundle';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_GetMessageBundle.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10875,7 +10875,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_OpenChannelToExtension';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_OpenChannelToExtension.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10891,7 +10891,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_OpenChannelToTab';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_OpenChannelToTab.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10907,7 +10907,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_OpenMessagePort';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_OpenMessagePort.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10923,7 +10923,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_PostMessage';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_PostMessage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10939,7 +10939,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_Request';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_Request.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10955,7 +10955,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionHostMsg_RequestForIOThread';
-        // Phase.
+        // Denotes the end of the event ExtensionHostMsg_RequestForIOThread.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10971,7 +10971,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_ActivateExtension';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_ActivateExtension.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -10987,7 +10987,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_DeliverMessage';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_DeliverMessage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11003,7 +11003,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_DispatchEvent';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_DispatchEvent.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11019,7 +11019,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_DispatchOnConnect';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_DispatchOnConnect.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11035,7 +11035,7 @@ export namespace TraceEvent {
         // Duration.
         dur?: number;
         name: 'ExtensionMsg_DispatchOnDisconnect';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_DispatchOnDisconnect.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11051,7 +11051,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_ExecuteCode';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_ExecuteCode.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11067,7 +11067,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_Loaded';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_Loaded.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11083,7 +11083,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_NotifyRenderViewType';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_NotifyRenderViewType.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11099,7 +11099,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_Response';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_Response.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11115,7 +11115,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_SetScriptingWhitelist';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_SetScriptingWhitelist.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11131,7 +11131,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_SetSessionInfo';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_SetSessionInfo.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11147,7 +11147,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_SetSystemFont';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_SetSystemFont.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11163,7 +11163,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_SetTabId';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_SetTabId.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11179,7 +11179,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_UpdateBrowserWindowId';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_UpdateBrowserWindowId.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11195,7 +11195,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_UpdateDefaultPolicyHostRestrictions';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_UpdateDefaultPolicyHostRestrictions.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11211,7 +11211,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_UpdateUserScripts';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_UpdateUserScripts.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11227,7 +11227,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_ValidateMessagePort';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_ValidateMessagePort.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11243,7 +11243,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ExtensionMsg_WatchPages';
-        // Phase.
+        // Denotes the end of the event ExtensionMsg_WatchPages.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11264,7 +11264,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'extensions::FeatureProvider::FeatureProviderStatic';
-            // Phase.
+            // Denotes the end of the event FeatureProviderStatic.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11282,7 +11282,7 @@ export namespace TraceEvent {
           };
         };
         name: 'faveReady_mark';
-        // Phase.
+        // Denotes a mark of the event FaveReady_mark.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11296,7 +11296,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'faveReady';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event FaveReady.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11308,7 +11308,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'faveReady';
-        // Phase.
+        // Denotes a step into the nestable async flow event FaveReady.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11333,7 +11333,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FaviconServiceImpl::GetFaviconForPageURL';
-          // Phase.
+          // Denotes the end of the event GetFaviconForPageURL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11349,7 +11349,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FaviconServiceImpl::GetFaviconImageForPageURL';
-          // Phase.
+          // Denotes the end of the event GetFaviconImageForPageURL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11365,7 +11365,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FaviconServiceImpl::RunFaviconImageCallbackWithBitmapResults';
-          // Phase.
+          // Denotes the end of the event RunFaviconImageCallbackWithBitmapResults.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11389,7 +11389,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FaviconUtil::SelectFaviconFramesFromPNGs';
-          // Phase.
+          // Denotes the end of the event SelectFaviconFramesFromPNGs.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11405,7 +11405,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FaviconUtil::SelectFaviconFramesFromPNGsWithoutResizing';
-          // Phase.
+          // Denotes the end of the event SelectFaviconFramesFromPNGsWithoutResizing.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11422,7 +11422,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FeatureFirstUsed';
-        // Phase.
+        // Denotes the end of the event FeatureFirstUsed.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11436,7 +11436,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'fetchStart';
-        // Phase.
+        // Denotes a mark of the event FetchStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11496,7 +11496,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Close';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Close.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11508,7 +11508,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Close';
-          // Phase.
+          // Denotes a step into the nestable async flow event Close.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11523,7 +11523,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Duplicate';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Duplicate.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11535,7 +11535,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Duplicate';
-          // Phase.
+          // Denotes a step into the nestable async flow event Duplicate.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11550,7 +11550,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Flush';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Flush.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11562,7 +11562,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Flush';
-          // Phase.
+          // Denotes a step into the nestable async flow event Flush.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11577,7 +11577,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::GetInfo';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event GetInfo.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11589,7 +11589,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::GetInfo';
-          // Phase.
+          // Denotes a step into the nestable async flow event GetInfo.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11604,7 +11604,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Initialize';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Initialize.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11616,7 +11616,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Initialize';
-          // Phase.
+          // Denotes a step into the nestable async flow event Initialize.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11631,7 +11631,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Read';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Read.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11643,7 +11643,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Read';
-          // Phase.
+          // Denotes a step into the nestable async flow event Read.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11658,7 +11658,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::ReadAtCurrentPos';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event ReadAtCurrentPos.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11670,7 +11670,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::ReadAtCurrentPos';
-          // Phase.
+          // Denotes a step into the nestable async flow event ReadAtCurrentPos.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11685,7 +11685,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Seek';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Seek.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11697,7 +11697,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Seek';
-          // Phase.
+          // Denotes a step into the nestable async flow event Seek.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11712,7 +11712,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::SetLength';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event SetLength.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11724,7 +11724,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::SetLength';
-          // Phase.
+          // Denotes a step into the nestable async flow event SetLength.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11739,7 +11739,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Write';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event Write.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11751,7 +11751,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::Write';
-          // Phase.
+          // Denotes a step into the nestable async flow event Write.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11766,7 +11766,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::WriteAtCurrentPos';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event WriteAtCurrentPos.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11778,7 +11778,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'File::WriteAtCurrentPos';
-          // Phase.
+          // Denotes a step into the nestable async flow event WriteAtCurrentPos.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -11791,7 +11791,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'File';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event File.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11803,7 +11803,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'File';
-        // Phase.
+        // Denotes a step into the nestable async flow event File.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11818,7 +11818,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FillRectOp';
-        // Phase.
+        // Denotes the end of the event FillRectOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11837,7 +11837,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FireAnimationFrame';
-        // Phase.
+        // Denotes the end of the event FireAnimationFrame.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11858,7 +11858,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FireIdleCallback';
-        // Phase.
+        // Denotes the end of the event FireIdleCallback.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11873,7 +11873,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'First Contentful Paint';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event FirstContentfulPaint.
         ph: 'b';
       }
     
@@ -11883,7 +11883,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'First Contentful Paint';
-        // Phase.
+        // Denotes a step into the nestable async flow event FirstContentfulPaint.
         ph: 'e';
       }
     
@@ -11892,7 +11892,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstContentfulPaint';
-        // Phase.
+        // Denotes an event FirstContentfulPaint. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -11907,7 +11907,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstContentfulPaint';
-        // Phase.
+        // Denotes a mark of the event FirstContentfulPaint.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11923,7 +11923,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstImagePaint';
-        // Phase.
+        // Denotes a mark of the event FirstImagePaint.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11936,7 +11936,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstLayout';
-        // Phase.
+        // Denotes a mark of the event FirstLayout.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11950,7 +11950,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'First Meaningful Paint';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event FirstMeaningfulPaint.
         ph: 'b';
       }
     
@@ -11960,7 +11960,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'First Meaningful Paint';
-        // Phase.
+        // Denotes a step into the nestable async flow event FirstMeaningfulPaint.
         ph: 'e';
       }
     
@@ -11973,7 +11973,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstMeaningfulPaint';
-        // Phase.
+        // Denotes a mark of the event FirstMeaningfulPaint.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -11989,7 +11989,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstMeaningfulPaintCandidate';
-        // Phase.
+        // Denotes a mark of the event FirstMeaningfulPaintCandidate.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12002,7 +12002,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstPaint';
-        // Phase.
+        // Denotes an event FirstPaint. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12017,7 +12017,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstPaint';
-        // Phase.
+        // Denotes a mark of the event FirstPaint.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12030,7 +12030,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'firstTextPaint';
-        // Phase.
+        // Denotes a mark of the event FirstTextPaint.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12044,7 +12044,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'First Visual Change';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event FirstVisualChange.
         ph: 'b';
       }
     
@@ -12054,7 +12054,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'First Visual Change';
-        // Phase.
+        // Denotes a step into the nestable async flow event FirstVisualChange.
         ph: 'e';
       }
     }
@@ -12067,7 +12067,7 @@ export namespace TraceEvent {
           };
         };
         name: 'footerEnd';
-        // Phase.
+        // Denotes a mark of the event FooterEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12082,7 +12082,7 @@ export namespace TraceEvent {
           };
         };
         name: 'footerStart';
-        // Phase.
+        // Denotes a mark of the event FooterStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12096,7 +12096,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'footerTime';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event FooterTime.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12108,7 +12108,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'footerTime';
-        // Phase.
+        // Denotes a step into the nestable async flow event FooterTime.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12121,7 +12121,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'frame_deferrable_tq';
-        // Phase.
+        // Denotes a counter for the event Frame_deferrable_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12134,7 +12134,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'frame_loading_control_tq';
-        // Phase.
+        // Denotes a counter for the event Frame_loading_control_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12147,7 +12147,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'frame_loading_tq';
-        // Phase.
+        // Denotes a counter for the event Frame_loading_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12160,7 +12160,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'frame_pausable_tq';
-        // Phase.
+        // Denotes a counter for the event Frame_pausable_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12173,7 +12173,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'frame_throttleable_tq';
-        // Phase.
+        // Denotes a counter for the event Frame_throttleable_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12186,7 +12186,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'frame_unpausable_tq';
-        // Phase.
+        // Denotes a counter for the event Frame_unpausable_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12200,7 +12200,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameBlameContext';
-        // Phase.
+        // Denotes entering a context of the event FrameBlameContext.
         ph: '(';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12213,7 +12213,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameBlameContext';
-        // Phase.
+        // Denotes leaving a context of the event FrameBlameContext.
         ph: ')';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12233,7 +12233,7 @@ export namespace TraceEvent {
           };
         };
         name: 'FrameCommittedInBrowser';
-        // Phase.
+        // Denotes an event FrameCommittedInBrowser. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12249,7 +12249,7 @@ export namespace TraceEvent {
           };
         };
         name: 'FrameDeletedInBrowser';
-        // Phase.
+        // Denotes an event FrameDeletedInBrowser. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12265,7 +12265,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_BeforeUnload_ACK';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_BeforeUnload_ACK.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12281,7 +12281,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_CheckCompleted';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_CheckCompleted.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12297,7 +12297,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_CookiesEnabled';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_CookiesEnabled.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12313,7 +12313,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_CreateChildFrame';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_CreateChildFrame.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12329,7 +12329,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidAddContentSecurityPolicies';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidAddContentSecurityPolicies.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12345,7 +12345,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidAddMessageToConsole';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidAddMessageToConsole.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12361,7 +12361,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidChangeFrameOwnerProperties';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidChangeFrameOwnerProperties.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12377,7 +12377,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidChangeLoadProgress';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidChangeLoadProgress.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12393,7 +12393,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidFailLoadWithError';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidFailLoadWithError.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12409,7 +12409,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidFinishDocumentLoad';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidFinishDocumentLoad.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12425,7 +12425,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidFinishLoad';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidFinishLoad.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12441,7 +12441,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DidStopLoading';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DidStopLoading.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12457,7 +12457,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DispatchLoad';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DispatchLoad.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12473,7 +12473,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_DocumentOnLoadCompleted';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_DocumentOnLoadCompleted.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12489,7 +12489,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_FocusedNodeChanged';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_FocusedNodeChanged.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12505,7 +12505,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_ForwardResourceTimingToParent';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_ForwardResourceTimingToParent.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12521,7 +12521,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_FrameFocused';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_FrameFocused.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12537,7 +12537,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_HittestData';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_HittestData.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12553,7 +12553,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_RouteMessageEvent';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_RouteMessageEvent.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12569,7 +12569,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_SuddenTerminationDisablerChanged';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_SuddenTerminationDisablerChanged.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12585,7 +12585,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_SwapOut_ACK';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_SwapOut_ACK.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12601,7 +12601,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_SynchronizeVisualProperties';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_SynchronizeVisualProperties.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12617,7 +12617,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_UpdatePageImportanceSignals';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_UpdatePageImportanceSignals.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12633,7 +12633,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_UpdateRenderThrottlingStatus';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_UpdateRenderThrottlingStatus.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12649,7 +12649,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_UpdateState';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_UpdateState.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12665,7 +12665,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_UpdateTitle';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_UpdateTitle.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12681,7 +12681,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_UpdateUserActivationState';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_UpdateUserActivationState.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12697,7 +12697,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_UpdateViewportIntersection';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_UpdateViewportIntersection.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12713,7 +12713,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameHostMsg_VisibilityChanged';
-        // Phase.
+        // Denotes the end of the event FrameHostMsg_VisibilityChanged.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12728,7 +12728,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameLoader';
-        // Phase.
+        // Denotes a delete object of the event FrameLoader.
         ph: 'D';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12740,7 +12740,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameLoader';
-        // Phase.
+        // Denotes a create object of the event FrameLoader.
         ph: 'N';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12760,7 +12760,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameLoader';
-        // Phase.
+        // Denotes a snapshot object of the event FrameLoader.
         ph: 'O';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -12775,7 +12775,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_AddContentSecurityPolicies';
-        // Phase.
+        // Denotes the end of the event FrameMsg_AddContentSecurityPolicies.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12791,7 +12791,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_Delete';
-        // Phase.
+        // Denotes the end of the event FrameMsg_Delete.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12807,7 +12807,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_DeleteProxy';
-        // Phase.
+        // Denotes the end of the event FrameMsg_DeleteProxy.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12823,7 +12823,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_DidStartLoading';
-        // Phase.
+        // Denotes the end of the event FrameMsg_DidStartLoading.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12839,7 +12839,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_DidStopLoading';
-        // Phase.
+        // Denotes the end of the event FrameMsg_DidStopLoading.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12855,7 +12855,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_DidUpdateFramePolicy';
-        // Phase.
+        // Denotes the end of the event FrameMsg_DidUpdateFramePolicy.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12871,7 +12871,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_DidUpdateOrigin';
-        // Phase.
+        // Denotes the end of the event FrameMsg_DidUpdateOrigin.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12887,7 +12887,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_PostMessageEvent';
-        // Phase.
+        // Denotes the end of the event FrameMsg_PostMessageEvent.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12903,7 +12903,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_ResetContentSecurityPolicy';
-        // Phase.
+        // Denotes the end of the event FrameMsg_ResetContentSecurityPolicy.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12919,7 +12919,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_SetAccessibilityMode';
-        // Phase.
+        // Denotes the end of the event FrameMsg_SetAccessibilityMode.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12935,7 +12935,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_SetFrameOwnerProperties';
-        // Phase.
+        // Denotes the end of the event FrameMsg_SetFrameOwnerProperties.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12951,7 +12951,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FrameMsg_UpdateUserActivationState';
-        // Phase.
+        // Denotes the end of the event FrameMsg_UpdateUserActivationState.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -12965,7 +12965,7 @@ export namespace TraceEvent {
           environment: string;
         };
         name: 'FramePresented';
-        // Phase.
+        // Denotes a mark of the event FramePresented.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -13030,7 +13030,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.FramePaused';
-          // Phase.
+          // Denotes the ending of the async event FramePaused.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13042,7 +13042,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.FramePaused';
-          // Phase.
+          // Denotes the beginning of the async event FramePaused.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13054,7 +13054,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.FramePaused';
-          // Phase.
+          // Denotes a step into the async event FramePaused.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13068,7 +13068,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.FrameVisible';
-          // Phase.
+          // Denotes the ending of the async event FrameVisible.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13080,7 +13080,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.FrameVisible';
-          // Phase.
+          // Denotes the beginning of the async event FrameVisible.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13092,7 +13092,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.FrameVisible';
-          // Phase.
+          // Denotes a step into the async event FrameVisible.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13106,7 +13106,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.HasActiveConnection';
-          // Phase.
+          // Denotes the ending of the async event HasActiveConnection.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13118,7 +13118,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.HasActiveConnection';
-          // Phase.
+          // Denotes the beginning of the async event HasActiveConnection.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13130,7 +13130,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.HasActiveConnection';
-          // Phase.
+          // Denotes a step into the async event HasActiveConnection.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13144,7 +13144,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.KeepActive';
-          // Phase.
+          // Denotes the ending of the async event KeepActive.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13156,7 +13156,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.KeepActive';
-          // Phase.
+          // Denotes the beginning of the async event KeepActive.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13168,7 +13168,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.KeepActive';
-          // Phase.
+          // Denotes a step into the async event KeepActive.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13182,7 +13182,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.Origin';
-          // Phase.
+          // Denotes the ending of the async event Origin.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13194,7 +13194,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.Origin';
-          // Phase.
+          // Denotes the beginning of the async event Origin.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13206,7 +13206,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.Origin';
-          // Phase.
+          // Denotes a step into the async event Origin.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13220,7 +13220,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.PageFrozen';
-          // Phase.
+          // Denotes the ending of the async event PageFrozen.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13232,7 +13232,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.PageFrozen';
-          // Phase.
+          // Denotes the beginning of the async event PageFrozen.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13244,7 +13244,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.PageFrozen';
-          // Phase.
+          // Denotes a step into the async event PageFrozen.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13258,7 +13258,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.PageVisibility';
-          // Phase.
+          // Denotes the ending of the async event PageVisibility.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13270,7 +13270,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.PageVisibility';
-          // Phase.
+          // Denotes the beginning of the async event PageVisibility.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13282,7 +13282,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.PageVisibility';
-          // Phase.
+          // Denotes a step into the async event PageVisibility.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13296,7 +13296,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.SubResourceLoadingPaused';
-          // Phase.
+          // Denotes the ending of the async event SubResourceLoadingPaused.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13308,7 +13308,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.SubResourceLoadingPaused';
-          // Phase.
+          // Denotes the beginning of the async event SubResourceLoadingPaused.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13320,7 +13320,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.SubResourceLoadingPaused';
-          // Phase.
+          // Denotes a step into the async event SubResourceLoadingPaused.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13334,7 +13334,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.TaskQueuesThrottled';
-          // Phase.
+          // Denotes the ending of the async event TaskQueuesThrottled.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13346,7 +13346,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.TaskQueuesThrottled';
-          // Phase.
+          // Denotes the beginning of the async event TaskQueuesThrottled.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13358,7 +13358,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.TaskQueuesThrottled';
-          // Phase.
+          // Denotes a step into the async event TaskQueuesThrottled.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13372,7 +13372,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.URL';
-          // Phase.
+          // Denotes the ending of the async event URL.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13384,7 +13384,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.URL';
-          // Phase.
+          // Denotes the beginning of the async event URL.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13396,7 +13396,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'FrameScheduler.URL';
-          // Phase.
+          // Denotes a step into the async event URL.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13410,7 +13410,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'FrameStartedLoading';
-        // Phase.
+        // Denotes an event FrameStartedLoading. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13434,7 +13434,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FrameTreeNode::DidStartLoading';
-          // Phase.
+          // Denotes the end of the event DidStartLoading.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13450,7 +13450,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FrameTreeNode::DidStopLoading';
-          // Phase.
+          // Denotes the end of the event DidStopLoading.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13464,7 +13464,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameTreeNode';
-        // Phase.
+        // Denotes a create object of the event FrameTreeNode.
         ph: 'N';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13488,7 +13488,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'FrameTreeNode';
-        // Phase.
+        // Denotes a snapshot object of the event FrameTreeNode.
         ph: 'O';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13518,7 +13518,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FrameView::layout';
-          // Phase.
+          // Denotes the end of the event Layout.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13532,7 +13532,7 @@ export namespace TraceEvent {
             contentsHeightBeforeLayout: number;
           };
           name: 'FrameView::performLayout';
-          // Phase.
+          // Denotes the beginning of the event PerformLayout.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13561,7 +13561,7 @@ export namespace TraceEvent {
             };
           };
           name: 'FrameView::performLayout';
-          // Phase.
+          // Denotes the ending of the event PerformLayout.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -13576,7 +13576,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FrameView::performPostLayoutTasks';
-          // Phase.
+          // Denotes the end of the event PerformPostLayoutTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13592,7 +13592,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FrameView::performPreLayoutTasks';
-          // Phase.
+          // Denotes the end of the event PerformPreLayoutTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13613,7 +13613,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'FullEvacuator::RawEvacuatePage';
-          // Phase.
+          // Denotes the end of the event RawEvacuatePage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13630,7 +13630,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'FullImage';
-        // Phase.
+        // Denotes the end of the event FullImage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13651,7 +13651,7 @@ export namespace TraceEvent {
           };
         };
         name: 'FunctionCall';
-        // Phase.
+        // Denotes the beginning of the event FunctionCall.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -13662,7 +13662,7 @@ export namespace TraceEvent {
         
         };
         name: 'FunctionCall';
-        // Phase.
+        // Denotes the ending of the event FunctionCall.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -13684,7 +13684,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GestureProvider::InitGestureDetectors';
-          // Phase.
+          // Denotes the end of the event InitGestureDetectors.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13700,7 +13700,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GestureProvider::OnTouchEvent';
-          // Phase.
+          // Denotes the end of the event OnTouchEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13727,7 +13727,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLContextCGL::BackpressureFenceCreate';
-          // Phase.
+          // Denotes the end of the event BackpressureFenceCreate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13743,7 +13743,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLContextCGL::BackpressureFenceWait';
-          // Phase.
+          // Denotes the end of the event BackpressureFenceWait.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13759,7 +13759,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLContextCGL::MakeCurrent';
-          // Phase.
+          // Denotes the end of the event MakeCurrent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13792,7 +13792,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2::Finish';
-          // Phase.
+          // Denotes the end of the event Finish.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13808,7 +13808,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2::GetGLError';
-          // Phase.
+          // Denotes the end of the event GetGLError.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13824,7 +13824,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2::GetShaderPrecisionFormat';
-          // Phase.
+          // Denotes the end of the event GetShaderPrecisionFormat.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13840,7 +13840,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2::GetString';
-          // Phase.
+          // Denotes the end of the event GetString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13857,7 +13857,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2::PostSubBufferCHROMIUM';
-          // Phase.
+          // Denotes the end of the event PostSubBufferCHROMIUM.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13878,7 +13878,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2CommandBufferStub::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13935,7 +13935,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::ClearLevel';
-          // Phase.
+          // Denotes the end of the event ClearLevel.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13951,7 +13951,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::ClearLevelUsingGL';
-          // Phase.
+          // Denotes the end of the event ClearLevelUsingGL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13967,7 +13967,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::DoCompileShader';
-          // Phase.
+          // Denotes the end of the event DoCompileShader.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -13984,7 +13984,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::DoCreateAndConsumeTextureINTERNAL';
-          // Phase.
+          // Denotes the end of the event DoCreateAndConsumeTextureINTERNAL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14000,7 +14000,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::DoLinkProgram';
-          // Phase.
+          // Denotes the end of the event DoLinkProgram.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14017,7 +14017,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::DoTexStorage2D';
-          // Phase.
+          // Denotes the end of the event DoTexStorage2D.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14034,7 +14034,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::DoTexStorage2DImageCHROMIUM';
-          // Phase.
+          // Denotes the end of the event DoTexStorage2DImageCHROMIUM.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14050,7 +14050,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::HandlePostSubBufferCHROMIUM';
-          // Phase.
+          // Denotes the end of the event HandlePostSubBufferCHROMIUM.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14067,7 +14067,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::HandleTexImage2D';
-          // Phase.
+          // Denotes the end of the event HandleTexImage2D.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14084,7 +14084,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::HandleTexSubImage2D';
-          // Phase.
+          // Denotes the end of the event HandleTexSubImage2D.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14100,7 +14100,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14116,7 +14116,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::InitializeShaderTranslator';
-          // Phase.
+          // Denotes the end of the event InitializeShaderTranslator.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14132,7 +14132,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2DecoderImpl::RestoreState';
-          // Phase.
+          // Denotes the end of the event RestoreState.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14162,7 +14162,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2Implementation::CheckFramebufferStatus';
-          // Phase.
+          // Denotes the end of the event CheckFramebufferStatus.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14178,7 +14178,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2Implementation::GetIntegerv';
-          // Phase.
+          // Denotes the end of the event GetIntegerv.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14194,7 +14194,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2Implementation::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14210,7 +14210,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLES2Implementation::SetAggressivelyFreeResources';
-          // Phase.
+          // Denotes the end of the event SetAggressivelyFreeResources.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14231,7 +14231,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLFence::HasCompleted';
-          // Phase.
+          // Denotes the end of the event HasCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14252,7 +14252,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLImageIOSurface::BindTexImage';
-          // Phase.
+          // Denotes the end of the event BindTexImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14273,7 +14273,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GlobalMemoryDump.Computation';
-          // Phase.
+          // Denotes the end of the event Computation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14290,7 +14290,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'GlobalMemoryDump';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event GlobalMemoryDump.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -14305,7 +14305,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'GlobalMemoryDump';
-        // Phase.
+        // Denotes a step into the nestable async flow event GlobalMemoryDump.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -14330,7 +14330,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLRenderer::BeginDrawingFrame';
-          // Phase.
+          // Denotes the end of the event BeginDrawingFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14346,7 +14346,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLRenderer::InitializeSharedObjects';
-          // Phase.
+          // Denotes the end of the event InitializeSharedObjects.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14362,7 +14362,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GLRenderer::SwapBuffers';
-          // Phase.
+          // Denotes the end of the event SwapBuffers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14380,7 +14380,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'glResizeChromium';
-        // Phase.
+        // Denotes the end of the event GlResizeChromium.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14394,7 +14394,7 @@ export namespace TraceEvent {
         
         };
         name: 'goog_123_3_1_end';
-        // Phase.
+        // Denotes a mark of the event Goog_123_3_1_end.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -14407,7 +14407,7 @@ export namespace TraceEvent {
         
         };
         name: 'goog_123_3_1_start';
-        // Phase.
+        // Denotes a mark of the event Goog_123_3_1_start.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -14421,7 +14421,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'goog_123_3_1';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Goog_123_3_1.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -14433,7 +14433,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'goog_123_3_1';
-        // Phase.
+        // Denotes a step into the nestable async flow event Goog_123_3_1.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -14457,7 +14457,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Gpu::EstablishGpuChannelSync';
-          // Phase.
+          // Denotes the end of the event EstablishGpuChannelSync.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14472,7 +14472,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'gpu::State';
-          // Phase.
+          // Denotes a delete object of the event State.
           ph: 'D';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -14484,7 +14484,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'gpu::State';
-          // Phase.
+          // Denotes a create object of the event State.
           ph: 'N';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -14498,7 +14498,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'gpu::State';
-          // Phase.
+          // Denotes a snapshot object of the event State.
           ph: 'O';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -14522,7 +14522,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuChannel::OnCreateCommandBuffer';
-          // Phase.
+          // Denotes the end of the event OnCreateCommandBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14538,7 +14538,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuChannel::OnDestroyCommandBuffer';
-          // Phase.
+          // Denotes the end of the event OnDestroyCommandBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14562,7 +14562,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuChannelHost::CreateViewCommandBuffer';
-          // Phase.
+          // Denotes the end of the event CreateViewCommandBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14579,7 +14579,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuChannelHost::Send';
-          // Phase.
+          // Denotes the end of the event Send.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14596,7 +14596,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuChannelMsg_CreateCommandBuffer';
-        // Phase.
+        // Denotes the end of the event GpuChannelMsg_CreateCommandBuffer.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14612,7 +14612,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuChannelMsg_CreateSharedImage';
-        // Phase.
+        // Denotes the end of the event GpuChannelMsg_CreateSharedImage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14628,7 +14628,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuChannelMsg_CreateSharedImageWithData';
-        // Phase.
+        // Denotes the end of the event GpuChannelMsg_CreateSharedImageWithData.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14644,7 +14644,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuChannelMsg_DestroyCommandBuffer';
-        // Phase.
+        // Denotes the end of the event GpuChannelMsg_DestroyCommandBuffer.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14660,7 +14660,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuChannelMsg_DestroySharedImage';
-        // Phase.
+        // Denotes the end of the event GpuChannelMsg_DestroySharedImage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14676,7 +14676,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuChannelMsg_RegisterSharedImageUploadBuffer';
-        // Phase.
+        // Denotes the end of the event GpuChannelMsg_RegisterSharedImageUploadBuffer.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14692,7 +14692,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuCommandBufferMsg_AsyncFlush';
-        // Phase.
+        // Denotes the end of the event GpuCommandBufferMsg_AsyncFlush.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14708,7 +14708,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuCommandBufferMsg_DestroyTransferBuffer';
-        // Phase.
+        // Denotes the end of the event GpuCommandBufferMsg_DestroyTransferBuffer.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14724,7 +14724,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuCommandBufferMsg_GetChannelToken';
-        // Phase.
+        // Denotes the end of the event GpuCommandBufferMsg_GetChannelToken.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14740,7 +14740,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuCommandBufferMsg_RegisterTransferBuffer';
-        // Phase.
+        // Denotes the end of the event GpuCommandBufferMsg_RegisterTransferBuffer.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14756,7 +14756,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuCommandBufferMsg_SetGetBuffer';
-        // Phase.
+        // Denotes the end of the event GpuCommandBufferMsg_SetGetBuffer.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14772,7 +14772,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GpuCommandBufferMsg_WaitForGetOffsetInRange';
-        // Phase.
+        // Denotes the end of the event GpuCommandBufferMsg_WaitForGetOffsetInRange.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14801,7 +14801,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuHostImpl::CreateChannelCache';
-          // Phase.
+          // Denotes the end of the event CreateChannelCache.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14817,7 +14817,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuHostImpl::DidDestroyChannel';
-          // Phase.
+          // Denotes the end of the event DidDestroyChannel.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14833,7 +14833,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuHostImpl::EstablishGpuChannel';
-          // Phase.
+          // Denotes the end of the event EstablishGpuChannel.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14849,7 +14849,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuHostImpl::OnChannelEstablished';
-          // Phase.
+          // Denotes the end of the event OnChannelEstablished.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14915,7 +14915,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::CreateImageData';
-          // Phase.
+          // Denotes the end of the event CreateImageData.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14931,7 +14931,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::DrawWithImageFinished';
-          // Phase.
+          // Denotes the end of the event DrawWithImageFinished.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14947,7 +14947,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::EnsureCapacity';
-          // Phase.
+          // Denotes the end of the event EnsureCapacity.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14963,7 +14963,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::GetDecodedImageForDraw';
-          // Phase.
+          // Denotes the end of the event GetDecodedImageForDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14979,7 +14979,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::GetImageDataForDrawImage';
-          // Phase.
+          // Denotes the end of the event GetImageDataForDrawImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -14995,7 +14995,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::GetImageDecodeTaskAndRef';
-          // Phase.
+          // Denotes the end of the event GetImageDecodeTaskAndRef.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15011,7 +15011,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::GetTaskForImageAndRef';
-          // Phase.
+          // Denotes the end of the event GetTaskForImageAndRef.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15027,7 +15027,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::OnImageUploadTaskCompleted';
-          // Phase.
+          // Denotes the end of the event OnImageUploadTaskCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15043,7 +15043,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::OnMemoryDump';
-          // Phase.
+          // Denotes the end of the event OnMemoryDump.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15059,7 +15059,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::ReduceCacheUsage';
-          // Phase.
+          // Denotes the end of the event ReduceCacheUsage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15075,7 +15075,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::RefImage';
-          // Phase.
+          // Denotes the end of the event RefImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15091,7 +15091,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::RefImageDecode';
-          // Phase.
+          // Denotes the end of the event RefImageDecode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15107,7 +15107,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::SetShouldAggressivelyFreeResources';
-          // Phase.
+          // Denotes the end of the event SetShouldAggressivelyFreeResources.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15123,7 +15123,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::UnrefImage';
-          // Phase.
+          // Denotes the end of the event UnrefImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15139,7 +15139,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::UnrefImageDecode';
-          // Phase.
+          // Denotes the end of the event UnrefImageDecode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15155,7 +15155,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuImageDecodeCache::UploadImage';
-          // Phase.
+          // Denotes the end of the event UploadImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15176,7 +15176,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GpuRasterBuffer::Playback';
-          // Phase.
+          // Denotes the end of the event Playback.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15193,7 +15193,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'GpuRasterization';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event GpuRasterization.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15207,7 +15207,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'GpuRasterization';
-        // Phase.
+        // Denotes a step into the nestable async flow event GpuRasterization.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15221,7 +15221,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'GpuRasterization';
-        // Phase.
+        // Denotes the ending of the async event GpuRasterization.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15234,7 +15234,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'GpuRasterization';
-        // Phase.
+        // Denotes the beginning of the async event GpuRasterization.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15253,7 +15253,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GPUStateTracer::TakeSnapshotWithCurrentFramebuffer';
-          // Phase.
+          // Denotes the end of the event TakeSnapshotWithCurrentFramebuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15273,7 +15273,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'GPUTask';
-        // Phase.
+        // Denotes the end of the event GPUTask.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15293,7 +15293,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GPUTracer::ProcessTraces';
-          // Phase.
+          // Denotes the end of the event ProcessTraces.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15316,7 +15316,7 @@ export namespace TraceEvent {
             };
             id: string;
             name: 'Graphics.Pipeline.DrawAndSwap';
-            // Phase.
+            // Denotes the ending of the async event DrawAndSwap.
             ph: 'F';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -15328,7 +15328,7 @@ export namespace TraceEvent {
             };
             id: string;
             name: 'Graphics.Pipeline.DrawAndSwap';
-            // Phase.
+            // Denotes the beginning of the async event DrawAndSwap.
             ph: 'S';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -15340,7 +15340,7 @@ export namespace TraceEvent {
             };
             id: string;
             name: 'Graphics.Pipeline.DrawAndSwap';
-            // Phase.
+            // Denotes a step into the async event DrawAndSwap.
             ph: 'T';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -15361,7 +15361,7 @@ export namespace TraceEvent {
             global: string;
           };
           name: 'Graphics.Pipeline';
-          // Phase.
+          // Denotes the end of the event Pipeline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15382,7 +15382,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GraphicsLayer::PaintContents';
-          // Phase.
+          // Denotes the end of the event PaintContents.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15403,7 +15403,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GraphicsLayerTreeBuilder::rebuild';
-          // Phase.
+          // Denotes the end of the event Rebuild.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15424,7 +15424,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GraphicsLayerUpdater::update';
-          // Phase.
+          // Denotes the end of the event Update.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15445,7 +15445,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrContextPriv::writeSurfacePixels';
-          // Phase.
+          // Denotes the end of the event WriteSurfacePixels.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15466,7 +15466,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrDrawingManager::flush';
-          // Phase.
+          // Denotes the end of the event Flush.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15488,7 +15488,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'void GrDrawOpAtlas::Plot::uploadToTexture(GrDeferredTextureUploadWritePixelsFn &, GrTextureProxy *)';
-            // Phase.
+            // Denotes the end of the event UploadToTextureGrDeferredTextureUploadWritePixelsFnGrTextureProxy.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15510,7 +15510,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrGLProgram *GrGLProgramBuilder::finalize()';
-          // Phase.
+          // Denotes the end of the event Finalize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15531,7 +15531,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrGpu::createTexture';
-          // Phase.
+          // Denotes the end of the event CreateTexture.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15597,7 +15597,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::addDrawOp';
-          // Phase.
+          // Denotes the end of the event AddDrawOp.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15613,7 +15613,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::clear';
-          // Phase.
+          // Denotes the end of the event Clear.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15629,7 +15629,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::discard';
-          // Phase.
+          // Denotes the end of the event Discard.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15645,7 +15645,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawGlyphRunList';
-          // Phase.
+          // Denotes the end of the event DrawGlyphRunList.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15661,7 +15661,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawOval';
-          // Phase.
+          // Denotes the end of the event DrawOval.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15677,7 +15677,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawPaint';
-          // Phase.
+          // Denotes the end of the event DrawPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15693,7 +15693,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawPath';
-          // Phase.
+          // Denotes the end of the event DrawPath.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15709,7 +15709,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawRect';
-          // Phase.
+          // Denotes the end of the event DrawRect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15725,7 +15725,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawRRect';
-          // Phase.
+          // Denotes the end of the event DrawRRect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15741,7 +15741,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawShape';
-          // Phase.
+          // Denotes the end of the event DrawShape.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15757,7 +15757,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawTexture';
-          // Phase.
+          // Denotes the end of the event DrawTexture.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15773,7 +15773,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::drawVertices';
-          // Phase.
+          // Denotes the end of the event DrawVertices.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15789,7 +15789,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::fillRectToRect';
-          // Phase.
+          // Denotes the end of the event FillRectToRect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15805,7 +15805,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::fillRectWithLocalMatrix';
-          // Phase.
+          // Denotes the end of the event FillRectWithLocalMatrix.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15821,7 +15821,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::internalDrawPath';
-          // Phase.
+          // Denotes the end of the event InternalDrawPath.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15837,7 +15837,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContext::prepareForExternalIO';
-          // Phase.
+          // Denotes the end of the event PrepareForExternalIO.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15858,7 +15858,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'GrRenderTargetContextPriv::absClear';
-          // Phase.
+          // Denotes the end of the event AbsClear.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15876,7 +15876,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'HandleMouseMove';
-        // Phase.
+        // Denotes the end of the event HandleMouseMove.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15892,7 +15892,7 @@ export namespace TraceEvent {
           };
         };
         name: 'headEnd';
-        // Phase.
+        // Denotes a mark of the event HeadEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15906,7 +15906,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'headTime';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HeadTime.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15918,7 +15918,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'headTime';
-        // Phase.
+        // Denotes a step into the nestable async flow event HeadTime.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -15937,7 +15937,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Heap::CollectCodeStatistics';
-          // Phase.
+          // Denotes the end of the event CollectCodeStatistics.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15958,7 +15958,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HistoryBackend::GetFaviconsForURL';
-          // Phase.
+          // Denotes the end of the event GetFaviconsForURL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -15979,7 +15979,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HistoryQuickProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16000,7 +16000,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HistoryService::GetFaviconsForURL';
-          // Phase.
+          // Denotes the end of the event GetFaviconsForURL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16024,7 +16024,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HistoryURLProvider::QueryComplete';
-          // Phase.
+          // Denotes the end of the event QueryComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16040,7 +16040,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HistoryURLProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16055,7 +16055,7 @@ export namespace TraceEvent {
         
         };
         name: 'HitTest';
-        // Phase.
+        // Denotes the beginning of the event HitTest.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16073,7 +16073,7 @@ export namespace TraceEvent {
           };
         };
         name: 'HitTest';
-        // Phase.
+        // Denotes the ending of the event HitTest.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16093,7 +16093,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_ATTEMPT_FINISHED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_ATTEMPT_FINISHED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16110,7 +16110,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_ATTEMPT_STARTED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_ATTEMPT_STARTED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16147,7 +16147,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_CACHE_HIT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_CACHE_HIT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16162,7 +16162,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_CREATE_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_CREATE_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16177,7 +16177,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_DNS_TASK';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HOST_RESOLVER_IMPL_DNS_TASK.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16212,7 +16212,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_DNS_TASK';
-        // Phase.
+        // Denotes a step into the nestable async flow event HOST_RESOLVER_IMPL_DNS_TASK.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16230,7 +16230,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_IPV6_REACHABILITY_CHECK';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_IPV6_REACHABILITY_CHECK.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16250,7 +16250,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_JOB_ATTACH';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_JOB_ATTACH.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16271,7 +16271,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_JOB_REQUEST_ATTACH';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_JOB_REQUEST_ATTACH.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16286,7 +16286,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_JOB_STARTED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HOST_RESOLVER_IMPL_JOB_STARTED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16307,7 +16307,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_JOB';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HOST_RESOLVER_IMPL_JOB.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16322,7 +16322,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_JOB';
-        // Phase.
+        // Denotes a step into the nestable async flow event HOST_RESOLVER_IMPL_JOB.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16337,7 +16337,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_PROC_TASK';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HOST_RESOLVER_IMPL_PROC_TASK.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16354,7 +16354,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_PROC_TASK';
-        // Phase.
+        // Denotes a step into the nestable async flow event HOST_RESOLVER_IMPL_PROC_TASK.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16374,7 +16374,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_REQUEST';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HOST_RESOLVER_IMPL_REQUEST.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16389,7 +16389,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HOST_RESOLVER_IMPL_REQUEST';
-        // Phase.
+        // Denotes a step into the nestable async flow event HOST_RESOLVER_IMPL_REQUEST.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16408,7 +16408,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HostCache::Set';
-          // Phase.
+          // Denotes the end of the event Set.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16429,7 +16429,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLCanvasElement::FinalizeFrame';
-          // Phase.
+          // Denotes the end of the event FinalizeFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16465,7 +16465,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLDocumentParser::append';
-          // Phase.
+          // Denotes the end of the event Append.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16481,7 +16481,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLDocumentParser::appendBytes';
-          // Phase.
+          // Denotes the end of the event AppendBytes.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16497,7 +16497,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLDocumentParser::documentElementAvailable';
-          // Phase.
+          // Denotes the end of the event DocumentElementAvailable.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16513,7 +16513,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLDocumentParser::EnqueueTokenizedChunk';
-          // Phase.
+          // Denotes the end of the event EnqueueTokenizedChunk.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16529,7 +16529,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLDocumentParser::insert';
-          // Phase.
+          // Denotes the end of the event Insert.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16548,7 +16548,7 @@ export namespace TraceEvent {
           flow_in: boolean;
           id: string;
           name: 'HTMLDocumentParser::processTokenizedChunkFromBackgroundParser';
-          // Phase.
+          // Denotes the end of the event ProcessTokenizedChunkFromBackgroundParser.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16582,7 +16582,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLParserScriptRunner::execute';
-          // Phase.
+          // Denotes the end of the event Execute.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16598,7 +16598,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLParserScriptRunner::executeScriptsWaitingForLoad';
-          // Phase.
+          // Denotes the end of the event ExecuteScriptsWaitingForLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16614,7 +16614,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLParserScriptRunner::executeScriptsWaitingForParsing';
-          // Phase.
+          // Denotes the end of the event ExecuteScriptsWaitingForParsing.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16630,7 +16630,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLParserScriptRunner::executeScriptsWaitingForResources';
-          // Phase.
+          // Denotes the end of the event ExecuteScriptsWaitingForResources.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16655,7 +16655,7 @@ export namespace TraceEvent {
         flow_in: boolean;
         id: string;
         name: 'HTMLParserScriptRunner ExecuteScript';
-        // Phase.
+        // Denotes the end of the event HTMLParserScriptRunnerExecuteScript.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16675,7 +16675,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HTMLSelectElement::selectOption';
-          // Phase.
+          // Denotes the end of the event SelectOption.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -16692,7 +16692,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_ADD_TO_ENTRY';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_ADD_TO_ENTRY.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16705,7 +16705,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_ADD_TO_ENTRY';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_ADD_TO_ENTRY.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16760,7 +16760,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_CALLER_REQUEST_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_CACHE_CALLER_REQUEST_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16775,7 +16775,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_CREATE_ENTRY';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_CREATE_ENTRY.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16788,7 +16788,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_CREATE_ENTRY';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_CREATE_ENTRY.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16803,7 +16803,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_GET_BACKEND';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_GET_BACKEND.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16816,7 +16816,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_GET_BACKEND';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_GET_BACKEND.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16831,7 +16831,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_OPEN_ENTRY';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_OPEN_ENTRY.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16846,7 +16846,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_OPEN_ENTRY';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_OPEN_ENTRY.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16861,7 +16861,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_READ_DATA';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_READ_DATA.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16874,7 +16874,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_READ_DATA';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_READ_DATA.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16889,7 +16889,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_READ_INFO';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_READ_INFO.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16902,7 +16902,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_READ_INFO';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_READ_INFO.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16917,7 +16917,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_WRITE_DATA';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_WRITE_DATA.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16930,7 +16930,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_WRITE_DATA';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_WRITE_DATA.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16945,7 +16945,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_WRITE_INFO';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_CACHE_WRITE_INFO.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16958,7 +16958,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_CACHE_WRITE_INFO';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_CACHE_WRITE_INFO.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16978,7 +16978,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_BOUND_TO_QUIC_STREAM_FACTORY_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_JOB_BOUND_TO_QUIC_STREAM_FACTORY_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -16998,7 +16998,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_BOUND_TO_REQUEST';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_JOB_BOUND_TO_REQUEST.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17016,7 +17016,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_CONTROLLER_ALT_SVC_FOUND';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_JOB_CONTROLLER_ALT_SVC_FOUND.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17036,7 +17036,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_CONTROLLER_BOUND';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_JOB_CONTROLLER_BOUND.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17053,7 +17053,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_CONTROLLER_PROXY_SERVER_RESOLVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_JOB_CONTROLLER_PROXY_SERVER_RESOLVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17071,7 +17071,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_CONTROLLER';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_STREAM_JOB_CONTROLLER.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17084,7 +17084,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_CONTROLLER';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_STREAM_JOB_CONTROLLER.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17101,7 +17101,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_DELAYED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_JOB_DELAYED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17116,7 +17116,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_INIT_CONNECTION';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_STREAM_JOB_INIT_CONNECTION.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17129,7 +17129,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_INIT_CONNECTION';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_STREAM_JOB_INIT_CONNECTION.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17146,7 +17146,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_WAITING';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_STREAM_JOB_WAITING.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17159,7 +17159,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB_WAITING';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_STREAM_JOB_WAITING.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17184,7 +17184,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_STREAM_JOB.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17197,7 +17197,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_JOB';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_STREAM_JOB.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17212,7 +17212,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_PARSER_READ_HEADERS';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_STREAM_PARSER_READ_HEADERS.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17225,7 +17225,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_PARSER_READ_HEADERS';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_STREAM_PARSER_READ_HEADERS.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17245,7 +17245,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_REQUEST_BOUND_TO_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_REQUEST_BOUND_TO_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17265,7 +17265,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_REQUEST_BOUND_TO_QUIC_SESSION';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_REQUEST_BOUND_TO_QUIC_SESSION.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17282,7 +17282,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_REQUEST_PROTO';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_REQUEST_PROTO.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17302,7 +17302,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_REQUEST_STARTED_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_STREAM_REQUEST_STARTED_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17317,7 +17317,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_REQUEST';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_STREAM_REQUEST.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17330,7 +17330,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_STREAM_REQUEST';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_STREAM_REQUEST.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17360,7 +17360,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_HTTP2_SEND_REQUEST_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_TRANSACTION_HTTP2_SEND_REQUEST_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17395,7 +17395,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_QUIC_SEND_REQUEST_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_TRANSACTION_QUIC_SEND_REQUEST_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17410,7 +17410,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_READ_BODY';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_TRANSACTION_READ_BODY.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17423,7 +17423,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_READ_BODY';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_TRANSACTION_READ_BODY.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17438,7 +17438,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_READ_HEADERS';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_TRANSACTION_READ_HEADERS.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17451,7 +17451,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_READ_HEADERS';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_TRANSACTION_READ_HEADERS.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17490,7 +17490,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_READ_RESPONSE_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_TRANSACTION_READ_RESPONSE_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17557,7 +17557,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_SEND_REQUEST_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP_TRANSACTION_SEND_REQUEST_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17572,7 +17572,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_SEND_REQUEST';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP_TRANSACTION_SEND_REQUEST.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17585,7 +17585,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP_TRANSACTION_SEND_REQUEST';
-        // Phase.
+        // Denotes a step into the nestable async flow event HTTP_TRANSACTION_SEND_REQUEST.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17606,7 +17606,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_INITIALIZED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_INITIALIZED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17625,7 +17625,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_PING';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_PING.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17645,7 +17645,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION_FROM_IP_POOL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION_FROM_IP_POOL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17665,7 +17665,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_POOL_FOUND_EXISTING_SESSION.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17685,7 +17685,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_POOL_IMPORTED_SESSION_FROM_SOCKET';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_POOL_IMPORTED_SESSION_FROM_SOCKET.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17704,7 +17704,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_RECV_DATA';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_RECV_DATA.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17736,7 +17736,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_RECV_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_RECV_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17754,7 +17754,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_RECV_SETTING';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_RECV_SETTING.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17769,7 +17769,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_RECV_SETTINGS_ACK';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_RECV_SETTINGS_ACK.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17784,7 +17784,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_RECV_SETTINGS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_RECV_SETTINGS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17802,7 +17802,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_RECV_WINDOW_UPDATE';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_RECV_WINDOW_UPDATE.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17842,7 +17842,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_SEND_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_SEND_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17857,7 +17857,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_SEND_SETTINGS_ACK';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_SEND_SETTINGS_ACK.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17922,7 +17922,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_SEND_SETTINGS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_SEND_SETTINGS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17940,7 +17940,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_SEND_WINDOW_UPDATE';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_SEND_WINDOW_UPDATE.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17958,7 +17958,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_UPDATE_RECV_WINDOW';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_UPDATE_RECV_WINDOW.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17976,7 +17976,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_UPDATE_SEND_WINDOW';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_UPDATE_SEND_WINDOW.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -17993,7 +17993,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION_UPDATE_STREAMS_SEND_WINDOW_SIZE';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_SESSION_UPDATE_STREAMS_SEND_WINDOW_SIZE.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18011,7 +18011,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_SESSION';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event HTTP2_SESSION.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18030,7 +18030,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_STREAM_UPDATE_RECV_WINDOW';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_STREAM_UPDATE_RECV_WINDOW.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18049,7 +18049,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'HTTP2_STREAM_UPDATE_SEND_WINDOW';
-        // Phase.
+        // Denotes the ending of the nestable async flow event HTTP2_STREAM_UPDATE_SEND_WINDOW.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18143,7 +18143,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoAddToEntry';
-          // Phase.
+          // Denotes the end of the event DoAddToEntry.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18159,7 +18159,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoAddToEntryComplete';
-          // Phase.
+          // Denotes the end of the event DoAddToEntryComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18175,7 +18175,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheDispatchValidation';
-          // Phase.
+          // Denotes the end of the event DoCacheDispatchValidation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18191,7 +18191,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheReadData';
-          // Phase.
+          // Denotes the end of the event DoCacheReadData.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18207,7 +18207,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheReadDataComplete';
-          // Phase.
+          // Denotes the end of the event DoCacheReadDataComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18223,7 +18223,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheReadResponse';
-          // Phase.
+          // Denotes the end of the event DoCacheReadResponse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18239,7 +18239,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheReadResponseComplete';
-          // Phase.
+          // Denotes the end of the event DoCacheReadResponseComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18255,7 +18255,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheWriteResponse';
-          // Phase.
+          // Denotes the end of the event DoCacheWriteResponse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18271,7 +18271,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCacheWriteResponseComplete';
-          // Phase.
+          // Denotes the end of the event DoCacheWriteResponseComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18287,7 +18287,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCreateEntry';
-          // Phase.
+          // Denotes the end of the event DoCreateEntry.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18303,7 +18303,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoCreateEntryComplete';
-          // Phase.
+          // Denotes the end of the event DoCreateEntryComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18319,7 +18319,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoInitEntry';
-          // Phase.
+          // Denotes the end of the event DoInitEntry.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18335,7 +18335,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoNetworkRead';
-          // Phase.
+          // Denotes the end of the event DoNetworkRead.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18351,7 +18351,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoNetworkReadCacheWrite';
-          // Phase.
+          // Denotes the end of the event DoNetworkReadCacheWrite.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18367,7 +18367,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoNetworkReadCacheWriteComplete';
-          // Phase.
+          // Denotes the end of the event DoNetworkReadCacheWriteComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18383,7 +18383,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoNetworkReadComplete';
-          // Phase.
+          // Denotes the end of the event DoNetworkReadComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18399,7 +18399,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoOpenEntry';
-          // Phase.
+          // Denotes the end of the event DoOpenEntry.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18415,7 +18415,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoOpenEntryComplete';
-          // Phase.
+          // Denotes the end of the event DoOpenEntryComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18431,7 +18431,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoOverwriteCachedResponse';
-          // Phase.
+          // Denotes the end of the event DoOverwriteCachedResponse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18447,7 +18447,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoSendRequest';
-          // Phase.
+          // Denotes the end of the event DoSendRequest.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18463,7 +18463,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoSendRequestComplete';
-          // Phase.
+          // Denotes the end of the event DoSendRequestComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18479,7 +18479,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoSuccessfulSendRequest';
-          // Phase.
+          // Denotes the end of the event DoSuccessfulSendRequest.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18495,7 +18495,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoTruncateCachedData';
-          // Phase.
+          // Denotes the end of the event DoTruncateCachedData.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18511,7 +18511,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoTruncateCachedMetadata';
-          // Phase.
+          // Denotes the end of the event DoTruncateCachedMetadata.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18527,7 +18527,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::DoTruncateCachedMetadataComplete';
-          // Phase.
+          // Denotes the end of the event DoTruncateCachedMetadataComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18543,7 +18543,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'HttpCacheTransaction::Transaction';
-          // Phase.
+          // Denotes the end of the event Transaction.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18568,7 +18568,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'HttpStreamFactory::Job::OnIOComplete';
-            // Phase.
+            // Denotes the end of the event OnIOComplete.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18584,7 +18584,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'HttpStreamFactory::Job::RunLoop';
-            // Phase.
+            // Denotes the end of the event RunLoop.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18607,7 +18607,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'identity.mojom.IdentityManager';
-            // Phase.
+            // Denotes the end of the event IdentityManager.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18623,7 +18623,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'idle_tq';
-        // Phase.
+        // Denotes a counter for the event Idle_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18642,7 +18642,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'IdleSpellCheckController::hotModeInvocation';
-          // Phase.
+          // Denotes the end of the event HotModeInvocation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18666,7 +18666,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageAnimationController::AnimateImagesForSyncTree';
-          // Phase.
+          // Denotes the end of the event AnimateImagesForSyncTree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18682,7 +18682,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageAnimationController::WillActivate';
-          // Phase.
+          // Denotes the end of the event WillActivate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18697,7 +18697,7 @@ export namespace TraceEvent {
           pixelRefId: number;
         };
         name: 'ImageDecodeTask';
-        // Phase.
+        // Denotes the beginning of the event ImageDecodeTask.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18708,7 +18708,7 @@ export namespace TraceEvent {
         
         };
         name: 'ImageDecodeTask';
-        // Phase.
+        // Denotes the ending of the event ImageDecodeTask.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18728,7 +18728,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageOperations::Resize';
-          // Phase.
+          // Denotes the end of the event Resize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18749,7 +18749,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageResourceContent::updateImage';
-          // Phase.
+          // Denotes the end of the event UpdateImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18773,7 +18773,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageTransportSurfaceOverlayMac::ApplyBackpressure';
-          // Phase.
+          // Denotes the end of the event ApplyBackpressure.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18789,7 +18789,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageTransportSurfaceOverlayMac::SwapBuffersInternal';
-          // Phase.
+          // Denotes the end of the event SwapBuffersInternal.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18811,7 +18811,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImageUploadTaskImpl::RunOnWorkerThread';
-          // Phase.
+          // Denotes the end of the event RunOnWorkerThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18838,7 +18838,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImplementationBase::GetBucketContents';
-          // Phase.
+          // Denotes the end of the event GetBucketContents.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18854,7 +18854,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImplementationBase::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18870,7 +18870,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ImplementationBase::WaitForCmd';
-          // Phase.
+          // Denotes the end of the event WaitForCmd.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18900,7 +18900,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InProcessCommandBuffer::Flush';
-          // Phase.
+          // Denotes the end of the event Flush.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18916,7 +18916,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InProcessCommandBuffer::FlushOnGpuThread';
-          // Phase.
+          // Denotes the end of the event FlushOnGpuThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18932,7 +18932,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InProcessCommandBuffer::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18948,7 +18948,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InProcessCommandBuffer::InitializeOnGpuThread';
-          // Phase.
+          // Denotes the end of the event InitializeOnGpuThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -18963,7 +18963,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'input_tq';
-        // Phase.
+        // Denotes a counter for the event Input_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -18976,7 +18976,7 @@ export namespace TraceEvent {
         
         };
         name: 'InputEventSentBlocking';
-        // Phase.
+        // Denotes an event InputEventSentBlocking. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19025,7 +19025,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::KeyUp';
-          // Phase.
+          // Denotes the ending of the async event KeyUp.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19037,7 +19037,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::KeyUp';
-          // Phase.
+          // Denotes the beginning of the async event KeyUp.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19068,7 +19068,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::MouseLeave';
-          // Phase.
+          // Denotes the ending of the async event MouseLeave.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19080,7 +19080,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::MouseLeave';
-          // Phase.
+          // Denotes the beginning of the async event MouseLeave.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19111,7 +19111,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::MouseMove';
-          // Phase.
+          // Denotes the ending of the async event MouseMove.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19123,7 +19123,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::MouseMove';
-          // Phase.
+          // Denotes the beginning of the async event MouseMove.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19154,7 +19154,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::RawKeyDown';
-          // Phase.
+          // Denotes the ending of the async event RawKeyDown.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19166,7 +19166,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'InputLatency::RawKeyDown';
-          // Phase.
+          // Denotes the beginning of the async event RawKeyDown.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -19182,7 +19182,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'InputMsg_SetFocus';
-        // Phase.
+        // Denotes the end of the event InputMsg_SetFocus.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19211,7 +19211,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InputRouterImpl::FilterAndSendWebInputEvent';
-          // Phase.
+          // Denotes the end of the event FilterAndSendWebInputEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19228,7 +19228,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InputRouterImpl::KeboardEventHandled';
-          // Phase.
+          // Denotes the end of the event KeboardEventHandled.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19245,7 +19245,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InputRouterImpl::MouseEventHandled';
-          // Phase.
+          // Denotes the end of the event MouseEventHandled.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19261,7 +19261,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'InputRouterImpl::OnHasTouchEventHandlers';
-          // Phase.
+          // Denotes the end of the event OnHasTouchEventHandlers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19278,7 +19278,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'InstallConditionalFeatures';
-        // Phase.
+        // Denotes the end of the event InstallConditionalFeatures.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19293,7 +19293,7 @@ export namespace TraceEvent {
           had_user_input_before_interactive: boolean;
         };
         name: 'InteractiveTime';
-        // Phase.
+        // Denotes a mark of the event InteractiveTime.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19315,7 +19315,7 @@ export namespace TraceEvent {
           };
         };
         name: 'InvalidateLayout';
-        // Phase.
+        // Denotes an event InvalidateLayout. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19329,7 +19329,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'ipc_tq';
-        // Phase.
+        // Denotes a counter for the event Ipc_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19344,7 +19344,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'IPC Channel';
-        // Phase.
+        // Denotes the end of the event IPCChannel.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19358,7 +19358,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'is_gesture_active';
-        // Phase.
+        // Denotes a counter for the event Is_gesture_active.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19376,7 +19376,7 @@ export namespace TraceEvent {
             num_tasks: number;
           };
           name: 'ItemParallelJob::Run';
-          // Phase.
+          // Denotes an event Run. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19397,7 +19397,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Job::ExecuteProxyResolver';
-          // Phase.
+          // Denotes the end of the event ExecuteProxyResolver.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19418,7 +19418,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'KeyedServiceFactory::GetServiceForContext';
-          // Phase.
+          // Denotes the end of the event GetServiceForContext.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19434,7 +19434,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'KeyframeModel';
-        // Phase.
+        // Denotes the ending of the async event KeyframeModel.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19446,7 +19446,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'KeyframeModel';
-        // Phase.
+        // Denotes the beginning of the async event KeyframeModel.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19465,7 +19465,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'KeywordProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19493,7 +19493,7 @@ export namespace TraceEvent {
           flow_out?: boolean;
           id: string;
           name: 'LatencyInfo.Flow';
-          // Phase.
+          // Denotes the end of the event Flow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19510,7 +19510,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'LaunchProcess';
-        // Phase.
+        // Denotes the end of the event LaunchProcess.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19536,7 +19536,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Layer::PaintContentsToDisplayList';
-          // Phase.
+          // Denotes the end of the event PaintContentsToDisplayList.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19552,7 +19552,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Layer::PushPropertiesTo';
-          // Phase.
+          // Denotes the end of the event PushPropertiesTo.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19568,7 +19568,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Layer::SetElementId';
-          // Phase.
+          // Denotes the end of the event SetElementId.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19589,7 +19589,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerAnimator::Step';
-          // Phase.
+          // Denotes the end of the event Step.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19605,7 +19605,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'layerId';
-        // Phase.
+        // Denotes a delete object of the event LayerId.
         ph: 'D';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19617,7 +19617,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'layerId';
-        // Phase.
+        // Denotes a create object of the event LayerId.
         ph: 'N';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -19636,7 +19636,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerImpl::SetElementId';
-          // Phase.
+          // Denotes the end of the event SetElementId.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19655,7 +19655,7 @@ export namespace TraceEvent {
           };
         };
         name: 'LayerInvalidationTracking';
-        // Phase.
+        // Denotes an event LayerInvalidationTracking. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19700,7 +19700,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'LayerTreeHost::AnimationHost::PushProperties';
-            // Phase.
+            // Denotes the end of the event PushProperties.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19717,7 +19717,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHost::DoUpdateLayers';
-          // Phase.
+          // Denotes the end of the event DoUpdateLayers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19733,7 +19733,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHost::FinishCommitOnImplThread';
-          // Phase.
+          // Denotes the end of the event FinishCommitOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19749,7 +19749,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHost::InitializeForReal';
-          // Phase.
+          // Denotes the end of the event InitializeForReal.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19765,7 +19765,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHost::~LayerTreeHost';
-          // Phase.
+          // Denotes the end of the event LayerTreeHost.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19781,7 +19781,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHost::PushProperties';
-          // Phase.
+          // Denotes the end of the event PushProperties.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19795,7 +19795,7 @@ export namespace TraceEvent {
             has_trigger: boolean;
           };
           name: 'LayerTreeHost::SetHasGpuRasterizationTrigger';
-          // Phase.
+          // Denotes an event SetHasGpuRasterizationTrigger. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19811,7 +19811,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHost::SetLayerTreeFrameSink';
-          // Phase.
+          // Denotes the end of the event SetLayerTreeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19918,7 +19918,7 @@ export namespace TraceEvent {
             };
           };
           name: 'LayerTreeHost::UpdateLayers_BuiltPropertyTrees';
-          // Phase.
+          // Denotes an event UpdateLayers_BuiltPropertyTrees. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -19938,7 +19938,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'LayerTreeHost::UpdateLayers::BuildPropertyTrees';
-            // Phase.
+            // Denotes the end of the event BuildPropertyTrees.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20004,7 +20004,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::ActivateSyncTree()';
-          // Phase.
+          // Denotes the end of the event ActivateSyncTree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20020,7 +20020,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::BeginCommit';
-          // Phase.
+          // Denotes the end of the event BeginCommit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20036,7 +20036,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::BuildEvictionQueue';
-          // Phase.
+          // Denotes the end of the event BuildEvictionQueue.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20052,7 +20052,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::BuildRasterQueue';
-          // Phase.
+          // Denotes the end of the event BuildRasterQueue.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20067,7 +20067,7 @@ export namespace TraceEvent {
             'render_surface_list.size()': number;
           };
           name: 'LayerTreeHostImpl::CalculateRenderPasses';
-          // Phase.
+          // Denotes the beginning of the event CalculateRenderPasses.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20079,7 +20079,7 @@ export namespace TraceEvent {
             'missing tiles': number;
           };
           name: 'LayerTreeHostImpl::CalculateRenderPasses';
-          // Phase.
+          // Denotes the ending of the event CalculateRenderPasses.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20092,7 +20092,7 @@ export namespace TraceEvent {
           
           };
           name: 'LayerTreeHostImpl::CanDraw empty viewport';
-          // Phase.
+          // Denotes an event CanDrawemptyviewport. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20106,7 +20106,7 @@ export namespace TraceEvent {
           
           };
           name: 'LayerTreeHostImpl::CanDraw no root layer';
-          // Phase.
+          // Denotes an event CanDrawnorootlayer. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20122,7 +20122,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::CommitComplete';
-          // Phase.
+          // Denotes the end of the event CommitComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20138,7 +20138,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::GenerateCompositorFrame';
-          // Phase.
+          // Denotes the end of the event GenerateCompositorFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20154,7 +20154,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::InitializeFrameSink';
-          // Phase.
+          // Denotes the end of the event InitializeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20170,7 +20170,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::~LayerTreeHostImpl()';
-          // Phase.
+          // Denotes the end of the event LayerTreeHostImpl.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20186,7 +20186,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::NotifyTileStateChanged';
-          // Phase.
+          // Denotes the end of the event NotifyTileStateChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20202,7 +20202,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::PrepareToDraw';
-          // Phase.
+          // Denotes the end of the event PrepareToDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20218,7 +20218,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeHostImpl::ReleaseLayerTreeFrameSink';
-          // Phase.
+          // Denotes the end of the event ReleaseLayerTreeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20233,7 +20233,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'LayerTreeHostImpl::SetVisible';
-          // Phase.
+          // Denotes the ending of the async event SetVisible.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20245,7 +20245,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'LayerTreeHostImpl::SetVisible';
-          // Phase.
+          // Denotes the beginning of the async event SetVisible.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20278,7 +20278,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeImpl::AddToElementLayerList';
-          // Phase.
+          // Denotes the end of the event AddToElementLayerList.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20292,7 +20292,7 @@ export namespace TraceEvent {
             total_layer_count: number;
           };
           name: 'LayerTreeImpl::InvalidateRegionForImages';
-          // Phase.
+          // Denotes the beginning of the event InvalidateRegionForImages.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20303,7 +20303,7 @@ export namespace TraceEvent {
             counts: string;
           };
           name: 'LayerTreeImpl::InvalidateRegionForImages';
-          // Phase.
+          // Denotes the ending of the event InvalidateRegionForImages.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20318,7 +20318,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeImpl::PushPropertiesTo';
-          // Phase.
+          // Denotes the end of the event PushPropertiesTo.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20334,7 +20334,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeImpl::PushPropertyTreesTo';
-          // Phase.
+          // Denotes the end of the event PushPropertyTreesTo.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20350,7 +20350,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeImpl::RemoveFromElementLayerList';
-          // Phase.
+          // Denotes the end of the event RemoveFromElementLayerList.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20378,7 +20378,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'LayerTreeImpl::UpdateDrawProperties::CalculateDrawProperties';
-            // Phase.
+            // Denotes the end of the event CalculateDrawProperties.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20395,7 +20395,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'LayerTreeImpl::UpdateDrawProperties::Occlusion';
-            // Phase.
+            // Denotes the end of the event Occlusion.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20410,7 +20410,7 @@ export namespace TraceEvent {
               SourceFrameNumber: number;
             };
             name: 'LayerTreeImpl::UpdateDrawProperties::UpdateTiles';
-            // Phase.
+            // Denotes the beginning of the event UpdateTiles.
             ph: 'B';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -20421,7 +20421,7 @@ export namespace TraceEvent {
               layers_updated_count: number;
             };
             name: 'LayerTreeImpl::UpdateDrawProperties::UpdateTiles';
-            // Phase.
+            // Denotes the ending of the event UpdateTiles.
             ph: 'E';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -20435,7 +20435,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayerTreeImpl::UpdateDrawProperties';
-          // Phase.
+          // Denotes the end of the event UpdateDrawProperties.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20462,7 +20462,7 @@ export namespace TraceEvent {
           };
         };
         name: 'Layout';
-        // Phase.
+        // Denotes the beginning of the event Layout.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20478,7 +20478,7 @@ export namespace TraceEvent {
           };
         };
         name: 'Layout';
-        // Phase.
+        // Denotes the ending of the event Layout.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20503,7 +20503,7 @@ export namespace TraceEvent {
           };
         };
         name: 'LayoutInvalidationTracking';
-        // Phase.
+        // Denotes an event LayoutInvalidationTracking. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20523,7 +20523,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LayoutView::commitPendingSelection';
-          // Phase.
+          // Denotes the end of the event CommitPendingSelection.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20545,7 +20545,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'leveldb.mojom.LevelDBService';
-            // Phase.
+            // Denotes the end of the event LevelDBService.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20570,7 +20570,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LiveObjectVisitor::VisitBlackObjects';
-          // Phase.
+          // Denotes the end of the event VisitBlackObjects.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20586,7 +20586,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LiveObjectVisitor::VisitBlackObjectsNoFail';
-          // Phase.
+          // Denotes the end of the event VisitBlackObjectsNoFail.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20603,7 +20603,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'LoadAnyStartablePendingRequests';
-        // Phase.
+        // Denotes the end of the event LoadAnyStartablePendingRequests.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20619,7 +20619,7 @@ export namespace TraceEvent {
           };
         };
         name: 'loadEndeventUtils';
-        // Phase.
+        // Denotes a mark of the event LoadEndeventUtils.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20634,7 +20634,7 @@ export namespace TraceEvent {
           };
         };
         name: 'loadEndpixelQueue';
-        // Phase.
+        // Denotes a mark of the event LoadEndpixelQueue.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20647,7 +20647,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'loadEventEnd';
-        // Phase.
+        // Denotes a mark of the event LoadEventEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20660,7 +20660,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'loadEventStart';
-        // Phase.
+        // Denotes a mark of the event LoadEventStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20673,7 +20673,7 @@ export namespace TraceEvent {
         
         };
         name: 'LoadFinished';
-        // Phase.
+        // Denotes an event LoadFinished. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20689,7 +20689,7 @@ export namespace TraceEvent {
           };
         };
         name: 'loadStarteventUtils';
-        // Phase.
+        // Denotes a mark of the event LoadStarteventUtils.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20704,7 +20704,7 @@ export namespace TraceEvent {
           };
         };
         name: 'loadStartpixelQueue';
-        // Phase.
+        // Denotes a mark of the event LoadStartpixelQueue.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -20757,7 +20757,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::frameRectsChanged';
-          // Phase.
+          // Denotes the end of the event FrameRectsChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20773,7 +20773,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::layout';
-          // Phase.
+          // Denotes the end of the event Layout.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20787,7 +20787,7 @@ export namespace TraceEvent {
             contentsHeightBeforeLayout: number;
           };
           name: 'LocalFrameView::performLayout';
-          // Phase.
+          // Denotes the beginning of the event PerformLayout.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20817,7 +20817,7 @@ export namespace TraceEvent {
             };
           };
           name: 'LocalFrameView::performLayout';
-          // Phase.
+          // Denotes the ending of the event PerformLayout.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -20832,7 +20832,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::performPostLayoutTasks';
-          // Phase.
+          // Denotes the end of the event PerformPostLayoutTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20848,7 +20848,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::performPreLayoutTasks';
-          // Phase.
+          // Denotes the end of the event PerformPreLayoutTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20864,7 +20864,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::RunCompositingLifecyclePhase';
-          // Phase.
+          // Denotes the end of the event RunCompositingLifecyclePhase.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20880,7 +20880,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::RunPaintLifecyclePhase';
-          // Phase.
+          // Denotes the end of the event RunPaintLifecyclePhase.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20896,7 +20896,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::RunPrePaintLifecyclePhase';
-          // Phase.
+          // Denotes the end of the event RunPrePaintLifecyclePhase.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20912,7 +20912,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::RunStyleAndLayoutLifecyclePhases';
-          // Phase.
+          // Denotes the end of the event RunStyleAndLayoutLifecyclePhases.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20928,7 +20928,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::updateRenderThrottlingStatus';
-          // Phase.
+          // Denotes the end of the event UpdateRenderThrottlingStatus.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20944,7 +20944,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::updateStyleAndLayoutIfNeededRecursive';
-          // Phase.
+          // Denotes the end of the event UpdateStyleAndLayoutIfNeededRecursive.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20960,7 +20960,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalFrameView::UpdateViewportIntersectionsForSubtree';
-          // Phase.
+          // Denotes the end of the event UpdateViewportIntersectionsForSubtree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -20991,7 +20991,7 @@ export namespace TraceEvent {
               global: string;
             };
             name: 'LocalSurfaceId.Embed.Flow';
-            // Phase.
+            // Denotes the end of the event Flow.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21021,7 +21021,7 @@ export namespace TraceEvent {
               global: string;
             };
             name: 'LocalSurfaceId.Submission.Flow';
-            // Phase.
+            // Denotes the end of the event Flow.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21052,7 +21052,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalWindowProxy::CreateContext';
-          // Phase.
+          // Denotes the end of the event CreateContext.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21068,7 +21068,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalWindowProxy::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21084,7 +21084,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalWindowProxy::SetupWindowPrototypeChain';
-          // Phase.
+          // Denotes the end of the event SetupWindowPrototypeChain.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21100,7 +21100,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'LocalWindowProxy::UpdateDocumentProperty';
-          // Phase.
+          // Denotes the end of the event UpdateDocumentProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21115,7 +21115,7 @@ export namespace TraceEvent {
           duration: number;
         };
         name: 'LongTask';
-        // Phase.
+        // Denotes an event LongTask. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21130,7 +21130,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'lteu';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Lteu.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21142,7 +21142,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'lteu';
-        // Phase.
+        // Denotes a step into the nestable async flow event Lteu.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21156,7 +21156,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ltpq';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Ltpq.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21168,7 +21168,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ltpq';
-        // Phase.
+        // Denotes a step into the nestable async flow event Ltpq.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21181,7 +21181,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'MainThreadLatency';
-        // Phase.
+        // Denotes a counter for the event MainThreadLatency.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21202,7 +21202,7 @@ export namespace TraceEvent {
               value: number;
             };
             name: 'MainThreadScheduler.RendererMainThreadLoad.Background';
-            // Phase.
+            // Denotes a counter for the event Background.
             ph: 'C';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -21215,7 +21215,7 @@ export namespace TraceEvent {
               value: number;
             };
             name: 'MainThreadScheduler.RendererMainThreadLoad.Foreground';
-            // Phase.
+            // Denotes a counter for the event Foreground.
             ph: 'C';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -21227,7 +21227,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'MainThreadScheduler.RendererMainThreadLoad';
-          // Phase.
+          // Denotes a counter for the event RendererMainThreadLoad.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -21242,7 +21242,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'MainThreadSchedulerIdlePeriod';
-        // Phase.
+        // Denotes the ending of the async event MainThreadSchedulerIdlePeriod.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21254,7 +21254,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'MainThreadSchedulerIdlePeriod';
-        // Phase.
+        // Denotes the beginning of the async event MainThreadSchedulerIdlePeriod.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21266,7 +21266,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'MainThreadSchedulerIdlePeriod';
-        // Phase.
+        // Denotes a step into the async event MainThreadSchedulerIdlePeriod.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21333,7 +21333,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::BeginFrameNotExpectedSoon';
-          // Phase.
+          // Denotes the end of the event BeginFrameNotExpectedSoon.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21349,7 +21349,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::DidCommitFrameToCompositor';
-          // Phase.
+          // Denotes the end of the event DidCommitFrameToCompositor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21365,7 +21365,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::DidCommitProvisionalLoad';
-          // Phase.
+          // Denotes the end of the event DidCommitProvisionalLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21381,7 +21381,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::DidHandleInputEventOnCompositorThread';
-          // Phase.
+          // Denotes the end of the event DidHandleInputEventOnCompositorThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21397,7 +21397,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::DidHandleInputEventOnMainThread';
-          // Phase.
+          // Denotes the end of the event DidHandleInputEventOnMainThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21413,7 +21413,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::DidStartProvisionalLoad';
-          // Phase.
+          // Denotes the end of the event DidStartProvisionalLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21429,7 +21429,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::DispatchRequestBeginMainFrameNotExpected';
-          // Phase.
+          // Denotes the end of the event DispatchRequestBeginMainFrameNotExpected.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21445,7 +21445,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::EndIdlePeriod';
-          // Phase.
+          // Denotes the end of the event EndIdlePeriod.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21461,7 +21461,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::OnFirstMeaningfulPaint';
-          // Phase.
+          // Denotes the end of the event OnFirstMeaningfulPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21477,7 +21477,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::OnRendererBackgrounded';
-          // Phase.
+          // Denotes the end of the event OnRendererBackgrounded.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21493,7 +21493,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::OnRendererForegrounded';
-          // Phase.
+          // Denotes the end of the event OnRendererForegrounded.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21509,7 +21509,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::OnRendererHidden';
-          // Phase.
+          // Denotes the end of the event OnRendererHidden.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21525,7 +21525,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::OnRendererVisible';
-          // Phase.
+          // Denotes the end of the event OnRendererVisible.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21541,7 +21541,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::ResetForNavigationLocked';
-          // Phase.
+          // Denotes the end of the event ResetForNavigationLocked.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21557,7 +21557,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::SetAllRenderWidgetsHidden';
-          // Phase.
+          // Denotes the end of the event SetAllRenderWidgetsHidden.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21574,7 +21574,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::UpdateForInputEventOnCompositorThread';
-          // Phase.
+          // Denotes the end of the event UpdateForInputEventOnCompositorThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21600,7 +21600,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MainThreadSchedulerImpl::WillBeginFrame';
-          // Phase.
+          // Denotes the end of the event WillBeginFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21616,7 +21616,7 @@ export namespace TraceEvent {
           usedHeapSizeBefore: number;
         };
         name: 'MajorGC';
-        // Phase.
+        // Denotes the beginning of the event MajorGC.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21627,7 +21627,7 @@ export namespace TraceEvent {
           usedHeapSizeAfter: number;
         };
         name: 'MajorGC';
-        // Phase.
+        // Denotes the ending of the event MajorGC.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21640,7 +21640,7 @@ export namespace TraceEvent {
         
         };
         name: 'mark_test';
-        // Phase.
+        // Denotes a mark of the event Mark_test.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21653,7 +21653,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'markAsMainFrame';
-        // Phase.
+        // Denotes an event MarkAsMainFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21671,7 +21671,7 @@ export namespace TraceEvent {
           };
         };
         name: 'MarkDOMContent';
-        // Phase.
+        // Denotes an event MarkDOMContent. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21689,7 +21689,7 @@ export namespace TraceEvent {
           };
         };
         name: 'MarkLoad';
-        // Phase.
+        // Denotes an event MarkLoad. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21704,7 +21704,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'measure_test';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Measure_test.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21716,7 +21716,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'measure_test';
-        // Phase.
+        // Denotes a step into the nestable async flow event Measure_test.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21748,7 +21748,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'media.mojom.InterfaceFactory';
-            // Phase.
+            // Denotes the end of the event InterfaceFactory.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21764,7 +21764,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'media.mojom.MediaMetricsProvider';
-            // Phase.
+            // Denotes the end of the event MediaMetricsProvider.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21780,7 +21780,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'media.mojom.MediaService';
-            // Phase.
+            // Denotes the end of the event MediaService.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21796,7 +21796,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'media.mojom.RemoterFactory';
-            // Phase.
+            // Denotes the end of the event RemoterFactory.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21812,7 +21812,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'media.mojom.VideoDecoder';
-            // Phase.
+            // Denotes the end of the event VideoDecoder.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21830,7 +21830,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'MediaPlayerDelegateHostMsg_OnMutedStatusChanged';
-        // Phase.
+        // Denotes the end of the event MediaPlayerDelegateHostMsg_OnMutedStatusChanged.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21854,7 +21854,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'memory_instrumentation.mojom.ClientProcess';
-            // Phase.
+            // Denotes the end of the event ClientProcess.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21870,7 +21870,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'memory_instrumentation.mojom.Coordinator';
-            // Phase.
+            // Denotes the end of the event Coordinator.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21895,7 +21895,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MemoryCache::evict';
-          // Phase.
+          // Denotes the end of the event Evict.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21911,7 +21911,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MemoryCache::prune()';
-          // Phase.
+          // Denotes the end of the event Prune.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21935,7 +21935,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MemoryDumpManager::FinishAsyncProcessDump';
-          // Phase.
+          // Denotes the end of the event FinishAsyncProcessDump.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21951,7 +21951,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MemoryDumpManager::InvokeOnMemoryDump';
-          // Phase.
+          // Denotes the end of the event InvokeOnMemoryDump.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -21967,7 +21967,7 @@ export namespace TraceEvent {
           TotalStorage: number;
         };
         name: 'MemoryUsage';
-        // Phase.
+        // Denotes a counter for the event MemoryUsage.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -21993,7 +21993,7 @@ export namespace TraceEvent {
           flow_out?: boolean;
           id: string;
           name: 'MessageLoop::PostTask';
-          // Phase.
+          // Denotes the end of the event PostTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22010,7 +22010,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'MessageLoop::RunTask';
-          // Phase.
+          // Denotes the end of the event RunTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22037,7 +22037,7 @@ export namespace TraceEvent {
           flow_in: boolean;
           id: string;
           name: 'MessagePipeReader::Receive';
-          // Phase.
+          // Denotes the end of the event Receive.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22056,7 +22056,7 @@ export namespace TraceEvent {
           flow_out: boolean;
           id: string;
           name: 'MessagePipeReader::Send';
-          // Phase.
+          // Denotes the end of the event Send.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22081,7 +22081,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'metrics.mojom.SingleSampleMetric';
-            // Phase.
+            // Denotes the end of the event SingleSampleMetric.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22097,7 +22097,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'metrics.mojom.SingleSampleMetricsProvider';
-            // Phase.
+            // Denotes the end of the event SingleSampleMetricsProvider.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22113,7 +22113,7 @@ export namespace TraceEvent {
           usedHeapSizeBefore: number;
         };
         name: 'MinorGC';
-        // Phase.
+        // Denotes the beginning of the event MinorGC.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22124,7 +22124,7 @@ export namespace TraceEvent {
           usedHeapSizeAfter: number;
         };
         name: 'MinorGC';
-        // Phase.
+        // Denotes the ending of the event MinorGC.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22138,7 +22138,7 @@ export namespace TraceEvent {
           src_func: string;
         };
         name: 'ModelNeutralWriteTransaction';
-        // Phase.
+        // Denotes the beginning of the event ModelNeutralWriteTransaction.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22149,7 +22149,7 @@ export namespace TraceEvent {
         
         };
         name: 'ModelNeutralWriteTransaction';
-        // Phase.
+        // Denotes the ending of the event ModelNeutralWriteTransaction.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22183,7 +22183,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MojoVideoDecoderService::Construct';
-          // Phase.
+          // Denotes the end of the event Construct.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22198,7 +22198,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'MojoVideoDecoderService::Decode';
-          // Phase.
+          // Denotes the ending of the async event Decode.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -22211,7 +22211,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'MojoVideoDecoderService::Decode';
-          // Phase.
+          // Denotes an unknown phase of the event Decode.
           ph: 'p';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -22224,7 +22224,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'MojoVideoDecoderService::Decode';
-          // Phase.
+          // Denotes the beginning of the async event Decode.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -22239,7 +22239,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MojoVideoDecoderService::GetSupportedConfigs';
-          // Phase.
+          // Denotes the end of the event GetSupportedConfigs.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22254,7 +22254,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'MojoVideoDecoderService::Initialize';
-          // Phase.
+          // Denotes the ending of the async event Initialize.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -22267,7 +22267,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'MojoVideoDecoderService::Initialize';
-          // Phase.
+          // Denotes the beginning of the async event Initialize.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -22282,7 +22282,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MojoVideoDecoderService::OnDecoderOutput';
-          // Phase.
+          // Denotes the end of the event OnDecoderOutput.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22297,7 +22297,7 @@ export namespace TraceEvent {
         
         };
         name: 'More damage expected soon';
-        // Phase.
+        // Denotes an event Moredamageexpectedsoon. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22323,7 +22323,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MouseEventManager::fakeMouseMoveEventTimerFired';
-          // Phase.
+          // Denotes the end of the event FakeMouseMoveEventTimerFired.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22339,7 +22339,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MouseEventManager::handleMouseDraggedEvent';
-          // Phase.
+          // Denotes the end of the event HandleMouseDraggedEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22355,7 +22355,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'MouseEventManager::handleMousePressEvent';
-          // Phase.
+          // Denotes the end of the event HandleMousePressEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22378,7 +22378,7 @@ export namespace TraceEvent {
               // Duration.
               dur: number;
               name: 'void (anonymous namespace)::TextureOp::tess(void *, const (anonymous namespace)::VertexSpec &, const GrTextureProxy *, int, int) const';
-              // Phase.
+              // Denotes the end of the event VertexSpecGrTextureProxy.
               ph: 'X';
               tdur: number;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22401,7 +22401,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NavigationControllerImpl::LoadURLWithParams';
-          // Phase.
+          // Denotes the end of the event LoadURLWithParams.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22417,7 +22417,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NavigationHandle';
-        // Phase.
+        // Denotes the ending of the async event NavigationHandle.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22430,7 +22430,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NavigationHandle';
-        // Phase.
+        // Denotes the beginning of the async event NavigationHandle.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22442,7 +22442,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NavigationHandle';
-        // Phase.
+        // Denotes a step into the async event NavigationHandle.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22456,7 +22456,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NavigationRequest';
-        // Phase.
+        // Denotes the ending of the async event NavigationRequest.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22469,7 +22469,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NavigationRequest';
-        // Phase.
+        // Denotes the beginning of the async event NavigationRequest.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22481,7 +22481,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NavigationRequest';
-        // Phase.
+        // Denotes a step into the async event NavigationRequest.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22499,7 +22499,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'navigationStart';
-        // Phase.
+        // Denotes a mark of the event NavigationStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22514,7 +22514,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Navigation StartToCommit';
-        // Phase.
+        // Denotes the ending of the async event NavigationStartToCommit.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22526,7 +22526,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Navigation StartToCommit';
-        // Phase.
+        // Denotes the beginning of the async event NavigationStartToCommit.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22548,7 +22548,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NavigationThrottle::WillProcessResponse';
-          // Phase.
+          // Denotes the end of the event WillProcessResponse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22564,7 +22564,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NavigationThrottle::WillStartRequest';
-          // Phase.
+          // Denotes the end of the event WillStartRequest.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22581,7 +22581,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Navigation timeToResponseStarted';
-        // Phase.
+        // Denotes the ending of the async event NavigationtimeToResponseStarted.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22593,7 +22593,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Navigation timeToResponseStarted';
-        // Phase.
+        // Denotes the beginning of the async event NavigationtimeToResponseStarted.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22606,7 +22606,7 @@ export namespace TraceEvent {
         
         };
         name: 'NavigationTiming navigationStart';
-        // Phase.
+        // Denotes an event NavigationTimingnavigationStart. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22626,7 +22626,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NavigatorImpl::Navigate';
-          // Phase.
+          // Denotes the end of the event Navigate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22644,7 +22644,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'NeedsBeginFrameChanged';
-        // Phase.
+        // Denotes an event NeedsBeginFrameChanged. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22658,7 +22658,7 @@ export namespace TraceEvent {
         
         };
         name: 'NeedsTickAnimations';
-        // Phase.
+        // Denotes an event NeedsTickAnimations. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22674,7 +22674,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_DELEGATE_BEFORE_START_TRANSACTION';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event NETWORK_DELEGATE_BEFORE_START_TRANSACTION.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22687,7 +22687,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_DELEGATE_BEFORE_START_TRANSACTION';
-        // Phase.
+        // Denotes a step into the nestable async flow event NETWORK_DELEGATE_BEFORE_START_TRANSACTION.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22702,7 +22702,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_DELEGATE_BEFORE_URL_REQUEST';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event NETWORK_DELEGATE_BEFORE_URL_REQUEST.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22715,7 +22715,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_DELEGATE_BEFORE_URL_REQUEST';
-        // Phase.
+        // Denotes a step into the nestable async flow event NETWORK_DELEGATE_BEFORE_URL_REQUEST.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22730,7 +22730,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_DELEGATE_HEADERS_RECEIVED';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event NETWORK_DELEGATE_HEADERS_RECEIVED.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22743,7 +22743,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_DELEGATE_HEADERS_RECEIVED';
-        // Phase.
+        // Denotes a step into the nestable async flow event NETWORK_DELEGATE_HEADERS_RECEIVED.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22763,7 +22763,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'NETWORK_QUALITY_CHANGED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event NETWORK_QUALITY_CHANGED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -22822,7 +22822,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.CookieChangeListener';
-            // Phase.
+            // Denotes the end of the event CookieChangeListener.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22838,7 +22838,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.CookieManager';
-            // Phase.
+            // Denotes the end of the event CookieManager.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22854,7 +22854,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.NetworkContext';
-            // Phase.
+            // Denotes the end of the event NetworkContext.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22870,7 +22870,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.NetworkContextClient';
-            // Phase.
+            // Denotes the end of the event NetworkContextClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22886,7 +22886,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.NetworkQualityEstimatorManagerClient';
-            // Phase.
+            // Denotes the end of the event NetworkQualityEstimatorManagerClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22902,7 +22902,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.NetworkServiceClient';
-            // Phase.
+            // Denotes the end of the event NetworkServiceClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22918,7 +22918,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.ProxyConfigPollerClient';
-            // Phase.
+            // Denotes the end of the event ProxyConfigPollerClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22934,7 +22934,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.ProxyLookupClient';
-            // Phase.
+            // Denotes the end of the event ProxyLookupClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22950,7 +22950,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.ResolveHostClient';
-            // Phase.
+            // Denotes the end of the event ResolveHostClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22966,7 +22966,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.TrustedHeaderClient';
-            // Phase.
+            // Denotes the end of the event TrustedHeaderClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22982,7 +22982,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.TrustedURLLoaderHeaderClient';
-            // Phase.
+            // Denotes the end of the event TrustedURLLoaderHeaderClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -22998,7 +22998,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.URLLoader';
-            // Phase.
+            // Denotes the end of the event URLLoader.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23014,7 +23014,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.URLLoaderClient';
-            // Phase.
+            // Denotes the end of the event URLLoaderClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23030,7 +23030,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'network.mojom.URLLoaderFactory';
-            // Phase.
+            // Denotes the end of the event URLLoaderFactory.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23073,7 +23073,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::ForcePrivacyMode';
-          // Phase.
+          // Denotes the end of the event ForcePrivacyMode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23089,7 +23089,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyBeforeStartTransation';
-          // Phase.
+          // Denotes the end of the event NotifyBeforeStartTransation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23105,7 +23105,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyBeforeURLRequest';
-          // Phase.
+          // Denotes the end of the event NotifyBeforeURLRequest.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23121,7 +23121,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyCompleted';
-          // Phase.
+          // Denotes the end of the event NotifyCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23137,7 +23137,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyHeadersReceived';
-          // Phase.
+          // Denotes the end of the event NotifyHeadersReceived.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23153,7 +23153,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyNetworkBytesReceived';
-          // Phase.
+          // Denotes the end of the event NotifyNetworkBytesReceived.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23169,7 +23169,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyStartTransaction';
-          // Phase.
+          // Denotes the end of the event NotifyStartTransaction.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23185,7 +23185,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkDelegate::NotifyURLRequestDestroyed';
-          // Phase.
+          // Denotes the end of the event NotifyURLRequestDestroyed.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23202,7 +23202,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'NetworkHintsMsg_DNSPrefetch';
-        // Phase.
+        // Denotes the end of the event NetworkHintsMsg_DNSPrefetch.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23225,7 +23225,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkQualityEstimator::NotifyHeadersReceived';
-          // Phase.
+          // Denotes the end of the event NotifyHeadersReceived.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23241,7 +23241,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'NetworkQualityEstimator::NotifyRequestCompleted';
-          // Phase.
+          // Denotes the end of the event NotifyRequestCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23256,7 +23256,7 @@ export namespace TraceEvent {
         
         };
         name: 'No damage yet';
-        // Phase.
+        // Denotes an event Nodamageyet. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23276,7 +23276,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Node::updateDistribution';
-          // Phase.
+          // Denotes the end of the event UpdateDistribution.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23293,7 +23293,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'NotStartingIdlePeriodBecauseDeadlineIsTooClose';
-        // Phase.
+        // Denotes the end of the event NotStartingIdlePeriodBecauseDeadlineIsTooClose.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23307,7 +23307,7 @@ export namespace TraceEvent {
           number: number;
         };
         name: 'num_cpus';
-        // Phase.
+        // Denotes metadata for the event Num_cpus.
         ph: 'M';
       }
     }
@@ -23320,7 +23320,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-0-c_search';
-        // Phase.
+        // Denotes a mark of the event Obmark0c_search.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23335,7 +23335,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-0-odb-MB_12-0';
-        // Phase.
+        // Denotes a mark of the event Obmark0odbMB_120.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23350,7 +23350,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-0-odb-TR_1-1';
-        // Phase.
+        // Denotes a mark of the event Obmark0odbTR_11.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23365,7 +23365,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-0-render-MB_12-0';
-        // Phase.
+        // Denotes a mark of the event Obmark0renderMB_120.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23380,7 +23380,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-0-render-TR_1-1';
-        // Phase.
+        // Denotes a mark of the event Obmark0renderTR_11.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23395,7 +23395,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-0-start';
-        // Phase.
+        // Denotes a mark of the event Obmark0start.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23410,7 +23410,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-1-c_found-MB_12-0';
-        // Phase.
+        // Denotes a mark of the event Obmark1c_foundMB_120.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23425,7 +23425,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-1-c_found-TR_1-1';
-        // Phase.
+        // Denotes a mark of the event Obmark1c_foundTR_11.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23440,7 +23440,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-1-odb_r-MB_12-0';
-        // Phase.
+        // Denotes a mark of the event Obmark1odb_rMB_120.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23455,7 +23455,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-1-odb_r-TR_1-1';
-        // Phase.
+        // Denotes a mark of the event Obmark1odb_rTR_11.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23470,7 +23470,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-1-rendered-MB_12-0';
-        // Phase.
+        // Denotes a mark of the event Obmark1renderedMB_120.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23485,7 +23485,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ob-mark-1-rendered-TR_1-1';
-        // Phase.
+        // Denotes a mark of the event Obmark1renderedTR_11.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23499,7 +23499,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-c_found-MB_12-0';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Obmeasurec_foundMB_120.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23511,7 +23511,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-c_found-MB_12-0';
-        // Phase.
+        // Denotes a step into the nestable async flow event Obmeasurec_foundMB_120.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23525,7 +23525,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-c_found-TR_1-1';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Obmeasurec_foundTR_11.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23537,7 +23537,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-c_found-TR_1-1';
-        // Phase.
+        // Denotes a step into the nestable async flow event Obmeasurec_foundTR_11.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23551,7 +23551,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb_r-MB_12-0';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Obmeasureodb_rMB_120.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23563,7 +23563,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb_r-MB_12-0';
-        // Phase.
+        // Denotes a step into the nestable async flow event Obmeasureodb_rMB_120.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23577,7 +23577,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb_r-TR_1-1';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event Obmeasureodb_rTR_11.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23589,7 +23589,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb_r-TR_1-1';
-        // Phase.
+        // Denotes a step into the nestable async flow event Obmeasureodb_rTR_11.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23603,7 +23603,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb-MB_12-0';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event ObmeasureodbMB_120.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23615,7 +23615,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb-MB_12-0';
-        // Phase.
+        // Denotes a step into the nestable async flow event ObmeasureodbMB_120.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23629,7 +23629,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb-TR_1-1';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event ObmeasureodbTR_11.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23641,7 +23641,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-odb-TR_1-1';
-        // Phase.
+        // Denotes a step into the nestable async flow event ObmeasureodbTR_11.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23655,7 +23655,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-rendered-MB_12-0';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event ObmeasurerenderedMB_120.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23667,7 +23667,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-rendered-MB_12-0';
-        // Phase.
+        // Denotes a step into the nestable async flow event ObmeasurerenderedMB_120.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23681,7 +23681,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-rendered-TR_1-1';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event ObmeasurerenderedTR_11.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23693,7 +23693,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ob-measure-rendered-TR_1-1';
-        // Phase.
+        // Denotes a step into the nestable async flow event ObmeasurerenderedTR_11.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23715,7 +23715,7 @@ export namespace TraceEvent {
             };
           };
           name: 'one-tap-video::embedRequest';
-          // Phase.
+          // Denotes a mark of the event EmbedRequest.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -23730,7 +23730,7 @@ export namespace TraceEvent {
             };
           };
           name: 'one-tap-video::playerReady';
-          // Phase.
+          // Denotes a mark of the event PlayerReady.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -23746,7 +23746,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'OnIdleTaskPosted';
-        // Phase.
+        // Denotes the end of the event OnIdleTaskPosted.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23762,7 +23762,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'OnIdleTaskPostedOnMainThread';
-        // Phase.
+        // Denotes the end of the event OnIdleTaskPostedOnMainThread.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23778,7 +23778,7 @@ export namespace TraceEvent {
         // Duration.
         dur?: number;
         name: 'OnLibevent';
-        // Phase.
+        // Denotes the end of the event OnLibevent.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23793,7 +23793,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'On Load';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event OnLoad.
         ph: 'b';
       }
     
@@ -23803,7 +23803,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'On Load';
-        // Phase.
+        // Denotes a step into the nestable async flow event OnLoad.
         ph: 'e';
       }
     }
@@ -23820,7 +23820,7 @@ export namespace TraceEvent {
             };
           };
           name: 'optimizely:blockBegin';
-          // Phase.
+          // Denotes a mark of the event BlockBegin.
           ph: 'R';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -23836,7 +23836,7 @@ export namespace TraceEvent {
           };
         };
         name: 'optimizelyEnd';
-        // Phase.
+        // Denotes a mark of the event OptimizelyEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23851,7 +23851,7 @@ export namespace TraceEvent {
           };
         };
         name: 'optimizelyStart';
-        // Phase.
+        // Denotes a mark of the event OptimizelyStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23865,7 +23865,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'optimizelyTime';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event OptimizelyTime.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23877,7 +23877,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'optimizelyTime';
-        // Phase.
+        // Denotes a step into the nestable async flow event OptimizelyTime.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23896,7 +23896,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'OverlayProcessor::ProcessForOverlays';
-          // Phase.
+          // Denotes the end of the event ProcessForOverlays.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23917,7 +23917,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PageAnimator::serviceScriptedAnimations';
-          // Phase.
+          // Denotes the end of the event ServiceScriptedAnimations.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23933,7 +23933,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'pageLoad';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event PageLoad.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23945,7 +23945,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'pageLoad';
-        // Phase.
+        // Denotes a step into the nestable async flow event PageLoad.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -23976,7 +23976,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PageLoadMetricsObserver::OnCommit';
-          // Phase.
+          // Denotes the end of the event OnCommit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -23992,7 +23992,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PageLoadMetricsObserver::OnHidden';
-          // Phase.
+          // Denotes the end of the event OnHidden.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24008,7 +24008,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PageLoadMetricsObserver::OnShown';
-          // Phase.
+          // Denotes the end of the event OnShown.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24024,7 +24024,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PageLoadMetricsObserver::OnStart';
-          // Phase.
+          // Denotes the end of the event OnStart.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24040,7 +24040,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PageLoadMetricsObserver::ShouldObserveMimeType';
-          // Phase.
+          // Denotes the end of the event ShouldObserveMimeType.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24057,7 +24057,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PageMsg_SetHistoryOffsetAndLength';
-        // Phase.
+        // Denotes the end of the event PageMsg_SetHistoryOffsetAndLength.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24073,7 +24073,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PageMsg_UpdateScreenInfo';
-        // Phase.
+        // Denotes the end of the event PageMsg_UpdateScreenInfo.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24089,7 +24089,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PageMsg_UpdateWindowScreenRect';
-        // Phase.
+        // Denotes the end of the event PageMsg_UpdateWindowScreenRect.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24105,7 +24105,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PageMsg_WasHidden';
-        // Phase.
+        // Denotes the end of the event PageMsg_WasHidden.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24121,7 +24121,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PageMsg_WasShown';
-        // Phase.
+        // Denotes the end of the event PageMsg_WasShown.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24144,7 +24144,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'Paint';
-        // Phase.
+        // Denotes the end of the event Paint.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24167,7 +24167,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PaintArtifact::appendToWebDisplayItemList';
-          // Phase.
+          // Denotes the end of the event AppendToWebDisplayItemList.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24183,7 +24183,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PaintArtifact::replay';
-          // Phase.
+          // Denotes the end of the event Replay.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24205,7 +24205,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PaintController::commitNewDisplayItems';
-          // Phase.
+          // Denotes the end of the event CommitNewDisplayItems.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24231,7 +24231,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PaintImage';
-        // Phase.
+        // Denotes the end of the event PaintImage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24250,7 +24250,7 @@ export namespace TraceEvent {
           };
         };
         name: 'PaintInvalidationTracking';
-        // Phase.
+        // Denotes an event PaintInvalidationTracking. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24270,7 +24270,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PaintInvalidator::InvalidatePaint()';
-          // Phase.
+          // Denotes the end of the event InvalidatePaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24291,7 +24291,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PaintLayer::updateLayerPositionsAfterLayout';
-          // Phase.
+          // Denotes the end of the event UpdateLayerPositionsAfterLayout.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24312,7 +24312,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PaintLayerCompositor::updateIfNeededRecursive';
-          // Phase.
+          // Denotes the end of the event UpdateIfNeededRecursive.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24327,7 +24327,7 @@ export namespace TraceEvent {
         
         };
         name: 'paintNonDefaultBackgroundColor';
-        // Phase.
+        // Denotes a mark of the event PaintNonDefaultBackgroundColor.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24349,7 +24349,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ParkableStringImpl::CompressInBackground';
-          // Phase.
+          // Denotes the end of the event CompressInBackground.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24365,7 +24365,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ParkableStringImpl::Unpark';
-          // Phase.
+          // Denotes the end of the event Unpark.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24384,7 +24384,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ParseAuthorStyleSheet';
-        // Phase.
+        // Denotes the end of the event ParseAuthorStyleSheet.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24409,7 +24409,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ParseHTML';
-        // Phase.
+        // Denotes the beginning of the event ParseHTML.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24422,7 +24422,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ParseHTML';
-        // Phase.
+        // Denotes the ending of the event ParseHTML.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24439,7 +24439,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'PartitionAlloc.TotalSizeOfCommittedPagesKB';
-          // Phase.
+          // Denotes a counter for the event TotalSizeOfCommittedPagesKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -24459,7 +24459,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PendingScript::ExecuteScriptBlock';
-          // Phase.
+          // Denotes the end of the event ExecuteScriptBlock.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24480,7 +24480,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'PendingTree:waiting';
-          // Phase.
+          // Denotes the ending of the async event Waiting.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -24492,7 +24492,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'PendingTree:waiting';
-          // Phase.
+          // Denotes the beginning of the async event Waiting.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -24515,7 +24515,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PictureLayer::PushPropertiesTo';
-          // Phase.
+          // Denotes the end of the event PushPropertiesTo.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24531,7 +24531,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PictureLayer::Update';
-          // Phase.
+          // Denotes the end of the event Update.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24551,7 +24551,7 @@ export namespace TraceEvent {
             on_demand_missing_tile_count: number;
           };
           name: 'PictureLayerImpl::AppendQuads checkerboard';
-          // Phase.
+          // Denotes an event AppendQuadscheckerboard. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24568,7 +24568,7 @@ export namespace TraceEvent {
           };
         };
         name: 'PlatformResourceSendRequest';
-        // Phase.
+        // Denotes the beginning of the event PlatformResourceSendRequest.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24579,7 +24579,7 @@ export namespace TraceEvent {
         
         };
         name: 'PlatformResourceSendRequest';
-        // Phase.
+        // Denotes the ending of the event PlatformResourceSendRequest.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24592,7 +24592,7 @@ export namespace TraceEvent {
         
         };
         name: 'PostCommit';
-        // Phase.
+        // Denotes the beginning of the event PostCommit.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24603,7 +24603,7 @@ export namespace TraceEvent {
         
         };
         name: 'PostCommit';
-        // Phase.
+        // Denotes the ending of the event PostCommit.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24622,7 +24622,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'PrerenderManagerFactory::GetForProfile';
-          // Phase.
+          // Denotes the end of the event GetForProfile.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24639,7 +24639,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'PrintMsg_SetPrintingEnabled';
-        // Phase.
+        // Denotes the end of the event PrintMsg_SetPrintingEnabled.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24653,7 +24653,7 @@ export namespace TraceEvent {
           labels: string;
         };
         name: 'process_labels';
-        // Phase.
+        // Denotes metadata for the event Process_labels.
         ph: 'M';
       }
     }
@@ -24664,7 +24664,7 @@ export namespace TraceEvent {
           name: string;
         };
         name: 'process_name';
-        // Phase.
+        // Denotes metadata for the event Process_name.
         ph: 'M';
       }
     }
@@ -24675,7 +24675,7 @@ export namespace TraceEvent {
           sort_index: number;
         };
         name: 'process_sort_index';
-        // Phase.
+        // Denotes metadata for the event Process_sort_index.
         ph: 'M';
       }
     }
@@ -24686,7 +24686,7 @@ export namespace TraceEvent {
           uptime: number;
         };
         name: 'process_uptime_seconds';
-        // Phase.
+        // Denotes metadata for the event Process_uptime_seconds.
         ph: 'M';
       }
     }
@@ -24699,7 +24699,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ProcessCommitResponse';
-        // Phase.
+        // Denotes the end of the event ProcessCommitResponse.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24716,7 +24716,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'ProcessMemoryDump';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event ProcessMemoryDump.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24730,7 +24730,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'ProcessMemoryDump';
-        // Phase.
+        // Denotes a step into the nestable async flow event ProcessMemoryDump.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24743,7 +24743,7 @@ export namespace TraceEvent {
           priority: number;
         };
         name: 'ProcessPriority';
-        // Phase.
+        // Denotes an event ProcessPriority. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24763,7 +24763,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProcTask::OnLookupComplete';
-          // Phase.
+          // Denotes the end of the event OnLookupComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24781,7 +24781,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Profile';
-        // Phase.
+        // Denotes a sample of the event Profile.
         ph: 'P';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24815,7 +24815,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ProfileChunk';
-        // Phase.
+        // Denotes a sample of the event ProfileChunk.
         ph: 'P';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24834,7 +24834,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProfileManager::GetProfileInfoCache';
-          // Phase.
+          // Denotes the end of the event GetProfileInfoCache.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24855,7 +24855,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProgramBindingBase::init';
-          // Phase.
+          // Denotes the end of the event Init.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24874,7 +24874,7 @@ export namespace TraceEvent {
           
           };
           name: 'PropertyTreeBuilder::ShouldCreateRenderSurface opacity';
-          // Phase.
+          // Denotes an event ShouldCreateRenderSurfaceopacity. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24893,7 +24893,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'PROXY_RESOLUTION_SERVICE_RESOLVED_PROXY_LIST';
-        // Phase.
+        // Denotes the ending of the nestable async flow event PROXY_RESOLUTION_SERVICE_RESOLVED_PROXY_LIST.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24908,7 +24908,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'PROXY_RESOLUTION_SERVICE';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event PROXY_RESOLUTION_SERVICE.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24921,7 +24921,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'PROXY_RESOLUTION_SERVICE';
-        // Phase.
+        // Denotes a step into the nestable async flow event PROXY_RESOLUTION_SERVICE.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -24944,7 +24944,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'proxy_resolver.mojom.ProxyResolver';
-            // Phase.
+            // Denotes the end of the event ProxyResolver.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -24960,7 +24960,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'proxy_resolver.mojom.ProxyResolverRequestClient';
-            // Phase.
+            // Denotes the end of the event ProxyResolverRequestClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25039,7 +25039,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::BeginMainFrameAbortedOnImplThread';
-          // Phase.
+          // Denotes the end of the event BeginMainFrameAbortedOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25055,7 +25055,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::DidActivateSyncTreeOnImplThread';
-          // Phase.
+          // Denotes the end of the event DidActivateSyncTreeOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25071,7 +25071,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::DidLoseLayerTreeFrameSinkOnImplThread';
-          // Phase.
+          // Denotes the end of the event DidLoseLayerTreeFrameSinkOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25087,7 +25087,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::DidReceiveCompositorFrameAckOnImplThread';
-          // Phase.
+          // Denotes the end of the event DidReceiveCompositorFrameAckOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25103,7 +25103,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::FinishGLOnImplThread';
-          // Phase.
+          // Denotes the end of the event FinishGLOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25119,7 +25119,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::InitializeLayerTreeFrameSinkOnImplThread';
-          // Phase.
+          // Denotes the end of the event InitializeLayerTreeFrameSinkOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25135,7 +25135,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::NotifyReadyToActivate';
-          // Phase.
+          // Denotes the end of the event NotifyReadyToActivate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25151,7 +25151,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'ProxyImpl::NotifyReadyToCommitOnImpl';
-          // Phase.
+          // Denotes the end of the event NotifyReadyToCommitOnImpl.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25167,7 +25167,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::NotifyReadyToDraw';
-          // Phase.
+          // Denotes the end of the event NotifyReadyToDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25183,7 +25183,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::OnCanDrawStateChanged';
-          // Phase.
+          // Denotes the end of the event OnCanDrawStateChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25199,7 +25199,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::ProxyImpl';
-          // Phase.
+          // Denotes the end of the event ProxyImpl.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25215,7 +25215,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::RequestBeginMainFrameNotExpected';
-          // Phase.
+          // Denotes the end of the event RequestBeginMainFrameNotExpected.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25231,7 +25231,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::ScheduledActionActivateSyncTree';
-          // Phase.
+          // Denotes the end of the event ScheduledActionActivateSyncTree.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25247,7 +25247,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::ScheduledActionBeginLayerTreeFrameSinkCreation';
-          // Phase.
+          // Denotes the end of the event ScheduledActionBeginLayerTreeFrameSinkCreation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25263,7 +25263,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'ProxyImpl::ScheduledActionCommit';
-          // Phase.
+          // Denotes the end of the event ScheduledActionCommit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25279,7 +25279,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::ScheduledActionDraw';
-          // Phase.
+          // Denotes the end of the event ScheduledActionDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25295,7 +25295,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::ScheduledActionPrepareTiles';
-          // Phase.
+          // Denotes the end of the event ScheduledActionPrepareTiles.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25311,7 +25311,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::SetNeedsCommitOnImplThread';
-          // Phase.
+          // Denotes the end of the event SetNeedsCommitOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25327,7 +25327,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::SetNeedsRedrawOnImplThread';
-          // Phase.
+          // Denotes the end of the event SetNeedsRedrawOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25343,7 +25343,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyImpl::SetVisibleOnImplThread';
-          // Phase.
+          // Denotes the end of the event SetVisibleOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25396,7 +25396,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'ProxyMain::BeginMainFrame::commit';
-            // Phase.
+            // Denotes the end of the event Commit.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25413,7 +25413,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyMain::BeginMainFrameNotExpectedSoon';
-          // Phase.
+          // Denotes the end of the event BeginMainFrameNotExpectedSoon.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25429,7 +25429,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyMain::DidInitializeLayerTreeFrameSink';
-          // Phase.
+          // Denotes the end of the event DidInitializeLayerTreeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25445,7 +25445,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyMain::ProxyMain';
-          // Phase.
+          // Denotes the end of the event ProxyMain.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25461,7 +25461,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyMain::RequestNewLayerTreeFrameSink';
-          // Phase.
+          // Denotes the end of the event RequestNewLayerTreeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25476,7 +25476,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'ProxyMain::SetDeferMainFrameUpdate';
-          // Phase.
+          // Denotes the ending of the async event SetDeferMainFrameUpdate.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -25488,7 +25488,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'ProxyMain::SetDeferMainFrameUpdate';
-          // Phase.
+          // Denotes the beginning of the async event SetDeferMainFrameUpdate.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -25501,7 +25501,7 @@ export namespace TraceEvent {
           
           };
           name: 'ProxyMain::SetNeedsAnimate';
-          // Phase.
+          // Denotes an event SetNeedsAnimate. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25515,7 +25515,7 @@ export namespace TraceEvent {
           
           };
           name: 'ProxyMain::SetNeedsCommit';
-          // Phase.
+          // Denotes an event SetNeedsCommit. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25529,7 +25529,7 @@ export namespace TraceEvent {
           
           };
           name: 'ProxyMain::SetNeedsUpdateLayers';
-          // Phase.
+          // Denotes an event SetNeedsUpdateLayers. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25545,7 +25545,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyMain::SetVisible';
-          // Phase.
+          // Denotes the end of the event SetVisible.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25561,7 +25561,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ProxyMain::Stop';
-          // Phase.
+          // Denotes the end of the event Stop.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -25593,7 +25593,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_CHROMIUM_CLIENT_STREAM_READ_RESPONSE_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_CHROMIUM_CLIENT_STREAM_READ_RESPONSE_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25628,7 +25628,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_CHROMIUM_CLIENT_STREAM_SEND_REQUEST_HEADERS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_CHROMIUM_CLIENT_STREAM_SEND_REQUEST_HEADERS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25645,7 +25645,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_CONNECTION_MIGRATION_MODE';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_CONNECTION_MIGRATION_MODE.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25666,7 +25666,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_ACK_FRAME_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_ACK_FRAME_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25696,7 +25696,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_CERTIFICATE_VERIFIED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_CERTIFICATE_VERIFIED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25714,7 +25714,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_CLOSED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_CLOSED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25731,7 +25731,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25748,7 +25748,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_CRYPTO_HANDSHAKE_MESSAGE_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25763,7 +25763,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_PACKET_AUTHENTICATED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_PACKET_AUTHENTICATED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25782,7 +25782,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_PACKET_LOST';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_PACKET_LOST.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25801,7 +25801,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_PACKET_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_PACKET_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25821,7 +25821,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_PACKET_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_PACKET_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25836,7 +25836,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_PING_FRAME_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_PING_FRAME_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25854,7 +25854,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_RST_STREAM_FRAME_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_RST_STREAM_FRAME_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25872,7 +25872,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_RST_STREAM_FRAME_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_RST_STREAM_FRAME_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25892,7 +25892,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_STREAM_FRAME_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_STREAM_FRAME_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25912,7 +25912,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_STREAM_FRAME_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_STREAM_FRAME_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25932,7 +25932,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_UNAUTHENTICATED_PACKET_HEADER_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25949,7 +25949,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION_VERSION_NEGOTIATED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_SESSION_VERSION_NEGOTIATED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25970,7 +25970,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event QUIC_SESSION.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -25983,7 +25983,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_SESSION';
-        // Phase.
+        // Denotes a step into the nestable async flow event QUIC_SESSION.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26003,7 +26003,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_STREAM_FACTORY_JOB_BOUND_TO_HTTP_STREAM_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event QUIC_STREAM_FACTORY_JOB_BOUND_TO_HTTP_STREAM_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26020,7 +26020,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_STREAM_FACTORY_JOB_CONNECT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event QUIC_STREAM_FACTORY_JOB_CONNECT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26033,7 +26033,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_STREAM_FACTORY_JOB_CONNECT';
-        // Phase.
+        // Denotes a step into the nestable async flow event QUIC_STREAM_FACTORY_JOB_CONNECT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26050,7 +26050,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_STREAM_FACTORY_JOB';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event QUIC_STREAM_FACTORY_JOB.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26063,7 +26063,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'QUIC_STREAM_FACTORY_JOB';
-        // Phase.
+        // Denotes a step into the nestable async flow event QUIC_STREAM_FACTORY_JOB.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26082,7 +26082,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'QuicStreamFactory::CreateSession';
-          // Phase.
+          // Denotes the end of the event CreateSession.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26102,7 +26102,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'QuicStreamFactory::Job::DoLoop';
-            // Phase.
+            // Denotes the end of the event DoLoop.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26125,7 +26125,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'rappor.mojom.RapporRecorder';
-            // Phase.
+            // Denotes the end of the event RapporRecorder.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26147,7 +26147,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RasterizerTaskImpl::RunOnWorkerThread';
-          // Phase.
+          // Denotes the end of the event RunOnWorkerThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26168,7 +26168,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RasterSource::PerformSolidColorAnalysis';
-          // Phase.
+          // Denotes the end of the event PerformSolidColorAnalysis.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26190,7 +26190,7 @@ export namespace TraceEvent {
           };
         };
         name: 'RasterTask';
-        // Phase.
+        // Denotes the beginning of the event RasterTask.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26201,7 +26201,7 @@ export namespace TraceEvent {
         
         };
         name: 'RasterTask';
-        // Phase.
+        // Denotes the ending of the event RasterTask.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26215,7 +26215,7 @@ export namespace TraceEvent {
           src_func: string;
         };
         name: 'ReadTransaction';
-        // Phase.
+        // Denotes the beginning of the event ReadTransaction.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26226,7 +26226,7 @@ export namespace TraceEvent {
         
         };
         name: 'ReadTransaction';
-        // Phase.
+        // Denotes the ending of the event ReadTransaction.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26245,7 +26245,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RealTimeDomain::DelayTillNextTask';
-          // Phase.
+          // Denotes the end of the event DelayTillNextTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26269,7 +26269,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RecordingSource::DetermineIfSolidColor';
-          // Phase.
+          // Denotes the end of the event DetermineIfSolidColor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26285,7 +26285,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RecordingSource::FinishDisplayItemListUpdate';
-          // Phase.
+          // Denotes the end of the event FinishDisplayItemListUpdate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26300,7 +26300,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'redirectEnd';
-        // Phase.
+        // Denotes a mark of the event RedirectEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26313,7 +26313,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'redirectStart';
-        // Phase.
+        // Denotes a mark of the event RedirectStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26332,7 +26332,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RememberedSetUpdatingItem::Process';
-          // Phase.
+          // Denotes the end of the event Process.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26353,7 +26353,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RemoteWindowProxy::initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26369,7 +26369,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererAudioState';
-        // Phase.
+        // Denotes the beginning of the async event RendererAudioState.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26381,7 +26381,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererAudioState';
-        // Phase.
+        // Denotes a step into the async event RendererAudioState.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26399,7 +26399,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'RendererMain.START_MSG_LOOP';
-          // Phase.
+          // Denotes the beginning of the async event START_MSG_LOOP.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -26414,7 +26414,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererProcessType';
-        // Phase.
+        // Denotes the beginning of the async event RendererProcessType.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26426,7 +26426,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererProcessType';
-        // Phase.
+        // Denotes a step into the async event RendererProcessType.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26444,7 +26444,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'RendererScheduler.BackgroundBudgetMs';
-          // Phase.
+          // Denotes a counter for the event BackgroundBudgetMs.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -26459,7 +26459,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererVisibility';
-        // Phase.
+        // Denotes the ending of the async event RendererVisibility.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26471,7 +26471,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererVisibility';
-        // Phase.
+        // Denotes the beginning of the async event RendererVisibility.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26483,7 +26483,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RendererVisibility';
-        // Phase.
+        // Denotes a step into the async event RendererVisibility.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26497,7 +26497,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderFrame';
-        // Phase.
+        // Denotes a delete object of the event RenderFrame.
         ph: 'D';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26510,7 +26510,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderFrame';
-        // Phase.
+        // Denotes a create object of the event RenderFrame.
         ph: 'N';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26528,7 +26528,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderFrame';
-        // Phase.
+        // Denotes a snapshot object of the event RenderFrame.
         ph: 'O';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26574,7 +26574,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::BeginNavigation';
-          // Phase.
+          // Denotes the end of the event BeginNavigation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26591,7 +26591,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::CommitNavigation';
-          // Phase.
+          // Denotes the end of the event CommitNavigation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26607,7 +26607,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::CreateRenderFrame';
-          // Phase.
+          // Denotes the end of the event CreateRenderFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26631,7 +26631,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::DidCommitProvisionalLoad';
-          // Phase.
+          // Denotes the end of the event DidCommitProvisionalLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26647,7 +26647,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::OnDidAddContentSecurityPolicies';
-          // Phase.
+          // Denotes the end of the event OnDidAddContentSecurityPolicies.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26664,7 +26664,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::OnDidFailProvisionalLoadWithError';
-          // Phase.
+          // Denotes the end of the event OnDidFailProvisionalLoadWithError.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26680,7 +26680,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::OnDidStopLoading';
-          // Phase.
+          // Denotes the end of the event OnDidStopLoading.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26696,7 +26696,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostImpl::OnDispatchLoad';
-          // Phase.
+          // Denotes the end of the event OnDispatchLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26711,7 +26711,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'RenderFrameHostImpl::SwapOut';
-          // Phase.
+          // Denotes the ending of the async event SwapOut.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -26723,7 +26723,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'RenderFrameHostImpl::SwapOut';
-          // Phase.
+          // Denotes the beginning of the async event SwapOut.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -26738,7 +26738,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderFrameHostImpl BeforeUnload';
-        // Phase.
+        // Denotes the ending of the async event RenderFrameHostImplBeforeUnload.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26750,7 +26750,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderFrameHostImpl BeforeUnload';
-        // Phase.
+        // Denotes the beginning of the async event RenderFrameHostImplBeforeUnload.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26772,7 +26772,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostManager::CommitPending';
-          // Phase.
+          // Denotes the end of the event CommitPending.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26788,7 +26788,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameHostManager::SwapOutOldFrame';
-          // Phase.
+          // Denotes the end of the event SwapOutOldFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26831,7 +26831,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::createChildFrame';
-          // Phase.
+          // Denotes the end of the event CreateChildFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26848,7 +26848,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::didCommitProvisionalLoad';
-          // Phase.
+          // Denotes the end of the event DidCommitProvisionalLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26864,7 +26864,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::didFinishDocumentLoad';
-          // Phase.
+          // Denotes the end of the event DidFinishDocumentLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26880,7 +26880,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::didFinishLoad';
-          // Phase.
+          // Denotes the end of the event DidFinishLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26896,7 +26896,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::didStartLoading';
-          // Phase.
+          // Denotes the end of the event DidStartLoading.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26913,7 +26913,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::didStartProvisionalLoad';
-          // Phase.
+          // Denotes the end of the event DidStartProvisionalLoad.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26929,7 +26929,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::didStopLoading';
-          // Phase.
+          // Denotes the end of the event DidStopLoading.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26946,7 +26946,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderFrameImpl::Initialize';
-          // Phase.
+          // Denotes the end of the event Initialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -26962,7 +26962,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderPass';
-        // Phase.
+        // Denotes a delete object of the event RenderPass.
         ph: 'D';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -26982,7 +26982,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderProcessHostImpl::Send';
-          // Phase.
+          // Denotes the end of the event Send.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27003,7 +27003,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'RenderProcessHostImpl::UpdateProcessPriority.SetProcessPriority';
-            // Phase.
+            // Denotes the end of the event SetProcessPriority.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27019,7 +27019,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderProcessHostImpl::UpdateProcessPriority';
-          // Phase.
+          // Denotes the end of the event UpdateProcessPriority.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27040,7 +27040,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderSurfaceImpl::AppendQuads';
-          // Phase.
+          // Denotes the end of the event AppendQuads.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27067,7 +27067,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderTextHarfBuzz::ItemizeTextToRuns';
-          // Phase.
+          // Denotes the end of the event ItemizeTextToRuns.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27083,7 +27083,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderTextHarfBuzz::ShapeRuns';
-          // Phase.
+          // Denotes the end of the event ShapeRuns.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27099,7 +27099,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderTextHarfBuzz::ShapeRunWithFontInternal';
-          // Phase.
+          // Denotes the end of the event ShapeRunWithFontInternal.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27120,7 +27120,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderThreadImpl::EstablishGpuChannelSync';
-          // Phase.
+          // Denotes the end of the event EstablishGpuChannelSync.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27144,7 +27144,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderViewHostImpl::CreateRenderView';
-          // Phase.
+          // Denotes the end of the event CreateRenderView.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27160,7 +27160,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderViewHostImpl::GetWebkitPrefs';
-          // Phase.
+          // Denotes the end of the event GetWebkitPrefs.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27202,7 +27202,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::DidCommitAndDrawCompositorFrame';
-          // Phase.
+          // Denotes the end of the event DidCommitAndDrawCompositorFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27218,7 +27218,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::InitializeLayerTreeView';
-          // Phase.
+          // Denotes the end of the event InitializeLayerTreeView.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27234,7 +27234,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::OnSynchronizeVisualProperties';
-          // Phase.
+          // Denotes the end of the event OnSynchronizeVisualProperties.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27250,7 +27250,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::OnWasHidden';
-          // Phase.
+          // Denotes the end of the event OnWasHidden.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27266,7 +27266,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::OnWasShown';
-          // Phase.
+          // Denotes the end of the event OnWasShown.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27282,7 +27282,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::UpdateSelectionBounds';
-          // Phase.
+          // Denotes the end of the event UpdateSelectionBounds.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27298,7 +27298,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::UpdateTextInputState';
-          // Phase.
+          // Denotes the end of the event UpdateTextInputState.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27314,7 +27314,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidget::willBeginCompositorFrame';
-          // Phase.
+          // Denotes the end of the event WillBeginCompositorFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27350,7 +27350,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostImpl::DidUpdateVisualProperties';
-          // Phase.
+          // Denotes the end of the event DidUpdateVisualProperties.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27366,7 +27366,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostImpl::ForwardKeyboardEvent';
-          // Phase.
+          // Denotes the end of the event ForwardKeyboardEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27383,7 +27383,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostImpl::ForwardMouseEvent';
-          // Phase.
+          // Denotes the end of the event ForwardMouseEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27399,7 +27399,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostImpl::GetScreenInfo';
-          // Phase.
+          // Denotes the end of the event GetScreenInfo.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27415,7 +27415,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostImpl::WasHidden';
-          // Phase.
+          // Denotes the end of the event WasHidden.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27431,7 +27431,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostImpl::WasShown';
-          // Phase.
+          // Denotes the end of the event WasShown.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27461,7 +27461,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostViewCocoa::keyEvent';
-          // Phase.
+          // Denotes the end of the event KeyEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27477,7 +27477,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostViewCocoa::mouseEvent';
-          // Phase.
+          // Denotes the end of the event MouseEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27493,7 +27493,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostViewCocoa::sendViewBoundsInWindowToClient';
-          // Phase.
+          // Denotes the end of the event SendViewBoundsInWindowToClient.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27509,7 +27509,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetHostViewCocoa::sendWindowFrameInScreenToClient';
-          // Phase.
+          // Denotes the end of the event SendWindowFrameInScreenToClient.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27530,7 +27530,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RenderWidgetInputHandler::OnHandleInputEvent';
-          // Phase.
+          // Denotes the end of the event OnHandleInputEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -27547,7 +27547,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7f8e1500b000';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7f8e1500b000.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27561,7 +27561,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7f8e1500b000';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7f8e1500b000.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27575,7 +27575,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7f8e1500b000';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7f8e1500b000.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27588,7 +27588,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7f8e1500b000';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7f8e1500b000.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27603,7 +27603,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fa57a039c00';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7fa57a039c00.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27617,7 +27617,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fa57a039c00';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7fa57a039c00.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27631,7 +27631,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fa57a039c00';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7fa57a039c00.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27644,7 +27644,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fa57a039c00';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7fa57a039c00.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27659,7 +27659,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fcab207b200';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7fcab207b200.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27673,7 +27673,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fcab207b200';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7fcab207b200.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27687,7 +27687,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fcab207b200';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7fcab207b200.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27700,7 +27700,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fcab207b200';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7fcab207b200.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27715,7 +27715,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fd50f00aa00';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7fd50f00aa00.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27729,7 +27729,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fd50f00aa00';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7fd50f00aa00.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27743,7 +27743,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fd50f00aa00';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7fd50f00aa00.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27756,7 +27756,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fd50f00aa00';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7fd50f00aa00.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27771,7 +27771,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdabc07b400';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7fdabc07b400.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27785,7 +27785,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdabc07b400';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7fdabc07b400.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27799,7 +27799,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdabc07b400';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7fdabc07b400.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27812,7 +27812,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdabc07b400';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7fdabc07b400.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27827,7 +27827,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdefa843000';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7fdefa843000.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27841,7 +27841,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdefa843000';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7fdefa843000.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27855,7 +27855,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdefa843000';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7fdefa843000.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27868,7 +27868,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fdefa843000';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7fdefa843000.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27883,7 +27883,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fe5c4821c00';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event RenderWorker0x7fe5c4821c00.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27897,7 +27897,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fe5c4821c00';
-        // Phase.
+        // Denotes a step into the nestable async flow event RenderWorker0x7fe5c4821c00.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27911,7 +27911,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fe5c4821c00';
-        // Phase.
+        // Denotes the ending of the async event RenderWorker0x7fe5c4821c00.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27924,7 +27924,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'RenderWorker-0x7fe5c4821c00';
-        // Phase.
+        // Denotes the beginning of the async event RenderWorker0x7fe5c4821c00.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27942,7 +27942,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'REQUEST_ALIVE';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event REQUEST_ALIVE.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27957,7 +27957,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'REQUEST_ALIVE';
-        // Phase.
+        // Denotes a step into the nestable async flow event REQUEST_ALIVE.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -27980,7 +27980,7 @@ export namespace TraceEvent {
           };
         };
         name: 'RequestAnimationFrame';
-        // Phase.
+        // Denotes an event RequestAnimationFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28005,7 +28005,7 @@ export namespace TraceEvent {
           };
         };
         name: 'RequestIdleCallback';
-        // Phase.
+        // Denotes an event RequestIdleCallback. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28019,7 +28019,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'RequestMainThreadFrame';
-        // Phase.
+        // Denotes an event RequestMainThreadFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28033,7 +28033,7 @@ export namespace TraceEvent {
         
         };
         name: 'requestStart';
-        // Phase.
+        // Denotes a mark of the event RequestStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28065,7 +28065,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'resource_coordinator.mojom.CoordinationUnitProvider';
-            // Phase.
+            // Denotes the end of the event CoordinationUnitProvider.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28081,7 +28081,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'resource_coordinator.mojom.FrameCoordinationUnit';
-            // Phase.
+            // Denotes the end of the event FrameCoordinationUnit.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28097,7 +28097,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'resource_coordinator.mojom.PageCoordinationUnit';
-            // Phase.
+            // Denotes the end of the event PageCoordinationUnit.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28113,7 +28113,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'resource_coordinator.mojom.PageSignalReceiver';
-            // Phase.
+            // Denotes the end of the event PageSignalReceiver.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28129,7 +28129,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'resource_coordinator.mojom.ProcessCoordinationUnit';
-            // Phase.
+            // Denotes the end of the event ProcessCoordinationUnit.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28151,7 +28151,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Resource::appendData';
-          // Phase.
+          // Denotes the end of the event AppendData.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28169,7 +28169,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceChangePriority';
-        // Phase.
+        // Denotes an event ResourceChangePriority. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28186,7 +28186,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ResourceChangePriority';
-        // Phase.
+        // Denotes the end of the event ResourceChangePriority.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28212,7 +28212,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ResourceDispatcher::OnReceivedRedirect';
-          // Phase.
+          // Denotes the end of the event OnReceivedRedirect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28228,7 +28228,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ResourceDispatcher::OnReceivedResponse';
-          // Phase.
+          // Denotes the end of the event OnReceivedResponse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28244,7 +28244,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ResourceDispatcher::OnRequestComplete';
-          // Phase.
+          // Denotes the end of the event OnRequestComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28266,7 +28266,7 @@ export namespace TraceEvent {
             revalidationPolicy: number;
           };
           name: 'ResourceFetcher::DetermineRevalidationPolicy';
-          // Phase.
+          // Denotes an event DetermineRevalidationPolicy. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28284,7 +28284,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ResourceFetcher::requestResource';
-          // Phase.
+          // Denotes the end of the event RequestResource.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28306,7 +28306,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceFinish';
-        // Phase.
+        // Denotes an event ResourceFinish. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28325,7 +28325,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'ResourceLoad';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event ResourceLoad.
         ph: 'b';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28342,7 +28342,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'ResourceLoad';
-        // Phase.
+        // Denotes a step into the nestable async flow event ResourceLoad.
         ph: 'e';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28362,7 +28362,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ResourceLoadPriorityOptimizer::updateAllImageResourcePriorities';
-          // Phase.
+          // Denotes the end of the event UpdateAllImageResourcePriorities.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28383,7 +28383,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ResourcePrefetchPredictor::StartInitialization';
-          // Phase.
+          // Denotes the end of the event StartInitialization.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28403,7 +28403,7 @@ export namespace TraceEvent {
           local: string;
         };
         name: 'ResourcePrioritySet';
-        // Phase.
+        // Denotes the ending of the nestable async flow event ResourcePrioritySet.
         ph: 'n';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28421,7 +28421,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceReceivedData';
-        // Phase.
+        // Denotes an event ResourceReceivedData. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28461,7 +28461,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceReceiveResponse';
-        // Phase.
+        // Denotes an event ResourceReceiveResponse. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28488,7 +28488,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ResourceSendRequest';
-        // Phase.
+        // Denotes an event ResourceSendRequest. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28502,7 +28502,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'responseEnd';
-        // Phase.
+        // Denotes a mark of the event ResponseEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28521,7 +28521,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RootScrollerController::PerformRootScrollerSelection';
-          // Phase.
+          // Denotes the end of the event PerformRootScrollerSelection.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28542,7 +28542,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'RuleSet::addRulesFromSheet';
-          // Phase.
+          // Denotes the end of the event AddRulesFromSheet.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28557,7 +28557,7 @@ export namespace TraceEvent {
         
         };
         name: 'RunMicrotasks';
-        // Phase.
+        // Denotes the beginning of the event RunMicrotasks.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28568,7 +28568,7 @@ export namespace TraceEvent {
           microtask_count: number;
         };
         name: 'RunMicrotasks';
-        // Phase.
+        // Denotes the ending of the event RunMicrotasks.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28581,7 +28581,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'RunMicrotasks';
-        // Phase.
+        // Denotes the end of the event RunMicrotasks.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28597,7 +28597,7 @@ export namespace TraceEvent {
         // Duration.
         dur?: number;
         name: 'RunTask';
-        // Phase.
+        // Denotes the end of the event RunTask.
         ph: 'X';
         tdur?: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28613,7 +28613,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'RunWithFaviconResults';
-        // Phase.
+        // Denotes the end of the event RunWithFaviconResults.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28643,7 +28643,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'safe_browsing.mojom.PhishingDetector';
-            // Phase.
+            // Denotes the end of the event PhishingDetector.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28659,7 +28659,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'safe_browsing.mojom.PhishingModelSetter';
-            // Phase.
+            // Denotes the end of the event PhishingModelSetter.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28675,7 +28675,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'safe_browsing.mojom.SafeBrowsing';
-            // Phase.
+            // Denotes the end of the event SafeBrowsing.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28691,7 +28691,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'safe_browsing.mojom.SafeBrowsingUrlChecker';
-            // Phase.
+            // Denotes the end of the event SafeBrowsingUrlChecker.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28713,7 +28713,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ScheduledAction::execute';
-          // Phase.
+          // Denotes the end of the event Execute.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28729,7 +28729,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ScheduledTasks';
-        // Phase.
+        // Denotes the ending of the async event ScheduledTasks.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28741,7 +28741,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ScheduledTasks';
-        // Phase.
+        // Denotes the beginning of the async event ScheduledTasks.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28760,7 +28760,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'ScheduledTasks';
-        // Phase.
+        // Denotes a step into the async event ScheduledTasks.
         ph: 'T';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -28947,7 +28947,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.AwaitingTouchstartResponse';
-          // Phase.
+          // Denotes the beginning of the async event AwaitingTouchstartResponse.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -28959,7 +28959,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.AwaitingTouchstartResponse';
-          // Phase.
+          // Denotes a step into the async event AwaitingTouchstartResponse.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -28984,7 +28984,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'Scheduler::BeginFrame';
-          // Phase.
+          // Denotes the end of the event BeginFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -28998,7 +28998,7 @@ export namespace TraceEvent {
           
           };
           name: 'Scheduler::BeginFrameDropped';
-          // Phase.
+          // Denotes an event BeginFrameDropped. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29013,7 +29013,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BeginFrameNotExpectedSoon';
-          // Phase.
+          // Denotes the ending of the async event BeginFrameNotExpectedSoon.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29025,7 +29025,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BeginFrameNotExpectedSoon';
-          // Phase.
+          // Denotes the beginning of the async event BeginFrameNotExpectedSoon.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29037,7 +29037,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BeginFrameNotExpectedSoon';
-          // Phase.
+          // Denotes a step into the async event BeginFrameNotExpectedSoon.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29063,7 +29063,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'Scheduler::BeginImplFrame';
-          // Phase.
+          // Denotes the end of the event BeginImplFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29079,7 +29079,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::BeginMainFrameAborted';
-          // Phase.
+          // Denotes the end of the event BeginMainFrameAborted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29094,7 +29094,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BeginMainFrameOnCriticalPath';
-          // Phase.
+          // Denotes the ending of the async event BeginMainFrameOnCriticalPath.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29106,7 +29106,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BeginMainFrameOnCriticalPath';
-          // Phase.
+          // Denotes the beginning of the async event BeginMainFrameOnCriticalPath.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29118,7 +29118,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BeginMainFrameOnCriticalPath';
-          // Phase.
+          // Denotes a step into the async event BeginMainFrameOnCriticalPath.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29132,7 +29132,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BlockingInputExpectedSoon';
-          // Phase.
+          // Denotes the beginning of the async event BlockingInputExpectedSoon.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29144,7 +29144,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.BlockingInputExpectedSoon';
-          // Phase.
+          // Denotes a step into the async event BlockingInputExpectedSoon.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29158,7 +29158,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.CompositorWillSendMainFrameNotExpected';
-          // Phase.
+          // Denotes the ending of the async event CompositorWillSendMainFrameNotExpected.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29170,7 +29170,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.CompositorWillSendMainFrameNotExpected';
-          // Phase.
+          // Denotes the beginning of the async event CompositorWillSendMainFrameNotExpected.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29182,7 +29182,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.CompositorWillSendMainFrameNotExpected';
-          // Phase.
+          // Denotes a step into the async event CompositorWillSendMainFrameNotExpected.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29196,7 +29196,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.DefaultGesturePrevented';
-          // Phase.
+          // Denotes the beginning of the async event DefaultGesturePrevented.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29208,7 +29208,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.DefaultGesturePrevented';
-          // Phase.
+          // Denotes a step into the async event DefaultGesturePrevented.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29223,7 +29223,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::DidCreateAndInitializeLayerTreeFrameSink';
-          // Phase.
+          // Denotes the end of the event DidCreateAndInitializeLayerTreeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29239,7 +29239,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::DidLoseLayerTreeFrameSink';
-          // Phase.
+          // Denotes the end of the event DidLoseLayerTreeFrameSink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29254,7 +29254,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasNavigated';
-          // Phase.
+          // Denotes the ending of the async event HasNavigated.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29266,7 +29266,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasNavigated';
-          // Phase.
+          // Denotes the beginning of the async event HasNavigated.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29278,7 +29278,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasNavigated';
-          // Phase.
+          // Denotes a step into the async event HasNavigated.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29292,7 +29292,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasReportedBlockingInterventionInCurrentPolicy';
-          // Phase.
+          // Denotes the beginning of the async event HasReportedBlockingInterventionInCurrentPolicy.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29304,7 +29304,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasReportedBlockingInterventionInCurrentPolicy';
-          // Phase.
+          // Denotes a step into the async event HasReportedBlockingInterventionInCurrentPolicy.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29318,7 +29318,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasReportedBlockingInterventionSinceNavigation';
-          // Phase.
+          // Denotes the beginning of the async event HasReportedBlockingInterventionSinceNavigation.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29330,7 +29330,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasReportedBlockingInterventionSinceNavigation';
-          // Phase.
+          // Denotes a step into the async event HasReportedBlockingInterventionSinceNavigation.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29344,7 +29344,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasSeenBeginMainFrame';
-          // Phase.
+          // Denotes the ending of the async event HasSeenBeginMainFrame.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29356,7 +29356,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasSeenBeginMainFrame';
-          // Phase.
+          // Denotes the beginning of the async event HasSeenBeginMainFrame.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29368,7 +29368,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasSeenBeginMainFrame';
-          // Phase.
+          // Denotes a step into the async event HasSeenBeginMainFrame.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29382,7 +29382,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasVisibleRenderWidgetWithTouchHandler';
-          // Phase.
+          // Denotes the ending of the async event HasVisibleRenderWidgetWithTouchHandler.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29394,7 +29394,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasVisibleRenderWidgetWithTouchHandler';
-          // Phase.
+          // Denotes the beginning of the async event HasVisibleRenderWidgetWithTouchHandler.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29406,7 +29406,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HasVisibleRenderWidgetWithTouchHandler';
-          // Phase.
+          // Denotes a step into the async event HasVisibleRenderWidgetWithTouchHandler.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29420,7 +29420,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HaveSeenBlockingGesture';
-          // Phase.
+          // Denotes the beginning of the async event HaveSeenBlockingGesture.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29432,7 +29432,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HaveSeenBlockingGesture';
-          // Phase.
+          // Denotes a step into the async event HaveSeenBlockingGesture.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29446,7 +29446,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HaveSeenInputSinceNavigation';
-          // Phase.
+          // Denotes the beginning of the async event HaveSeenInputSinceNavigation.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29458,7 +29458,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.HaveSeenInputSinceNavigation';
-          // Phase.
+          // Denotes a step into the async event HaveSeenInputSinceNavigation.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29472,7 +29472,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.Hidden';
-          // Phase.
+          // Denotes the ending of the async event Hidden.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29484,7 +29484,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.Hidden';
-          // Phase.
+          // Denotes the beginning of the async event Hidden.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29496,7 +29496,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.Hidden';
-          // Phase.
+          // Denotes a step into the async event Hidden.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29510,7 +29510,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.InIdlePeriod';
-          // Phase.
+          // Denotes the ending of the async event InIdlePeriod.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29522,7 +29522,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.InIdlePeriod';
-          // Phase.
+          // Denotes the beginning of the async event InIdlePeriod.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29534,7 +29534,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.InIdlePeriod';
-          // Phase.
+          // Denotes a step into the async event InIdlePeriod.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29548,7 +29548,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.KeepRendererActive';
-          // Phase.
+          // Denotes the ending of the async event KeepRendererActive.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29560,7 +29560,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.KeepRendererActive';
-          // Phase.
+          // Denotes the beginning of the async event KeepRendererActive.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29572,7 +29572,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.KeepRendererActive';
-          // Phase.
+          // Denotes a step into the async event KeepRendererActive.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29586,7 +29586,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.LastGestureWasCompositorDriven';
-          // Phase.
+          // Denotes the beginning of the async event LastGestureWasCompositorDriven.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29598,7 +29598,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.LastGestureWasCompositorDriven';
-          // Phase.
+          // Denotes a step into the async event LastGestureWasCompositorDriven.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29612,7 +29612,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.LongestJankFreeTaskDuration';
-          // Phase.
+          // Denotes a counter for the event LongestJankFreeTaskDuration.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29626,7 +29626,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.MainThreadTask';
-          // Phase.
+          // Denotes the ending of the async event MainThreadTask.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29638,7 +29638,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.MainThreadTask';
-          // Phase.
+          // Denotes the beginning of the async event MainThreadTask.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29650,7 +29650,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.MainThreadTask';
-          // Phase.
+          // Denotes a step into the async event MainThreadTask.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29663,7 +29663,7 @@ export namespace TraceEvent {
           
           };
           name: 'Scheduler::MissedBeginFrameDropped';
-          // Phase.
+          // Denotes an event MissedBeginFrameDropped. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29679,7 +29679,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::NotifyBeginMainFrameStarted';
-          // Phase.
+          // Denotes the end of the event NotifyBeginMainFrameStarted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29695,7 +29695,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'Scheduler::NotifyReadyToCommit';
-          // Phase.
+          // Denotes the end of the event NotifyReadyToCommit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29711,7 +29711,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::Now';
-          // Phase.
+          // Denotes the end of the event Now.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29727,7 +29727,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::OnBeginImplFrameDeadline';
-          // Phase.
+          // Denotes the end of the event OnBeginImplFrameDeadline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29742,7 +29742,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.PauseCount';
-          // Phase.
+          // Denotes a counter for the event PauseCount.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29756,7 +29756,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.PauseTimersForWebview';
-          // Phase.
+          // Denotes the beginning of the async event PauseTimersForWebview.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29768,7 +29768,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.PauseTimersForWebview';
-          // Phase.
+          // Denotes a step into the async event PauseTimersForWebview.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29782,7 +29782,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler:pending_submit_frames';
-          // Phase.
+          // Denotes the ending of the async event Pending_submit_frames.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29794,7 +29794,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler:pending_submit_frames';
-          // Phase.
+          // Denotes the beginning of the async event Pending_submit_frames.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29808,7 +29808,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.RAILMode';
-          // Phase.
+          // Denotes the ending of the async event RAILMode.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29820,7 +29820,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.RAILMode';
-          // Phase.
+          // Denotes the beginning of the async event RAILMode.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29832,7 +29832,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.RAILMode';
-          // Phase.
+          // Denotes a step into the async event RAILMode.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29851,7 +29851,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::RunNextTask';
-          // Phase.
+          // Denotes the end of the event RunNextTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29866,7 +29866,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler::Running';
-          // Phase.
+          // Denotes the ending of the async event Running.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29878,7 +29878,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler::Running';
-          // Phase.
+          // Denotes the beginning of the async event Running.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -29894,7 +29894,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::ScheduleBeginImplFrameDeadline';
-          // Phase.
+          // Denotes the end of the event ScheduleBeginImplFrameDeadline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29921,7 +29921,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::Scheduler';
-          // Phase.
+          // Denotes the end of the event Scheduler.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29945,7 +29945,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'Scheduler::Sequence::RemoveWaitingPriority';
-            // Phase.
+            // Denotes the end of the event RemoveWaitingPriority.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29962,7 +29962,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'Scheduler::Sequence::UpdateSchedulingPriority';
-            // Phase.
+            // Denotes the end of the event UpdateSchedulingPriority.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29979,7 +29979,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Scheduler::SetDeferMainFrameUpdate';
-          // Phase.
+          // Denotes the end of the event SetDeferMainFrameUpdate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -29993,7 +29993,7 @@ export namespace TraceEvent {
           
           };
           name: 'Scheduler: SkipNextBeginMainFrameToReduceLatency';
-          // Phase.
+          // Denotes an event SkipNextBeginMainFrameToReduceLatency. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30008,7 +30008,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.TaskPriority';
-          // Phase.
+          // Denotes the ending of the async event TaskPriority.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30020,7 +30020,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.TaskPriority';
-          // Phase.
+          // Denotes the beginning of the async event TaskPriority.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30032,7 +30032,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.TaskPriority';
-          // Phase.
+          // Denotes a step into the async event TaskPriority.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30046,7 +30046,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.UseCase';
-          // Phase.
+          // Denotes the ending of the async event UseCase.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30058,7 +30058,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.UseCase';
-          // Phase.
+          // Denotes the beginning of the async event UseCase.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30070,7 +30070,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.UseCase';
-          // Phase.
+          // Denotes a step into the async event UseCase.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30084,7 +30084,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.UseVirtualTime';
-          // Phase.
+          // Denotes the beginning of the async event UseVirtualTime.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30096,7 +30096,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.UseVirtualTime';
-          // Phase.
+          // Denotes a step into the async event UseVirtualTime.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30110,7 +30110,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.WaitingForMeaningfulPaint';
-          // Phase.
+          // Denotes the ending of the async event WaitingForMeaningfulPaint.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30122,7 +30122,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.WaitingForMeaningfulPaint';
-          // Phase.
+          // Denotes the beginning of the async event WaitingForMeaningfulPaint.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30134,7 +30134,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'Scheduler.WaitingForMeaningfulPaint';
-          // Phase.
+          // Denotes a step into the async event WaitingForMeaningfulPaint.
           ph: 'T';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30154,7 +30154,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SchedulerStateMachine::SetNeedsPrepareTiles';
-          // Phase.
+          // Denotes the end of the event SetNeedsPrepareTiles.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30310,7 +30310,7 @@ export namespace TraceEvent {
         // Duration.
         dur?: number;
         name: 'SchedulerStateMachine';
-        // Phase.
+        // Denotes the end of the event SchedulerStateMachine.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30324,7 +30324,7 @@ export namespace TraceEvent {
         
         };
         name: 'SchedulerWorkerThread active';
-        // Phase.
+        // Denotes the beginning of the event SchedulerWorkerThreadactive.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30335,7 +30335,7 @@ export namespace TraceEvent {
         
         };
         name: 'SchedulerWorkerThread active';
-        // Phase.
+        // Denotes the ending of the event SchedulerWorkerThreadactive.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30348,7 +30348,7 @@ export namespace TraceEvent {
         
         };
         name: 'SchedulerWorkerThread born';
-        // Phase.
+        // Denotes an event SchedulerWorkerThreadborn. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30362,7 +30362,7 @@ export namespace TraceEvent {
         
         };
         name: 'SchedulerWorkerThread dead';
-        // Phase.
+        // Denotes an event SchedulerWorkerThreaddead. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30392,7 +30392,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ScheduleStyleInvalidationTracking';
-        // Phase.
+        // Denotes an event ScheduleStyleInvalidationTracking. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30415,7 +30415,7 @@ export namespace TraceEvent {
           };
         };
         name: 'ScheduleStyleRecalculation';
-        // Phase.
+        // Denotes an event ScheduleStyleRecalculation. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30429,7 +30429,7 @@ export namespace TraceEvent {
           blocking_type: number;
         };
         name: 'ScopedBlockingCall';
-        // Phase.
+        // Denotes the beginning of the event ScopedBlockingCall.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30440,7 +30440,7 @@ export namespace TraceEvent {
         
         };
         name: 'ScopedBlockingCall';
-        // Phase.
+        // Denotes the ending of the event ScopedBlockingCall.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30453,7 +30453,7 @@ export namespace TraceEvent {
           blocking_type: number;
         };
         name: 'ScopedBlockingCallWithBaseSyncPrimitives';
-        // Phase.
+        // Denotes the beginning of the event ScopedBlockingCallWithBaseSyncPrimitives.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30464,7 +30464,7 @@ export namespace TraceEvent {
         
         };
         name: 'ScopedBlockingCallWithBaseSyncPrimitives';
-        // Phase.
+        // Denotes the ending of the event ScopedBlockingCallWithBaseSyncPrimitives.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30478,7 +30478,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Screenshot';
-        // Phase.
+        // Denotes a snapshot object of the event Screenshot.
         ph: 'O';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30497,7 +30497,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ScriptRunner::ExecuteAsyncTask';
-          // Phase.
+          // Denotes the end of the event ExecuteAsyncTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30518,7 +30518,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ScrollAnchor::findAnchor';
-          // Phase.
+          // Denotes the end of the event FindAnchor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30542,7 +30542,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ScrollingCoordinator::UpdateAfterPaint';
-          // Phase.
+          // Denotes the end of the event UpdateAfterPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30558,7 +30558,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ScrollingCoordinator::updateTouchEventTargetRectsIfNeeded';
-          // Phase.
+          // Denotes the end of the event UpdateTouchEventTargetRectsIfNeeded.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30585,7 +30585,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SearchProvider::OnURLLoadComplete';
-          // Phase.
+          // Denotes the end of the event OnURLLoadComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30601,7 +30601,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SearchProvider::question_mark';
-          // Phase.
+          // Denotes the end of the event Question_mark.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30617,7 +30617,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SearchProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30644,7 +30644,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SelectionController::handleMousePressEvent';
-          // Phase.
+          // Denotes the end of the event HandleMousePressEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30660,7 +30660,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SelectionController::handleMousePressEventSingleClick';
-          // Phase.
+          // Denotes the end of the event HandleMousePressEventSingleClick.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30676,7 +30676,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SelectionController::handleMouseReleaseEvent';
-          // Phase.
+          // Denotes the end of the event HandleMouseReleaseEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30692,7 +30692,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SequenceEnabled';
-        // Phase.
+        // Denotes the ending of the async event SequenceEnabled.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -30738,7 +30738,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.DidProcessTaskObservers';
-          // Phase.
+          // Denotes the end of the event DidProcessTaskObservers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30754,7 +30754,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.DidProcessTaskTimeObservers';
-          // Phase.
+          // Denotes the end of the event DidProcessTaskTimeObservers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30773,7 +30773,7 @@ export namespace TraceEvent {
           flow_out: boolean;
           id: string;
           name: 'SequenceManager::PostTask';
-          // Phase.
+          // Denotes the end of the event PostTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30789,7 +30789,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.QueueNotifyDidProcessTask';
-          // Phase.
+          // Denotes the end of the event QueueNotifyDidProcessTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30805,7 +30805,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.QueueNotifyWillProcessTask';
-          // Phase.
+          // Denotes the end of the event QueueNotifyWillProcessTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30821,7 +30821,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.QueueOnTaskCompleted';
-          // Phase.
+          // Denotes the end of the event QueueOnTaskCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30837,7 +30837,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.QueueOnTaskStarted';
-          // Phase.
+          // Denotes the end of the event QueueOnTaskStarted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30852,7 +30852,7 @@ export namespace TraceEvent {
             task_type: number;
           };
           name: 'SequenceManager::RunTask';
-          // Phase.
+          // Denotes the beginning of the event RunTask.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -30867,7 +30867,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.WillProcessTaskObservers';
-          // Phase.
+          // Denotes the end of the event WillProcessTaskObservers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -30883,7 +30883,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManager.WillProcessTaskTimeObservers';
-          // Phase.
+          // Denotes the end of the event WillProcessTaskTimeObservers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31048,7 +31048,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SequenceManager';
-        // Phase.
+        // Denotes a snapshot object of the event SequenceManager.
         ph: 'O';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31082,7 +31082,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManagerImpl::NotifyDidProcessTaskObservers';
-          // Phase.
+          // Denotes the end of the event NotifyDidProcessTaskObservers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31098,7 +31098,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManagerImpl::NotifyWillProcessTaskObservers';
-          // Phase.
+          // Denotes the end of the event NotifyWillProcessTaskObservers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31112,7 +31112,7 @@ export namespace TraceEvent {
           
           };
           name: 'SequenceManagerImpl::RunTask';
-          // Phase.
+          // Denotes the ending of the event RunTask.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -31127,7 +31127,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManagerImpl::TakeTask';
-          // Phase.
+          // Denotes the end of the event TakeTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31143,7 +31143,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManagerImpl::UnregisterTaskQueue';
-          // Phase.
+          // Denotes the end of the event UnregisterTaskQueue.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31159,7 +31159,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SequenceManagerImpl::WakeUpReadyDelayedQueues';
-          // Phase.
+          // Denotes the end of the event WakeUpReadyDelayedQueues.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31183,7 +31183,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SerializedScriptValueFactory::create';
-          // Phase.
+          // Denotes the end of the event Create.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31199,7 +31199,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SerializedScriptValueFactory::deserialize';
-          // Phase.
+          // Denotes the end of the event Deserialize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31236,7 +31236,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'service_manager.mojom.Connector';
-            // Phase.
+            // Denotes the end of the event Connector.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31252,7 +31252,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'service_manager.mojom.InterfaceProvider';
-            // Phase.
+            // Denotes the end of the event InterfaceProvider.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31268,7 +31268,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'service_manager.mojom.PIDReceiver';
-            // Phase.
+            // Denotes the end of the event PIDReceiver.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31284,7 +31284,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'service_manager.mojom.Service';
-            // Phase.
+            // Denotes the end of the event Service.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31300,7 +31300,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'service_manager.mojom.ServiceFactory';
-            // Phase.
+            // Denotes the end of the event ServiceFactory.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31316,7 +31316,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'service_manager.mojom.ServiceManagerListener';
-            // Phase.
+            // Denotes the end of the event ServiceManagerListener.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31336,7 +31336,7 @@ export namespace TraceEvent {
             original_name: string;
           };
           name: 'ServiceManager::Connect';
-          // Phase.
+          // Denotes an event Connect. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31357,7 +31357,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'ServiceWorkerControlleeRequestHandler::PrepareForMainResource';
-          // Phase.
+          // Denotes the ending of the async event PrepareForMainResource.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -31369,7 +31369,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'ServiceWorkerControlleeRequestHandler::PrepareForMainResource';
-          // Phase.
+          // Denotes the beginning of the async event PrepareForMainResource.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -31389,7 +31389,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ServiceWorkerDispatcherHost::OnProviderCreated';
-          // Phase.
+          // Denotes the end of the event OnProviderCreated.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31417,7 +31417,7 @@ export namespace TraceEvent {
           flow_out: boolean;
           id: string;
           name: 'ServiceWorkerNavigationLoader::FallbackToNetwork';
-          // Phase.
+          // Denotes the end of the event FallbackToNetwork.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31437,7 +31437,7 @@ export namespace TraceEvent {
           flow_out?: boolean;
           id: string;
           name: 'ServiceWorkerNavigationLoader::ServiceWorkerNavigationloader';
-          // Phase.
+          // Denotes the end of the event ServiceWorkerNavigationloader.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31458,7 +31458,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ServiceWorkerProviderHost::RemoveProviderHost';
-          // Phase.
+          // Denotes the end of the event RemoveProviderHost.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31479,7 +31479,7 @@ export namespace TraceEvent {
               URL: string;
             };
             name: 'ServiceWorkerStorage::FindRegistrationForDocument:CheckInstalling';
-            // Phase.
+            // Denotes an event CheckInstalling. There are no begining/ending phases.
             ph: 'I';
             s: string;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31498,7 +31498,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'SetIdlePeriodState';
-        // Phase.
+        // Denotes the end of the event SetIdlePeriodState.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31516,7 +31516,7 @@ export namespace TraceEvent {
           };
         };
         name: 'SetLayerTreeId';
-        // Phase.
+        // Denotes an event SetLayerTreeId. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31546,7 +31546,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SharedImageStub::OnCreateSharedImage';
-          // Phase.
+          // Denotes the end of the event OnCreateSharedImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31563,7 +31563,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SharedImageStub::OnCreateSharedImageWithData';
-          // Phase.
+          // Denotes the end of the event OnCreateSharedImageWithData.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31579,7 +31579,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SharedImageStub::OnDestroySharedImage';
-          // Phase.
+          // Denotes the end of the event OnDestroySharedImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31595,7 +31595,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SharedImageStub::OnRegisterSharedImageUploadBuffer';
-          // Phase.
+          // Denotes the end of the event OnRegisterSharedImageUploadBuffer.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31612,7 +31612,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ShCompile';
-        // Phase.
+        // Denotes the end of the event ShCompile.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31632,7 +31632,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ShortcutsProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -31661,7 +31661,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIGNED_CERTIFICATE_TIMESTAMPS_CHECKED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIGNED_CERTIFICATE_TIMESTAMPS_CHECKED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31680,7 +31680,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIGNED_CERTIFICATE_TIMESTAMPS_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIGNED_CERTIFICATE_TIMESTAMPS_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31695,7 +31695,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CLOSE_BEGIN';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CLOSE_BEGIN.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31710,7 +31710,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CLOSE_CALL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CLOSE_CALL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31725,7 +31725,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CLOSE_END';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CLOSE_END.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31740,7 +31740,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CREATE_BEGIN';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CREATE_BEGIN.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31755,7 +31755,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CREATE_CALL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CREATE_CALL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31770,7 +31770,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CREATE_END';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CREATE_END.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31785,7 +31785,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_CREATE_OPTIMISTIC';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_CREATE_OPTIMISTIC.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31800,7 +31800,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_DOOM_BEGIN';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_DOOM_BEGIN.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31815,7 +31815,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_DOOM_CALL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_DOOM_CALL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31830,7 +31830,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_DOOM_END';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_DOOM_END.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31845,7 +31845,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_OPEN_BEGIN';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_OPEN_BEGIN.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31860,7 +31860,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_OPEN_CALL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_OPEN_CALL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31877,7 +31877,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_OPEN_END';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_OPEN_END.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31896,7 +31896,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_READ_BEGIN';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_READ_BEGIN.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31915,7 +31915,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_READ_CALL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_READ_CALL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31932,7 +31932,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_READ_END';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_READ_END.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31949,7 +31949,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_SET_KEY';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_SET_KEY.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31969,7 +31969,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_WRITE_BEGIN';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_WRITE_BEGIN.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -31989,7 +31989,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_WRITE_CALL';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_WRITE_CALL.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -32006,7 +32006,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_WRITE_END';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_WRITE_END.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -32023,7 +32023,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY_WRITE_OPTIMISTIC';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SIMPLE_CACHE_ENTRY_WRITE_OPTIMISTIC.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -32040,7 +32040,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SIMPLE_CACHE_ENTRY.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -32053,7 +32053,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SIMPLE_CACHE_ENTRY';
-        // Phase.
+        // Denotes a step into the nestable async flow event SIMPLE_CACHE_ENTRY.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -32072,7 +32072,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadIdleTaskRunner::RunTask';
-          // Phase.
+          // Denotes the end of the event RunTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32139,7 +32139,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::DidReceiveCompositorFrameAckOnImplThread';
-          // Phase.
+          // Denotes the end of the event DidReceiveCompositorFrameAckOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32155,7 +32155,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::DoCommit';
-          // Phase.
+          // Denotes the end of the event DoCommit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32171,7 +32171,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::DoComposite';
-          // Phase.
+          // Denotes the end of the event DoComposite.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32187,7 +32187,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::NotifyReadyToActivate';
-          // Phase.
+          // Denotes the end of the event NotifyReadyToActivate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32203,7 +32203,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::NotifyReadyToDraw';
-          // Phase.
+          // Denotes the end of the event NotifyReadyToDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32219,7 +32219,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::OnCanDrawStateChanged';
-          // Phase.
+          // Denotes the end of the event OnCanDrawStateChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32235,7 +32235,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::PostAnimationEventsToMainThreadOnImplThread';
-          // Phase.
+          // Denotes the end of the event PostAnimationEventsToMainThreadOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32251,7 +32251,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::ScheduledActionPrepareTiles';
-          // Phase.
+          // Denotes the end of the event ScheduledActionPrepareTiles.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32267,7 +32267,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::ScheduledActionSendBeginMainFrame';
-          // Phase.
+          // Denotes the end of the event ScheduledActionSendBeginMainFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32282,7 +32282,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'SingleThreadProxy::SetDeferMainFrameUpdate';
-          // Phase.
+          // Denotes the ending of the async event SetDeferMainFrameUpdate.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -32294,7 +32294,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'SingleThreadProxy::SetDeferMainFrameUpdate';
-          // Phase.
+          // Denotes the beginning of the async event SetDeferMainFrameUpdate.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -32309,7 +32309,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::SetNeedsAnimate';
-          // Phase.
+          // Denotes the end of the event SetNeedsAnimate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32325,7 +32325,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::SetNeedsOneBeginImplFrameOnImplThread';
-          // Phase.
+          // Denotes the end of the event SetNeedsOneBeginImplFrameOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32341,7 +32341,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::SetNeedsPrepareTilesOnImplThread';
-          // Phase.
+          // Denotes the end of the event SetNeedsPrepareTilesOnImplThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32357,7 +32357,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::SetNeedsUpdateLayers';
-          // Phase.
+          // Denotes the end of the event SetNeedsUpdateLayers.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32373,7 +32373,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::SetVisible';
-          // Phase.
+          // Denotes the end of the event SetVisible.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32389,7 +32389,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadProxy::SingleThreadProxy';
-          // Phase.
+          // Denotes the end of the event SingleThreadProxy.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32419,7 +32419,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadTaskGraphRunner::CollectCompletedTasks';
-          // Phase.
+          // Denotes the end of the event CollectCompletedTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32435,7 +32435,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadTaskGraphRunner::RunTaskWithLockAcquired';
-          // Phase.
+          // Denotes the end of the event RunTaskWithLockAcquired.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32452,7 +32452,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadTaskGraphRunner::ScheduleTasks';
-          // Phase.
+          // Denotes the end of the event ScheduleTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32468,7 +32468,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SingleThreadTaskGraphRunner::WaitForTasksToFinishRunning';
-          // Phase.
+          // Denotes the end of the event WaitForTasksToFinishRunning.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32496,7 +32496,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SiteInstanceImpl::GetProcess';
-          // Phase.
+          // Denotes the end of the event GetProcess.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32513,7 +32513,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SiteInstanceImpl::LockToOrigin';
-          // Phase.
+          // Denotes the end of the event LockToOrigin.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32530,7 +32530,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SiteInstanceImpl::SetSite';
-          // Phase.
+          // Denotes the end of the event SetSite.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32573,7 +32573,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'void SkCanvas::drawImageRect(const SkImage *, const SkRect &, const SkRect &, const SkPaint *, SkCanvas::SrcRectConstraint)';
-            // Phase.
+            // Denotes the end of the event SrcRectConstraint.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32590,7 +32590,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawImage(const SkImage *, SkScalar, SkScalar, const SkPaint *)';
-          // Phase.
+          // Denotes the end of the event DrawImageSkImageSkScalarSkScalarSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32606,7 +32606,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawOval(const SkRect &, const SkPaint &)';
-          // Phase.
+          // Denotes the end of the event DrawOvalSkRectSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32622,7 +32622,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawPaint(const SkPaint &)';
-          // Phase.
+          // Denotes the end of the event DrawPaintSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32638,7 +32638,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawPath(const SkPath &, const SkPaint &)';
-          // Phase.
+          // Denotes the end of the event DrawPathSkPathSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32658,7 +32658,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'void SkCanvas::drawPoints(SkCanvas::PointMode, size_t, const SkPoint *, const SkPaint &)';
-            // Phase.
+            // Denotes the end of the event PointModesize_tSkPointSkPaint.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32675,7 +32675,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawRect(const SkRect &, const SkPaint &)';
-          // Phase.
+          // Denotes the end of the event DrawRectSkRectSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32691,7 +32691,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawRRect(const SkRRect &, const SkPaint &)';
-          // Phase.
+          // Denotes the end of the event DrawRRectSkRRectSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32707,7 +32707,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'void SkCanvas::drawTextBlob(const SkTextBlob *, SkScalar, SkScalar, const SkPaint &)';
-          // Phase.
+          // Denotes the end of the event DrawTextBlobSkTextBlobSkScalarSkScalarSkPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32728,7 +32728,7 @@ export namespace TraceEvent {
               // Duration.
               dur: number;
               name: 'void SkCanvas::internalSaveLayer(const SkCanvas::SaveLayerRec &, SkCanvas::SaveLayerStrategy)';
-              // Phase.
+              // Denotes the end of the event SaveLayerStrategy.
               ph: 'X';
               tdur: number;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32750,7 +32750,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'int SkCanvas::saveLayer(const SkCanvas::SaveLayerRec &)';
-            // Phase.
+            // Denotes the end of the event SaveLayerRec.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32802,7 +32802,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::clearAll';
-          // Phase.
+          // Denotes the end of the event ClearAll.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32818,7 +32818,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawDevice';
-          // Phase.
+          // Denotes the end of the event DrawDevice.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32834,7 +32834,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawGlyphRunList';
-          // Phase.
+          // Denotes the end of the event DrawGlyphRunList.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32850,7 +32850,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawOval';
-          // Phase.
+          // Denotes the end of the event DrawOval.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32866,7 +32866,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawPaint';
-          // Phase.
+          // Denotes the end of the event DrawPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32882,7 +32882,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawPath';
-          // Phase.
+          // Denotes the end of the event DrawPath.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32898,7 +32898,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawPoints';
-          // Phase.
+          // Denotes the end of the event DrawPoints.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32914,7 +32914,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawRect';
-          // Phase.
+          // Denotes the end of the event DrawRect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32930,7 +32930,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawRRect';
-          // Phase.
+          // Denotes the end of the event DrawRRect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32946,7 +32946,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawSpecial';
-          // Phase.
+          // Denotes the end of the event DrawSpecial.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32962,7 +32962,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SkGpuDevice::drawStrokedLine';
-          // Phase.
+          // Denotes the end of the event DrawStrokedLine.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32981,7 +32981,7 @@ export namespace TraceEvent {
             shader: string;
           };
           name: 'skia_gpu::GLShader';
-          // Phase.
+          // Denotes an event GLShader. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -32997,7 +32997,7 @@ export namespace TraceEvent {
           used: number;
         };
         name: 'skia budget';
-        // Phase.
+        // Denotes a counter for the event Skiabudget.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33010,7 +33010,7 @@ export namespace TraceEvent {
         
         };
         name: 'SkipBeginImplFrameToReduceLatency';
-        // Phase.
+        // Denotes an event SkipBeginImplFrameToReduceLatency. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33024,7 +33024,7 @@ export namespace TraceEvent {
         
         };
         name: 'SkipBeginMainFrameToReduceLatency';
-        // Phase.
+        // Denotes an event SkipBeginMainFrameToReduceLatency. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33040,7 +33040,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'SmallPathOp';
-        // Phase.
+        // Denotes the end of the event SmallPathOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33061,7 +33061,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_ALIVE';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SOCKET_ALIVE.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33074,7 +33074,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_ALIVE';
-        // Phase.
+        // Denotes a step into the nestable async flow event SOCKET_ALIVE.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33091,7 +33091,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_BYTES_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SOCKET_BYTES_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33108,7 +33108,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_BYTES_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SOCKET_BYTES_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33128,7 +33128,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_IN_USE';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SOCKET_IN_USE.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33141,7 +33141,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_IN_USE';
-        // Phase.
+        // Denotes a step into the nestable async flow event SOCKET_IN_USE.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33161,7 +33161,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_BOUND_TO_CONNECT_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SOCKET_POOL_BOUND_TO_CONNECT_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33181,7 +33181,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_BOUND_TO_SOCKET';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SOCKET_POOL_BOUND_TO_SOCKET.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33196,7 +33196,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_CONNECT_JOB_CONNECT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SOCKET_POOL_CONNECT_JOB_CONNECT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33211,7 +33211,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_CONNECT_JOB_CONNECT';
-        // Phase.
+        // Denotes a step into the nestable async flow event SOCKET_POOL_CONNECT_JOB_CONNECT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33228,7 +33228,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_CONNECT_JOB';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SOCKET_POOL_CONNECT_JOB.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33241,7 +33241,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_CONNECT_JOB';
-        // Phase.
+        // Denotes a step into the nestable async flow event SOCKET_POOL_CONNECT_JOB.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33258,7 +33258,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL_REUSED_AN_EXISTING_SOCKET';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SOCKET_POOL_REUSED_AN_EXISTING_SOCKET.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33273,7 +33273,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SOCKET_POOL.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33288,7 +33288,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SOCKET_POOL';
-        // Phase.
+        // Denotes a step into the nestable async flow event SOCKET_POOL.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33307,7 +33307,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SocketPosix::OnFileCanReadWithoutBlocking';
-          // Phase.
+          // Denotes the end of the event OnFileCanReadWithoutBlocking.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33340,7 +33340,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SoftwareImageDecodeCache::DecodeImageIfNecessary';
-          // Phase.
+          // Denotes the end of the event DecodeImageIfNecessary.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33356,7 +33356,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SoftwareImageDecodeCache::DrawWithImageFinished';
-          // Phase.
+          // Denotes the end of the event DrawWithImageFinished.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33372,7 +33372,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SoftwareImageDecodeCache::GetDecodedImageForDrawInternal';
-          // Phase.
+          // Denotes the end of the event GetDecodedImageForDrawInternal.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33388,7 +33388,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SoftwareImageDecodeCache::ReduceCacheUsageUntilWithinLimit';
-          // Phase.
+          // Denotes the end of the event ReduceCacheUsageUntilWithinLimit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33404,7 +33404,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SoftwareImageDecodeCache::UnrefImage';
-          // Phase.
+          // Denotes the end of the event UnrefImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33428,7 +33428,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SolidColorAnalyzer::CheckIfRRectClipCoversCanvas';
-          // Phase.
+          // Denotes the end of the event CheckIfRRectClipCoversCanvas.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33444,7 +33444,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SolidColorAnalyzer::CheckIfSolidShape';
-          // Phase.
+          // Denotes the end of the event CheckIfSolidShape.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33465,7 +33465,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SpdySessionPool::CreateAvailableSessionFromSocket';
-          // Phase.
+          // Denotes the end of the event CreateAvailableSessionFromSocket.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33481,7 +33481,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Speed Index';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SpeedIndex.
         ph: 'b';
       }
     
@@ -33491,7 +33491,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Speed Index';
-        // Phase.
+        // Denotes a step into the nestable async flow event SpeedIndex.
         ph: 'e';
       }
     }
@@ -33512,7 +33512,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'spellcheck.mojom.SpellChecker';
-            // Phase.
+            // Denotes the end of the event SpellChecker.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33528,7 +33528,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'spellcheck.mojom.SpellCheckHost';
-            // Phase.
+            // Denotes the end of the event SpellCheckHost.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33546,7 +33546,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SSL_CONNECT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event SSL_CONNECT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33564,7 +33564,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SSL_CONNECT';
-        // Phase.
+        // Denotes a step into the nestable async flow event SSL_CONNECT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33582,7 +33582,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SSL_HANDSHAKE_MESSAGE_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SSL_HANDSHAKE_MESSAGE_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33600,7 +33600,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SSL_HANDSHAKE_MESSAGE_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SSL_HANDSHAKE_MESSAGE_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33617,7 +33617,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SSL_SOCKET_BYTES_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SSL_SOCKET_BYTES_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33634,7 +33634,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SSL_SOCKET_BYTES_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event SSL_SOCKET_BYTES_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -33653,7 +33653,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SSLClientSocketImpl::DoHandshakeLoop';
-          // Phase.
+          // Denotes the end of the event DoHandshakeLoop.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33677,7 +33677,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SSLConnectJob::DoLoop';
-          // Phase.
+          // Denotes the end of the event DoLoop.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33693,7 +33693,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SSLConnectJob::DoSSLConnect';
-          // Phase.
+          // Denotes the end of the event DoSSLConnect.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33709,7 +33709,7 @@ export namespace TraceEvent {
           thread_id: number;
         };
         name: 'StackCpuSampling';
-        // Phase.
+        // Denotes an event StackCpuSampling. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33735,7 +33735,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StackSamplingProfiler::StackSamplingProfiler';
-          // Phase.
+          // Denotes the end of the event StackSamplingProfiler.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33751,7 +33751,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StackSamplingProfiler::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33767,7 +33767,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StackSamplingProfiler::Started';
-          // Phase.
+          // Denotes the end of the event Started.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33784,7 +33784,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'StartIdlePeriod';
-        // Phase.
+        // Denotes the end of the event StartIdlePeriod.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33805,7 +33805,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'startup_metric_utils.mojom.StartupMetricHost';
-            // Phase.
+            // Denotes the end of the event StartupMetricHost.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33828,7 +33828,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'StructTraits::CompositorFrame::Read';
-            // Phase.
+            // Denotes the end of the event Read.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33849,7 +33849,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'StructTraits::RenderPass::Read';
-            // Phase.
+            // Denotes the end of the event Read.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33870,7 +33870,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'StructTraits::TransferableResource::Read';
-            // Phase.
+            // Denotes the end of the event Read.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33892,7 +33892,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StyleElement::processStyleSheet';
-          // Phase.
+          // Denotes the end of the event ProcessStyleSheet.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33919,7 +33919,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StyleEngine::clearResolver';
-          // Phase.
+          // Denotes the end of the event ClearResolver.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33935,7 +33935,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StyleEngine::scheduleInvalidationsForRuleSets';
-          // Phase.
+          // Denotes the end of the event ScheduleInvalidationsForRuleSets.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33951,7 +33951,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'StyleEngine::updateActiveStyleSheets';
-          // Phase.
+          // Denotes the end of the event UpdateActiveStyleSheets.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33979,7 +33979,7 @@ export namespace TraceEvent {
           };
         };
         name: 'StyleRecalcInvalidationTracking';
-        // Phase.
+        // Denotes an event StyleRecalcInvalidationTracking. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -33995,7 +33995,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'SubImage';
-        // Phase.
+        // Denotes the end of the event SubImage.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34013,7 +34013,7 @@ export namespace TraceEvent {
             'elapsed time:': number;
           };
           name: 'SubmitCompositorFrame::TimeElapsed';
-          // Phase.
+          // Denotes an event TimeElapsed. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34027,7 +34027,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SubmitCompositorFrame';
-        // Phase.
+        // Denotes the ending of the async flow event SubmitCompositorFrame.
         ph: 'f';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34039,7 +34039,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SubmitCompositorFrame';
-        // Phase.
+        // Denotes the beginning of the async flow event SubmitCompositorFrame.
         ph: 's';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34052,7 +34052,7 @@ export namespace TraceEvent {
         
         };
         name: 'Submit rejected to evicted surface';
-        // Phase.
+        // Denotes an event Submitrejectedtoevictedsurface. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34068,7 +34068,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'SubresourceFilterMsg_SetRulesetForProcess';
-        // Phase.
+        // Denotes the end of the event SubresourceFilterMsg_SetRulesetForProcess.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34099,7 +34099,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SubresourceFilterSafeBrowsingActivationThrottle::DoesMainFrameURLSatisfyActivationConditions';
-          // Phase.
+          // Denotes the end of the event DoesMainFrameURLSatisfyActivationConditions.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34124,7 +34124,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SubresourceFilterSafeBrowsingActivationThrottle::GetHighestPriorityConfiguration';
-          // Phase.
+          // Denotes the end of the event GetHighestPriorityConfiguration.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34140,7 +34140,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SubresourceFilterSafeBrowsingActivationThrottle::NotifyResult';
-          // Phase.
+          // Denotes the end of the event NotifyResult.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34168,7 +34168,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SubresourceFilterSBCheck';
-        // Phase.
+        // Denotes the ending of the async event SubresourceFilterSBCheck.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34182,7 +34182,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'SubresourceFilterSBCheck';
-        // Phase.
+        // Denotes the beginning of the async event SubresourceFilterSBCheck.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34195,7 +34195,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'subthread_default_tq';
-        // Phase.
+        // Denotes a counter for the event Subthread_default_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34217,7 +34217,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Surface::ActivateFrame';
-          // Phase.
+          // Denotes the end of the event ActivateFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34233,7 +34233,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Surface::OnDeadline';
-          // Phase.
+          // Denotes the end of the event OnDeadline.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34247,7 +34247,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Surface';
-        // Phase.
+        // Denotes the ending of the async event Surface.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34259,7 +34259,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Surface';
-        // Phase.
+        // Denotes the beginning of the async event Surface.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34278,7 +34278,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SurfaceLayer::PushPropertiesTo';
-          // Phase.
+          // Denotes the end of the event PushPropertiesTo.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34299,7 +34299,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SurfaceManager::GarbageCollectSurfaces';
-          // Phase.
+          // Denotes the end of the event GarbageCollectSurfaces.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34315,7 +34315,7 @@ export namespace TraceEvent {
           width: number;
         };
         name: 'SwapBuffers';
-        // Phase.
+        // Denotes an event SwapBuffers. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34329,7 +34329,7 @@ export namespace TraceEvent {
         
         };
         name: 'Swap skipped.';
-        // Phase.
+        // Denotes an event Swapskipped. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34343,7 +34343,7 @@ export namespace TraceEvent {
         
         };
         name: 'Swap throttled';
-        // Phase.
+        // Denotes an event Swapthrottled. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34363,7 +34363,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'SyncChannel::Send';
-          // Phase.
+          // Denotes the ending of the async flow event Send.
           ph: 'f';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -34377,7 +34377,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'SyncChannel::Send';
-          // Phase.
+          // Denotes the end of the event Send.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34396,7 +34396,7 @@ export namespace TraceEvent {
             };
             id: string;
             name: 'SyncChannel::SyncContext::TryToUnblockListener';
-            // Phase.
+            // Denotes the beginning of the async flow event TryToUnblockListener.
             ph: 's';
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
@@ -34420,7 +34420,7 @@ export namespace TraceEvent {
             is_force_load_timer_running: boolean;
           };
           name: 'TabManager::LoadNextBackgroundTabIfNeeded';
-          // Phase.
+          // Denotes an event LoadNextBackgroundTabIfNeeded. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34443,7 +34443,7 @@ export namespace TraceEvent {
             local: string;
           };
           name: 'TabSwitching::Latency';
-          // Phase.
+          // Denotes the ending of the async event Latency.
           ph: 'F';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -34457,7 +34457,7 @@ export namespace TraceEvent {
             local: string;
           };
           name: 'TabSwitching::Latency';
-          // Phase.
+          // Denotes the beginning of the async event Latency.
           ph: 'S';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -34472,7 +34472,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TabSwitchVisibilityRequest';
-        // Phase.
+        // Denotes the ending of the async event TabSwitchVisibilityRequest.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34484,7 +34484,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TabSwitchVisibilityRequest';
-        // Phase.
+        // Denotes the beginning of the async event TabSwitchVisibilityRequest.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34503,7 +34503,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TaskGraphRunner::RunTask';
-          // Phase.
+          // Denotes the end of the event RunTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34525,7 +34525,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'TaskQueueManager::ProcessTaskFromWorkQueue';
-          // Phase.
+          // Denotes the end of the event ProcessTaskFromWorkQueue.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34542,7 +34542,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TaskQueueThrottler_TaskQueueThrottled';
-        // Phase.
+        // Denotes the end of the event TaskQueueThrottler_TaskQueueThrottled.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34558,7 +34558,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TaskQueueThrottler_TaskQueueUnthrottled';
-        // Phase.
+        // Denotes the end of the event TaskQueueThrottler_TaskQueueUnthrottled.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34584,7 +34584,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TaskQueueThrottler::MaybeSchedulePumpThrottledTasks';
-          // Phase.
+          // Denotes the end of the event MaybeSchedulePumpThrottledTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34600,7 +34600,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TaskQueueThrottler::OnQueueNextWakeUpChanged';
-          // Phase.
+          // Denotes the end of the event OnQueueNextWakeUpChanged.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34616,7 +34616,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TaskQueueThrottler::PumpThrottledTasks';
-          // Phase.
+          // Denotes the end of the event PumpThrottledTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34637,7 +34637,7 @@ export namespace TraceEvent {
         flow_out?: boolean;
         id: string;
         name: 'TaskScheduler PostTask';
-        // Phase.
+        // Denotes the end of the event TaskSchedulerPostTask.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34654,7 +34654,7 @@ export namespace TraceEvent {
         // Duration.
         dur?: number;
         name: 'TaskScheduler RunTask';
-        // Phase.
+        // Denotes the end of the event TaskSchedulerRunTask.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34674,7 +34674,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TaskSetFinishedTaskImpl::RunOnWorkerThread';
-          // Phase.
+          // Denotes the end of the event RunOnWorkerThread.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34699,7 +34699,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'TaskTracker::RunTask';
-          // Phase.
+          // Denotes the end of the event RunTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34718,7 +34718,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TCP_CLIENT_SOCKET_POOL_REQUESTED_SOCKET';
-        // Phase.
+        // Denotes the ending of the nestable async flow event TCP_CLIENT_SOCKET_POOL_REQUESTED_SOCKET.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34735,7 +34735,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TCP_CONNECT_ATTEMPT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event TCP_CONNECT_ATTEMPT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34748,7 +34748,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TCP_CONNECT_ATTEMPT';
-        // Phase.
+        // Denotes a step into the nestable async flow event TCP_CONNECT_ATTEMPT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34785,7 +34785,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TCP_CONNECT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event TCP_CONNECT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34800,7 +34800,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TCP_CONNECT';
-        // Phase.
+        // Denotes a step into the nestable async flow event TCP_CONNECT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -34815,7 +34815,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TessellatingPathOp';
-        // Phase.
+        // Denotes the end of the event TessellatingPathOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34835,7 +34835,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Textfield::PaintTextAndCursor';
-          // Phase.
+          // Denotes the end of the event PaintTextAndCursor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34856,7 +34856,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TextureManager::ValidateAndDoTexSubImage';
-          // Phase.
+          // Denotes the end of the event ValidateAndDoTexSubImage.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34873,7 +34873,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TextureOp';
-        // Phase.
+        // Denotes the end of the event TextureOp.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34887,7 +34887,7 @@ export namespace TraceEvent {
           name: string;
         };
         name: 'thread_name';
-        // Phase.
+        // Denotes metadata for the event Thread_name.
         ph: 'M';
       }
     }
@@ -34898,7 +34898,7 @@ export namespace TraceEvent {
           sort_index: number;
         };
         name: 'thread_sort_index';
-        // Phase.
+        // Denotes metadata for the event Thread_sort_index.
         ph: 'M';
       }
     }
@@ -34918,7 +34918,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'ThreadControllerImpl::DoWork';
-          // Phase.
+          // Denotes the end of the event DoWork.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34938,7 +34938,7 @@ export namespace TraceEvent {
           flow_in?: boolean;
           id?: string;
           name: 'ThreadControllerImpl::RunTask';
-          // Phase.
+          // Denotes the end of the event RunTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34958,7 +34958,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'ThreadControllerImpl::ScheduleWork::PostTask';
-            // Phase.
+            // Denotes the end of the event PostTask.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -34983,7 +34983,7 @@ export namespace TraceEvent {
             begin_frame_id: number;
           };
           name: 'ThreadProxy::BeginMainFrame';
-          // Phase.
+          // Denotes the beginning of the event BeginMainFrame.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -34994,7 +34994,7 @@ export namespace TraceEvent {
           
           };
           name: 'ThreadProxy::BeginMainFrame';
-          // Phase.
+          // Denotes the ending of the event BeginMainFrame.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35007,7 +35007,7 @@ export namespace TraceEvent {
             begin_frame_id: number;
           };
           name: 'ThreadProxy::ScheduledActionSendBeginMainFrame';
-          // Phase.
+          // Denotes the beginning of the event ScheduledActionSendBeginMainFrame.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35018,7 +35018,7 @@ export namespace TraceEvent {
           
           };
           name: 'ThreadProxy::ScheduledActionSendBeginMainFrame';
-          // Phase.
+          // Denotes the ending of the event ScheduledActionSendBeginMainFrame.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35048,7 +35048,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'ThreadState::heapEstimatedSizeKB';
-          // Phase.
+          // Denotes a counter for the event HeapEstimatedSizeKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35061,7 +35061,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'ThreadState::heapGrowingRate';
-          // Phase.
+          // Denotes a counter for the event HeapGrowingRate.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35074,7 +35074,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'ThreadState::partitionAllocEstimatedSizeKB';
-          // Phase.
+          // Denotes a counter for the event PartitionAllocEstimatedSizeKB.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35087,7 +35087,7 @@ export namespace TraceEvent {
             value: number;
           };
           name: 'ThreadState::partitionAllocGrowingRate';
-          // Phase.
+          // Denotes a counter for the event PartitionAllocGrowingRate.
           ph: 'C';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35102,7 +35102,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ThreadState::performIdleLazySweep';
-          // Phase.
+          // Denotes the end of the event PerformIdleLazySweep.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35170,7 +35170,7 @@ export namespace TraceEvent {
           
           };
           name: 'TileManager::AssignGpuMemory tile violates memory policy';
-          // Phase.
+          // Denotes an event AssignGpuMemorytileviolatesmemorypolicy. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35184,7 +35184,7 @@ export namespace TraceEvent {
           
           };
           name: 'TileManager::AssignGpuMemoryToTiles';
-          // Phase.
+          // Denotes the beginning of the event AssignGpuMemoryToTiles.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35196,7 +35196,7 @@ export namespace TraceEvent {
             had_enough_memory_to_schedule_tiles_needed_now: boolean;
           };
           name: 'TileManager::AssignGpuMemoryToTiles';
-          // Phase.
+          // Denotes the ending of the event AssignGpuMemoryToTiles.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -35211,7 +35211,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::CheckForCompletedTasks';
-          // Phase.
+          // Denotes the end of the event CheckForCompletedTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35228,7 +35228,7 @@ export namespace TraceEvent {
             };
           };
           name: 'TileManager::CheckForCompletedTasksFinished';
-          // Phase.
+          // Denotes an event CheckForCompletedTasksFinished. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35245,7 +35245,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::CheckPendingGpuWorkAndIssueSignals';
-          // Phase.
+          // Denotes the end of the event CheckPendingGpuWorkAndIssueSignals.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35261,7 +35261,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::CreateRasterTask';
-          // Phase.
+          // Denotes the end of the event CreateRasterTask.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35277,7 +35277,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::DidFinishRunningAllTileTasks';
-          // Phase.
+          // Denotes the end of the event DidFinishRunningAllTileTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35293,7 +35293,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::DidFinishRunningTileTasksRequiredForActivation';
-          // Phase.
+          // Denotes the end of the event DidFinishRunningTileTasksRequiredForActivation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35309,7 +35309,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::DidFinishRunningTileTasksRequiredForDraw';
-          // Phase.
+          // Denotes the end of the event DidFinishRunningTileTasksRequiredForDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35325,7 +35325,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::FlushAndIssueSignals';
-          // Phase.
+          // Denotes the end of the event FlushAndIssueSignals.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35341,7 +35341,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::IsReadyToActivate';
-          // Phase.
+          // Denotes the end of the event IsReadyToActivate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35357,7 +35357,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::IsReadyToDraw';
-          // Phase.
+          // Denotes the end of the event IsReadyToDraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35373,7 +35373,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::IssueSignals - all tile tasks completed';
-          // Phase.
+          // Denotes the end of the event IssueSignalsalltiletaskscompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35389,7 +35389,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::IssueSignals - ready to activate';
-          // Phase.
+          // Denotes the end of the event IssueSignalsreadytoactivate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35405,7 +35405,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::IssueSignals - ready to draw';
-          // Phase.
+          // Denotes the end of the event IssueSignalsreadytodraw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35421,7 +35421,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::PrepareTiles';
-          // Phase.
+          // Denotes the end of the event PrepareTiles.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35437,7 +35437,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileManager::ScheduleTasks';
-          // Phase.
+          // Denotes the end of the event ScheduleTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35464,7 +35464,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileTaskManagerImpl::CheckForCompletedTasks';
-          // Phase.
+          // Denotes the end of the event CheckForCompletedTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35480,7 +35480,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileTaskManagerImpl::ScheduleTasks';
-          // Phase.
+          // Denotes the end of the event ScheduleTasks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35496,7 +35496,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TileTaskManagerImpl::Shutdown';
-          // Phase.
+          // Denotes the end of the event Shutdown.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35524,7 +35524,7 @@ export namespace TraceEvent {
           
           };
           name: 'TimeoutMonitor::Restart';
-          // Phase.
+          // Denotes an event Restart. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35538,7 +35538,7 @@ export namespace TraceEvent {
           
           };
           name: 'TimeoutMonitor::Start';
-          // Phase.
+          // Denotes an event Start. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35552,7 +35552,7 @@ export namespace TraceEvent {
           
           };
           name: 'TimeoutMonitor::Stop';
-          // Phase.
+          // Denotes an event Stop. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35568,7 +35568,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TimeoutMonitor::TimeOutHandler';
-          // Phase.
+          // Denotes the end of the event TimeOutHandler.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35582,7 +35582,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TimeoutMonitor';
-        // Phase.
+        // Denotes the ending of the async event TimeoutMonitor.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35594,7 +35594,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TimeoutMonitor';
-        // Phase.
+        // Denotes the beginning of the async event TimeoutMonitor.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35613,7 +35613,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TimerBase::run';
-          // Phase.
+          // Denotes the end of the event Run.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35633,7 +35633,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TimerFire';
-        // Phase.
+        // Denotes the end of the event TimerFire.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35659,7 +35659,7 @@ export namespace TraceEvent {
           };
         };
         name: 'TimerInstall';
-        // Phase.
+        // Denotes an event TimerInstall. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35683,7 +35683,7 @@ export namespace TraceEvent {
           };
         };
         name: 'TimerRemove';
-        // Phase.
+        // Denotes an event TimerRemove. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35700,7 +35700,7 @@ export namespace TraceEvent {
           };
         };
         name: 'TimeStamp';
-        // Phase.
+        // Denotes an event TimeStamp. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35715,7 +35715,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToDomReady';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event TimeToDomReady.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35727,7 +35727,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToDomReady';
-        // Phase.
+        // Denotes a step into the nestable async flow event TimeToDomReady.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35741,7 +35741,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToInteractive';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event TimeToInteractive.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35753,7 +35753,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToInteractive';
-        // Phase.
+        // Denotes a step into the nestable async flow event TimeToInteractive.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35767,7 +35767,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToZonesAndDomReady';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event TimeToZonesAndDomReady.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35779,7 +35779,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToZonesAndDomReady';
-        // Phase.
+        // Denotes a step into the nestable async flow event TimeToZonesAndDomReady.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35793,7 +35793,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToZonesComplete';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event TimeToZonesComplete.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35805,7 +35805,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'timeToZonesComplete';
-        // Phase.
+        // Denotes a step into the nestable async flow event TimeToZonesComplete.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -35821,7 +35821,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'TopLevel';
-        // Phase.
+        // Denotes a snapshot object of the event TopLevel.
         ph: 'O';
         scope: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35841,7 +35841,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ToSpaceUpdatingItem::ProcessVisitAll';
-          // Phase.
+          // Denotes the end of the event ProcessVisitAll.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35856,7 +35856,7 @@ export namespace TraceEvent {
           overflowed_at_ts: number;
         };
         name: 'trace_buffer_overflowed';
-        // Phase.
+        // Denotes metadata for the event Trace_buffer_overflowed.
         ph: 'M';
       }
     }
@@ -35886,7 +35886,7 @@ export namespace TraceEvent {
             // Duration.
             dur?: number;
             name: 'tracing.mojom.Agent';
-            // Phase.
+            // Denotes the end of the event Agent.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35902,7 +35902,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'tracing.mojom.AgentRegistry';
-            // Phase.
+            // Denotes the end of the event AgentRegistry.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35918,7 +35918,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'tracing.mojom.Coordinator';
-            // Phase.
+            // Denotes the end of the event Coordinator.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35934,7 +35934,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'tracing.mojom.PerfettoService';
-            // Phase.
+            // Denotes the end of the event PerfettoService.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35950,7 +35950,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'tracing.mojom.ProducerHost';
-            // Phase.
+            // Denotes the end of the event ProducerHost.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35968,7 +35968,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TracingHostMsg_ChildSupportsTracing';
-        // Phase.
+        // Denotes the end of the event TracingHostMsg_ChildSupportsTracing.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -35984,7 +35984,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'TracingMsg_SetTracingProcessId';
-        // Phase.
+        // Denotes the end of the event TracingMsg_SetTracingProcessId.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36003,7 +36003,7 @@ export namespace TraceEvent {
           };
         };
         name: 'TracingSessionIdForWorker';
-        // Phase.
+        // Denotes an event TracingSessionIdForWorker. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36026,7 +36026,7 @@ export namespace TraceEvent {
           };
         };
         name: 'TracingStartedInBrowser';
-        // Phase.
+        // Denotes an event TracingStartedInBrowser. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36043,7 +36043,7 @@ export namespace TraceEvent {
           };
         };
         name: 'TracingStartedInPage';
-        // Phase.
+        // Denotes an event TracingStartedInPage. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36063,7 +36063,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TransferBuffer::Free';
-          // Phase.
+          // Denotes the end of the event Free.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36078,7 +36078,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'TransfersBytesPendingOnDisk';
-        // Phase.
+        // Denotes a counter for the event TransfersBytesPendingOnDisk.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36091,7 +36091,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'TransfersPendingOnDisk';
-        // Phase.
+        // Denotes a counter for the event TransfersPendingOnDisk.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36111,7 +36111,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'translate.mojom.ContentTranslateDriver';
-            // Phase.
+            // Denotes the end of the event ContentTranslateDriver.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36133,7 +36133,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TransportConnectJob::DoResolveHostComplete';
-          // Phase.
+          // Denotes the end of the event DoResolveHostComplete.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36161,7 +36161,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'TreeSynchronizer::PushLayerPropertiesTo.Impl';
-            // Phase.
+            // Denotes the end of the event Impl.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36177,7 +36177,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'TreeSynchronizer::PushLayerPropertiesTo.Main';
-            // Phase.
+            // Denotes the end of the event Main.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36194,7 +36194,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'TreeSynchronizer::SynchronizeTrees';
-          // Phase.
+          // Denotes the end of the event SynchronizeTrees.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36209,7 +36209,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'Triangles Drawn';
-        // Phase.
+        // Denotes a counter for the event TrianglesDrawn.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36227,7 +36227,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UDP_BYTES_RECEIVED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event UDP_BYTES_RECEIVED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36244,7 +36244,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UDP_BYTES_SENT';
-        // Phase.
+        // Denotes the ending of the nestable async flow event UDP_BYTES_SENT.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36261,7 +36261,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UDP_CONNECT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event UDP_CONNECT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36274,7 +36274,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UDP_CONNECT';
-        // Phase.
+        // Denotes a step into the nestable async flow event UDP_CONNECT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36291,7 +36291,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UDP_LOCAL_ADDRESS';
-        // Phase.
+        // Denotes the ending of the nestable async flow event UDP_LOCAL_ADDRESS.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36311,7 +36311,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'UDPSocketPosix::ReadWatcher::OnFileCanReadWithoutBlocking';
-            // Phase.
+            // Denotes the end of the event OnFileCanReadWithoutBlocking.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36334,7 +36334,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'ukm.mojom.UkmRecorderInterface';
-            // Phase.
+            // Denotes the end of the event UkmRecorderInterface.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36352,7 +36352,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'unknown interface';
-        // Phase.
+        // Denotes the end of the event Unknowninterface.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36366,7 +36366,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'unloadEventEnd';
-        // Phase.
+        // Denotes a mark of the event UnloadEventEnd.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36379,7 +36379,7 @@ export namespace TraceEvent {
           frame: string;
         };
         name: 'unloadEventStart';
-        // Phase.
+        // Denotes a mark of the event UnloadEventStart.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36397,7 +36397,7 @@ export namespace TraceEvent {
           };
         };
         name: 'UpdateCounters';
-        // Phase.
+        // Denotes an event UpdateCounters. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36412,7 +36412,7 @@ export namespace TraceEvent {
           layerTreeId: number;
         };
         name: 'UpdateLayer';
-        // Phase.
+        // Denotes the beginning of the event UpdateLayer.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36423,7 +36423,7 @@ export namespace TraceEvent {
         
         };
         name: 'UpdateLayer';
-        // Phase.
+        // Denotes the ending of the event UpdateLayer.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36440,7 +36440,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'UpdateLayerTree';
-        // Phase.
+        // Denotes the end of the event UpdateLayerTree.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36463,7 +36463,7 @@ export namespace TraceEvent {
           };
         };
         name: 'UpdateLayoutTree';
-        // Phase.
+        // Denotes the beginning of the event UpdateLayoutTree.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36474,7 +36474,7 @@ export namespace TraceEvent {
           elementCount: number;
         };
         name: 'UpdateLayoutTree';
-        // Phase.
+        // Denotes the ending of the event UpdateLayoutTree.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36489,7 +36489,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'UpdateLongIdlePeriodStateAfterIdleTask';
-        // Phase.
+        // Denotes the end of the event UpdateLongIdlePeriodStateAfterIdleTask.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36505,7 +36505,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'UpdateStateFromAnimationDrivers';
-        // Phase.
+        // Denotes the end of the event UpdateStateFromAnimationDrivers.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36521,7 +36521,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UPLOAD_DATA_STREAM_INIT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event UPLOAD_DATA_STREAM_INIT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36538,7 +36538,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UPLOAD_DATA_STREAM_INIT';
-        // Phase.
+        // Denotes a step into the nestable async flow event UPLOAD_DATA_STREAM_INIT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36555,7 +36555,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UPLOAD_DATA_STREAM_READ';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event UPLOAD_DATA_STREAM_READ.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36568,7 +36568,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'UPLOAD_DATA_STREAM_READ';
-        // Phase.
+        // Denotes a step into the nestable async flow event UPLOAD_DATA_STREAM_READ.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36583,7 +36583,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_DELEGATE_RECEIVED_REDIRECT';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event URL_REQUEST_DELEGATE_RECEIVED_REDIRECT.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36596,7 +36596,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_DELEGATE_RECEIVED_REDIRECT';
-        // Phase.
+        // Denotes a step into the nestable async flow event URL_REQUEST_DELEGATE_RECEIVED_REDIRECT.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36611,7 +36611,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_DELEGATE_RESPONSE_STARTED';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event URL_REQUEST_DELEGATE_RESPONSE_STARTED.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36624,7 +36624,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_DELEGATE_RESPONSE_STARTED';
-        // Phase.
+        // Denotes a step into the nestable async flow event URL_REQUEST_DELEGATE_RESPONSE_STARTED.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36672,7 +36672,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_FAKE_RESPONSE_HEADERS_CREATED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event URL_REQUEST_FAKE_RESPONSE_HEADERS_CREATED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36689,7 +36689,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_FILTERS_SET';
-        // Phase.
+        // Denotes the ending of the nestable async flow event URL_REQUEST_FILTERS_SET.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36706,7 +36706,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_JOB_BYTES_READ';
-        // Phase.
+        // Denotes the ending of the nestable async flow event URL_REQUEST_JOB_BYTES_READ.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36723,7 +36723,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_JOB_FILTERED_BYTES_READ';
-        // Phase.
+        // Denotes the ending of the nestable async flow event URL_REQUEST_JOB_FILTERED_BYTES_READ.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36740,7 +36740,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_REDIRECT_JOB';
-        // Phase.
+        // Denotes the ending of the nestable async flow event URL_REQUEST_REDIRECT_JOB.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36757,7 +36757,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_REDIRECTED';
-        // Phase.
+        // Denotes the ending of the nestable async flow event URL_REQUEST_REDIRECTED.
         ph: 'n';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36778,7 +36778,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_START_JOB';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event URL_REQUEST_START_JOB.
         ph: 'b';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36793,7 +36793,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'URL_REQUEST_START_JOB';
-        // Phase.
+        // Denotes a step into the nestable async flow event URL_REQUEST_START_JOB.
         ph: 'e';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -36812,7 +36812,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'UrlPatternIndexMatcher::FindMatch';
-          // Phase.
+          // Denotes the end of the event FindMatch.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36836,7 +36836,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'URLRequestHttpJob::OnReadCompleted';
-          // Phase.
+          // Denotes the end of the event OnReadCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36852,7 +36852,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'URLRequestHttpJob::OnStartCompleted';
-          // Phase.
+          // Denotes the end of the event OnStartCompleted.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36867,7 +36867,7 @@ export namespace TraceEvent {
           action: string;
         };
         name: 'UserEvent';
-        // Phase.
+        // Denotes an event UserEvent. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36881,7 +36881,7 @@ export namespace TraceEvent {
         
         };
         name: 'Using existing deadline';
-        // Phase.
+        // Denotes an event Usingexistingdeadline. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36898,7 +36898,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'Using new deadline';
-        // Phase.
+        // Denotes the end of the event Usingnewdeadline.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -36912,7 +36912,7 @@ export namespace TraceEvent {
           value: number;
         };
         name: 'v8_tq';
-        // Phase.
+        // Denotes a counter for the event V8_tq.
         ph: 'C';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -37690,7 +37690,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ArrayConcat';
-          // Phase.
+          // Denotes the end of the event Builtin_ArrayConcat.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37706,7 +37706,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ArrayPop';
-          // Phase.
+          // Denotes the end of the event Builtin_ArrayPop.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37722,7 +37722,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ArrayPush';
-          // Phase.
+          // Denotes the end of the event Builtin_ArrayPush.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37738,7 +37738,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ArrayShift';
-          // Phase.
+          // Denotes the end of the event Builtin_ArrayShift.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37754,7 +37754,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ArrayUnshift';
-          // Phase.
+          // Denotes the end of the event Builtin_ArrayUnshift.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37770,7 +37770,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_BooleanConstructor';
-          // Phase.
+          // Denotes the end of the event Builtin_BooleanConstructor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37786,7 +37786,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ConsoleLog';
-          // Phase.
+          // Denotes the end of the event Builtin_ConsoleLog.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37802,7 +37802,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ConsoleWarn';
-          // Phase.
+          // Denotes the end of the event Builtin_ConsoleWarn.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37818,7 +37818,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_DateConstructor';
-          // Phase.
+          // Denotes the end of the event Builtin_DateConstructor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37834,7 +37834,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_DateNow';
-          // Phase.
+          // Denotes the end of the event Builtin_DateNow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37850,7 +37850,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_DatePrototypeSetTime';
-          // Phase.
+          // Denotes the end of the event Builtin_DatePrototypeSetTime.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37866,7 +37866,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_DatePrototypeToUTCString';
-          // Phase.
+          // Denotes the end of the event Builtin_DatePrototypeToUTCString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37882,7 +37882,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ErrorConstructor';
-          // Phase.
+          // Denotes the end of the event Builtin_ErrorConstructor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37898,7 +37898,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_FunctionConstructor';
-          // Phase.
+          // Denotes the end of the event Builtin_FunctionConstructor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37914,7 +37914,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_FunctionPrototypeBind';
-          // Phase.
+          // Denotes the end of the event Builtin_FunctionPrototypeBind.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37930,7 +37930,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_FunctionPrototypeToString';
-          // Phase.
+          // Denotes the end of the event Builtin_FunctionPrototypeToString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37946,7 +37946,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_GlobalDecodeURI';
-          // Phase.
+          // Denotes the end of the event Builtin_GlobalDecodeURI.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37962,7 +37962,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_GlobalDecodeURIComponent';
-          // Phase.
+          // Denotes the end of the event Builtin_GlobalDecodeURIComponent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37978,7 +37978,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_GlobalEncodeURIComponent';
-          // Phase.
+          // Denotes the end of the event Builtin_GlobalEncodeURIComponent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -37994,7 +37994,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_GlobalEval';
-          // Phase.
+          // Denotes the end of the event Builtin_GlobalEval.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38010,7 +38010,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_HandleApiCall';
-          // Phase.
+          // Denotes the end of the event Builtin_HandleApiCall.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38026,7 +38026,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_JsonParse';
-          // Phase.
+          // Denotes the end of the event Builtin_JsonParse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38042,7 +38042,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_JsonStringify';
-          // Phase.
+          // Denotes the end of the event Builtin_JsonStringify.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38058,7 +38058,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_MapPrototypeClear';
-          // Phase.
+          // Denotes the end of the event Builtin_MapPrototypeClear.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38074,7 +38074,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_NumberPrototypeToFixed';
-          // Phase.
+          // Denotes the end of the event Builtin_NumberPrototypeToFixed.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38090,7 +38090,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_NumberPrototypeToString';
-          // Phase.
+          // Denotes the end of the event Builtin_NumberPrototypeToString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38106,7 +38106,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectDefineGetter';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectDefineGetter.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38122,7 +38122,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectDefineProperties';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectDefineProperties.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38138,7 +38138,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectDefineProperty';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectDefineProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38154,7 +38154,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectFreeze';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectFreeze.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38170,7 +38170,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectGetPrototypeOf';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectGetPrototypeOf.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38186,7 +38186,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectLookupGetter';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectLookupGetter.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38202,7 +38202,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectPrototypeGetProto';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectPrototypeGetProto.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38218,7 +38218,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectPrototypePropertyIsEnumerable';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectPrototypePropertyIsEnumerable.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38234,7 +38234,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectPrototypeSetProto';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectPrototypeSetProto.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38250,7 +38250,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_ObjectSetPrototypeOf';
-          // Phase.
+          // Denotes the end of the event Builtin_ObjectSetPrototypeOf.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38266,7 +38266,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_RegExpPrototypeToString';
-          // Phase.
+          // Denotes the end of the event Builtin_RegExpPrototypeToString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38282,7 +38282,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_SetPrototypeClear';
-          // Phase.
+          // Denotes the end of the event Builtin_SetPrototypeClear.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38298,7 +38298,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_StringPrototypeEndsWith';
-          // Phase.
+          // Denotes the end of the event Builtin_StringPrototypeEndsWith.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38314,7 +38314,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_StringPrototypeLastIndexOf';
-          // Phase.
+          // Denotes the end of the event Builtin_StringPrototypeLastIndexOf.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38330,7 +38330,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_StringPrototypeStartsWith';
-          // Phase.
+          // Denotes the end of the event Builtin_StringPrototypeStartsWith.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38346,7 +38346,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Builtin_StringPrototypeToUpperCaseIntl';
-          // Phase.
+          // Denotes the end of the event Builtin_StringPrototypeToUpperCaseIntl.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38362,7 +38362,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'v8.callFunction';
-          // Phase.
+          // Denotes the end of the event CallFunction.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38376,7 +38376,7 @@ export namespace TraceEvent {
             fileName: string;
           };
           name: 'v8.compile';
-          // Phase.
+          // Denotes the beginning of the event Compile.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -38398,7 +38398,7 @@ export namespace TraceEvent {
             };
           };
           name: 'v8.compile';
-          // Phase.
+          // Denotes the ending of the event Compile.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -38416,7 +38416,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'v8.compile';
-          // Phase.
+          // Denotes the end of the event Compile.
           ph: 'X';
           tdur?: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38432,7 +38432,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileCode';
-          // Phase.
+          // Denotes the end of the event CompileCode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38448,7 +38448,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileCodeBackground';
-          // Phase.
+          // Denotes the end of the event CompileCodeBackground.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38464,7 +38464,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileEval';
-          // Phase.
+          // Denotes the end of the event CompileEval.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38480,7 +38480,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileIgnition';
-          // Phase.
+          // Denotes the end of the event CompileIgnition.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38496,7 +38496,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileIgnitionFinalization';
-          // Phase.
+          // Denotes the end of the event CompileIgnitionFinalization.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38512,7 +38512,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileScript';
-          // Phase.
+          // Denotes the end of the event CompileScript.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38528,7 +38528,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.CompileStreamedScript';
-          // Phase.
+          // Denotes the end of the event CompileStreamedScript.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38544,7 +38544,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.DeoptimizeCode';
-          // Phase.
+          // Denotes the end of the event DeoptimizeCode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38558,7 +38558,7 @@ export namespace TraceEvent {
           
           };
           name: 'V8.ExternalCallback';
-          // Phase.
+          // Denotes the beginning of the event ExternalCallback.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -38569,7 +38569,7 @@ export namespace TraceEvent {
           
           };
           name: 'V8.ExternalCallback';
-          // Phase.
+          // Denotes the ending of the event ExternalCallback.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -38584,7 +38584,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_BACKGROUND_ARRAY_BUFFER_FREE';
-          // Phase.
+          // Denotes the end of the event GC_BACKGROUND_ARRAY_BUFFER_FREE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38600,7 +38600,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_BACKGROUND_STORE_BUFFER';
-          // Phase.
+          // Denotes the end of the event GC_BACKGROUND_STORE_BUFFER.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38616,7 +38616,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_BACKGROUND_UNMAPPER';
-          // Phase.
+          // Denotes the end of the event GC_BACKGROUND_UNMAPPER.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38632,7 +38632,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_EMBEDDER_TRACING_EPILOGUE';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_EMBEDDER_TRACING_EPILOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38648,7 +38648,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38664,7 +38664,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_EPILOGUE';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_EPILOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38680,7 +38680,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_EXTERNAL_EPILOGUE';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_EXTERNAL_EPILOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38696,7 +38696,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_EXTERNAL_PROLOGUE';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_EXTERNAL_PROLOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38712,7 +38712,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38728,7 +38728,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_HEAP_PROLOGUE';
-          // Phase.
+          // Denotes the end of the event GC_HEAP_PROLOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38744,7 +38744,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_BACKGROUND_EVACUATE_COPY';
-          // Phase.
+          // Denotes the end of the event GC_MC_BACKGROUND_EVACUATE_COPY.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38760,7 +38760,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS';
-          // Phase.
+          // Denotes the end of the event GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38776,7 +38776,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_BACKGROUND_MARKING';
-          // Phase.
+          // Denotes the end of the event GC_MC_BACKGROUND_MARKING.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38792,7 +38792,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_BACKGROUND_SWEEPING';
-          // Phase.
+          // Denotes the end of the event GC_MC_BACKGROUND_SWEEPING.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38808,7 +38808,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_FLUSHABLE_BYTECODE';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_FLUSHABLE_BYTECODE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38824,7 +38824,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38840,7 +38840,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_MAPS';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_MAPS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38856,7 +38856,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_STRING_TABLE';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_STRING_TABLE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38872,7 +38872,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_WEAK_COLLECTIONS';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_WEAK_COLLECTIONS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38888,7 +38888,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_WEAK_LISTS';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_WEAK_LISTS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38904,7 +38904,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR_WEAK_REFERENCES';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR_WEAK_REFERENCES.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38920,7 +38920,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_CLEAR';
-          // Phase.
+          // Denotes the end of the event GC_MC_CLEAR.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38936,7 +38936,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EPILOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_EPILOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38952,7 +38952,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_CLEAN_UP';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_CLEAN_UP.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38968,7 +38968,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_COPY';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_COPY.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -38984,7 +38984,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_EPILOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_EPILOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39000,7 +39000,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_PROLOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_PROLOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39016,7 +39016,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_REBALANCE';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_REBALANCE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39032,7 +39032,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39048,7 +39048,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39064,7 +39064,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_UPDATE_POINTERS_TO_NEW_ROOTS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39080,7 +39080,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_UPDATE_POINTERS_WEAK';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_UPDATE_POINTERS_WEAK.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39096,7 +39096,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE_UPDATE_POINTERS';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE_UPDATE_POINTERS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39112,7 +39112,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_EVACUATE';
-          // Phase.
+          // Denotes the end of the event GC_MC_EVACUATE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39128,7 +39128,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_FINISH';
-          // Phase.
+          // Denotes the end of the event GC_MC_FINISH.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39144,7 +39144,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_EMBEDDER_PROLOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39160,7 +39160,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_EMBEDDER_TRACING';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_EMBEDDER_TRACING.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39176,7 +39176,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_EXTERNAL_EPILOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39192,7 +39192,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_EXTERNAL_PROLOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39208,7 +39208,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_FINALIZE_BODY';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_FINALIZE_BODY.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39224,7 +39224,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_FINALIZE';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_FINALIZE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39240,7 +39240,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_LAYOUT_CHANGE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39256,7 +39256,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_START';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_START.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39272,7 +39272,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL_SWEEPING';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL_SWEEPING.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39288,7 +39288,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_INCREMENTAL';
-          // Phase.
+          // Denotes the end of the event GC_MC_INCREMENTAL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39304,7 +39304,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_EMBEDDER_TRACING_CLOSURE';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_EMBEDDER_TRACING_CLOSURE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39320,7 +39320,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_EMBEDDER_TRACING';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_EMBEDDER_TRACING.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39336,7 +39336,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_FINISH_INCREMENTAL';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_FINISH_INCREMENTAL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39352,7 +39352,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_MAIN';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_MAIN.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39368,7 +39368,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_ROOTS';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_ROOTS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39384,7 +39384,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39400,7 +39400,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_WEAK_CLOSURE_EPHEMERON.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39416,7 +39416,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_WEAK_CLOSURE_HARMONY';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_WEAK_CLOSURE_HARMONY.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39432,7 +39432,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_WEAK_CLOSURE_WEAK_HANDLES.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39448,7 +39448,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_WEAK_CLOSURE_WEAK_ROOTS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39464,7 +39464,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK_WEAK_CLOSURE';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK_WEAK_CLOSURE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39480,7 +39480,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_MARK';
-          // Phase.
+          // Denotes the end of the event GC_MC_MARK.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39496,7 +39496,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_PROLOGUE';
-          // Phase.
+          // Denotes the end of the event GC_MC_PROLOGUE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39512,7 +39512,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_MC_SWEEP';
-          // Phase.
+          // Denotes the end of the event GC_MC_SWEEP.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39527,7 +39527,7 @@ export namespace TraceEvent {
             live: string;
           };
           name: 'V8.GC_Objects_Stats';
-          // Phase.
+          // Denotes an event GC_Objects_Stats. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39543,7 +39543,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39559,7 +39559,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_PROCESS_ARRAY_BUFFERS';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_PROCESS_ARRAY_BUFFERS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39575,7 +39575,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE_FINALIZE';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE_FINALIZE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39591,7 +39591,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE_PARALLEL';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE_PARALLEL.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39607,7 +39607,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE_ROOTS';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE_ROOTS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39623,7 +39623,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE_UPDATE_REFS';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE_UPDATE_REFS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39639,7 +39639,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_IDENTIFY.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39655,7 +39655,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39671,7 +39671,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GC_SCAVENGER_SCAVENGE';
-          // Phase.
+          // Denotes the end of the event GC_SCAVENGER_SCAVENGE.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39687,7 +39687,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCCompactor';
-          // Phase.
+          // Denotes the end of the event GCCompactor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39703,7 +39703,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCFinalizeMC';
-          // Phase.
+          // Denotes the end of the event GCFinalizeMC.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39719,7 +39719,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCFinalizeMCReduceMemory';
-          // Phase.
+          // Denotes the end of the event GCFinalizeMCReduceMemory.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39735,7 +39735,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCIdleNotification';
-          // Phase.
+          // Denotes the end of the event GCIdleNotification.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39751,7 +39751,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCIncrementalMarking';
-          // Phase.
+          // Denotes the end of the event GCIncrementalMarking.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39767,7 +39767,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCIncrementalMarkingFinalize';
-          // Phase.
+          // Denotes the end of the event GCIncrementalMarkingFinalize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39783,7 +39783,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCIncrementalMarkingLayoutChange';
-          // Phase.
+          // Denotes the end of the event GCIncrementalMarkingLayoutChange.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39799,7 +39799,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCIncrementalMarkingStart';
-          // Phase.
+          // Denotes the end of the event GCIncrementalMarkingStart.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39814,7 +39814,7 @@ export namespace TraceEvent {
             duration: number;
           };
           name: 'V8.GCMarkCompactorMarkingSummary';
-          // Phase.
+          // Denotes an event GCMarkCompactorMarkingSummary. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39829,7 +39829,7 @@ export namespace TraceEvent {
             duration: number;
           };
           name: 'V8.GCMarkCompactorSummary';
-          // Phase.
+          // Denotes an event GCMarkCompactorSummary. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39845,7 +39845,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCPhantomHandleProcessingCallback';
-          // Phase.
+          // Denotes the end of the event GCPhantomHandleProcessingCallback.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39861,7 +39861,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.GCScavenger';
-          // Phase.
+          // Denotes the end of the event GCScavenger.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39877,7 +39877,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.HandleInterrupts';
-          // Phase.
+          // Denotes the end of the event HandleInterrupts.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39904,7 +39904,7 @@ export namespace TraceEvent {
             };
           };
           name: 'V8.ICStats';
-          // Phase.
+          // Denotes an event ICStats. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39920,7 +39920,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.InvokeApiInterruptCallbacks';
-          // Phase.
+          // Denotes the end of the event InvokeApiInterruptCallbacks.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -39934,7 +39934,7 @@ export namespace TraceEvent {
           
           };
           name: 'V8.NewContext';
-          // Phase.
+          // Denotes the beginning of the event NewContext.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -40111,7 +40111,7 @@ export namespace TraceEvent {
             };
           };
           name: 'V8.NewContext';
-          // Phase.
+          // Denotes the ending of the event NewContext.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -40126,7 +40126,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'v8.newInstance';
-          // Phase.
+          // Denotes the end of the event NewInstance.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40142,7 +40142,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.OptimizeCode';
-          // Phase.
+          // Denotes the end of the event OptimizeCode.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40158,7 +40158,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.ParseFunction';
-          // Phase.
+          // Denotes the end of the event ParseFunction.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40181,7 +40181,7 @@ export namespace TraceEvent {
           flow_out?: boolean;
           id?: string;
           name: 'v8.parseOnBackground';
-          // Phase.
+          // Denotes the end of the event ParseOnBackground.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40197,7 +40197,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.ParseProgram';
-          // Phase.
+          // Denotes the end of the event ParseProgram.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40213,7 +40213,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'V8.PreParse';
-          // Phase.
+          // Denotes the end of the event PreParse.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40229,7 +40229,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.RecompileConcurrent';
-          // Phase.
+          // Denotes the end of the event RecompileConcurrent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40245,7 +40245,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.RecompileSynchronous';
-          // Phase.
+          // Denotes the end of the event RecompileSynchronous.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40261,7 +40261,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'v8.run';
-          // Phase.
+          // Denotes the end of the event Run.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40277,7 +40277,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_AddDictionaryProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_AddDictionaryProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40293,7 +40293,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_AllocateInNewSpace';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_AllocateInNewSpace.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40309,7 +40309,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_AllocateInTargetSpace';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_AllocateInTargetSpace.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40325,7 +40325,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_AllocateSeqTwoByteString';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_AllocateSeqTwoByteString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40341,7 +40341,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ArrayIndexOf';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ArrayIndexOf.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40357,7 +40357,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ArraySpeciesConstructor';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ArraySpeciesConstructor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40373,7 +40373,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CompileLazy';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CompileLazy.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40389,7 +40389,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CompileOptimized_Concurrent';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CompileOptimized_Concurrent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40405,7 +40405,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CompleteInobjectSlackTrackingForMap';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CompleteInobjectSlackTrackingForMap.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40421,7 +40421,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateArrayLiteral';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateArrayLiteral.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40437,7 +40437,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateArrayLiteralWithoutAllocationSite.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40453,7 +40453,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateDataProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateDataProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40469,7 +40469,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateJSGeneratorObject';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateJSGeneratorObject.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40485,7 +40485,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateListFromArrayLike';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateListFromArrayLike.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40501,7 +40501,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateObjectLiteral';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateObjectLiteral.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40517,7 +40517,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateObjectLiteralWithoutAllocationSite.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40533,7 +40533,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_CreateRegExpLiteral';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_CreateRegExpLiteral.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40549,7 +40549,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DateCurrentTime';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DateCurrentTime.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40565,7 +40565,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DeclareEvalFunction';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DeclareEvalFunction.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40581,7 +40581,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DeclareGlobals';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DeclareGlobals.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40597,7 +40597,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DefineAccessorPropertyUnchecked';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DefineAccessorPropertyUnchecked.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40613,7 +40613,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DefineClass';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DefineClass.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40629,7 +40629,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DefineDataPropertyInLiteral';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DefineDataPropertyInLiteral.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40645,7 +40645,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_DeleteProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_DeleteProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40661,7 +40661,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ElementsTransitionAndStoreIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ElementsTransitionAndStoreIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40677,7 +40677,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ForInEnumerate';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ForInEnumerate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40693,7 +40693,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_GetOwnPropertyDescriptor';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_GetOwnPropertyDescriptor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40709,7 +40709,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_GetProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_GetProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40725,7 +40725,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_HasInPrototypeChain';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_HasInPrototypeChain.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40741,7 +40741,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_HasProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_HasProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40757,7 +40757,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_Interrupt';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_Interrupt.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40773,7 +40773,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_KeyedLoadIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_KeyedLoadIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40789,7 +40789,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_KeyedStoreIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_KeyedStoreIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40805,7 +40805,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_KeyedStoreIC_Slow';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_KeyedStoreIC_Slow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40821,7 +40821,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadAccessorProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadAccessorProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40837,7 +40837,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadCallbackProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadCallbackProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40853,7 +40853,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadElementWithInterceptor';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadElementWithInterceptor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40869,7 +40869,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadGlobalIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadGlobalIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40885,7 +40885,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadGlobalIC_Slow';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadGlobalIC_Slow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40901,7 +40901,7 @@ export namespace TraceEvent {
           // Duration.
           dur?: number;
           name: 'V8.Runtime_Runtime_LoadIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40917,7 +40917,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadLookupSlot';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadLookupSlot.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40933,7 +40933,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadLookupSlotForCall';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadLookupSlotForCall.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40949,7 +40949,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadLookupSlotInsideTypeof';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadLookupSlotInsideTypeof.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40965,7 +40965,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_LoadPropertyWithInterceptor';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_LoadPropertyWithInterceptor.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40981,7 +40981,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_MapGrow';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_MapGrow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -40997,7 +40997,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_MapShrink';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_MapShrink.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41013,7 +41013,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NewArray';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NewArray.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41029,7 +41029,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NewClosure_Tenured';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NewClosure_Tenured.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41045,7 +41045,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NewClosure';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NewClosure.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41061,7 +41061,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NewObject';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NewObject.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41077,7 +41077,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NewScriptContext';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NewScriptContext.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41093,7 +41093,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NotifyDeoptimized';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NotifyDeoptimized.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41109,7 +41109,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_NumberToString';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_NumberToString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41125,7 +41125,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ObjectCreate';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ObjectCreate.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41141,7 +41141,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ObjectEntries';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ObjectEntries.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41157,7 +41157,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ObjectGetOwnPropertyNames';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ObjectGetOwnPropertyNames.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41173,7 +41173,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ObjectHasOwnProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ObjectHasOwnProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41189,7 +41189,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ObjectKeys';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ObjectKeys.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41205,7 +41205,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_OrdinaryHasInstance';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_OrdinaryHasInstance.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41221,7 +41221,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_PrepareElementsForSort';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_PrepareElementsForSort.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41237,7 +41237,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_PushBlockContext';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_PushBlockContext.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41253,7 +41253,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_PushCatchContext';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_PushCatchContext.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41269,7 +41269,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_PushWithContext';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_PushWithContext.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41285,7 +41285,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_RegExpExec';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_RegExpExec.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41301,7 +41301,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_RegExpExecMultiple';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_RegExpExecMultiple.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41317,7 +41317,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_RegExpInitializeAndCompile';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_RegExpInitializeAndCompile.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41333,7 +41333,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_RegExpReplace';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_RegExpReplace.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41349,7 +41349,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ResolvePossiblyDirectEval';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ResolvePossiblyDirectEval.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41365,7 +41365,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_RunMicrotaskCallback';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_RunMicrotaskCallback.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41381,7 +41381,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_SetGrow';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_SetGrow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41397,7 +41397,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_SetKeyedProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_SetKeyedProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41413,7 +41413,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_SetNamedProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_SetNamedProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41429,7 +41429,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ShrinkPropertyDictionary';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ShrinkPropertyDictionary.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41445,7 +41445,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StackGuard';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StackGuard.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41461,7 +41461,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreCallbackProperty';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreCallbackProperty.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41477,7 +41477,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreGlobalIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreGlobalIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41493,7 +41493,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreGlobalIC_Slow';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreGlobalIC_Slow.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41509,7 +41509,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41525,7 +41525,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreInArrayLiteralIC_Miss';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreInArrayLiteralIC_Miss.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41541,7 +41541,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreLookupSlot_Sloppy';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreLookupSlot_Sloppy.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41557,7 +41557,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StoreLookupSlot_Strict';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StoreLookupSlot_Strict.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41573,7 +41573,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringAdd';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringAdd.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41589,7 +41589,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringBuilderConcat';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringBuilderConcat.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41605,7 +41605,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringCharCodeAt';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringCharCodeAt.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41621,7 +41621,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringEqual';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringEqual.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41637,7 +41637,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringIncludes';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringIncludes.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41653,7 +41653,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringIndexOfUnchecked';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringIndexOfUnchecked.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41669,7 +41669,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringLessThan';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringLessThan.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41685,7 +41685,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringParseFloat';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringParseFloat.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41701,7 +41701,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringParseInt';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringParseInt.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41717,7 +41717,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringSplit';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringSplit.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41733,7 +41733,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringSubstring';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringSubstring.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41749,7 +41749,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringToArray';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringToArray.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41765,7 +41765,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringToLowerCaseIntl';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringToLowerCaseIntl.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41781,7 +41781,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_StringToNumber';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_StringToNumber.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41797,7 +41797,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_Throw';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_Throw.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41813,7 +41813,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ThrowCalledNonCallable';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ThrowCalledNonCallable.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41829,7 +41829,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ThrowConstructedNonConstructable';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ThrowConstructedNonConstructable.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41845,7 +41845,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_ToString';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_ToString.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41861,7 +41861,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_TransitionElementsKind';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_TransitionElementsKind.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41877,7 +41877,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.Runtime_Runtime_UnwindAndFindExceptionHandler';
-          // Phase.
+          // Denotes the end of the event Runtime_Runtime_UnwindAndFindExceptionHandler.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41925,7 +41925,7 @@ export namespace TraceEvent {
             };
           };
           name: 'V8.RuntimeStats';
-          // Phase.
+          // Denotes an event RuntimeStats. There are no begining/ending phases.
           ph: 'I';
           s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -41939,7 +41939,7 @@ export namespace TraceEvent {
           
           };
           name: 'V8.ScriptCompiler';
-          // Phase.
+          // Denotes the beginning of the event ScriptCompiler.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -41990,7 +41990,7 @@ export namespace TraceEvent {
             };
           };
           name: 'V8.ScriptCompiler';
-          // Phase.
+          // Denotes the ending of the event ScriptCompiler.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -42005,7 +42005,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8.StackGuard';
-          // Phase.
+          // Denotes the end of the event StackGuard.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42019,7 +42019,7 @@ export namespace TraceEvent {
           
           };
           name: 'V8.Task';
-          // Phase.
+          // Denotes the beginning of the event Task.
           ph: 'B';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -42244,7 +42244,7 @@ export namespace TraceEvent {
             };
           };
           name: 'V8.Task';
-          // Phase.
+          // Denotes the ending of the event Task.
           ph: 'E';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -42264,7 +42264,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'V8ContextSnapshot::InstallRuntimeEnabled';
-          // Phase.
+          // Denotes the end of the event InstallRuntimeEnabled.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42285,7 +42285,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'VerifiedRulesetDealer::GetRuleset';
-          // Phase.
+          // Denotes the end of the event GetRuleset.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42327,7 +42327,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::Layout';
-          // Phase.
+          // Denotes the end of the event Layout.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42343,7 +42343,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::Layout(bounds_changed)';
-          // Phase.
+          // Denotes the end of the event Layoutbounds_changed.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42359,7 +42359,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::Layout(set_bounds)';
-          // Phase.
+          // Denotes the end of the event Layoutset_bounds.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42375,7 +42375,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::OnPaint';
-          // Phase.
+          // Denotes the end of the event OnPaint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42391,7 +42391,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::OnPaintBackground';
-          // Phase.
+          // Denotes the end of the event OnPaintBackground.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42407,7 +42407,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::OnPaintBorder';
-          // Phase.
+          // Denotes the end of the event OnPaintBorder.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42423,7 +42423,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::Paint';
-          // Phase.
+          // Denotes the end of the event Paint.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42439,7 +42439,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'View::PaintChildren';
-          // Phase.
+          // Denotes the end of the event PaintChildren.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42456,7 +42456,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ViewHostMsg_DidContentsPreferredSizeChange';
-        // Phase.
+        // Denotes the end of the event ViewHostMsg_DidContentsPreferredSizeChange.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42472,7 +42472,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ViewHostMsg_DocumentAvailableInMainFrame';
-        // Phase.
+        // Denotes the end of the event ViewHostMsg_DocumentAvailableInMainFrame.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42488,7 +42488,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ViewHostMsg_UpdateZoomLimits';
-        // Phase.
+        // Denotes the end of the event ViewHostMsg_UpdateZoomLimits.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42504,7 +42504,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'ViewMsg_EnablePreferredSizeChangedMode';
-        // Phase.
+        // Denotes the end of the event ViewMsg_EnablePreferredSizeChangedMode.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42524,7 +42524,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'virtual bool GrRenderTargetOpList::onExecute(GrOpFlushState *)';
-          // Phase.
+          // Denotes the end of the event OnExecuteGrOpFlushState.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42547,7 +42547,7 @@ export namespace TraceEvent {
               // Duration.
               dur: number;
               name: 'virtual GrOp::CombineResult (anonymous namespace)::FillRectOp::onCombineIfPossible(GrOp *, const GrCaps &)';
-              // Phase.
+              // Denotes the end of the event OnCombineIfPossibleGrOpGrCaps.
               ph: 'X';
               tdur: number;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42568,7 +42568,7 @@ export namespace TraceEvent {
               // Duration.
               dur: number;
               name: 'virtual GrOp::CombineResult (anonymous namespace)::TextureOp::onCombineIfPossible(GrOp *, const GrCaps &)';
-              // Phase.
+              // Denotes the end of the event OnCombineIfPossibleGrOpGrCaps.
               ph: 'X';
               tdur: number;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42593,7 +42593,7 @@ export namespace TraceEvent {
               // Duration.
               dur: number;
               name: 'virtual void (anonymous namespace)::FillRectOp::onPrepareDraws(GrMeshDrawOp::Target *)';
-              // Phase.
+              // Denotes the end of the event Target.
               ph: 'X';
               tdur: number;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42616,7 +42616,7 @@ export namespace TraceEvent {
               // Duration.
               dur: number;
               name: 'virtual void (anonymous namespace)::TextureOp::onPrepareDraws(GrMeshDrawOp::Target *)';
-              // Phase.
+              // Denotes the end of the event Target.
               ph: 'X';
               tdur: number;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42645,7 +42645,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'VisibleUnits::canonicalPosition';
-          // Phase.
+          // Denotes the end of the event CanonicalPosition.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42661,7 +42661,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'VisibleUnits::mostBackwardCaretPosition';
-          // Phase.
+          // Denotes the end of the event MostBackwardCaretPosition.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42677,7 +42677,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'VisibleUnits::mostForwardCaretPosition';
-          // Phase.
+          // Denotes the end of the event MostForwardCaretPosition.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42699,7 +42699,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'visitedlink.mojom.VisitedLinkNotificationSink';
-            // Phase.
+            // Denotes the end of the event VisitedLinkNotificationSink.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42716,7 +42716,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Visually Complete 100%';
-        // Phase.
+        // Denotes the beginning of the nestable async flow event VisuallyComplete100.
         ph: 'b';
       }
     
@@ -42726,7 +42726,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'Visually Complete 100%';
-        // Phase.
+        // Denotes a step into the nestable async flow event VisuallyComplete100.
         ph: 'e';
       }
     }
@@ -42746,7 +42746,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'VisualViewport::mainFrameDidChangeSize';
-          // Phase.
+          // Denotes the end of the event MainFrameDidChangeSize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42763,7 +42763,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'VisualViewport::setSize';
-          // Phase.
+          // Denotes the end of the event SetSize.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42786,7 +42786,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'viz::BeginFrameArgs';
-          // Phase.
+          // Denotes the beginning of the async flow event BeginFrameArgs.
           ph: 's';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -42826,7 +42826,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.CompositingModeReporter';
-            // Phase.
+            // Denotes the end of the event CompositingModeReporter.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42842,7 +42842,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.CompositorFrameSink';
-            // Phase.
+            // Denotes the end of the event CompositorFrameSink.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42858,7 +42858,7 @@ export namespace TraceEvent {
             // Duration.
             dur?: number;
             name: 'viz.mojom.CompositorFrameSinkClient';
-            // Phase.
+            // Denotes the end of the event CompositorFrameSinkClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42874,7 +42874,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.DisplayClient';
-            // Phase.
+            // Denotes the end of the event DisplayClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42890,7 +42890,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.FrameSinkManager';
-            // Phase.
+            // Denotes the end of the event FrameSinkManager.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42906,7 +42906,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.FrameSinkManagerClient';
-            // Phase.
+            // Denotes the end of the event FrameSinkManagerClient.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42922,7 +42922,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.GpuHost';
-            // Phase.
+            // Denotes the end of the event GpuHost.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42938,7 +42938,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'viz.mojom.GpuService';
-            // Phase.
+            // Denotes the end of the event GpuService.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42954,7 +42954,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'viz::SharedQuadState';
-          // Phase.
+          // Denotes a delete object of the event SharedQuadState.
           ph: 'D';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -42968,7 +42968,7 @@ export namespace TraceEvent {
         
         };
         name: 'Waiting for next BeginFrame';
-        // Phase.
+        // Denotes an event WaitingfornextBeginFrame. There are no begining/ending phases.
         ph: 'I';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -42989,7 +42989,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'web_cache.mojom.WebCache';
-            // Phase.
+            // Denotes the end of the event WebCache.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43026,7 +43026,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebContentsImpl::CreateRenderFrameForRenderManager';
-          // Phase.
+          // Denotes the end of the event CreateRenderFrameForRenderManager.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43042,7 +43042,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebContentsImpl::CreateRenderViewForRenderManager';
-          // Phase.
+          // Denotes the end of the event CreateRenderViewForRenderManager.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43058,7 +43058,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebContentsImpl::CreateWithOpener';
-          // Phase.
+          // Denotes the end of the event CreateWithOpener.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43074,7 +43074,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebContentsImpl::DidFinishNavigation';
-          // Phase.
+          // Denotes the end of the event DidFinishNavigation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43090,7 +43090,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebContentsImpl::DidStartNavigation';
-          // Phase.
+          // Denotes the end of the event DidStartNavigation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43106,7 +43106,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebContentsImpl::ReadyToCommitNavigation';
-          // Phase.
+          // Denotes the end of the event ReadyToCommitNavigation.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43122,7 +43122,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'WebContentsImpl Loading';
-        // Phase.
+        // Denotes the ending of the async event WebContentsImplLoading.
         ph: 'F';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -43135,7 +43135,7 @@ export namespace TraceEvent {
         };
         id: string;
         name: 'WebContentsImpl Loading';
-        // Phase.
+        // Denotes the beginning of the async event WebContentsImplLoading.
         ph: 'S';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -43157,7 +43157,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebFrameWidgetImpl::beginFrame';
-          // Phase.
+          // Denotes the end of the event BeginFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43173,7 +43173,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebFrameWidgetImpl::updateAllLifecyclePhases';
-          // Phase.
+          // Denotes the end of the event UpdateAllLifecyclePhases.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43197,7 +43197,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebLocalFrameImpl::createChildframe';
-          // Phase.
+          // Denotes the end of the event CreateChildframe.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43213,7 +43213,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebLocalFrameImpl::createFrameView';
-          // Phase.
+          // Denotes the end of the event CreateFrameView.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43234,7 +43234,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'WebScopedVirtualTimePauser::PauseVirtualTime';
-          // Phase.
+          // Denotes the beginning of the nestable async flow event PauseVirtualTime.
           ph: 'b';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -43246,7 +43246,7 @@ export namespace TraceEvent {
           };
           id: string;
           name: 'WebScopedVirtualTimePauser::PauseVirtualTime';
-          // Phase.
+          // Denotes a step into the nestable async flow event PauseVirtualTime.
           ph: 'e';
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
@@ -43288,7 +43288,7 @@ export namespace TraceEvent {
             flow_in: boolean;
             id: string;
             name: 'WebURLLoaderImpl::Context::Cancel';
-            // Phase.
+            // Denotes the end of the event Cancel.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43307,7 +43307,7 @@ export namespace TraceEvent {
             flow_in: boolean;
             id: string;
             name: 'WebURLLoaderImpl::Context::OnCompletedRequest';
-            // Phase.
+            // Denotes the end of the event OnCompletedRequest.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43327,7 +43327,7 @@ export namespace TraceEvent {
             flow_out: boolean;
             id: string;
             name: 'WebURLLoaderImpl::Context::OnReceivedData';
-            // Phase.
+            // Denotes the end of the event OnReceivedData.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43347,7 +43347,7 @@ export namespace TraceEvent {
             flow_out: boolean;
             id: string;
             name: 'WebURLLoaderImpl::Context::OnReceivedRedirect';
-            // Phase.
+            // Denotes the end of the event OnReceivedRedirect.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43367,7 +43367,7 @@ export namespace TraceEvent {
             flow_out: boolean;
             id: string;
             name: 'WebURLLoaderImpl::Context::OnReceivedResponse';
-            // Phase.
+            // Denotes the end of the event OnReceivedResponse.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43386,7 +43386,7 @@ export namespace TraceEvent {
             flow_out: boolean;
             id: string;
             name: 'WebURLLoaderImpl::Context::Start';
-            // Phase.
+            // Denotes the end of the event Start.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43406,7 +43406,7 @@ export namespace TraceEvent {
           flow_out: boolean;
           id: string;
           name: 'WebURLLoaderImpl::loadAsynchronously';
-          // Phase.
+          // Denotes the end of the event LoadAsynchronously.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43439,7 +43439,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebViewImpl::beginFrame';
-          // Phase.
+          // Denotes the end of the event BeginFrame.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43455,7 +43455,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebViewImpl::handleInputEvent';
-          // Phase.
+          // Denotes the end of the event HandleInputEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43472,7 +43472,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebViewImpl::handleKeyEvent';
-          // Phase.
+          // Denotes the end of the event HandleKeyEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43488,7 +43488,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebViewImpl::setIsAcceleratedCompositingActive(true)';
-          // Phase.
+          // Denotes the end of the event SetIsAcceleratedCompositingActivetrue.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43504,7 +43504,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WebViewImpl::updateAllLifecyclePhases';
-          // Phase.
+          // Denotes the end of the event UpdateAllLifecyclePhases.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43525,7 +43525,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'Widget::Init';
-          // Phase.
+          // Denotes the end of the event Init.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43542,7 +43542,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_Close_ACK';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_Close_ACK.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43558,7 +43558,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_DidCommitAndDrawCompositorFrame';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_DidCommitAndDrawCompositorFrame.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43574,7 +43574,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_DidFirstVisuallyNonEmptyPaint';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_DidFirstVisuallyNonEmptyPaint.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43590,7 +43590,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_FrameSwapMessages';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_FrameSwapMessages.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43606,7 +43606,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_HasTouchEventHandlers';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_HasTouchEventHandlers.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43622,7 +43622,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_SelectionBoundsChanged';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_SelectionBoundsChanged.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43638,7 +43638,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_TextInputStateChanged';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_TextInputStateChanged.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43654,7 +43654,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetHostMsg_UpdateScreenRects_ACK';
-        // Phase.
+        // Denotes the end of the event WidgetHostMsg_UpdateScreenRects_ACK.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43674,7 +43674,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'WidgetInputHandlerImpl::DispatchEvent';
-          // Phase.
+          // Denotes the end of the event DispatchEvent.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43691,7 +43691,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_SetActive';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_SetActive.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43707,7 +43707,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_SetInheritedEffectiveTouchAction';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_SetInheritedEffectiveTouchAction.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43723,7 +43723,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_SetIsInert';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_SetIsInert.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43739,7 +43739,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_SetViewportIntersection';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_SetViewportIntersection.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43755,7 +43755,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_SynchronizeVisualProperties';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_SynchronizeVisualProperties.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43771,7 +43771,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_UpdateRenderThrottlingStatus';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_UpdateRenderThrottlingStatus.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43787,7 +43787,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_UpdateScreenRects';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_UpdateScreenRects.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43803,7 +43803,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_WasHidden';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_WasHidden.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43819,7 +43819,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'WidgetMsg_WasShown';
-        // Phase.
+        // Denotes the end of the event WidgetMsg_WasShown.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43834,7 +43834,7 @@ export namespace TraceEvent {
           src_func: string;
         };
         name: 'WriteTransaction';
-        // Phase.
+        // Denotes the beginning of the event WriteTransaction.
         ph: 'B';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -43845,7 +43845,7 @@ export namespace TraceEvent {
         
         };
         name: 'WriteTransaction';
-        // Phase.
+        // Denotes the ending of the event WriteTransaction.
         ph: 'E';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -43865,7 +43865,7 @@ export namespace TraceEvent {
             // Duration.
             dur: number;
             name: 'ws.mojom.Gpu';
-            // Phase.
+            // Denotes the end of the event Gpu.
             ph: 'X';
             tdur: number;
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43887,7 +43887,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'X509Certificate::CreateFromDERCertChain';
-          // Phase.
+          // Denotes the end of the event CreateFromDERCertChain.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43914,7 +43914,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'XHRLoad';
-        // Phase.
+        // Denotes the end of the event XHRLoad.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43941,7 +43941,7 @@ export namespace TraceEvent {
         // Duration.
         dur: number;
         name: 'XHRReadyStateChange';
-        // Phase.
+        // Denotes the end of the event XHRReadyStateChange.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43964,7 +43964,7 @@ export namespace TraceEvent {
         flow_out: boolean;
         id: string;
         name: 'YieldParserForScriptBlockingResources';
-        // Phase.
+        // Denotes the end of the event YieldParserForScriptBlockingResources.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43986,7 +43986,7 @@ export namespace TraceEvent {
         flow_out: boolean;
         id: string;
         name: 'YieldParserForScriptLoad';
-        // Phase.
+        // Denotes the end of the event YieldParserForScriptLoad.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -44006,7 +44006,7 @@ export namespace TraceEvent {
           // Duration.
           dur: number;
           name: 'ZeroSuggestProvider::Start';
-          // Phase.
+          // Denotes the end of the event Start.
           ph: 'X';
           tdur: number;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -44023,7 +44023,7 @@ export namespace TraceEvent {
           };
         };
         name: 'zonesAndDomReady';
-        // Phase.
+        // Denotes a mark of the event ZonesAndDomReady.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -44038,7 +44038,7 @@ export namespace TraceEvent {
           };
         };
         name: 'zonesReady';
-        // Phase.
+        // Denotes a mark of the event ZonesReady.
         ph: 'R';
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;

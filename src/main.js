@@ -407,9 +407,45 @@ async function run() {
       ts: 'Timestamp of the event. This value is monotonically increasing among all events generated in the same thread.',
     },
   };
+  /**
+   * @callback Commenter
+   * @param {Gen.Interface} interface
+   * @param {Gen.Type} type
+   * @return {string}
+   */
+  /** @type {Record<string, string | Commenter>} */
   const commentsByKey = {
     dur: 'Duration.',
-    ph: 'Phase.',
+    ph: (_interface, prop) => {
+      const eventName = _interface.idPath[_interface.idPath.length - 2];
+      // src/base/trace_event/common/trace_event_common.h
+      switch (prop.type.literal.replace(/[^a-zA-Z0-9()]/g, '')) {
+        case 'B': return `Denotes the beginning of the event ${eventName}.`;
+        case 'E': return `Denotes the ending of the event ${eventName}.`;
+        case 'S': return `Denotes the beginning of the async event ${eventName}.`;
+        case 'T': return `Denotes a step into the async event ${eventName}.`;
+        case 'F': return `Denotes the ending of the async event ${eventName}.`;
+        case 's': return `Denotes the beginning of the async flow event ${eventName}.`;
+        case 't': return `Denotes a step into the async flow event ${eventName}.`;
+        case 'f': return `Denotes the ending of the async flow event ${eventName}.`;
+        case 'b': return `Denotes the beginning of the nestable async flow event ${eventName}.`;
+        case 'e': return `Denotes a step into the nestable async flow event ${eventName}.`;
+        case 'n': return `Denotes the ending of the nestable async flow event ${eventName}.`;
+        case 'I': return `Denotes an event ${eventName}. There are no begining/ending phases.`;
+        case 'M': return `Denotes metadata for the event ${eventName}.`;
+        case 'C': return `Denotes a counter for the event ${eventName}.`;
+        case 'X': return `Denotes the end of the event ${eventName}.`;
+        case 'N': return `Denotes a create object of the event ${eventName}.`;
+        case 'O': return `Denotes a snapshot object of the event ${eventName}.`;
+        case 'D': return `Denotes a delete object of the event ${eventName}.`;
+        case '(': return `Denotes entering a context of the event ${eventName}.`;
+        case ')': return `Denotes leaving a context of the event ${eventName}.`;
+        case 'R': return `Denotes a mark of the event ${eventName}.`;
+        case 'P': return `Denotes a sample of the event ${eventName}.`;
+        case '=': return `Denotes a link ids of the event ${eventName}.`;
+        default: return `Denotes an unknown phase of the event ${eventName}.`;
+      }
+    },
     tts: 'Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.',
   };
   for (const [id, propertyComments] of Object.entries(commentsByType)) {
@@ -425,7 +461,11 @@ async function run() {
     for (const _interface of interfaceById.values()) {
       const prop = _interface.objectType[key];
       if (!prop) continue;
-      prop.comment = comment;
+      if (typeof comment === 'string') {
+        prop.comment = comment;
+      } else {
+        prop.comment = comment(_interface, prop);
+      }
     }
   }
 
