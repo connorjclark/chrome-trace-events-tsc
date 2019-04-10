@@ -42,3 +42,5 @@ EVENT_FILTER=(
 )
 IFS=',' eval 'EVENT_FILTER="${EVENT_FILTER[*]}"'
 EVENT_FILTER=$EVENT_FILTER node src/main.js > dist/lh-trace-events.d.ts
+
+echo "dist/lh-trace-events.d.ts updated."
