@@ -39,7 +39,8 @@ function combineObjectsImpl(objects, state) {
         const subObjects = objects.map(o => o[key] && o[key][0]).filter(Boolean);
         combined[key] = [];
         if (Array.isArray(value[0])) {
-          // ...
+          // ... ?
+          combined[key][0] = value[0];
         } else if (isObject(value[0])) {
           combined[key][0] = {};
         } else {

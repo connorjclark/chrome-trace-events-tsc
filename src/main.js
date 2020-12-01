@@ -9,7 +9,16 @@ const utils = require('./utils');
 const eventFilter = process.env.EVENT_FILTER ? process.env.EVENT_FILTER.split(',') : null;
 const topLevelNamespaceName = 'TraceEvent';
 
-function loadTraceLog(path) {
+function loadTraceLog(path, lineByLine) {
+  function shouldKeep(val) {
+    if (!process.env.DEBUG_GREP) return true;
+    return val.match(process.env.DEBUG_GREP);
+  }
+
+  if (!lineByLine) {
+    return JSON.parse(fs.readFileSync(path, 'utf-8')).traceEvents.filter(e => shouldKeep(e.name));
+  }
+
   const lineReader = require('readline').createInterface({
     input: fs.createReadStream(path)
   });
@@ -17,7 +26,7 @@ function loadTraceLog(path) {
     const events = [];
 
     lineReader.on('line', function (line) {
-      if (process.env.DEBUG_GREP && !line.match(process.env.DEBUG_GREP)) return;
+      if (!shouldKeep(line)) return;
 
       events.push(
         ...JSON.parse('[' + line.replace(/,$/, '') + ']')
@@ -179,14 +188,26 @@ function setOptional(objectType, pathComponents) {
 }
 
 async function run() {
-  const events = [
-    ...JSON.parse(fs.readFileSync('./traces/trace-1.json', 'utf-8')).traceEvents,
-    ...JSON.parse(fs.readFileSync('./traces/trace-2.json', 'utf-8')).traceEvents,
-    ...JSON.parse(fs.readFileSync('./traces/trace-3.json', 'utf-8')).traceEvents,
-    ...JSON.parse(fs.readFileSync('./traces/trace-4.json', 'utf-8')).traceEvents,
-    // very large trace, not checked in.
-    ...await loadTraceLog('/Users/cjamcl/Downloads/trace_Fri_Mar_29_2019_7.41.58_PM.json'),
+  const traceFilePaths = [
+    { path: './traces/trace-1.json', lineByLine: false},
+    { path: './traces/trace-2.json', lineByLine: false},
+    { path: './traces/trace-3.json', lineByLine: false},
+    { path: './traces/trace-4.json', lineByLine: false},
+    { path: './traces/trace-5.json', lineByLine: true},
   ];
+
+  const events = [];
+  for (const traceFile of traceFilePaths) {
+    if (!fs.existsSync(traceFile.path)) {
+      console.warn('missing trace', traceFile.path);
+      continue;
+    }
+
+    const traceEvents = await loadTraceLog(traceFile.path, traceFile.lineByLine);
+    for (const traceEvent of traceEvents) events.push(traceEvent);
+  }
+
+  if (!events.length) throw new Error('no events');
 
   /** @type {Map<string, Array<*>>} */
   const eventsByTypeId = new Map();
@@ -438,7 +459,11 @@ async function run() {
     if (!_interface) throw new Error();
     for (const [key, comment] of Object.entries(propertyComments)) {
       const prop = _interface.objectType[key];
-      if (!prop) throw new Error();
+      if (!prop) {
+        console.warn(`no key ${key} for ${id}`);
+        continue;
+      }
+
       prop.comment = comment;
     }
   }
@@ -453,6 +478,8 @@ async function run() {
       }
     }
   }
+
+  debugger;
 
   // Create union that encompasses all trace events. Use the unioned types create above.
   /** @type {Gen.TypeUnion} */

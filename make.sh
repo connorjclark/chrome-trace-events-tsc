@@ -15,8 +15,11 @@ EVENT_FILTER=(
   FunctionCall
   InvalidateLayout
   Layout
+  LayoutShift
   loadEventEnd
   navigationStart
+  NavStartToLargestContentfulPaint::Candidate::AllFrames::UKM
+  NavStartToLargestContentfulPaint::Invalidate::AllFrames::UKM
   paintNonDefaultBackgroundColor
   ParseAuthorStyleSheet
   process_labels
