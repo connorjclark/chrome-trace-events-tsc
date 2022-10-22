@@ -9,7 +9,15 @@ const utils = require('./utils');
 const eventFilter = process.env.EVENT_FILTER ? process.env.EVENT_FILTER.split(',') : null;
 const topLevelNamespaceName = 'TraceEvent';
 
+/**
+ * @param {string} path
+ * @param {boolean} lineByLine
+ * @returns 
+ */
 function loadTraceLog(path, lineByLine) {
+  /**
+   * @param {string} val
+   */
   function shouldKeep(val) {
     if (!process.env.DEBUG_GREP) return true;
     return val.match(process.env.DEBUG_GREP);
@@ -188,23 +196,16 @@ function setOptional(objectType, pathComponents) {
 }
 
 async function run() {
-  const traceFilePaths = [
-    { path: './traces/trace-1.json', lineByLine: false},
-    { path: './traces/trace-2.json', lineByLine: false},
-    { path: './traces/trace-3.json', lineByLine: false},
-    { path: './traces/trace-4.json', lineByLine: false},
-    { path: './traces/trace-5.json', lineByLine: true},
-    { path: './traces/trace-6.json', lineByLine: false},
-  ];
-
+  const traceFilePaths = fs.readdirSync('./traces').map(p => `./traces/${p}`);
   const events = [];
-  for (const traceFile of traceFilePaths) {
-    if (!fs.existsSync(traceFile.path)) {
-      console.warn('missing trace', traceFile.path);
+  for (const traceFilePath of traceFilePaths) {
+    if (!fs.existsSync(traceFilePath)) {
+      console.warn('missing trace', traceFilePath);
       continue;
     }
 
-    const traceEvents = await loadTraceLog(traceFile.path, traceFile.lineByLine);
+    const lineByLine = traceFilePath === './traces/trace-5.json';
+    const traceEvents = await loadTraceLog(traceFilePath, lineByLine);
     for (const traceEvent of traceEvents) events.push(traceEvent);
   }
 
