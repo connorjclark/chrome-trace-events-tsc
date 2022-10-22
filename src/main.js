@@ -194,6 +194,7 @@ async function run() {
     { path: './traces/trace-3.json', lineByLine: false},
     { path: './traces/trace-4.json', lineByLine: false},
     { path: './traces/trace-5.json', lineByLine: true},
+    { path: './traces/trace-6.json', lineByLine: false},
   ];
 
   const events = [];

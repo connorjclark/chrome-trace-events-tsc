@@ -43,6 +43,7 @@ export namespace TraceEvent {
     TraceEvent.TracingStartedInBrowser |
     TraceEvent.TracingStartedInPage |
     TraceEvent.V8.Compile |
+    TraceEvent.V8.CompileModule |
     TraceEvent.XHRReadyStateChange;
 
   type DomContentLoadedEventEnd = 
@@ -109,6 +110,8 @@ export namespace TraceEvent {
     TraceEvent.ResourceSendRequest.I;
 
   type RunTask = 
+    TraceEvent.RunTask.B |
+    TraceEvent.RunTask.I |
     TraceEvent.RunTask.X;
 
   type ScheduleStyleRecalculation = 
@@ -143,6 +146,7 @@ export namespace TraceEvent {
       name: 'domContentLoadedEventEnd';
       // Denotes a mark of the event DomContentLoadedEventEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -199,6 +203,7 @@ export namespace TraceEvent {
       name: 'firstContentfulPaint';
       // Denotes a mark of the event FirstContentfulPaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -216,6 +221,7 @@ export namespace TraceEvent {
       name: 'firstMeaningfulPaint';
       // Denotes a mark of the event FirstMeaningfulPaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -232,6 +238,7 @@ export namespace TraceEvent {
       name: 'firstMeaningfulPaintCandidate';
       // Denotes a mark of the event FirstMeaningfulPaintCandidate.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -260,6 +267,7 @@ export namespace TraceEvent {
       name: 'firstPaint';
       // Denotes a mark of the event FirstPaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -322,6 +330,7 @@ export namespace TraceEvent {
       args: {
         data: {
           frame: string;
+          nodeId?: number;
           stackTrace?: {
             columnNumber: number;
             functionName: string;
@@ -386,13 +395,34 @@ export namespace TraceEvent {
           dirtyObjects: number;
           frame: string;
           partialLayout: boolean;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
           totalObjects: number;
         };
         endData: {
-          root: {
+          layoutRoots?: {
+            depth: number;
+            nodeId: number;
+            quads: {
+              '0': number;
+              '1': number;
+              '2': number;
+              '3': number;
+              '4': number;
+              '5': number;
+              '6': number;
+              '7': number;
+            }[];
+          }[];
+          root?: {
           
           }[];
-          rootNode: number;
+          rootNode?: number;
         };
       };
       // Duration.
@@ -423,6 +453,7 @@ export namespace TraceEvent {
             }[];
           }[];
           is_main_frame: boolean;
+          last_input_timestamp?: number;
           overall_max_distance: number;
           region_rects: {
             '0': number;
@@ -431,6 +462,7 @@ export namespace TraceEvent {
             '3': number;
           }[];
           score: number;
+          weighted_score_delta?: number;
         };
         frame: string;
       };
@@ -451,6 +483,7 @@ export namespace TraceEvent {
       name: 'loadEventEnd';
       // Denotes a mark of the event LoadEventEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -462,6 +495,7 @@ export namespace TraceEvent {
         data?: {
           documentLoaderURL: string;
           isLoadingMainFrame: boolean;
+          isOutermostMainFrame?: boolean;
           navigationId: string;
         };
         frame: string;
@@ -469,6 +503,7 @@ export namespace TraceEvent {
       name: 'navigationStart';
       // Denotes a mark of the event NavigationStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -486,6 +521,7 @@ export namespace TraceEvent {
               data: {
                 durationInMilliseconds: number;
                 inMainFrame: boolean;
+                isAnimated?: boolean;
                 size: number;
                 type: string;
               };
@@ -647,6 +683,7 @@ export namespace TraceEvent {
         data: {
           frame: string;
           priority: string;
+          renderBlocking?: string;
           requestId: string;
           requestMethod: string;
           stackTrace?: {
@@ -664,11 +701,32 @@ export namespace TraceEvent {
       ph: 'I';
       s: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
   namespace RunTask {
+    interface B extends TraceEvent.Base {
+      args: {
+      
+      };
+      name: 'RunTask';
+      // Denotes the beginning of the event RunTask.
+      ph: 'B';
+    }
+  
+    interface I extends TraceEvent.Base {
+      args: {
+      
+      };
+      name: 'RunTask';
+      // Denotes an event RunTask. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  
     interface X extends TraceEvent.Base {
       args: {
       
@@ -717,7 +775,7 @@ export namespace TraceEvent {
       // Denotes a snapshot object of the event Screenshot.
       ph: 'O';
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -880,6 +938,9 @@ export namespace TraceEvent {
       TraceEvent.V8.Compile.E |
       TraceEvent.V8.Compile.X;
   
+    type CompileModule = 
+      TraceEvent.V8.CompileModule.X;
+  
     namespace Compile {
       interface B extends TraceEvent.Base {
         args: {
@@ -934,6 +995,28 @@ export namespace TraceEvent {
         // Denotes the end of the event Compile.
         ph: 'X';
         tdur?: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace CompileModule {
+      interface X extends TraceEvent.Base {
+        args: {
+          data: {
+            columnNumber: number;
+            lineNumber: number;
+            streamed: boolean;
+            url: string;
+          };
+          fileName: string;
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.compileModule';
+        // Denotes the end of the event CompileModule.
+        ph: 'X';
+        tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }

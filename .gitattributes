@@ -1,1 +1,1 @@
-traces/trace-5.json filter=lfs diff=lfs merge=lfs -text
+traces/*.json filter=lfs diff=lfs merge=lfs -text

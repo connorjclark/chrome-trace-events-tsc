@@ -12,6 +12,7 @@ export namespace TraceEvent {
 
   type TraceEvent = 
     TraceEvent.A |
+    TraceEvent.ActivateLayerTree |
     TraceEvent.Activation |
     TraceEvent.ActiveSchedulerTrackedFeature |
     TraceEvent.ADFUEL.AdFuelDOMContentLoaded |
@@ -52,6 +53,7 @@ export namespace TraceEvent {
     TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02 |
     TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02End |
     TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02Start |
+    TraceEvent.ADFUEL.DelayingQueueDispatch |
     TraceEvent.ADFUEL.DispatchQueue |
     TraceEvent.ADFUEL.DispatchQueueEnd |
     TraceEvent.ADFUEL.DispatchQueueStart |
@@ -60,36 +62,59 @@ export namespace TraceEvent {
     TraceEvent.ADFUEL.PageLevelGPTBuildEnd |
     TraceEvent.ADFUEL.PageLevelGPTBuildStart |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473 |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473End |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473Start |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rbEnd |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rbStart |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepage |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020 |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020End |
+    TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020Start |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepage8364052550Start |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepageEnd |
     TraceEvent.ADFUEL.QueueRegistrycnn_homepageStart |
+    TraceEvent.ADFUEL.RegisteringModule.Admiralv1_0_1 |
     TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev3_2_5 |
     TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev4_0_18 |
+    TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev4_0_23 |
     TraceEvent.ADFUEL.RegisteringModule.BlockthroughModulev4_0_1 |
+    TraceEvent.ADFUEL.RegisteringModule.BlockthroughModulev4_0_2 |
     TraceEvent.ADFUEL.RegisteringModule.CEPModulev3_0_2 |
     TraceEvent.ADFUEL.RegisteringModule.CEPModulev4_0_3 |
+    TraceEvent.ADFUEL.RegisteringModule.CEPModulev4_0_4 |
     TraceEvent.ADFUEL.RegisteringModule.CreativeReviewModulev3_0_5 |
     TraceEvent.ADFUEL.RegisteringModule.CreativeReviewModulev4_0_1 |
     TraceEvent.ADFUEL.RegisteringModule.CriteoModulev3_2_2 |
+    TraceEvent.ADFUEL.RegisteringModule.FreewheelProgrammatic1_0_2 |
     TraceEvent.ADFUEL.RegisteringModule.IndexExchangeIdentity1_1_1 |
     TraceEvent.ADFUEL.RegisteringModule.IndexExchangeWrapperModulev3_1_1 |
     TraceEvent.ADFUEL.RegisteringModule.IntegralAdScienceModulev4_0_4 |
+    TraceEvent.ADFUEL.RegisteringModule.IntegralAdScienceModulev4_0_6 |
     TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv3_0_5 |
     TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv4_0_2 |
+    TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv4_0_6 |
     TraceEvent.ADFUEL.RegisteringModule.KruxModulev3_1_1 |
     TraceEvent.ADFUEL.RegisteringModule.KruxModulev4_1_2 |
+    TraceEvent.ADFUEL.RegisteringModule.KruxModulev4_1_5 |
     TraceEvent.ADFUEL.RegisteringModule.MalvertisingDetectionv4_0_5 |
+    TraceEvent.ADFUEL.RegisteringModule.MalvertisingDetectionv4_0_6 |
     TraceEvent.ADFUEL.RegisteringModule.PrebidModulev3_3_0 |
     TraceEvent.ADFUEL.RegisteringModule.PrebidModulev4_0_26 |
+    TraceEvent.ADFUEL.RegisteringModule.PrebidModulev4_0_46 |
     TraceEvent.ADFUEL.RegisteringModule.ProximicModulev3_1_2 |
     TraceEvent.ADFUEL.RegisteringModule.ProximicModulev4_0_4 |
+    TraceEvent.ADFUEL.RegisteringModule.ProximicModulev4_0_5 |
     TraceEvent.ADFUEL.RegisteringModule.SourcepointAddon.AdBlockingv4_0_1 |
+    TraceEvent.ADFUEL.RegisteringModule.SourcepointAddon.AdBlockingv4_0_2 |
+    TraceEvent.ADFUEL.RegisteringModule.SSAIModulev4_0_12 |
     TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev3_1_1 |
     TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev4_0_1 |
+    TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev4_0_2 |
     TraceEvent.ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1 |
+    TraceEvent.ADFUEL.RegisteringModule.TurnerGUIDModulev4_0_2 |
+    TraceEvent.ADFUEL.RegisteringModule.WarnerMediaIdentityModulev4_0_2 |
+    TraceEvent.ADFUEL.RegisteringModule.WarnerMediaSegments4_0_2 |
     TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.Json |
     TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonEnd |
     TraceEvent.ADFUEL.RegistryLoadcdn.Cnn.Comadscnncnn_homepage.JsonStart |
@@ -117,10 +142,12 @@ export namespace TraceEvent {
     TraceEvent.BackendImpl.MatchEntry |
     TraceEvent.BackendImpl.OpenEntryImpl |
     TraceEvent.BackForwardCache_MaybeStorePage |
+    TraceEvent.BackForwardCacheBufferLimitTracker.DidRemoveFrameOrWorkerFromBackForwardCache |
     TraceEvent.BackgroundHTMLParser.AppendRawBytesFromMainThread |
     TraceEvent.BackgroundHTMLParser.Init |
     TraceEvent.BackgroundHTMLParser.PumpTokenizer |
     TraceEvent.BackgroundHTMLParser.SendTokensToMainThread |
+    TraceEvent.BeginFrame |
     TraceEvent.BeginImplFrameToSendBeginMainFrame |
     TraceEvent.BeginMainThreadFrame |
     TraceEvent.BeginNavigation |
@@ -279,6 +306,7 @@ export namespace TraceEvent {
     TraceEvent.CommandDispatcher.RedispatchKeyEvent |
     TraceEvent.Commit |
     TraceEvent.CommitLoad |
+    TraceEvent.CommitNavigationEnd |
     TraceEvent.CommitPendingTreesToCA |
     TraceEvent.Componentscast_channelmojo_data_pump.Cc |
     TraceEvent.CompositeLayers |
@@ -290,6 +318,8 @@ export namespace TraceEvent {
     TraceEvent.CONNECT_JOB_SET_SOCKET |
     TraceEvent.CONNECT_JOB |
     TraceEvent.ConsoleMessage.Error |
+    TraceEvent.Container_0B1564F57920B21667889FA7471D4D85_0.EmbedRequest |
+    TraceEvent.Container_0B1564F57920B21667889FA7471D4D85_0.PlayerReady |
     TraceEvent.Content_settings.Mojom.ContentSettingsManager |
     TraceEvent.Content.Mojom.AgentSchedulingGroup |
     TraceEvent.Content.Mojom.ChildHistogramFetcherFactory |
@@ -325,6 +355,7 @@ export namespace TraceEvent {
     TraceEvent.Database.Delete |
     TraceEvent.Database.ReleaseCacheMemoryIfNeeded |
     TraceEvent.DataReductionProxyCompressionStats.RecordDataUseWithMimeType |
+    TraceEvent.DecodedDataDocumentParser.AppendBytes |
     TraceEvent.DecodeFont |
     TraceEvent.DecodeImage |
     TraceEvent.DecodeLazyPixelRef |
@@ -400,9 +431,11 @@ export namespace TraceEvent {
     TraceEvent.DOMWindow.DoPostMessage |
     TraceEvent.Draw_property_utils.ComputeDrawPropertiesOfVisibleLayers |
     TraceEvent.Draw_property_utils.FindLayersThatNeedUpdates |
+    TraceEvent.DrawFrame |
     TraceEvent.DrawLayers.FrameViewerTracing |
     TraceEvent.DrawLazyPixelRef |
     TraceEvent.Drawskipped |
+    TraceEvent.DroppedFrame |
     TraceEvent.EarlyOut_DeferCommit_InsideBeginMainFrame |
     TraceEvent.EarlyOut_NoDamage |
     TraceEvent.EarlyOut_NoUpdates |
@@ -534,6 +567,7 @@ export namespace TraceEvent {
     TraceEvent.GLES2Implementation.SetAggressivelyFreeResources |
     TraceEvent.GLFence.HasCompleted |
     TraceEvent.GLImageIOSurface.BindTexImage |
+    TraceEvent.GlobalFirstContentfulPaint |
     TraceEvent.GLRenderer.BeginDrawingFrame |
     TraceEvent.GLRenderer.InitializeSharedObjects |
     TraceEvent.GLRenderer.SwapBuffers |
@@ -752,6 +786,7 @@ export namespace TraceEvent {
     TraceEvent.ImageResourceContent.UpdateImage |
     TraceEvent.ImageTransportSurfaceOverlayMac.ApplyBackpressure |
     TraceEvent.ImageTransportSurfaceOverlayMac.SwapBuffersInternal |
+    TraceEvent.ImageUploadTask |
     TraceEvent.ImageUploadTaskImpl.RunOnWorkerThread |
     TraceEvent.ImplementationBase.Initialize |
     TraceEvent.ImplementationBase.WaitForCmd |
@@ -896,12 +931,15 @@ export namespace TraceEvent {
     TraceEvent.MessagePipeReader.Send |
     TraceEvent.MessagePort.Accept |
     TraceEvent.Metrics.Mojom.CallStackProfileCollector |
+    TraceEvent.MetricsWebContentsObserver.MaybeActivatePageLoadTracker |
+    TraceEvent.MetricsWebContentsObserver.MaybeRestorePageLoadTrackerForBackForwardCache |
     TraceEvent.MinorGC |
     TraceEvent.MintTokenFlow |
     TraceEvent.Mojo.MessageReceive |
     TraceEvent.Mojo.MessageSend |
     TraceEvent.Mojopubliccppsystemdata_pipe_producer.Cc |
     TraceEvent.Mojopubliccppsystemhandle_signal_tracker.Cc |
+    TraceEvent.MojoURLLoaderClient.OnReceiveResponse |
     TraceEvent.Moredamageexpectedsoon |
     TraceEvent.MouseEventManager.HandleMouseDraggedEvent |
     TraceEvent.MouseEventManager.HandleMousePressEvent |
@@ -923,6 +961,7 @@ export namespace TraceEvent {
     TraceEvent.NavStartToExperimentalLargestContentfulPaint.Invalidate.AllFrames.UKM |
     TraceEvent.NavStartToLargestContentfulPaint.Candidate.AllFrames.UKM |
     TraceEvent.NavStartToLargestContentfulPaint.Invalidate.AllFrames.UKM |
+    TraceEvent.NeedsBeginFrameChanged |
     TraceEvent.NeedsBeginFrames |
     TraceEvent.NeedsTickAnimations |
     TraceEvent.NETWORK_DELEGATE_BEFORE_START_TRANSACTION |
@@ -1024,6 +1063,8 @@ export namespace TraceEvent {
     TraceEvent.PostCommit |
     TraceEvent.PostingToCompositor |
     TraceEvent.PreemptionAllowedStackScope |
+    TraceEvent.PreloadRenderBlockingStatusChange |
+    TraceEvent.PrePaint |
     TraceEvent.PrerenderManagerFactory.GetForProfile |
     TraceEvent.Printing.Mojom.PrintRenderFrame |
     TraceEvent.Process_labels |
@@ -1183,6 +1224,7 @@ export namespace TraceEvent {
     TraceEvent.REQUEST_ALIVE |
     TraceEvent.RequestAnimationFrame |
     TraceEvent.RequestIdleCallback |
+    TraceEvent.RequestMainThreadFrame |
     TraceEvent.RequestStart |
     TraceEvent.Resource.AppendData |
     TraceEvent.ResourceChangePriority |
@@ -1490,6 +1532,7 @@ export namespace TraceEvent {
     TraceEvent.TracingSessionIdForWorker |
     TraceEvent.TracingStartedInBrowser |
     TraceEvent.TracingStartedInPage |
+    TraceEvent.TrackerValidation |
     TraceEvent.TransferBuffer.Free |
     TraceEvent.TransfersBytesPendingOnDisk |
     TraceEvent.TransfersPendingOnDisk |
@@ -1537,11 +1580,22 @@ export namespace TraceEvent {
     TraceEvent.Usingexistingdeadline |
     TraceEvent.Usingnewdeadline |
     TraceEvent.V8_tq |
+    TraceEvent.V8.BytecodeBudgetInterrupt |
+    TraceEvent.V8.BytecodeBudgetInterruptWithStackCheck |
+    TraceEvent.V8.CallAsConstructor |
     TraceEvent.V8.CallFunction |
     TraceEvent.V8.Compile |
+    TraceEvent.V8.CompileModule |
     TraceEvent.V8.DeoptimizeCode |
+    TraceEvent.V8.DeserializeContext |
+    TraceEvent.V8.DeserializeIsolate |
+    TraceEvent.V8.EvaluateModule |
     TraceEvent.V8.GC_BACKGROUND_ARRAY_BUFFER_SWEEP |
+    TraceEvent.V8.GC_BACKGROUND_FULL_ARRAY_BUFFER_SWEEP |
+    TraceEvent.V8.GC_BACKGROUND_SAFEPOINT |
     TraceEvent.V8.GC_BACKGROUND_UNMAPPER |
+    TraceEvent.V8.GC_BACKGROUND_UNPARK |
+    TraceEvent.V8.GC_BACKGROUND_YOUNG_ARRAY_BUFFER_SWEEP |
     TraceEvent.V8.GC_HEAP_EMBEDDER_TRACING_EPILOGUE |
     TraceEvent.V8.GC_HEAP_EPILOGUE_REDUCE_NEW_SPACE |
     TraceEvent.V8.GC_HEAP_EPILOGUE_SAFEPOINT |
@@ -1551,19 +1605,25 @@ export namespace TraceEvent {
     TraceEvent.V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES |
     TraceEvent.V8.GC_HEAP_PROLOGUE_SAFEPOINT |
     TraceEvent.V8.GC_HEAP_PROLOGUE |
+    TraceEvent.V8.GC_MARK_COMPACTOR |
     TraceEvent.V8.GC_MC_BACKGROUND_EVACUATE_COPY |
     TraceEvent.V8.GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS |
     TraceEvent.V8.GC_MC_BACKGROUND_MARKING |
     TraceEvent.V8.GC_MC_BACKGROUND_SWEEPING |
+    TraceEvent.V8.GC_MC_CLEAR_EXTERNAL_STRING_TABLE |
     TraceEvent.V8.GC_MC_CLEAR_FLUSHABLE_BYTECODE |
     TraceEvent.V8.GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS |
+    TraceEvent.V8.GC_MC_CLEAR_JOIN_JOB |
     TraceEvent.V8.GC_MC_CLEAR_MAPS |
+    TraceEvent.V8.GC_MC_CLEAR_STRING_FORWARDING_TABLE |
     TraceEvent.V8.GC_MC_CLEAR_STRING_TABLE |
     TraceEvent.V8.GC_MC_CLEAR_WEAK_COLLECTIONS |
+    TraceEvent.V8.GC_MC_CLEAR_WEAK_GLOBAL_HANDLES |
     TraceEvent.V8.GC_MC_CLEAR_WEAK_LISTS |
     TraceEvent.V8.GC_MC_CLEAR_WEAK_REFERENCES |
     TraceEvent.V8.GC_MC_CLEAR |
     TraceEvent.V8.GC_MC_COMPLETE_SWEEP_ARRAY_BUFFERS |
+    TraceEvent.V8.GC_MC_COMPLETE_SWEEPING |
     TraceEvent.V8.GC_MC_EPILOGUE |
     TraceEvent.V8.GC_MC_EVACUATE_CLEAN_UP |
     TraceEvent.V8.GC_MC_EVACUATE_COPY_PARALLEL |
@@ -1571,6 +1631,7 @@ export namespace TraceEvent {
     TraceEvent.V8.GC_MC_EVACUATE_EPILOGUE |
     TraceEvent.V8.GC_MC_EVACUATE_PROLOGUE |
     TraceEvent.V8.GC_MC_EVACUATE_REBALANCE |
+    TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_CLIENT_HEAPS |
     TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_PARALLEL |
     TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAIN |
     TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_SLOTS_MAP_SPACE |
@@ -1591,10 +1652,15 @@ export namespace TraceEvent {
     TraceEvent.V8.GC_MC_INCREMENTAL_SWEEP_ARRAY_BUFFERS |
     TraceEvent.V8.GC_MC_INCREMENTAL_SWEEPING |
     TraceEvent.V8.GC_MC_INCREMENTAL |
+    TraceEvent.V8.GC_MC_MARK_CLIENT_HEAPS |
     TraceEvent.V8.GC_MC_MARK_EMBEDDER_TRACING_CLOSURE |
     TraceEvent.V8.GC_MC_MARK_EMBEDDER_TRACING |
     TraceEvent.V8.GC_MC_MARK_FINISH_INCREMENTAL |
+    TraceEvent.V8.GC_MC_MARK_FULL_CLOSURE_PARALLEL_JOIN |
+    TraceEvent.V8.GC_MC_MARK_FULL_CLOSURE_PARALLEL |
+    TraceEvent.V8.GC_MC_MARK_FULL_CLOSURE |
     TraceEvent.V8.GC_MC_MARK_MAIN |
+    TraceEvent.V8.GC_MC_MARK_RETAIN_MAPS |
     TraceEvent.V8.GC_MC_MARK_ROOTS |
     TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON_MARKING |
     TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE_EPHEMERON |
@@ -1604,6 +1670,7 @@ export namespace TraceEvent {
     TraceEvent.V8.GC_MC_MARK_WEAK_CLOSURE |
     TraceEvent.V8.GC_MC_MARK |
     TraceEvent.V8.GC_MC_PROLOGUE |
+    TraceEvent.V8.GC_MC_SWEEP_EXTERNAL_POINTER_TABLE |
     TraceEvent.V8.GC_MC_SWEEP |
     TraceEvent.V8.GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL |
     TraceEvent.V8.GC_SCAVENGER_COMPLETE_SWEEP_ARRAY_BUFFERS |
@@ -1616,7 +1683,9 @@ export namespace TraceEvent {
     TraceEvent.V8.GC_SCAVENGER_SCAVENGE_WEAK_GLOBAL_HANDLES_PROCESS |
     TraceEvent.V8.GC_SCAVENGER_SCAVENGE |
     TraceEvent.V8.GC_SCAVENGER_SWEEP_ARRAY_BUFFERS |
+    TraceEvent.V8.GC_SCAVENGER |
     TraceEvent.V8.GC_STOP_THE_WORLD |
+    TraceEvent.V8.GC_TIME_TO_SAFEPOINT |
     TraceEvent.V8.GCCompactor |
     TraceEvent.V8.GCFinalizeMC |
     TraceEvent.V8.GCFinalizeMCReduceMemory |
@@ -1629,16 +1698,21 @@ export namespace TraceEvent {
     TraceEvent.V8.GCScavenger |
     TraceEvent.V8.HandleInterrupts |
     TraceEvent.V8.InvokeApiInterruptCallbacks |
+    TraceEvent.V8.IsolateInitialize |
     TraceEvent.V8.NewContext |
     TraceEvent.V8.NewInstance |
     TraceEvent.V8.ParseOnBackground |
     TraceEvent.V8.ParseOnBackgroundParsing |
+    TraceEvent.V8.ParseOnBackgroundWaiting |
+    TraceEvent.V8.ProduceCache |
+    TraceEvent.V8.ProduceModuleCache |
     TraceEvent.V8.Run |
     TraceEvent.V8.ScriptCompiler |
     TraceEvent.V8.StackGuard |
     TraceEvent.V8.Task |
     TraceEvent.V8ConsoleMessage.Exception |
     TraceEvent.V8ContextSnapshot.InstallRuntimeEnabled |
+    TraceEvent.V8PerIsolateData.Initialize |
     TraceEvent.View.Layout |
     TraceEvent.View.Layoutbounds_changed |
     TraceEvent.View.Layoutset_bounds |
@@ -1776,7 +1850,18 @@ export namespace TraceEvent {
     TraceEvent.WebContentsImplLoading |
     TraceEvent.WebLocalFrameImpl.CreateChildframe |
     TraceEvent.WebLocalFrameImpl.CreateFrameView |
+    TraceEvent.WebResourceRequestSender.OnReceivedRedirect |
+    TraceEvent.WebResourceRequestSender.OnReceivedResponse |
+    TraceEvent.WebResourceRequestSender.OnRequestComplete |
+    TraceEvent.WebResourceRequestSender.OnStartLoadingResponseBody |
     TraceEvent.WebServiceWorkerProviderImpl.GetRegistration |
+    TraceEvent.WebURLLoader.Context.Cancel |
+    TraceEvent.WebURLLoader.Context.OnCompletedRequest |
+    TraceEvent.WebURLLoader.Context.OnReceivedRedirect |
+    TraceEvent.WebURLLoader.Context.OnReceivedResponse |
+    TraceEvent.WebURLLoader.Context.OnStartLoadingResponseBody |
+    TraceEvent.WebURLLoader.Context.Start |
+    TraceEvent.WebURLLoader.LoadAsynchronously |
     TraceEvent.WebURLLoaderImpl.Context.Cancel |
     TraceEvent.WebURLLoaderImpl.Context.OnCompletedRequest |
     TraceEvent.WebURLLoaderImpl.Context.OnReceivedRedirect |
@@ -1830,6 +1915,9 @@ export namespace TraceEvent {
     TraceEvent.A.F |
     TraceEvent.A.S;
 
+  type ActivateLayerTree = 
+    TraceEvent.ActivateLayerTree.I;
+
   type Activation = 
     TraceEvent.Activation.b |
     TraceEvent.Activation.e;
@@ -1852,6 +1940,9 @@ export namespace TraceEvent {
 
   type BackForwardCache_MaybeStorePage = 
     TraceEvent.BackForwardCache_MaybeStorePage.X;
+
+  type BeginFrame = 
+    TraceEvent.BeginFrame.I;
 
   type BeginImplFrameToSendBeginMainFrame = 
     TraceEvent.BeginImplFrameToSendBeginMainFrame.b |
@@ -1940,12 +2031,16 @@ export namespace TraceEvent {
   type CommitLoad = 
     TraceEvent.CommitLoad.X;
 
+  type CommitNavigationEnd = 
+    TraceEvent.CommitNavigationEnd.R;
+
   type CommitPendingTreesToCA = 
     TraceEvent.CommitPendingTreesToCA.X;
 
   type CompositeLayers = 
     TraceEvent.CompositeLayers.B |
-    TraceEvent.CompositeLayers.E;
+    TraceEvent.CompositeLayers.E |
+    TraceEvent.CompositeLayers.X;
 
   type Compositor_tq = 
     TraceEvent.Compositor_tq.X;
@@ -2050,11 +2145,17 @@ export namespace TraceEvent {
     TraceEvent.DomTime.b |
     TraceEvent.DomTime.e;
 
+  type DrawFrame = 
+    TraceEvent.DrawFrame.I;
+
   type DrawLazyPixelRef = 
     TraceEvent.DrawLazyPixelRef.I;
 
   type Drawskipped = 
     TraceEvent.Drawskipped.I;
+
+  type DroppedFrame = 
+    TraceEvent.DroppedFrame.I;
 
   type EarlyOut_DeferCommit_InsideBeginMainFrame = 
     TraceEvent.EarlyOut_DeferCommit_InsideBeginMainFrame.I;
@@ -2296,6 +2397,9 @@ export namespace TraceEvent {
   type GetAccessToken = 
     TraceEvent.GetAccessToken.b |
     TraceEvent.GetAccessToken.e;
+
+  type GlobalFirstContentfulPaint = 
+    TraceEvent.GlobalFirstContentfulPaint.I;
 
   type GlResizeChromium = 
     TraceEvent.GlResizeChromium.X;
@@ -2665,7 +2769,11 @@ export namespace TraceEvent {
 
   type ImageDecodeTask = 
     TraceEvent.ImageDecodeTask.B |
-    TraceEvent.ImageDecodeTask.E;
+    TraceEvent.ImageDecodeTask.E |
+    TraceEvent.ImageDecodeTask.X;
+
+  type ImageUploadTask = 
+    TraceEvent.ImageUploadTask.X;
 
   type InitializeMojoIPCChannel = 
     TraceEvent.InitializeMojoIPCChannel.X;
@@ -2850,6 +2958,9 @@ export namespace TraceEvent {
   type NavigationTimingnavigationStart = 
     TraceEvent.NavigationTimingnavigationStart.I;
 
+  type NeedsBeginFrameChanged = 
+    TraceEvent.NeedsBeginFrameChanged.I;
+
   type NeedsBeginFrames = 
     TraceEvent.NeedsBeginFrames.F |
     TraceEvent.NeedsBeginFrames.S;
@@ -2982,6 +3093,7 @@ export namespace TraceEvent {
     TraceEvent.PageMsg_SetHistoryOffsetAndLength.X;
 
   type Paint = 
+    TraceEvent.Paint.I |
     TraceEvent.Paint.X;
 
   type PaintImage = 
@@ -3020,6 +3132,12 @@ export namespace TraceEvent {
   type PreemptionAllowedStackScope = 
     TraceEvent.PreemptionAllowedStackScope.b |
     TraceEvent.PreemptionAllowedStackScope.e;
+
+  type PreloadRenderBlockingStatusChange = 
+    TraceEvent.PreloadRenderBlockingStatusChange.I;
+
+  type PrePaint = 
+    TraceEvent.PrePaint.X;
 
   type Process_labels = 
     TraceEvent.Process_labels.M;
@@ -3203,6 +3321,9 @@ export namespace TraceEvent {
   type RequestIdleCallback = 
     TraceEvent.RequestIdleCallback.I;
 
+  type RequestMainThreadFrame = 
+    TraceEvent.RequestMainThreadFrame.I;
+
   type RequestStart = 
     TraceEvent.RequestStart.R;
 
@@ -3266,6 +3387,8 @@ export namespace TraceEvent {
     TraceEvent.RunRequest.n;
 
   type RunTask = 
+    TraceEvent.RunTask.B |
+    TraceEvent.RunTask.I |
     TraceEvent.RunTask.X;
 
   type RunVeryHighPriorityTask = 
@@ -3503,6 +3626,8 @@ export namespace TraceEvent {
     TraceEvent.Subthread_default_tq.X;
 
   type Swap = 
+    TraceEvent.Swap.b |
+    TraceEvent.Swap.e |
     TraceEvent.Swap.n;
 
   type SwapBuffers = 
@@ -3612,6 +3737,10 @@ export namespace TraceEvent {
   type TracingStartedInPage = 
     TraceEvent.TracingStartedInPage.I;
 
+  type TrackerValidation = 
+    TraceEvent.TrackerValidation.b |
+    TraceEvent.TrackerValidation.e;
+
   type TransfersBytesPendingOnDisk = 
     TraceEvent.TransfersBytesPendingOnDisk.C;
 
@@ -3668,7 +3797,9 @@ export namespace TraceEvent {
 
   type UpdateLayer = 
     TraceEvent.UpdateLayer.B |
-    TraceEvent.UpdateLayer.E;
+    TraceEvent.UpdateLayer.E |
+    TraceEvent.UpdateLayer.I |
+    TraceEvent.UpdateLayer.X;
 
   type UpdateLayerTree = 
     TraceEvent.UpdateLayerTree.X;
@@ -3832,6 +3963,21 @@ export namespace TraceEvent {
       name: 'a';
       // Denotes the beginning of the async event A.
       ph: 'S';
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  }
+
+  namespace ActivateLayerTree {
+    interface I extends TraceEvent.Base {
+      args: {
+        frameId: number;
+        layerTreeId: number;
+      };
+      name: 'ActivateLayerTree';
+      // Denotes an event ActivateLayerTree. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -4014,6 +4160,9 @@ export namespace TraceEvent {
     type BuildingSlotad_rect_btf_02Start = 
       TraceEvent.ADFUEL.BuildingSlotad_rect_btf_02Start.R;
   
+    type DelayingQueueDispatch = 
+      TraceEvent.ADFUEL.DelayingQueueDispatch.R;
+  
     type DispatchQueue = 
       TraceEvent.ADFUEL.DispatchQueue.b |
       TraceEvent.ADFUEL.DispatchQueue.e;
@@ -4041,6 +4190,16 @@ export namespace TraceEvent {
       TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb.b |
       TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb.e;
   
+    type QueueRegistrycnn_homepage_rb4326300473 = 
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473.b |
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473.e;
+  
+    type QueueRegistrycnn_homepage_rb4326300473End = 
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473End.R;
+  
+    type QueueRegistrycnn_homepage_rb4326300473Start = 
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rb4326300473Start.R;
+  
     type QueueRegistrycnn_homepage_rbEnd = 
       TraceEvent.ADFUEL.QueueRegistrycnn_homepage_rbEnd.R;
   
@@ -4050,6 +4209,16 @@ export namespace TraceEvent {
     type QueueRegistrycnn_homepage = 
       TraceEvent.ADFUEL.QueueRegistrycnn_homepage.b |
       TraceEvent.ADFUEL.QueueRegistrycnn_homepage.e;
+  
+    type QueueRegistrycnn_homepage6643718020 = 
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020.b |
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020.e;
+  
+    type QueueRegistrycnn_homepage6643718020End = 
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020End.R;
+  
+    type QueueRegistrycnn_homepage6643718020Start = 
+      TraceEvent.ADFUEL.QueueRegistrycnn_homepage6643718020Start.R;
   
     type QueueRegistrycnn_homepage8364052550Start = 
       TraceEvent.ADFUEL.QueueRegistrycnn_homepage8364052550Start.R;
@@ -4087,11 +4256,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] AdFuel DOMContentLoaded';
         // Denotes a mark of the event AdFuelDOMContentLoaded.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4102,11 +4273,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] AdFuel Initialized';
         // Denotes a mark of the event AdFuelInitialized.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4117,11 +4290,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] AdFuel Request Complete';
         // Denotes a mark of the event AdFuelRequestComplete.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4136,11 +4311,13 @@ export namespace TraceEvent {
           args: {
             data: {
               navigationId: string;
+              startTime?: number;
             };
           };
           name: '[ADFUEL] AdFuel window.load';
           // Denotes a mark of the event Load.
           ph: 'R';
+          s?: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -4152,11 +4329,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Ad Rendered [ad_bnr_atf_01]';
         // Denotes a mark of the event AdRenderedad_bnr_atf_01.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4227,11 +4406,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Applying Page-Level Targeting';
         // Denotes a mark of the event ApplyingPageLevelTargeting.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4242,11 +4423,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Applying Window Site-Level Options.';
         // Denotes a mark of the event ApplyingWindowSiteLevelOptions.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4255,7 +4438,7 @@ export namespace TraceEvent {
     namespace BuildingSlotad_bnr_atf_01 {
       interface b extends TraceEvent.Base {
         args: {
-        
+          startTime?: number;
         };
         id: string;
         name: '[ADFUEL] Building Slot [ad_bnr_atf_01]';
@@ -4285,11 +4468,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Building Slot [ad_bnr_atf_01] End';
         // Denotes a mark of the event BuildingSlotad_bnr_atf_01End.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4300,11 +4485,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Building Slot [ad_bnr_atf_01] Start';
         // Denotes a mark of the event BuildingSlotad_bnr_atf_01Start.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4429,14 +4616,15 @@ export namespace TraceEvent {
     namespace BuildingSlotad_mod_35731bb1e {
       interface b extends TraceEvent.Base {
         args: {
-        
+          startTime?: number;
         };
         id: string;
         name: '[ADFUEL] Building Slot [ad_mod_35731bb1e]';
         // Denotes the beginning of the nestable async flow event BuildingSlotad_mod_35731bb1e.
         ph: 'b';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     
       interface e extends TraceEvent.Base {
@@ -4447,8 +4635,9 @@ export namespace TraceEvent {
         name: '[ADFUEL] Building Slot [ad_mod_35731bb1e]';
         // Denotes a step into the nestable async flow event BuildingSlotad_mod_35731bb1e.
         ph: 'e';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     }
   
@@ -4457,11 +4646,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Building Slot [ad_mod_35731bb1e] End';
         // Denotes a mark of the event BuildingSlotad_mod_35731bb1eEnd.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4472,11 +4663,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Building Slot [ad_mod_35731bb1e] Start';
         // Denotes a mark of the event BuildingSlotad_mod_35731bb1eStart.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4762,17 +4955,35 @@ export namespace TraceEvent {
       }
     }
   
+    namespace DelayingQueueDispatch {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: '[ADFUEL] Delaying Queue Dispatch';
+        // Denotes a mark of the event DelayingQueueDispatch.
+        ph: 'R';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace DispatchQueue {
       interface b extends TraceEvent.Base {
         args: {
-        
+          startTime?: number;
         };
         id: string;
         name: '[ADFUEL] Dispatch Queue';
         // Denotes the beginning of the nestable async flow event DispatchQueue.
         ph: 'b';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     
       interface e extends TraceEvent.Base {
@@ -4783,8 +4994,9 @@ export namespace TraceEvent {
         name: '[ADFUEL] Dispatch Queue';
         // Denotes a step into the nestable async flow event DispatchQueue.
         ph: 'e';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     }
   
@@ -4793,11 +5005,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Dispatch Queue End';
         // Denotes a mark of the event DispatchQueueEnd.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4808,11 +5022,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Dispatch Queue Start';
         // Denotes a mark of the event DispatchQueueStart.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4836,14 +5052,15 @@ export namespace TraceEvent {
     namespace PageLevelGPTBuild {
       interface b extends TraceEvent.Base {
         args: {
-        
+          startTime?: number;
         };
         id: string;
         name: '[ADFUEL] Page-Level GPT Build';
         // Denotes the beginning of the nestable async flow event PageLevelGPTBuild.
         ph: 'b';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     
       interface e extends TraceEvent.Base {
@@ -4854,8 +5071,9 @@ export namespace TraceEvent {
         name: '[ADFUEL] Page-Level GPT Build';
         // Denotes a step into the nestable async flow event PageLevelGPTBuild.
         ph: 'e';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     }
   
@@ -4864,11 +5082,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Page-Level GPT Build End';
         // Denotes a mark of the event PageLevelGPTBuildEnd.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4879,11 +5099,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Page-Level GPT Build Start';
         // Denotes a mark of the event PageLevelGPTBuildStart.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4910,6 +5132,64 @@ export namespace TraceEvent {
         name: '[ADFUEL] Queue Registry [cnn_homepage_rb]';
         // Denotes a step into the nestable async flow event QueueRegistrycnn_homepage_rb.
         ph: 'e';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage_rb4326300473 {
+      interface b extends TraceEvent.Base {
+        args: {
+          startTime: number;
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb - 4326300473]';
+        // Denotes the beginning of the nestable async flow event QueueRegistrycnn_homepage_rb4326300473.
+        ph: 'b';
+        scope: string;
+      }
+    
+      interface e extends TraceEvent.Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb - 4326300473]';
+        // Denotes a step into the nestable async flow event QueueRegistrycnn_homepage_rb4326300473.
+        ph: 'e';
+        scope: string;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage_rb4326300473End {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb - 4326300473] End';
+        // Denotes a mark of the event QueueRegistrycnn_homepage_rb4326300473End.
+        ph: 'R';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage_rb4326300473Start {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage_rb - 4326300473] Start';
+        // Denotes a mark of the event QueueRegistrycnn_homepage_rb4326300473Start.
+        ph: 'R';
+        s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -4971,6 +5251,64 @@ export namespace TraceEvent {
       }
     }
   
+    namespace QueueRegistrycnn_homepage6643718020 {
+      interface b extends TraceEvent.Base {
+        args: {
+          startTime: number;
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage - 6643718020]';
+        // Denotes the beginning of the nestable async flow event QueueRegistrycnn_homepage6643718020.
+        ph: 'b';
+        scope: string;
+      }
+    
+      interface e extends TraceEvent.Base {
+        args: {
+        
+        };
+        id: string;
+        name: '[ADFUEL] Queue Registry [cnn_homepage - 6643718020]';
+        // Denotes a step into the nestable async flow event QueueRegistrycnn_homepage6643718020.
+        ph: 'e';
+        scope: string;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage6643718020End {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage - 6643718020] End';
+        // Denotes a mark of the event QueueRegistrycnn_homepage6643718020End.
+        ph: 'R';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace QueueRegistrycnn_homepage6643718020Start {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: '[ADFUEL] Queue Registry [cnn_homepage - 6643718020] Start';
+        // Denotes a mark of the event QueueRegistrycnn_homepage6643718020Start.
+        ph: 'R';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace QueueRegistrycnn_homepage8364052550Start {
       interface R extends TraceEvent.Base {
         args: {
@@ -5017,20 +5355,32 @@ export namespace TraceEvent {
     }
   
     namespace RegisteringModule {
+      type Admiralv1_0_1 = 
+        TraceEvent.ADFUEL.RegisteringModule.Admiralv1_0_1.R;
+    
       type AmazonA9Modulev3_2_5 = 
         TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev3_2_5.R;
     
       type AmazonA9Modulev4_0_18 = 
         TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev4_0_18.R;
     
+      type AmazonA9Modulev4_0_23 = 
+        TraceEvent.ADFUEL.RegisteringModule.AmazonA9Modulev4_0_23.R;
+    
       type BlockthroughModulev4_0_1 = 
         TraceEvent.ADFUEL.RegisteringModule.BlockthroughModulev4_0_1.R;
+    
+      type BlockthroughModulev4_0_2 = 
+        TraceEvent.ADFUEL.RegisteringModule.BlockthroughModulev4_0_2.R;
     
       type CEPModulev3_0_2 = 
         TraceEvent.ADFUEL.RegisteringModule.CEPModulev3_0_2.R;
     
       type CEPModulev4_0_3 = 
         TraceEvent.ADFUEL.RegisteringModule.CEPModulev4_0_3.R;
+    
+      type CEPModulev4_0_4 = 
+        TraceEvent.ADFUEL.RegisteringModule.CEPModulev4_0_4.R;
     
       type CreativeReviewModulev3_0_5 = 
         TraceEvent.ADFUEL.RegisteringModule.CreativeReviewModulev3_0_5.R;
@@ -5041,6 +5391,9 @@ export namespace TraceEvent {
       type CriteoModulev3_2_2 = 
         TraceEvent.ADFUEL.RegisteringModule.CriteoModulev3_2_2.R;
     
+      type FreewheelProgrammatic1_0_2 = 
+        TraceEvent.ADFUEL.RegisteringModule.FreewheelProgrammatic1_0_2.R;
+    
       type IndexExchangeIdentity1_1_1 = 
         TraceEvent.ADFUEL.RegisteringModule.IndexExchangeIdentity1_1_1.R;
     
@@ -5050,11 +5403,17 @@ export namespace TraceEvent {
       type IntegralAdScienceModulev4_0_4 = 
         TraceEvent.ADFUEL.RegisteringModule.IntegralAdScienceModulev4_0_4.R;
     
+      type IntegralAdScienceModulev4_0_6 = 
+        TraceEvent.ADFUEL.RegisteringModule.IntegralAdScienceModulev4_0_6.R;
+    
       type InViewRefreshv3_0_5 = 
         TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv3_0_5.R;
     
       type InViewRefreshv4_0_2 = 
         TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv4_0_2.R;
+    
+      type InViewRefreshv4_0_6 = 
+        TraceEvent.ADFUEL.RegisteringModule.InViewRefreshv4_0_6.R;
     
       type KruxModulev3_1_1 = 
         TraceEvent.ADFUEL.RegisteringModule.KruxModulev3_1_1.R;
@@ -5062,8 +5421,14 @@ export namespace TraceEvent {
       type KruxModulev4_1_2 = 
         TraceEvent.ADFUEL.RegisteringModule.KruxModulev4_1_2.R;
     
+      type KruxModulev4_1_5 = 
+        TraceEvent.ADFUEL.RegisteringModule.KruxModulev4_1_5.R;
+    
       type MalvertisingDetectionv4_0_5 = 
         TraceEvent.ADFUEL.RegisteringModule.MalvertisingDetectionv4_0_5.R;
+    
+      type MalvertisingDetectionv4_0_6 = 
+        TraceEvent.ADFUEL.RegisteringModule.MalvertisingDetectionv4_0_6.R;
     
       type PrebidModulev3_3_0 = 
         TraceEvent.ADFUEL.RegisteringModule.PrebidModulev3_3_0.R;
@@ -5071,11 +5436,20 @@ export namespace TraceEvent {
       type PrebidModulev4_0_26 = 
         TraceEvent.ADFUEL.RegisteringModule.PrebidModulev4_0_26.R;
     
+      type PrebidModulev4_0_46 = 
+        TraceEvent.ADFUEL.RegisteringModule.PrebidModulev4_0_46.R;
+    
       type ProximicModulev3_1_2 = 
         TraceEvent.ADFUEL.RegisteringModule.ProximicModulev3_1_2.R;
     
       type ProximicModulev4_0_4 = 
         TraceEvent.ADFUEL.RegisteringModule.ProximicModulev4_0_4.R;
+    
+      type ProximicModulev4_0_5 = 
+        TraceEvent.ADFUEL.RegisteringModule.ProximicModulev4_0_5.R;
+    
+      type SSAIModulev4_0_12 = 
+        TraceEvent.ADFUEL.RegisteringModule.SSAIModulev4_0_12.R;
     
       type TransactionIDModulev3_1_1 = 
         TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev3_1_1.R;
@@ -5083,8 +5457,37 @@ export namespace TraceEvent {
       type TransactionIDModulev4_0_1 = 
         TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev4_0_1.R;
     
+      type TransactionIDModulev4_0_2 = 
+        TraceEvent.ADFUEL.RegisteringModule.TransactionIDModulev4_0_2.R;
+    
       type TurnerGUIDModulev3_1_1 = 
         TraceEvent.ADFUEL.RegisteringModule.TurnerGUIDModulev3_1_1.R;
+    
+      type TurnerGUIDModulev4_0_2 = 
+        TraceEvent.ADFUEL.RegisteringModule.TurnerGUIDModulev4_0_2.R;
+    
+      type WarnerMediaIdentityModulev4_0_2 = 
+        TraceEvent.ADFUEL.RegisteringModule.WarnerMediaIdentityModulev4_0_2.R;
+    
+      type WarnerMediaSegments4_0_2 = 
+        TraceEvent.ADFUEL.RegisteringModule.WarnerMediaSegments4_0_2.R;
+    
+      namespace Admiralv1_0_1 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Admiral v1.0.1';
+          // Denotes a mark of the event Admiralv1_0_1.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
     
       namespace AmazonA9Modulev3_2_5 {
         interface R extends TraceEvent.Base {
@@ -5116,6 +5519,23 @@ export namespace TraceEvent {
         }
       }
     
+      namespace AmazonA9Modulev4_0_23 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Amazon A9 Module v4.0.23';
+          // Denotes a mark of the event AmazonA9Modulev4_0_23.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace BlockthroughModulev4_0_1 {
         interface R extends TraceEvent.Base {
           args: {
@@ -5126,6 +5546,23 @@ export namespace TraceEvent {
           name: '[ADFUEL] Registering Module: Blockthrough Module v4.0.1';
           // Denotes a mark of the event BlockthroughModulev4_0_1.
           ph: 'R';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace BlockthroughModulev4_0_2 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Blockthrough Module v4.0.2';
+          // Denotes a mark of the event BlockthroughModulev4_0_2.
+          ph: 'R';
+          s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -5156,6 +5593,23 @@ export namespace TraceEvent {
           name: '[ADFUEL] Registering Module: CEP Module v4.0.3';
           // Denotes a mark of the event CEPModulev4_0_3.
           ph: 'R';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace CEPModulev4_0_4 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: CEP Module v4.0.4';
+          // Denotes a mark of the event CEPModulev4_0_4.
+          ph: 'R';
+          s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -5206,16 +5660,35 @@ export namespace TraceEvent {
         }
       }
     
+      namespace FreewheelProgrammatic1_0_2 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Freewheel Programmatic 1.0.2';
+          // Denotes a mark of the event FreewheelProgrammatic1_0_2.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace IndexExchangeIdentity1_1_1 {
         interface R extends TraceEvent.Base {
           args: {
             data: {
               navigationId: string;
+              startTime?: number;
             };
           };
           name: '[ADFUEL] Registering Module: Index Exchange Identity 1.1.1';
           // Denotes a mark of the event IndexExchangeIdentity1_1_1.
           ph: 'R';
+          s?: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -5251,6 +5724,23 @@ export namespace TraceEvent {
         }
       }
     
+      namespace IntegralAdScienceModulev4_0_6 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Integral Ad Science Module v4.0.6';
+          // Denotes a mark of the event IntegralAdScienceModulev4_0_6.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace InViewRefreshv3_0_5 {
         interface R extends TraceEvent.Base {
           args: {
@@ -5276,6 +5766,23 @@ export namespace TraceEvent {
           name: '[ADFUEL] Registering Module: In View Refresh v4.0.2';
           // Denotes a mark of the event InViewRefreshv4_0_2.
           ph: 'R';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace InViewRefreshv4_0_6 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: In View Refresh v4.0.6';
+          // Denotes a mark of the event InViewRefreshv4_0_6.
+          ph: 'R';
+          s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -5311,6 +5818,23 @@ export namespace TraceEvent {
         }
       }
     
+      namespace KruxModulev4_1_5 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Krux Module v4.1.5';
+          // Denotes a mark of the event KruxModulev4_1_5.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace MalvertisingDetectionv4_0_5 {
         interface R extends TraceEvent.Base {
           args: {
@@ -5321,6 +5845,23 @@ export namespace TraceEvent {
           name: '[ADFUEL] Registering Module: Malvertising Detection v4.0.5';
           // Denotes a mark of the event MalvertisingDetectionv4_0_5.
           ph: 'R';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace MalvertisingDetectionv4_0_6 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Malvertising Detection v4.0.6';
+          // Denotes a mark of the event MalvertisingDetectionv4_0_6.
+          ph: 'R';
+          s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -5356,6 +5897,23 @@ export namespace TraceEvent {
         }
       }
     
+      namespace PrebidModulev4_0_46 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Prebid Module v4.0.46';
+          // Denotes a mark of the event PrebidModulev4_0_46.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace ProximicModulev3_1_2 {
         interface R extends TraceEvent.Base {
           args: {
@@ -5386,9 +5944,29 @@ export namespace TraceEvent {
         }
       }
     
+      namespace ProximicModulev4_0_5 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Proximic Module v4.0.5';
+          // Denotes a mark of the event ProximicModulev4_0_5.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace SourcepointAddon {
         type AdBlockingv4_0_1 = 
           TraceEvent.ADFUEL.RegisteringModule.SourcepointAddon.AdBlockingv4_0_1.R;
+      
+        type AdBlockingv4_0_2 = 
+          TraceEvent.ADFUEL.RegisteringModule.SourcepointAddon.AdBlockingv4_0_2.R;
       
         namespace AdBlockingv4_0_1 {
           interface R extends TraceEvent.Base {
@@ -5403,6 +5981,40 @@ export namespace TraceEvent {
             // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
             tts: number;
           }
+        }
+      
+        namespace AdBlockingv4_0_2 {
+          interface R extends TraceEvent.Base {
+            args: {
+              data: {
+                navigationId: string;
+                startTime: number;
+              };
+            };
+            name: '[ADFUEL] Registering Module: Sourcepoint Add-on: Ad Blocking v4.0.2';
+            // Denotes a mark of the event AdBlockingv4_0_2.
+            ph: 'R';
+            s: string;
+            // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+            tts: number;
+          }
+        }
+      }
+    
+      namespace SSAIModulev4_0_12 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: SSAI Module v4.0.12';
+          // Denotes a mark of the event SSAIModulev4_0_12.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
         }
       }
     
@@ -5436,6 +6048,23 @@ export namespace TraceEvent {
         }
       }
     
+      namespace TransactionIDModulev4_0_2 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Transaction ID Module v4.0.2';
+          // Denotes a mark of the event TransactionIDModulev4_0_2.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
       namespace TurnerGUIDModulev3_1_1 {
         interface R extends TraceEvent.Base {
           args: {
@@ -5446,6 +6075,57 @@ export namespace TraceEvent {
           name: '[ADFUEL] Registering Module: Turner GUID Module v3.1.1';
           // Denotes a mark of the event TurnerGUIDModulev3_1_1.
           ph: 'R';
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace TurnerGUIDModulev4_0_2 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: Turner GUID Module v4.0.2';
+          // Denotes a mark of the event TurnerGUIDModulev4_0_2.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace WarnerMediaIdentityModulev4_0_2 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: WarnerMedia Identity Module v4.0.2';
+          // Denotes a mark of the event WarnerMediaIdentityModulev4_0_2.
+          ph: 'R';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace WarnerMediaSegments4_0_2 {
+        interface R extends TraceEvent.Base {
+          args: {
+            data: {
+              navigationId: string;
+              startTime: number;
+            };
+          };
+          name: '[ADFUEL] Registering Module: WarnerMedia Segments 4.0.2';
+          // Denotes a mark of the event WarnerMediaSegments4_0_2.
+          ph: 'R';
+          s: string;
           // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
           tts: number;
         }
@@ -5468,7 +6148,7 @@ export namespace TraceEvent {
           namespace Json {
             interface b extends TraceEvent.Base {
               args: {
-              
+                startTime?: number;
               };
               id: string;
               name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json]';
@@ -5498,11 +6178,13 @@ export namespace TraceEvent {
               args: {
                 data: {
                   navigationId: string;
+                  startTime?: number;
                 };
               };
               name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json] End';
               // Denotes a mark of the event JsonEnd.
               ph: 'R';
+              s?: string;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
               tts: number;
             }
@@ -5513,11 +6195,13 @@ export namespace TraceEvent {
               args: {
                 data: {
                   navigationId: string;
+                  startTime?: number;
                 };
               };
               name: '[ADFUEL] Registry Load [//cdn.cnn.com/ads/cnn/cnn_homepage.json] Start';
               // Denotes a mark of the event JsonStart.
               ph: 'R';
+              s?: string;
               // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
               tts: number;
             }
@@ -5529,14 +6213,15 @@ export namespace TraceEvent {
     namespace SendingRequest {
       interface b extends TraceEvent.Base {
         args: {
-        
+          startTime?: number;
         };
         id: string;
         name: '[ADFUEL] Sending Request';
         // Denotes the beginning of the nestable async flow event SendingRequest.
         ph: 'b';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     
       interface e extends TraceEvent.Base {
@@ -5547,8 +6232,9 @@ export namespace TraceEvent {
         name: '[ADFUEL] Sending Request';
         // Denotes a step into the nestable async flow event SendingRequest.
         ph: 'e';
+        scope?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-        tts: number;
+        tts?: number;
       }
     }
   
@@ -5557,11 +6243,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Sending Request End';
         // Denotes a mark of the event SendingRequestEnd.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -5572,11 +6260,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: '[ADFUEL] Sending Request Start';
         // Denotes a mark of the event SendingRequestStart.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -6029,6 +6719,28 @@ export namespace TraceEvent {
     }
   }
 
+  namespace BackForwardCacheBufferLimitTracker {
+    type DidRemoveFrameOrWorkerFromBackForwardCache = 
+      TraceEvent.BackForwardCacheBufferLimitTracker.DidRemoveFrameOrWorkerFromBackForwardCache.X;
+  
+    namespace DidRemoveFrameOrWorkerFromBackForwardCache {
+      interface X extends TraceEvent.Base {
+        args: {
+          substracted_bytes: number;
+          total_bytes_buffered: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'BackForwardCacheBufferLimitTracker::DidRemoveFrameOrWorkerFromBackForwardCache';
+        // Denotes the end of the event DidRemoveFrameOrWorkerFromBackForwardCache.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
   namespace BackgroundHTMLParser {
     type AppendRawBytesFromMainThread = 
       TraceEvent.BackgroundHTMLParser.AppendRawBytesFromMainThread.X;
@@ -6127,6 +6839,19 @@ export namespace TraceEvent {
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
+    }
+  }
+
+  namespace BeginFrame {
+    interface I extends TraceEvent.Base {
+      args: {
+        frameSeqId: number;
+        layerTreeId: number;
+      };
+      name: 'BeginFrame';
+      // Denotes an event BeginFrame. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
     }
   }
 
@@ -41643,6 +42368,7 @@ export namespace TraceEvent {
         data: {
           frame: string;
           isMainFrame: boolean;
+          isOutermostMainFrame?: boolean;
           name?: string;
           nodeId?: number;
           page: string;
@@ -41658,6 +42384,18 @@ export namespace TraceEvent {
       tdur: number;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
+    }
+  }
+
+  namespace CommitNavigationEnd {
+    interface R extends TraceEvent.Base {
+      args: {
+        frame: string;
+      };
+      name: 'commitNavigationEnd';
+      // Denotes a mark of the event CommitNavigationEnd.
+      ph: 'R';
+      s: string;
     }
   }
 
@@ -41717,6 +42455,21 @@ export namespace TraceEvent {
       name: 'CompositeLayers';
       // Denotes the ending of the event CompositeLayers.
       ph: 'E';
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  
+    interface X extends TraceEvent.Base {
+      args: {
+        frameSeqId: number;
+        layerTreeId: number;
+      };
+      // Duration.
+      dur: number;
+      name: 'CompositeLayers';
+      // Denotes the end of the event CompositeLayers.
+      ph: 'X';
+      tdur: number;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -41875,6 +42628,48 @@ export namespace TraceEvent {
         name: 'ConsoleMessage::Error';
         // Denotes an event Error. There are no begining/ending phases.
         ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
+  namespace Container_0B1564F57920B21667889FA7471D4D85_0 {
+    type EmbedRequest = 
+      TraceEvent.Container_0B1564F57920B21667889FA7471D4D85_0.EmbedRequest.R;
+  
+    type PlayerReady = 
+      TraceEvent.Container_0B1564F57920B21667889FA7471D4D85_0.PlayerReady.R;
+  
+    namespace EmbedRequest {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: 'container_0B1564F5-7920-B216-6788-9FA7471D4D85_0::embedRequest';
+        // Denotes a mark of the event EmbedRequest.
+        ph: 'R';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace PlayerReady {
+      interface R extends TraceEvent.Base {
+        args: {
+          data: {
+            navigationId: string;
+            startTime: number;
+          };
+        };
+        name: 'container_0B1564F5-7920-B216-6788-9FA7471D4D85_0::playerReady';
+        // Denotes a mark of the event PlayerReady.
+        ph: 'R';
         s: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
@@ -42263,6 +43058,7 @@ export namespace TraceEvent {
     interface X extends TraceEvent.Base {
       args: {
         IsMainFrame: boolean;
+        IsOutermostMainFrame?: boolean;
       };
       // Duration.
       dur: number;
@@ -42548,6 +43344,27 @@ export namespace TraceEvent {
         dur: number;
         name: 'DataReductionProxyCompressionStats::RecordDataUseWithMimeType';
         // Denotes the end of the event RecordDataUseWithMimeType.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
+  namespace DecodedDataDocumentParser {
+    type AppendBytes = 
+      TraceEvent.DecodedDataDocumentParser.AppendBytes.X;
+  
+    namespace AppendBytes {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'DecodedDataDocumentParser::AppendBytes';
+        // Denotes the end of the event AppendBytes.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -43918,6 +44735,7 @@ export namespace TraceEvent {
       name: 'domComplete';
       // Denotes a mark of the event DomComplete.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -43953,6 +44771,7 @@ export namespace TraceEvent {
       name: 'domContentLoadedEventEnd';
       // Denotes a mark of the event DomContentLoadedEventEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -43966,6 +44785,7 @@ export namespace TraceEvent {
       name: 'domContentLoadedEventStart';
       // Denotes a mark of the event DomContentLoadedEventStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -43979,6 +44799,7 @@ export namespace TraceEvent {
       name: 'domInteractive';
       // Denotes a mark of the event DomInteractive.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -43992,6 +44813,7 @@ export namespace TraceEvent {
       name: 'domLoading';
       // Denotes a mark of the event DomLoading.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -44002,11 +44824,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'domReady';
       // Denotes a mark of the event DomReady.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -44015,7 +44839,7 @@ export namespace TraceEvent {
   namespace DomTime {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'domTime';
@@ -44101,6 +44925,21 @@ export namespace TraceEvent {
     }
   }
 
+  namespace DrawFrame {
+    interface I extends TraceEvent.Base {
+      args: {
+        frameSeqId: number;
+        layerTreeId: number;
+      };
+      name: 'DrawFrame';
+      // Denotes an event DrawFrame. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  }
+
   namespace DrawLayers {
     type FrameViewerTracing = 
       TraceEvent.DrawLayers.FrameViewerTracing.X;
@@ -44147,6 +44986,20 @@ export namespace TraceEvent {
       s: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
+    }
+  }
+
+  namespace DroppedFrame {
+    interface I extends TraceEvent.Base {
+      args: {
+        frameSeqId: number;
+        hasPartialUpdate: boolean;
+        layerTreeId: number;
+      };
+      name: 'DroppedFrame';
+      // Denotes an event DroppedFrame. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
     }
   }
 
@@ -45084,11 +45937,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'faveReady_mark';
       // Denotes a mark of the event FaveReady_mark.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -45097,14 +45952,15 @@ export namespace TraceEvent {
   namespace FaveReady {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'faveReady';
       // Denotes the beginning of the nestable async flow event FaveReady.
       ph: 'b';
+      scope?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   
     interface e extends TraceEvent.Base {
@@ -45115,8 +45971,9 @@ export namespace TraceEvent {
       name: 'faveReady';
       // Denotes a step into the nestable async flow event FaveReady.
       ph: 'e';
+      scope?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -45267,6 +46124,7 @@ export namespace TraceEvent {
       name: 'fetchStart';
       // Denotes a mark of the event FetchStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -45355,6 +46213,7 @@ export namespace TraceEvent {
       name: 'firstContentfulPaint';
       // Denotes a mark of the event FirstContentfulPaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -45371,6 +46230,7 @@ export namespace TraceEvent {
       name: 'firstImagePaint';
       // Denotes a mark of the event FirstImagePaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -45442,6 +46302,7 @@ export namespace TraceEvent {
       name: 'firstMeaningfulPaint';
       // Denotes a mark of the event FirstMeaningfulPaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -45458,6 +46319,7 @@ export namespace TraceEvent {
       name: 'firstMeaningfulPaintCandidate';
       // Denotes a mark of the event FirstMeaningfulPaintCandidate.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -45486,6 +46348,7 @@ export namespace TraceEvent {
       name: 'firstPaint';
       // Denotes a mark of the event FirstPaint.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -45592,11 +46455,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'footerEnd';
       // Denotes a mark of the event FooterEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -45607,11 +46472,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'footerStart';
       // Denotes a mark of the event FooterStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -45620,7 +46487,7 @@ export namespace TraceEvent {
   namespace FooterTime {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'footerTime';
@@ -45906,6 +46773,7 @@ export namespace TraceEvent {
             id_ref: string;
           };
           isLoadingMainFrame: boolean;
+          isOutermostMainFrame?: boolean;
         };
       };
       id2: {
@@ -46826,6 +47694,18 @@ export namespace TraceEvent {
     }
   }
 
+  namespace GlobalFirstContentfulPaint {
+    interface I extends TraceEvent.Base {
+      args: {
+      
+      };
+      name: 'GlobalFirstContentfulPaint';
+      // Denotes an event GlobalFirstContentfulPaint. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+    }
+  }
+
   namespace GLRenderer {
     type BeginDrawingFrame = 
       TraceEvent.GLRenderer.BeginDrawingFrame.X;
@@ -47640,11 +48520,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'headEnd';
       // Denotes a mark of the event HeadEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -47653,7 +48535,7 @@ export namespace TraceEvent {
   namespace HeadTime {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'headTime';
@@ -51584,6 +52466,20 @@ export namespace TraceEvent {
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
+  
+    interface X extends TraceEvent.Base {
+      args: {
+        pixelRefId: number;
+      };
+      // Duration.
+      dur: number;
+      name: 'ImageDecodeTask';
+      // Denotes the end of the event ImageDecodeTask.
+      ph: 'X';
+      tdur: number;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
   }
 
   namespace ImageFrameGenerator {
@@ -51735,6 +52631,22 @@ export namespace TraceEvent {
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
+    }
+  }
+
+  namespace ImageUploadTask {
+    interface X extends TraceEvent.Base {
+      args: {
+        pixelRefId: number;
+      };
+      // Duration.
+      dur: number;
+      name: 'ImageUploadTask';
+      // Denotes the end of the event ImageUploadTask.
+      ph: 'X';
+      tdur: number;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
     }
   }
 
@@ -52226,6 +53138,7 @@ export namespace TraceEvent {
     interface X extends TraceEvent.Base {
       args: {
         IsMainFrame: boolean;
+        IsOutermostMainFrame?: boolean;
       };
       // Duration.
       dur: number;
@@ -52279,6 +53192,7 @@ export namespace TraceEvent {
       args: {
         data: {
           frame: string;
+          nodeId?: number;
           stackTrace?: {
             columnNumber: number;
             functionName: string;
@@ -52507,6 +53421,7 @@ export namespace TraceEvent {
           data: {
             candidateIndex: number;
             isMainFrame: boolean;
+            isOutermostMainFrame?: boolean;
             navigationId: string;
             nodeId: number;
             size: number;
@@ -52517,6 +53432,7 @@ export namespace TraceEvent {
         name: 'largestContentfulPaint::Candidate';
         // Denotes a mark of the event Candidate.
         ph: 'R';
+        s?: string;
       }
     }
   }
@@ -52534,9 +53450,19 @@ export namespace TraceEvent {
           data: {
             DOMNodeId: number;
             candidateIndex: number;
+            frame_height?: number;
+            frame_width?: number;
+            frame_x?: number;
+            frame_y?: number;
             imageUrl: string;
+            isEmbeddedFrame?: boolean;
             isMainFrame: boolean;
-            isOOPIF: boolean;
+            isOOPIF?: boolean;
+            isOutermostMainFrame?: boolean;
+            root_height?: number;
+            root_width?: number;
+            root_x?: number;
+            root_y?: number;
             size: number;
           };
           frame: string;
@@ -52544,6 +53470,7 @@ export namespace TraceEvent {
         name: 'LargestImagePaint::Candidate';
         // Denotes a mark of the event Candidate.
         ph: 'R';
+        s?: string;
       }
     }
   
@@ -52552,8 +53479,10 @@ export namespace TraceEvent {
         args: {
           data: {
             candidateIndex: number;
+            isEmbeddedFrame?: boolean;
             isMainFrame: boolean;
-            isOOPIF: boolean;
+            isOOPIF?: boolean;
+            isOutermostMainFrame?: boolean;
           };
           frame: string;
         };
@@ -52579,8 +53508,18 @@ export namespace TraceEvent {
           data: {
             DOMNodeId: number;
             candidateIndex: number;
+            frame_height?: number;
+            frame_width?: number;
+            frame_x?: number;
+            frame_y?: number;
+            isEmbeddedFrame?: boolean;
             isMainFrame: boolean;
-            isOOPIF: boolean;
+            isOOPIF?: boolean;
+            isOutermostMainFrame?: boolean;
+            root_height?: number;
+            root_width?: number;
+            root_x?: number;
+            root_y?: number;
             size: number;
           };
           frame: string;
@@ -52588,6 +53527,7 @@ export namespace TraceEvent {
         name: 'LargestTextPaint::Candidate';
         // Denotes a mark of the event Candidate.
         ph: 'R';
+        s?: string;
       }
     }
   }
@@ -53431,13 +54371,34 @@ export namespace TraceEvent {
           dirtyObjects: number;
           frame: string;
           partialLayout: boolean;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
           totalObjects: number;
         };
         endData: {
-          root: {
+          layoutRoots?: {
+            depth: number;
+            nodeId: number;
+            quads: {
+              '0': number;
+              '1': number;
+              '2': number;
+              '3': number;
+              '4': number;
+              '5': number;
+              '6': number;
+              '7': number;
+            }[];
+          }[];
+          root?: {
           
           }[];
-          rootNode: number;
+          rootNode?: number;
         };
       };
       // Duration.
@@ -53489,6 +54450,7 @@ export namespace TraceEvent {
             }[];
           }[];
           is_main_frame: boolean;
+          last_input_timestamp?: number;
           overall_max_distance: number;
           region_rects: {
             '0': number;
@@ -53497,6 +54459,7 @@ export namespace TraceEvent {
             '3': number;
           }[];
           score: number;
+          weighted_score_delta?: number;
         };
         frame: string;
       };
@@ -53551,11 +54514,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'loadEndeventUtils';
       // Denotes a mark of the event LoadEndeventUtils.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -53566,11 +54531,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'loadEndpixelQueue';
       // Denotes a mark of the event LoadEndpixelQueue.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -53584,6 +54551,7 @@ export namespace TraceEvent {
       name: 'loadEventEnd';
       // Denotes a mark of the event LoadEventEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -53597,6 +54565,7 @@ export namespace TraceEvent {
       name: 'loadEventStart';
       // Denotes a mark of the event LoadEventStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -53621,11 +54590,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'loadStarteventUtils';
       // Denotes a mark of the event LoadStarteventUtils.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -53636,11 +54607,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'loadStartpixelQueue';
       // Denotes a mark of the event LoadStartpixelQueue.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -54049,6 +55022,7 @@ export namespace TraceEvent {
       interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
+          IsOutermostMainFrame?: boolean;
         };
         // Duration.
         dur: number;
@@ -54065,6 +55039,7 @@ export namespace TraceEvent {
       interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
+          IsOutermostMainFrame?: boolean;
         };
         // Duration.
         dur: number;
@@ -54081,6 +55056,7 @@ export namespace TraceEvent {
       interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
+          IsOutermostMainFrame?: boolean;
         };
         // Duration.
         dur: number;
@@ -54097,6 +55073,7 @@ export namespace TraceEvent {
       interface X extends TraceEvent.Base {
         args: {
           IsMainFrame: boolean;
+          IsOutermostMainFrame?: boolean;
         };
         // Duration.
         dur: number;
@@ -54246,14 +55223,15 @@ export namespace TraceEvent {
   namespace Lteu {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'lteu';
       // Denotes the beginning of the nestable async flow event Lteu.
       ph: 'b';
+      scope?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   
     interface e extends TraceEvent.Base {
@@ -54264,22 +55242,24 @@ export namespace TraceEvent {
       name: 'lteu';
       // Denotes a step into the nestable async flow event Lteu.
       ph: 'e';
+      scope?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
   namespace Ltpq {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'ltpq';
       // Denotes the beginning of the nestable async flow event Ltpq.
       ph: 'b';
+      scope?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   
     interface e extends TraceEvent.Base {
@@ -54290,8 +55270,9 @@ export namespace TraceEvent {
       name: 'ltpq';
       // Denotes a step into the nestable async flow event Ltpq.
       ph: 'e';
+      scope?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -54434,6 +55415,7 @@ export namespace TraceEvent {
         data: {
           frame: string;
           isMainFrame: boolean;
+          isOutermostMainFrame?: boolean;
           page: string;
         };
       };
@@ -54452,6 +55434,7 @@ export namespace TraceEvent {
         data: {
           frame: string;
           isMainFrame: boolean;
+          isOutermostMainFrame?: boolean;
           page: string;
         };
       };
@@ -54857,6 +55840,272 @@ export namespace TraceEvent {
     }
   }
 
+  namespace MetricsWebContentsObserver {
+    type MaybeActivatePageLoadTracker = 
+      TraceEvent.MetricsWebContentsObserver.MaybeActivatePageLoadTracker.X;
+  
+    type MaybeRestorePageLoadTrackerForBackForwardCache = 
+      TraceEvent.MetricsWebContentsObserver.MaybeRestorePageLoadTrackerForBackForwardCache.X;
+  
+    namespace MaybeActivatePageLoadTracker {
+      interface X extends TraceEvent.Base {
+        args: {
+          navigation: {
+            browser_initiated: boolean;
+            frame_tree_node: {
+              current_frame_host: {
+                browsing_context_state: string;
+                frame_tree_node_id: number;
+                frame_type: string;
+                lifecycle_state: string;
+                origin: string;
+                process: {
+                  browser_context: {
+                    id: string;
+                  };
+                  child_process_id: number;
+                  id: number;
+                  process_lock: string;
+                };
+                render_frame_host_id: {
+                  process_id: number;
+                  routing_id: number;
+                };
+                site_instance: {
+                  active_rfh_count: number;
+                  browsing_instance_id: number;
+                  has_process: boolean;
+                  is_default: boolean;
+                  related_active_contents_count: number;
+                  site_info: {
+                    is_fenced: boolean;
+                    is_guest: boolean;
+                    is_sandboxed: boolean;
+                    process_lock_url: string;
+                    requires_origin_keyed_process: boolean;
+                    site_url: string;
+                  };
+                  site_instance_group: {
+                    active_frame_count: number;
+                    process: {
+                      browser_context: {
+                        id: string;
+                      };
+                      child_process_id: number;
+                      id: number;
+                      process_lock: string;
+                    };
+                    site_instance_group_id: number;
+                  };
+                  site_instance_id: number;
+                };
+                url: string;
+              };
+              frame_tree_node_id: number;
+              is_main_frame: boolean;
+              speculative_frame_host: string;
+            };
+            from_begin_navigation: boolean;
+            has_committed: boolean;
+            is_error_page: boolean;
+            is_synchronous_renderer_commit: boolean;
+            navigation_id: number;
+            navigation_type: string;
+            net_error: number;
+            reload_type: number;
+            render_frame_host: {
+              browsing_context_state: string;
+              frame_tree_node_id: number;
+              frame_type: string;
+              lifecycle_state: string;
+              origin: string;
+              process: {
+                browser_context: {
+                  id: string;
+                };
+                child_process_id: number;
+                id: number;
+                process_lock: string;
+              };
+              render_frame_host_id: {
+                process_id: number;
+                routing_id: number;
+              };
+              site_instance: {
+                active_rfh_count: number;
+                browsing_instance_id: number;
+                has_process: boolean;
+                is_default: boolean;
+                related_active_contents_count: number;
+                site_info: {
+                  is_fenced: boolean;
+                  is_guest: boolean;
+                  is_sandboxed: boolean;
+                  process_lock_url: string;
+                  requires_origin_keyed_process: boolean;
+                  site_url: string;
+                };
+                site_instance_group: {
+                  active_frame_count: number;
+                  process: {
+                    browser_context: {
+                      id: string;
+                    };
+                    child_process_id: number;
+                    id: number;
+                    process_lock: string;
+                  };
+                  site_instance_group_id: number;
+                };
+                site_instance_id: number;
+              };
+              url: string;
+            };
+            state: number;
+            url: string;
+          };
+        };
+        // Duration.
+        dur: number;
+        name: 'MetricsWebContentsObserver::MaybeActivatePageLoadTracker';
+        // Denotes the end of the event MaybeActivatePageLoadTracker.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace MaybeRestorePageLoadTrackerForBackForwardCache {
+      interface X extends TraceEvent.Base {
+        args: {
+          next_navigation: {
+            browser_initiated: boolean;
+            frame_tree_node: {
+              current_frame_host: {
+                browsing_context_state: string;
+                frame_tree_node_id: number;
+                frame_type: string;
+                lifecycle_state: string;
+                origin: string;
+                process: {
+                  browser_context: {
+                    id: string;
+                  };
+                  child_process_id: number;
+                  id: number;
+                  process_lock: string;
+                };
+                render_frame_host_id: {
+                  process_id: number;
+                  routing_id: number;
+                };
+                site_instance: {
+                  active_rfh_count: number;
+                  browsing_instance_id: number;
+                  has_process: boolean;
+                  is_default: boolean;
+                  related_active_contents_count: number;
+                  site_info: {
+                    is_fenced: boolean;
+                    is_guest: boolean;
+                    is_sandboxed: boolean;
+                    process_lock_url: string;
+                    requires_origin_keyed_process: boolean;
+                    site_url: string;
+                  };
+                  site_instance_group: {
+                    active_frame_count: number;
+                    process: {
+                      browser_context: {
+                        id: string;
+                      };
+                      child_process_id: number;
+                      id: number;
+                      process_lock: string;
+                    };
+                    site_instance_group_id: number;
+                  };
+                  site_instance_id: number;
+                };
+                url: string;
+              };
+              frame_tree_node_id: number;
+              is_main_frame: boolean;
+              speculative_frame_host: string;
+            };
+            from_begin_navigation: boolean;
+            has_committed: boolean;
+            is_error_page: boolean;
+            is_synchronous_renderer_commit: boolean;
+            navigation_id: number;
+            navigation_type: string;
+            net_error: number;
+            reload_type: number;
+            render_frame_host: {
+              browsing_context_state: string;
+              frame_tree_node_id: number;
+              frame_type: string;
+              lifecycle_state: string;
+              origin: string;
+              process: {
+                browser_context: {
+                  id: string;
+                };
+                child_process_id: number;
+                id: number;
+                process_lock: string;
+              };
+              render_frame_host_id: {
+                process_id: number;
+                routing_id: number;
+              };
+              site_instance: {
+                active_rfh_count: number;
+                browsing_instance_id: number;
+                has_process: boolean;
+                is_default: boolean;
+                related_active_contents_count: number;
+                site_info: {
+                  is_fenced: boolean;
+                  is_guest: boolean;
+                  is_sandboxed: boolean;
+                  process_lock_url: string;
+                  requires_origin_keyed_process: boolean;
+                  site_url: string;
+                };
+                site_instance_group: {
+                  active_frame_count: number;
+                  process: {
+                    browser_context: {
+                      id: string;
+                    };
+                    child_process_id: number;
+                    id: number;
+                    process_lock: string;
+                  };
+                  site_instance_group_id: number;
+                };
+                site_instance_id: number;
+              };
+              url: string;
+            };
+            state: number;
+            url: string;
+          };
+        };
+        // Duration.
+        dur: number;
+        name: 'MetricsWebContentsObserver::MaybeRestorePageLoadTrackerForBackForwardCache';
+        // Denotes the end of the event MaybeRestorePageLoadTrackerForBackForwardCache.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
   namespace MinorGC {
     interface B extends TraceEvent.Base {
       args: {
@@ -55034,6 +56283,27 @@ export namespace TraceEvent {
         dur: number;
         name: '../../mojo/public/cpp/system/handle_signal_tracker.cc';
         // Denotes the end of the event Cc.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
+  namespace MojoURLLoaderClient {
+    type OnReceiveResponse = 
+      TraceEvent.MojoURLLoaderClient.OnReceiveResponse.X;
+  
+    namespace OnReceiveResponse {
+      interface X extends TraceEvent.Base {
+        args: {
+          url: string;
+        };
+        // Duration.
+        dur: number;
+        name: 'MojoURLLoaderClient::OnReceiveResponse';
+        // Denotes the end of the event OnReceiveResponse.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -55236,6 +56506,7 @@ export namespace TraceEvent {
         data?: {
           documentLoaderURL: string;
           isLoadingMainFrame: boolean;
+          isOutermostMainFrame?: boolean;
           navigationId: string;
         };
         frame: string;
@@ -55243,6 +56514,7 @@ export namespace TraceEvent {
       name: 'navigationStart';
       // Denotes a mark of the event NavigationStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -55491,6 +56763,7 @@ export namespace TraceEvent {
               data: {
                 durationInMilliseconds: number;
                 inMainFrame: boolean;
+                isAnimated?: boolean;
                 size: number;
                 type: string;
               };
@@ -55526,6 +56799,23 @@ export namespace TraceEvent {
           }
         }
       }
+    }
+  }
+
+  namespace NeedsBeginFrameChanged {
+    interface I extends TraceEvent.Base {
+      args: {
+        data: {
+          needsBeginFrame: number;
+        };
+        layerTreeId: number;
+      };
+      name: 'NeedsBeginFrameChanged';
+      // Denotes an event NeedsBeginFrameChanged. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
     }
   }
 
@@ -56598,11 +57888,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: 'one-tap-video::embedRequest';
         // Denotes a mark of the event EmbedRequest.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -56613,11 +57905,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: 'one-tap-video::playerReady';
         // Denotes a mark of the event PlayerReady.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -56718,11 +58012,13 @@ export namespace TraceEvent {
         args: {
           data: {
             navigationId: string;
+            startTime?: number;
           };
         };
         name: 'optimizely:blockBegin';
         // Denotes a mark of the event BlockBegin.
         ph: 'R';
+        s?: string;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -56734,11 +58030,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'optimizelyEnd';
       // Denotes a mark of the event OptimizelyEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -56749,11 +58047,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'optimizelyStart';
       // Denotes a mark of the event OptimizelyStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -56762,7 +58062,7 @@ export namespace TraceEvent {
   namespace OptimizelyTime {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'optimizelyTime';
@@ -56916,6 +58216,24 @@ export namespace TraceEvent {
   }
 
   namespace Paint {
+    interface I extends TraceEvent.Base {
+      args: {
+        data: {
+          clip: {
+          
+          }[];
+          frame: string;
+          layerId: number;
+        };
+      };
+      name: 'Paint';
+      // Denotes an event Paint. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  
     interface X extends TraceEvent.Base {
       args: {
         data: {
@@ -57157,6 +58475,7 @@ export namespace TraceEvent {
             is_image?: boolean;
             is_image_loaded?: boolean;
             is_in_main_frame: boolean;
+            is_in_outermost_main_frame?: boolean;
             is_svg: boolean;
             object_name: string;
             rect: {
@@ -57311,6 +58630,13 @@ export namespace TraceEvent {
       args: {
         beginData: {
           frame: string;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
           startLine: number;
           url: string;
         };
@@ -57571,8 +58897,232 @@ export namespace TraceEvent {
     interface b extends TraceEvent.Base {
       args: {
         chrome_frame_reporter: {
+          affects_smoothness?: boolean;
           frame_sequence: number;
           frame_source: number;
+          frame_type?: string;
+          has_compositor_animation?: boolean;
+          has_high_latency?: boolean;
+          has_main_animation?: boolean;
+          has_missing_content?: boolean;
+          has_smooth_input_main?: boolean;
+          high_latency_contribution_stage?: {
+            '0': string;
+            '1': string;
+            '2': string;
+            '3': string;
+            '4': string;
+            '5': string;
+            '6': string;
+            '7': string;
+            '8': string;
+            '9': string;
+            '10': string;
+            '11': string;
+            '12': string;
+            '13': string;
+            '14': string;
+            '15': string;
+            '16': string;
+            '17': string;
+            '18': string;
+            '19': string;
+            '20': string;
+            '21'?: {
+            
+            };
+            '22'?: {
+            
+            };
+            '23'?: {
+            
+            };
+            '24'?: {
+            
+            };
+            '25'?: {
+            
+            };
+            '26'?: {
+            
+            };
+            '27'?: {
+            
+            };
+            '28'?: {
+            
+            };
+            '29'?: {
+            
+            };
+            '30'?: {
+            
+            };
+            '31'?: {
+            
+            };
+            '32'?: {
+            
+            };
+            '33'?: {
+            
+            };
+            '34'?: {
+            
+            };
+            '35'?: {
+            
+            };
+            '36'?: {
+            
+            };
+            '37'?: {
+            
+            };
+            '38'?: {
+            
+            };
+            '39'?: {
+            
+            };
+            '40'?: {
+            
+            };
+            '41'?: {
+            
+            };
+            '42'?: {
+            
+            };
+            '43'?: {
+            
+            };
+            '44'?: {
+            
+            };
+            '45'?: {
+            
+            };
+            '46'?: {
+            
+            };
+            '47'?: {
+            
+            };
+            '48'?: {
+            
+            };
+            '49'?: {
+            
+            };
+            '50'?: {
+            
+            };
+            '51'?: {
+            
+            };
+            '52'?: {
+            
+            };
+            '53'?: {
+            
+            };
+            '54'?: {
+            
+            };
+            '55'?: {
+            
+            };
+            '56'?: {
+            
+            };
+            '57'?: {
+            
+            };
+            '58'?: {
+            
+            };
+            '59'?: {
+            
+            };
+            '60'?: {
+            
+            };
+            '61'?: {
+            
+            };
+            '62'?: {
+            
+            };
+            '63'?: {
+            
+            };
+            '64'?: {
+            
+            };
+            '65'?: {
+            
+            };
+            '66'?: {
+            
+            };
+            '67'?: {
+            
+            };
+            '68'?: {
+            
+            };
+            '69'?: {
+            
+            };
+            '70'?: {
+            
+            };
+            '71'?: {
+            
+            };
+            '72'?: {
+            
+            };
+            '73'?: {
+            
+            };
+            '74'?: {
+            
+            };
+            '75'?: {
+            
+            };
+            '76'?: {
+            
+            };
+            '77'?: {
+            
+            };
+            '78'?: {
+            
+            };
+            '79'?: {
+            
+            };
+            '80'?: {
+            
+            };
+            '81'?: {
+            
+            };
+            '82'?: {
+            
+            };
+            '83'?: {
+            
+            };
+            '84'?: {
+            
+            };
+          }[];
+          layer_tree_host_id?: number;
+          scroll_state?: string;
           state: string;
         };
       };
@@ -57678,6 +59228,43 @@ export namespace TraceEvent {
       // Denotes a step into the nestable async flow event PreemptionAllowedStackScope.
       ph: 'e';
       scope: string;
+    }
+  }
+
+  namespace PreloadRenderBlockingStatusChange {
+    interface I extends TraceEvent.Base {
+      args: {
+        data: {
+          renderBlocking?: string;
+          requestId: string;
+          url: string;
+        };
+      };
+      name: 'PreloadRenderBlockingStatusChange';
+      // Denotes an event PreloadRenderBlockingStatusChange. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+    }
+  }
+
+  namespace PrePaint {
+    interface X extends TraceEvent.Base {
+      args: {
+        data: {
+          frame: string;
+          isMainFrame: boolean;
+          isOutermostMainFrame: boolean;
+          page: string;
+        };
+      };
+      // Duration.
+      dur: number;
+      name: 'PrePaint';
+      // Denotes the end of the event PrePaint.
+      ph: 'X';
+      tdur: number;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
     }
   }
 
@@ -59649,8 +61236,9 @@ export namespace TraceEvent {
       name: 'redirectEnd';
       // Denotes a mark of the event RedirectEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -59662,8 +61250,9 @@ export namespace TraceEvent {
       name: 'redirectStart';
       // Denotes a mark of the event RedirectStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -59674,7 +61263,9 @@ export namespace TraceEvent {
     namespace Initialize {
       interface X extends TraceEvent.Base {
         args: {
-          isMainWindow: boolean;
+          IsMainFrame?: boolean;
+          IsOutermostMainFrame?: boolean;
+          isMainWindow?: boolean;
         };
         // Duration.
         dur: number;
@@ -61079,6 +62670,20 @@ export namespace TraceEvent {
     }
   }
 
+  namespace RequestMainThreadFrame {
+    interface I extends TraceEvent.Base {
+      args: {
+        layerTreeId: number;
+      };
+      name: 'RequestMainThreadFrame';
+      // Denotes an event RequestMainThreadFrame. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  }
+
   namespace RequestStart {
     interface R extends TraceEvent.Base {
       args: {
@@ -61389,6 +62994,7 @@ export namespace TraceEvent {
         data: {
           frame: string;
           priority: string;
+          renderBlocking?: string;
           requestId: string;
           requestMethod: string;
           stackTrace?: {
@@ -61406,7 +63012,7 @@ export namespace TraceEvent {
       ph: 'I';
       s: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -61453,6 +63059,7 @@ export namespace TraceEvent {
       name: 'responseEnd';
       // Denotes a mark of the event ResponseEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts?: number;
     }
@@ -61703,6 +63310,27 @@ export namespace TraceEvent {
   }
 
   namespace RunTask {
+    interface B extends TraceEvent.Base {
+      args: {
+      
+      };
+      name: 'RunTask';
+      // Denotes the beginning of the event RunTask.
+      ph: 'B';
+    }
+  
+    interface I extends TraceEvent.Base {
+      args: {
+      
+      };
+      name: 'RunTask';
+      // Denotes an event RunTask. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  
     interface X extends TraceEvent.Base {
       args: {
       
@@ -62680,7 +64308,7 @@ export namespace TraceEvent {
       // Denotes a snapshot object of the event Screenshot.
       ph: 'O';
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -62985,7 +64613,19 @@ export namespace TraceEvent {
   namespace SendBeginMainFrameToCommit {
     interface b extends TraceEvent.Base {
       args: {
-      
+        send_begin_mainframe_to_commit_breakdown?: {
+          accessibility_update_us: number;
+          animate_us: number;
+          begin_main_sent_to_started_us: number;
+          composite_commit_us: number;
+          compositing_inputs_us: number;
+          handle_input_events_us: number;
+          layout_update_us: number;
+          paint_us: number;
+          prepaint_us: number;
+          style_update_us: number;
+          update_layers_us: number;
+        };
       };
       id2: {
         local: string;
@@ -65747,6 +67387,30 @@ export namespace TraceEvent {
   }
 
   namespace Swap {
+    interface b extends TraceEvent.Base {
+      args: {
+      
+      };
+      id2: {
+        local: string;
+      };
+      name: 'Swap';
+      // Denotes the beginning of the nestable async flow event Swap.
+      ph: 'b';
+    }
+  
+    interface e extends TraceEvent.Base {
+      args: {
+      
+      };
+      id2: {
+        local: string;
+      };
+      name: 'Swap';
+      // Denotes a step into the nestable async flow event Swap.
+      ph: 'e';
+    }
+  
     interface n extends TraceEvent.Base {
       args: {
       
@@ -67269,7 +68933,7 @@ export namespace TraceEvent {
   namespace TimeToDomReady {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'timeToDomReady';
@@ -67297,7 +68961,7 @@ export namespace TraceEvent {
   namespace TimeToInteractive {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'timeToInteractive';
@@ -67325,7 +68989,7 @@ export namespace TraceEvent {
   namespace TimeToZonesAndDomReady {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'timeToZonesAndDomReady';
@@ -67353,7 +69017,7 @@ export namespace TraceEvent {
   namespace TimeToZonesComplete {
     interface b extends TraceEvent.Base {
       args: {
-      
+        startTime?: number;
       };
       id: string;
       name: 'timeToZonesComplete';
@@ -67684,6 +69348,36 @@ export namespace TraceEvent {
       s: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
+    }
+  }
+
+  namespace TrackerValidation {
+    interface b extends TraceEvent.Base {
+      args: {
+        aborted_main?: number;
+        name: string;
+        no_damage_main?: number;
+      };
+      id2: {
+        local: string;
+      };
+      name: 'TrackerValidation';
+      // Denotes the beginning of the nestable async flow event TrackerValidation.
+      ph: 'b';
+      scope: string;
+    }
+  
+    interface e extends TraceEvent.Base {
+      args: {
+      
+      };
+      id2: {
+        local: string;
+      };
+      name: 'TrackerValidation';
+      // Denotes a step into the nestable async flow event TrackerValidation.
+      ph: 'e';
+      scope: string;
     }
   }
 
@@ -68098,8 +69792,9 @@ export namespace TraceEvent {
       name: 'unloadEventEnd';
       // Denotes a mark of the event UnloadEventEnd.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -68111,8 +69806,9 @@ export namespace TraceEvent {
       name: 'unloadEventStart';
       // Denotes a mark of the event UnloadEventStart.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
-      tts: number;
+      tts?: number;
     }
   }
 
@@ -68155,6 +69851,34 @@ export namespace TraceEvent {
       name: 'UpdateLayer';
       // Denotes the ending of the event UpdateLayer.
       ph: 'E';
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  
+    interface I extends TraceEvent.Base {
+      args: {
+        layerId: number;
+        layerTreeId: number;
+      };
+      name: 'UpdateLayer';
+      // Denotes an event UpdateLayer. There are no begining/ending phases.
+      ph: 'I';
+      s: string;
+      // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+      tts: number;
+    }
+  
+    interface X extends TraceEvent.Base {
+      args: {
+        layerId: number;
+        layerTreeId: number;
+      };
+      // Duration.
+      dur: number;
+      name: 'UpdateLayer';
+      // Denotes the end of the event UpdateLayer.
+      ph: 'X';
+      tdur: number;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -68214,6 +69938,13 @@ export namespace TraceEvent {
       args: {
         beginData: {
           frame: string;
+          stackTrace?: {
+            columnNumber: number;
+            functionName: string;
+            lineNumber: number;
+            scriptId: string;
+            url: string;
+          }[];
         };
         elementCount: number;
       };
@@ -68640,6 +70371,17 @@ export namespace TraceEvent {
   }
 
   namespace V8 {
+    type BytecodeBudgetInterrupt = 
+      TraceEvent.V8.BytecodeBudgetInterrupt.I |
+      TraceEvent.V8.BytecodeBudgetInterrupt.X;
+  
+    type BytecodeBudgetInterruptWithStackCheck = 
+      TraceEvent.V8.BytecodeBudgetInterruptWithStackCheck.I |
+      TraceEvent.V8.BytecodeBudgetInterruptWithStackCheck.X;
+  
+    type CallAsConstructor = 
+      TraceEvent.V8.CallAsConstructor.X;
+  
     type CallFunction = 
       TraceEvent.V8.CallFunction.X;
   
@@ -68648,14 +70390,38 @@ export namespace TraceEvent {
       TraceEvent.V8.Compile.E |
       TraceEvent.V8.Compile.X;
   
+    type CompileModule = 
+      TraceEvent.V8.CompileModule.X;
+  
     type DeoptimizeCode = 
       TraceEvent.V8.DeoptimizeCode.X;
+  
+    type DeserializeContext = 
+      TraceEvent.V8.DeserializeContext.X;
+  
+    type DeserializeIsolate = 
+      TraceEvent.V8.DeserializeIsolate.X;
+  
+    type EvaluateModule = 
+      TraceEvent.V8.EvaluateModule.X;
   
     type GC_BACKGROUND_ARRAY_BUFFER_SWEEP = 
       TraceEvent.V8.GC_BACKGROUND_ARRAY_BUFFER_SWEEP.X;
   
+    type GC_BACKGROUND_FULL_ARRAY_BUFFER_SWEEP = 
+      TraceEvent.V8.GC_BACKGROUND_FULL_ARRAY_BUFFER_SWEEP.X;
+  
+    type GC_BACKGROUND_SAFEPOINT = 
+      TraceEvent.V8.GC_BACKGROUND_SAFEPOINT.X;
+  
     type GC_BACKGROUND_UNMAPPER = 
       TraceEvent.V8.GC_BACKGROUND_UNMAPPER.X;
+  
+    type GC_BACKGROUND_UNPARK = 
+      TraceEvent.V8.GC_BACKGROUND_UNPARK.X;
+  
+    type GC_BACKGROUND_YOUNG_ARRAY_BUFFER_SWEEP = 
+      TraceEvent.V8.GC_BACKGROUND_YOUNG_ARRAY_BUFFER_SWEEP.X;
   
     type GC_HEAP_EMBEDDER_TRACING_EPILOGUE = 
       TraceEvent.V8.GC_HEAP_EMBEDDER_TRACING_EPILOGUE.X;
@@ -68676,13 +70442,18 @@ export namespace TraceEvent {
       TraceEvent.V8.GC_HEAP_EXTERNAL_PROLOGUE.X;
   
     type GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES = 
+      TraceEvent.V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES.I |
       TraceEvent.V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES.X;
   
     type GC_HEAP_PROLOGUE_SAFEPOINT = 
+      TraceEvent.V8.GC_HEAP_PROLOGUE_SAFEPOINT.I |
       TraceEvent.V8.GC_HEAP_PROLOGUE_SAFEPOINT.X;
   
     type GC_HEAP_PROLOGUE = 
       TraceEvent.V8.GC_HEAP_PROLOGUE.X;
+  
+    type GC_MARK_COMPACTOR = 
+      TraceEvent.V8.GC_MARK_COMPACTOR.X;
   
     type GC_MC_BACKGROUND_EVACUATE_COPY = 
       TraceEvent.V8.GC_MC_BACKGROUND_EVACUATE_COPY.X;
@@ -68694,7 +70465,11 @@ export namespace TraceEvent {
       TraceEvent.V8.GC_MC_BACKGROUND_MARKING.X;
   
     type GC_MC_BACKGROUND_SWEEPING = 
+      TraceEvent.V8.GC_MC_BACKGROUND_SWEEPING.I |
       TraceEvent.V8.GC_MC_BACKGROUND_SWEEPING.X;
+  
+    type GC_MC_CLEAR_EXTERNAL_STRING_TABLE = 
+      TraceEvent.V8.GC_MC_CLEAR_EXTERNAL_STRING_TABLE.X;
   
     type GC_MC_CLEAR_FLUSHABLE_BYTECODE = 
       TraceEvent.V8.GC_MC_CLEAR_FLUSHABLE_BYTECODE.X;
@@ -68702,14 +70477,23 @@ export namespace TraceEvent {
     type GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS = 
       TraceEvent.V8.GC_MC_CLEAR_FLUSHED_JS_FUNCTIONS.X;
   
+    type GC_MC_CLEAR_JOIN_JOB = 
+      TraceEvent.V8.GC_MC_CLEAR_JOIN_JOB.X;
+  
     type GC_MC_CLEAR_MAPS = 
       TraceEvent.V8.GC_MC_CLEAR_MAPS.X;
+  
+    type GC_MC_CLEAR_STRING_FORWARDING_TABLE = 
+      TraceEvent.V8.GC_MC_CLEAR_STRING_FORWARDING_TABLE.X;
   
     type GC_MC_CLEAR_STRING_TABLE = 
       TraceEvent.V8.GC_MC_CLEAR_STRING_TABLE.X;
   
     type GC_MC_CLEAR_WEAK_COLLECTIONS = 
       TraceEvent.V8.GC_MC_CLEAR_WEAK_COLLECTIONS.X;
+  
+    type GC_MC_CLEAR_WEAK_GLOBAL_HANDLES = 
+      TraceEvent.V8.GC_MC_CLEAR_WEAK_GLOBAL_HANDLES.X;
   
     type GC_MC_CLEAR_WEAK_LISTS = 
       TraceEvent.V8.GC_MC_CLEAR_WEAK_LISTS.X;
@@ -68722,6 +70506,9 @@ export namespace TraceEvent {
   
     type GC_MC_COMPLETE_SWEEP_ARRAY_BUFFERS = 
       TraceEvent.V8.GC_MC_COMPLETE_SWEEP_ARRAY_BUFFERS.X;
+  
+    type GC_MC_COMPLETE_SWEEPING = 
+      TraceEvent.V8.GC_MC_COMPLETE_SWEEPING.X;
   
     type GC_MC_EPILOGUE = 
       TraceEvent.V8.GC_MC_EPILOGUE.X;
@@ -68743,6 +70530,9 @@ export namespace TraceEvent {
   
     type GC_MC_EVACUATE_REBALANCE = 
       TraceEvent.V8.GC_MC_EVACUATE_REBALANCE.X;
+  
+    type GC_MC_EVACUATE_UPDATE_POINTERS_CLIENT_HEAPS = 
+      TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_CLIENT_HEAPS.X;
   
     type GC_MC_EVACUATE_UPDATE_POINTERS_PARALLEL = 
       TraceEvent.V8.GC_MC_EVACUATE_UPDATE_POINTERS_PARALLEL.X;
@@ -68790,6 +70580,7 @@ export namespace TraceEvent {
       TraceEvent.V8.GC_MC_INCREMENTAL_FINALIZE.X;
   
     type GC_MC_INCREMENTAL_LAYOUT_CHANGE = 
+      TraceEvent.V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE.I |
       TraceEvent.V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE.X;
   
     type GC_MC_INCREMENTAL_START = 
@@ -68804,6 +70595,9 @@ export namespace TraceEvent {
     type GC_MC_INCREMENTAL = 
       TraceEvent.V8.GC_MC_INCREMENTAL.X;
   
+    type GC_MC_MARK_CLIENT_HEAPS = 
+      TraceEvent.V8.GC_MC_MARK_CLIENT_HEAPS.X;
+  
     type GC_MC_MARK_EMBEDDER_TRACING_CLOSURE = 
       TraceEvent.V8.GC_MC_MARK_EMBEDDER_TRACING_CLOSURE.X;
   
@@ -68813,8 +70607,20 @@ export namespace TraceEvent {
     type GC_MC_MARK_FINISH_INCREMENTAL = 
       TraceEvent.V8.GC_MC_MARK_FINISH_INCREMENTAL.X;
   
+    type GC_MC_MARK_FULL_CLOSURE_PARALLEL_JOIN = 
+      TraceEvent.V8.GC_MC_MARK_FULL_CLOSURE_PARALLEL_JOIN.X;
+  
+    type GC_MC_MARK_FULL_CLOSURE_PARALLEL = 
+      TraceEvent.V8.GC_MC_MARK_FULL_CLOSURE_PARALLEL.X;
+  
+    type GC_MC_MARK_FULL_CLOSURE = 
+      TraceEvent.V8.GC_MC_MARK_FULL_CLOSURE.X;
+  
     type GC_MC_MARK_MAIN = 
       TraceEvent.V8.GC_MC_MARK_MAIN.X;
+  
+    type GC_MC_MARK_RETAIN_MAPS = 
+      TraceEvent.V8.GC_MC_MARK_RETAIN_MAPS.X;
   
     type GC_MC_MARK_ROOTS = 
       TraceEvent.V8.GC_MC_MARK_ROOTS.X;
@@ -68842,6 +70648,9 @@ export namespace TraceEvent {
   
     type GC_MC_PROLOGUE = 
       TraceEvent.V8.GC_MC_PROLOGUE.X;
+  
+    type GC_MC_SWEEP_EXTERNAL_POINTER_TABLE = 
+      TraceEvent.V8.GC_MC_SWEEP_EXTERNAL_POINTER_TABLE.X;
   
     type GC_MC_SWEEP = 
       TraceEvent.V8.GC_MC_SWEEP.X;
@@ -68879,8 +70688,15 @@ export namespace TraceEvent {
     type GC_SCAVENGER_SWEEP_ARRAY_BUFFERS = 
       TraceEvent.V8.GC_SCAVENGER_SWEEP_ARRAY_BUFFERS.X;
   
+    type GC_SCAVENGER = 
+      TraceEvent.V8.GC_SCAVENGER.X;
+  
     type GC_STOP_THE_WORLD = 
       TraceEvent.V8.GC_STOP_THE_WORLD.X;
+  
+    type GC_TIME_TO_SAFEPOINT = 
+      TraceEvent.V8.GC_TIME_TO_SAFEPOINT.I |
+      TraceEvent.V8.GC_TIME_TO_SAFEPOINT.X;
   
     type GCCompactor = 
       TraceEvent.V8.GCCompactor.X;
@@ -68918,6 +70734,9 @@ export namespace TraceEvent {
     type InvokeApiInterruptCallbacks = 
       TraceEvent.V8.InvokeApiInterruptCallbacks.X;
   
+    type IsolateInitialize = 
+      TraceEvent.V8.IsolateInitialize.X;
+  
     type NewContext = 
       TraceEvent.V8.NewContext.B |
       TraceEvent.V8.NewContext.E |
@@ -68931,6 +70750,16 @@ export namespace TraceEvent {
   
     type ParseOnBackgroundParsing = 
       TraceEvent.V8.ParseOnBackgroundParsing.X;
+  
+    type ParseOnBackgroundWaiting = 
+      TraceEvent.V8.ParseOnBackgroundWaiting.X;
+  
+    type ProduceCache = 
+      TraceEvent.V8.ProduceCache.I |
+      TraceEvent.V8.ProduceCache.X;
+  
+    type ProduceModuleCache = 
+      TraceEvent.V8.ProduceModuleCache.X;
   
     type Run = 
       TraceEvent.V8.Run.X;
@@ -68947,6 +70776,78 @@ export namespace TraceEvent {
       TraceEvent.V8.Task.B |
       TraceEvent.V8.Task.E |
       TraceEvent.V8.Task.X;
+  
+    namespace BytecodeBudgetInterrupt {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'V8.BytecodeBudgetInterrupt';
+        // Denotes an event BytecodeBudgetInterrupt. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.BytecodeBudgetInterrupt';
+        // Denotes the end of the event BytecodeBudgetInterrupt.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace BytecodeBudgetInterruptWithStackCheck {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'V8.BytecodeBudgetInterruptWithStackCheck';
+        // Denotes an event BytecodeBudgetInterruptWithStackCheck. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.BytecodeBudgetInterruptWithStackCheck';
+        // Denotes the end of the event BytecodeBudgetInterruptWithStackCheck.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace CallAsConstructor {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.callAsConstructor';
+        // Denotes the end of the event CallAsConstructor.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
   
     namespace CallFunction {
       interface X extends TraceEvent.Base {
@@ -69023,6 +70924,28 @@ export namespace TraceEvent {
       }
     }
   
+    namespace CompileModule {
+      interface X extends TraceEvent.Base {
+        args: {
+          data: {
+            columnNumber: number;
+            lineNumber: number;
+            streamed: boolean;
+            url: string;
+          };
+          fileName: string;
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.compileModule';
+        // Denotes the end of the event CompileModule.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace DeoptimizeCode {
       interface X extends TraceEvent.Base {
         args: {
@@ -69032,6 +70955,54 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.DeoptimizeCode';
         // Denotes the end of the event DeoptimizeCode.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace DeserializeContext {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.DeserializeContext';
+        // Denotes the end of the event DeserializeContext.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace DeserializeIsolate {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.DeserializeIsolate';
+        // Denotes the end of the event DeserializeIsolate.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace EvaluateModule {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.evaluateModule';
+        // Denotes the end of the event EvaluateModule.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69055,6 +71026,38 @@ export namespace TraceEvent {
       }
     }
   
+    namespace GC_BACKGROUND_FULL_ARRAY_BUFFER_SWEEP {
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_BACKGROUND_FULL_ARRAY_BUFFER_SWEEP';
+        // Denotes the end of the event GC_BACKGROUND_FULL_ARRAY_BUFFER_SWEEP.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_BACKGROUND_SAFEPOINT {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_BACKGROUND_SAFEPOINT';
+        // Denotes the end of the event GC_BACKGROUND_SAFEPOINT.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace GC_BACKGROUND_UNMAPPER {
       interface X extends TraceEvent.Base {
         args: {
@@ -69064,6 +71067,38 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_BACKGROUND_UNMAPPER';
         // Denotes the end of the event GC_BACKGROUND_UNMAPPER.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_BACKGROUND_UNPARK {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_BACKGROUND_UNPARK';
+        // Denotes the end of the event GC_BACKGROUND_UNPARK.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_BACKGROUND_YOUNG_ARRAY_BUFFER_SWEEP {
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_BACKGROUND_YOUNG_ARRAY_BUFFER_SWEEP';
+        // Denotes the end of the event GC_BACKGROUND_YOUNG_ARRAY_BUFFER_SWEEP.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69168,6 +71203,18 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'V8.GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES';
+        // Denotes an event GC_HEAP_EXTERNAL_WEAK_GLOBAL_HANDLES. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
       interface X extends TraceEvent.Base {
         args: {
         
@@ -69184,6 +71231,18 @@ export namespace TraceEvent {
     }
   
     namespace GC_HEAP_PROLOGUE_SAFEPOINT {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'V8.GC_HEAP_PROLOGUE_SAFEPOINT';
+        // Denotes an event GC_HEAP_PROLOGUE_SAFEPOINT. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
       interface X extends TraceEvent.Base {
         args: {
         
@@ -69215,10 +71274,26 @@ export namespace TraceEvent {
       }
     }
   
+    namespace GC_MARK_COMPACTOR {
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MARK_COMPACTOR';
+        // Denotes the end of the event GC_MARK_COMPACTOR.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace GC_MC_BACKGROUND_EVACUATE_COPY {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -69234,7 +71309,7 @@ export namespace TraceEvent {
     namespace GC_MC_BACKGROUND_EVACUATE_UPDATE_POINTERS {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -69250,7 +71325,7 @@ export namespace TraceEvent {
     namespace GC_MC_BACKGROUND_MARKING {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -69264,14 +71339,42 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_BACKGROUND_SWEEPING {
+      interface I extends TraceEvent.Base {
+        args: {
+          epoch: number;
+        };
+        name: 'V8.GC_MC_BACKGROUND_SWEEPING';
+        // Denotes an event GC_MC_BACKGROUND_SWEEPING. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch?: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_BACKGROUND_SWEEPING';
+        // Denotes the end of the event GC_MC_BACKGROUND_SWEEPING.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_CLEAR_EXTERNAL_STRING_TABLE {
       interface X extends TraceEvent.Base {
         args: {
         
         };
         // Duration.
         dur: number;
-        name: 'V8.GC_MC_BACKGROUND_SWEEPING';
-        // Denotes the end of the event GC_MC_BACKGROUND_SWEEPING.
+        name: 'V8.GC_MC_CLEAR_EXTERNAL_STRING_TABLE';
+        // Denotes the end of the event GC_MC_CLEAR_EXTERNAL_STRING_TABLE.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69311,6 +71414,22 @@ export namespace TraceEvent {
       }
     }
   
+    namespace GC_MC_CLEAR_JOIN_JOB {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_CLEAR_JOIN_JOB';
+        // Denotes the end of the event GC_MC_CLEAR_JOIN_JOB.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace GC_MC_CLEAR_MAPS {
       interface X extends TraceEvent.Base {
         args: {
@@ -69320,6 +71439,22 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_MC_CLEAR_MAPS';
         // Denotes the end of the event GC_MC_CLEAR_MAPS.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_CLEAR_STRING_FORWARDING_TABLE {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_CLEAR_STRING_FORWARDING_TABLE';
+        // Denotes the end of the event GC_MC_CLEAR_STRING_FORWARDING_TABLE.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69352,6 +71487,22 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_MC_CLEAR_WEAK_COLLECTIONS';
         // Denotes the end of the event GC_MC_CLEAR_WEAK_COLLECTIONS.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_CLEAR_WEAK_GLOBAL_HANDLES {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_CLEAR_WEAK_GLOBAL_HANDLES';
+        // Denotes the end of the event GC_MC_CLEAR_WEAK_GLOBAL_HANDLES.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69416,6 +71567,22 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_MC_COMPLETE_SWEEP_ARRAY_BUFFERS';
         // Denotes the end of the event GC_MC_COMPLETE_SWEEP_ARRAY_BUFFERS.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_COMPLETE_SWEEPING {
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_COMPLETE_SWEEPING';
+        // Denotes the end of the event GC_MC_COMPLETE_SWEEPING.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69528,6 +71695,22 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_MC_EVACUATE_REBALANCE';
         // Denotes the end of the event GC_MC_EVACUATE_REBALANCE.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_EVACUATE_UPDATE_POINTERS_CLIENT_HEAPS {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_EVACUATE_UPDATE_POINTERS_CLIENT_HEAPS';
+        // Denotes the end of the event GC_MC_EVACUATE_UPDATE_POINTERS_CLIENT_HEAPS.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69776,6 +71959,18 @@ export namespace TraceEvent {
     }
   
     namespace GC_MC_INCREMENTAL_LAYOUT_CHANGE {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'V8.GC_MC_INCREMENTAL_LAYOUT_CHANGE';
+        // Denotes an event GC_MC_INCREMENTAL_LAYOUT_CHANGE. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
       interface X extends TraceEvent.Base {
         args: {
         
@@ -69794,7 +71989,7 @@ export namespace TraceEvent {
     namespace GC_MC_INCREMENTAL_START {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -69842,12 +72037,28 @@ export namespace TraceEvent {
     namespace GC_MC_INCREMENTAL {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
         name: 'V8.GC_MC_INCREMENTAL';
         // Denotes the end of the event GC_MC_INCREMENTAL.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_MARK_CLIENT_HEAPS {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_MARK_CLIENT_HEAPS';
+        // Denotes the end of the event GC_MC_MARK_CLIENT_HEAPS.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -69903,6 +72114,54 @@ export namespace TraceEvent {
       }
     }
   
+    namespace GC_MC_MARK_FULL_CLOSURE_PARALLEL_JOIN {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_MARK_FULL_CLOSURE_PARALLEL_JOIN';
+        // Denotes the end of the event GC_MC_MARK_FULL_CLOSURE_PARALLEL_JOIN.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_MARK_FULL_CLOSURE_PARALLEL {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_MARK_FULL_CLOSURE_PARALLEL';
+        // Denotes the end of the event GC_MC_MARK_FULL_CLOSURE_PARALLEL.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_MARK_FULL_CLOSURE {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_MARK_FULL_CLOSURE';
+        // Denotes the end of the event GC_MC_MARK_FULL_CLOSURE.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace GC_MC_MARK_MAIN {
       interface X extends TraceEvent.Base {
         args: {
@@ -69912,6 +72171,22 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_MC_MARK_MAIN';
         // Denotes the end of the event GC_MC_MARK_MAIN.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_MARK_RETAIN_MAPS {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_MARK_RETAIN_MAPS';
+        // Denotes the end of the event GC_MC_MARK_RETAIN_MAPS.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -70063,10 +72338,26 @@ export namespace TraceEvent {
       }
     }
   
-    namespace GC_MC_SWEEP {
+    namespace GC_MC_SWEEP_EXTERNAL_POINTER_TABLE {
       interface X extends TraceEvent.Base {
         args: {
         
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_MC_SWEEP_EXTERNAL_POINTER_TABLE';
+        // Denotes the end of the event GC_MC_SWEEP_EXTERNAL_POINTER_TABLE.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_MC_SWEEP {
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -70082,7 +72373,7 @@ export namespace TraceEvent {
     namespace GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -70098,7 +72389,7 @@ export namespace TraceEvent {
     namespace GC_SCAVENGER_COMPLETE_SWEEP_ARRAY_BUFFERS {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -70255,6 +72546,22 @@ export namespace TraceEvent {
       }
     }
   
+    namespace GC_SCAVENGER {
+      interface X extends TraceEvent.Base {
+        args: {
+          epoch: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_SCAVENGER';
+        // Denotes the end of the event GC_SCAVENGER.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
     namespace GC_STOP_THE_WORLD {
       interface X extends TraceEvent.Base {
         args: {
@@ -70264,6 +72571,34 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.GC_STOP_THE_WORLD';
         // Denotes the end of the event GC_STOP_THE_WORLD.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace GC_TIME_TO_SAFEPOINT {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'V8.GC_TIME_TO_SAFEPOINT';
+        // Denotes an event GC_TIME_TO_SAFEPOINT. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.GC_TIME_TO_SAFEPOINT';
+        // Denotes the end of the event GC_TIME_TO_SAFEPOINT.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -70338,7 +72673,7 @@ export namespace TraceEvent {
     namespace GCIncrementalMarking {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -70386,7 +72721,7 @@ export namespace TraceEvent {
     namespace GCIncrementalMarkingStart {
       interface X extends TraceEvent.Base {
         args: {
-        
+          epoch?: number;
         };
         // Duration.
         dur: number;
@@ -70456,6 +72791,22 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8.InvokeApiInterruptCallbacks';
         // Denotes the end of the event InvokeApiInterruptCallbacks.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace IsolateInitialize {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'V8.IsolateInitialize';
+        // Denotes the end of the event IsolateInitialize.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -70551,6 +72902,72 @@ export namespace TraceEvent {
         dur: number;
         name: 'v8.parseOnBackgroundParsing';
         // Denotes the end of the event ParseOnBackgroundParsing.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace ParseOnBackgroundWaiting {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.parseOnBackgroundWaiting';
+        // Denotes the end of the event ParseOnBackgroundWaiting.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace ProduceCache {
+      interface I extends TraceEvent.Base {
+        args: {
+        
+        };
+        name: 'v8.produceCache';
+        // Denotes an event ProduceCache. There are no begining/ending phases.
+        ph: 'I';
+        s: string;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    
+      interface X extends TraceEvent.Base {
+        args: {
+          data?: {
+            columnNumber: number;
+            lineNumber: number;
+            producedCacheSize: number;
+            url: string;
+          };
+          fileName?: string;
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.produceCache';
+        // Denotes the end of the event ProduceCache.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace ProduceModuleCache {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'v8.produceModuleCache';
+        // Denotes the end of the event ProduceModuleCache.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -70703,6 +73120,27 @@ export namespace TraceEvent {
         dur: number;
         name: 'V8ContextSnapshot::InstallRuntimeEnabled';
         // Denotes the end of the event InstallRuntimeEnabled.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
+  namespace V8PerIsolateData {
+    type Initialize = 
+      TraceEvent.V8PerIsolateData.Initialize.X;
+  
+    namespace Initialize {
+      interface X extends TraceEvent.Base {
+        args: {
+          V8ContextSnapshotMode: number;
+        };
+        // Duration.
+        dur: number;
+        name: 'V8PerIsolateData::Initialize';
+        // Denotes the end of the event Initialize.
         ph: 'X';
         tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
@@ -70871,6 +73309,7 @@ export namespace TraceEvent {
         data: {
           frameID: string;
           height: number;
+          isActive?: boolean;
           width: number;
           x: number;
           y: number;
@@ -73723,6 +76162,84 @@ export namespace TraceEvent {
     }
   }
 
+  namespace WebResourceRequestSender {
+    type OnReceivedRedirect = 
+      TraceEvent.WebResourceRequestSender.OnReceivedRedirect.X;
+  
+    type OnReceivedResponse = 
+      TraceEvent.WebResourceRequestSender.OnReceivedResponse.X;
+  
+    type OnRequestComplete = 
+      TraceEvent.WebResourceRequestSender.OnRequestComplete.X;
+  
+    type OnStartLoadingResponseBody = 
+      TraceEvent.WebResourceRequestSender.OnStartLoadingResponseBody.X;
+  
+    namespace OnReceivedRedirect {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'WebResourceRequestSender::OnReceivedRedirect';
+        // Denotes the end of the event OnReceivedRedirect.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace OnReceivedResponse {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'WebResourceRequestSender::OnReceivedResponse';
+        // Denotes the end of the event OnReceivedResponse.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace OnRequestComplete {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'WebResourceRequestSender::OnRequestComplete';
+        // Denotes the end of the event OnRequestComplete.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  
+    namespace OnStartLoadingResponseBody {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'WebResourceRequestSender::OnStartLoadingResponseBody';
+        // Denotes the end of the event OnStartLoadingResponseBody.
+        ph: 'X';
+        tdur: number;
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
   namespace WebServiceWorkerProviderImpl {
     type GetRegistration = 
       TraceEvent.WebServiceWorkerProviderImpl.GetRegistration.F |
@@ -73754,6 +76271,248 @@ export namespace TraceEvent {
         name: 'WebServiceWorkerProviderImpl::GetRegistration';
         // Denotes the beginning of the async event GetRegistration.
         ph: 'S';
+        // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+        tts: number;
+      }
+    }
+  }
+
+  namespace WebURLLoader {
+    type LoadAsynchronously = 
+      TraceEvent.WebURLLoader.LoadAsynchronously.X;
+  
+    namespace Context {
+      type Cancel = 
+        TraceEvent.WebURLLoader.Context.Cancel.X;
+    
+      type OnCompletedRequest = 
+        TraceEvent.WebURLLoader.Context.OnCompletedRequest.X;
+    
+      type OnReceivedRedirect = 
+        TraceEvent.WebURLLoader.Context.OnReceivedRedirect.f |
+        TraceEvent.WebURLLoader.Context.OnReceivedRedirect.s |
+        TraceEvent.WebURLLoader.Context.OnReceivedRedirect.X;
+    
+      type OnReceivedResponse = 
+        TraceEvent.WebURLLoader.Context.OnReceivedResponse.f |
+        TraceEvent.WebURLLoader.Context.OnReceivedResponse.s |
+        TraceEvent.WebURLLoader.Context.OnReceivedResponse.X;
+    
+      type OnStartLoadingResponseBody = 
+        TraceEvent.WebURLLoader.Context.OnStartLoadingResponseBody.f |
+        TraceEvent.WebURLLoader.Context.OnStartLoadingResponseBody.I |
+        TraceEvent.WebURLLoader.Context.OnStartLoadingResponseBody.s |
+        TraceEvent.WebURLLoader.Context.OnStartLoadingResponseBody.X;
+    
+      type Start = 
+        TraceEvent.WebURLLoader.Context.Start.f |
+        TraceEvent.WebURLLoader.Context.Start.s |
+        TraceEvent.WebURLLoader.Context.Start.X;
+    
+      namespace Cancel {
+        interface X extends TraceEvent.Base {
+          args: {
+          
+          };
+          // Duration.
+          dur: number;
+          name: 'WebURLLoader::Context::Cancel';
+          // Denotes the end of the event Cancel.
+          ph: 'X';
+          tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace OnCompletedRequest {
+        interface X extends TraceEvent.Base {
+          args: {
+          
+          };
+          // Duration.
+          dur: number;
+          name: 'WebURLLoader::Context::OnCompletedRequest';
+          // Denotes the end of the event OnCompletedRequest.
+          ph: 'X';
+          tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace OnReceivedRedirect {
+        interface f extends TraceEvent.Base {
+          args: {
+          
+          };
+          bp: string;
+          id: number;
+          name: 'WebURLLoader::Context::OnReceivedRedirect';
+          // Denotes the ending of the async flow event OnReceivedRedirect.
+          ph: 'f';
+        }
+      
+        interface s extends TraceEvent.Base {
+          args: {
+          
+          };
+          id: number;
+          name: 'WebURLLoader::Context::OnReceivedRedirect';
+          // Denotes the beginning of the async flow event OnReceivedRedirect.
+          ph: 's';
+        }
+      
+        interface X extends TraceEvent.Base {
+          args: {
+          
+          };
+          // Duration.
+          dur: number;
+          name: 'WebURLLoader::Context::OnReceivedRedirect';
+          // Denotes the end of the event OnReceivedRedirect.
+          ph: 'X';
+          tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace OnReceivedResponse {
+        interface f extends TraceEvent.Base {
+          args: {
+          
+          };
+          bp: string;
+          id: number;
+          name: 'WebURLLoader::Context::OnReceivedResponse';
+          // Denotes the ending of the async flow event OnReceivedResponse.
+          ph: 'f';
+        }
+      
+        interface s extends TraceEvent.Base {
+          args: {
+          
+          };
+          id: number;
+          name: 'WebURLLoader::Context::OnReceivedResponse';
+          // Denotes the beginning of the async flow event OnReceivedResponse.
+          ph: 's';
+        }
+      
+        interface X extends TraceEvent.Base {
+          args: {
+          
+          };
+          // Duration.
+          dur: number;
+          name: 'WebURLLoader::Context::OnReceivedResponse';
+          // Denotes the end of the event OnReceivedResponse.
+          ph: 'X';
+          tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace OnStartLoadingResponseBody {
+        interface f extends TraceEvent.Base {
+          args: {
+          
+          };
+          bp: string;
+          id: number;
+          name: 'WebURLLoader::Context::OnStartLoadingResponseBody';
+          // Denotes the ending of the async flow event OnStartLoadingResponseBody.
+          ph: 'f';
+        }
+      
+        interface I extends TraceEvent.Base {
+          args: {
+          
+          };
+          name: 'WebURLLoader::Context::OnStartLoadingResponseBody';
+          // Denotes an event OnStartLoadingResponseBody. There are no begining/ending phases.
+          ph: 'I';
+          s: string;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      
+        interface s extends TraceEvent.Base {
+          args: {
+          
+          };
+          id: number;
+          name: 'WebURLLoader::Context::OnStartLoadingResponseBody';
+          // Denotes the beginning of the async flow event OnStartLoadingResponseBody.
+          ph: 's';
+        }
+      
+        interface X extends TraceEvent.Base {
+          args: {
+          
+          };
+          // Duration.
+          dur: number;
+          name: 'WebURLLoader::Context::OnStartLoadingResponseBody';
+          // Denotes the end of the event OnStartLoadingResponseBody.
+          ph: 'X';
+          tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    
+      namespace Start {
+        interface f extends TraceEvent.Base {
+          args: {
+          
+          };
+          bp: string;
+          id: number;
+          name: 'WebURLLoader::Context::Start';
+          // Denotes the ending of the async flow event Start.
+          ph: 'f';
+        }
+      
+        interface s extends TraceEvent.Base {
+          args: {
+          
+          };
+          id: number;
+          name: 'WebURLLoader::Context::Start';
+          // Denotes the beginning of the async flow event Start.
+          ph: 's';
+        }
+      
+        interface X extends TraceEvent.Base {
+          args: {
+          
+          };
+          // Duration.
+          dur: number;
+          name: 'WebURLLoader::Context::Start';
+          // Denotes the end of the event Start.
+          ph: 'X';
+          tdur: number;
+          // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
+          tts: number;
+        }
+      }
+    }
+  
+    namespace LoadAsynchronously {
+      interface X extends TraceEvent.Base {
+        args: {
+        
+        };
+        // Duration.
+        dur: number;
+        name: 'WebURLLoader::loadAsynchronously';
+        // Denotes the end of the event LoadAsynchronously.
+        ph: 'X';
+        tdur: number;
         // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
         tts: number;
       }
@@ -74814,11 +77573,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'zonesAndDomReady';
       // Denotes a mark of the event ZonesAndDomReady.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
@@ -74829,11 +77590,13 @@ export namespace TraceEvent {
       args: {
         data: {
           navigationId: string;
+          startTime?: number;
         };
       };
       name: 'zonesReady';
       // Denotes a mark of the event ZonesReady.
       ph: 'R';
+      s?: string;
       // Thread timestamp of the event. This value is monotonically increasing among all events generated in the same thread.
       tts: number;
     }
